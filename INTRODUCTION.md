@@ -21,11 +21,18 @@ than found in the geometry.
 
 The progenitor is not a free parameter. The collapse selects the one configuration whose limiting direction
 grazes its own horizon, and that fixes its mass by the cosmological constant alone — **M = c²/3√Λ G**, about
-4×10⁵² kg. Everything on the geometry scales from that single length.
+4×10⁵² kg. Everything on the geometry scales from the one length Λ sets.
+
+**What the corpus delivers, in brief.** The geometry carries one scale, and its geometric constants spend no free
+dimensionless number. The matter sector comes out as three chiral generations on the substrate's discrete residue,
+with the parity that grades chirality requiring a right-handed neutrino in each. The cosmology reproduces the
+expansion history on the distance data, the light-element abundances from the collapse's heat, and a microwave
+spectrum level with the standard model's. Two questions stand open, and both wait on telescopes rather than on
+calculation. P18 sets all of it out at the weight each result carries.
 
 ## 2 · The corpus — eighteen papers
 
-*The reading order is in `README.md`, which follows the corpus's own causal spine rather than the numbering.*
+*The full reading order is in `README.md`, steps 3–8, which take the papers in their numbered order.*
 
 **The forcing.** **P1** shows the event horizon is a metric singularity — a missing definition in general
 relativity, argued from causal structure alone. **P4** shows the redshift-isotropy floor forces the cosmic
@@ -47,11 +54,18 @@ empirically forced cosmic time. **P12** identifies GR's constraint algebra as th
 the substrate — and the problem of time's "wrong sign" as the substrate's coset signature.
 
 **Matter.** **P13** maps four converging routes to a geometric boundary on what the substrate's isometry does
-and does not force. **P14** gives the fermion sector: three chiral generations from the maximally symmetric
-substrate.
+and does not force: colour is not a continuous isometry of the substrate, and the substrate's two real forms stand
+to physics' gauge and quantum sectors as a structural rhyme, with the gauge coupling entering as a measured datum.
+**P14** gives the fermion sector: three chiral generations from the maximally symmetric substrate, colour's discrete
+content at the branch point, and the parity that requires a right-handed neutrino in each generation — which holds
+the strong-$CP$ angle at a $CP$-conserving value at tree level and confines the right-handed scale to a window.
 
-**Cosmology.** **P15** gives the expansion history from causal reassignment. **P16** gives cosmogenesis — the
-Big Bang as a synthesis of the framework's deductively forced consequences.
+**Cosmology.** **P15** gives the expansion history from causal reassignment: one expansion rate, whose geometric
+part Λ fixes and which carries radiation, fitting the DESI distances and the acoustic angle together, with the
+microwave spectrum computed on it level with the standard model's. **P16** gives cosmogenesis — the Big Bang as a
+synthesis of the framework's deductively forced consequences — with the light-element abundances reproduced, and
+the baryon asymmetry made on the expanding leg if the neutrino masses are Majorana, as the construction's own
+criterion reads them.
 
 **P6** stands apart and holds the rest: *the shadow of existence* — scientific theory-choice as an empirically
 grounded discipline. It supplies the epistemic altitude the whole corpus is held at.
@@ -64,11 +78,11 @@ this is worth rather than how it works**, and it is the only one whose subject i
 
 *The geometric core is **P17** throughout. An older tag, `p0`, appears in retired notes and is deprecated.*
 
-**Two documents are corpus in ledger form rather than paper form:** the geometry ledger (58 proved statements
-across 25 receipts) and the combinatorics ledger (the corpus's numbers are two families, the boundary between
-them the Standard Model's arrangement).
+**The field ledgers are corpus in ledger form rather than paper form:** twenty-five of them, one per
+mathematical field, each recording what the corpus establishes in that field's own terms.
 
-**Every computed claim cites a script that can be re-run.**
+**Every computed claim cites a script that can be re-run, and formal proofs in Lean sit beside the claims they
+check across the papers.**
 
 ### The dependency matrix, and why the corpus has no first page
 
@@ -95,11 +109,6 @@ the front. A corpus with two hubs has no linear slot for them: the other papers 
 poles, and a reader comes in somewhere between them.
 
 ### Where to come in
-*Two things follow, and they answer different questions. **The doors** are per-reader: one arrives with an
-interest and enters where it is answered. **The guided arc after them is one route for a room** — ordered by
-structural depth rather than by readership, and **deliberately not opening with P1 and P4**, which carry the
-load and also raise the guard before there is anything to weigh them against.*
-
 
 The matrix is not only a self-portrait; it says as data where a reader should enter. **There is no single first
 page, so here are the doors — and whichever you take, the road runs through P3**, where the substrate's
@@ -111,7 +120,9 @@ cosmology; **P4 measures** it, from the redshift-isotropy floor. Nothing downstr
 hold.
 
 **If you are a cosmologist: P1, P4, then P7, P15, P16.** The forcing, then the framework, then the expansion
-history from causal reassignment, then cosmogenesis — the Big Bang as a synthesis of forced consequences, with the light-element abundances reproduced and the expansion history fitting the low-redshift distance ladder, which fixes $H_0$ with the acoustic angle.
+history from causal reassignment, then cosmogenesis — the Big Bang as a synthesis of forced consequences, with the
+light-element abundances reproduced, the expansion history fitting the distance data and the acoustic angle together,
+and the microwave spectrum level with the standard model's.
 
 **If you want to know what it is worth before you spend time on it: P18.** *The synthesis, and it is a door
 rather than a step.* It collects what the construction derives, separates that from what it dissolves and what
@@ -138,12 +149,11 @@ converging routes** to one wall, with three operations co-located at the branch 
 chiral generations on the discrete residue.
 
 **If you want the *whole*: either pole — P17 or P7.** From either, the rest is one step away. **These two are
-what make the corpus a dipole**, and each is a full row *and* column of the matrix.
+what make the corpus a dipole**, and each touches every other paper in the matrix.
 
-*(A different order exists and serves a different purpose: `README.md` steps 3–6 read the corpus along its
-**causal spine**, the order in which the results are forced. That is for someone who must be able to stand on
-each result before the next leans on it. **The doors above are interest-ordered; that order is
-dependency-ordered.** Neither is the reading order — they are answers to different questions.)*
+*(A different order serves a different purpose: `README.md` steps 3–8 read the corpus straight through in its
+numbered order, for someone who wants to meet every result in sequence. **The doors above are ordered by interest
+instead**, and the two answer different questions.)*
 
 ### The guided arc — if you had them all in a room
 
@@ -185,7 +195,7 @@ over how to subtract a de Sitter background, and on this reading there is no bac
 **④ `P9`, its range — the Carter constant as the substrate's own symmetry.**
 *For anyone whose instinct is that hidden symmetries are where the truth is.* The operator's range runs onto
 **Kerr–NUT–(A)dS**, and the Killing–Yano structure that gives Carter his constant is **not imported** — it is
-what the substrate carries. **⌗ And the sharpest thing in the paper is a warning about a word:** its
+what the substrate carries. **And the sharpest thing in the paper is a warning about a word:** its
 "acceleration" is the **Plebański–Demiański parameter** — a bare accelerating mass with an irremovable conical
 strut — *not* the cosmic acceleration, and the two are different objects.
 
@@ -207,13 +217,23 @@ substrate does and does not force, and it pries apart three operations that sit 
 seam.* **Then P14 shows what the wall leaves standing, and it is not small:** a Dirac field on the slicing
 curve with $\dim\ker_+=3$, $\dim\ker_-=0$ — **three chiral generations, forced by least-arbitrariness rather
 than posited**, protected as a $\gamma^5$-graded index under any deformation preserving the three-wall
-structure. **A one-hinge truncation is excluded not as disfavoured but as carrying an unfixed modulus.** **⌗ AND THE SAME CONSTRUCTION, READ IN A GENERAL DIMENSION, SPEAKS ABOUT THE DIMENSION (r2376+c54.10).** *The fold the count reads is $D-1$; the horizon relation collapses to a single multiple-angle only at $D=4$ and $D=5$; and the mass-parity that grades chirality exists only at even $D$.* ⇒ ***four dimensions is the only one carrying both a generation count and a chirality, so three generations and four-dimensional spacetime are one fact in CR read at two ends.*** *At the sector's own altitude — forced within CR, not a proof about the world — and it settles the dimension of the **cut**, never the substrate's, which stays bounded below only.*
+structure. **A one-hinge truncation is excluded not as disfavoured but as carrying an unfixed modulus.**
+**And the same construction, read in a general dimension, speaks about the dimension.** The fold the count reads
+is $D-1$; the horizon relation collapses to a single multiple-angle only at $D=4$ and $D=5$; and the mass-parity
+that grades chirality exists only at even $D$. *So four dimensions is the only one carrying both a generation
+count and a chirality, and three generations and four-dimensional spacetime are one fact in CR read at two
+ends* — forced within CR rather than a proof about the world, and settling the dimension of the **cut**, never
+the substrate's, which stays bounded below only.
 
 **⑦ `P17` — the one scale, and the Standard Model's own shape read off a circle.**
 *This is the paper to sit with.* Maximal symmetry worn seven ways, and two of them are the reason to make the
 trip. **The gravitational–cosmological–quantum sector's *geometric* constants spend no free dimensionless constant:** $c$ is the
 null-ruling slope, $G$ appears only as $GM/c^2$ with the mass fixed to Nariai by $\Lambda$ —
-**$\Lambda G^2M^2/c^4=1/9$** — and $\hbar$ enters only at the branch point, scaled by $\Lambda$ alone. *(The graviton tower's mode sums do spend one, computed at `PO-23`: a regularisation rather than a gauge, and the audit above does not reach it.)*
+**$\Lambda G^2M^2/c^4=1/9$** — and $\hbar$ enters at the seam, the de Sitter horizon, whose thermal state
+closes the quantisation's one free parameter; the ratio of the Planck length to the curvature radius is read from
+the world rather than derived. *(The one constant the corpus does spend lies outside this count: the renormalised
+value at the interacting graviton tower's own operator dimension, a value a measurement would fix, lying more than a
+hundred orders of magnitude below anything measurement resolves.)*
 **And the waist:** the power of a point with respect to it **is the square of the point's height**, so
 *Euclid III.36 and the null condition are the same equation, the minus sign in the metric doing all the work* —
 which makes the double ruling and the classical power law **one statement, set by $\alpha$ and nothing else**.
@@ -233,8 +253,7 @@ so the two hold one dissolution at two levels rather than one citing the other. 
 having: $\alpha$ is the **unique chart-invariant quantity** in the groupoid, so any fully invariant
 gravitational mass would have to be built from $\alpha$ — **there is no invariant mass because the invariant is
 not a mass.***
-**Then `P3` itself**: the slicing curve, horizons as its turning points, and **mass as a reading** —
-The slicing curve, horizons as its turning points, and **mass as a reading**: $2M=\alpha\sin u\cos^2u$, linear
+**Then `P3` itself**: the slicing curve, horizons as its turning points, and **mass as a reading**: $2M=\alpha\sin u\cos^2u$, linear
 in $\alpha$ with a dimensionless slicing profile as coefficient, so *"$M$ is not an intrinsic coefficient of a
 spacetime; it is the throat radius projected through a turning of the slicing"* — **and the profile's maximum
 is the Nariai value, so the largest mass any slicing can carry is set by the throat.** P2 then does the
@@ -244,16 +263,20 @@ continuation that carries the curve through it.
 
 **⑨ `P7`, then `P15` and `P16` — the framework, and what it predicts.**
 P7 is the necessary-and-sufficient augmentation and the pole everything feeds. Then the cosmology, and here the
-arc's tone changes from structure to consequence: **a geometric expansion rate** fitting **the low-redshift distance ladder and the acoustic angle together**, and light-element abundances reproduced from a collapse excursion — deuterium at $D/H\simeq2.5\times10^{-5}$, $Y_p\simeq0.25$.
+arc's tone changes from structure to consequence: **one expansion rate, whose geometric part Λ fixes and which
+carries radiation's bend of the cut**, fitting **the DESI distances and the acoustic angle together**; the
+microwave spectrum computed on it, with the acoustic comb on the sky's and the full-spectrum likelihood level with
+the standard model's; and light-element abundances reproduced from a collapse excursion — deuterium at
+$D/H\simeq2.5\times10^{-5}$, $Y_p\simeq0.25$.
 
 **⑩ And only now, `P1` and `P4`.**
 *Held to the end on purpose.* **P1: no event horizon completes at finite exterior time** — argued from causal
 structure alone, needing none of the cosmology, and it is where the programme's whole weight sits. **P4: the
-redshift-isotropy floor forces the cosmic foliation empirically**, $\lesssim3\times10^{-6}$ after secondaries.
-*Read first, these two are a fight. **Read eighth, they are the two load-bearing legs under a structure the
-reader has already found interesting** — and P4's own clause is the one to end on:* **"because the ontology's
-necessary half is measured here rather than posited, those dissolutions are not free-standing coherence but
-the consequences of a distinction whose foundation the redshift isotropy already forces."**
+redshift isotropy forces the cosmic foliation empirically** — if the expansion rate tracked the matter, the sky
+would scatter at about $1.6\times10^{-2}$, some 390 times the whole measured anisotropy. *Read first, these two
+are a fight. **Read last, they are the two load-bearing legs under a structure the reader has already found
+interesting** — and P4's own sentence is the one to end on:* **"The local density does not set the rate of cosmic
+expansion."**
 
 *(**P6 sits outside the arc and can be read at any point** — it supplies the altitude the whole thing is held
 at, and its `prin:reclass` is the test every dissolution above is graded against: **exhibit the projection
@@ -330,10 +353,10 @@ under any deformation preserving the three-wall structure**. *The count is topol
 the substrate's own three-foldness, and a one-hinge truncation is excluded because it carries an unfixed
 modulus.*
 
-**⌗ The two arcs meet at `P17` and `P12` and run in opposite directions** — the physicist enters at the algebroid
+**The two arcs meet at `P17` and `P12` and run in opposite directions** — the physicist enters at the algebroid
 and arrives at Euclid; the mathematician enters at Euclid and arrives at the algebroid. **Neither is the reading
-order** *(that is `README` steps 3–6, the causal spine)*, and neither is the doors. **Three orderings, three
-purposes: what is FORCED, what INTERESTS, and what is STRUCTURALLY DEEP.**
+order** *(that is `README` steps 3–8)*, and neither is the doors. **Three orderings, three purposes: what is
+forced, what interests, and what is structurally deep.**
 
 **The corpus takes any number of approaches** — which is a property of a structure read many ways rather than
 an accident of arrangement, and the matrix is how you find your own way in.
@@ -347,20 +370,29 @@ rather than a preface.
 
 **What is settled.** The forcing arguments; the substrate's geometry and its slicing structure; the operator's
 range; the constraint algebra's identification; three chiral generations on the discrete residue; the expansion
-history; the cosmogenesis synthesis with the light-element abundances reproduced. On the observational axis the expansion history fits the low-redshift distance ladder and the acoustic angle together, which fixes $H_0$; the acoustic spectrum is then computed from that background and is rejected on shape.
+history; the cosmogenesis synthesis with the light-element abundances reproduced. On the observational axis the
+expansion rate fits the DESI distances and the acoustic angle together, which fixes $H_0$, and the microwave
+spectrum computed on that background has its acoustic comb on the sky's and stands level with the standard model's
+in the full-spectrum likelihood; the damping tail's signature is not a tension.
 
-**What is open, named rather than implied.** The inherited datum · the interacting quantum tower,
-which is not CR-specific · the one residual of the scalar-perturbation sector, which has reached its verdict ·
-and the world-correspondence, which is the standing empirical question rather than a work item. **Three
-families are closed**: the *matter branch-point crossing dynamics*, the
-*irreducible interior reassignments*, and *the propagating fermion sector*, built on the static slicing
-structure and again on the framework's own chiral member.
+**What is open, named rather than implied.** Two items, and both wait on a measurement rather than a calculation:
+*which mass the Hubble–Eddington radius tracks*, which a gas mass measured out to Virgo's turnaround radius would
+settle; and *the Hubble–Eddington bound tested on an ensemble*, which needs one sample carrying both turnaround radii
+and the masses inside them. Neither discriminates this framework from the standard one — the radius is general
+relativity's with Λ, and what the construction adds is the account. **Not open, and carried at their stated
+weights:** the inherited data, which no lap can derive; the interacting quantum tower, whose definition is carried
+to stated limits; the matter branch-point crossing dynamics, which are computed; the irreducible interior
+reassignments; and the propagating fermion sector, built on the static slicing structure and again on the
+framework's own chiral member.
 
-**What would decide it.** Two things are held out to the world rather than argued: **no event horizon completes
-at finite exterior time** — structural, resting on causal structure alone, and where the programme's whole
-weight sits; and **the geometric expansion rate**, the nearest-term discriminator on expansion-history
-data.
+**What would decide it.** On the axis of theory choice the comparison is decidable now, from the structural record
+(P18). On the data axis the framework holds out predictions of its own: **no event horizon completes at finite
+exterior time** — structural, resting on causal structure alone, and where the programme's whole weight sits;
+**no primordial tensor signal from the substrate**, whose predicted amplitude is some $10^{-111}$, so a detected
+primordial B-mode spectrum would count against it; and, read through its own criterion of least arbitrariness,
+**Majorana neutrino masses in normal ordering**, with an effective double-beta mass of about 1.5 to 8 meV for
+order-one coefficients, which neutrinoless double-beta decay tests.
 
-**And one thing that must always remain a conjecture:** that the framework the corpus has uncovered is the
-framework our actual universe rides. No amount of internal coherence converts it. Empirical facts are primary,
-and the work proceeds within those bounds.
+**The weight all of this is carried at** is P6's. Where measurement has confirmed a result, that is said; where the
+data do not yet discriminate between rival frameworks, a result is favoured on the criterion of necessity — a
+framework that requires a phenomenon over one that merely permits it — and is stated at that weight and no more.
