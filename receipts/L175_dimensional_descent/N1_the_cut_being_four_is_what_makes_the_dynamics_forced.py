@@ -185,12 +185,12 @@ def main():
     #   satisfy a claim about the algebra. **
     #   ⇒ *** One span: the sentence that names the acting algebra, the anchor and the section --
     #     which is what `five-dimensional substrate` is doing work for here.  ONE site. ***
-    _ACTING = ("the acting algebra is the substrate's isometry algebra $\\so(5,1)$, the anchor is "
-               "the slicing operator's cut-to-stress-energy map, and the section is the cosmic "
+    _ACTING = ("the acting algebra is the substrate's isometry algebra $\\so(5,1)$; the anchor is "
+               "the slicing operator's cut-to-stress-energy map; and the section is the cosmic "
                'clock that turns the constraint into a true Hamiltonian')
     check('the substrate is five-dimensional and its isometry algebra is the acting one: "the '
-          "acting algebra is the substrate's isometry algebra $\\so(5,1)$, the anchor is the "
-          "slicing operator's cut-to-stress-energy map, and the section is the cosmic clock that "
+          "acting algebra is the substrate's isometry algebra $\\so(5,1)$; the anchor is the "
+          "slicing operator's cut-to-stress-energy map; and the section is the cosmic clock that "
           'turns the constraint into a true Hamiltonian" -- asserted as that sentence, in place of '
           'a phrase that also stands in the title',
           _ACTING in p12)
