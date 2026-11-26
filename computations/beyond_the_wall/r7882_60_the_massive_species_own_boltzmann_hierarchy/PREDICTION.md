@@ -210,3 +210,43 @@ banked resolution (`HIER=1 LMAXL=2000 LSTEP=8`) with the hierarchy on, so their 
 measurement the declared cost risk asks for. The state vector grows from `20` to `176` per mode. If
 these four do not fit, the validation legs do not either, and the item splits with the convergence
 study landing first — **reported as a measured cost, which is what the risk registered.**
+
+### THE LABEL IN ROWS Ⓨ AND Ⓛ IS MANY-TO-ONE — REGISTERED BEFORE THE VALIDATION LEGS ARE FITTED
+
+⛔ **NOTHING BELOW HAS BEEN MEASURED YET.** The validation legs were still running when this was
+written, no fit had been run on them, and `Ⓚ⓸` had just been met. This fixes a reading, not a
+result.
+
+Rows `Ⓨ` and `Ⓛ` compare this revision's TT against *"the fluid approximation"*. **By the guard on
+many-to-one labels, that label has to be checked before two things are identified by it — and it
+does not pick out one number.** `r7878` measured FIVE fluid arms and they disagree, read off its own
+`refit_parts.json` rather than recalled:
+
+| arm | what it is | `∣A−1∣` in TT at `0.30`, `0.60` | the same in EE |
+|---|---|---|---|
+| `W` | the weight change alone | **`0.00490`**, **`0.05621`** | `0.04005`, `0.05961` |
+| `C` | continuity alone | `0.13111`, `0.26394` | `0.01237`, `0.04361` |
+| `E` | Euler alone | `0.05464`, `0.13902` | `0.00060`, `0.02019` |
+| `CE` | the named subset | `0.08759`, `0.18952` | `0.00769`, `0.03424` |
+| `A1` | all three, exact `c_a²` | `0.07885`, `0.09214` | `0.04650`, `0.07225` |
+
+So "the fluid approximation gave" could mean `A1`, the full fluid model, or `W`, which is the one
+`r7879` rules stays in every candidate, and the two differ by a factor sixteen in TT at `0.30`. A
+row read on `A1` is far easier to pass than the same row read on `W`.
+
+⛔ **THE READING FIXED HERE, AND IT IS THE HARDEST ONE:** `Ⓨ` and `Ⓛ` are read against **the
+fluid family's BEST TT at each sum, whichever arm achieves it** — which the table above makes
+`W` at both: `0.00490` at `0.30 eV` and `0.05621` at `0.60 eV`. The baseline is written to
+`fluid_baseline.json` by a script that reads `r7878`'s record, so the number in the receipt is the
+record's and not a transcription.
+
+**Why the hardest reading rather than the fairest-sounding one:** `Ⓨ` and `Ⓛ` exist to ask whether
+the hierarchy is a better model of this sector than the fluid approximation was. If the hierarchy
+cannot beat the best thing the fluid family already did, then on this evidence it is not better, and
+a baseline chosen to be beatable would turn that finding into its opposite. ⌗ *And it is already
+visible in the table — before any number of this revision's is read — that `W`'s TT at `0.30` is
+INSIDE the `0.03` band on its own. So `Ⓨ` is a real bar: at `0.30 eV` the hierarchy must get TT
+within `0.00490` of one to clear it, which is tighter than the validation band itself.*
+
+⌗ **`Ⓑ`, `Ⓒ` and `Ⓐ` do not touch this label** — they are read against `r7879`'s `0.03` band alone,
+and they are unaffected by which arm the baseline is. Only `Ⓨ` and `Ⓛ` needed a reading.
