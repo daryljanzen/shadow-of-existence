@@ -114,11 +114,33 @@ check('Ⓐ①ᵇ ⛭ and the WEIGHT the potential\'s source carries it at is the
       'On_of = CubicSpline(eg, FNU * (OR / ag ** 4) / _rt)' in INST
       and 'Og_of = CubicSpline(eg, (1 - FNU) * (OR / ag ** 4) / _rt)' in INST)
 
+#: ⛔⛭⛭ ** REPAIRED AT r7878+60, AND THE REASON IS THE CLAIM AND NOT THE COUNT. **  *This arm
+#:   asserted the two landed lines occur EXACTLY TWICE in the instrument -- which was their count
+#:   when this revision was written, one per right-hand side.  `r7878` added a letter set to the
+#:   perturbation switch, so each right-hand side now restores the landed pair in the inner `else`
+#:   of its letter gate as well as in the outer `else` of the switch: four occurrences, same bytes.
+#:   The CLAIM -- that the species' own equations hard-code `w = 1/3` with no drag and no `w-dot`
+#:   term, IN BOTH right-hand sides -- is untouched and still true; only the tally moved.*
+#:   ⇒ ** So the arm is rewritten to assert what it reasons FROM: each right-hand side carries
+#:   both landed lines, and the two lines' counts agree. **  An equality on a global tally is a
+#:   claim about how deeply a LATER revision nested its switches, which is not what this receipt
+#:   is about, and leaving it to redden on every such revision would make it an alarm nobody reads.
+#:   ⚠ *The looser form is NOT vacuous: the split is gated at exactly two right-hand sides, each
+#:   region must carry BOTH lines, and the two counts must match -- so deleting a landed line from
+#:   either side, or changing one of them, still reddens here.*
+_RHS = INST.split('    def rhs(e, Y):')[1:]
+_L4 = 'out[:, 4] = -(4 / 3) * tn + DRC * 4 * Php'
+_L5 = 'out[:, 5] = kk ** 2 * (dn / 4 - sig) + DRE * kk ** 2 * Ps'
 check('Ⓐ①ᶜ ⛭ and the species\' OWN equations hard-code `w = 1/3` and `c_s^2 = 1/3`, with no '
       '`-H(1-3w) theta` drag and no `w-dot` term -- in BOTH right-hand sides, which is why the '
-      'repair had to reach both',
-      INST.count('out[:, 4] = -(4 / 3) * tn + DRC * 4 * Php') == 2
-      and INST.count('out[:, 5] = kk ** 2 * (dn / 4 - sig) + DRE * kk ** 2 * Ps') == 2)
+      'repair had to reach both.  ⛔ *Repaired at `r7878`: the assertion was an exact count of `2`, '
+      'which that revision\'s letter gates took to `4` with the same bytes; it asserts the clause '
+      'it reasons from now, which is that each right-hand side carries the landed pair*',
+      len(_RHS) == 2
+      and all(r.count(_L4) >= 1 and r.count(_L5) >= 1 for r in _RHS)
+      and INST.count(_L4) == INST.count(_L5) >= 2,
+      'two right-hand sides, %s occurrence(s) of each per side, %d in the file'
+      % ([r.count(_L4) for r in _RHS], INST.count(_L4)))
 
 check('Ⓐ①ᵈ ⛭ and the one route by which the repaired BACKGROUND reaches the perturbations is the '
       'shared denominator `_rt`, which divides all four weights TOGETHER and so cannot move the '

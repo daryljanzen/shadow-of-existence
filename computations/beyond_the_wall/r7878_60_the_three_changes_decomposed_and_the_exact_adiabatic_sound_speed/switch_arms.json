@@ -1,0 +1,70 @@
+{
+ "all_pass": true,
+ "off_identical": true,
+ "off_rows": {
+  "absent": {
+   "pol": {
+    "arrays_identical": true,
+    "config_same": false,
+    "n_arrays": 11
+   },
+   "tt": {
+    "arrays_identical": true,
+    "config_same": false,
+    "n_arrays": 6
+   }
+  },
+  "zero": {
+   "pol": {
+    "arrays_identical": true,
+    "config_same": false,
+    "n_arrays": 11
+   },
+   "tt": {
+    "arrays_identical": true,
+    "config_same": false,
+    "n_arrays": 6
+   }
+  }
+ },
+ "on_identical": true,
+ "on_rows": {
+  "pol": {
+   "arrays_identical": true,
+   "config_same": false,
+   "n_arrays": 11
+  },
+  "tt": {
+   "arrays_identical": true,
+   "config_same": false,
+   "n_arrays": 6
+  }
+ },
+ "refusals": {
+  "NUCA without E": {
+   "message": "\u26d4 NUCA=1 needs E in NUPARTS: the exact adiabatic sound speed IS a term of the Euler equation, and here NUPARTS='WC'",
+   "rc": 1,
+   "refused": true
+  },
+  "a bad letter": {
+   "message": "\u26d4 NUPARTS='WX': the letters are W (the weight), C (continuity) and E (Euler), and at least one is needed",
+   "rc": 1,
+   "refused": true
+  },
+  "an empty set": {
+   "message": "\u26d4 NUPARTS='': the letters are W (the weight), C (continuity) and E (Euler), and at least one is needed",
+   "rc": 1,
+   "refused": true
+  },
+  "no NUFD": {
+   "message": "\u26d4 NUPERT=1 needs NUFD=1 and MNU != 0: the repair IS the species' own Fermi-Dirac weight, and here NUFD=0 MNU=0.3",
+   "rc": 1,
+   "refused": true
+  },
+  "zero sum": {
+   "message": "\u26d4 NUPERT=1 needs NUFD=1 and MNU != 0: the repair IS the species' own Fermi-Dirac weight, and here NUFD=0 MNU=0.0",
+   "rc": 1,
+   "refused": true
+  }
+ }
+}

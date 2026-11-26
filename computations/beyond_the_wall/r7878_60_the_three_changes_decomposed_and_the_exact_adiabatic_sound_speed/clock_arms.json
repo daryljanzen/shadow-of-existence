@@ -1,0 +1,36 @@
+{
+ "all_pass": true,
+ "corrected_has_grid_rate": true,
+ "cr": {
+  "arrays_identical": false,
+  "rows": {
+   "pol": {
+    "arrays_identical": false,
+    "config_same": false,
+    "n_arrays": 11
+   },
+   "tt": {
+    "arrays_identical": false,
+    "config_same": false,
+    "n_arrays": 6
+   }
+  }
+ },
+ "differ_in_source": true,
+ "lcdm": {
+  "arrays_identical": true,
+  "rows": {
+   "pol": {
+    "arrays_identical": true,
+    "config_same": false,
+    "n_arrays": 11
+   },
+   "tt": {
+    "arrays_identical": true,
+    "config_same": false,
+    "n_arrays": 6
+   }
+  }
+ },
+ "uncorrected_has_leaf_rate": true
+}

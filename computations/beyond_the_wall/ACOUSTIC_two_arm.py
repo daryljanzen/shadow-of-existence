@@ -686,13 +686,37 @@ D_M = eta_0 - eta_rec
 NUPERT = os.environ.get('NUPERT', '0') == '1'
 NUSHOFF = os.environ.get('NUSHOFF', '0') == '1'
 _NU_NR = 1.0 / 6.0                    # the non-relativistic marker: w_nu below half of 1/3
+# ** NUPARTS AND NUCA, r7878+60 AT 69's ORDER (r7877 items ① and ②). **
+# *`r7876` put the three changes in TOGETHER -- the weight, the continuity equation and the Euler
+#  equation -- and `A` crossed one.  Which of the three over-corrects was not measurable, because
+#  nothing could run them apart.  `NUPARTS` is the letter set of the changes that are LIVE, and
+#  `NUCA` is the next member of the same Fermi-Dirac family: the exact adiabatic sound speed in
+#  place of the adiabatic-at-lowest-order `c_s^2 = w`.*
+#   ⌗ *Both are read ONLY inside the `if NUPERT:` branches, as `NUSHOFF` is, so with the switch off
+#     neither exists in the arithmetic and the file is byte-identical.  Default `WCE` is all three,
+#     which is exactly `r7876`'s run.*
+# ⛔ ** AND THE SELECTION GOES INSIDE THOSE BRANCHES, NOT AROUND THEM. **  *Every
+#   `if NUPERT: <new> else: <landed>` statement keeps its `else` byte-for-byte, because the eighth
+#   AST strip class reduces such a statement to that `else`.  Re-shaping them would turn two shared
+#   receipts red for the second time in two revisions, to buy nothing.*
+NUPARTS = os.environ.get('NUPARTS', 'WCE')
+NUCA = os.environ.get('NUCA', '0') == '1'
 if NUPERT:
     if not NUFD or MNU == 0.0:
         raise SystemExit("  ⛔ NUPERT=1 needs NUFD=1 and MNU != 0: the repair IS the species' own "
                          f"Fermi-Dirac weight, and here NUFD={int(bool(NUFD))} MNU={MNU}")
+    if set(NUPARTS) - set('WCE') or not NUPARTS:
+        raise SystemExit(f"  ⛔ NUPARTS={NUPARTS!r}: the letters are W (the weight), C (continuity) "
+                         "and E (Euler), and at least one is needed")
+    if NUCA and 'E' not in NUPARTS:
+        raise SystemExit("  ⛔ NUCA=1 needs E in NUPARTS: the exact adiabatic sound speed IS a term "
+                         f"of the Euler equation, and here NUPARTS={NUPARTS!r}")
     #: the weight the perturbations see becomes the species' own FD energy weight.  With this the
-    #: closure above holds EXACTLY: the numerator becomes `_rt` term for term.
-    On_of = CubicSpline(eg, Onu_of(ag) / _rt)
+    #: closure above holds EXACTLY: the numerator becomes `_rt` term for term.  ⌗ *Under `W` only;
+    #: without it the weight stays the landed massless one and the closure stays open, which is
+    #: what makes the weight change's own contribution readable.*
+    if 'W' in NUPARTS:
+        On_of = CubicSpline(eg, Onu_of(ag) / _rt)
     _w_eg = NUW_of(np.log(ag))
     Wnu_of = CubicSpline(eg, _w_eg)
     Wdot_of = Wnu_of.derivative()
@@ -702,7 +726,8 @@ if NUPERT:
         if not NUSHOFF:
             return 1.0
         return np.where(np.interp(e, eg, _w_eg) >= _NU_NR, 1.0, 0.0)
-    print(f"  __NUPERT__ the Fermi-Dirac fluid approximation: w_nu(a_rec) = "
+    print(f"  __NUPERT__ the Fermi-Dirac fluid approximation: parts {NUPARTS}, "
+          f"c_s^2 = {'c_a^2 exact' if NUCA else 'w'}, w_nu(a_rec) = "
           f"{float(Wnu_of(eta_rec)):.6f}, w_nu(1) = {float(Wnu_of(eta_0)):.3e}, shear "
           f"{'OFF below w = 1/6' if NUSHOFF else 'ON at all epochs'}", flush=True)
 else:
@@ -1077,6 +1102,8 @@ _SWITCH_SNAPSHOT = {
     # difference between "it was off" and "this bank cannot say".*
     'NUPERT': bool(NUPERT),
     'NUSHOFF': bool(NUSHOFF),
+    'NUPARTS': NUPARTS,
+    'NUCA': bool(NUCA),
     'instrument': 'ACOUSTIC_two_arm.py',
     # ⛭⛭⛭ ** THE INSTRUMENT'S OWN SOURCE HASH, ADDED AT r7109 ⓵ AT `70`'s REQUEST. **
     # *`70`'s three-grid audit cleared the comparison on all three counts and named exactly one thing
@@ -1363,9 +1390,30 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         # pair that was here, unchanged, so the switch off is byte-identical. **
         if NUPERT:
             _w, _wd = float(Wnu_of(e)), float(Wdot_of(e))
-            out[:, 4] = -(1.0 + _w) * tn + DRC * (3.0 * (1.0 + _w)) * Php
-            out[:, 5] = (kk ** 2 * (_w / (1.0 + _w) * dn - sig) + DRE * kk ** 2 * Ps
-                         - Hc * (1.0 - 3.0 * _w) * tn - (_wd / (1.0 + _w)) * tn)
+            # ⌗ r7878: each change carries its own letter, and the branch NOT taken is the LANDED
+            #   line written out, not the generalised one evaluated at `w = 1/3` -- `3*(1+1/3)` is
+            #   `3.9999999999999996` and not `4`, so a decomposition built that way would not be
+            #   the landed arithmetic and the component's own effect would be unreadable.
+            if 'C' in NUPARTS:
+                out[:, 4] = -(1.0 + _w) * tn + DRC * (3.0 * (1.0 + _w)) * Php
+            else:
+                out[:, 4] = -(4 / 3) * tn + DRC * 4 * Php
+            if 'E' in NUPARTS:
+                # ⌘⌘ r7878: THE DERIVATIVE'S OWN CLOCK, and not the sector's rate.  `Wdot_of` is
+                #   `d/d eta` on the GRID, so the rate that converts it to `d/d ln a` is the GRID's
+                #   `Hc_of` -- NOT `Hc`, which is the LEAF rate under `LEAFPERT`.  With `Hc` the term
+                #   is `Jac * (dw/dln a)/(3(1+w))` and not the clock-free adiabatic speed at all.
+                #   ⛔ *The first version used `Hc`, which is right only where `Jac == 1`.  Both
+                #   readings of `LEAFPERT` agree on the grid rate: read as an Euler equation in the
+                #   integration variable every derivative is `d/d eta_grid`; read as a sector on the
+                #   leaf clock, `w-dot` becomes `w-dot/Jac` and `Jac * H_leaf == H_grid` identically.
+                #   So it is not a fork, and `clock.py` measures the correction as a BIT-LEVEL no-op
+                #   on `lcdm`, where the two rate splines are built from identical ordinate arrays.*
+                _cs2 = (_w - _wd / (3.0 * float(Hc_of(e)) * (1.0 + _w))) if NUCA else _w
+                out[:, 5] = (kk ** 2 * (_cs2 / (1.0 + _w) * dn - sig) + DRE * kk ** 2 * Ps
+                             - Hc * (1.0 - 3.0 * _w) * tn - (_wd / (1.0 + _w)) * tn)
+            else:
+                out[:, 5] = kk ** 2 * (dn / 4 - sig) + DRE * kk ** 2 * Ps
         else:
             out[:, 4] = -(4 / 3) * tn + DRC * 4 * Php
             out[:, 5] = kk ** 2 * (dn / 4 - sig) + DRE * kk ** 2 * Ps
@@ -1968,9 +2016,30 @@ def evolve_hier(kk, t_eval, e_sw, yF):
         # pair that was here, unchanged, so the switch off is byte-identical. **
         if NUPERT:
             _w, _wd = float(Wnu_of(e)), float(Wdot_of(e))
-            out[:, 4] = -(1.0 + _w) * tn + DRC * (3.0 * (1.0 + _w)) * Php
-            out[:, 5] = (kk ** 2 * (_w / (1.0 + _w) * dn - sig) + DRE * kk ** 2 * Ps
-                         - Hc * (1.0 - 3.0 * _w) * tn - (_wd / (1.0 + _w)) * tn)
+            # ⌗ r7878: each change carries its own letter, and the branch NOT taken is the LANDED
+            #   line written out, not the generalised one evaluated at `w = 1/3` -- `3*(1+1/3)` is
+            #   `3.9999999999999996` and not `4`, so a decomposition built that way would not be
+            #   the landed arithmetic and the component's own effect would be unreadable.
+            if 'C' in NUPARTS:
+                out[:, 4] = -(1.0 + _w) * tn + DRC * (3.0 * (1.0 + _w)) * Php
+            else:
+                out[:, 4] = -(4 / 3) * tn + DRC * 4 * Php
+            if 'E' in NUPARTS:
+                # ⌘⌘ r7878: THE DERIVATIVE'S OWN CLOCK, and not the sector's rate.  `Wdot_of` is
+                #   `d/d eta` on the GRID, so the rate that converts it to `d/d ln a` is the GRID's
+                #   `Hc_of` -- NOT `Hc`, which is the LEAF rate under `LEAFPERT`.  With `Hc` the term
+                #   is `Jac * (dw/dln a)/(3(1+w))` and not the clock-free adiabatic speed at all.
+                #   ⛔ *The first version used `Hc`, which is right only where `Jac == 1`.  Both
+                #   readings of `LEAFPERT` agree on the grid rate: read as an Euler equation in the
+                #   integration variable every derivative is `d/d eta_grid`; read as a sector on the
+                #   leaf clock, `w-dot` becomes `w-dot/Jac` and `Jac * H_leaf == H_grid` identically.
+                #   So it is not a fork, and `clock.py` measures the correction as a BIT-LEVEL no-op
+                #   on `lcdm`, where the two rate splines are built from identical ordinate arrays.*
+                _cs2 = (_w - _wd / (3.0 * float(Hc_of(e)) * (1.0 + _w))) if NUCA else _w
+                out[:, 5] = (kk ** 2 * (_cs2 / (1.0 + _w) * dn - sig) + DRE * kk ** 2 * Ps
+                             - Hc * (1.0 - 3.0 * _w) * tn - (_wd / (1.0 + _w)) * tn)
+            else:
+                out[:, 5] = kk ** 2 * (dn / 4 - sig) + DRE * kk ** 2 * Ps
         else:
             out[:, 4] = -(4 / 3) * tn + DRC * 4 * Php
             out[:, 5] = kk ** 2 * (dn / 4 - sig) + DRE * kk ** 2 * Ps

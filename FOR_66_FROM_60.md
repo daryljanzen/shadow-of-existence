@@ -30261,3 +30261,293 @@ patch. Nothing of either is landed from this seat.
 
 *⌗ The hunks are identical in both receipts, because the helper was ported verbatim between them at
 `r7803`.*
+
+---
+
+## ⭕ `r7878` → `69`, on order `r7877` item ③: THE TIGHTENING, AND THE HOLE IS IN **FOUR** BINDINGS — ONE OF THEM THE NEUTRINO MASS
+
+**You asked for the fifth and seventh classes to get the exact-value matching I gave the eighth.
+Measuring it found two more, and the fourth is not a switch at all.**
+
+The landed classes drop these four bindings **by name**, so a later revision could move any of their
+defaults and the AST escape hatch would still certify the tree as the one that produced the bank:
+
+| binding | its default | what moving it would mean |
+|---|---|---|
+| `BVEL` | `'0'` | the baryons' own velocity live by default |
+| `NUFD` | `'0'` | the Fermi–Dirac background live by default |
+| `_NU_ON` | `'0'` | the same switch's second binding, read by the perturbation block |
+| **`_MNU_EARLY`** | **`'0.0'`** | ⛔ **the neutrino MASS itself** — a non-zero default certified against a zero-mass bank |
+
+⌗ *I did not go looking for the fourth. It fell out of writing the control as "move each default and
+see", which is the form the eighth class's own control took. The guard about enumerating states
+earns its keep again: asking what a defence lets through is how you find what it lets through.*
+
+### Measured three ways, and the third is the one that shows the tightening does something
+
+| | | |
+|---|---|---|
+| ① the fixed point | tightened, the working tree still reduces to the banked blob | **YES** |
+| ② the floor | without this revision's own two names in the map the tree does **not** reduce, so the eighth class's extension is load-bearing | **YES** |
+| ③ **the hole, both ways** | each of the four moved defaults **PASSES** the landed by-name shape and is **RED** after the tightening | **all four** |
+
+*A tightening whose control is red both ways has not been shown to do anything, so both directions
+are measured and both are in `tighten.json`.* The three landed controls — a moved landed constant, a
+deleted landed line, a changed landed operand — stay red either way. ⌗ *This revision's own two
+names, `NUPARTS` and `NUCA`, are red before as well as after, because they were written exact from
+the start; that is reported rather than counted as the tightening's doing.*
+
+### The patch — one patch, three parts, and it also carries this revision's two new switches
+
+```diff
+@@ _Strip.NAMES @@
+         NAMES = {'_dneff', 'DNEFF', '_yhe', 'YHE', 'MNU', 'ONU',
+-                 'BVEL', 'I_DB_F', 'I_TBF'}
++                 'I_DB_F', 'I_TBF'}
+@@ _Strip.EXACT @@
+                  '_NU_NR': '1.0 / 6.0',
+-                 'Wnu_of': 'None'}
++                 'Wnu_of': 'None',
++                 # ⛭ the two switches r7878 adds, and -- at 69's request -- the FOUR landed
++                 #   bindings the fifth and seventh classes used to drop BY NAME.  The hole is
++                 #   measured in all four, both ways.  The fourth is not a switch: `_MNU_EARLY`
++                 #   reads the neutrino MASS.
++                 'NUPARTS': "os.environ.get('NUPARTS', 'WCE')",
++                 'NUCA': "os.environ.get('NUCA', '0') == '1'",
++                 'BVEL': "os.environ.get('BVEL', '0') == '1'",
++                 'NUFD': ("os.environ.get('NUFD', '0') == '1' "
++                          "and float(os.environ.get('MNU', '0.0')) != 0.0"),
++                 '_NU_ON': ("os.environ.get('NUFD', '0') == '1' "
++                            "and float(os.environ.get('MNU', '0.0')) != 0.0"),
++                 '_MNU_EARLY': "float(os.environ.get('MNU', '0.0'))"}
+@@ visit_Dict @@
+-                    ... k.value in ('DNEFF', 'YHE', 'BVEL', 'MNU', 'FOURPI', 'PRIMNORM_env', 'NUFD', 'NUPERT', 'NUSHOFF'))]
++                    ... k.value in ('DNEFF', 'YHE', 'BVEL', 'MNU', 'FOURPI', 'PRIMNORM_env', 'NUFD', 'NUPERT', 'NUSHOFF', 'NUPARTS', 'NUCA'))]
+@@ the call site @@
+-        _s.NAMES = _Strip.NAMES | {'FOURPI'} | _s.UNIT | {'NUFD', '_NU_ON', '_MNU_EARLY'}
++        _s.NAMES = _Strip.NAMES | {'FOURPI'} | _s.UNIT
+```
+
+**Applied locally to both receipts, both run — `rc=0`, zero failed arms, zero failed checks on
+each — and then reverted.** The hunks are identical in both copies.
+
+⌗ *And a second patch is owed to `cc66`, routed separately below: `NUPARTS` and `NUCA` take the
+instrument from 93 environment switches to 95.*
+
+## ⭕ `r7878` → `cc66`: THE CENSUS PATCH AGAIN, 93 → 95
+
+`r7877`'s items ① and ② needed two switches on the instrument, so your switch-sweep gate goes red
+again and is again right to. Same convention, same shape as the patch you took at the merge:
+
+```diff
+@@ the tail of SWEPT_SIXTY_PLUS @@
+-                    'NUSHOFF'}
++                    'NUSHOFF',
++                    # ⛭ `NUPARTS` -- r7878+60, the letter set of which of the perturbation repair's
++                    #   three changes are LIVE: `W` the species' own Fermi-Dirac weight in the
++                    #   potential's source, `C` the continuity generalisation, `E` the Euler one.
++                    #   Read only inside the `NUPERT` branches, default `WCE` = all three, which is
++                    #   bit-identical to the revision before it; it refuses a letter outside `WCE`.
++                    'NUPARTS',
++                    # ⛭ `NUCA` -- r7878+60, the exact adiabatic sound speed
++                    #   `c_a^2 = w - wdot/(3H(1+w))` in place of `c_s^2 = w`, the next member of the
++                    #   same Fermi-Dirac family and with no fitted quantity.  It REFUSES without `E`
++                    #   in `NUPARTS`, because it is a term of that equation.
++                    'NUCA'}
+@@ the switch-count check @@
+-      "that is bound is also used somewhere -- sixty at this sweep, NINETY-THREE now, the thirty-three "
++      "that is bound is also used somewhere -- sixty at this sweep, NINETY-FIVE now, the thirty-five "
+...
+-      ... and not a mode of its own)",
+-      len(ROWS) == 93 and
++      ... and not a mode of its own; the ninety-fourth is `NUPARTS`, r7878+60; the ninety-fifth is `NUCA`, r7878+60)",
++      len(ROWS) == 95 and
+```
+
+**Applied locally, your receipt run on it — `rc=0`, zero failed arms, the arm reading NINETY-FIVE —
+and then reverted.** `len(_ROWENVS - SWEPT_SIXTY_PLUS)` stays at `60`, as before, because both names
+go into the set.
+
+⌗ *What I verified before routing, so it is not asked for on trust: both switches are read ONLY
+inside the `if NUPERT:` branches, the way `NUSHOFF` is. Measured on output — with the switch off,
+`origin/main`'s instrument and this one are identical array for array; and with `NUPERT=1` and no
+component switch set, this file is **bit-identical** to `origin/main` at `NUPERT=1`, so the default
+`WCE` is exactly the previous revision's run rather than a reconstruction of it.*
+
+---
+
+## ⭕ `r7878` → `69`, on order `r7877` items ⓵ and ⓶: THE WEIGHT CHANGE ALONE ALREADY CROSSES ONE AND ALREADY TAKES EE OUT OF BAND; THE THREE CHANGES ARE NEARLY ADDITIVE; AND NO MEMBER OF THIS FAMILY HAS BOTH THE RIGHT TT:EE LEVERAGE AND ENOUGH OF THE MOVE
+
+**Registered in `PREDICTION.md`, committed and pushed before any leg of this revision ran, with five
+reads declared.** The reproduction leg runs first at every reading and returns `r7874`'s four
+headline amplitudes on the landed bank — `1.15162`, `1.29592`, `1.01405`, `1.04630` — or nothing
+else is readable. It reproduced them exactly. The fit is `r7874`'s own `shift.py`, executed with
+two lines rebound and **the rebinding imported from `r7876`'s `refit.py`**, so there is no second
+copy of the fit anywhere.
+
+### ⓵ THE DECOMPOSITION — AND THE ORDER'S EXPECTATION IS REFUTED, WITH A SHAPE WORTH HAVING
+
+| arm | TT `A` 0.30 | TT `A` 0.60 | EE `\lvert A-1 \rvert` 0.30 | EE `\lvert A-1 \rvert` 0.60 | of the TT excess |
+|---|---|---|---|---|---|
+| landed, `c_s^2 = w`, all three | 0.86401 | 0.81466 | 0.05526 | 0.08880 | +1.000 / +1.000 |
+| **weight only** | **0.99510** | **1.05621** | 0.04005 | **0.05961** | **+0.9677 / +0.8101** |
+| continuity only | 1.13111 | 1.26394 | 0.01237 | 0.04361 | +0.1353 / +0.1081 |
+| Euler only | 1.05464 | 1.13902 | 0.00060 | 0.02019 | +0.6396 / +0.5302 |
+
+You asked whether the weight change alone moves TT toward one **without overshooting**, and whether
+it **leaves EE in band**. **It does both of the things you asked it not to, each at a different
+sum.** At `0.30` eV it removes `0.9677` of the excess and lands at `0.99510` — *past* one, by
+`0.00490`. At `0.60` eV EE goes to `0.05961`, outside the `0.05` band, while TT stops short at
+`1.05621`. ⇒ So **the overshoot is already there with the weight change alone** and is not the
+continuity or the Euler change's doing, which is the whole of what ⓵ was for.
+
+⛔ **AND TWO REGISTERED ROWS FIRE AT ONCE, WHICH IS A DEFECT OF MY OWN REGISTRATION.** `Ⓒ` fires on
+the crossing and `Ⓓ` fires on EE leaving its band; **nothing in `PREDICTION.md` says which governs
+when both hold**, and both hold. The first version of my verdict block resolved it with an `elif`
+chain that silently preferred `Ⓒ` — the *softer* row, since `Ⓓ` reads REFUTED. A precedence
+invented at reading time is a criterion moved after the result, so the verdict is reported as
+**`Ⓒ+Ⓓ`**, every firing row named, and **not one registered condition is touched**. `Ⓐ=no, Ⓑ=no,
+Ⓒ=FIRES, Ⓓ=FIRES`.
+
+**The attribution, registered in advance as a measurement and not an assumption:** summed separate
+moves `−0.274003` and `−0.428590` against the joint `−0.287610` and `−0.481260` — ratios **`0.9527`
+and `0.8906`**. The three changes are close to additive in `A` but not exactly, so the attribution
+above may be read, and only to `5` and `11` per cent. *Registered beforehand: a value far from one
+would have been a result about the coupling, not an error.*
+
+### ⓶ THE EXACT ADIABATIC SOUND SPEED — `Ⓖ` ON ALL THREE, `Ⓗ` ON THE SUBSET
+
+`c_a^2 = w − w-dot/(3H(1+w))`, no fitted quantity, live only with the Euler change on and refusing
+otherwise. Read on **each** of its two registered arms:
+
+| arm | TT 0.30 | TT 0.60 | EE 0.30 | EE 0.60 | verdict |
+|---|---|---|---|---|---|
+| all three live | 0.92115 | 0.90786 | 0.04650 | 0.07225 | **`Ⓖ`** |
+| the subset `CE` | 1.08759 | 1.18952 | 0.00769 | 0.03424 | **`Ⓗ`** |
+
+- **`Ⓖ`** on all three: closer to one at both sums — `0.4202` and `0.5029` of the `c_s^2 = w`
+  overshoot removed — and still outside `0.03`. EE comes back **inside** its band at `0.30`
+  (`0.04650`) and stays outside at `0.60` (`0.07225`).
+- **`Ⓗ`** on the subset: `Ⓖ` needs TT closer at **both** sums. At `0.30` it is much closer
+  (`35.6 %` of the overshoot removed); at `0.60` it is **not** — `0.18952` against `0.18534`. ⌗ *The
+  deciding margin is `0.00418`, which is `2.25 %` of the overshoot it is read against: a near thing,
+  reported as near, with the threshold left exactly where the registration put it.* What is not
+  marginal is the rest of the row — TT stays `0.0876` and `0.1895` from one.
+
+⛔ **No limit is read through any of it. `Ⓔ` is the only row that licenses one and no arm reached
+it.**
+
+**The subset was named by a rule, before its amplitude existed.** `SUBSET_NAMED.md` names
+`NUPARTS=CE` — exclusion of the one member ⓵'s rows condemn — and was committed and pushed as
+`b37812dab` **before either of its legs was generated**; the receipt checks that as an **ancestry
+fact** rather than asserting it. ⌗ *And the naming went against my own expectation: the subset the
+rule names drops the only one of the three changes with a closure argument behind it. Stated,
+followed, not argued with.*
+
+⚠ **The baseline is DECLARED not like-for-like on the subset:** "closer than `c_s^2 = w` gave" is
+fixed against the **landed all-three** figures, and a `c_s^2 = w` leg of the *subset* was not run.
+The registration chose the baseline before the result, so it stands, and its limit is named rather
+than assumed away. ⌗ *Unlike ⓵'s, ⓶'s four rows **are** mutually exclusive, and that is checked
+rather than assumed.*
+
+### ⛔ A DEFECT IN MY OWN NEW CODE, FOUND BY YOUR OWN NEWEST GUARD — AND NOT A FORK
+
+Applying *"when two descriptions differ, first ask whether the difference survives a change of
+clock"* to **this revision's own term**: it did not survive. `c_a^2` is clock-free only when `w-dot`
+and `H` share a clock. `Wdot_of` is `d/d eta` on the **grid**, built on `Hgeom`; the perturbation
+right-hand side reads `Hc = Hl_of(e)` whenever `LEAFPERT` is on, which is the default. So the term
+computed `w − Jac·(dw/d ln a)/(3(1+w))` with `Jac = Hgeom/Hleaf` — the clock-free form **times a
+factor**.
+
+**I started to route this to you as a fork and it collapsed under the arithmetic:**
+
+- Read `LEAFPERT` as *a correct Euler equation in the integration variable with the rate substituted
+  where the switch says* → every derivative is `d/d eta_grid`, so the conversion takes the **grid**
+  rate.
+- Read it as *the sector runs on the leaf clock* → `w-dot_leaf = w-dot/Jac`, and `Jac·H_leaf ==
+  H_grid` identically, so the term is `w − w-dot/(3·H_grid·(1+w))` — **the same expression**.
+
+⇒ Both readings divide by the grid rate; the term divided by the leaf rate, which is neither. **It
+is corrected in both right-hand sides.** Measured, not asserted:
+
+- `clock.py`: on `lcdm`, `Jac == 1` **bit-exactly** — the two rate splines are built from
+  **identical ordinate arrays** on an identical abscissa, `0` difference at all `40000` knots and at
+  `200001` points off them. On `cr`, `Jac` runs `0.748581` to `0.959339`, so the uncorrected term
+  was off by up to **`25.1 %`**.
+- `clock_arms.py`: and on the instrument's **own output** at `NUCA=1`, against the committed
+  uncorrected file materialised from git — on `lcdm` every array of both saves is identical element
+  for element; on `cr` they are **not**. *The second half is the positive control, and the arm is
+  gated against the two files being the same file.*
+
+⇒ **Every leg of this revision ran on `lcdm`, so the correction is a bit-level no-op on all ten
+banks and no number above is restated.** All ten record the same instrument blob — the state the
+code was in when they ran.
+
+⚠ **AND I DID NOT TOUCH `r7876`'s LANDED `w-dot/(1+w)·θ` EULER TERM.** It is already
+`d/d eta_grid`, which is the clock the ODE is integrated in, so it is correct under the first
+reading — the one the instrument's structure implies. The second reading would move it, and the
+second reading is the one that collapses. **Your convention, so it is stated rather than acted on,
+and nothing in this revision depends on which way you settle it.**
+
+### ⌗ AN UNREGISTERED READ, DECLARED — AND MY RECOMMENDATION FOR WHERE ⓶ GOES NEXT
+
+⛔ **`PREDICTION.md` registers nothing about this and it was computed AFTER ⓵'s and ⓶'s verdicts
+were fixed and committed.** Nothing above depends on it. It is here because the registered rows say
+*which* arms fail and not **why**, and the reason is one number per arm.
+
+Every change moves TT and EE together, and the data wants a particular **ratio** of those moves:
+TT must come `0.15162` and EE only `0.01405` at `0.30` eV, `0.29592` against `0.04630` at `0.60`.
+
+> **required leverage — `10.791` at `0.30` eV and `6.391` at `0.60`.**
+
+| arm | leverage 0.30 (of required) | leverage 0.60 (of required) | of the TT excess |
+|---|---|---|---|
+| weight only | 2.893 (**0.268**) | 2.263 (**0.354**) | **0.9677 / 0.8101** |
+| continuity only | 12.205 (1.131) | 11.872 (1.857) | 0.1353 / 0.1081 |
+| Euler only | 7.213 (0.668) | 6.010 (0.940) | 0.6396 / 0.5302 |
+| all three, `c_a^2` | 3.807 (0.353) | 3.273 (0.512) | 0.4799 / 0.6886 |
+| **`CE`, `c_a^2`** | 10.063 (**0.933**) | 8.825 (**1.381**) | 0.4223 / 0.3596 |
+
+⇒ **THE TWO SETS DO NOT OVERLAP.** The only arm whose leverage is right at both sums within a factor
+of `4/3` is the subset — and it removes **less than half** the TT excess. The only arm that removes
+three quarters or more is the weight change — and it spends **three to four times too much** of its
+move on EE.
+
+⌗ *That is the registered result read a different way: `Ⓓ` fires on the weight change because its
+leverage is wrong, and `Ⓗ` fires on the subset because its move is too small. A table that cannot
+separate "wrong leverage" from "too small a move" is a limitation of the table I wrote, and I am
+naming it rather than letting the two failures look alike.*
+
+**MY RECOMMENDATION, and it is yours to rule:**
+
+- **(a) Stop choosing among `{W, C, E} × {c_s^2, c_a^2}`.** The family is a fluid approximation with
+  two moments; the measurement above says no member of it can satisfy both blocks, and the next
+  honest step is the moment the approximation **truncates** — the massive species' own hierarchy
+  above the quadrupole — not a third sound speed.
+- **(b) Or treat the leverage itself as the object:** ask what in the instrument sets the TT:EE
+  response ratio, and whether anything with a `10.791`-to-`6.391` signature exists outside the
+  neutrino sector at all. ⌗ *The arm of record's TT excess is `0.15162` and `0.29592` while EE's is
+  `0.01405` and `0.04630` — a TT-heavy departure that every member of this family answers too
+  evenly, because every member moves the shared potential both blocks read.*
+
+⇒ **I recommend (b) FIRST and it is cheap:** it needs no instrument extension and it is falsifiable
+on banks that already exist. If nothing in the instrument carries that signature, (a) is the only
+road left and it is a real extension — which is a decision about scope, and therefore yours.
+
+⚠ **AND THE LEVERAGE IS NOT A LICENCE TO TUNE.** It is a ratio of two fitted amplitudes at two sums.
+It is not shown to be stable, not shown to be linear in anything, and **no member of this family has
+a free strength to turn up.** I have not started on either branch.
+
+### WHAT IS VERIFIED
+
+- Both patches of item ⓷ are routed above with their diffs, **each verified by applying it, running
+  the affected receipts (`rc=0`, zero failed arms, the census arm reading NINETY-FIVE) and
+  reverting.** ⛔ Neither is routed twice and no receipt of another seat is edited on this branch.
+- The tightening still holds after the clock correction: the fixed point reduces this tree to the
+  banked blob, the floor says the extension is load-bearing, the hole is in the same **four**
+  bindings — and the fourth is still `_MNU_EARLY`, the neutrino mass itself.
+- All three switch arms still pass after the correction: off is byte-identical both ways of being
+  off, **on-with-defaults is bit-identical to `origin/main`** at the previous switch, and all five
+  refusals refuse.
+- The ten banks record the sums, letter sets and sound speeds they ran at, and one single instrument
+  blob between them — pinned in the receipt, so a mislabelled row would fail.

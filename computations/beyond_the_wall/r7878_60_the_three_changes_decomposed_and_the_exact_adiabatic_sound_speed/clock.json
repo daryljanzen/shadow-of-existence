@@ -1,0 +1,48 @@
+{
+ "cr": {
+  "identical_rate_source": false,
+  "jac_equals_hc_over_hl": 3.3306690738754696e-16,
+  "jac_max": 0.9593394399338682,
+  "jac_min": 0.7485808409232689,
+  "leafgeom": false,
+  "leafpert": true,
+  "n": 4245,
+  "rad_in_rate": false,
+  "worst_dev": 0.25141915907673107
+ },
+ "cr_full_grid": {
+  "bit_identical_everywhere": false,
+  "n": 40000,
+  "worst_abs_rate_difference": 2144.6190340025387
+ },
+ "cr_off_knot": {
+  "bit_identical_off_knot": false,
+  "n": 200001,
+  "ordinates_bit_identical": false,
+  "worst_abs_rate_difference": 0.0024692877971269006
+ },
+ "lcdm": {
+  "identical_rate_source": true,
+  "jac_equals_hc_over_hl": 0.0,
+  "jac_max": 1.0,
+  "jac_min": 1.0,
+  "leafgeom": false,
+  "leafpert": true,
+  "n": 2866,
+  "rad_in_rate": true,
+  "worst_dev": 0.0
+ },
+ "lcdm_full_grid": {
+  "bit_identical_everywhere": true,
+  "n": 40000,
+  "worst_abs_rate_difference": 0.0
+ },
+ "lcdm_off_knot": {
+  "bit_identical_off_knot": true,
+  "n": 200001,
+  "ordinates_bit_identical": true,
+  "worst_abs_rate_difference": 0.0
+ },
+ "legs_were_run_on": "lcdm",
+ "numbers_affected": false
+}
