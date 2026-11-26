@@ -138,9 +138,9 @@ closed cross-seeded envelope, and that is a separate revision with its own regis
 
 ---
 
-## AMENDMENT, DECLARED: WHAT Ⓚ⓸ ASSERTS, AND THE FLOOR UNDER IT
+## AMENDMENT, DECLARED: WHAT Ⓠ⓸ ASSERTS, AND THE FLOOR UNDER IT
 
-⛔ **THIS IS A DECLARED READ, NOT A FRESH REGISTRATION.** `Ⓚ⓸` was measured before this section
+⛔ **THIS IS A DECLARED READ, NOT A FRESH REGISTRATION.** `Ⓠ⓸` was measured before this section
 was written and its criteria are NOT moved by it. What was seen is stated first, in full:
 
 - A first run reported a worst relative difference of **`4.345e-01`** at both sums, flat across the
@@ -153,7 +153,7 @@ was written and its criteria are NOT moved by it. What was seen is stated first,
   at `1e-4`, and the hierarchy's `δ` and `θ` track the landed fluid's to `≈ 3e-05` relative from the
   first sample to recombination.
 - **The residual is FLAT across the mass decade** (factor `1.0`), which is why `limit.py`'s shrink
-  test still reports `Ⓚ⓸` as not met.
+  test still reports `Ⓠ⓸` as not met.
 
 **The registered criterion in the gate table is agreement `to the fit's own resolution`.** The
 shrink test is `limit.py`'s reading of it, and that reading is strictly stronger than what is
@@ -166,28 +166,28 @@ however correct the physics is, so a shrink test cannot separate a defect from t
 
 | | arm | criterion | what each outcome means |
 |---|---|---|---|
-| **Ⓚ⓸ᵃ** | **the floor is the quadrature's** | re-run the same comparison at `NQ` doubled to `24`, mass decade unchanged: the worst relative difference must **fall by at least a factor `3`** AND stay flat across the decade to within a factor `2` | the floor is the `q`-grid's representation error, it is not the mass, and `Ⓚ⓸`'s registered criterion is then read on `Ⓚ⓸ᵇ` |
-| | | it does **not** fall | the floor is NOT the quadrature's, something mass-independent is still wrong in the hierarchy, and `Ⓚ⓸` is reported FAILED with no validation number read |
+| **Ⓠ⓸ᵃ** | **the floor is the quadrature's** | re-run the same comparison at `NQ` doubled to `24`, mass decade unchanged: the worst relative difference must **fall by at least a factor `3`** AND stay flat across the decade to within a factor `2` | the floor is the `q`-grid's representation error, it is not the mass, and `Ⓠ⓸`'s registered criterion is then read on `Ⓠ⓸ᵇ` |
+| | | it does **not** fall | the floor is NOT the quadrature's, something mass-independent is still wrong in the hierarchy, and `Ⓠ⓸` is reported FAILED with no validation number read |
 | | | it falls but becomes mass-DEPENDENT | the mass term is entangled with the grid, which is its own defect, reported as one with no validation number read |
-| **Ⓚ⓸ᵇ** | **the registered criterion itself** | at `Σ = 1e-4` the fit of record, executed on the hierarchy-on and hierarchy-off spectra, must return an `A` in TT and in EE differing by **less than `0.003`** — the same tenth of `r7879`'s `0.03` band that `Ⓚ⓶` and `Ⓚ⓷` are held to | this is `to the fit's own resolution` asserted on the quantity the fit actually reads, which is the clause `Ⓚ⓸`'s argument reasons FROM: that at `Σ → 0` nothing the fit reads moves |
-| | | `A` moves by `0.003` or more in either spectrum | `Ⓚ⓸` FAILED on its own registered criterion, and no validation number is read |
+| **Ⓠ⓸ᵇ** | **the registered criterion itself** | at `Σ = 1e-4` the fit of record, executed on the hierarchy-on and hierarchy-off spectra, must return an `A` in TT and in EE differing by **less than `0.003`** — the same tenth of `r7879`'s `0.03` band that `Ⓠ⓶` and `Ⓠ⓷` are held to | this is `to the fit's own resolution` asserted on the quantity the fit actually reads, which is the clause `Ⓠ⓸`'s argument reasons FROM: that at `Σ → 0` nothing the fit reads moves |
+| | | `A` moves by `0.003` or more in either spectrum | `Ⓠ⓸` FAILED on its own registered criterion, and no validation number is read |
 
 **Both rows can fail and the negatives are reachable:** a `3e-05` difference in the spectra is only
-*presumed* small for the fit until the fit is run on it, and `Ⓚ⓸ᵇ` is the arm that can refuse that
-presumption. `Ⓚ⓸ᵃ` can fail outright if the floor is a residual defect rather than the grid.
+*presumed* small for the fit until the fit is run on it, and `Ⓠ⓸ᵇ` is the arm that can refuse that
+presumption. `Ⓠ⓸ᵃ` can fail outright if the floor is a residual defect rather than the grid.
 
 ⛔ **`limit.py`'s shrink test is NOT deleted and its verdict is NOT overwritten.** It stays in the
 record as run, reporting what it reports, and `RESULT.md` carries both it and these two arms.
 
-### Ⓚ⓸ᵇ, HOW IT IS RUN — DECLARED BEFORE THE LEGS ARE BUILT
+### Ⓠ⓸ᵇ, HOW IT IS RUN — DECLARED BEFORE THE LEGS ARE BUILT
 
-⛔ **AN ERROR IN THE ROW ABOVE, NAMED RATHER THAN QUIETLY REPAIRED.** `Ⓚ⓸ᵇ` says *"at
+⛔ **AN ERROR IN THE ROW ABOVE, NAMED RATHER THAN QUIETLY REPAIRED.** `Ⓠ⓸ᵇ` says *"at
 `Σ = 1e-4` the fit of record ... must return an `A` ... differing by less than `0.003`"*, and the
 fit of record CANNOT BE RUN AT THAT SUM as written: `shift.py` reads a bank whose slots ARE the
 validation sums `0.30` and `0.60`, and it fits `A` against the CAMB spectrum at those sums. There is
 no CAMB target at `1e-4`.
 
-**What makes the arm runnable is that it is a DIFFERENCE AT A FIXED TARGET.** `Ⓚ⓸ᵇ` compares
+**What makes the arm runnable is that it is a DIFFERENCE AT A FIXED TARGET.** `Ⓠ⓸ᵇ` compares
 `A(hierarchy on)` against `A(hierarchy off)` on legs built at the SAME sum and fitted against the
 SAME CAMB spectrum. The target therefore cancels out of the comparison and need not be the right
 target for that sum — what must hold is only that both legs share it, which they do by construction.
@@ -214,7 +214,7 @@ study landing first — **reported as a measured cost, which is what the risk re
 ### THE LABEL IN ROWS Ⓨ AND Ⓛ IS MANY-TO-ONE — REGISTERED BEFORE THE VALIDATION LEGS ARE FITTED
 
 ⛔ **NOTHING BELOW HAS BEEN MEASURED YET.** The validation legs were still running when this was
-written, no fit had been run on them, and `Ⓚ⓸` had just been met. This fixes a reading, not a
+written, no fit had been run on them, and `Ⓠ⓸` had just been met. This fixes a reading, not a
 result.
 
 Rows `Ⓨ` and `Ⓛ` compare this revision's TT against *"the fluid approximation"*. **By the guard on

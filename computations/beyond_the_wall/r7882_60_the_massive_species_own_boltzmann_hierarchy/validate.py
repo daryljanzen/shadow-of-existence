@@ -30,7 +30,11 @@ sys.path.insert(0, _HERE)
 from limitfit import BLOCKS, LANDED_DIR, A_WAS, amps, run_fit, legs, WORK      # noqa: E402
 
 VSUMS = ('0.30', '0.60')         # here the slots ARE the sums: these legs are fitted on target
-BANKS = ('base', 'nq24', 'lmax18')
+#: ⛔ *`R7882_BANKS` narrows the read to banks that EXIST, so the validation verdict can be read
+#: as soon as `base` lands rather than waiting on the convergence banks.  It narrows WHAT IS READ;
+#: it cannot change a criterion.  Unset, all three are read, and a run that reads fewer MARKS
+#: ITSELF PARTIAL in its own record, so a partial read cannot be mistaken for the whole one.*
+BANKS = tuple((os.environ.get('R7882_BANKS') or 'base nq24 lmax18').split())
 VALID = os.path.join(_HERE, 'valid')
 BAND = 0.03                      # r7879's own joint band, taken unchanged
 MOVE = 0.003                     # PREDICTION.md's registered tenth of it, for Ⓠ⓶ and Ⓠ⓷
@@ -92,17 +96,30 @@ def main():
     print('=' * 100)
     conv = {}
     for bank, gate in (('nq24', 'Ⓠ⓶'), ('lmax18', 'Ⓠ⓷')):
+        if bank not in got:
+            print('  %s  NOT READ IN THIS RUN: the %s bank is not built yet, and a gate not'
+                  ' read is NOT a gate met.' % (gate, bank))
+            conv[gate] = {'bank': bank, 'read': False, 'met': None}
+            continue
         moves = dict(('%s|%s' % (b, s),
                       abs(got[bank]['%s|%s' % (b, s)] - got['base']['%s|%s' % (b, s)]))
                      for b in BLOCKS for s in VSUMS)
         worst = max(moves.values())
-        conv[gate] = {'bank': bank, 'moves': moves, 'worst': worst, 'met': bool(worst < MOVE)}
+        conv[gate] = {'bank': bank, 'read': True, 'moves': moves, 'worst': worst,
+                      'met': bool(worst < MOVE)}
         print('  %s  worst move in A over both blocks and both sums: %.3e against %.3f  -> %s'
               % (gate, worst, MOVE, 'MET' if worst < MOVE else '** NOT MET **'))
         for k in sorted(moves):
             print('        %-10s %.3e' % (k, moves[k]))
     rec['convergence'] = conv
-    rec['converged'] = bool(all(conv[g]['met'] for g in conv))
+    rec['partial'] = bool(any(conv[g].get('read') is False for g in conv))
+    rec['banks_read'] = list(BANKS)
+    rec['converged'] = bool(all(conv[g]['met'] is True for g in conv))
+    if rec['partial']:
+        print('\n  ⛔ ** A PARTIAL READ: the banks read were %s.  A convergence gate not read'
+              % ', '.join(BANKS))
+        print('       is NOT a convergence gate met.  The verdict below is the VALIDATION verdict')
+        print('       and the convergence gates are reported when their banks land. **')
     if not rec['converged']:
         print('\n  ⛔ ** THE NUMERICS CAN DECIDE THE VERDICT: at least one convergence gate is not')
         print('       met at this cost, so the verdict below is reported WITH that stated and the')
@@ -162,7 +179,7 @@ def main():
     rec['exactly_one'] = True
     print('\n  ⇒ ** VERDICT %s: %s **' % (fired[0], MEAN[fired[0]]))
     if not rec['converged']:
-        print('  ⇒ ** AND THE NUMERICS ARE NOT SHOWN UNABLE TO DECIDE IT **, per the gate above.')
+        print('  ⇒ ** AND THE CONVERGENCE GATES DO NOT YET STAND BEHIND IT **, per the lines above.')
     print('\n  ⌗ cc66\'s second fit reads these same legs, which are banked whatever this verdict '
           'is;\n    a disagreement beyond its own reproduction tolerance IS the finding and no '
           'limit is read\n    through either fitter.')
