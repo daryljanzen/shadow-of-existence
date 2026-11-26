@@ -112,6 +112,76 @@ and without a number in it, and the numbers are appended when the legs return.
 
 ---
 
+## ⛔ AND ONE THING I WENT LOOKING FOR AND FOUND — THE NEW TERM WAS ON THE WRONG CLOCK
+
+The guard says: *when two descriptions differ, first ask whether the difference survives a change
+of clock.* Applied to this revision's **own** new term rather than to someone else's claim. It did
+not survive, and the term was wrong.
+
+`c_a² = w − ẇ/(3H(1+w))` is clock-independent **when its two factors share a clock**, because
+`dw/dη = H · dw/d ln a` exactly, so the correction is `(dw/d ln a)/(3(1+w))` and no clock appears in
+it. In this instrument they do **not** automatically share one. `Wdot_of` is `d/dη` on the **grid's**
+conformal time, built on `Hgeom`; the perturbation right-hand side reads `Hc = Hl_of(e)` whenever
+`LEAFPERT` is on, which is the default. So what the term computed was
+
+> `w − Jac(e) · (dw/d ln a)/(3(1+w))`, with `Jac = Hgeom/Hleaf`
+
+— the clock-free form **times a factor**, right only where that factor is one.
+
+### Measured on both arms, by executing the instrument's own prelude
+
+| arm | `RAD_IN_RATE` | `Jac` over ±3 FWHM of the visibility | the two rate splines |
+|---|---|---|---|
+| `lcdm` | True | `1.000000` to `1.000000`, worst `\lvert Jac-1 \rvert = 0` | **bit-identical**: equal ordinate arrays, and `0` difference at all `40000` knots and at `200001` points off them |
+| `cr` | False | `0.748581` to `0.959339`, worst `\lvert Jac-1 \rvert = 0.2514` | not identical — `2.145e+03` at worst on the knots |
+
+### ⛔ AND THE TWO READINGS OF `LEAFPERT` AGREE ON THE FIX, WHICH IS WHY THIS IS NOT A FORK
+
+I started to write this up as a fork for `69` and it collapsed under the arithmetic, so it is
+reported as the one answer it has.
+
+- **Read `LEAFPERT` as "a correct Euler equation in the integration variable, with the *rate*
+  substituted where the switch says".** Then every derivative in the equation is `d/dη_grid`, `ẇ` is
+  `Wdot_of` as it stands, and the clock conversion must use the **grid** rate.
+- **Read it as "the sector runs on the leaf clock".** Then `ẇ_leaf = ẇ/Jac`, and the term becomes
+  `w − (ẇ/Jac)/(3·H_leaf·(1+w))`. But `Jac · H_leaf = H_grid` identically, so that **is**
+  `w − ẇ/(3·H_grid·(1+w))` — the same expression as the first reading.
+
+⇒ **Both readings divide by the grid rate. The term divided by the leaf rate, which is neither.**
+It is corrected to `Hc_of(e)` in both right-hand sides.
+
+### What the correction costs, measured rather than asserted
+
+⇒ **Nothing in this revision.** On `lcdm` the two rate splines are built from **bit-identical
+ordinate arrays on an identical abscissa**, so they are the same function — `0` difference at every
+knot and at `200001` points between them. Every leg of this revision ran on `lcdm`, so the
+correction is a **bit-level no-op** on all ten banks and not one number above moves. On the `cr`
+arm it is a correction of up to `25.1 %` of the term.
+
+And that is checked **on the instrument's own output** and not only on the rates, with the exact
+sound speed switched on, against the committed uncorrected file materialised from git and deleted
+after: on `lcdm` every array of both saves is identical element for element; on `cr` they are
+**not**. ⌗ *The second half is the positive control — a correction that changed nothing anywhere
+would be decoration, and the arm is gated against the two files being the same file, which is the
+vacuity the fifth strip class's own class of defect is about.* The leg runner and the comparison are
+the switch arms' own, imported rather than copied, so both files decide identity the same way.
+
+⌗ *And the registration is where the defect is visible in hindsight:* `PREDICTION.md` wrote the
+divisor as *"`H` the conformal rate the perturbation equations already use"* — which is `Hl_of`, and
+which this seat wrote believing it was the same thing as the clock-free form. **It is the same thing
+only where `Jac = 1`.** The registered *formula* is unchanged and the registered *bands* are
+untouched; what moved is an implementation detail the registration described loosely enough to hide
+its own error.
+
+⚠ **AND THE PREVIOUS REVISION'S LANDED `ẇ/(1+w)·θ` EULER TERM IS CORRECT AS IT STANDS** under the
+first reading above, which is the one the instrument's structure implies: that derivative is already
+`d/dη_grid`, which is the clock the ODE is integrated in. It is **not** touched here. The second
+reading would move it, and the second reading is the one that collapses — but it is `69`'s
+convention, so the point is stated rather than acted on, and nothing in this revision depends on
+which way it is settled.
+
+---
+
 ## ③ THE TIGHTENING — ROUTED, NOT EDITED
 
 Both patches are in `FOR_66_FROM_60.md` with the measurement behind them, each verified by

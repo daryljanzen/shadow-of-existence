@@ -1399,7 +1399,17 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
             else:
                 out[:, 4] = -(4 / 3) * tn + DRC * 4 * Php
             if 'E' in NUPARTS:
-                _cs2 = (_w - _wd / (3.0 * Hc * (1.0 + _w))) if NUCA else _w
+                # ⌘⌘ r7878: THE DERIVATIVE'S OWN CLOCK, and not the sector's rate.  `Wdot_of` is
+                #   `d/d eta` on the GRID, so the rate that converts it to `d/d ln a` is the GRID's
+                #   `Hc_of` -- NOT `Hc`, which is the LEAF rate under `LEAFPERT`.  With `Hc` the term
+                #   is `Jac * (dw/dln a)/(3(1+w))` and not the clock-free adiabatic speed at all.
+                #   ⛔ *The first version used `Hc`, which is right only where `Jac == 1`.  Both
+                #   readings of `LEAFPERT` agree on the grid rate: read as an Euler equation in the
+                #   integration variable every derivative is `d/d eta_grid`; read as a sector on the
+                #   leaf clock, `w-dot` becomes `w-dot/Jac` and `Jac * H_leaf == H_grid` identically.
+                #   So it is not a fork, and `clock.py` measures the correction as a BIT-LEVEL no-op
+                #   on `lcdm`, where the two rate splines are built from identical ordinate arrays.*
+                _cs2 = (_w - _wd / (3.0 * float(Hc_of(e)) * (1.0 + _w))) if NUCA else _w
                 out[:, 5] = (kk ** 2 * (_cs2 / (1.0 + _w) * dn - sig) + DRE * kk ** 2 * Ps
                              - Hc * (1.0 - 3.0 * _w) * tn - (_wd / (1.0 + _w)) * tn)
             else:
@@ -2015,7 +2025,17 @@ def evolve_hier(kk, t_eval, e_sw, yF):
             else:
                 out[:, 4] = -(4 / 3) * tn + DRC * 4 * Php
             if 'E' in NUPARTS:
-                _cs2 = (_w - _wd / (3.0 * Hc * (1.0 + _w))) if NUCA else _w
+                # ⌘⌘ r7878: THE DERIVATIVE'S OWN CLOCK, and not the sector's rate.  `Wdot_of` is
+                #   `d/d eta` on the GRID, so the rate that converts it to `d/d ln a` is the GRID's
+                #   `Hc_of` -- NOT `Hc`, which is the LEAF rate under `LEAFPERT`.  With `Hc` the term
+                #   is `Jac * (dw/dln a)/(3(1+w))` and not the clock-free adiabatic speed at all.
+                #   ⛔ *The first version used `Hc`, which is right only where `Jac == 1`.  Both
+                #   readings of `LEAFPERT` agree on the grid rate: read as an Euler equation in the
+                #   integration variable every derivative is `d/d eta_grid`; read as a sector on the
+                #   leaf clock, `w-dot` becomes `w-dot/Jac` and `Jac * H_leaf == H_grid` identically.
+                #   So it is not a fork, and `clock.py` measures the correction as a BIT-LEVEL no-op
+                #   on `lcdm`, where the two rate splines are built from identical ordinate arrays.*
+                _cs2 = (_w - _wd / (3.0 * float(Hc_of(e)) * (1.0 + _w))) if NUCA else _w
                 out[:, 5] = (kk ** 2 * (_cs2 / (1.0 + _w) * dn - sig) + DRE * kk ** 2 * Ps
                              - Hc * (1.0 - 3.0 * _w) * tn - (_wd / (1.0 + _w)) * tn)
             else:
