@@ -15,6 +15,62 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7879+cc66.19 — ⛔ **THE PLAIN SUITE IS RED ON `main` ITSELF, NOT ON THIS BRANCH: `L265` STATION Ⓖ's ATIYAH RECEIPT FAILS TWO PROSE CENSUSES THAT `P12`'s REWORDING BROKE, AND ONE OF THEM TRIPS ON A HOMONYM. A PATCH IS PROPOSED AND NOT PUSHED — IT IS ANOTHER SEAT'S RECEIPT AND ANOTHER SEAT'S PAPER**
+
+Not part of `r7879`. Routed because it reddens the branch's CI and 69 gates on that.
+
+`RECORD (suite, @ ec505e4f67): ran 735, 1 named red; +1 carried, 401 cleared by a green` — the one
+named is
+`receipts/L265_station_G_the_sequence_is_the_object/A1_the_atiyah_sequence_is_not_missing_from_P12_it_is_P12s_object_unnamed.py`,
+gates `⓶` and `⓺`, `734 pass, 1 fail`.
+
+### it is `main`'s, established by running it and not by inferring it
+
+The same two arms fail **identically** on a pristine `origin/main` worktree at `cabd6bd28` and again
+at main's newer tip `60c0e7ad9`. Both arms are censuses over the corpus's *papers* — the shape that
+coupled to this seat's diff at `r7615` while naming none of its files — so that was checked
+separately rather than assumed: this revision's commits add **`0`** lines containing `Jacobi`, and the
+counts are identical on main and here (`P12` `1` and `1`, `CR_cosmology` `11` and `11`). Nothing of
+`r7879`'s moves either census.
+
+### what broke is `P12`'s WORDING and one HOMONYM, not `P12`'s claims
+
+`⓶` tests three verbatim substrings. `action Lie algebroid` still holds; the other two do not:
+
+| the arm requires | `P12` now says |
+|---|---|
+| `nor a section of the bundle that would select a definite flow` | `a section of the bundle that selects a definite flow` — the negative form, listing what prior work lacks, replaced by the positive statement of what the paper supplies |
+| `the acting algebra is the substrate's isometry $\so(5,1)$` | `the substrate's isometry ALGEBRA $\so(5,1)$`, and `the substrate's FINITE isometry algebra $\so(5,1)$` |
+
+`⓺`'s condition is `viol == 0 and _jac_then == 0 and _jac_now['P12'] == 0`. **The load-bearing half is
+untouched** — `0` violations over all `3375` basis triples. What broke is the last clause: `P12`'s
+single `Jacobi` is *"the Euler--Jacobi identities"* for the residues of `1/f`, a statement about
+surface gravities. **That is a different object from the Lie-algebroid Jacobi identity whose absence
+from `P12` is the receipt's finding, and a word census cannot tell the two apart.** The file's own
+comment records the same repair being made once before, at `r3970`.
+
+### the patch, proposed and NOT pushed
+
+No fix exists anywhere to port — main's tip and every remote branch carrying that file hold the same
+blob. So this is routed rather than applied: it is `L265`'s receipt and `P12`'s prose, and widening
+`r7879` into either would be wrong.
+
+- `⓶` — match the claim rather than the superseded spelling: `section of the bundle that selects a
+  definite flow` (or `section selecting a definite flow`, which the rewritten opening uses), and
+  `the acting algebra is the substrate's` together with `\so(5,1)$`, in place of the two exact
+  sentences.
+- `⓺` — exclude the homonym: count only `Jacobi` occurrences in `P12` that are **not** part of
+  `Euler--Jacobi`, so the arm measures the absence of the AXIOM it is about rather than the presence
+  of the word.
+
+Both keep the findings intact and neither touches the computation.
+
+### and the tolerance carry has drained to zero
+
+`RECORD (tolerance, @ ec505e4f67): ran 175, the run passed; +0 carried, 137 cleared by a green, 0
+still red; 0 carried after this push.` The three probe builds completed where the earlier runs were
+truncated. **Nothing was ever flagged across the whole drain** — `332 → 137 → 0`.
+
 ## r7879+cc66.18 — ⛭⛭ **⑮ ALL TWENTY FITS ON THE FIVE BANKED LEGS CONFIRM `60`, WORST `1.039197e-05`, AND THIS TIME EVERY ONE OF THE `40` LEG-PAIR COMPARISONS IS RESOLVABLE — SO UNLIKE `r7877`'s `EE` THESE AGREEMENTS ARE ABOUT THE LEGS. ⛔ NO LEG PASSES YOUR `0.03` JOINT BAR. ⑯ CAMB'S FULL HIERARCHY IS NOT A MEASURABLY DIFFERENT OBJECT FROM ITS FLUID APPROXIMATION: `|ΔA| ≤ 7.993606e-15`, `|Δε| = 0` EVERYWHERE**
 
 Both items answered. Receipt
