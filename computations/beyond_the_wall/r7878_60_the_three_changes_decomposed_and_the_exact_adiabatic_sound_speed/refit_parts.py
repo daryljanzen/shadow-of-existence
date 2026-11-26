@@ -180,28 +180,61 @@ def main():
                 print('     attribution at Sigma %s: summed %+.5f against all-three %+.5f, '
                       'ratio %.4f' % (s, d_sum, d_all, d_sum / d_all))
 
-    # ── ②'s verdict, on the exact sound speed with all three ────────────────────────────────
-    if 'A1' in rec['arms']:
-        a1 = rec['arms']['A1']['fits']
+    # ── ②'s verdict, read on EACH of its two registered arms ────────────────────────────────
+    #: ⌗ *`PREDICTION.md` registers TWO arms for item ② -- all three changes live, and again with
+    #:   whichever subset ① shows is sound -- and ONE outcome table.  So the table is read on each
+    #:   arm separately, which is what "the arms" plus "REGISTERED OUTCOMES" says.  A first version
+    #:   read it on the all-three arm alone and left the subset's verdict unstated.*
+    #: ⚠ ** AND THE BASELINE IS DECLARED, BECAUSE IT IS NOT LIKE-FOR-LIKE ON THE SUBSET. **  The
+    #:   registration fixes "closer to one than `c_s^2 = w` gave" against the LANDED all-three
+    #:   figures, `0.86401` and `0.81466`, and those are what both arms are read against here.  A
+    #:   `c_s^2 = w` leg of the SUBSET was not run, so for the subset the comparison is against a
+    #:   different letter set as well as a different sound speed.  ⇒ *Stated rather than silently
+    #:   assumed away: the registration chose the baseline before the result, so it stands, and the
+    #:   limit of what it measures is named here.*
+    rec['verdict_2_baseline'] = {'TT|0.30': A_WCE['TT|0.30'], 'TT|0.60': A_WCE['TT|0.60'],
+                                 'like_for_like_on_the_subset': False}
+    rec['verdict_2_arms'] = {}
+    for _suf, _what in (('A1', 'all three changes live'),
+                        ('CE', 'the named subset, `CE`')):
+        if _suf not in rec['arms']:
+            continue
+        a1 = rec['arms'][_suf]['fits']
         tt = [a1['TT|0.30']['best_A'], a1['TT|0.60']['best_A']]
         ee = [abs(a1['EE|0.30']['best_A'] - 1.0), abs(a1['EE|0.60']['best_A'] - 1.0)]
         ee_out = any(v > TOL_EE for v in ee)
-        better = all(abs(tt[i] - 1.0) < abs(A_WCE['TT|%s' % s] - 1.0)
-                     for i, s in enumerate(('0.30', '0.60')))
+        closer = [abs(tt[i] - 1.0) < abs(A_WCE['TT|%s' % s] - 1.0)
+                  for i, s in enumerate(('0.30', '0.60'))]
+        better = all(closer)
         inside = all(abs(x - 1.0) <= TOL_TT for x in tt)
-        if inside and not ee_out:
-            v = ('E', 'the repair is the physics; the arm of record may follow')
-        elif inside and ee_out:
-            v = ('F', 'REFUSED BY THE CONSTRAINT, not by TT: EE leaves its band, so no limit is '
-                      'read')
-        elif better:
-            v = ('G', 'a better member of the family, still not the repair')
-        else:
-            v = ('H', 'the family is the wrong direction, and that is the finding')
-        print('\n  ⇒ ② VERDICT (%s): %s' % v)
+        #: the four rows, each on its own registered condition.  ⌗ *Unlike ①'s table these ARE
+        #:   mutually exclusive, and that is checked rather than assumed: `Ⓖ` needs closer at BOTH
+        #:   sums and `Ⓗ` needs no closer at EITHER, which are complements.*
+        _rows = [('E', 'the repair is the physics; the arm of record may follow',
+                  inside and not ee_out),
+                 ('F', 'REFUSED BY THE CONSTRAINT, not by TT: EE leaves its band, so no limit is '
+                       'read', inside and ee_out),
+                 ('G', 'a better member of the family, still not the repair',
+                  (not inside) and better),
+                 ('H', 'the family is the wrong direction, and that is the finding',
+                  (not inside) and not better)]
+        _fired = [(k, t) for k, t, c in _rows if c]
+        v = ('+'.join(k for k, _ in _fired) or '-',
+             ' ;; '.join(t for _, t in _fired) or 'no registered row fires')
+        print('\n  ⇒ ② VERDICT (%s) on %s: %s' % (v[0], _what, v[1]))
+        if len(_fired) != 1:
+            print('     ** %d ROWS FIRE -- reported, not resolved by a precedence invented here **'
+                  % len(_fired))
         print('     TT A = %.5f, %.5f against c_s2 = w\'s %.5f, %.5f ;  EE |A-1| = %.5f, %.5f'
               % (tt[0], tt[1], A_WCE['TT|0.30'], A_WCE['TT|0.60'], ee[0], ee[1]))
-        rec['verdict_2'], rec['verdict_2_text'] = v
+        print('     closer to one than c_s2 = w at 0.30: %s ; at 0.60: %s'
+              % (closer[0], closer[1]))
+        rec['verdict_2_arms'][_suf] = {
+            'verdict': v[0], 'text': v[1], 'closer': [bool(c) for c in closer],
+            'rows': dict((k, bool(c)) for k, _, c in _rows),
+            'tt': tt, 'ee': ee, 'inside_tt_band': bool(inside), 'ee_out_of_band': bool(ee_out)}
+        if _suf == 'A1':
+            rec['verdict_2'], rec['verdict_2_text'] = v
 
     json.dump(rec, io.open(os.path.join(_HERE, 'refit_parts.json'), 'w', encoding='utf-8'),
               indent=1, sort_keys=True, default=float)

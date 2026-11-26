@@ -198,6 +198,99 @@
    },
    "name": "continuity only"
   },
+  "CE": {
+   "fits": {
+    "EE|0.30": {
+     "A_across_band": [
+      1.0055194995985244,
+      1.0095161252576739
+     ],
+     "A_and_eps_trade_off": false,
+     "A_spread": 0.003996625659149489,
+     "best_A": 1.0076871379621462,
+     "best_eps": -0.0016000000000000042,
+     "crosses_one": false,
+     "degeneracy_eps_width_at_10pc": 0.008199999999999999,
+     "eps_allowed": 0.00025633773521949177,
+     "eps_over_allowed": 6.241765375004145,
+     "eps_within_allowed": false,
+     "frac_of_excess": 0.4528727429077432,
+     "n_multipoles": 41,
+     "resid_at_zero_eps": 0.0015738370738971866,
+     "resid_best": 0.0015503330160371988,
+     "resid_raw_A_one_eps_zero": 0.0016051095927914743,
+     "verdict": "AMPLITUDE",
+     "verdict_from_the_coded_proxy": "NOT SEP"
+    },
+    "EE|0.60": {
+     "A_across_band": [
+      1.0299233974508022,
+      1.0373262720741632
+     ],
+     "A_and_eps_trade_off": false,
+     "A_spread": 0.007402874623360978,
+     "best_A": 1.0342429156925064,
+     "best_eps": -0.001350000000000004,
+     "crosses_one": false,
+     "degeneracy_eps_width_at_10pc": 0.01469999999999999,
+     "eps_allowed": 0.0005170088639169235,
+     "eps_over_allowed": 2.6111738003333946,
+     "eps_within_allowed": false,
+     "frac_of_excess": 0.26041218806681715,
+     "n_multipoles": 41,
+     "resid_at_zero_eps": 0.00601574589557516,
+     "resid_best": 0.0059947078193722,
+     "resid_raw_A_one_eps_zero": 0.0065944118733742025,
+     "verdict": "AMPLITUDE",
+     "verdict_from_the_coded_proxy": "NOT SEP"
+    },
+    "TT|0.30": {
+     "A_across_band": [
+      1.0835534288876079,
+      1.0888883397949563
+     ],
+     "A_and_eps_trade_off": false,
+     "A_spread": 0.005334910907348389,
+     "best_A": 1.0875896604806687,
+     "best_eps": 0.001899999999999999,
+     "crosses_one": false,
+     "degeneracy_eps_width_at_10pc": 0.01655000000000001,
+     "eps_allowed": 0.00025633773521949177,
+     "eps_over_allowed": 7.412096382817398,
+     "eps_within_allowed": false,
+     "frac_of_excess": 0.4223080036890338,
+     "n_multipoles": 41,
+     "resid_at_zero_eps": 0.001295156117512555,
+     "resid_best": 0.0012879887251238662,
+     "resid_raw_A_one_eps_zero": 0.0017999588379279561,
+     "verdict": "AMPLITUDE",
+     "verdict_from_the_coded_proxy": "NOT SEP"
+    },
+    "TT|0.60": {
+     "A_across_band": [
+      1.1791097901988976,
+      1.1918772818681351
+     ],
+     "A_and_eps_trade_off": false,
+     "A_spread": 0.012767491669237518,
+     "best_A": 1.1895169477299565,
+     "best_eps": -0.00014999999999999736,
+     "crosses_one": false,
+     "degeneracy_eps_width_at_10pc": 0.028300000000000006,
+     "eps_allowed": 0.0005170088639169235,
+     "eps_over_allowed": 0.2901304222592601,
+     "eps_within_allowed": true,
+     "frac_of_excess": 0.35956695143972506,
+     "n_multipoles": 41,
+     "resid_at_zero_eps": 0.0048049901052912855,
+     "resid_best": 0.004804915569521885,
+     "resid_raw_A_one_eps_zero": 0.00730214654832934,
+     "verdict": "AMPLITUDE",
+     "verdict_from_the_coded_proxy": "NOT SEP"
+    }
+   },
+   "name": "the named subset, exact c_a2"
+  },
   "E": {
    "fits": {
     "EE|0.30": {
@@ -533,5 +626,60 @@
  },
  "verdict_1_text": "the weight change ALONE already overshoots, so the crossing is not the continuity or Euler change's doing ;; the order's expectation is REFUTED: the weight change alone moves A away from one, or takes EE out of band",
  "verdict_2": "G",
+ "verdict_2_arms": {
+  "A1": {
+   "closer": [
+    true,
+    true
+   ],
+   "ee": [
+    0.046496417739609774,
+    0.07225079989025862
+   ],
+   "ee_out_of_band": true,
+   "inside_tt_band": false,
+   "rows": {
+    "E": false,
+    "F": false,
+    "G": true,
+    "H": false
+   },
+   "text": "a better member of the family, still not the repair",
+   "tt": [
+    0.9211487566349987,
+    0.907864791416977
+   ],
+   "verdict": "G"
+  },
+  "CE": {
+   "closer": [
+    true,
+    false
+   ],
+   "ee": [
+    0.007687137962146151,
+    0.03424291569250637
+   ],
+   "ee_out_of_band": false,
+   "inside_tt_band": false,
+   "rows": {
+    "E": false,
+    "F": false,
+    "G": false,
+    "H": true
+   },
+   "text": "the family is the wrong direction, and that is the finding",
+   "tt": [
+    1.0875896604806687,
+    1.1895169477299565
+   ],
+   "verdict": "H"
+  }
+ },
+ "verdict_2_baseline": {
+  "TT|0.30": 0.86401,
+  "TT|0.60": 0.81466,
+  "like_for_like_on_the_subset": false
+ },
  "verdict_2_text": "a better member of the family, still not the repair"
 }
