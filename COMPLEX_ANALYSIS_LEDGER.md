@@ -899,9 +899,10 @@ resolution of $\sqrt\Delta$".* ⌘ **The field names all three the paper does no
 Nariai points are the **branch points of $\sqrt\Delta$** (a double root ⇒ square-root branch), the
 even sign changes of the three radicals form the even-weight subgroup of $(\mathbb Z_2)^3$ — order 4,
 elementary abelian — **$V_4$**, and that is the **monodromy of $\sqrt\Delta$**.
-⌷ **REFERRED, not claimed:** the group ORDERS (24 with $S_3$, 48 with orientation parity, $W(A_3)=T_d$,
-six improper order-4 elements) are the **quadric/group bake's**, already receipted
-(`GROUP_full_order48`, `EMBEDDING_is_Td_equals_WA3`).
+⌷ **REFERRED, not claimed:** the group the frame's holonomy closes (order 24, the cube rotation group $O$,
+all elements proper, the Nariai loops quarter turns because the surface gravity vanishes like a square
+root there; order 48 with the orientation parity) is receipted by the transport itself
+(`P12_the_transported_residue_frame_closes_the_cube_rotation_group`).
 *(receipt `storyboard_receipts/CA_C11_the_residue_pairing_is_residues.py` — **added, runs, all asserts
 pass**)*
 

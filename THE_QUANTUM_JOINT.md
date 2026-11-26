@@ -799,25 +799,16 @@ is how the group was built.*
 
 $$\textbf{The sector's group is not larger than the substrate's — it IS the substrate's, where the corpus had been using a sub-root-system of it.}$$
 
-**✔ CAUTION DISCHARGED (r2333) --- it is the Weyl embedding, not merely an abstract isomorphism.** *The
-element profile settles which $S_4$ in $O(3)$ this is:*
-
-| order | $\det$ | count | in $S_4$ |
-|---|---|---|---|
-| $1$ | $+1$ | $1$ | identity |
-| $2$ | $-1$ | $6$ | **transpositions $\leftrightarrow$ reflections** |
-| $2$ | $+1$ | $3$ | **double-transpositions $\leftrightarrow$ two-fold rotations** --- ***our $V_4$*** |
-| $3$ | $+1$ | $8$ | 3-cycles $\leftrightarrow$ three-fold rotations |
-| $4$ | $-1$ | $6$ | **4-cycles $\leftrightarrow$ $S_4$ ROTOREFLECTIONS** |
-
-***All six order-four elements are IMPROPER***\rcpt{EMBEDDING_is_Td_equals_WA3}. *The chiral octahedral group
---- the cube's rotations --- would carry **six proper four-fold rotations**; ours carries **none**. **That is
-the signature of $T_d$, the full tetrahedral group, which is exactly $W(A_3)$ on the $A_3$ root space.***
-
-$$\textbf{So the family-plus-holonomy group IS } W(A_3) \textbf{ --- the same subgroup of } O(3)\textbf{, in the Weyl embedding.}$$
-
-*And ***our $V_4$ is precisely the three $\det=+1$ order-two elements***, the double-transpositions --- which is
-what $\operatorname{diag}(1,-1,-1)$ and its partners are.*
+**⌗ WHICH $S_4$ IN $O(3)$: the transport decides, and it is the cube's rotations.** *Carrying the residue-normalised frame $e_i/\sqrt{f'(r_i)}$ around each Nariai
+point by analytic continuation instead returns a **quarter turn** (two merging roots exchanged, one sign
+reversed: the surface gravity vanishes like a square root there), and the loops close the rotation group $O$
+of the cube --- order 24, every element proper (1 identity, 9 half-turns, 8 three-fold, 6 four-fold
+rotations)*\rcpt{P12_the_transported_residue_frame_closes_the_cube_rotation_group}. *So the group is abstractly
+$S_4\cong W(A_3)$, in the sign-twisted representation rather than the reflection one; its root-fixing elements
+are exactly $V_4$, and with the inversion it is $O_h=W(B_3)$, order 48, as the chain above says. The row
+"$W(A_3)$, family $+$ holonomy $V_4$" names the abstract group; the realised action has no reflections, the
+bare permutations with the even sign changes closing instead the full tetrahedral group $T_d$, a different
+embedding of the same $S_4$.*
 
 **⌗ FACT 15 — THE FIRST CONTINUOUS HOLONOMY, from the fundamental ellipse (r2335).**
 
