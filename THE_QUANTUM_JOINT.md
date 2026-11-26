@@ -799,16 +799,16 @@ is how the group was built.*
 
 $$\textbf{The sector's group is not larger than the substrate's — it IS the substrate's, where the corpus had been using a sub-root-system of it.}$$
 
-**⌗ WHICH $S_4$ IN $O(3)$: the transport decides, and it is the cube's rotations.** *The table that once stood
-here closed bare root permutations with the even sign changes, an assumed generating set, and read off the
-full tetrahedral group $T_d$. Carrying the residue-normalised frame $e_i/\sqrt{f'(r_i)}$ around each Nariai
+**⌗ WHICH $S_4$ IN $O(3)$: the transport decides, and it is the cube's rotations.** *Carrying the residue-normalised frame $e_i/\sqrt{f'(r_i)}$ around each Nariai
 point by analytic continuation instead returns a **quarter turn** (two merging roots exchanged, one sign
 reversed: the surface gravity vanishes like a square root there), and the loops close the rotation group $O$
 of the cube --- order 24, every element proper (1 identity, 9 half-turns, 8 three-fold, 6 four-fold
 rotations)*\rcpt{P12_the_transported_residue_frame_closes_the_cube_rotation_group}. *So the group is abstractly
 $S_4\cong W(A_3)$, in the sign-twisted representation rather than the reflection one; its root-fixing elements
 are exactly $V_4$, and with the inversion it is $O_h=W(B_3)$, order 48, as the chain above says. The row
-"$W(A_3)$, family $+$ holonomy $V_4$" names the abstract group; the realised action has no reflections.*
+"$W(A_3)$, family $+$ holonomy $V_4$" names the abstract group; the realised action has no reflections, the
+bare permutations with the even sign changes closing instead the full tetrahedral group $T_d$, a different
+embedding of the same $S_4$.*
 
 **⌗ FACT 15 — THE FIRST CONTINUOUS HOLONOMY, from the fundamental ellipse (r2335).**
 
