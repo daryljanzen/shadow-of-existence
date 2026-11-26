@@ -98,3 +98,13 @@ corpus/pin_adjudication_board.tsv
 #   than the summary line, which counts what was asked for and not what was written.
 /tD/
 /tE/
+
+# ⛭ r7878 (60): the refit's SYMLINK FARMS and the generator's completion marker.  `refit_parts.py`
+#   builds `_legs/<arm>/` as a directory of ABSOLUTE symlinks into `parts/`, because the fit of
+#   record reads a bank directory and the components live as one file per leg; and `gen_parts.sh`
+#   drops `parts/done.txt` so a waiting process can tell completion from a killed run.
+#   ⛔ *Both are derived and neither belongs in the tree -- an absolute symlink committed here
+#   resolves to nothing on any other machine, which is worse than a missing file because it reads
+#   as present.*  Both are rebuilt by re-running the two scripts.
+computations/beyond_the_wall/*/_legs/
+computations/beyond_the_wall/*/parts/done.txt

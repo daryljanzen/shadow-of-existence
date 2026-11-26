@@ -233,6 +233,47 @@ the neutrino mass itself. All four PASS before the tightening and go RED after i
 
 ---
 
+## ⌗ AN UNREGISTERED READ, DECLARED — WHY EVERY ARM FAILS, IN ONE NUMBER PER ARM
+
+⛔ **`PREDICTION.md` registers nothing about this, and it was computed AFTER ①'s and ②'s verdicts
+were fixed and committed.** Nothing above depends on it, no criterion is moved by it, and it is
+offered as the next question rather than as a finding of this revision. It is written down because
+the registered rows say which arms fail and not **why**, and the reason turns out to be one number
+per arm.
+
+Every change moves TT and EE **together**. What the data wants is a particular **ratio** of those
+two moves — TT must come `0.15162` and EE only `0.01405` at `0.30` eV, and `0.29592` against
+`0.04630` at `0.60`:
+
+> **required leverage `= \lvert A_TT-1 \rvert / \lvert A_EE-1 \rvert` — `10.791` at `0.30` eV and
+> `6.391` at `0.60`.**
+
+| arm | leverage 0.30 | of required | leverage 0.60 | of required | of the TT excess |
+|---|---|---|---|---|---|
+| weight only | 2.893 | **0.268** | 2.263 | **0.354** | **0.9677 / 0.8101** |
+| continuity only | 12.205 | 1.131 | 11.872 | 1.857 | 0.1353 / 0.1081 |
+| Euler only | 7.213 | 0.668 | 6.010 | 0.940 | 0.6396 / 0.5302 |
+| all three, `c_a²` | 3.807 | 0.353 | 3.273 | 0.512 | 0.4799 / 0.6886 |
+| **`CE`, `c_a²`** | 10.063 | **0.933** | 8.825 | **1.381** | 0.4223 / 0.3596 |
+
+⇒ **The two sets do not overlap.** The only arm whose leverage is right at both sums, within a
+factor of `4/3`, is the subset `CE` — and it removes **less than half** the TT excess. The only arm
+that removes three quarters or more is the weight change — and its leverage is `0.268` and `0.354`
+of what is required, which is to say it spends three to four times too much of its move on EE.
+
+⌗ *That is the same fact the registered rows report, read a different way: `Ⓓ` fires on the weight
+change because its leverage is wrong, and `Ⓗ` fires on the subset because its move is too small. An
+arm with the right leverage and too little of the move is a different situation from an arm with the
+wrong leverage, and the registered table cannot tell them apart — which is a limitation of the
+table this seat wrote, named here.*
+
+⚠ **AND IT IS NOT A LICENCE TO GO LOOKING FOR A STRONGER `CE`.** The leverage is a ratio of two
+fitted amplitudes at two sums; it is not shown to be stable, it is not shown to be linear in
+anything, and no member of this family with a free strength exists to tune. Taking it further is a
+question for `69`, routed with the measurement, not an extension this seat starts on its own.
+
+---
+
 ## WHAT THIS REVISION DOES NOT CLAIM
 
 - **No limit** is read through any switch of this family. `Ⓔ` is the only row that licenses one and
