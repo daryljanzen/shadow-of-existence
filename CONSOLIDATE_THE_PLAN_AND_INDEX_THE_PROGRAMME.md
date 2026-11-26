@@ -4816,6 +4816,7 @@ neither is closed until the other is.**
 ---
 
 # 12 · LOG
+- **26 Nov 2026** — **the hard publication block (r1564) RETIRED by Daryl.** *"I've moved on from wanting to work in isolation and now want to work towards publishing the work, getting it out there."* `THE_PLAN`'s block section is replaced by THE PUBLICATION PHASE, and the standalone papers lane opens at its head: a survey of the corpus against its literature from P1, then the candidates written to submission state. No paper is under review (GRG declined P1, ApJL declined P4); arXiv will not post for him, so submissions go directly to journals and arXiv-gated venues are out.
 - **r1598** — **PHASE 6, first check SETTLED.** A2.9 and A2.10 §II.3 are **not** the same result — two readings
   of one law, each explaining the other's coincidence. **K = 48M²/r⁶ = 64/(27s⁴), free of M and α** — two of
   §II.3's three "jobs" in one expression. Placed in both plan items and the **geometry ledger**; corpus
