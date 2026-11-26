@@ -51,7 +51,7 @@ the substrate; **P9** its range, surjective onto the symmetry-reducible sector; 
 
 **Time and the constraint algebra.** **P10** treats the canonical problem of time as a category error, with an
 empirically forced cosmic time. **P12** identifies GR's constraint algebra as the symmetric-space structure of
-the substrate — and the problem of time's "wrong sign" as the substrate's coset signature.
+the substrate — the structure function as the substrate's coset metric, over a base of whole four-geometries.
 
 **Matter.** **P13** maps four converging routes to a geometric boundary on what the substrate's isometry does
 and does not force: colour is not a continuous isometry of the substrate, and the substrate's two real forms stand
@@ -141,7 +141,7 @@ held at**, so it repays reading early even by those who came for the geometry.
 **If you work in canonical general relativity — the esoteric door: P12, and P10 beside it.** P12 is entered
 directly by anyone who knows the hypersurface-deformation algebra: it establishes that the Dirac algebra **is
 not a Lie algebra but a Lie algebroid**, that the symmetric-space grading is that algebra *term for term*, and
-that the **problem of time's "wrong sign" is the substrate's coset signature.** P10 treats the canonical problem
+that the **structure function is the substrate's coset metric**, over a base of whole four-geometries on which a finite symmetry acts. P10 treats the canonical problem
 of time as a category error, with an empirically forced cosmic time.
 
 **If you come for the Standard Model: P13, then P14.** P13 is a synthesis as much as a boundary — **four
@@ -163,12 +163,12 @@ holds the machinery — and it deliberately **does not open with P1 and P4.** Th
 are also the two that put a reader's guard up before there is anything to weigh them against. **They come at
 the end, when the structure they force has already been seen.***
 
-**① `P12` — the constraint algebra is a Lie algebroid, and the "wrong sign" is a coset signature.**
+**① `P12` — the constraint algebra is a Lie algebroid, and its structure function is a coset metric.**
 *Start here because it is checkable in an afternoon by anyone who knows hypersurface deformations, and because
 it costs nothing to accept.* The Dirac algebra's structure function makes it **not a Lie algebra**; read as a
 **Lie algebroid** the anchor is the ADM data as functions of the cut — **energy IS the Hamiltonian constraint,
 the bend of the leaf**. And the symmetric-space grading $\mathfrak{so}(5,1)=\mathfrak h\oplus\mathfrak m$ **is
-that algebra term for term**, with the notorious $\pm q^{ab}$ sign the substrate's **Lorentzian coset metric**.
+that algebra term for term**, with the structure function the substrate's **Lorentzian coset metric** — the shape general relativity shows one level down, on de Sitter spacetime, here at the level of the cut inside the substrate.
 *A recognition, not an addition — that is the paper's own weight-marking.*
 
 **② `P10`, immediately beside it — what the algebroid licenses about time.**

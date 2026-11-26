@@ -20,9 +20,9 @@ WHAT THE FIELD SUPPLIES.
       even-weight subgroup of (Z_2)^3 -- order 4, elementary abelian -- the Klein four-group V_4.
 
 WHAT IS REFERRED, NOT CLAIMED.  P12's group ORDERS -- adjoining V_4 to the deck S_3 closes order 24,
-  with orientation parity order 48, the Weyl embedding W(A_3)=T_d with all six order-4 elements
-  improper -- are QUADRIC / group-theory results, already receipted (GROUP_full_order48,
-  EMBEDDING_is_Td_equals_WA3).  ** REFERRED to the quadric bake; this probe claims only the two
+  the frame's holonomy the cube rotation group O, all elements proper, and order 48 with the orientation
+  parity -- are receipted by the transport itself
+  (P12_the_transported_residue_frame_closes_the_cube_rotation_group).  ** REFERRED to the quadric bake; this probe claims only the two
   COMPLEX-ANALYSIS facts: residue = 1/f', and the V_4 holonomy = sqrt(Delta) branch monodromy. **
 
 VERDICTS ARE ASSERTS.
@@ -67,9 +67,8 @@ print("  ** VERDICT 2: P12's 'V_4 of even sign changes' is the monodromy group o
 print("     about the Nariai (double-root) branch points. **")
 
 # (3) referral, made explicit and asserted so it is on the record
-referred = {"order 24 (V_4 x S_3)": "GROUP_full_order48",
-            "order 48 (with orientation parity)": "GROUP_full_order48",
-            "W(A_3)=T_d, six improper order-4 elements": "EMBEDDING_is_Td_equals_WA3"}
+referred = {"order 24, the cube rotation group O": "P12_the_transported_residue_frame_closes_the_cube_rotation_group",
+            "order 48 (with orientation parity)": "P12_the_transported_residue_frame_closes_the_cube_rotation_group"}
 assert all(referred.values()), "each group-order claim referred to an existing receipt"
 print("\n  ** VERDICT 3: the group ORDERS are REFERRED to the quadric bake (already receipted):")
 for k, v in referred.items():

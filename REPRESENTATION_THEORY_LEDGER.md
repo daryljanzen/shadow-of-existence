@@ -406,7 +406,7 @@ $2(n-1)(n+3)$.* **A genuine rep-theory computation in the canonical-time paper, 
 | `P09` | **CHECKED-NEGATIVE** | "Weyl" = Weyl tensor (Petrov); "irreducible"/"decomposition" = English/tensor |
 | `P10` | **WORKED** | Peter–Weyl on $L^2(SU(2))$, SU(2) irrep dims $1,3,5$, TT $=2/5$ — *reach addition* |
 | `P11` | **WORKED** | $A_2$ root system; $\mathrm{Aut}(A_2)=S_3\times\mathbb Z_2\cong D_6$; Weyl $S_3$ = deck |
-| `P12` | **WORKED** | roots = zero-sum $A_2$ weights; $R=\gamma^5$ spinor; $W(A_3)$ order 48; $A_3=$ so(6,ℂ) root system (`GROUP_full_order48`, `EMBEDDING_is_Td_equals_WA3`) |
+| `P12` | **WORKED** | roots = zero-sum $A_2$ weights; $R=\gamma^5$ spinor; residue-frame holonomy the cube rotation group $O\cong S_4\cong W(A_3)$ (sign-twisted, not the reflection representation), order 48 $O_h=W(B_3)$ with the inversion; $A_3=$ so(6,ℂ) root system (`P12_the_transported_residue_frame_closes_the_cube_rotation_group`) |
 | `P13` | **WORKED** | su(3) smallest faithful real rep $=6$; rank 4 vs SO(6) rank 3; su(3)-shadow $S_3$ triplet; AH index in the rep ring (`P13_cascade_rank`, `P13_conjugation_parity`) |
 | `P14` | **WORKED** | full generation = 5 irreps = 15(16); triality test; SU(3) from monodromies; $D_6$ irrep dims $1,1,2$ (`P14_the_count_specified`, `B24_the_triality_test_run`, `P14_two_rank_threes`) |
 | `P15` | **WORKED** (light) | "sixteenth Weyl fermion of each generation"; $S_3$ relating families |

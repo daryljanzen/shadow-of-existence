@@ -1051,21 +1051,26 @@
 \emph{Computes:} runs clean; registered from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P12\_algebroid\_paper/E1\_static\_gauge.py}
-\item[\rcptlabel{EMBEDDING_is_Td_equals_WA3}{P12R4}\textbf{P12R4}\quad\texttt{EMBEDDING\_is\_Td\_equals\_WA3}]\hfill\textsf{[OK]}\\
-\textit{sec:weyl-a3} \ (Which embedding of S\_4 in O(3) is our group? Distinguish by invariants: - rotational cube group (chiral octahedral, O): all det +1, contains 6 four-fold rotations (order 4, det +1) - full tetrahedral group T\_d: det +-1, order-4 elements are IMPROPER (S\_4 rotoreflections, det -1) W(A\_3) acting on the A\_3 root space is T\_d. W(B\_3) is the FULL octahedral group O\_h, order 48.). 
-\emph{Computes:} runs clean; registered from its own docstring and a live run
- \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
-\ \emph{Run:} \texttt{python3 receipts/P12\_algebroid\_paper/EMBEDDING\_is\_Td\_equals\_WA3.py}
 \item[\rcptlabel{EUCNULL_continuous_null_definition}{P7R12}\textbf{P7R12}\quad\texttt{EUCNULL\_continuous\_null\_definition}]\hfill\textsf{[OK]}\\
 \textit{sec:lift-initial-rate} \ (EUCNULL-2 --- f=0 and f=2 are ONE condition, and the null cone is defined continuously across the whole lap. (r2158; supersedes the placement-only reading of r2157.) THE CLAIM (Daryl, r2158): the Euclidean null is where the null bundle INSIDE the lift obtains its definition, so "null" is continuously well-defined across the entire excursion -- the seams doing it on the real branches and the Euclidean null on the imagin...). 
 \emph{Computes:} runs clean; registered from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P07\_CR\_framework/EUCNULL\_continuous\_null\_definition.py}
-\item[\rcptlabel{GROUP_full_order48}{P12R5}\textbf{P12R5}\quad\texttt{GROUP\_full\_order48}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{GROUP_full_order48}{P12R4}\textbf{P12R4}\quad\texttt{GROUP\_full\_order48}]\hfill\textsf{[OK]}\\
 \textit{sec:weyl-a3} \ (The corpus records the sector's discrete group as D\_6 = S\_3 x Z\_2 (family x chirality), order 12, where the Z\_2 is the GLOBAL chirality flip. The holonomy adds V\_4 = PAIRWISE flips. Is the global flip in V\_4? What do they generate together?). 
 \emph{Computes:} runs clean; registered from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P12\_algebroid\_paper/GROUP\_full\_order48.py}
+\item[\rcptlabel{P12_the_transported_residue_frame_closes_the_cube_rotation_group}{P12R5}\textbf{P12R5}\quad\texttt{P12\_the\_transported\_residue\_frame\_closes\_the\_cube\_rotation\_group}]\hfill\textsf{[OK]}\\
+\textit{sec:weyl-a3} \ (THE RESIDUE FRAME'S HOLONOMY IS THE CUBE ROTATION GROUP: the frame e\_i/sqrt(f'(r\_i)) of the horizon cubic's residue pairing, carried by analytic continuation around the two Nariai points, returns as a quarter turn (two merging roots exchanged, one sign reversed); the loops generate a group of order 24, every element proper (1 identity, 9 half-turns, 8 three-fold, 6 four-fold), the rotation group O of the cube, abstractly S\_4 = W(A\_3) in the sign-twisted representation; its root-fixing elements are the Klein four-group of even sign changes; with the central inversion, order 48, all signed permutations, containing D\_6 and O as proper subgroups; the Euler-Jacobi identities give the vanishing sum of signed inverse surface gravities over the three horizons). 
+\emph{Computes:} numerical analytic continuation of roots and square roots around each Nariai point, group closure and element profile, robust to base point and loop radius; control: bare permutations plus even sign changes close T\_d with six improper order-four elements, so the test separates the embeddings
+ \emph{Bound:} the frame is the residue-normalised one; loops in the complex mass plane at fixed alpha
+\ \emph{Run:} \texttt{python3 receipts/P12\_algebroid\_paper/P12\_the\_transported\_residue\_frame\_closes\_the\_cube\_rotation\_group.py}
+\item[\rcptlabel{P12_the_level_below_is_a_symmetric_pair_with_a_definite_coset_metric}{P12R6}\textbf{P12R6}\quad\texttt{P12\_the\_level\_below\_is\_a\_symmetric\_pair\_with\_a\_definite\_coset\_metric}]\hfill\textsf{[OK]}\\
+\textit{sec:bracket} \ (THE LEVEL BELOW IS A SYMMETRIC PAIR WITH A DEFINITE COSET METRIC: on de Sitter spacetime the Killing data split so(4,1) = so(4) + four normal boosts, [m,m] in so(4), a symmetric pair, and the Killing form on the boosts is definite (4,0); the substrate's so(5,1) = so(4,1) + m has Killing form on m of signature (1,4), so the indefinite coset metric belongs to the substrate's level). 
+\emph{Computes:} explicit matrices: direct sum and dimensions, all three bracket inclusions, Killing form on the coset computed from the adjoint action
+ \emph{Bound:} Killing data at one slice; the comparison is of gradings
+\ \emph{Run:} \texttt{python3 receipts/P12\_algebroid\_paper/P12\_the\_level\_below\_is\_a\_symmetric\_pair\_with\_a\_definite\_coset\_metric.py}
 \item[\rcptlabel{H0_acoustic_angle_and_seam}{P15R56}\textbf{P15R56}\quad\texttt{H0\_acoustic\_angle\_and\_seam}]\hfill\textsf{[OK]}\\
 \textit{sec:refit-bound} \ (H0 --- THE ACOUSTIC SCALE AT THE DIRECTLY MEASURED H0. The calculation I have been running backwards. CORPUS CLAIM (P7, P15): 'There is no second Hubble rate to reconcile: THE DIRECTLY MEASURED H0 IS THE GEOMETRY READ AT THE PRESENT EPOCH, while the lower value inferred from the microwave background rests on a radiation-governed sound horizon the construction does not share...). 
 \emph{Computes:} runs clean; registered from its own docstring and a live run
@@ -1116,12 +1121,12 @@
 \emph{Computes:} runs clean; registered from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P09\_range\_paper/K7\_range\_is\_essential\_image.py}
-\item[\rcptlabel{K8_orbit_type_filtration}{P12R6}\textbf{P12R6}\quad\texttt{K8\_orbit\_type\_filtration}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{K8_orbit_type_filtration}{P12R7}\textbf{P12R7}\quad\texttt{K8\_orbit\_type\_filtration}]\hfill\textsf{[OK]}\\
 \textit{sec:strata} \ (K8 --- THE STRATIFIED GROUPOID'S INVARIANTS. CONFIRMATION 4: the object is the SO(5,1)-action on the space of cuts C, stratified by orbit type. The standard invariants of such an action are: the isotropy at each stratum, the orbit dimension (orbit-stabiliser), and which stratum is PRINCIPAL (smallest isotropy, open and dense). P12 supplies isotropies; the rest follows and is computed here.). 
 \emph{Computes:} runs clean; registered from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P12\_algebroid\_paper/K8\_orbit\_type\_filtration.py}
-\item[\rcptlabel{K8b_dim_seven_empty}{P12R7}\textbf{P12R7}\quad\texttt{K8b\_dim\_seven\_empty}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{K8b_dim_seven_empty}{P12R8}\textbf{P12R8}\quad\texttt{K8b\_dim\_seven\_empty}]\hfill\textsf{[OK]}\\
 \textit{sec:strata} \ (K8b --- SETTLING THE DIMENSION-SEVEN STRATUM, rather than leaving it dangling. P9's necessary bound is the constraint, and it is SHARPER than 'a subgroup of so(5,1)': 'a geometry swept by H <= SO(4,1) INHERITS H' -- THE SWEEP SUBGROUP LIES IN SO(4,1), not in the whole of SO(5,1). dim so(4,1) = 10.). 
 \emph{Computes:} runs clean; registered from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
@@ -1446,7 +1451,7 @@
 \emph{Computes:} runs clean; ten verdicts
  \emph{Bound:} COMPUTES: the dropped term's weight r\textasciicircum{}3/2M alpha\textasciicircum{}2 is evaluated at the illustrative gauge 2M = 0.1 alpha, giving 1e-5 at r/alpha=0.01 and 0.27 at 0.3 --- an illustration of the ratio's growth, not a physical parameter of any member
 \ \emph{Run:} \texttt{python3 receipts/P08\_slicing\_operator/I12\_the\_marginal\_member\_is\_the\_only\_non\_degenerate\_one\_that\_integrates.py}
-\item[\rcptlabel{I13_the_stratification_is_a_ledger_of_first_integrals}{P12R8}\textbf{P12R8}\quad\texttt{I13\_the\_stratification\_is\_a\_ledger\_of\_first\_integrals}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{I13_the_stratification_is_a_ledger_of_first_integrals}{P12R9}\textbf{P12R9}\quad\texttt{I13\_the\_stratification\_is\_a\_ledger\_of\_first\_integrals}]\hfill\textsf{[OK]}\\
 \textit{sec:strata} \ (I13 --- THE STRATIFICATION IS A LEDGER OF FIRST INTEGRALS. Integrable-systems field bake, probe I13. A Killing vector gives one linear first integral and the algebra's Casimir a quadratic one built from those same vectors. Against the four integrals in involution a four-dimensional geodesic flow needs: dS\_5 is maximally superintegrable (15 >= 2*5-1); Type D SdS supplies norm, E, L\textasciicircum{}2, L\_z and is integrable ON KILLING VECTORS ALONE; Kerr-de Sitter supplies norm, E, L\_z and is SHORT BY EXACTLY ONE, which is what a single Killing tensor supplies; the wall has the norm alone. Asserts the non-complementarity explicitly so it cannot be inferred: 15->4 in integrals against 0->1 in moduli.). 
 \emph{Computes:} runs clean; twelve verdicts plus an adversarial deficit test
  \emph{Bound:} derived here by dimension count against stated bounds; no parameter pinned
@@ -1856,7 +1861,7 @@
 \emph{Computes:} the involution comparison is exact matrix algebra; the root-sign counts computed at a sub-critical mass in every D
  \emph{Bound:} THE RETRACTION IS THE POINT: a narrowly-scoped result was chained with two others into an absolute foreclosure of an open search -- the cyanide face, and the second time that drill-site has been imploded and restored. The Nariai/three-quark lead and R3 both stand OPEN
 \ \emph{Run:} \texttt{python3 receipts/P03\_SdS\_slicing/P03\_step3\_refused.py}
-\item[\rcptlabel{P12_polar_dimension}{P12R9}\textbf{P12R9}\quad\texttt{P12\_polar\_dimension}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{P12_polar_dimension}{P12R10}\textbf{P12R10}\quad\texttt{P12\_polar\_dimension}]\hfill\textsf{[OK]}\\
 \textit{sec:substrate} \ (what fixes the substrate's dimension and what does not: least-arbitrariness is SILENT on D (dS\_D is moduli-free for every D, so it selects the manifold at fixed dimension); the generation argument ('slicing dS\_4 only re-coordinatizes') is a LOWER BOUND D>=5, not an equality; what pins D=5 is polarity + observed 4D spacetime -- the polar of a spacelike substrate point has signature (1,D-1), so the cut is dS\_(D-1) in every D, computed here for D=4..8). 
 \emph{Computes:} signature computation exact in every D tested; reproduces p0's (1,4)/SO(4,1)/dS\_4 at D=5
  \emph{Bound:} the negatives (least-arbitrariness silent; multi-step descent not excluded) are logical, stated not computed; 4D spacetime is empirical and nowhere derived in the corpus
@@ -1971,7 +1976,7 @@
 \emph{Computes:} asserts the three defining passages; I\textasciicircum{}3-27J\textasciicircum{}2=0 identically for SdS; Nariai at Lambda M\textasciicircum{}2=1/9 (13)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- discharges L-204 probe G3
 \ \emph{Run:} \texttt{python3 receipts/RP\_34\_gr/G3\_the\_axis\_names\_two\_orderings.py}
-\item[\rcptlabel{P12_the_separator_must_carry_the_mass}{P12R10}\textbf{P12R10}\quad\texttt{P12\_the\_separator\_must\_carry\_the\_mass}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{P12_the_separator_must_carry_the_mass}{P12R11}\textbf{P12R11}\quad\texttt{P12\_the\_separator\_must\_carry\_the\_mass}]\hfill\textsf{[OK]}\\
 \textit{sec:strata} \ (the stratification separator must carry the mass: SdS is Einstein, so R\_ab R\textasciicircum{}ab cannot). 
 \emph{Computes:} derives R\_ab R\textasciicircum{}ab = 36/alpha\textasciicircum{}4 and Kretschmann = 48M\textasciicircum{}2/r\textasciicircum{}6+24/alpha\textasciicircum{}4 from the metric; 8 checks with a control
  \emph{Bound:} NOT-A-PAPER-CLAIM --- the paper now cites it; found by node 23, verified here
@@ -2751,12 +2756,12 @@
 \emph{Computes:} asserts the identical-in-content sentence, the within-state clause, the generation-wall withdrawal and the count-and-chirality clause verbatim, and that no register carries any of them (9 checks)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- supplies a rows reason; the physical identification stays unclaimed
 \ \emph{Run:} \texttt{python3 receipts/L221\_the\_bridge/B14\_identical\_in\_content\_is\_po2s\_reason.py}
-\item[\rcptlabel{A1_the_triple_is_an_algebra_fact}{P12R11}\textbf{P12R11}\quad\texttt{A1\_the\_triple\_is\_an\_algebra\_fact}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{A1_the_triple_is_an_algebra_fact}{P12R12}\textbf{P12R12}\quad\texttt{A1\_the\_triple\_is\_an\_algebra\_fact}]\hfill\textsf{[OK]}\\
 \textit{sec:isotropy} \ (FOR\_54 item 26 discharged: \{6,7,10\} are so(5,1)s SYMMETRIC-PAIR dimensions (so(5) and so(4,1) at ten, so(1,1)+so(4) at seven, so(2,1)+so(3) at six) --- an algebra fact P12 owns, while P9s stratum isotropies are \{10,6,4\}). 
 \emph{Computes:} asserts both papers passages verbatim, computes the symmetric-decomposition dimensions and the stratum dimensions, and confirms 6,7,10 appears nowhere in P9 (9 checks)
  \emph{Bound:} PAPER-CLAIM --- P12 now states the decompositions in its own voice; the citation no longer carries the fact
 \ \emph{Run:} \texttt{python3 receipts/P12\_algebroid/A1\_the\_triple\_is\_an\_algebra\_fact.py}
-\item[\rcptlabel{A2_item9_is_already_in_force}{P12R12}\textbf{P12R12}\quad\texttt{A2\_item9\_is\_already\_in\_force}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{A2_item9_is_already_in_force}{P12R13}\textbf{P12R13}\quad\texttt{A2\_item9\_is\_already\_in\_force}]\hfill\textsf{[OK]}\\
 \textit{---} \ (FOR\_54 item 9 discharged by OBSERVATION: the receipt convention was already enforced by three gates, and check\_receipt\_asserts was built at r2384 --- fifty-eight revisions BEFORE the convention was offered at r2442). 
 \emph{Computes:} asserts the items own wording, the three gates enforcement clauses, and both revision numbers (7 checks)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- discharges a routed item; one half stays practice-enforced rather than gated
@@ -2966,12 +2971,12 @@
 \emph{Computes:} computes H\_c and the divergence on the closed dust cycloid, asserts P7s purely-imaginary, climbs-from-the-turnaround and carried-continuously clauses verbatim, and evaluates the imaginary continuation (7 checks)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- bears on whether to build a turnaround-regular variable; the derivation is untouched
 \ \emph{Run:} \texttt{python3 receipts/L221\_the\_bridge/B23\_the\_corpus\_crosses\_by\_rotation.py}
-\item[\rcptlabel{A4_the_ledger_seven_swept}{P12R13}\textbf{P12R13}\quad\texttt{A4\_the\_ledger\_seven\_swept}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{A4_the_ledger_seven_swept}{P12R14}\textbf{P12R14}\quad\texttt{A4\_the\_ledger\_seven\_swept}]\hfill\textsf{[OK]}\\
 \textit{corpus/open\_ledger.txt} \ (the LEDGER 7 swept AS A GROUP for the first time: three duplicate PO rows verbatim, three are the papers OWN weight-marks and not work, ONE is a real unrun item --- the bucket is 1, not 7). 
 \emph{Computes:} asserts each duplicate against its PO row and each weight-mark against the papers own self-limiting words, and confirms the triality test appears in no PO row (8 checks)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- removing a duplicate removes a COUNT, not a problem
 \ \emph{Run:} \texttt{python3 receipts/P12\_algebroid/A4\_the\_ledger\_seven\_swept.py}
-\item[\rcptlabel{A5_the_dark_halves_audited}{P12R14}\textbf{P12R14}\quad\texttt{A5\_the\_dark\_halves\_audited}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{A5_the_dark_halves_audited}{P12R15}\textbf{P12R15}\quad\texttt{A5\_the\_dark\_halves\_audited}]\hfill\textsf{[OK]}\\
 \textit{PROTECTED\_OPEN \ensuremath{\cdot} BOARD} \ (the last unaudited bucket: BOTH live dark halves are PO rows under their register names (PO-5 states "register alias: L-221"; the board heads the vein "L-165 \ensuremath{\cdot} PO-6"), so DARK contributes 0 distinct problems). 
 \emph{Computes:} asserts the alias clause and the vein header verbatim, checks PROTECTED\_OPEN never mentions L-165, and matches both subjects to their PO rows (6 checks)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- removes a COUNT, not a vein; PO-5 and PO-6 unchanged
@@ -2991,7 +2996,7 @@
 \emph{Computes:} asserts P7s statement of both halves and P15s R-values verbatim, computes the 1+3R displacement, and pins the whole-difference-carried-by-H clause (7 checks)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- C5b is the papers receipt for R; the 1+3R form is textbook, quoted not proved
 \ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C30\_the\_odd\_even\_half\_is\_shared.py}
-\item[\rcptlabel{A7_the_frontier_has_two_kinds}{P12R15}\textbf{P12R15}\quad\texttt{A7\_the\_frontier\_has\_two\_kinds}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{A7_the_frontier_has_two_kinds}{P12R16}\textbf{P12R16}\quad\texttt{A7\_the\_frontier\_has\_two\_kinds}]\hfill\textsf{[OK]}\\
 \textit{sec:envelope-consequence} \ (THE FRONTIER SORTS INTO TWO KINDS on P15s own H(a) rule: FIVE rows ask whether the theory is DEFINED (PO-2/4/5/6/11) and TWO ask what it PREDICTS (PO-7/10) --- and they fail differently, so size does not order them). 
 \emph{Computes:} asserts the H(a) clause, checks the classification covers exactly the open rows, and pins each rows object against its kind (7 checks)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- the classification is derived here; no paper states it
@@ -3406,12 +3411,12 @@
 \emph{Computes:} resolves the routed item against the papers' own text and the receipt corpus, separating the result that IS banked from the working NAME that is not
  \emph{Bound:} NOT-A-PAPER-CLAIM --- routed-item resolution. **Registered, not written, at c54.225: the row is the repair; the content is r2678's and is unaltered.**
 \ \emph{Run:} \texttt{python3 receipts/P03\_SdS\_slicing/A6\_item\_58\_resolves\_split.py}
-\item[\rcptlabel{A3_the_convergence_audit}{P12R16}\textbf{P12R16}\quad\texttt{A3\_the\_convergence\_audit}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{A3_the_convergence_audit}{P12R17}\textbf{P12R17}\quad\texttt{A3\_the\_convergence\_audit}]\hfill\textsf{[OK]}\\
 \textit{the convergence question} \ (THE CONVERGENCE AUDIT --- Daryl r2685: "has the unknown space actually narrowed? Is the remaining work finite?" **The count says no and the count is right about what it counts**: across r2615--r2684, one row struck and two marked ANSWERED. **Registered c54.225 (`L-559`): the file existed and had NO INDEX row.**). 
 \emph{Computes:} audits the register's own movement over a pinned revision range and separates rows struck from rows answered
  \emph{Bound:} NOT-A-PAPER-CLAIM --- a programme audit answering a direct question. **Registered, not written, at c54.225.**
 \ \emph{Run:} \texttt{python3 receipts/P12\_algebroid/A3\_the\_convergence\_audit.py}
-\item[\rcptlabel{A8_the_self_protecting_falsehood}{P12R17}\textbf{P12R17}\quad\texttt{A8\_the\_self\_protecting\_falsehood}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{A8_the_self_protecting_falsehood}{P12R18}\textbf{P12R18}\quad\texttt{A8\_the\_self\_protecting\_falsehood}]\hfill\textsf{[OK]}\\
 \textit{sec:triality} \ (THE SELF-PROTECTING FALSEHOOD: r2705 ran the triality test and it passed, the ledger was marked discharged, and `check\_open\_ledger` fired because **P14 still SAID "this sector does not yet do so"**. The gate was read as "the ledger is wrong, restore it" when the correct read was **"THE PAPER IS WRONG, FIX IT"** --- three layers, the third a systems failure. **Registered c54.225 (`L-559`): the file existed and had NO INDEX row.**). 
 \emph{Computes:} reconstructs the three layers from the register, the paper and the gate's own output, and names which layer each belongs to
  \emph{Bound:} NOT-A-PAPER-CLAIM --- a diagnosis of a process failure. **Registered, not written, at c54.225.**
@@ -3856,7 +3861,7 @@
 \emph{Computes:} transports a frame over the base circle: no proper sub-arc (0.1-0.9) separates the Moebius band from the cylinder, both returning det +1, while the full loop returns -1 against +1; control of cylinder-against-cylinder does NOT separate, and the sign is exact across 250-16000 steps
  \emph{Bound:} SUPPORTS P06 --- and this row was ONE STEP from CHECKED-NEGATIVE on a homonym argument (`local` x25 read as epistemic); the phrase that refutes it was in the sentence already read. v2 \S{}2: a paper that looks empty is the one to read hardest
 \ \emph{Run:} \texttt{python3 receipts/P06\_shadow\_of\_existence/I54\_the\_modal\_fallacy\_is\_local\_flatness\_and\_the\_separating\_invariant\_is\_global.py}
-\item[\rcptlabel{I55_the_atiyah_sequence_is_exact_and_a_characteristic_class_is_not_available}{P12R18}\textbf{P12R18}\quad\texttt{I55\_the\_atiyah\_sequence\_is\_exact\_and\_a\_characteristic\_class\_is\_not\_available}]\hfill\textsf{[OK]}\\
+\item[\rcptlabel{I55_the_atiyah_sequence_is_exact_and_a_characteristic_class_is_not_available}{P12R19}\textbf{P12R19}\quad\texttt{I55\_the\_atiyah\_sequence\_is\_exact\_and\_a\_characteristic\_class\_is\_not\_available}]\hfill\textsf{[OK]}\\
 \textit{sec:anchor (L186, L190)} \ (P12 writes the Atiyah sequence of SO(5,1)->dS\_5 explicitly with 10+5=15 and the symmetric-space relation [m,m] in h, and reaches the problem-of-time obstruction through AMBROSE-SINGER holonomy rather than a characteristic class. This verifies all three assertions and shows the class route is not merely unnamed but UNAVAILABLE --- the bundle sits over the space of cuts C and the paper never fixes C's homotopy type). 
 \emph{Computes:} builds so(5,1) in signature (-,+,+,+,+,+) on explicit matrices; dim h = 10, dim m = 5, sum 15; [m,m] in h to 2.2e-16; identical for all five choices of fixed axis; and an arbitrary 10/5 split BREAKS the relation (residual 1.0), so it measures the symmetric-space structure and not the counting. Class vocabulary and base topology both measured x0
  \emph{Bound:} SUPPORTS P12 --- and REFUTES the locator's reason: a characteristic class gives only a necessary condition for flatness (Chern-Weil) while holonomy decides it, so the paper's route is better than the one it was predicted to be missing

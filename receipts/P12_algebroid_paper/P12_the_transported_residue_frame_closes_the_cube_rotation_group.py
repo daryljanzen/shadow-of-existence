@@ -88,6 +88,8 @@ def profile(G):
 
 A, B = transport(cN), transport(-cN)
 print("loop about c = +cN:\n", A, "\nloop about c = -cN:\n", B)
+assert np.array_equal(A, [[1, 0, 0], [0, 0, -1], [0, 1, 0]])
+assert np.array_equal(B, [[0, 1, 0], [-1, 0, 0], [0, 0, 1]])
 
 # 1. each loop is a four-fold rotation whose square is a pure even sign change
 for L in (A, B):
@@ -112,6 +114,14 @@ assert any(np.allclose(m @ np.ones(3), -np.ones(3)) for m in G)
 # 4. with the central inversion: order 48, all signed permutations
 G48 = close([A, B, -np.eye(3)])
 assert len(G48) == 48
+assert all(sorted(abs(m).flatten().tolist()) == [0.0] * 6 + [1.0] * 3 for m in G48)
+# D_6 = <three-cycle, transposition, -I> and O both sit inside it as proper subgroups
+key = lambda m: tuple(np.round(m, 6).flatten())
+K48 = {key(m) for m in G48}
+_C3 = np.array([[0, 0, 1], [1, 0, 0], [0, 1, 0]], float)
+_T = np.array([[0, 1, 0], [1, 0, 0], [0, 0, 1]], float)
+D6 = close([_C3, _T, -np.eye(3)])
+assert len(D6) == 12 and {key(m) for m in D6} < K48 and {key(m) for m in G} < K48
 
 # 5. control: the assumed generators (bare permutations + even sign changes) give T_d instead
 C3 = np.array([[0, 0, 1], [1, 0, 0], [0, 1, 0]], float)

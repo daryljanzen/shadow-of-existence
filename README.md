@@ -150,7 +150,7 @@ chair* every time you meet one.
   the symmetry from the throat structure. *(**⌗ Its dimension result settles the CUT at four.** The SUBSTRATE's
   dimension is untouched by it and stays bounded below only — do not fuse the two.)*
 - **GR's constraint algebra is the substrate's grading.** **P12**: the algebra is the symmetric-space structure
-  of dS₅, and the problem of time's *"wrong sign"* is the coset signature.
+  of dS₅, over a base of whole four-geometries, and the structure function is the coset metric.
 - **The light elements.** **P16** runs standard-rate BBN on the expanding leg and gets deuterium and helium-4 at
   their observed values from a single inherited datum. **Lithium-7 is the standard problem, shared and not
   dissolved** — the corpus says that about itself, and the entry should be read that way.
