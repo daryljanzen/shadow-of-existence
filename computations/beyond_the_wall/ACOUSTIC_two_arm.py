@@ -839,6 +839,29 @@ def _nuhier_rhs(e, kk, Psi, Php, Ps, eps):
     return out
 
 
+def _nuhier_sigma(ee, Psi2):
+    """the species' `sigma` over a grid of times, from its own quadrupole moments
+
+    ⛔⛭⛭ ** THE PROJECTION HAS TO READ THIS TOO, AND THE FIRST VERSION OF THIS REVISION DID NOT. **
+    *The right-hand sides were given the hierarchy's `delta` and `sigma` while every line-of-sight
+    source went on building the potential from `Y[:, :, 7]/2`, the FLUID quadrupole -- so the
+    spectrum was a mixture of the two closures.  Gate Ⓠ⓸ caught it as a `43` per cent difference
+    that did NOT shrink when the mass fell by a decade, which is what a structural defect looks like
+    beside one that is the mass.*  ⇒ Every one of those sites is routed through here.
+
+    `Psi2` is `(n_time, nk)` of the quadrupole's `q`-integral, so the weights are rebuilt per time.
+    """
+    out = np.empty(Psi2.shape[:2])
+    for _i, _e in enumerate(ee):
+        yv = float(HY_of(_e))
+        eps = np.sqrt(HQ ** 2 + yv ** 2)
+        wr = HQ ** 2 * eps * HF
+        ws = HQ ** 4 / eps * HF
+        rp = float(wr.sum()) + float(ws.sum()) / 3.0
+        out[_i] = (2.0 / 3.0) * (Psi2[_i] * ws[None, :]).sum(axis=1) / rp
+    return out
+
+
 def _nuhier_seed(Psi, kk, d0, t0, Fn0=None):
     """map a fluid-plus-massless-hierarchy state into the per-node moments
 
@@ -1473,14 +1496,20 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         y0[:, 4], y0[:, 5] = dg0, th0
         y0[:, 6] = Ph0
         y0[:, I_DB] = 0.75 * dg0
-        if NUHIER:
-            #: the species starts radiation-like, so its moments start as the massless inverses of
-            #: the integrals -- the same map the handover uses, taken in the limit it is exact in.
-            #: ⛔ *Seeded into a FRESH array and assigned back, not through
-            #: `y0[:, I_PN:].reshape(...)`: a column slice of a 2-D array is not contiguous, so that
-            #: reshape returns a COPY and every value written into it would have been thrown away.*
-            y0[:, I_PN:] = _nuhier_seed(np.zeros((nk, NQ, LMAXNU + 1)), kk,
-                                        dg0, th0).reshape(nk, -1)
+
+    if NUHIER:
+        #: the species starts radiation-like, so its moments start as the massless inverses of the
+        #: integrals -- the same map the handover uses, taken in the limit it is exact in.  Both
+        #: data above set `y0[:, 4], y0[:, 5] = dg0, th0`, so ONE seeding serves both arms.
+        #: ⛔ *OUTSIDE the if/else on purpose.  Seeded inside the CR branch alone, the arm every
+        #: validation number is read on (`lcdm`) left Psi at zero and grew it from the sources, which
+        #: r7882's gate Ⓚ⓸ caught as a residual that does not shrink with the mass: delta was a
+        #: factor eight short at e/erec = 0.01 and only caught up by recombination.*
+        #: ⛔ *Seeded into a FRESH array and assigned back, not through
+        #: `y0[:, I_PN:].reshape(...)`: a column slice of a 2-D array is not contiguous, so that
+        #: reshape returns a COPY and every value written into it would have been thrown away.*
+        y0[:, I_PN:] = _nuhier_seed(np.zeros((nk, NQ, LMAXNU + 1)), kk,
+                                    dg0, th0).reshape(nk, -1)
 
     def rhs(e, Y):
         y = Y.reshape(nk, NV)
@@ -1924,6 +1953,10 @@ def los_spectrum(kk, ee, Y, L_A, D_M, R_S):
     """
     nk = len(kk)
     sg = Y[:, :, 7] / 2
+    if NUHIER:
+        # ** r7882: the SOURCE's shear is the hierarchy's when the hierarchy is carrying the
+        #   species.  Gate Ⓠ⓸ caught this site reading the fluid quadrupole. **
+        sg = _nuhier_sigma(ee, Y[:, :, -_NH:].reshape(Y.shape[0], nk, NQ, LMAXNU + 1)[:, :, :, 2])
     Hcv = np.array([Hc_of(e) for e in ee])[:, None]
     Onv = np.array([On_of(e) * _nush(e) for e in ee])[:, None]
     Ph = Y[:, :, 6]
@@ -2504,6 +2537,9 @@ def _project(kb, ee, Y, ls, x0, e_sw, ks=None):
     Onv = np.array([On_of(e) * _nush(e) for e in ee])[:, None]
     Ogv = np.array([Og_of(e) for e in ee])[:, None]
     sgn = Y[:, :, 7] / 2
+    if NUHIER:
+        sgn = _nuhier_sigma(ee, Y[:, :, I_PNH:].reshape(Y.shape[0], Y.shape[1],
+                                                        NQ, LMAXNU + 1)[:, :, :, 2])
     sgg = Y[:, :, I_FG] / 2
     Ph = Y[:, :, 6]
     Ps = Ph - 6 * Hcv ** 2 * (Onv * sgn + Ogv * sgg) / ks[None, :] ** 2
@@ -2833,6 +2869,8 @@ def main():
     sol, nk, NV = evolve(kk)
     yr = sol.sol(eta_rec).reshape(nk, NV)
     sig = yr[:, 7] / 2
+    if NUHIER:
+        sig = _nuhier_sigma([eta_rec], yr[None, :, -_NH:].reshape(1, nk, NQ, LMAXNU + 1)[:, :, :, 2])[0]
     Psr = (yr[:, 6] - 6 * Hc_of(eta_rec) ** 2 * On_of(eta_rec) * _nush(eta_rec) * sig
            / kk ** 2)
     SW = yr[:, 2] / 4 + Psr
@@ -2901,6 +2939,8 @@ def main():
     ee = np.linspace(eta_rec, ETA_END, 24)
     Yg = np.array([sol.sol(e).reshape(nk, NV) for e in ee])
     Phg, sgg = Yg[:, :, 6], Yg[:, :, 7] / 2
+    if NUHIER:
+        sgg = _nuhier_sigma(ee, Yg[:, :, -_NH:].reshape(len(ee), nk, NQ, LMAXNU + 1)[:, :, :, 2])
     Hcv = np.array([Hc_of(e) for e in ee])[:, None]
     Onv = np.array([On_of(e) * _nush(e) for e in ee])[:, None]
     Psg = Phg + 6 * Hcv ** 2 * Onv * sgg / kk[None, :] ** 2
