@@ -4571,10 +4571,6 @@
    }
   },
   "tolerance": {
-   "receipts/L559_the_registry_from_files_inward/O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45756142391",
-    "since": "ce39f58bde9a0d83f2a0c2beae2150a20a80f437"
-   },
    "receipts/P15_CR_cosmology/P15_the_1p57_has_no_parameter_address_because_the_arms_tt_minimum_sits_on_its_own_bao_minimum_while_the_controls_pays_fifteen_in_chi2_to_leave_planck.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45752752332",
     "since": "df3ed12afa90b2621671c972ce6e02409e0b105d"
@@ -4586,10 +4582,6 @@
    "receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45752752332",
     "since": "df3ed12afa90b2621671c972ce6e02409e0b105d"
-   },
-   "receipts/P17_geometric_core_paper/P17_the_frontier_item_is_a_result_and_the_cosmogenesis_paper_reaches_it_the_other_way.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45756142391",
-    "since": "ce39f58bde9a0d83f2a0c2beae2150a20a80f437"
    }
   }
  }
