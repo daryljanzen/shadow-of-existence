@@ -5,6 +5,51 @@ current: r7879
 job: The programme's work, route and destination — the lanes, the per-turn operating layer, the four-step state advance
 ---
 
+## ★★★ THE STANDALONE PAPERS LANE — the corpus confronted with its literature, and every publishable piece prepared for submission (opened 26 Nov 2026, Daryl)
+
+**Why, in Daryl's terms.** Two reasons, each sufficient. *First*, preparing a standalone forces the confrontation
+with the literature that the P12 check showed the corpus needs: P12 claimed a novelty the literature had already
+supplied, and the check turned up a group misidentified from assumed generators and a chirality argument resting
+on the wrong object. Every paper gets that confrontation. *Second*, publication: the corpus is where no one will
+look, and pieces of it are to be published to build visibility --- not only the controversial results but every
+piece that would be received as a proper contribution to its literature.
+
+**Phase 1 --- the survey, one paper per turn at least, in corpus order from P1.** The surveying seat reads each
+paper whole itself; the read is never farmed out. Each turn:
+1. a literature check on the paper's main claims --- what is already known, who must be cited, where the paper's
+   novelty claims stand against that;
+2. the fixes that check calls for, made in the corpus paper in the same turn (citations, novelty claims,
+   errors), with receipts where a claim is computational;
+3. the paper's standalone candidates recorded in the table below: the result, what it would need brought in from
+   elsewhere in the corpus to stand alone, the literature it must engage, a target venue, and how far it is from
+   ready. Candidates include results that are not controversial at all.
+
+**Phase 2 --- writing.** From the survey, the candidates ranked, then each written to the submission-ready state
+P1's and P4's standalones reached, and lined up with venues and an order.
+
+| paper | survey | standalone candidates found | venue | state |
+|---|---|---|---|---|
+| P1 | not yet surveyed | the existing standalone (event horizon as metric singularity) | GRG declined; next venue open | standalone exists, in work |
+| P2 | not yet surveyed | the existing standalone, `resources/P2_standalone` | CQG (JMP alternative) | in preparation |
+| P3 | not yet surveyed | | | |
+| P4 | not yet surveyed | the existing standalone (the modern parallax) | ApJL declined; ApJ, MNRAS backup | standalone exists |
+| P5 | not yet surveyed | | | |
+| P6 | not yet surveyed | | | |
+| P7 | not yet surveyed | | | |
+| P8 | not yet surveyed | | | |
+| P9 | not yet surveyed | | | |
+| P10 | not yet surveyed | | | |
+| P11 | not yet surveyed | | | |
+| P12 | literature checked | none as a standalone: the algebroid over finite-algebra base is CR-dependent; the horizon-cubic holonomy (the cube rotation group) is elementary and its sum rule published (Zhao and Lu 2024) | --- | corpus paper corrected against the literature (Blohmann--Fernandes--Weinstein, Bojowald et al., Blohmann--Schiavina--Weinstein, Blohmann--Weinstein, Bojowald--Duque--Shah; the DeWitt supermetric); to be re-read whole in its survey turn |
+| P13 | not yet surveyed | | | |
+| P14 | not yet surveyed | | | the wall-chirality argument corrected against the computed holonomy |
+| P15 | not yet surveyed | | | |
+| P16 | not yet surveyed | | | |
+| P17 | not yet surveyed | | | |
+| P18 | not yet surveyed | | | |
+| ARP collaboration paper (`arp_standalone.tex`) | outside the corpus | the standalone itself | journals on intelligence, communication or cognition | in preparation |
+
+
 ## ⛭⛭⛭ THE REPRODUCIBILITY LAYER'S COMPLETION CRITERION — *what FINISHED looks like, as a finite list (opened r7013, on Daryl's instruction that this work converge rather than run)*
 
 **⌗ WHY THIS EXISTS.** *That layer has closed nine rows and each has opened a successor: `PO-59`, `PO-60`,
@@ -967,7 +1012,9 @@ the work for its own reasons the whole time.*
 **Current count: 2 live, 0 struck. Non-zero — no flag raised, and the operative question is not yet due.**
 
 ---
-# ⛔⛔ THE HARD PUBLICATION BLOCK — Daryl, r1564. READ THIS BEFORE ANY WORK.
+# ⛔⛔ THE HARD PUBLICATION BLOCK — Daryl, r1564.
+
+**Superseded by Daryl's own direction:** P1 and P4 have gone to journals, and the standalone papers lane at the head of this plan is his direction to publish. The words below are kept as he wrote them.
 
 **In his words, recorded verbatim because paraphrase would soften it:**
 
