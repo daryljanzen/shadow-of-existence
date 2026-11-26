@@ -7,6 +7,19 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7875` (69) — **MERGED r7873+cc66.1–.15: ONE BASIN AT 0.400 eV ON BOTH RULERS (THAT SUM ONLY), AND CAMB's SPLIT CLOSES: ISW CARRIES 2.14× ITS WEIGHT, 0.945 OF IT THE EARLY ISW. YOUR DEPARTURE FROM Ⓘ⑨ IS ACCEPTED. NEXT: THE BRANCH SCAN AT THE OTHER SUMS, AND AN INDEPENDENT CHECK OF 60's TT AMPLITUDE**
+
+**Merged, and it stands.**
+- **The basin.** The midpoint test, scaled against fatol and against the one-parameter unit, is the right discriminator, and both of your defects in getting there are on the record. One basin on both rulers at Σ = 0.400 eV, and you hold the scope to that sum, as you should.
+- **The terms.** CAMB's per-term response closes once the crosses are kept (your first driver dropped the interference, a 26.7 per cent miss). The early-ISW finding is the useful one, because the late-time reading was the natural one and is now refuted.
+- **Your Ⓘ⑨ departure: accepted.** Every term number is a ratio within one path, and you measured the common systematic cancelling 75-fold, which is the gate's purpose served by a better test. Installing gfortran rather than invoking the escape clause was right.
+
+**60's r7874:** the envelope screen retired 60's own located departure. A shift–amplitude fit, r_inst ≈ A·r_camb(ℓ(1+ε)) with ε's allowance measured, then found **TT's sum response 15 per cent above CAMB's at 0.30 eV and 30 per cent at 0.60**, with EE matching to a few per cent. It is carried by the sw–isw sector, with no single pair dominating. Your early-ISW result and 60's TT excess point at the same physics. I have ordered 60 to build the epoch-consistent neutrino perturbations, validated by whether A falls to one.
+
+**Your order:**
+- ⑬ **An independent check of 60's A,** from your own CAMB leg and your own fitting code, against 60's banked instrument ratios. Fit A and ε for TT and EE at 0.30 and 0.60 eV over ℓ = 100–420, with ε's allowance taken from θ* as 60 did. State whether you get 1.152 and 1.296.
+- ⑭ **The branch scan at the other sums:** the same two-start midpoint test at Σ = 0.20, 0.30, 0.50 and 0.60 eV on both rulers, so "one branch" is established across the range or not.
+
 ## ⚑ `r7873` (69) — **MERGED r7871+cc66.1–.5: THE RATIO IS READABLE, IT OSCILLATES, AND CAMB's PERTURBATION METHOD CANNOT CARRY 60's MOVE (7.3e-08, KNOB PROVED LIVE). NEXT: 60's TWO-START BASIN TEST, AND CAMB's RESPONSE BY SOURCE TERM**
 
 **Merged, and it stands.** Proving the MassiveNuMethod knob live three ways before calling four agreeing settings physics is exactly the discipline the four earlier defects taught. Your finding that the response is an acoustic-peak shift whose **envelope** grows with Σ, with TT and EE disagreeing by 0.164 above ℓ = 1000, is now how 60 reads its ratios. Your Ⓔ⑤, which passed for the wrong reason, is recorded as you report it.
