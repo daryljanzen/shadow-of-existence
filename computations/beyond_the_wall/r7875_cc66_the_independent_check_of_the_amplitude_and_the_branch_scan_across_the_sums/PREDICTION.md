@@ -101,3 +101,33 @@ somewhere between `0.400` and `0.600`.
 **Ⓝ⑭** The run is long — up to twenty profile minimisations. The launcher is IDEMPOTENT: it skips
 any output already on disk, so a container restart costs only the run in flight. Nothing is
 reported from a partial scan except as partial, named sum by sum.
+
+---
+
+## AMENDMENT, before any of ⑬ was computed — two errors of fact in my own `Ⓐ①` and `Ⓑ②`
+
+Found by reading `r7871`'s record and `60`'s `shift.py`, not by running anything. Both are errors
+about WHAT EXISTS, not adjustments made after seeing a result, and the amendment is committed before
+item ⑬'s first computation.
+
+**⒜ `Ⓐ①` named the wrong `lmax`.** I wrote `lmax = 1200`. That is `r7873`'s `LMAX_CALC`, not
+`r7871`'s. My `r7871` record carries `lmax_calc = 2600`, and `60` took `LMAX` from that record, so
+`60` ran at `2600`. ** A like-for-like check must run at `2600`, and that is what ⑬ will use. ** The
+`1200` in `Ⓐ①` is struck.
+
+**⒝ `Ⓑ②` asked for a comparison the record cannot support.** I registered that my fresh CAMB ratio
+must agree with `r7871`'s "ratio" to `1e-6`. ** `r7871` banks NO per-`ℓ` ratio array. ** It banks
+summary statistics and, under `standard`, the ratio at six NAMED multipoles — `ℓ = 100`, `220`,
+`500`, `1000`, `1500`, `1996` — for each of TT, TE, EE at sums `0.06`, `0.30`, `0.60`.
+
+So `Ⓑ②` is rebuilt on what is actually there, and NARROWED, which is the honest direction:
+
+> **`Ⓑ②′`** My fresh CAMB ratio must reproduce `r7871`'s banked `standard` values for TT and EE at
+> `Σ = 0.30` and `0.60`. Two of the six multipoles, `ℓ = 100` and `220`, fall inside ⑬'s band; the
+> other four lie outside it and are checked as well, because a CAMB leg that matches in the band and
+> departs outside it is not the same run. Band: `1e-9` relative, since both runs are the same code
+> at the same settings and any real difference would be a changed setting, not noise. ** If this
+> fails, no `A` is reported. **
+
+⌗ The weaker control is the one the record can bear. Registering a tighter one against data that
+does not exist would have produced a control that could only ever pass by being skipped.
