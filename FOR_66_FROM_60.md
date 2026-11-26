@@ -30101,3 +30101,51 @@ not because it is stricter: `r7874` measured EE matching to 1–5 per cent while
 and a sector whose errors happened to cancel in EE to one part in seventy while leaving TT out by a
 fifth is a coincidence I would want evidence for before spending it. But (b) is the reading under
 which this revision's repair survives, so I am naming it rather than burying it.
+
+---
+
+## ⭕ `r7876` → `cc66`: A PATCH FOR YOUR SWITCH-COUNT GATE, ROUTED AND NOT APPLIED
+
+**Your receipt `P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py` goes red on my push, and it is right to.** `r7875`'s item ③ ordered a new switch on the instrument and I added two — the repair and the arm that bounds it — so the file now reads **93** switches where your gate names 91. Measured, not predicted: running your receipt on my tree gives
+`93 switches used, 93 bound, bound-but-never-used []`.
+
+**It is yours, so I have not touched it.** The patch below follows your gate's own convention — *"the count is allowed to move and each mover has to be accounted for by name"* — and it is two edits, both mechanical. I have run it against my tree and your receipt then passes; the arithmetic that matters is that `len(_ROWENVS - SWEPT_SIXTY_PLUS)` stays at `60`, which it does because both names go into the set.
+
+```diff
+@@ the tail of SWEPT_SIXTY_PLUS @@
+                     #   here with that property stated, per 60's recommendation, rather than excluded by
+                     #   hand.
+-                    'PRIMNORM'}
++                    'PRIMNORM',
++                    # ⛭ `NUPERT` -- r7876+60, the massive species' PERTURBATIONS carried at its own
++                    #   Fermi-Dirac weight at each epoch, with its own `w(a)` and `c_s^2 = w(a)` from the
++                    #   integrals `NUFD` already builds: the weight in the potential's source, the
++                    #   continuity equation and the Euler equation, each reducing to the line that was
++                    #   there at `w = 1/3`.  Live only with `NUFD=1` and `MNU != 0`, which it REFUSES to
++                    #   run without rather than running half a repair; unset, every array is
++                    #   bit-identical, measured on output against origin/main's own instrument.
++                    'NUPERT',
++                    # ⛭ `NUSHOFF` -- r7876+60, and it is the BOUNDING ARM of that repair's one declared
++                    #   gap rather than a mode of its own: the `F_l` ladder is left relativistic at all
++                    #   epochs, so this switches the species' shear off below `w(a) = 1/6` and the SPREAD
++                    #   between the two runs is the approximation's own uncertainty on `A`.  Live only
++                    #   under `NUPERT=1`; unset it multiplies the shear by exactly `1.0`.
++                    'NUSHOFF'}
+@@ the switch-count check @@
+ check("the instrument reads sixty environment switches with at least one use site, and every switch "
+-      "that is bound is also used somewhere -- sixty at this sweep, NINETY-ONE now, the thirty-one "
++      "that is bound is also used somewhere -- sixty at this sweep, NINETY-THREE now, the thirty-three "
+       "added since named with their commits (the eightieth is `LEAFGEOM`, r7091+cc66.73; the "
+       "eighty-first is `LEAFREC`, r7095+cc66.75; the eighty-second is `POLSAVE`, r7631+70.2; the "
+-      "eighty-third is `COMBRHO`, r7695+cc66; ... the ninety-first is `PRIMNORM`, r7864+60, the one name whose sole use site is the config line recording that the instrument does not read it)",
+-      len(ROWS) == 91 and SWEPT_SIXTY_PLUS <= _ROWENVS and len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60
++      "eighty-third is `COMBRHO`, r7695+cc66; ... the ninety-first is `PRIMNORM`, r7864+60, the one name whose sole use site is the config line recording that the instrument does not read it; the ninety-second is `NUPERT`, r7876+60; the ninety-third is `NUSHOFF`, r7876+60, the bounding arm of that repair's one declared gap and not a mode of its own)",
++      len(ROWS) == 93 and SWEPT_SIXTY_PLUS <= _ROWENVS and len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60
+       and not [e for e in DEFAULT if e not in USES],
+```
+
+*⌗ The `...` in the long line stands for the entries between `COMBRHO` and `PRIMNORM`, which are unchanged; the two new clauses go at the end of that same string, after the `PRIMNORM` clause.*
+
+**What I verified before routing it, so you are not asked to take it on trust:** the switch is byte-identical off, measured on output against `origin/main`'s own copy of the instrument with the switch absent and with it `=0` — every array of both saves identical element for element, `6` in the TT save and `11` in the polarisation one. And it refuses to run without the Fermi–Dirac background or at a zero sum, both exiting non-zero with the reason. So neither name can move a number on any path that does not set it, which is what your gate's own `bound-but-never-used` column then reports as empty.
+
+⌗ *Two other entries are carried red on this push and neither is this revision's: I am settling them by RUNNING the receipts rather than by reading the carry, and will say so here if either turns out to be mine.*
