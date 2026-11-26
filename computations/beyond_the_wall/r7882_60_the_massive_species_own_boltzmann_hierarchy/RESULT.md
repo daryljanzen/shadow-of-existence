@@ -172,9 +172,18 @@ weight change alone was CLOSER than this in TT at `0.30 eV` — `0.00490` agains
 `0.01086`. It was outside the band in EE, at `0.04005`. That is exactly the shape `r7879` ruled
 against: *"the bar is joint agreement with CAMB in TT and EE for a closure-respecting sector, not
 'keep the landed EE'."* No fluid-family member had both blocks inside at both sums, and `r7878`
-measured the whole family's span. This hierarchy does. **So rows `Ⓓ` and `Ⓔ` do not fire not because
-the hierarchy beat the fluid family's best TT — it did not — but because both blocks are inside the
-band, which is the condition those rows are the complement of.**
+measured the whole family's span. This hierarchy does.
+
+⌗ **AND THE COMPARISON SPLITS BY SUM, WHICH IS WORTH HAVING RIGHT.** Against the fluid family's best
+TT this revision is **closer at `0.60 eV`** — `0.02115` against `0.05621`, better by a factor `2.7`
+— and **not closer at `0.30 eV`**, `0.01086` against `0.00490`. So `TT closer at BOTH sums` is false,
+on the `0.30` leg alone. ⛔ *An earlier draft of this section said the hierarchy did not beat the
+fluid family's best TT at either sum. That was wrong on the `0.60` leg, and it is corrected here
+rather than quietly: at the higher sum, where the sector matters more, the hierarchy IS the better
+model of it by the fluid family's own measure.*
+
+**Rows `Ⓓ` and `Ⓔ` do not fire because the BOTH-OUTSIDE case they split did not arise** — both
+blocks are inside the band — **and not because of how that comparison came out either way.**
 
 ⌗ And the direction is worth stating: all four amplitudes sit BELOW one, by `0.011` to `0.023`. The
 fluid approximation's failure was an overshoot in TT with EE dragged out of band in the other
