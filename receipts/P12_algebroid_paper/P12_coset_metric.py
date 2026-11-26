@@ -3,8 +3,9 @@ P12_coset_metric.py -- verifies the "structure function is the substrate's metri
   function h^{ab} of the hypersurface-deformation bracket {H_perp,H_perp}=H_a[h^{ab}(...)] (eq:HH) is, on the
   symmetric-cut reduction, the COSET METRIC of SO(5,1)/SO(4,1). Computed directly: the Killing form of
   so(5,1) restricted to the coset m = span{M_{a5}} is proportional to eta_{ab}=diag(-1,1,1,1,1) -- signature
-  (1,4), LORENTZIAN. The indefinite ("wrong") sign, supplied by the substrate's geometry, is the problem-of-
-  time obstruction. At the symmetric cut it is constant (so(5,1) a Lie algebra); base-varying -> algebroid.
+  (1,4), LORENTZIAN. The indefinite sign is supplied by the substrate's geometry. At the symmetric cut the
+  metric is constant (so(5,1) a Lie algebra); base-varying -> algebroid, the variation the problem-of-time
+  obstruction.
   [P12 algebroid_paper sec:bracket -- structure function paragraph]
 STATUS: ✔✔   RUN: python3 P12_coset_metric.py   RUNTIME: ~4s
 COMPUTES: the Killing form B(X,Y)=tr(ad_X ad_Y) built from the so(5,1) structure constants; B restricted to
@@ -69,5 +70,5 @@ assert diag == [8, -8, -8, -8, -8], diag
 assert (npos, nneg) == (1, 4), (npos, nneg)
 assert ok
 print("="*70)
-print("RESULT:", "ALL PASS -- the coset metric (Killing form on m) is proportional to diag(-1,1,1,1,1), signature\n         (1,4): the structure function is the substrate's LORENTZIAN metric -- the 'wrong sign' of the problem of time." if ok else "SOME FAILED")
+print("RESULT:", "ALL PASS -- the coset metric (Killing form on m) is proportional to diag(-1,1,1,1,1), signature\n         (1,4): the structure function is the substrate's LORENTZIAN coset metric." if ok else "SOME FAILED")
 print("="*70)
