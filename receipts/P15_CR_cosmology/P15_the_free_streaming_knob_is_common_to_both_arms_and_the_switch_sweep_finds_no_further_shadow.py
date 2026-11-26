@@ -531,18 +531,25 @@ SWEPT_SIXTY_PLUS = {'ZPSAVE', 'SRCSAVE', 'SRCXS', 'SRCDEC', 'SRCINJ', 'SRCINJPH'
                     #   instrument does not read the value (the lensing path's generator does).  Counted
                     #   here with that property stated, per 60's recommendation, rather than excluded by
                     #   hand.
-                    'PRIMNORM'}
+                    'PRIMNORM',
+                    # ⛭ `NUPERT` -- r7876+60, the massive species' perturbations at its own Fermi-Dirac weight
+                    #   at each epoch (the Fermi-Dirac fluid approximation); live only with NUFD=1 and MNU != 0,
+                    #   which it refuses to run without; unset, every array bit-identical.
+                    'NUPERT',
+                    # ⛭ `NUSHOFF` -- r7876+60, the bounding arm of that repair's one declared gap (the species'
+                    #   shear off below w = 1/6), not a mode of its own; live only under NUPERT=1.
+                    'NUSHOFF'}
 _ROWENVS = {r['env'] for r in ROWS}
 # ⛭ ** THE EIGHTIETH IS `LEAFGEOM`, r7091+cc66.73 ** -- the conformal-time grid and the comoving
 #   distance on the leaf rate, which was the one clock assignment in this instrument that no switch
 #   reached.  *Named here with its commit because that is this gate's own convention: the count is
 #   allowed to move and each mover has to be accounted for by name.*
 check("the instrument reads sixty environment switches with at least one use site, and every switch "
-      "that is bound is also used somewhere -- sixty at this sweep, NINETY-ONE now, the thirty-one "
+      "that is bound is also used somewhere -- sixty at this sweep, NINETY-THREE now, the thirty-three "
       "added since named with their commits (the eightieth is `LEAFGEOM`, r7091+cc66.73; the "
       "eighty-first is `LEAFREC`, r7095+cc66.75; the eighty-second is `POLSAVE`, r7631+70.2; the "
-      "eighty-third is `COMBRHO`, r7695+cc66; the eighty-fourth is `SRCFIELD`, r7729+70.0; the eighty-fifth is `DNEFF`, r7801+70; the eighty-sixth is `YHE`, r7801+70; the eighty-seventh is `MNU`, r7836+60; the eighty-eighth is `BVEL`, r7854+60; the eighty-ninth is `FOURPI`, r7858+60; the ninetieth is `NUFD`, r7864+60; the ninety-first is `PRIMNORM`, r7864+60, the one name whose sole use site is the config line recording that the instrument does not read it)",
-      len(ROWS) == 91 and SWEPT_SIXTY_PLUS <= _ROWENVS and len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60
+      "eighty-third is `COMBRHO`, r7695+cc66; the eighty-fourth is `SRCFIELD`, r7729+70.0; the eighty-fifth is `DNEFF`, r7801+70; the eighty-sixth is `YHE`, r7801+70; the eighty-seventh is `MNU`, r7836+60; the eighty-eighth is `BVEL`, r7854+60; the eighty-ninth is `FOURPI`, r7858+60; the ninetieth is `NUFD`, r7864+60; the ninety-first is `PRIMNORM`, r7864+60, the one name whose sole use site is the config line recording that the instrument does not read it; the ninety-second is `NUPERT`, r7876+60; the ninety-third is `NUSHOFF`, r7876+60, the bounding arm of that repair's one declared gap and not a mode of its own)",
+      len(ROWS) == 93 and SWEPT_SIXTY_PLUS <= _ROWENVS and len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60
       and not [e for e in DEFAULT if e not in USES],
       f"{len(ROWS)} switches used, {len(DEFAULT)} bound, "
       f"bound-but-never-used {[e for e in DEFAULT if e not in USES]}")

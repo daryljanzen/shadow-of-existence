@@ -218,6 +218,12 @@ def _tree_is_bL_plus_dneff(bL):
         NAMES = {'_dneff', 'DNEFF', '_yhe', 'YHE', 'MNU', 'ONU',
                  'BVEL', 'I_DB_F', 'I_TBF'}
         UNIT = set()
+        #: eighth class -- r7877 (69), applied from 60's r7876 patch (measured 8 of 8 controls red): the four
+        #: statements NUPERT adds, each matched on its EXACT value expression, so a moved default stays red
+        EXACT = {'NUPERT': "os.environ.get('NUPERT', '0') == '1'",
+                 'NUSHOFF': "os.environ.get('NUSHOFF', '0') == '1'",
+                 '_NU_NR': '1.0 / 6.0',
+                 'Wnu_of': 'None'}
 
         # --- fifth class (a): a BVEL-guarded term added to or subtracted from a landed expression,
         #     whose `orelse` is Constant 0, collapses the whole BinOp back to the landed left operand.
@@ -225,6 +231,10 @@ def _tree_is_bL_plus_dneff(bL):
             # ⛔ the BVEL test is read BEFORE the children are visited, because `visit_IfExp` below
             #   would otherwise have already collapsed the guard to its `orelse` and left a `+ 0`.
             r = node.right
+            # --- eighth class: a `* _nush(...)` factor is exactly `1.0` unset; scoped to a CALL of that name.
+            if (isinstance(node.op, _ast.Mult) and isinstance(r, _ast.Call)
+                    and isinstance(r.func, _ast.Name) and r.func.id == '_nush'):
+                return self.visit(node.left)
             if (isinstance(node.op, (_ast.Mult, _ast.Div)) and isinstance(r, _ast.Name)
                     and r.id in self.UNIT):
                 return self.visit(node.left)
@@ -262,6 +272,11 @@ def _tree_is_bL_plus_dneff(bL):
             t = node.targets[0]
             if isinstance(t, _ast.Name) and t.id in self.NAMES:
                 return None
+            # --- eighth class, matched on the EXACT value expression, not by name.
+            if (isinstance(t, _ast.Name) and t.id in self.EXACT
+                    and _ast.dump(node.value)
+                    == _ast.dump(_ast.parse(self.EXACT[t.id], mode='eval').body)):
+                return None
             # ⛔ an assignment whose VALUE IS ITSELF a BVEL guard is dead unset -- and the test is on the
             #   whole value and not on its contents, so `out[...] = (-tb if BVEL else -tg) + ...`, whose
             #   value is a BinOp, is REDUCED to the landed line rather than dropped.  `tb` is a landed
@@ -276,6 +291,13 @@ def _tree_is_bL_plus_dneff(bL):
         #     ⛔ *Scoped to an assert whose test NAMES `BVEL`, and not to asserts generally: a blanket
         #     assert-drop would let a REMOVED assert through this ratchet, which is the opposite of
         #     what it is for.*
+        # --- eighth class: the one function the switch introduces, whose unset body is `return 1.0`.
+        def visit_FunctionDef(self, node):
+            if node.name == '_nush':
+                return None
+            self.generic_visit(node)
+            return node
+
         def visit_Assert(self, node):
             if "id='BVEL'" in _ast.dump(node.test):
                 return None
@@ -298,6 +320,17 @@ def _tree_is_bL_plus_dneff(bL):
                 if not node.orelse:
                     return None
                 return [self.visit(n) for n in node.orelse]
+            # --- eighth class: `if NUPERT: <new> else: <landed>` reduces to its landed `else`.
+            if isinstance(node.test, _ast.Name) and node.test.id == 'NUPERT':
+                if not node.orelse:
+                    return None
+                _o = []
+                for _n in node.orelse:
+                    _r = self.visit(_n)
+                    if _r is None:
+                        continue
+                    _o.extend(_r if isinstance(_r, list) else [_r])
+                return _o
             # --- fifth class (d): `if BVEL:` is dead unset, so it goes;
             #     `if not BVEL:` wraps a landed statement, so the wrapper goes and the body stays.
             if isinstance(node.test, _ast.Name) and node.test.id == 'BVEL' and not node.orelse:
@@ -313,7 +346,7 @@ def _tree_is_bL_plus_dneff(bL):
         def visit_Dict(self, node):
             self.generic_visit(node)
             keep = [(k, v) for k, v in zip(node.keys, node.values)
-                    if not (isinstance(k, _ast.Constant) and k.value in ('DNEFF', 'YHE', 'BVEL', 'MNU', 'FOURPI', 'PRIMNORM_env', 'NUFD'))]
+                    if not (isinstance(k, _ast.Constant) and k.value in ('DNEFF', 'YHE', 'BVEL', 'MNU', 'FOURPI', 'PRIMNORM_env', 'NUFD', 'NUPERT', 'NUSHOFF'))]
             node.keys = [k for k, _ in keep]
             node.values = [v for _, v in keep]
             return node

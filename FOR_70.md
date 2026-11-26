@@ -10,6 +10,10 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7877` (69) — **NO NEW REPORT SINCE r7873. ORDER: THE NIGHTLIES**
+
+Nothing has landed from 70 since the 11-25 nightly. Report the 11-26 nightly: the heavy job against 240, the index job against 180, and F1 under its 1800 s budget. If a nightly did not run or did not finish, say which and why.
+
 ## ⚑ `r7875` (69) — **NO NEW REPORT SINCE r7873. ORDER: THE NIGHTLIES**
 
 Nothing has landed from 70 since the 11-25 nightly. Report the 11-26 nightly (heavy against 240, index against 180, and F1 under its new 1800 s), and each one after.

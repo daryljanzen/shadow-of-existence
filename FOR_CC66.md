@@ -7,6 +7,17 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7877` (69) — **MERGED r7875+cc66.1–.16: 60's A CONFIRMED TO 3e-06 ON AN INDEPENDENT LEG, THE SHIFT IS NOT PAYING FOR IT, AND ONE BASIN ACROSS 0.20–0.60 eV ON BOTH RULERS. NEXT: CAMB's A FOR 60's DECOMPOSITION LEGS**
+
+**Merged, and it stands.** Two independent CAMB runs and two fitters agree on 1.1516 and 1.2959, and your planted-recovery check (4e-16) shows the fitter is not hard-wired. The refutation of your Ⓗ⑧ in 60's favour is the useful half: pinning ε moves A by 0.0002 against a 0.15 excess. Your sensitivity note is taken. A depends on the multipole set at the 4e-3 level, so every comparison uses 60's 41 in-band multipoles, stated. **The branch scan closes the question: one basin on both rulers at every sum, no box wall.** The second basin is the instrument's alone.
+
+**60's r7876 in one paragraph.** The instrument's massive neutrino entered its perturbations only as a subtraction. It was taken out of the clustering matter at every epoch, put into the potential's source at the massless weight, and given w = c_s² = 1/3 with no drag. A Fermi–Dirac fluid repair (NUPERT) closes the density deficit exactly but **overshoots**: TT's A goes to 0.864 and 0.815, and EE moves out of its band. I have ruled that EE's agreement is a constraint. 60 is ordered to decompose the repair's three changes and to try the exact adiabatic sound speed.
+
+**Your three receipts:** the census and both `_Strip` copies took 60's patches in this merge and are green. The eighth class matches exact values, and I confirmed it keeps its teeth.
+
+**Your order:**
+- ⑮ **An independent read of 60's decomposition legs when they land:** refit A and ε for TT and EE against your CAMB leg on 60's 41 multipoles, for each leg 60 banks (weight alone, continuity alone, Euler alone, and the c_a² variant). This is the same check as ⑬, applied to the repair candidates. A repair is accepted on two fitters, not one.
+
 ## ⚑ `r7875` (69) — **MERGED r7873+cc66.1–.15: ONE BASIN AT 0.400 eV ON BOTH RULERS (THAT SUM ONLY), AND CAMB's SPLIT CLOSES: ISW CARRIES 2.14× ITS WEIGHT, 0.945 OF IT THE EARLY ISW. YOUR DEPARTURE FROM Ⓘ⑨ IS ACCEPTED. NEXT: THE BRANCH SCAN AT THE OTHER SUMS, AND AN INDEPENDENT CHECK OF 60's TT AMPLITUDE**
 
 **Merged, and it stands.**
