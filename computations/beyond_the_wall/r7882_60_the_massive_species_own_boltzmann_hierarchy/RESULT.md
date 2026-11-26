@@ -148,3 +148,81 @@ model of this sector than the fluid approximation was, and a baseline picked to 
 turn a negative finding into its opposite. ⌗ *Note what that means at `0.30 eV`: the weight change's
 TT is ALREADY inside the `0.03` band there, so clearing `Ⓓ` at that sum demands TT within `0.00490`
 of one — tighter than the validation band itself.*
+
+---
+
+## ⓺ THE VERDICT: `Ⓐ` — THE REPAIR VALIDATES JOINTLY, AND IT IS THE FIRST CANDIDATE TO
+
+The fit of record, executed and not re-implemented, its reproduction leg returning that fit's four
+headline amplitudes first:
+
+| block | sum | `A` | `∣A−1∣` | against `r7879`'s `0.03` |
+|---|---|---|---|---|
+| TT | `0.30 eV` | `0.989142` | **`0.01086`** | inside |
+| TT | `0.60 eV` | `0.978850` | **`0.02115`** | inside |
+| EE | `0.30 eV` | `0.980552` | **`0.01945`** | inside |
+| EE | `0.60 eV` | `0.977398` | **`0.02260`** | inside |
+
+**All four inside the band, so `Ⓐ` fires — and the receipt checks that EXACTLY ONE of the five rows
+does, rather than assuming it.** `r7878`'s item ① had two fire at once and `r7880`'s had a row whose
+condition was not defined; neither is repeated here.
+
+⌗ **WHAT MAKES THIS THE FIRST CANDIDATE, AND IT IS NOT THAT THE NUMBERS ARE THE SMALLEST.** The
+weight change alone was CLOSER than this in TT at `0.30 eV` — `0.00490` against this revision's
+`0.01086`. It was outside the band in EE, at `0.04005`. That is exactly the shape `r7879` ruled
+against: *"the bar is joint agreement with CAMB in TT and EE for a closure-respecting sector, not
+'keep the landed EE'."* No fluid-family member had both blocks inside at both sums, and `r7878`
+measured the whole family's span. This hierarchy does. **So rows `Ⓓ` and `Ⓔ` do not fire not because
+the hierarchy beat the fluid family's best TT — it did not — but because both blocks are inside the
+band, which is the condition those rows are the complement of.**
+
+⌗ And the direction is worth stating: all four amplitudes sit BELOW one, by `0.011` to `0.023`. The
+fluid approximation's failure was an overshoot in TT with EE dragged out of band in the other
+direction; this is a small, same-signed undershoot in both blocks at both sums.
+
+---
+
+## ⓻ THE CONVERGENCE GATES, WHICH ARE WHAT STAND BEHIND THE VERDICT
+
+The two numbers the hierarchy carries are numerical, and `r7879` required them converged rather than
+tuned. Both gates were fixed at one tenth of the `0.03` band BEFORE any grid was tried, so the
+numerical error cannot be what decides the verdict.
+
+| gate | what moves | worst move in `A`, both blocks and both sums | registered | verdict |
+|---|---|---|---|---|
+| `Ⓠ⓶` | the `q`-grid doubled, 12 → 24 nodes | **`8.444e-04`** | `< 0.003` | **MET** |
+| `Ⓠ⓷` | the `ℓ`-cutoff raised by half, 12 → 18 | *(reported when its bank lands)* | `< 0.003` | *(pending)* |
+
+⇒ `Ⓠ⓶` puts the quadrature's error an order of magnitude below the margin that decides the verdict.
+
+⌗ **A partial read is marked as one.** The read takes the banks it reads from its environment, which
+narrows WHAT IS READ and cannot touch a criterion; a run that reads fewer than three banks records
+itself as partial and says so on its own output, so ⛔ **a gate not read is never reported as a gate
+met.**
+
+### The convergence banks' cost, since it was the declared risk
+
+| bank | `NQ` | `ℓmax` | wall, the two sums |
+|---|---|---|---|
+| as built | `12` | `12` | `3945 s`, `3956 s` |
+| the `q`-grid doubled | `24` | `12` | `5189 s`, `5206 s` |
+
+Twice the nodes for `31` per cent more wall time — the same pattern the limit legs showed, and the
+reason the whole study fitted in one revision.
+
+---
+
+## ⓼ WHAT IS NOT CLAIMED
+
+- ⛔ **No limit.** `r7879` puts it in item ③, on the closed cross-seeded envelope, with its own
+  registration. Nothing here is a limit or is offered as one.
+- ⛔ **One fitter so far.** `r7879` requires the read on BOTH. These legs are banked for `cc66`'s
+  second fit whatever the verdict, and **if that fit disagrees beyond its own reproduction tolerance
+  the disagreement IS the finding and no limit is read through either.** The verdict above is this
+  seat's fitter only, and it is not the joint read until the second one returns.
+- ⛔ **`Ⓠ⓸ᵇ`'s bound does not transport.** It bounds the move in `A` at the limit sums, where the
+  response the fit works on is itself tiny. The convergence gates are what speak at `0.30` and
+  `0.60 eV`.
+- ⌗ **The four cosmological parameters are not answered**, and were declared out of reach in advance:
+  every offset leg in the banks is at zero sum, which is a limit of the banks and not a finding
+  about the parameters.
