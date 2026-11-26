@@ -39,7 +39,10 @@ run() {   # run <tag> <MNU> <NUPARTS> <NUCA>
   [ $rc -eq 0 ] || return 1
 }
 
-SPECS=${SPECS:-"S030W 0.30 W 0|S060W 0.60 W 0|S030C 0.30 C 0|S060C 0.60 C 0|S030E 0.30 E 0|S060E 0.60 E 0|S030A1 0.30 WCE 1|S060A1 0.60 WCE 1"}
+# ⌘ r7878 ②: the subset legs are appended AFTER `SUBSET_NAMED.md` named the subset and was
+#   committed and pushed — `CE`, by exclusion of the one member ① condemns.  The naming is in
+#   the record before these two lines existed, which is what the registration asks of the ordering.
+SPECS=${SPECS:-"S030W 0.30 W 0|S060W 0.60 W 0|S030C 0.30 C 0|S060C 0.60 C 0|S030E 0.30 E 0|S060E 0.60 E 0|S030A1 0.30 WCE 1|S060A1 0.60 WCE 1|S030CE 0.30 CE 1|S060CE 0.60 CE 1"}
 
 pids=()
 IFS='|' read -ra LIST <<< "$SPECS"

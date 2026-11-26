@@ -80,7 +80,9 @@ def run_fit(label, on_dir):
 
 #: the arms this file reads, and the suffix each one's legs carry
 ARMS = [('weight only', 'W'), ('continuity only', 'C'), ('Euler only', 'E'),
-        ('all three, exact c_a2', 'A1')]
+        ('all three, exact c_a2', 'A1'),
+        #: ⌘ ②'s SUBSET, named in `SUBSET_NAMED.md` and committed before this line existed.
+        ('the named subset, exact c_a2', 'CE')]
 
 
 def main():
