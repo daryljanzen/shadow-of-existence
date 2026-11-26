@@ -35,6 +35,28 @@ CUR = os.path.join(_BTW, 'ACOUSTIC_two_arm.py')
 SUMS = ('1e-3', '1e-4')          # a decade apart, both far inside the relativistic regime
 
 
+def worst_per_array(tmp, sm):
+    """The on-against-off comparison for ONE sum, over every float array in both banks.
+
+    ⚑ Lifted out of `main()` unchanged so that `floor.py` — arm Ⓚ⓸ᵃ, which repeats this same
+    comparison at a doubled node count — can IMPORT it rather than retype it.  No criterion and no
+    printed verdict in this file is touched by the lift.
+    """
+    row = {}
+    for which in ('tt', 'pol'):
+        a = np.load(os.path.join(tmp, '%s_off_%s.npz' % (sm, which)), allow_pickle=True)
+        b = np.load(os.path.join(tmp, '%s_on_%s.npz' % (sm, which)), allow_pickle=True)
+        for key in [k for k in a.files if k != 'config' and a[k].dtype.kind == 'f']:
+            x, y = np.asarray(a[key], float), np.asarray(b[key], float)
+            if x.shape != y.shape or x.size == 0:
+                continue
+            den = np.maximum(np.abs(x), 1e-300)
+            row['%s/%s' % (which, key)] = float(np.abs(y - x).max() / den.max()
+                                                if np.abs(x).max() > 0 else
+                                                np.abs(y - x).max())
+    return row
+
+
 def main():
     print(__doc__)
     print('=' * 100)
@@ -45,19 +67,8 @@ def main():
             rc, out = one(CUR, os.path.join(tmp, '%s_%s' % (sm, tag)), extra)
             if rc != 0:
                 raise SystemExit('  ⛔ %s/%s failed rc=%d:\n%s' % (sm, tag, rc, out[-1500:]))
-        row = {}
-        for which in ('tt', 'pol'):
-            a = np.load(os.path.join(tmp, '%s_off_%s.npz' % (sm, which)), allow_pickle=True)
-            b = np.load(os.path.join(tmp, '%s_on_%s.npz' % (sm, which)), allow_pickle=True)
-            for key in [k for k in a.files if k != 'config' and a[k].dtype.kind == 'f']:
-                x, y = np.asarray(a[key], float), np.asarray(b[key], float)
-                if x.shape != y.shape or x.size == 0:
-                    continue
-                den = np.maximum(np.abs(x), 1e-300)
-                row['%s/%s' % (which, key)] = float(np.abs(y - x).max() / den.max()
-                                                    if np.abs(x).max() > 0 else
-                                                    np.abs(y - x).max())
-        rec['sums'][sm] = row
+        rec['sums'][sm] = worst_per_array(tmp, sm)
+        row = rec['sums'][sm]
         print('\n  Sigma = %s eV, hierarchy on against off, worst relative difference per array:'
               % sm)
         for k in sorted(row):

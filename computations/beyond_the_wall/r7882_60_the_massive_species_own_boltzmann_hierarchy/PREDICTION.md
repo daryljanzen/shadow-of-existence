@@ -178,3 +178,35 @@ presumption. `Ⓚ⓸ᵃ` can fail outright if the floor is a residual defect rat
 
 ⛔ **`limit.py`'s shrink test is NOT deleted and its verdict is NOT overwritten.** It stays in the
 record as run, reporting what it reports, and `RESULT.md` carries both it and these two arms.
+
+### Ⓚ⓸ᵇ, HOW IT IS RUN — DECLARED BEFORE THE LEGS ARE BUILT
+
+⛔ **AN ERROR IN THE ROW ABOVE, NAMED RATHER THAN QUIETLY REPAIRED.** `Ⓚ⓸ᵇ` says *"at
+`Σ = 1e-4` the fit of record ... must return an `A` ... differing by less than `0.003`"*, and the
+fit of record CANNOT BE RUN AT THAT SUM as written: `shift.py` reads a bank whose slots ARE the
+validation sums `0.30` and `0.60`, and it fits `A` against the CAMB spectrum at those sums. There is
+no CAMB target at `1e-4`.
+
+**What makes the arm runnable is that it is a DIFFERENCE AT A FIXED TARGET.** `Ⓚ⓸ᵇ` compares
+`A(hierarchy on)` against `A(hierarchy off)` on legs built at the SAME sum and fitted against the
+SAME CAMB spectrum. The target therefore cancels out of the comparison and need not be the right
+target for that sum — what must hold is only that both legs share it, which they do by construction.
+`A` itself will sit far from one in these legs and ⛔ **no `A` from them is a validation number or is
+reported as one**; only the on-against-off DIFFERENCE is read.
+
+So the two bank slots carry the two limit sums, and one fit reads both:
+
+| slot | sum built into it | what the slot's `A` difference reads |
+|---|---|---|
+| `S030` | **`Σ = 1e-3`** | the hierarchy's effect on what the fit reads, at the upper limit sum |
+| `S060` | **`Σ = 1e-4`** | the same, a decade down |
+| `S000` | the zero leg, **reused from `r7874` and not rebuilt** | mass-independent by construction, and `NUHIER` refuses a zero sum, so it is the same spectrum either way |
+
+⛔ **The criterion is UNCHANGED**: `∣A(on) − A(off)∣ < 0.003` in TT and in EE, now read at BOTH limit
+sums rather than one, which is strictly harder than what the row registered.
+
+⛔ **AND THE COST IS MEASURED HERE, NOT LATER.** These four legs are the FIRST legs built at the
+banked resolution (`HIER=1 LMAXL=2000 LSTEP=8`) with the hierarchy on, so their wall time is the
+measurement the declared cost risk asks for. The state vector grows from `20` to `176` per mode. If
+these four do not fit, the validation legs do not either, and the item splits with the convergence
+study landing first — **reported as a measured cost, which is what the risk registered.**
