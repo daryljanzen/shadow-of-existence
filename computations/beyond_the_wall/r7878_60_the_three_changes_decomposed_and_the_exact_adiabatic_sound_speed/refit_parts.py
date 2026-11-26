@@ -128,21 +128,42 @@ def main():
         crosses = any(w['TT|%s' % s]['crosses_one'] for s in ('0.30', '0.60'))
         away = any(w['TT|%s' % s]['frac_of_excess'] < 0.0 for s in ('0.30', '0.60'))
         ee_out = any(v > TOL_EE for v in ee)
-        if away or (ee_out and not crosses):
-            v = ('D', "the order's expectation is REFUTED: the weight change alone moves A away "
-                      'from one, or takes EE out of band')
-        elif crosses:
-            v = ('C', 'the weight change ALONE already overshoots, so the crossing is not the '
-                      "continuity or Euler change's doing")
-        elif all(abs(x - 1.0) <= TOL_TT for x in tt) and not ee_out:
-            v = ('A', "the order's expectation HOLDS: the weight change alone is the repair")
-        else:
-            v = ('B', 'right direction, not enough -- the fraction of the excess removed is '
-                      'reported per sum')
+        #: ⛔⛭⛭ ** THE REGISTERED ROWS ARE NOT MUTUALLY EXCLUSIVE, AND THE FIRST VERSION OF THIS
+        #:   BLOCK HID THAT BEHIND AN `elif` CHAIN. **  *`Ⓒ` fires on a crossing and `Ⓓ` fires on
+        #:   EE leaving its band; nothing in `PREDICTION.md` says which governs when both hold,
+        #:   and the chain silently preferred `Ⓒ` -- the softer of the two, since `Ⓓ` is the row
+        #:   that says the order's expectation is REFUTED.  A precedence invented at reading time
+        #:   is a criterion moved after the result.*  ⇒ ** Every row that fires is reported, and
+        #:   the overlap is named as a defect of this seat's own registration rather than
+        #:   resolved. **  The conditions themselves are untouched: each is the one registered.
+        _ROWS = [
+            ('A', "the order's expectation HOLDS: the weight change alone is the repair",
+             all(abs(x - 1.0) <= TOL_TT for x in tt) and not ee_out and not crosses),
+            ('B', 'right direction, not enough -- the fraction of the excess removed is '
+                  'reported per sum',
+             (not crosses) and (not away) and (not ee_out)
+             and not all(abs(x - 1.0) <= TOL_TT for x in tt)),
+            ('C', 'the weight change ALONE already overshoots, so the crossing is not the '
+                  "continuity or Euler change's doing", crosses),
+            ('D', "the order's expectation is REFUTED: the weight change alone moves A away "
+                  'from one, or takes EE out of band', away or ee_out),
+        ]
+        _FIRED = [(k, t) for k, t in [(k, t) for k, t, c in _ROWS if c]]
+        v = ('+'.join(k for k, _ in _FIRED) or '-',
+             ' ;; '.join(t for _, t in _FIRED) or 'no registered row fires')
         print('\n  ⇒ ① VERDICT (%s): %s' % v)
+        if len(_FIRED) > 1:
+            print('     ** %d REGISTERED ROWS FIRE AT ONCE -- the registration did not make them '
+                  'exclusive, and the overlap is reported, not resolved by a precedence invented '
+                  'here. **' % len(_FIRED))
+            for k, t in _FIRED:
+                print('       (%s) %s' % (k, t))
         print('     TT A = %.5f, %.5f ;  EE |A-1| = %.5f, %.5f  (bands %.2f and %.2f)'
               % (tt[0], tt[1], ee[0], ee[1], TOL_TT, TOL_EE))
+        print('     the rows, each evaluated on its own registered condition: %s'
+              % ', '.join('%s=%s' % (k, 'FIRES' if c else 'no') for k, _, c in _ROWS))
         rec['verdict_1'], rec['verdict_1_text'] = v
+        rec['verdict_1_rows'] = dict((k, bool(c)) for k, _, c in _ROWS)
 
         # ── the attribution, registered as a measurement and not an assumption ──────────────
         if all(x in rec['arms'] for x in ('W', 'C', 'E')):
