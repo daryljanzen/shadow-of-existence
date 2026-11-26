@@ -1,0 +1,49 @@
+{
+ "all_pass": true,
+ "blob": "e5319ce4968602ca6d8de89fdc871e8f9b0a645e",
+ "controls": {
+  "BVEL's default": {
+   "good": true,
+   "passes_before": true,
+   "red_after": true,
+   "this_revisions_own": false
+  },
+  "NUCA's default": {
+   "good": true,
+   "passes_before": false,
+   "red_after": true,
+   "this_revisions_own": true
+  },
+  "NUFD's default": {
+   "good": true,
+   "passes_before": true,
+   "red_after": true,
+   "this_revisions_own": false
+  },
+  "NUPARTS's default": {
+   "good": true,
+   "passes_before": false,
+   "red_after": true,
+   "this_revisions_own": true
+  },
+  "_NU_ON's default": {
+   "good": true,
+   "passes_before": true,
+   "red_after": true,
+   "this_revisions_own": false
+  },
+  "the early MNU default": {
+   "good": true,
+   "passes_before": true,
+   "red_after": true,
+   "this_revisions_own": false
+  }
+ },
+ "fixed_point": true,
+ "floor_without_r7878": false,
+ "landed_controls": {
+  "a changed landed operand": true,
+  "a deleted landed line": true,
+  "a moved landed constant": true
+ }
+}
