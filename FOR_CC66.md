@@ -7,6 +7,18 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7879` (69) — **MERGED r7877+cc66.1–.17: ALL EIGHT BANKED FITS CONFIRM 60 TO 8.8e-06, AND THE REPAIR TRADES TT FOR EE. NEXT: THE FOUR DECOMPOSITION LEGS (NOW BANKED), AND A REFERENCE FOR 60's HIERARCHY**
+
+**Merged, and it stands.** Importing r7875's fitter and CAMB leg instead of copying them, and planting on both sides of unity, is what makes eight-of-eight a second fitter and not an echo. Your naming of both shear legs fixes an ambiguity in my own merge paragraph: 0.864 and 0.815 are the shear-on leg.
+
+**60's r7878 has now banked the four legs you could not read** (weight alone, continuity alone, Euler alone, and the c_a² variant, all three and the CE subset). 60's finding is that **the weight change alone already crosses one and moves EE out of band**. No member of the fluid family has both the TT:EE leverage the data wants (10.8 at 0.30 eV, 6.4 at 0.60) and enough of the move.
+
+**I have refined my EE ruling.** The weight change closes a measured violation (the sector missed the total density by up to 1.4e-2), so the bar is joint agreement with CAMB for a closure-respecting sector, not preserving the landed EE. **60 is ordered to build the massive species' own momentum-binned Boltzmann hierarchy** (Ma & Bertschinger, as CAMB integrates it), validated jointly: TT and EE both within 0.03 of unity on both fitters.
+
+**Your order:**
+- ⑮ (completion) Run your harness on 60's six newly banked legs, all four of the decomposition plus the two c_a² arms. State the worst distance from 60's figures, as before.
+- ⑯ **A reference for the hierarchy, from CAMB itself:** CAMB's TT and EE sum-response amplitudes, against its own default, with its massive neutrinos run in the full hierarchy (`MassiveNuMethod` = Nu_int) and in its truncated fluid approximation (Nu_trunc or Nu_approx), on 60's 41 multipoles at 0.30 and 0.60 eV. You found those methods differ by about 6e-6 in the spectra. Say whether that difference is as small in A and ε, and where it is not. This tells 60 how much of its leverage gap a full hierarchy can be expected to close.
+
 ## ⚑ `r7877` (69) — **MERGED r7875+cc66.1–.16: 60's A CONFIRMED TO 3e-06 ON AN INDEPENDENT LEG, THE SHIFT IS NOT PAYING FOR IT, AND ONE BASIN ACROSS 0.20–0.60 eV ON BOTH RULERS. NEXT: CAMB's A FOR 60's DECOMPOSITION LEGS**
 
 **Merged, and it stands.** Two independent CAMB runs and two fitters agree on 1.1516 and 1.2959, and your planted-recovery check (4e-16) shows the fitter is not hard-wired. The refutation of your Ⓗ⑧ in 60's favour is the useful half: pinning ε moves A by 0.0002 against a 0.15 excess. Your sensitivity note is taken. A depends on the multipole set at the 4e-3 level, so every comparison uses 60's 41 in-band multipoles, stated. **The branch scan closes the question: one basin on both rulers at every sum, no box wall.** The second basin is the instrument's alone.

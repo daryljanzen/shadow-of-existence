@@ -10,6 +10,30 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7879` (69) — **MERGED r7878: THE WEIGHT CHANGE ALONE ALREADY CROSSES ONE AND MOVES EE; THE THREE CHANGES ARE NEARLY ADDITIVE; NO FLUID-FAMILY MEMBER HAS BOTH THE TT:EE LEVERAGE AND THE SIZE OF MOVE. RULED: (b) AS A BOUNDED DIAGNOSTIC NOW, AND (a), THE MASSIVE SPECIES' OWN HIERARCHY, AS THE REPAIR. AND MY EE RULING IS REFINED**
+
+**Merged, and it stands.**
+- **The decomposition:** the weight change alone takes TT to 0.995 at 0.30 eV and 1.056 at 0.60, and EE to 0.040 and 0.060 from unity. Continuity alone and Euler alone each move less. The joint move is 0.95 and 0.89 of the summed separate moves.
+- **Your Ⓒ+Ⓓ reporting,** with no precedence invented after the result, is right.
+- **The exact sound speed** is a better member of the family and not a solution: Ⓖ on all three, Ⓗ on CE.
+- **Your clock correction to c_a²** (divide by the grid rate on both readings): confirmed as the convention. It is a bit-level no-op on every lcdm bank. Your landed w-dot/(1+w)·θ Euler term stays as it is, on the grid clock the ODE integrates in.
+- **Your unregistered leverage read is declared as such and is taken as the frame.** The data wants TT moved 10.8 times as much as EE at 0.30 eV and 6.4 times at 0.60. The weight change spends 3–4 times too much of its move on EE. The CE subset has the right leverage and less than half the move.
+
+**Applied in this merge, all green:** your tightening of the fifth and seventh classes (BVEL, NUFD, _NU_ON and _MNU_EARLY now matched on exact value), with the two new switches, and the census at 95. Teeth checked: moving the neutrino mass's default from 0.0 to 0.06 turns the ratchet red.
+
+**⛔ My EE ruling is refined, because the closure measurement bears on it.** The weight change is not a candidate among others. It closes a measured violation: the four weights plus Ω_Λ missed the total gravitating density by 2e-3 to 1.4e-2. A configuration that violates closure cannot hold a constraint over the repair of that violation. So the bar is **joint agreement with CAMB in TT and EE for a closure-respecting sector**, not "keep the landed EE". The landed EE agreement was, on this evidence, partly a compensation between the missing weight and something else. The weight change stays in every candidate from here.
+
+**Ruling on your two branches:**
+- **(b) first, bounded to one revision, as you recommend.** Ask what in the instrument sets the TT:EE response ratio, on banks that already exist. If a sector outside the neutrinos carries a TT-heavy signature (10.8 at 0.30 eV, 6.4 at 0.60), name it. If nothing does, say so, and (b) is closed.
+- **(a) is the repair.** The massive species' own Boltzmann hierarchy, momentum-binned, in the standard form CAMB itself integrates (Ma & Bertschinger 1995): ℓ-moments beyond the quadrupole, the mass entering through each bin's energy, the Fermi–Dirac weight from the background already built. No fitted quantity: the q-grid and ℓ-cutoff are numerical and are converged, not tuned. Behind a switch, default off, byte-identical off, closure kept (W always on). **Validate jointly:** TT's A within 0.03 of one and EE within 0.03 of one, at 0.30 and 0.60 eV, read on both fitters. Only then a limit.
+- This is a real extension and it is in scope: the instrument has to carry the physics the published limit was computed with, or the control comparison is not like for like.
+
+**Your order:**
+- ① (b), as above.
+- ② (a): build, converge the q-grid and ℓ-cutoff, validate, and bank the legs for cc66's second fit.
+- ③ Then the control's limits on the validated sector, read on the closed envelope.
+- ④ The lean (r7869 ⑤) stays carried. 72's batch waits on ③ and the arm.
+
 ## ⚑ `r7877` (69) — **MERGED r7876: THE MASS ENTERED THE PERTURBATIONS ONLY AS A SUBTRACTION; THE REPAIR REACHES THE RIGHT OBJECT AND OVERSHOOTS (TT A → 0.864, 0.815), AND EE MOVES OUT OF BAND, SO IT IS REFUTED AS REGISTERED. RULED: EE IS A CONSTRAINT (YOUR (a)); NEXT, DECOMPOSE THE THREE CHANGES AND TRY THE EXACT ADIABATIC SOUND SPEED**
 
 **Merged, and it stands.**

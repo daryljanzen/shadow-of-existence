@@ -216,14 +216,26 @@ def _tree_is_bL_plus_dneff(bL):
         #   the landed code and one to the landed branch of the guard keep the row red, and only the dead-unset
         #   BVEL branch passes
         NAMES = {'_dneff', 'DNEFF', '_yhe', 'YHE', 'MNU', 'ONU',
-                 'BVEL', 'I_DB_F', 'I_TBF'}
+                 'I_DB_F', 'I_TBF'}
         UNIT = set()
         #: eighth class -- r7877 (69), applied from 60's r7876 patch (measured 8 of 8 controls red): the four
         #: statements NUPERT adds, each matched on its EXACT value expression, so a moved default stays red
         EXACT = {'NUPERT': "os.environ.get('NUPERT', '0') == '1'",
                  'NUSHOFF': "os.environ.get('NUSHOFF', '0') == '1'",
                  '_NU_NR': '1.0 / 6.0',
-                 'Wnu_of': 'None'}
+                 'Wnu_of': 'None',
+                 # ⛭ r7879 (69), applied from 60's r7878 patch: the two switches r7878 adds, and the FOUR landed
+                 #   bindings the fifth and seventh classes used to drop BY NAME, now matched on their exact value
+                 #   (60 measured each moved default passing the by-name shape and red after this).  The fourth is
+                 #   not a switch: `_MNU_EARLY` reads the neutrino mass.
+                 'NUPARTS': "os.environ.get('NUPARTS', 'WCE')",
+                 'NUCA': "os.environ.get('NUCA', '0') == '1'",
+                 'BVEL': "os.environ.get('BVEL', '0') == '1'",
+                 'NUFD': ("os.environ.get('NUFD', '0') == '1' "
+                          "and float(os.environ.get('MNU', '0.0')) != 0.0"),
+                 '_NU_ON': ("os.environ.get('NUFD', '0') == '1' "
+                            "and float(os.environ.get('MNU', '0.0')) != 0.0"),
+                 '_MNU_EARLY': "float(os.environ.get('MNU', '0.0'))"}
 
         # --- fifth class (a): a BVEL-guarded term added to or subtracted from a landed expression,
         #     whose `orelse` is Constant 0, collapses the whole BinOp back to the landed left operand.
@@ -346,7 +358,7 @@ def _tree_is_bL_plus_dneff(bL):
         def visit_Dict(self, node):
             self.generic_visit(node)
             keep = [(k, v) for k, v in zip(node.keys, node.values)
-                    if not (isinstance(k, _ast.Constant) and k.value in ('DNEFF', 'YHE', 'BVEL', 'MNU', 'FOURPI', 'PRIMNORM_env', 'NUFD', 'NUPERT', 'NUSHOFF'))]
+                    if not (isinstance(k, _ast.Constant) and k.value in ('DNEFF', 'YHE', 'BVEL', 'MNU', 'FOURPI', 'PRIMNORM_env', 'NUFD', 'NUPERT', 'NUSHOFF', 'NUPARTS', 'NUCA'))]
             node.keys = [k for k, _ in keep]
             node.values = [v for _, v in keep]
             return node
@@ -358,7 +370,7 @@ def _tree_is_bL_plus_dneff(bL):
         _tr = _ast.parse(new)
         _s = _Strip()
         _s.UNIT = _inert_unit_factors(_tr)
-        _s.NAMES = _Strip.NAMES | {'FOURPI'} | _s.UNIT | {'NUFD', '_NU_ON', '_MNU_EARLY'}
+        _s.NAMES = _Strip.NAMES | {'FOURPI'} | _s.UNIT
         return _ast.dump(_ast.parse(old)) == _ast.dump(_s.visit(_tr))
     except (OSError, SyntaxError):
         return False
