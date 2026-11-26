@@ -738,6 +738,122 @@ else:
         return 1.0
 
 
+# ** NUHIER, r7882+60 AT 69's ORDER (r7879 item ②): THE MASSIVE SPECIES' OWN BOLTZMANN HIERARCHY,
+#   MOMENTUM-BINNED, IN THE STANDARD FORM -- which `r7879` ruled THE REPAIR after the fluid family
+#   was measured out. **
+# *Per momentum node `q_j` the moments `Psi_l(q_j)` evolve with the mass entering ONLY through that
+# node's own energy `eps_j(a) = sqrt(q_j^2 + y(a)^2)`, and the weight is the background's own
+# Fermi-Dirac `f0` -- nothing here is fitted.  The two numbers it carries, `NQ` and `LMAXNU`, are
+# NUMERICAL: `r7882`'s `quad.py` fixed `NQ = 12` on `[0, QMAXNU = 20]` by the registered criterion
+# that the grid reproduce this file's own `NUF_of` and `NUW_of` to `1e-04` at every decade of `a`,
+# BEFORE any spectrum existed to tune them against.*
+#   ⛔ ** IT REFUSES TO RUN BESIDE THE FLUID APPROXIMATION. **  *They are two models of ONE sector
+#   and that sector has one slot, so the switch refuses rather than letting either silently
+#   overwrite the other.*
+#   ⌗ *The source signs are not taken from a paper's convention and hoped to match: each one is
+#   DERIVED by requiring the massless limit to reproduce the landed massless lines of this file,
+#   and `r7882`'s own gate then measures that limit rather than trusting the derivation.*
+NUHIER = os.environ.get('NUHIER', '0') == '1'
+NQ = int(os.environ.get('NQ', '12'))
+LMAXNU = int(os.environ.get('LMAXNU', '12'))
+QMAXNU = float(os.environ.get('QMAXNU', '20'))
+if NUHIER:
+    if NUPERT:
+        raise SystemExit("  ⛔ NUHIER=1 and NUPERT=1 are two models of ONE sector and it has one "
+                         "slot: the fluid approximation and the hierarchy cannot both carry the "
+                         "species' perturbations, so this refuses rather than letting one win "
+                         "silently")
+    if not NUFD or MNU == 0.0:
+        raise SystemExit("  ⛔ NUHIER=1 needs NUFD=1 and MNU != 0: the hierarchy IS the massive "
+                         f"species', and here NUFD={int(bool(NUFD))} MNU={MNU}")
+    if NQ < 2 or LMAXNU < 2 or QMAXNU <= 0.0:
+        raise SystemExit(f"  ⛔ NQ={NQ} LMAXNU={LMAXNU} QMAXNU={QMAXNU}: the grid needs at least "
+                         "two nodes, the hierarchy at least the quadrupole, and a positive cut")
+    #: the quadrature `quad.py` fixed, built here by the same rule it was fixed by
+    _hx, _hxw = np.polynomial.legendre.leggauss(NQ)
+    HQ = 0.5 * QMAXNU * (_hx + 1.0)
+    _HW = 0.5 * QMAXNU * _hxw
+    #: `g(q) = dln f0/dln q` for `f0 = 1/(e^q+1)`, written so it does not overflow at large `q`
+    HG = -HQ / (1.0 + np.exp(-HQ))
+    HF = _fd_w(HQ) * _HW
+    #: `y(a) = m_nu/T_nu(a)` per species, the SAME expression the background's own grid uses
+    HY_of = CubicSpline(eg, (MNU / 3.0) * ag / _T_NU0_EV)
+    #: ** THE WEIGHT CHANGE IS ALWAYS ON UNDER THE HIERARCHY, as `r7879` requires: ** the sector it
+    #: is validated in has to be a closure-respecting one, so `W` is not optional here.
+    On_of = CubicSpline(eg, Onu_of(ag) / _rt)
+    print(f"  __NUHIER__ the massive species' own Boltzmann hierarchy: NQ={NQ} on [0, {QMAXNU:g}], "
+          f"LMAXNU={LMAXNU}, {NQ * (LMAXNU + 1)} moment(s) per mode, y(1)={float(HY_of(eta_0)):.4g}",
+          flush=True)
+else:
+    HQ = _HW = HG = HF = HY_of = None
+
+#: the number of moments the hierarchy adds per mode -- `0` when it is off, so every layout line
+#: below is the LANDED line plus a term that vanishes, which is the form the AST strip classes
+#: reduce away rather than read as a different arithmetic.
+_NH = (NQ * (LMAXNU + 1)) if NUHIER else 0
+
+
+def _nuhier_moments(e, kk, Psi):
+    """the species' own `delta`, `theta` and `sigma` from its moments, at this conformal time
+
+    The `q`-integrals of `Psi_0`, `Psi_1` and `Psi_2` against `q^2 eps f0`, `q^3 f0` and
+    `q^4/eps f0`, each normalised by the same `rho + p` -- so in the massless limit they return
+    exactly the landed `dn`, `tn` and `F_2/2` that this file already evolves, which is what
+    `r7882`'s gate Ⓠ⓸ measures rather than assumes.
+    """
+    yv = float(HY_of(e))
+    eps = np.sqrt(HQ ** 2 + yv ** 2)
+    wr = HQ ** 2 * eps * HF                    # the density's weight
+    wt = HQ ** 3 * HF                          # the energy flux's
+    ws = HQ ** 4 / eps * HF                    # the shear's, and the pressure's
+    rho = float(wr.sum())
+    rp = rho + float(ws.sum()) / 3.0           # `rho + p`, the factor both fluxes carry
+    d = (Psi[:, :, 0] * wr[None, :]).sum(axis=1) / rho
+    t = kk * (Psi[:, :, 1] * wt[None, :]).sum(axis=1) / rp
+    sg = (2.0 / 3.0) * (Psi[:, :, 2] * ws[None, :]).sum(axis=1) / rp
+    return d, t, sg, eps
+
+
+def _nuhier_rhs(e, kk, Psi, Php, Ps, eps):
+    """`d Psi_l/d eta` per momentum node, with the mass entering ONLY through that node's `eps`
+
+    ⌗ *Every source sign here is DERIVED by requiring the massless limit to reproduce this file's
+    own landed lines -- `dn' = -(4/3) tn + 4 Phi'`, `tn' = k^2(dn/4 - sigma) + k^2 Psi` and
+    `F_2' = (8/15) tn - (3/5) k F_3` -- and not copied from a convention and hoped to agree.  The
+    derivation is on paper in `r7882`'s record and the gate measures it.*
+    """
+    q = HQ[None, :]
+    ep = eps[None, :]
+    g = HG[None, :]
+    qke = kk[:, None] * q / ep
+    out = np.empty_like(Psi)
+    out[:, :, 0] = -qke * Psi[:, :, 1] - Php[:, None] * g
+    out[:, :, 1] = ((qke / 3.0) * (Psi[:, :, 0] - 2.0 * Psi[:, :, 2])
+                    - (kk[:, None] * ep / (3.0 * q)) * Ps[:, None] * g)
+    for _l in range(2, LMAXNU):
+        out[:, :, _l] = (qke / (2 * _l + 1)) * (_l * Psi[:, :, _l - 1]
+                                                - (_l + 1) * Psi[:, :, _l + 1])
+    #: the same `(l+1)/eta` truncation the massless hierarchy already uses, so the two closures are
+    #: ONE convention and not two
+    out[:, :, LMAXNU] = qke * Psi[:, :, LMAXNU - 1] - (LMAXNU + 1) / e * Psi[:, :, LMAXNU]
+    return out
+
+
+def _nuhier_seed(Psi, kk, d0, t0, Fn0=None):
+    """map a fluid-plus-massless-hierarchy state into the per-node moments
+
+    `Psi_0 = -g delta/4`, `Psi_1 = -g theta/(3k)` and `Psi_l = -g M_l/4` for `l >= 2`: the
+    inverses of the integrals above in the massless limit, which is the limit the handover and the
+    initial condition are both taken in.
+    """
+    Psi[:, :, 0] = -HG[None, :] * d0[:, None] / 4.0
+    Psi[:, :, 1] = -HG[None, :] * t0[:, None] / (3.0 * kk[:, None])
+    if Fn0 is not None:
+        for _l in range(2, min(LMAXNU, Fn0.shape[1] + 1) + 1):
+            Psi[:, :, _l] = -HG[None, :] * Fn0[:, _l - 2][:, None] / 4.0
+    return Psi
+
+
 # ** LEAFSCALES=1 PUTS r_s AND r_D BOTH ON THE LEAF CLOCK -- node 66's adjudication, r6760+66.1. **
 # *The corpus states the assignment twice and not alike.  P15 `sec:tensions`: "the scales such a
 # separation is read in --- r_s and r_D, which accumulate against the layer's own geometric
@@ -1104,6 +1220,10 @@ _SWITCH_SNAPSHOT = {
     'NUSHOFF': bool(NUSHOFF),
     'NUPARTS': NUPARTS,
     'NUCA': bool(NUCA),
+    'NUHIER': bool(NUHIER),
+    'NQ': (NQ if NUHIER else None),
+    'LMAXNU': (LMAXNU if NUHIER else None),
+    'QMAXNU': (QMAXNU if NUHIER else None),
     'instrument': 'ACOUSTIC_two_arm.py',
     # ⛭⛭⛭ ** THE INSTRUMENT'S OWN SOURCE HASH, ADDED AT r7109 ⓵ AT `70`'s REQUEST. **
     # *`70`'s three-grid audit cleared the comparison on all three counts and named exactly one thing
@@ -1171,10 +1291,13 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
     #   is `0` when it is off, and NOT as a new arithmetic that happens to agree: the provenance
     #   ratchets that stamp this file's AST reduce a `BVEL` guard away, and a line rewritten into an
     #   equal-valued different form is a difference they are right to keep red.*
-    NV = 7 + (LN - 1) + 1 + (1 if BVEL else 0)
-    I_DB = NV - 1 - (1 if BVEL else 0)
+    #: ⌘ *and the third term is the same shape again: `_NH` is `0` with the hierarchy off, so
+    #: these are the landed lines plus a vanishing term and not a new arithmetic.*
+    NV = 7 + (LN - 1) + 1 + (1 if BVEL else 0) + _NH
+    I_DB = NV - 1 - (1 if BVEL else 0) - _NH
     I_TBF = I_DB + 1
-    assert I_DB == NV - 1 or BVEL, 'with BVEL off the baryon contrast must stay at the last index'
+    I_PN = NV - _NH                              # the hierarchy's own block, last
+    assert I_DB == NV - 1 - _NH or BVEL, 'with BVEL off the baryon contrast must stay at the last index'
     e_end = ETA_END if e_end is None else float(e_end)
     y0 = np.zeros((nk, NV))
 
@@ -1350,6 +1473,14 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         y0[:, 4], y0[:, 5] = dg0, th0
         y0[:, 6] = Ph0
         y0[:, I_DB] = 0.75 * dg0
+        if NUHIER:
+            #: the species starts radiation-like, so its moments start as the massless inverses of
+            #: the integrals -- the same map the handover uses, taken in the limit it is exact in.
+            #: ⛔ *Seeded into a FRESH array and assigned back, not through
+            #: `y0[:, I_PN:].reshape(...)`: a column slice of a 2-D array is not contiguous, so that
+            #: reshape returns a COPY and every value written into it would have been thrown away.*
+            y0[:, I_PN:] = _nuhier_seed(np.zeros((nk, NQ, LMAXNU + 1)), kk,
+                                        dg0, th0).reshape(nk, -1)
 
     def rhs(e, Y):
         y = Y.reshape(nk, NV)
@@ -1362,6 +1493,15 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         Ogv, Onv = float(Og_of(e)), float(On_of(e))
         Ocv, Obv = float(Oc_of(e)), float(Ob_of(e))
         sig = _NUFS * F[:, 0] / 2 * _nush(e)         # NUFS=0 -> a perfect fluid (r6889+cc66.36)
+        # ** NUHIER, r7882+60: the SOURCE reads the species' own moments instead of the fluid's.
+        #   The landed `dn`, `tn` and `F` keep evolving on their own lines above and below -- every
+        #   one of them byte-identical -- and simply stop being what the potential reads, so the
+        #   switch off is byte-identical and the two closures can be compared inside ONE run. **
+        _PSI = _DNH = None
+        if NUHIER:
+            _PSI = y[:, I_PN:].reshape(nk, NQ, LMAXNU + 1)
+            _DNH, _TNH, _SGH, _EPS = _nuhier_moments(e, kk, _PSI)
+            sig = _SGH
         tp = float(taup_of(e))
         # ** NOTC=1 removes the in-hierarchy tight-coupling damping (the photon quadrupole closure
         # and the baryon slip) so that the DERIVED exp(-k^2/k_D^2) factor is the only place
@@ -1378,7 +1518,8 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         # BSPLIT=0 restores the pre-c54.178 behaviour -- the whole matter sector at delta_c -- so
         # that the change can be MEASURED on this instrument rather than asserted.
         _mat = (Ocv * dc + Obv * db) if BSPLIT else ((Ocv + Obv) * dc)
-        Php = -Hc * Ps - kk ** 2 * Ph / (3 * Hc) - (Hc * float(Gf_of(e)) / 2) * (Ogv * dg + Onv * dn + _mat)
+        _dnp = _DNH if NUHIER else dn           # what the potential reads for the species
+        Php = -Hc * Ps - kk ** 2 * Ph / (3 * Hc) - (Hc * float(Gf_of(e)) / 2) * (Ogv * dg + Onv * _dnp + _mat)
         # ** DR multiplies EVERY coupling to the potential, at EVERY site. **
         out = np.empty_like(y)
         out[:, 0] = -tc + DRC * 3 * Php
@@ -1427,6 +1568,8 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         # tightly coupled and tg IS their velocity; the hierarchy branch gives them their own. **
         # ** THE BARYON CONTINUITY IS ON THE BARYONS' OWN VELOCITY WHEN THEY HAVE ONE. **
         out[:, I_DB] = (-tb if BVEL else -tg) + DRC * 3 * Php
+        if NUHIER:
+            out[:, I_PN:] = _nuhier_rhs(e, kk, _PSI, Php, Ps, _EPS).reshape(nk, -1)
         if BVEL:
             # ⚠ ** TWO REGIMES, AND THE SWITCH IS THE SAME `TCSW` THE CMB PATH HANDS OVER AT. **
             # *Above it the pair is one fluid and `theta_b` is carried as a STATE THAT FOLLOWS
@@ -1943,7 +2086,8 @@ I_DB_ = NVF - 1
 I_TB = NVF                                      # the baryon velocity, its own from here
 I_FG = I_TB + 1                                 # F_2 .. F_LG          (LG-1 entries)
 I_GG = I_FG + (LG - 1)                          # G_0 .. G_LG          (LG+1 entries)
-NVH = I_GG + (LG + 1)
+I_PNH = I_GG + (LG + 1)                         # the neutrino hierarchy's block, last again
+NVH = I_PNH + _NH
 
 
 def eta_switch():
@@ -1970,7 +2114,24 @@ def evolve_hier(kk, t_eval, e_sw, yF):
     # and not merely in value, so the AST ratchets can reduce it away.*
     #   ⌗ It FAILED LOUDLY before this, with a broadcast error naming both shapes, which is the
     #   right failure for a layout change and the reason the switch defaults off.
-    y0[:, :(yF.shape[1] if BVEL else NVF)] = yF
+    #   ⛔⛭ r7882: ** the copy width must EXCLUDE the neutrino hierarchy's block, ** because
+    #   `evolve`'s own layout appends it and `yF.shape[1]` therefore grew: left as it was, the
+    #   `BVEL` guard would have copied those moments over this segment's baryon velocity and photon
+    #   hierarchy. *`_NH` is `0` with the switch off, so the line is the landed one plus a vanishing
+    #   term.*  The moments are then copied to their own slot, with their size ASSERTED rather than
+    #   trusted -- an index error here would be silent otherwise, which is the one thing it must
+    #   not be.
+    y0[:, :((yF.shape[1] - _NH) if BVEL else NVF)] = yF[:, :(yF.shape[1] - _NH)]
+    if NUHIER:
+        #: ⛔ *and the assertion says something: the first version of it compared
+        #: `yF.shape[1] - _NH + _NH` against `yF.shape[1]`, which is true of every array there has
+        #: ever been.  A gate that cannot fail is the vacuous class this corpus keeps receipts
+        #: about, and it is replaced by the two equalities that can.*
+        assert yF.shape[1] - _NH == 7 + (LN - 1) + 1 + (1 if BVEL else 0), \
+            'the handover array is not the fluid layout plus the hierarchy block'
+        assert NVH - I_PNH == _NH, \
+            'this segment has not reserved the hierarchy block the handover carries'
+        y0[:, I_PNH:] = yF[:, -_NH:]
     tp_sw = float(taup_of(e_sw))
     # ** THE TIGHT-COUPLING VALUES, DERIVED FROM THE HIERARCHY'S OWN QUASI-STATIC LIMIT AND NOT
     # QUOTED. **  Setting the time derivatives and the k-terms to zero in the l = 2 and polarisation
@@ -2000,11 +2161,19 @@ def evolve_hier(kk, t_eval, e_sw, yF):
         Ocv, Obv = float(Oc_of(e)), float(Ob_of(e))
         tp = float(taup_of(e))
         sig = _NUFS * Fn[:, 0] / 2 * _nush(e)        # NUFS=0 -> a perfect fluid (r6889+cc66.36)
+        # ** NUHIER, r7882+60: the same substitution as in the first right-hand side, and it had to
+        #   reach both -- the refit numbers of this sector are all read on THIS path. **
+        _PSI = _DNH = None
+        if NUHIER:
+            _PSI = y[:, I_PNH:].reshape(nk, NQ, LMAXNU + 1)
+            _DNH, _TNH, _SGH, _EPS = _nuhier_moments(e, kk, _PSI)
+            sig = _SGH
         sgg = F[:, 0] / 2
         Pi = F[:, 0] + G[:, 0] + G[:, 2]
         Ps = Ph - 6 * Hc ** 2 * (Onv * sig + Ogv * sgg) / kk ** 2
         _mat = (Ocv * dc + Obv * db) if BSPLIT else ((Ocv + Obv) * dc)
-        Php = -Hc * Ps - kk ** 2 * Ph / (3 * Hc) - (Hc * float(Gf_of(e)) / 2) * (Ogv * dg + Onv * dn + _mat)
+        _dnp = _DNH if NUHIER else dn           # what the potential reads for the species
+        Php = -Hc * Ps - kk ** 2 * Ph / (3 * Hc) - (Hc * float(Gf_of(e)) / 2) * (Ogv * dg + Onv * _dnp + _mat)
         out = np.zeros_like(y)
         out[:, 0] = -tc + DRC * 3 * Php
         out[:, 1] = -Hc * tc + DRE * kk ** 2 * Ps
@@ -2059,6 +2228,8 @@ def evolve_hier(kk, t_eval, e_sw, yF):
                                 - tp * F[:, i])
         out[:, I_FG + LG - 2] = kk * F[:, LG - 3] - (LG + 1) / e * F[:, LG - 2] - tp * F[:, LG - 2]
         # polarisation: G_0 .. G_LG
+        if NUHIER:
+            out[:, I_PNH:] = _nuhier_rhs(e, kk, _PSI, Php, Ps, _EPS).reshape(nk, -1)
         out[:, I_GG] = -kk * G[:, 1] + tp * (-G[:, 0] + Pi / 2)
         out[:, I_GG + 1] = (kk / 3) * (G[:, 0] - 2 * G[:, 2]) - tp * G[:, 1]
         out[:, I_GG + 2] = (kk / 5) * (2 * G[:, 1] - 3 * G[:, 3]) + tp * (-G[:, 2] + Pi / 10)
