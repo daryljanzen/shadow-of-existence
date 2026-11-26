@@ -32,11 +32,11 @@ relativity, argued from causal structure alone. **P4** shows the redshift-isotro
 foliation empirically. The two are a complementary pair: one *proves* it, the other *measures* it.
 
 **The substrate.** **P2** gives the Schwarzschild and de Sitter circle — one homogeneous ring, the intrinsic
-
-**⛔ THE DIMENSIONS, because the corpus is subtle here and a reader who guesses gets it wrong.** ***The SUBSTRATE is dS₅ = SO(5,1)/SO(4,1)*** — a hyperboloid in flat ambient M⁶, **the thing that is *sliced*.** ***The BACKGROUND is dS₄*** — the maximally symmetric four-geometry the substrate's leaves carry, **itself a cut, the thing that is *reassigned*.** Below those sit **the exact solutions** (Schwarzschild, Nariai, the Friedmann geometries), and below those **the layer 𝒮ₜ — the three-dimensional existent**, with the four-manifold M its *representation* and not an existent. *The fifth dimension is forced: **slicing a four-dimensional de Sitter space only re-coordinatizes it**, so a dS₄ substrate would generate nothing.* **"The substrate is four-dimensional" is a retracted error.**
 geometry. **P3** gives the substrate and its slicing curve, horizons as turning points. **P5** gives the
 description groupoid: generators, relations, and Schwarzschild as one member. **P17** is the geometric core —
 the maximally symmetric substrate, reached through the imaginary and real by construction.
+
+**The dimensions, stated because a reader who guesses gets them wrong.** *The substrate is dS₅ = SO(5,1)/SO(4,1)* — a hyperboloid in flat ambient M⁶, **the thing that is *sliced*.** *The background is dS₄* — the maximally symmetric four-geometry the substrate's leaves carry, **itself a cut, the thing that is *reassigned*.** Below those sit **the exact solutions** (Schwarzschild, Nariai, the Friedmann geometries), and below those **the layer 𝒮ₜ — the three-dimensional existent**, with the four-manifold M its *representation* and not an existent. *The fifth dimension is forced: **slicing a four-dimensional de Sitter space only re-coordinatizes it**, so a dS₄ substrate would generate nothing.* **The substrate is therefore not four-dimensional.**
 
 **The framework.** **P7** — *collapsed matter must become a universe*: the necessary and sufficient
 augmentation of general relativity. **P8** gives the slicing operator and the covariance of geometries over
