@@ -15,6 +15,86 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7875+cc66.16 — ⛭⛭ **⑬ YOUR `1.152` AND `1.296` ARE CONFIRMED INDEPENDENTLY TO `3e-06`, AND THE SHIFT IS **NOT** PAYING FOR THE AMPLITUDE — MY OWN `Ⓗ⑧` IS REFUTED IN `60`'s FAVOUR. ⑭ ONE BASIN ON BOTH RULERS AT EVERY SUM `0.20`–`0.60`, NO BOX WALL ANYWHERE**
+
+Both items are in. Receipt
+`P15_the_amplitude_is_confirmed_independently_and_is_not_bought_with_a_shift_and_the_branch_is_one_across_the_range.py`,
+**14 arms, 0 failed**, `COMPUTES: nothing`. Registered at `401a6bcd9` with fourteen bands, pushed
+before a line of either computation existed, and **amended in a second pushed commit — still before
+⑬ ran** — when reading `r7871`'s record showed two errors of fact in my own registration.
+
+### ⑬ — yes, and to five or six decimals
+
+| | mine | `60`'s | \|Δ\| |
+|---|---|---|---|
+| TT `0.30` | **`1.1516214`** | `1.1516250` | `3.5e-06` |
+| TT `0.60` | **`1.2959211`** | `1.2959240` | `2.8e-06` |
+| EE `0.30` | `1.0140592` | `1.0140521` | `7.1e-06` |
+| EE `0.60` | `1.0463072` | `1.0462960` | `1.1e-05` |
+
+My own CAMB leg, my own fitting code, `60`'s `41` in-band multipoles. The `θ*` allowance reproduces
+`60`'s at **relative zero**, and the fitter recovers a planted `(A, ε)` to `4.441e-16` — so it is
+not hard-wired to their answer, which `Ⓔ⑤` would otherwise be worth nothing.
+
+⌗ Two legs, not one: your order said *my own* CAMB leg, and `60`'s `shift.py` reads my `r7871`
+record **only for the control parameters** and runs CAMB itself. So this is two independent runs
+agreeing, not one run read twice.
+
+### ⛔ and the arm I expected to qualify `60` strengthens them instead
+
+`Ⓗ⑧` registered that `A` would move once `ε` was pinned inside its allowance, because `60`'s record
+shows `ε` running well past it. **My fit reproduces that — `2.77×` the allowance on TT at `0.30`,
+`6.57×` on EE — and `A` still barely moves:** `1.1516214` at `ε` free, `1.1517591` at `ε` pinned to
+the allowance, `1.1518321` at `ε = 0`. A spread of `0.000211`, which is **`60` times smaller** than
+the `0.15` excess the claim rests on. So the shift and the amplitude separate here, and the
+amplitude survives without the shift. **Reported as refuted because that is what I registered.**
+
+### ⚠ two sensitivities that exceed the agreement they qualify — routed, not asserted
+
+**The multipole set is load-bearing.** On `60`'s `41` in-band multipoles TT at `0.30` is `1.1516214`;
+on all `321` it is `1.1473108`. That gap, `0.004311`, is a thousand times the `3.5e-06` agreement —
+so matching your `41` was not a detail.
+
+**And the lensing leg bears on EE, not TT.** `60` fit against CAMB's **unlensed** spectra. Refitting
+the same instrument ratios against my **lensed** leg moves TT's `A` by only `0.003516` on an excess
+of `0.15` — robust — but moves **EE's by `0.036161` on an excess of only `0.014`**. EE would read a
+`5` per cent excess instead of `1.4`. ⌗ *`60` compared the instrument against both legs at `r7872`,
+with the stated reason that if the departure is the same on both then lensing is not what carries
+it, so this is already theirs and I flag it rather than correct it. It does not touch TT's `15` and
+`30` per cent, which is the finding you routed.*
+
+### ⑭ — one branch across the range, and `60`'s objection is answered
+
+Eight pairs, `28` minimisations, `Σ = 0.20`/`0.30`/`0.50`/`0.60` on both rulers from your `65.29`
+and `68.59`. **Every pair reads ONE BASIN, and not one of the sixteen converged points sits on a box
+wall** — so every verdict is about the likelihood, not the box. Six have the midpoint strictly
+**below** the worse endpoint; the two that show a ridge, `rd_camb` at `0.60` and `rd_min` at `0.30`,
+sit at `0.0789` and `0.0831` of the profiler's `fatol`.
+
+⌗ **Those two are exactly what the UNSCALED test would have called two basins** — the defect I
+recorded against myself at `r7873`. Two of eight pairs turn on that repair, so it was not
+bookkeeping.
+
+⌗ `Σ = 0.50` and `0.60` are **not banked** by `r7853`, so their base points are COLD runs made here;
+which four were read and which four were computed is in the record, per sum.
+
+**With `r7873`'s `0.400` that is five sums on both rulers, and `60`'s objection is answered.** At
+`r7873` I said "one branch to `0.60` eV" was as unestablished as `60` found it. It is now
+established **at those five sums, under this criterion** — which is a claim about five sampled points
+and a midpoint test, not about every sum in the interval, and I would rather you had it in that form.
+
+### ⌗ three defects of mine on the record
+
+⓵ `Ⓐ①` named `lmax = 1200`; that is `r7873`'s, and `r7871` ran `2600`, which is where `60` took
+theirs. Amended before computing. ⓶ `Ⓑ②` asked my fresh **unlensed** ratio to match my own `r7871`
+record, which is **lensed** — and my first reading of its `1.678e+02` failure was *also* wrong: I
+suspected the near-zero-denominator trap, but measuring absolutely gave real differences to
+`4.902e-02`, largest where lensing bites. Lensed-against-lensed it passes at **exactly zero**, so my
+CAMB leg was never wrong and the control's specification was. ⓷ The failability test caught **two
+vacuous pins** in my scan arms — rounded literals at tolerances looser than the perturbation, the
+slack-pin class `check_figures_pinned` flagged against me at `r7873`, this time caught by my own
+instrument. Replaced with exact values; `12` of `12` perturbations now caught.
+
 ## r7873+cc66.15 — ⛭⛔ **⑪ ONE BASIN ON BOTH RULERS AT `Σ = 0.400` — AT THAT SUM ONLY, SO `60`'s OBJECTION STANDS. ⑫ THE SPLIT CLOSES EXACTLY AND `ISW` CARRIES `×2.14` ITS WEIGHT — BUT `0.945356` OF THAT IS THE **EARLY** `ISW`, NOT THE LATE ONE**
 
 Both items are in. Receipt
