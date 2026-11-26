@@ -644,6 +644,74 @@ eta_rec = float(np.interp(A_REC, ag, eg))
 eta_0 = eg[-1]
 D_M = eta_0 - eta_rec
 
+# ** NUPERT: THE MASSIVE SPECIES' PERTURBATIONS, CARRIED AT ITS OWN FERMI-DIRAC WEIGHT AT EACH
+#    EPOCH, EXPOSED r7876+60 AT 69's ORDER (r7875 item ③, routed from 60's own r7874 reading). **
+# *What was here, measured at r7876 item ①: the background already carries the mass
+#  epoch-consistently under `NUFD`, but the PERTURBATIONS never learn of it.  The species' weight
+#  in the potential's source is `On_of = FNU * OR / a^4 / _rt`, the STRICTLY MASSLESS one, at every
+#  epoch; its continuity and Euler equations hard-code `w = 1/3` and `c_s^2 = 1/3`; and the only
+#  route by which the repaired background reaches them is the shared denominator `_rt`, which
+#  rescales all four weights TOGETHER and so cannot move the neutrino's share.  The mass therefore
+#  enters the perturbations only as a SUBTRACTION -- `OCDM = OM - OB - ONU` at all times -- and
+#  never as a source.*
+#   ⇒ ** THE DEFECT IS MEASURABLE AS A CLOSURE FAILURE.**  *The four weights the source is built
+#     from, plus `OL / _rt`, do not sum to 1, and what is missing is exactly
+#     `(Onu_of(a) - FNU * OR / a^4) / _rt`: the mass the perturbations do not see.  At the control
+#     it is `2.02e-03` of the total at recombination and `6.97e-03` today at `Sigma = 0.30` eV,
+#     `7.54e-03` and `1.40e-02` at `0.60` -- a fifth to an eighth of the instrument's own sum
+#     response over `l = 100-420`, which is the size of the excess this repair is asked to remove.*
+# ** THE APPROXIMATION IS NAMED: THE FERMI-DIRAC FLUID APPROXIMATION, AND IT HAS NO FREE
+#    PARAMETER. **  *The species is carried as a fluid whose equation of state and sound speed are
+#    its own Fermi-Dirac ones at each epoch -- `w(a) = p_nu/rho_nu` from the integrals `NUFD`
+#    already builds, which `NUW_of` already splines and nothing read until now, and the adiabatic
+#    `c_s^2 = w(a)`, exact at `w = 1/3` and falling to zero as the species cools.  Three changes,
+#    each reducing to the line that was there at `w = 1/3`:*
+#      ⌗ *the WEIGHT: `On_of` becomes `Onu_of(a) / _rt`, so the species gravitates as radiation
+#        while relativistic and as matter after.  Redefined HERE rather than at its use sites, so
+#        that all seven of them -- both right-hand sides and the four source paths -- take it
+#        together and cannot disagree.*
+#      ⌗ *CONTINUITY: `delta' = -(1+w) theta + 3(1+w) Phi'`.*
+#      ⌗ *EULER: `theta' = -H(1-3w) theta - (w'/(1+w)) theta + k^2 (c_s^2/(1+w)) delta - k^2 sigma
+#        + k^2 Psi`.  The two drag terms vanish identically at constant `w = 1/3`.*
+# ⚠ ** WHAT IT DOES NOT DO, AND THE BOUND IS MEASURED RATHER THAN ASSERTED. **  *The `F_l` ladder
+#   is left as the massless free-streaming one, so `sigma_nu` is the relativistic shear at all
+#   epochs: exact while the species is relativistic and wrong after.  `NUSHOFF=1` switches that
+#   shear off below the species' own non-relativistic transition -- marked at `w(a) = 1/6`, half of
+#   the relativistic value, a stated choice and the only one in this block -- and the SPREAD
+#   between the two runs is the approximation's own uncertainty, reported with the result.*
+# ⛔ ** IT REFUSES TO RUN HALF. **  *The repair is the species' own Fermi-Dirac weight, so it has no
+#   meaning without the Fermi-Dirac background: `NUPERT=1` requires `NUFD=1` and a non-zero sum.*
+#   ⌗ *Default 0 = byte-identical: the off branch of every line below is the line that was there,
+#     unchanged, and `On_of` and `_nush` are left exactly as they were.*
+NUPERT = os.environ.get('NUPERT', '0') == '1'
+NUSHOFF = os.environ.get('NUSHOFF', '0') == '1'
+_NU_NR = 1.0 / 6.0                    # the non-relativistic marker: w_nu below half of 1/3
+if NUPERT:
+    if not NUFD or MNU == 0.0:
+        raise SystemExit("  ⛔ NUPERT=1 needs NUFD=1 and MNU != 0: the repair IS the species' own "
+                         f"Fermi-Dirac weight, and here NUFD={int(bool(NUFD))} MNU={MNU}")
+    #: the weight the perturbations see becomes the species' own FD energy weight.  With this the
+    #: closure above holds EXACTLY: the numerator becomes `_rt` term for term.
+    On_of = CubicSpline(eg, Onu_of(ag) / _rt)
+    _w_eg = NUW_of(np.log(ag))
+    Wnu_of = CubicSpline(eg, _w_eg)
+    Wdot_of = Wnu_of.derivative()
+
+    def _nush(e):
+        """1 while the species is relativistic, 0 after it, under NUSHOFF; 1 everywhere without"""
+        if not NUSHOFF:
+            return 1.0
+        return np.where(np.interp(e, eg, _w_eg) >= _NU_NR, 1.0, 0.0)
+    print(f"  __NUPERT__ the Fermi-Dirac fluid approximation: w_nu(a_rec) = "
+          f"{float(Wnu_of(eta_rec)):.6f}, w_nu(1) = {float(Wnu_of(eta_0)):.3e}, shear "
+          f"{'OFF below w = 1/6' if NUSHOFF else 'ON at all epochs'}", flush=True)
+else:
+    Wnu_of = Wdot_of = None
+
+    def _nush(e):
+        """the switch is off: the shear is untouched, and `1.0` is exactly the identity"""
+        return 1.0
+
 
 # ** LEAFSCALES=1 PUTS r_s AND r_D BOTH ON THE LEAF CLOCK -- node 66's adjudication, r6760+66.1. **
 # *The corpus states the assignment twice and not alike.  P15 `sec:tensions`: "the scales such a
@@ -1001,6 +1069,14 @@ _SWITCH_SNAPSHOT = {
     #     repair the corpus's subject rule prescribes is the clause that names it.*
     'PRIMNORM_env': os.environ.get('PRIMNORM'),
     'NUFD': bool(NUFD),
+    # ⛭ ** AND THE TWO KEYS r7876 ADDS, FOR THE REASON r7864 ESTABLISHED. **  *That revision found
+    # the landed polarisation bank carried no `NUFD` key AT ALL, and ruled that the gate is that
+    # THE KEY IS ABSENT -- a bank that does not record a switch cannot stand in for either side of
+    # it.  So the perturbation switch and its shear arm are recorded here as the background switch
+    # is, and a bank made before this revision says `null` rather than `false`, which is the
+    # difference between "it was off" and "this bank cannot say".*
+    'NUPERT': bool(NUPERT),
+    'NUSHOFF': bool(NUSHOFF),
     'instrument': 'ACOUSTIC_two_arm.py',
     # ⛭⛭⛭ ** THE INSTRUMENT'S OWN SOURCE HASH, ADDED AT r7109 ⓵ AT `70`'s REQUEST. **
     # *`70`'s three-grid audit cleared the comparison on all three counts and named exactly one thing
@@ -1258,7 +1334,7 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         PH2 = float(Phi2_of(e))                      # PHASEONLY clock factor (1 unless PHASEONLY)
         Ogv, Onv = float(Og_of(e)), float(On_of(e))
         Ocv, Obv = float(Oc_of(e)), float(Ob_of(e))
-        sig = _NUFS * F[:, 0] / 2                    # NUFS=0 -> a perfect fluid (r6889+cc66.36)
+        sig = _NUFS * F[:, 0] / 2 * _nush(e)         # NUFS=0 -> a perfect fluid (r6889+cc66.36)
         tp = float(taup_of(e))
         # ** NOTC=1 removes the in-hierarchy tight-coupling damping (the photon quadrupole closure
         # and the baryon slip) so that the DERIVED exp(-k^2/k_D^2) factor is the only place
@@ -1283,8 +1359,16 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         out[:, 2] = -(4 / 3) * tg + DRC * 4 * Php
         out[:, 3] = (-(Hc * Rb / (1 + Rb)) * tg + PH2 * (kk ** 2 / (1 + Rb)) * dg / 4
                      + DRE * kk ** 2 * Ps - kk ** 2 * sgg / (1 + Rb) - slip * tg)
-        out[:, 4] = -(4 / 3) * tn + DRC * 4 * Php
-        out[:, 5] = kk ** 2 * (dn / 4 - sig) + DRE * kk ** 2 * Ps
+        # ** NUPERT: the species' own w(a) and c_s^2 = w(a), r7876+60.  The `else` branch is the
+        # pair that was here, unchanged, so the switch off is byte-identical. **
+        if NUPERT:
+            _w, _wd = float(Wnu_of(e)), float(Wdot_of(e))
+            out[:, 4] = -(1.0 + _w) * tn + DRC * (3.0 * (1.0 + _w)) * Php
+            out[:, 5] = (kk ** 2 * (_w / (1.0 + _w) * dn - sig) + DRE * kk ** 2 * Ps
+                         - Hc * (1.0 - 3.0 * _w) * tn - (_wd / (1.0 + _w)) * tn)
+        else:
+            out[:, 4] = -(4 / 3) * tn + DRC * 4 * Php
+            out[:, 5] = kk ** 2 * (dn / 4 - sig) + DRE * kk ** 2 * Ps
         out[:, 6] = Php
         out[:, 7] = _NUFS * ((8 / 15) * tn - (3 / 5) * kk * F[:, 1])
         for i in range(1, LN - 2):
@@ -1650,7 +1734,7 @@ def los_spectrum(kk, ee, Y, L_A, D_M, R_S):
     nk = len(kk)
     sg = Y[:, :, 7] / 2
     Hcv = np.array([Hc_of(e) for e in ee])[:, None]
-    Onv = np.array([On_of(e) for e in ee])[:, None]
+    Onv = np.array([On_of(e) * _nush(e) for e in ee])[:, None]
     Ph = Y[:, :, 6]
     Ps = Ph - 6 * Hcv ** 2 * Onv * sg / kk[None, :] ** 2
     g_ = vis_of(ee)[:, None]
@@ -1867,7 +1951,7 @@ def evolve_hier(kk, t_eval, e_sw, yF):
         Ogv, Onv = float(Og_of(e)), float(On_of(e))
         Ocv, Obv = float(Oc_of(e)), float(Ob_of(e))
         tp = float(taup_of(e))
-        sig = _NUFS * Fn[:, 0] / 2                   # NUFS=0 -> a perfect fluid (r6889+cc66.36)
+        sig = _NUFS * Fn[:, 0] / 2 * _nush(e)        # NUFS=0 -> a perfect fluid (r6889+cc66.36)
         sgg = F[:, 0] / 2
         Pi = F[:, 0] + G[:, 0] + G[:, 2]
         Ps = Ph - 6 * Hc ** 2 * (Onv * sig + Ogv * sgg) / kk ** 2
@@ -1880,8 +1964,16 @@ def evolve_hier(kk, t_eval, e_sw, yF):
         # ** the photon Euler equation now exchanges momentum with the baryons instead of sharing
         # their velocity, and the quadrupole is a STATE and no longer a closure. **
         out[:, 3] = kk ** 2 * (PH2 * dg / 4 - sgg) + DRE * kk ** 2 * Ps + tp * (tb - tg)
-        out[:, 4] = -(4 / 3) * tn + DRC * 4 * Php
-        out[:, 5] = kk ** 2 * (dn / 4 - sig) + DRE * kk ** 2 * Ps
+        # ** NUPERT: the species' own w(a) and c_s^2 = w(a), r7876+60.  The `else` branch is the
+        # pair that was here, unchanged, so the switch off is byte-identical. **
+        if NUPERT:
+            _w, _wd = float(Wnu_of(e)), float(Wdot_of(e))
+            out[:, 4] = -(1.0 + _w) * tn + DRC * (3.0 * (1.0 + _w)) * Php
+            out[:, 5] = (kk ** 2 * (_w / (1.0 + _w) * dn - sig) + DRE * kk ** 2 * Ps
+                         - Hc * (1.0 - 3.0 * _w) * tn - (_wd / (1.0 + _w)) * tn)
+        else:
+            out[:, 4] = -(4 / 3) * tn + DRC * 4 * Php
+            out[:, 5] = kk ** 2 * (dn / 4 - sig) + DRE * kk ** 2 * Ps
         out[:, 6] = Php
         out[:, 7] = _NUFS * ((8 / 15) * tn - (3 / 5) * kk * Fn[:, 1])
         for i in range(1, LN - 2):
@@ -2169,7 +2261,7 @@ def _project(kb, ee, Y, ls, x0, e_sw, ks=None):
     if ks is None:
         ks = kb
     Hcv = np.array([Hc_of(e) for e in ee])[:, None]
-    Onv = np.array([On_of(e) for e in ee])[:, None]
+    Onv = np.array([On_of(e) * _nush(e) for e in ee])[:, None]
     Ogv = np.array([Og_of(e) for e in ee])[:, None]
     sgn = Y[:, :, 7] / 2
     sgg = Y[:, :, I_FG] / 2
@@ -2501,7 +2593,8 @@ def main():
     sol, nk, NV = evolve(kk)
     yr = sol.sol(eta_rec).reshape(nk, NV)
     sig = yr[:, 7] / 2
-    Psr = yr[:, 6] - 6 * Hc_of(eta_rec) ** 2 * On_of(eta_rec) * sig / kk ** 2
+    Psr = (yr[:, 6] - 6 * Hc_of(eta_rec) ** 2 * On_of(eta_rec) * _nush(eta_rec) * sig
+           / kk ** 2)
     SW = yr[:, 2] / 4 + Psr
     TH0 = yr[:, 2] / 4                                   # the oscillator alone
 
@@ -2569,7 +2662,7 @@ def main():
     Yg = np.array([sol.sol(e).reshape(nk, NV) for e in ee])
     Phg, sgg = Yg[:, :, 6], Yg[:, :, 7] / 2
     Hcv = np.array([Hc_of(e) for e in ee])[:, None]
-    Onv = np.array([On_of(e) for e in ee])[:, None]
+    Onv = np.array([On_of(e) * _nush(e) for e in ee])[:, None]
     Psg = Phg + 6 * Hcv ** 2 * Onv * sgg / kk[None, :] ** 2
     IS = np.gradient(Phg, ee, axis=0) + np.gradient(Psg, ee, axis=0)        # (n_ee, nk)
     rD = float(os.environ.get('RD', '5.5' if ARM == 'lcdm' else '10.88'))

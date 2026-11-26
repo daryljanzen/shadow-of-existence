@@ -24,17 +24,22 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 BW = os.path.dirname(HERE)
 SRC = os.path.join(BW, 'ACOUSTIC_two_arm.py')
 _CUT = 645                                   # the `D_M = eta_0 - eta_rec` line
+#: ⌗ *item ③'s `NUPERT` block is inserted immediately after that line, so the SAME file serves both
+#:   readings: cut at `_CUT` and the weights are the ones item ① measured, cut at `_CUT_NUPERT` and
+#:   the switch has had its say.  Nothing is reimplemented for either.*
+_CUT_NUPERT = 713                            # the end of the `NUPERT` block
 
 LC = dict(LH0='67.40', LOM='0.3150', WBH2='0.0224', NS='0.965')   # gen_srcdec.sh's control
 
 
-def prelude(mnu, nufd='1'):
+def prelude(mnu, nufd='1', cut=_CUT, **extra):
     """execute the instrument's own prelude at this sum and hand back its namespace"""
     with open(SRC) as fh:
-        head = ''.join(fh.readlines()[:_CUT])
+        head = ''.join(fh.readlines()[:cut])
     keep = dict(os.environ)
     os.environ.update(LC)
     os.environ.update(ARM='lcdm', MNU=str(mnu), NUFD=nufd, BVEL='1', HIER='1')
+    os.environ.update({k: str(v) for k, v in extra.items()})
     ns = {'__name__': '_prelude', '__file__': SRC}
     try:
         sys.path.insert(0, BW)
@@ -107,6 +112,20 @@ for tag, r in rows.items():
     verd = ('BELOW a tenth of the response -- (3) is NOT expected to bring A to one'
             if q < 0.10 else 'COMPARABLE to the response -- (3) can account for the excess')
     print('   Sigma = %.2f eV :  |Dclose(rec)| / rms r = %.4f  ->  %s' % (r['mnu'], q, verd))
+
+# ⌗ item ③'s registered check: under `NUPERT=1` the closure must hold, because the numerator
+#   becomes `_rt` term for term.  Measured, not asserted.
+print('\n== (3) THE CLOSURE UNDER NUPERT=1 -- the registered check ==')
+rows['nupert'] = {}
+for mnu, tag in ((0.30, 'S030'), (0.60, 'S060')):
+    ns = prelude(mnu, cut=_CUT_NUPERT, NUPERT='1')
+    d_rec = dclose(ns, ns['eta_rec'])
+    d_now = dclose(ns, ns['eta_0'])
+    worst = max(abs(d_rec[0]), abs(d_now[0]))
+    rows['nupert'][tag] = dict(d_rec=d_rec[0], d_now=d_now[0], worst=worst)
+    print('   Sigma = %.2f eV :  Dclose(rec) = %+.3e   Dclose(now) = %+.3e   worst |.| = %.3e  ->  %s'
+          % (mnu, d_rec[0], d_now[0], worst,
+             'CLOSES' if worst < 1e-10 else '** DOES NOT CLOSE **'))
 
 with open(os.path.join(HERE, 'closure.json'), 'w') as fh:
     json.dump(rows, fh, indent=1, sort_keys=True)
