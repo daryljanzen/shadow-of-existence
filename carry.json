@@ -1099,6 +1099,11 @@
     "since": "8ff02f314ff866c02733fa3b511da8e19e47eb9d",
     "unmeasured": true
    },
+   "receipts/P15_CR_cosmology/P15_the_adjudicated_endpoints_verdict_is_arm_independent_and_the_penalty_the_paper_prints_is_not.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45907476059",
+    "since": "c299300a608cf3ca1b88cd1b8d500d5dd9367865",
+    "unmeasured": true
+   },
    "receipts/P15_CR_cosmology/P15_the_admissible_band_is_a_third_and_the_two_entries_differ_against_the_potential.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45886231621",
     "since": "8ff02f314ff866c02733fa3b511da8e19e47eb9d",
@@ -1167,6 +1172,11 @@
    "receipts/P15_CR_cosmology/P15_the_carrier_separation_on_L_p_is_the_combs_peak_count_not_the_carrier_and_the_closure_has_no_number_because_the_degeneracy_is_sampling_invariant.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45886231621",
     "since": "8ff02f314ff866c02733fa3b511da8e19e47eb9d",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_cold_read_finds_two_bounds_true_of_their_receipts_and_false_of_the_figures_printed_as_their_evidence.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45907476059",
+    "since": "c299300a608cf3ca1b88cd1b8d500d5dd9367865",
     "unmeasured": true
    },
    "receipts/P15_CR_cosmology/P15_the_collapse_leg_is_scale_invariant.py": {
@@ -1769,6 +1779,11 @@
    "receipts/P15_CR_cosmology/P15_the_spread_was_not_like_for_like_and_fourpi_moves_none_of_the_six_but_it_breaks_a_closure_the_sweep_did_not_look_for.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45893773018",
     "since": "bfcab72f2824c8fc131fb409e97d20a4dc896d2a",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_stellar_half_of_po93s_gate_is_measured_at_the_turnaround_radius_and_the_gas_half_is_not.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45907476059",
+    "since": "c299300a608cf3ca1b88cd1b8d500d5dd9367865",
     "unmeasured": true
    },
    "receipts/P15_CR_cosmology/P15_the_step_is_the_excesss_own_and_it_sits_at_the_second_acoustic_peak_and_none_of_the_four_produces_it.py": {
