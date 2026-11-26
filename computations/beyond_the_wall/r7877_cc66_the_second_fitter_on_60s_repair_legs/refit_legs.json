@@ -1,0 +1,255 @@
+{
+ "control": {
+  "H0": 67.4,
+  "NS": 0.965,
+  "OM": 0.315,
+  "WB": 0.0224
+ },
+ "direction": {
+  "shear_off|EE|0.30": {
+   "landed": 1.0140591924745146,
+   "landed_dist": 0.014059192474514592,
+   "nearer_unity": false,
+   "repaired": 0.94473158691849,
+   "repaired_dist": 0.05526841308150998,
+   "sign_flipped": true
+  },
+  "shear_off|EE|0.60": {
+   "landed": 1.0463071504477712,
+   "landed_dist": 0.04630715044777123,
+   "nearer_unity": false,
+   "repaired": 0.9112188013342475,
+   "repaired_dist": 0.08878119866575251,
+   "sign_flipped": true
+  },
+  "shear_off|TT|0.30": {
+   "landed": 1.151621417168135,
+   "landed_dist": 0.15162141716813493,
+   "nearer_unity": true,
+   "repaired": 0.8602490391737234,
+   "repaired_dist": 0.13975096082627658,
+   "sign_flipped": true
+  },
+  "shear_off|TT|0.60": {
+   "landed": 1.2959211454888449,
+   "landed_dist": 0.29592114548884485,
+   "nearer_unity": true,
+   "repaired": 0.8110362191026903,
+   "repaired_dist": 0.1889637808973097,
+   "sign_flipped": true
+  },
+  "shear_on|EE|0.30": {
+   "landed": 1.0140591924745146,
+   "landed_dist": 0.014059192474514592,
+   "nearer_unity": false,
+   "repaired": 0.9447322291893475,
+   "repaired_dist": 0.05526777081065248,
+   "sign_flipped": true
+  },
+  "shear_on|EE|0.60": {
+   "landed": 1.0463071504477712,
+   "landed_dist": 0.04630715044777123,
+   "nearer_unity": false,
+   "repaired": 0.9112079824425254,
+   "repaired_dist": 0.08879201755747457,
+   "sign_flipped": true
+  },
+  "shear_on|TT|0.30": {
+   "landed": 1.151621417168135,
+   "landed_dist": 0.15162141716813493,
+   "nearer_unity": true,
+   "repaired": 0.8640021952381803,
+   "repaired_dist": 0.13599780476181966,
+   "sign_flipped": true
+  },
+  "shear_on|TT|0.60": {
+   "landed": 1.2959211454888449,
+   "landed_dist": 0.29592114548884485,
+   "nearer_unity": true,
+   "repaired": 0.8146575897931293,
+   "repaired_dist": 0.1853424102068707,
+   "sign_flipped": true
+  }
+ },
+ "ee_band": 0.05,
+ "ee_vs_band": {
+  "shear_off|EE|0.30": {
+   "dist": 0.05526841308150998,
+   "outside": true
+  },
+  "shear_off|EE|0.60": {
+   "dist": 0.08878119866575251,
+   "outside": true
+  },
+  "shear_on|EE|0.30": {
+   "dist": 0.05526777081065248,
+   "outside": true
+  },
+  "shear_on|EE|0.60": {
+   "dist": 0.08879201755747457,
+   "outside": true
+  }
+ },
+ "fits": {
+  "shear_off|EE|0.30": {
+   "A": 0.94473158691849,
+   "diff_from_60": 3.579481509974336e-06,
+   "dist_from_unity": 0.05526841308150998,
+   "eps": -0.001358137500000004,
+   "hits": true,
+   "n_multipoles": 41,
+   "resid": 0.00025846318723546293,
+   "target_60": 0.9447351664
+  },
+  "shear_off|EE|0.60": {
+   "A": 0.9112188013342475,
+   "diff_from_60": 5.008634247460897e-06,
+   "dist_from_unity": 0.08878119866575251,
+   "eps": -0.0015883625000000041,
+   "hits": true,
+   "n_multipoles": 41,
+   "resid": 0.0008540358137879413,
+   "target_60": 0.9112137927
+  },
+  "shear_off|TT|0.30": {
+   "A": 0.8602490391737234,
+   "diff_from_60": 4.862826276541554e-06,
+   "dist_from_unity": 0.13975096082627658,
+   "eps": 0.0056655750000000026,
+   "hits": true,
+   "n_multipoles": 41,
+   "resid": 0.00046934512226942313,
+   "target_60": 0.860253902
+  },
+  "shear_off|TT|0.60": {
+   "A": 0.8110362191026903,
+   "diff_from_60": 8.818002690258453e-06,
+   "dist_from_unity": 0.1889637808973097,
+   "eps": 0.004726087500000004,
+   "hits": true,
+   "n_multipoles": 41,
+   "resid": 0.0013076093495911895,
+   "target_60": 0.8110274011
+  },
+  "shear_on|EE|0.30": {
+   "A": 0.9447322291893475,
+   "diff_from_60": 3.5410106524746965e-06,
+   "dist_from_unity": 0.05526777081065248,
+   "eps": -0.0013580500000000039,
+   "hits": true,
+   "n_multipoles": 41,
+   "resid": 0.0002583843781956367,
+   "target_60": 0.9447357702
+  },
+  "shear_on|EE|0.60": {
+   "A": 0.9112079824425254,
+   "diff_from_60": 3.834942525426932e-06,
+   "dist_from_unity": 0.08879201755747457,
+   "eps": -0.001591087500000004,
+   "hits": true,
+   "n_multipoles": 41,
+   "resid": 0.0008542102002340104,
+   "target_60": 0.9112041475
+  },
+  "shear_on|TT|0.30": {
+   "A": 0.8640021952381803,
+   "diff_from_60": 6.713461819685129e-06,
+   "dist_from_unity": 0.13599780476181966,
+   "eps": 0.005571549999999999,
+   "hits": true,
+   "n_multipoles": 41,
+   "resid": 0.0004681106360106492,
+   "target_60": 0.8640089087
+  },
+  "shear_on|TT|0.60": {
+   "A": 0.8146575897931293,
+   "diff_from_60": 6.383606870663527e-06,
+   "dist_from_unity": 0.1853424102068707,
+   "eps": 0.0042674250000000035,
+   "hits": true,
+   "n_multipoles": 41,
+   "resid": 0.001064410629266445,
+   "target_60": 0.8146639734
+  }
+ },
+ "legs_banked": [
+  "shear_on",
+  "shear_off"
+ ],
+ "legs_missing": [
+  "weight",
+  "continuity",
+  "euler",
+  "c_a2"
+ ],
+ "legs_read": true,
+ "lmax": 2600,
+ "n_hits": 8,
+ "planted": {
+  "A0.85": {
+   "A_fit": 0.8500000000000001,
+   "A_true": 0.85,
+   "dA": 1.1102230246251565e-16
+  },
+  "A1.25": {
+   "A_fit": 1.25,
+   "A_true": 1.25,
+   "dA": 0.0
+  }
+ },
+ "planted_ok": true,
+ "regression": {
+  "EE|0.30": {
+   "A": 1.0140591924745146,
+   "diff": 0.0,
+   "r7875": 1.0140591924745146
+  },
+  "EE|0.60": {
+   "A": 1.0463071504477712,
+   "diff": 0.0,
+   "r7875": 1.0463071504477712
+  },
+  "TT|0.30": {
+   "A": 1.151621417168135,
+   "diff": 0.0,
+   "r7875": 1.151621417168135
+  },
+  "TT|0.60": {
+   "A": 1.2959211454888449,
+   "diff": 0.0,
+   "r7875": 1.2959211454888449
+  }
+ },
+ "regression_worst": 0.0,
+ "separation": {
+  "EE|0.30": {
+   "mine": 6.422708574982394e-07,
+   "my_floor": 5.307332502169082e-05,
+   "resolvable": false,
+   "theirs": 6.037999999985999e-07
+  },
+  "EE|0.60": {
+   "mine": 1.0818891722053081e-05,
+   "my_floor": 5.307332502169082e-05,
+   "resolvable": false,
+   "theirs": 9.645200000019116e-06
+  },
+  "TT|0.30": {
+   "mine": 0.0037531560644569195,
+   "my_floor": 3.515263913511646e-06,
+   "resolvable": true,
+   "theirs": 0.003755006700000063
+  },
+  "TT|0.60": {
+   "mine": 0.0036213706904389964,
+   "my_floor": 3.515263913511646e-06,
+   "resolvable": true,
+   "theirs": 0.0036365722999999184
+  }
+ },
+ "tau": 0.054,
+ "window": [
+  100,
+  420
+ ]
+}
