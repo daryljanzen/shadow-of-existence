@@ -15,6 +15,75 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7877+cc66.17 — ⛭⛭ **⑮ ALL EIGHT BANKED FITS CONFIRM `60` TO `8.8e-06`, SO THE REPAIR'S NUMBERS ARE ACCEPTED ON TWO FITTERS. ⛔ BUT THE REPAIR **TRADES TT FOR EE**, AND MY `EE` AGREEMENT DOES **NOT** DISCRIMINATE THE LEGS — WHICH I REGISTERED AS A RISK BEFORE THE RUN**
+
+Item ⑮ is answered **on everything banked**. Receipt
+`P15_the_repair_legs_amplitudes_are_confirmed_on_a_second_fitter_and_the_repair_trades_TT_for_EE.py`,
+**9 arms, 0 failed**, `COMPUTES: nothing`. Registered at `a3193ef64` with nine bands, pushed before
+a line of the computation existed. Failability `12` of `12` on the first pass.
+
+### ⛔ four of the six legs you named do not exist yet
+
+`60`'s `r7876` banks the repair **ON** and **OFF** only. **Weight alone, continuity alone, Euler
+alone and the `c_a²` variant are NOT banked** — you ordered `60` to produce them in this same round.
+That half of ⑮ is answered for no leg, the absence is pinned in `Ⓗ⑧` rather than left to silence, and
+I offer no verdict about the decomposition. **The harness is built, registered and proved, so those
+four are a one-command run the moment `60` bank them.**
+
+### ⑮ — eight of eight
+
+| leg | TT `0.30` | TT `0.60` | EE `0.30` | EE `0.60` |
+|---|---|---|---|---|
+| `shear_on` | `0.8640022` | `0.8146576` | `0.9447322` | `0.9112080` |
+| `shear_off` | `0.8602490` | `0.8110362` | `0.9447316` | `0.9112188` |
+
+Worst distance from `60`'s eight figures: `8.818003e-06`. ⌗ *Your merge paragraph quoted `0.864` and
+`0.815`; those are the `shear_on` leg — `shear_off` reads `0.8602539` and `0.8110274` in `60`'s own
+record. Both legs are named throughout so the record cannot inherit that ambiguity.*
+
+**The harness is provably the same instrument as `r7875`'s**: it **imports** that fitter and CAMB leg
+rather than copying them, and re-derives the four landed amplitudes at **exactly `0.0`**. A copied
+fitter could agree with its ancestor's numbers and still differ in the code that meets the new legs.
+The plant control recovers amplitudes on **both sides of unity** to `1.110223e-16` — chosen so
+deliberately, because these legs sit *below* unity where `r7875`'s landed instrument sat above, and a
+fitter biased to one side would confirm you on one and not the other.
+
+### your EE ruling holds, independently
+
+`EE` is **outside its `0.05` band on all four fits**: `0.055268` at `Σ = 0.30`, `0.088781` and
+`0.088792` at `0.60`. So the repair fails a criterion fixed before it existed.
+
+### ⛔ and the overshoot is two effects, not one
+
+The sign flips in all four — landed above CAMB, repaired below. But the **magnitude moves opposite
+ways in the two blocks**:
+
+| | landed, from unity | repaired, from unity | |
+|---|---|---|---|
+| TT `0.30` | `0.151621` | `0.135998` | **nearer** |
+| TT `0.60` | `0.295921` | `0.185342` | **nearer** |
+| EE `0.30` | `0.014059` | `0.055268` | farther |
+| EE `0.60` | `0.046307` | `0.088792` | farther |
+
+**The repair genuinely removes part of TT's discrepancy and enlarges EE's.** That is why `EE` binds,
+not merely that it does — and it says the repair is not simply "too strong": it is pulling two
+observables in opposite directions, which a single overall scaling cannot do. ⌗ *Sharper than my own
+registration, which expected to report a distance from unity and read the overshoot as one effect.*
+
+### ⚠ what my EE numbers are worth — registered before the run, and it came true
+
+`EE`'s `shear_on` minus `shear_off` is `6.422709e-07` at `Σ = 0.30` and `1.081889e-05` at `0.60`.
+**My own `EE` interpolation floor, measured at `r7875`, is `5.307333e-05`** — eighty times the first.
+So **the four `EE` figures confirm the bank reading, not the leg.** Only TT separates — `0.003753`
+here against `0.003755` by `60`'s fitter, on a floor of `3.515264e-06` — and carries the leg-to-leg
+comparison.
+
+⌗ *`Ⓗ⑧` registered exactly this before the run: "if my fitter cannot separate two legs that differ by
+`6e-07`, then an agreement with `60` on `EE` says nothing about the leg." It cannot, and it does not.
+I would rather hand you four confirmations of which two are known not to discriminate than count
+eight and let the distinction disappear.* **When the decomposition legs land, check their EE
+separations against that floor before taking an EE agreement as evidence about a leg.**
+
 ## r7875+cc66.16 — ⛭⛭ **⑬ YOUR `1.152` AND `1.296` ARE CONFIRMED INDEPENDENTLY TO `3e-06`, AND THE SHIFT IS **NOT** PAYING FOR THE AMPLITUDE — MY OWN `Ⓗ⑧` IS REFUTED IN `60`'s FAVOUR. ⑭ ONE BASIN ON BOTH RULERS AT EVERY SUM `0.20`–`0.60`, NO BOX WALL ANYWHERE**
 
 Both items are in. Receipt
