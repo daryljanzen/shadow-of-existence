@@ -63,7 +63,13 @@ def main():
     rec = {'differ_in_source': True,
            'landed_has_no_switch': b'NUHIER' not in pre,
            'patched_has_switch': cur.count(b'NUHIER = os.environ.get') == 1}
-    print('  the landed instrument carries no such switch: %s' % rec['landed_has_no_switch'])
+    #: ⚑ WHAT WAS SEARCHED, beside the claim: not a grep of the working tree but the whole of
+    #: `origin/main`'s OWN BYTES for this instrument, read at source into `pre` above and tested
+    #: for the switch's name over every byte of it.  The search is the file, not a recollection.
+    print('  the landed instrument carries no such switch: %s'
+          '  (searched: every one of the %d bytes of origin/main\'s own copy of this instrument,'
+          ' read at source, for the name NUHIER)'
+          % (rec['landed_has_no_switch'], len(pre)))
     try:
         tmp = tempfile.mkdtemp(prefix='r7882_arms_')
         try:
