@@ -30551,3 +30551,89 @@ a free strength to turn up.** I have not started on either branch.
   refusals refuse.
 - The ten banks record the sums, letter sets and sound speeds they ran at, and one single instrument
   blob between them — pinned in the receipt, so a mislabelled row would fail.
+
+---
+
+## ⭕ `r7880` → `69`, on order `r7879` item ⓵: NOTHING OUTSIDE THE NEUTRINOS CARRIES THE TT-HEAVY SIGNATURE — `(b)` IS CLOSED — AND THE ONLY TT-HEAVY SECTOR IN THE BANKS IS THE NEUTRINO BACKGROUND ITSELF
+
+**Registered in `PREDICTION.md`, committed and pushed as `293a71ade` before any measurement of this
+revision ran**, with four reads declared, the candidate set closed, the band fixed at `r7878`'s own
+`4/3` and four mutually exclusive outcomes. The fit is `r7874`'s own `shift.py`, **executed** with
+the two lines `r7876` rebinds and **the rebinding function imported** from `r7876`'s `refit.py` —
+no second copy of either. The reproduction leg returned `1.15162`, `1.29592`, `1.01405`, `1.04630`
+first.
+
+**The required leverage was re-measured by this run rather than carried over,** and it agrees with
+the figure you took as the frame to the last digit: TT `0.15162` from one against EE's `0.01405` at
+`0.30` eV → **`10.790`**; `0.29592` against `0.04630` at `0.60` → **`6.392`**.
+
+### THE TABLE
+
+| candidate | provenance | sum | `dA_TT` | `dA_EE` | leverage | of required | in band |
+|---|---|---|---|---|---|---|---|
+| `DNEFF = 0.0293` | recorded | 0.30 | −0.004286 | −0.008613 | 0.498 | **0.046** | no |
+| | | 0.60 | −0.004733 | −0.008926 | 0.530 | **0.083** | no |
+| `DNEFF = 0.044` | recorded | 0.30 | −0.005334 | −0.012633 | 0.422 | **0.039** | no |
+| | | 0.60 | −0.006997 | −0.013372 | 0.523 | **0.082** | no |
+| `NUFD` off | recorded | 0.30 | −0.492348 | +0.001790 | 275.037 | **25.490** | no |
+| | | 0.60 | −0.345364 | +0.033818 | 10.212 | **1.598** | no |
+| `BVEL` off | ⚠ name only | 0.30 | +0.000017 | +0.000000 | **UNREADABLE** | no move > `1e-05` | no |
+| | | 0.60 | −0.000002 | −0.000001 | **UNREADABLE** | no move > `1e-05` | no |
+
+⇒ **`Ⓒ` — nothing outside the neutrinos carries it, and `(b)` is CLOSED.** Exactly one registered
+row fires, and the receipt checks that exactly one does.
+
+### WHAT IT SAYS BESIDES THE NULL — three things worth your ruling
+
+- **The radiation-density correction is EE-HEAVY: the wrong SIGN of asymmetry, not a weak version of
+  the right one.** Leverage `0.42`–`0.53` against a required `10.8` and `6.4`, so `4` to `8` per
+  cent of it, and spending about twice as much of its move on EE as on TT. **And that is a property
+  of the sector, not of the step:** the two banked step sizes agree to `1.179` and `1.013`, inside
+  the same band — the control the registration fixed for exactly this.
+- **The only candidate with a TT-heavy signature at all is the neutrino background itself** —
+  `275.037` at `0.30` eV and `10.212` at `0.60`, which are `25.490` and `1.598` of required. It is
+  not a sector outside the neutrinos, so it cannot answer `(b)` whatever its number. ⌗ *The `0.60`
+  figure is the near thing and is said to be near: `1.598` against a band edge of `1.333`. At
+  `0.30` it is `25` times required, so the pair is not in band at both sums under any reading.* ⇒
+  **So the diagnostic does not merely fail to find a carrier: it finds that the TT-heavy asymmetry
+  in the banks is a neutrino-sector property.** That points where your ruling already points.
+- **`BVEL`'s sum response is unmoved at the fit's own precision** — parts in a million in `A`.
+
+**And the argument I registered before measuring is confirmed by size on all three readable
+candidates:** the sum response is a ratio to the same configuration's own zero leg, so a sector's
+grip on it is its **sum dependence** and nothing else. The term that is the same at every sum moves
+`A` by parts in a million; the density the sum interacts with, by parts in a thousand; the sum's own
+background, by a third to a half.
+
+### ⛔ A GAP IN MY OWN REGISTRATION, NAMED RATHER THAN QUIETLY FILLED
+
+It put *"has no readable move"* in a verdict row and **never said what readable means.** `BVEL` then
+moved `A` by parts in a million, and a ratio of two such numbers is not a leverage — left alone it
+would have printed `113.805`. The threshold is taken from the **fit** and not from this measurement:
+`shift.py` reports `A` to five decimals, so `1e-05` is the smallest move it can distinguish, and a
+leverage is readable only when both blocks move more than that. ⌗ *The verdict row is the same
+either way — filled like that, or with the candidate simply dropped — which I say because a repair
+that could have changed the answer would need more than a footnote.*
+
+### WHAT IS NOT ANSWERED, AND WHAT WOULD SETTLE IT
+
+**The four cosmological parameters are not answered, and the registration said so in advance rather
+than my discovering it as a finding.** Every parameter-offset leg in the banks is at `MNU = 0`, so
+the banks cannot show a parameter's **sum dependence** — and by the argument above it is exactly the
+sum dependence that decides whether anything can move the sum response at all.
+
+⇒ **What would settle them is one offset leg per parameter at a non-zero sum** — four parameters × 2
+signs × 2 sums, on the control arm. **I have not run it, because you bounded `(b)` to one revision
+and the answer it was bounded to give is `Ⓒ`.** If you want those four closed as well, say so and it
+is a generator run, not an instrument change. ⌗ *My own recommendation is NOT to spend it: the
+parameters are the ones the reference already fits, so a carrier among them would have no freedom
+left to spend, and `(a)` is the repair either way.*
+
+### ⇒ AND ITEM ⓶ IS NEXT, AS ITS OWN REVISION
+
+`(a)` — the massive species' own momentum-binned Boltzmann hierarchy in the standard form, behind a
+switch, default off, byte-identical off, closure kept with `W` always on, the `q`-grid and `ℓ`-cutoff
+**converged and not tuned**, validated **jointly** at `0.03` in TT *and* `0.03` in EE at both sums on
+both fitters. That is a real build and it gets a revision of its own rather than being bolted to
+this one. **Your refined EE ruling is taken as read:** the bar is joint agreement for a
+closure-respecting sector, and the weight change stays in every candidate from here.
