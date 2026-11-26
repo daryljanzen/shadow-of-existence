@@ -1,0 +1,2 @@
+  [base/S030] NQ=12 LMAXNU=12 rc=0 wall=3945s
+  [base/S060] NQ=12 LMAXNU=12 rc=0 wall=3956s
