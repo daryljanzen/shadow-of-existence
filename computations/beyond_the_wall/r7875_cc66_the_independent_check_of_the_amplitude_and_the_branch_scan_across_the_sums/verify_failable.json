@@ -1,0 +1,175 @@
+{
+ "caught": 12,
+ "restored_green": true,
+ "total": 12,
+ "trials": [
+  {
+   "caught": true,
+   "claim": "TT's 1.1516214 -- the item's answer",
+   "exit": 1,
+   "failed_arms": 3,
+   "moved": 1.152773038585303,
+   "path": [
+    "fits",
+    "TT|0.30",
+    "A_free"
+   ],
+   "record": "amplitude_check.json",
+   "was": 1.151621417168135
+  },
+  {
+   "caught": true,
+   "claim": "TT's 1.2959211 at 0.60",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 1.2972170666343334,
+   "path": [
+    "fits",
+    "TT|0.60",
+    "A_free"
+   ],
+   "record": "amplitude_check.json",
+   "was": 1.2959211454888449
+  },
+  {
+   "caught": true,
+   "claim": "EE's 1.0140592",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 1.015073251666989,
+   "path": [
+    "fits",
+    "EE|0.30",
+    "A_free"
+   ],
+   "record": "amplitude_check.json",
+   "was": 1.0140591924745146
+  },
+  {
+   "caught": true,
+   "claim": "the 3.538034e-06 that separates my A from 60's",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 3.5415724643028665e-06,
+   "path": [
+    "fits",
+    "TT|0.30",
+    "abs_diff_from_60"
+   ],
+   "record": "amplitude_check.json",
+   "was": 3.5380344298729938e-06
+  },
+  {
+   "caught": true,
+   "claim": "the theta*-derived allowance 2.563377e-04",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 0.00025659407295471125,
+   "path": [
+    "allowance",
+    "0.30",
+    "allowed"
+   ],
+   "record": "amplitude_check.json",
+   "was": 0.00025633773521949177
+  },
+  {
+   "caught": true,
+   "claim": "A at eps = 0, which refutes my own H8",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 1.1529839513541504,
+   "path": [
+    "fits",
+    "TT|0.30",
+    "A_eps_zero"
+   ],
+   "record": "amplitude_check.json",
+   "was": 1.1518321192349157
+  },
+  {
+   "caught": true,
+   "claim": "the 321-multipole A that makes the set load-bearing",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 1.1484580971965161,
+   "path": [
+    "fits",
+    "TT|0.30",
+    "A_all_321"
+   ],
+   "record": "amplitude_check.json",
+   "was": 1.1473107864101062
+  },
+  {
+   "caught": true,
+   "claim": "EE's 0.036161 lensing move",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 0.03619737941751159,
+   "path": [
+    "fits",
+    "EE|0.30",
+    "lensing_moves_A"
+   ],
+   "record": "amplitude_check.json",
+   "was": 0.036161218199312284
+  },
+  {
+   "caught": true,
+   "claim": "the interpolation sensitivity",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 3.518779177425157e-06,
+   "path": [
+    "fits",
+    "TT|0.30",
+    "interp_sensitivity"
+   ],
+   "record": "amplitude_check.json",
+   "was": 3.515263913511646e-06
+  },
+  {
+   "caught": true,
+   "claim": "the widest midpoint margin, 0.036365 below",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": -0.036400979563700954,
+   "path": [
+    "scan",
+    "rd_camb|0.20",
+    "midpoint_minus_worse"
+   ],
+   "record": "branch_scan.json",
+   "was": -0.036364614948752205
+  },
+  {
+   "caught": true,
+   "claim": "the +0.000394 ridge the unscaled test would have called two basins",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 0.0003947170870009131,
+   "path": [
+    "scan",
+    "rd_camb|0.60",
+    "midpoint_minus_worse"
+   ],
+   "record": "branch_scan.json",
+   "was": 0.00039432276423667645
+  },
+  {
+   "caught": true,
+   "claim": "that ridge's 0.0831 of fatol",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 0.08316549390428916,
+   "path": [
+    "scan",
+    "rd_min|0.30",
+    "excess_over_fatol"
+   ],
+   "record": "branch_scan.json",
+   "was": 0.08308241149279638
+  }
+ ]
+}
