@@ -18,8 +18,9 @@
 %   (a one-plane construction carries a free modulus); a framework declining the criterion reads one.
 %   The leaf is compact and closed in its own measure, so dim ker is a finite analytical index:
 %   dim ker_+ = 3, dim ker_- = 0. The deformation invariance the Atiyah-Singer equality would add is
-%   TRACED, not computed (P14_even_crossing_index); the count's parity is fixed by the holonomy
-%   (V4_chirality_parity) and its stability by the wall's spectral gap.
+%   TRACED, not computed (P14_even_crossing_index); the walls' chiralities are fixed by the geometry, only
+%   the orientation parity reversing them, all three at once, and the count's stability is the wall's
+%   spectral gap.  Receipt: P14_the_walls_chiralities_are_not_the_residue_frame_signs.
 %   THE TWO FACTORS: D_6 = S_3 x Z_2 = Aut(A_2); chirality descends AS AN ISOMETRY (no gauge field), the walls'
 %   S_3 GLOBAL (a monodromy symmetry). The hinge S_3 is the within-state index; the generations sit on
 %   the turnaround's deck Z_3, its transpositions supplied by the horn swap T (isospin).
@@ -135,7 +136,7 @@ Because the wall is a wall \emph{of a hinge}, the construction carries three sig
 
 \emph{And the negative half is as sharp and is stated with it}: the bundle is \emph{flat}. Flat holonomy supplies exact selection rules and no curvature, so the construction delivers the discrete content of colour and supplies no force---the geometry quantises and does not couple. 
 
-\emph{Two further facts about the sector's discrete group are recorded.} It is larger than $D_{6}=S_{3}\times\mathbb{Z}_{2}$: the residue pairing the horizon roots' surface gravities carry has a holonomy about the Nariai points which, adjoined to the walls' $S_{3}$, closes the Weyl group of the substrate's own complexified isometry algebra---so the excess is substrate-derived rather than assumed. \emph{What forces that closure is the cubic, and what is specific to this substrate is the match}: a group of order twenty-four with $S_{3}$ image and Klein four-group kernel is what \emph{any} cubic's residue pairing returns, so the closure is forced by the cubic and not by this one\rcpt{C1_the_weyl_closure_is_generic_to_cubics_and_the_match_is_D3_alone}\ldg{cartan_holonomy}. \emph{What is not forced is that the substrate's Weyl group is that same group}, and that is a rank-three coincidence: $|W(D_n)|$ runs $4,24,192,1920$ and meets $24$ only at $D_{3}$, where $\so(6,\mathbb{C})\cong\mathfrak{sl}(4,\mathbb{C})$. \emph{The match holds where it holds and fails immediately on either side}---at $\so(8,\mathbb{C})$ the cubic still gives $24$ and the Weyl group gives $192$. And that holonomy acts on the walls' chiralities, which are the $\sigma_{y}$ eigenvalues of Proposition~\ref{prop:wall}, changing their signs only in \emph{pairs}: the observed configuration is therefore the unique member of its orbit with all three walls at one chirality, and $\dim\ker_{-}$ cannot be reached from $\dim\ker_{+}=3$ by any number of loops, three and zero lying in different parity classes. The generation count is thus not merely what the index returns but what no holonomy of this connection can move. 
+\emph{Two further facts about the sector's discrete group are recorded.} It is larger than $D_{6}=S_{3}\times\mathbb{Z}_{2}$: the frame that normalises the residue pairing the horizon roots' surface gravities carry, carried around the Nariai points, closes a group of order twenty-four isomorphic to the Weyl group of the substrate's own complexified isometry algebra---so the excess is substrate-derived rather than assumed. \emph{What forces that closure is the cubic, and what is specific to this substrate is the match}: a group of order twenty-four with $S_{3}$ image and Klein four-group kernel is what \emph{any} cubic's residue pairing returns, so the closure is forced by the cubic and not by this one\rcpt{C1_the_weyl_closure_is_generic_to_cubics_and_the_match_is_D3_alone}\ldg{cartan_holonomy}. \emph{What is not forced is that the substrate's Weyl group is that same group}, and that is a rank-three coincidence: $|W(D_n)|$ runs $4,24,192,1920$ and meets $24$ only at $D_{3}$, where $\so(6,\mathbb{C})\cong\mathfrak{sl}(4,\mathbb{C})$. \emph{The match holds where it holds and fails immediately on either side}---at $\so(8,\mathbb{C})$ the cubic still gives $24$ and the Weyl group gives $192$. \emph{That holonomy acts on the frame and not on the walls' chiralities}, which are the $\sigma_{y}$ eigenvalues of Proposition~\ref{prop:wall}, fixed by the sign of each wall's signed-radius flip: a loop in the mass plane returns the geometry to itself and with it every wall's chirality, and only the orientation parity, carrying $2M\mapsto-2M$, reverses them---all three at once. So the three walls stay at one chirality: $\dim\ker_{-}$ is zero, or three in the conjugate geometry, and never one or two. The generation count is thus not merely what the index returns but what nothing short of the conjugate geometry can move. 
 
 The count is forced within CR by the programme's own criterion of necessity, not by an added axiom, and its footing is stated plainly: a framework declining that criterion reads the natural single-hinge index---one---not three. A further consequence is drawn in Section~\ref{sec:scope}, and it runs the other way to the rest of the paper: because the fold the count reads is $D-1$ in a $D$-dimensional cut, and because the horizon relation collapses to a single multiple-angle only at four and five dimensions while the mass-parity that grades chirality exists only in even dimension, four is the only dimension carrying both a generation count and a handedness. Within CR, and on the same footing as the rest, three generations and four-dimensional spacetime are one fact read at two ends.
 \end{abstract}
@@ -665,23 +666,30 @@ the automorphism group $\mathrm{Aut}(A_2)$ already identified as the substrate's
 
 \emph{Two further facts about this group are established elsewhere and bear directly on the sector.}
 
-\emph{First, the group is larger than $D_{6}$, and the excess is substrate-derived.} The residue pairing that
-the horizon roots' surface gravities put on the root triple has a holonomy about the Nariai points---the Klein
-four-group of even sign changes, arising as the per-root resolution of $\sqrt{\Delta}$, the same square root
-whose non-squareness fixes the Galois group as $S_{3}$~\cite{JanzenGroupoid}. Adjoined to the walls' $S_{3}$ it
-closes $W(A_{3})$ in its Weyl embedding, and with the chirality parity a group of order forty-eight; and
-$A_{3}$ is the root system of $\so(6,\mathbb{C})$, the complexification of the substrate's own isometry
-algebra, with $A_{2}$ inside it by deleting one node~\cite{JanzenAlgebroid}. \emph{So the sector's discrete
-group is the substrate's own, where this section has been reading a sub-root-system of it.}
+\emph{First, the group is larger than $D_{6}$, and the excess is substrate-derived.} The frame that normalises the
+residue pairing the horizon roots' surface gravities put on the root triple is not single-valued over the mass
+plane: carried around a Nariai point it returns as a quarter turn, and the loops close the rotation group of the
+cube, of order twenty-four, whose elements fixing each root are the Klein four-group of even sign changes---the
+per-root resolution of $\sqrt{\Delta}$, the same square root whose non-squareness fixes the Galois group as
+$S_{3}$~\cite{JanzenGroupoid}---and with the orientation parity a group of order forty-eight~\cite{JanzenAlgebroid}.
+Abstractly the order-twenty-four group is $S_{4}\cong W(A_{3})$, and $A_{3}$ is the root system of
+$\so(6,\mathbb{C})$, the complexification of the substrate's own isometry algebra, with $A_{2}$ inside it by deleting
+one node. \emph{So the sector's discrete group is isomorphic to the substrate's own Weyl group, where this
+section has been reading a sub-root-system of it}; the holonomy acts on the frame by rotations, where that Weyl
+group acts on its roots by reflections.
 
-\emph{Second, and physically, that holonomy acts on the walls' chiralities and protects the count's parity.} By
-Proposition~\ref{prop:wall} each wall's chirality is a definite $\sigma_{y}$ eigenvalue whose sign is the sign
-of the signed-radius flip, so a sign change is a reversal of that wall's chirality; the holonomy's elements
-change signs in \emph{pairs}, unimodularity excluding every odd change. \emph{The observed configuration is
-accordingly the unique member of its orbit with all three walls at one chirality}, and $\dim\ker_{-}$ cannot be
-reached from $\dim\ker_{+}=3$ by any number of loops, three and zero lying in different parity
-classes\rcpt{V4_chirality_parity}. \emph{The count is thus not merely what the index returns but what no
-holonomy of this connection can move.} \emph{Two guarantees are in play here and are worth keeping apart}: compactness of the leaf makes the
+\emph{Second, and physically, that holonomy is not what fixes the walls' chiralities, and what does fix them
+holds the count.} By Proposition~\ref{prop:wall} each wall's chirality is a definite $\sigma_{y}$ eigenvalue whose
+sign is the sign of the signed-radius flip, a property of the real geometry. A loop in the mass plane is closed:
+it returns to the same mass, so to the same geometry and the same flips, and every wall's chirality comes back
+unchanged, whatever the loop does to the frame. The frame's signs are a branch of $\sqrt{f'(r_{i})}$, and they
+cannot be the chiralities: in the holonomy every root transposition carries an odd number of sign reversals, while a root
+transposition does not flip chirality, the hinge $S_{3}$ sitting in $D_{6}$ as $S_{3}\times1$ (above). The group
+acting on the chiralities is $D_{6}$, and in it only the orientation parity reverses a chirality, carrying
+$2M\mapsto-2M$ and reversing all three walls at once. \emph{So the uniform configuration is carried only to
+itself and to its conjugate}: $\dim\ker_{-}$ is zero, or three in the conjugate geometry, and never one or
+two\rcpt{P14_the_walls_chiralities_are_not_the_residue_frame_signs}. \emph{The count is thus not merely what the
+index returns but what nothing short of the conjugate geometry can move.} \emph{Two guarantees are in play here and are worth keeping apart}: compactness of the leaf makes the
 count \emph{defined}, and what makes it \emph{stable} is the wall's spectral gap---its bound modes are
 separated from the continuum by the full asymptotic mass, so no small deformation of the wall carries a
 state across the threshold and changes the number.\ldg{spectral_theory} 
@@ -920,7 +928,7 @@ The maximum is machine-checked in Lean (\texttt{NewClaims.lean}). For $x>0$, $x(
 The exact steps of this paragraph's account of the neutrino masses are machine-checked in Lean (\texttt{NeutrinoSector.lean}). Sixteen states placed injectively in the $4\cdot2\cdot2$ colour, isospin and chirality slots fill every slot, the four colourless ones each exactly once, so no slot is left for a singlet (\texttt{ns\_slots}). For any Yukawa-times-vev block $D$ coupling the six neutral states to $n$ singlets, and any singlet masses $M_S$, the neutral mass matrix with blocks $0$, $D$, $D^{\mathrm{T}}$ and $M_S$ has rank at most $2n$, so at least $6-n$ of its states are massless: three for one singlet per generation, and at least two unless $n\ge5$ (\texttt{ns\_zeros}, \texttt{ns\_three\_singlets}, \texttt{ns\_need\_five}). The scale arithmetic holds on the receipts' inputs: the lepton-number scale is $1.2\times10^{15}$~GeV to the printed figure, and each cap on $v_R$ is its suppression scale over $10^{5}$, which is a squared ratio below $10^{-10}$ (\texttt{ns\_scales}, \texttt{ns\_cap}). The fermion and scalar channels have the dimensions $4\cdot4=1+15=6+10$ (\texttt{ns\_dims}); their decomposition into representations, and the absence of a Dirac zero mode on the compact face, are not formalised.
 
 \emph{What rests on the seating and what does not.} The wall count, the one-mode-per-wall
-proposition, the index and its holonomy stability, and the dimension consequence are statements about
+proposition, the index and its stability, and the dimension consequence are statements about
 threeness and parity, and stand on either seat. \emph{What the seating fixes is which three}: the
 $S_{3}$ this paper exhibits is the relation among the hinges and belongs to the within-state index, and the
 generations' own symmetry is the $\mathbb{Z}_{3}$ of the turnaround. \emph{So the generations are not the walls}: what the
