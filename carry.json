@@ -1001,6 +1001,11 @@
     "since": "5c5e59c8e79ff3eddb71778bded7db530182a50f",
     "unmeasured": true
    },
+   "receipts/P15_CR_cosmology/P15_the_adjudicated_endpoints_verdict_is_arm_independent_and_the_penalty_the_paper_prints_is_not.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45849005800",
+    "since": "5fbb2df5f00c8823a467229bbac9587c00f04df4",
+    "unmeasured": true
+   },
    "receipts/P15_CR_cosmology/P15_the_admissible_band_is_a_third_and_the_two_entries_differ_against_the_potential.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45826309520",
     "since": "5c5e59c8e79ff3eddb71778bded7db530182a50f",
