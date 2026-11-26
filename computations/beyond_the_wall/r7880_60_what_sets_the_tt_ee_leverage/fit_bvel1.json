@@ -1,0 +1,122 @@
+{
+ "control": {
+  "A_s": 2.1e-09,
+  "H0": 67.4,
+  "NS": 0.965,
+  "OM": 0.315,
+  "WB": 0.0224,
+  "lmax": 2600,
+  "tau": 0.054
+ },
+ "fits": {
+  "EE|0.30": {
+   "A_across_band": [
+    0.9378557113838456,
+    1.0165674234226916
+   ],
+   "A_and_eps_trade_off": false,
+   "A_spread": 0.07871171203884597,
+   "best_A": 1.0122620065160817,
+   "best_eps": -0.009050000000000002,
+   "degeneracy_eps_width_at_10pc": 0.11914999999999999,
+   "eps_allowed": 0.004419123744847653,
+   "eps_over_allowed": 2.0479173072606494,
+   "eps_within_allowed": false,
+   "n_multipoles": 41,
+   "resid_at_zero_eps": 0.02588001350341459,
+   "resid_best": 0.025819474256658724,
+   "resid_raw_A_one_eps_zero": 0.02588661135890957,
+   "verdict": "AMPLITUDE",
+   "verdict_from_the_coded_proxy": "NOT SEP"
+  },
+  "EE|0.60": {
+   "A_across_band": [
+    0.9455931227647892,
+    1.0167634398407406
+   ],
+   "A_and_eps_trade_off": false,
+   "A_spread": 0.07117031707595134,
+   "best_A": 1.0124779219553066,
+   "best_eps": -0.007650000000000004,
+   "degeneracy_eps_width_at_10pc": 0.11120000000000001,
+   "eps_allowed": 0.008956829015074996,
+   "eps_over_allowed": 0.8540969116552851,
+   "eps_within_allowed": true,
+   "n_multipoles": 41,
+   "resid_at_zero_eps": 0.04962442895733412,
+   "resid_best": 0.04952324403413478,
+   "resid_raw_A_one_eps_zero": 0.049638731595137965,
+   "verdict": "AMPLITUDE",
+   "verdict_from_the_coded_proxy": "NOT SEP"
+  },
+  "TT|0.30": {
+   "A_across_band": [
+    1.5800666026195587,
+    1.6480502887266115
+   ],
+   "A_and_eps_trade_off": false,
+   "A_spread": 0.06798368610705285,
+   "best_A": 1.643973082294259,
+   "best_eps": 0.0063,
+   "degeneracy_eps_width_at_10pc": 0.09029999999999999,
+   "eps_allowed": 0.004419123744847653,
+   "eps_over_allowed": 1.4256219928996783,
+   "eps_within_allowed": false,
+   "n_multipoles": 41,
+   "resid_at_zero_eps": 0.007678938098772826,
+   "resid_best": 0.007663409181539875,
+   "resid_raw_A_one_eps_zero": 0.011965078598000101,
+   "verdict": "AMPLITUDE",
+   "verdict_from_the_coded_proxy": "NOT SEP"
+  },
+  "TT|0.60": {
+   "A_across_band": [
+    1.5771404531510447,
+    1.6472836466331806
+   ],
+   "A_and_eps_trade_off": false,
+   "A_spread": 0.07014319348213593,
+   "best_A": 1.6412877132561579,
+   "best_eps": 0.004900000000000002,
+   "degeneracy_eps_width_at_10pc": 0.08405000000000001,
+   "eps_allowed": 0.008956829015074996,
+   "eps_over_allowed": 0.5470686100798557,
+   "eps_within_allowed": true,
+   "n_multipoles": 41,
+   "resid_at_zero_eps": 0.014752728602982114,
+   "resid_best": 0.01472601455137515,
+   "resid_raw_A_one_eps_zero": 0.023819686823275704,
+   "verdict": "AMPLITUDE",
+   "verdict_from_the_coded_proxy": "NOT SEP"
+  }
+ },
+ "peak_shifts": {
+  "0.30": {
+   "difference": 0.004419123744847653,
+   "frac_shift_camb": -0.004419123744847653,
+   "frac_shift_instrument": 0.0,
+   "l_A_instrument": 301.37481695568516,
+   "l_A_instrument_at_zero": 301.37481695568516,
+   "theta_star_camb": 1.045023961209351,
+   "theta_star_camb_at_zero": 1.0404261891321955
+  },
+  "0.60": {
+   "difference": 0.008956829015074996,
+   "frac_shift_camb": -0.008956829015074996,
+   "frac_shift_instrument": 0.0,
+   "l_A_instrument": 301.37481695568516,
+   "l_A_instrument_at_zero": 301.37481695568516,
+   "theta_star_camb": 1.0497451086110587,
+   "theta_star_camb_at_zero": 1.0404261891321955
+  }
+ },
+ "sums": [
+  0.3,
+  0.6
+ ],
+ "verdict": "AN AMPLITUDE DIFFERENCE in at least one block/sum: a departure the envelope test was too lenient to see -- ROUTED, not asserted over the seat that ruled it",
+ "window": [
+  100,
+  420
+ ]
+}
