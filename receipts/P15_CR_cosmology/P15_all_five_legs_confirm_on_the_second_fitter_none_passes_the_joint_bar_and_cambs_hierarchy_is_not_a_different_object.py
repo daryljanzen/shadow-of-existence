@@ -86,6 +86,7 @@ check("⛭⛭⛭ `r7879` ** ⑮ Ⓑ② **ALL TWENTY FITS CONFIRM `60`'s FIGURES,
       (L['n_hits'] == 20 and all(v['hits'] for v in F.values())
        and abs(L['worst_diff'] - 1.0391969696099679e-05) < 1e-15
        and abs(F['W|TT|0.30']['A'] - 0.995110131467115) < 1e-13
+       and abs(F['W|TT|0.60']['A'] - 1.056210323269744) < 1e-13
        and abs(F['W|EE|0.60']['A'] - 0.9403953982410259) < 1e-13
        and abs(F['C|TT|0.60']['A'] - 1.263946697413109) < 1e-13
        and abs(F['CE|EE|0.30']['A'] - 1.0076975299696962) < 1e-13
@@ -155,6 +156,10 @@ check("⛭⛔⛭ `r7879` ** ⑯ Ⓔ⑤ **THE LIVENESS CONTROL IS THE WHOLE ANSWE
        and _liv['TT|0.60']['Nu_trunc']['max_abs_rel'] == 0.0
        and abs(_liv['TT|0.30']['Nu_trunc']['max_abs_rel'] - 3.1412471746919506e-15) < 1e-27
        and abs(H['worst_spectrum_difference'] - 3.1412471746919506e-15) < 1e-27
+       and len(H['sums']) == 2
+       and abs(H['sums'][0] - 0.30) < 1e-12
+       and abs(H['sums'][1] - 0.60) < 1e-12
+       and sorted({k.split('|')[-1] for k in F}) == ['0.30', '0.60']
        and sorted(H['settings_survive']) == ['Nu_approx', 'Nu_best', 'Nu_int', 'Nu_trunc']
        and all(H['settings_survive'][k] == k for k in H['settings_survive'])),
       'all four settings survive and echo back; trunc==approx==best everywhere; worst '

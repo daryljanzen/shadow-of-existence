@@ -15,6 +15,100 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7879+cc66.18 — ⛭⛭ **⑮ ALL TWENTY FITS ON THE FIVE BANKED LEGS CONFIRM `60`, WORST `1.039197e-05`, AND THIS TIME EVERY ONE OF THE `40` LEG-PAIR COMPARISONS IS RESOLVABLE — SO UNLIKE `r7877`'s `EE` THESE AGREEMENTS ARE ABOUT THE LEGS. ⛔ NO LEG PASSES YOUR `0.03` JOINT BAR. ⑯ CAMB'S FULL HIERARCHY IS NOT A MEASURABLY DIFFERENT OBJECT FROM ITS FLUID APPROXIMATION: `|ΔA| ≤ 7.993606e-15`, `|Δε| = 0` EVERYWHERE**
+
+Both items answered. Receipt
+`P15_all_five_legs_confirm_on_the_second_fitter_none_passes_the_joint_bar_and_cambs_hierarchy_is_not_a_different_object.py`,
+**9 arms, 0 failed**, `COMPUTES: nothing`. Registered at `9d9347f43` with nine bands, pushed before a
+line of either computation existed. Failability **`12` of `12`** — after one correction of my own,
+below.
+
+### ⑮ — five legs banked, not the six you named
+
+`60`'s `r7878` banks **`W`, `C`, `E`, `CE` and `A1`**. The sixth leg of your order is not there, and
+`Ⓐ①` pins the count and names the absence rather than leaving it to silence. The five that exist are
+run on my own CAMB leg, my own fitter, your `41` in-band multipoles, the LANDED zero leg as `60`
+choose it:
+
+| leg | TT `0.30` | TT `0.60` | EE `0.30` | EE `0.60` |
+|---|---|---|---|---|
+| `W` | `0.995110` | `1.056210` | `0.959947` | `0.940395` |
+| `C` | `1.131109` | `1.263947` | `1.012364` | `1.043614` |
+| `E` | `1.054639` | `1.139014` | `1.000596` | `1.020196` |
+| `CE` | `1.087596` | `1.189526` | `1.007698` | `1.034233` |
+| `A1` | `0.921142` | `0.907858` | `0.953502` | `0.927747` |
+
+**Twenty of twenty inside my registered tolerance; worst distance from `60`'s own figures
+`1.039197e-05`**, on `CE`'s `EE` at the smaller sum. The regression control re-derives `r7875`'s four
+landed amplitudes at **exactly `0.0`**, so this is provably the same instrument.
+
+⌗ *`W`'s TT at `Σ = 0.30` reads `0.995110` — BELOW unity — which independently confirms `60`'s
+finding that the weight change alone already crosses one.*
+
+### ⛔ the joint bar: nobody passes, and not marginally
+
+Against *TT and EE both within `0.03` of unity on both fitters*:
+
+| leg | worst block | worst distance from unity | |
+|---|---|---|---|
+| `W` | `EE` at `0.60` | `0.059605` | **nearest — still twice the bar** |
+| `A1` | TT at `0.60` | `0.092142` | |
+| `E` | TT at `0.60` | `0.139014` | |
+| `CE` | TT at `0.60` | `0.189526` | |
+| `C` | TT at `0.60` | `0.263947` | |
+
+**The gap is not a tuning distance.** `W` is nearest and misses by a factor of two; every other leg
+fails on TT at the larger sum.
+
+### the caveat that applied at `r7877` does NOT apply here
+
+At `r7877` I reported that `EE`'s on-minus-off separation fell **eighty times below my own
+interpolation floor**, so those four `EE` agreements confirmed the bank reading and not the leg. I
+registered that risk in advance and it came true. **Here all `40` pairwise leg comparisons separate
+ABOVE both floors** (`3.515264e-06` TT, `5.307333e-05` EE) — `0` fall below. So agreeing with `60` on
+these twenty is a statement about the legs. ⌗ *An agreement's worth depends on whether the fitter can
+tell the alternatives apart, which is why I measure this before reporting the agreement, not after.*
+
+### ⑯ — your question, in the form you asked it
+
+You asked whether the hierarchy-versus-fluid difference *"is as small in `A` and `ε`, and where it is
+not"*. **It is as small, and there is nowhere it is not.** Eight comparisons, TT and EE at both sums
+against both truncated arms:
+
+- worst `|ΔA|` = `7.993606e-15` — `2.665e-13` of your `0.03` bar
+- `|Δε|` = `0.0` at every one of the eight
+- `0` of `8` clear my own interpolation floors
+
+**But the liveness control is the whole answer, and it had to run first.** All four settings are
+accepted and echoed back by CAMB, so the knob is settable. The *spectra* are another matter:
+`Nu_trunc`, `Nu_approx` and `Nu_best` come back **bit-identical** at every sum and in both blocks, and
+`Nu_int` differs from them by `3.141247e-15` at `Σ = 0.30` and by **exactly zero** at `0.60`. An `A`
+difference of zero between two settings that return the same array says nothing about hierarchies.
+
+### ⛔ so I claim the weaker reading, and only the weaker one
+
+Three settings coming back bit-identical is the signature of **three settings taking the same code
+path**, not of three treatments converging. From outside CAMB I cannot separate *"the hierarchy and
+the fluid approximation agree to machine precision"* from *"the switch is inert at these
+parameters"*. Your practical answer is the same either way — **no measurable leverage from removing
+this approximation** — but they are different claims and only one is evidenced. `Ⓖ⑦` states what this
+does not establish, because the stronger reading would license a conclusion about hierarchy physics
+that the measurement cannot carry.
+
+### your `6e-6` and my `7.3e-08` and this revision's `3.1e-15` are three configurations
+
+Your order cited "about `6e-6`" for my `r7871` measurement. My record says `7.305730e-08`. This
+revision measures `3.141247e-15`. `r7871` was on **lensed** spectra out to `ℓ = 1996`; this is
+**unlensed** over `100`–`420`. `Ⓗ⑧` pins the reconciliation rather than overwriting the earlier
+figure — different configurations, all three negligible, none of them wrong.
+
+### ⚠ one pin of mine was too loose and my own failability run found it
+
+The bar arm read the derived summary `nearest_worst_dist` and **not** the per-fit value the record
+also carries, so a corrupted per-fit entry would have passed with the summary intact. Both copies are
+pinned now and asserted to agree. Same class as the two vacuous pins at `r7875`: **a pin that cannot
+notice the move it is meant to notice is not a pin.**
+
 ## r7877+cc66.17 — ⛭⛭ **⑮ ALL EIGHT BANKED FITS CONFIRM `60` TO `8.8e-06`, SO THE REPAIR'S NUMBERS ARE ACCEPTED ON TWO FITTERS. ⛔ BUT THE REPAIR **TRADES TT FOR EE**, AND MY `EE` AGREEMENT DOES **NOT** DISCRIMINATE THE LEGS — WHICH I REGISTERED AS A RISK BEFORE THE RUN**
 
 Item ⑮ is answered **on everything banked**. Receipt
