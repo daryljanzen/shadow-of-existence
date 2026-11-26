@@ -1,2 +1,4 @@
   [base/S030] NQ=12 LMAXNU=12 rc=0 wall=3945s
   [base/S060] NQ=12 LMAXNU=12 rc=0 wall=3956s
+  [nq24/S030] NQ=24 LMAXNU=12 rc=0 wall=5189s
+  [nq24/S060] NQ=24 LMAXNU=12 rc=0 wall=5206s
