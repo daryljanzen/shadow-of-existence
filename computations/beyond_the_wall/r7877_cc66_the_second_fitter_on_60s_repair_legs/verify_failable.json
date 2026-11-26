@@ -1,0 +1,175 @@
+{
+ "caught": 12,
+ "restored_green": true,
+ "total": 12,
+ "trials": [
+  {
+   "caught": true,
+   "claim": "shear_on TT's 0.8640022 -- the item",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 0.8648661974334184,
+   "path": [
+    "fits",
+    "shear_on|TT|0.30",
+    "A"
+   ],
+   "record": "refit_legs.json",
+   "was": 0.8640021952381803
+  },
+  {
+   "caught": true,
+   "claim": "shear_off TT's 0.8110362",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 0.8118472553217929,
+   "path": [
+    "fits",
+    "shear_off|TT|0.60",
+    "A"
+   ],
+   "record": "refit_legs.json",
+   "was": 0.8110362191026903
+  },
+  {
+   "caught": true,
+   "claim": "shear_on EE's 0.9447322",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 0.9456769614185367,
+   "path": [
+    "fits",
+    "shear_on|EE|0.30",
+    "A"
+   ],
+   "record": "refit_legs.json",
+   "was": 0.9447322291893475
+  },
+  {
+   "caught": true,
+   "claim": "shear_off EE's 0.9112188",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 0.9121300201355816,
+   "path": [
+    "fits",
+    "shear_off|EE|0.60",
+    "A"
+   ],
+   "record": "refit_legs.json",
+   "was": 0.9112188013342475
+  },
+  {
+   "caught": true,
+   "claim": "the worst distance from 60, 8.818003e-06",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 8.82682069294871e-06,
+   "path": [
+    "fits",
+    "shear_off|TT|0.60",
+    "diff_from_60"
+   ],
+   "record": "refit_legs.json",
+   "was": 8.818002690258453e-06
+  },
+  {
+   "caught": true,
+   "claim": "the regression control's re-derivation of r7875's 1.1516214",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 1.152773038585303,
+   "path": [
+    "regression",
+    "TT|0.30",
+    "A"
+   ],
+   "record": "refit_legs.json",
+   "was": 1.151621417168135
+  },
+  {
+   "caught": true,
+   "claim": "EE's 0.055268 against its 0.05 band",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 0.05532303858146313,
+   "path": [
+    "ee_vs_band",
+    "shear_on|EE|0.30",
+    "dist"
+   ],
+   "record": "refit_legs.json",
+   "was": 0.05526777081065248
+  },
+  {
+   "caught": true,
+   "claim": "TT's repaired distance 0.135998 -- the trade",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 0.13613380256658147,
+   "path": [
+    "direction",
+    "shear_on|TT|0.30",
+    "repaired_dist"
+   ],
+   "record": "refit_legs.json",
+   "was": 0.13599780476181966
+  },
+  {
+   "caught": true,
+   "claim": "EE's repaired distance 0.055268 -- the other half of the trade",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 0.05532303858146313,
+   "path": [
+    "direction",
+    "shear_on|EE|0.30",
+    "repaired_dist"
+   ],
+   "record": "refit_legs.json",
+   "was": 0.05526777081065248
+  },
+  {
+   "caught": true,
+   "claim": "EE's unresolvable 6.422709e-07 separation",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 6.429131283557376e-07,
+   "path": [
+    "separation",
+    "EE|0.30",
+    "mine"
+   ],
+   "record": "refit_legs.json",
+   "was": 6.422708574982394e-07
+  },
+  {
+   "caught": true,
+   "claim": "my own EE interpolation floor 5.307333e-05",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 5.312639834671251e-05,
+   "path": [
+    "separation",
+    "EE|0.30",
+    "my_floor"
+   ],
+   "record": "refit_legs.json",
+   "was": 5.307332502169082e-05
+  },
+  {
+   "caught": true,
+   "claim": "TT's resolvable 0.003753 separation",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 0.003756909220521376,
+   "path": [
+    "separation",
+    "TT|0.30",
+    "mine"
+   ],
+   "record": "refit_legs.json",
+   "was": 0.0037531560644569195
+  }
+ ]
+}
