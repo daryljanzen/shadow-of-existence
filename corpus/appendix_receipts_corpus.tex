@@ -1426,11 +1426,11 @@
 \emph{Computes:} the monodromy multiplier asserted a primitive cube root of unity with order asserted 3; the real-r sheets tabulated line by line; the horizon cubic's degree asserted 3 with its leading term identified; and R asserted central in the Weyl S\_3, an involution, and outside it
  \emph{Bound:} ** THIS IS A THIRD THREE AND IS A LIABILITY BEFORE IT IS AN ASSET. ** The programme has already withdrawn one conflation of two threes (generations-are-the-hinges, registered in `check\_withdrawn`), so this one enters labelled as DISTINCT from the A\_2 / horizon-root / hinge three. What would make them one is an argument that the 2/3 exponent and the cubic's degree are forced by a single structure; **none is offered**
 \ \emph{Run:} \texttt{python3 receipts/P08\_slicing\_operator/P08\_the\_branch\_point\_monodromy\_is\_Z3.py}
-\item[\rcptlabel{V4_chirality_parity}{P14R14}\textbf{P14R14}\quad\texttt{V4\_chirality\_parity}]\hfill\textsf{[OK]}\\
-\textit{sec:family} \ (V\_4 acts on the three walls' chirality signs (prop:wall: chirality = sigma\_y eigenvalue per wall, and reversing a wall flips it). det=+1 => EVEN number of flips. What is the orbit of the observed configuration, and is the observed one distinguished?). 
-\emph{Computes:} runs clean; registered from its own docstring and a live run
- \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
-\ \emph{Run:} \texttt{python3 receipts/P14\_matter\_sector\_paper/V4\_chirality\_parity.py}
+\item[\rcptlabel{P14_the_walls_chiralities_are_not_the_residue_frame_signs}{P14R14}\textbf{P14R14}\quad\texttt{P14\_the\_walls\_chiralities\_are\_not\_the\_residue\_frame\_signs}]\hfill\textsf{[OK]}\\
+\textit{sec:family} \ (THE WALLS' CHIRALITIES ARE NOT THE RESIDUE FRAME'S SIGNS: in the frame holonomy (the cube rotation group O, order 24) every root transposition carries one or three sign reversals and none is bare, so O does not contain the S\_3 x 1 by which the walls' chiralities transform; read as chiralities O would carry (+,+,+) to all eight sign patterns, while D\_6 = S\_3 x <-I> carries it only to (+,+,+) and (-,-,-), so dim ker\_- is 0 or 3, never 1 or 2; a mass-plane loop returns the root set to itself while the frame returns as a quarter turn). 
+\emph{Computes:} numerical continuation around both Nariai points; closure on signed permutations; orbits under O and D\_6
+ \emph{Bound:} that chirality is a property of the real geometry, returned by a closed loop, is prop:wall's reading and is argued in the paper, not computed
+\ \emph{Run:} \texttt{python3 receipts/P14\_matter\_sector\_paper/P14\_the\_walls\_chiralities\_are\_not\_the\_residue\_frame\_signs.py}
 \item[\rcptlabel{V5_homothety_charge}{P5R11}\textbf{P5R11}\quad\texttt{V5\_homothety\_charge}]\hfill\textsf{[OK]}\\
 \textit{sec:alpha-action} \ (V5 --- THE DILATION AS A SYMMETRY WITH NO CONSERVED CHARGE. CONFIRMATION 4 --- the object: C1 established that the group preserving the substrate's ABSOLUTE is O(5,1) x R+, one generator larger than the isometry group O(5,1), and that the extra generator is the DILATION carrying alpha -> lambda.alpha. A dilation is a HOMOTHETY: L\_xi g = 2c g with c constant.). 
 \emph{Computes:} runs clean; registered from its own docstring and a live run
@@ -2681,11 +2681,6 @@
 \emph{Computes:} asserts P14s operator, eigenspinor and superpotential verbatim, tests all four antilinear candidates for commutation, and computes the square and the eigenspace action (14 checks)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- establishes the condition; the index value is untouched
 \ \emph{Run:} \texttt{python3 receipts/L221\_the\_bridge/B4\_the\_radial\_operator\_carries\_a\_real\_structure.py}
-\item[\label{rcpt:B5_the_mod_two_index_is_one_and_the_corpus_computed_it}\textbf{}\quad\texttt{B5\_the\_mod\_two\_index\_is\_one\_and\_the\_corpus\_computed\_it}]\hfill\textsf{[OK]}\\
-\textit{sec:wall} \ (the mod-2 index has value 1, and P14 computed it without naming it: the orbit of (+,+,+) under the pair-flip holonomy is four of eight states with n\ensuremath{_+} mod 2 = 1 throughout). 
-\emph{Computes:} asserts P14s count, holonomy action and parity-class conclusion verbatim, enumerates the orbit, and confirms the two orbits are the two parity classes (14 checks)
- \emph{Bound:} NOT-A-PAPER-CLAIM --- names an invariant the corpus states unnamed; the integer index stays traced
-\ \emph{Run:} \texttt{python3 receipts/L221\_the\_bridge/B5\_the\_mod\_two\_index\_is\_one\_and\_the\_corpus\_computed\_it.py}
 \item[\label{rcpt:B6_the_object_is_delivered_and_the_row_argues_elsewhere}\textbf{}\quad\texttt{B6\_the\_object\_is\_delivered\_and\_the\_row\_argues\_elsewhere}]\hfill\textsf{[OK]}\\
 \textit{abstract \ensuremath{\cdot} sec:whichthree} \ (PO-5s OBJECT is substantially delivered --- baryon 1, diquark 0, meson 1, and the three wall monodromies with the hinge 3-cycle generate SU(3) --- while its row carries a negative verdict on a DIFFERENT branching). 
 \emph{Computes:} asserts PO-5s object and target from the register, P14s delivered/not-delivered list verbatim from both abstract and body, and confirms SU(3) is absent from the row (12 checks)
