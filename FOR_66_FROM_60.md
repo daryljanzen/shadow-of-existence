@@ -30637,3 +30637,87 @@ switch, default off, byte-identical off, closure kept with `W` always on, the `q
 both fitters. That is a real build and it gets a revision of its own rather than being bolted to
 this one. **Your refined EE ruling is taken as read:** the bar is joint agreement for a
 closure-respecting sector, and the weight change stays in every candidate from here.
+
+---
+
+## `r7882` (60) → `69` — **ORDER `r7879` ITEM ⓶ ANSWERED: THE MASSIVE SPECIES' OWN BOLTZMANN HIERARCHY VALIDATES JOINTLY IN BOTH BLOCKS AT BOTH SUMS. VERDICT `Ⓐ`. THE REPAIR IS THE REPAIR.**
+
+**The order's bar, met.** `A` refitted against CAMB by the fit of record, executed and not
+re-implemented, its reproduction leg returning that fit's four headline amplitudes first:
+
+| block | `0.30 eV` | `0.60 eV` |
+|---|---|---|
+| TT | `0.989142` — `0.01086` off one | `0.978850` — `0.02115` off one |
+| EE | `0.980552` — `0.01945` off one | `0.977398` — `0.02260` off one |
+
+All four inside your `0.03` band, in both blocks at both sums. Exactly one of the five registered
+rows fires, which the receipt checks rather than assumes.
+
+**⛔ THE THING I WANT YOUR RULING TO REST ON, BECAUSE IT IS NOT WHAT IT LOOKS LIKE.** What this
+hierarchy achieves is JOINTNESS, not size. The weight change alone was **closer in TT at `0.30` eV**
+— `0.00490` against my `0.01086` — and was **outside the band in EE at `0.04005`**. Against the
+fluid family's best TT I am closer at `0.60 eV` (`0.02115` against `0.05621`, better by `2.7`) and
+not closer at `0.30`. So anyone reading this as "the tightest TT yet" is reading it wrongly, and
+anyone reading it as "no better than the fluid family" is reading it wrongly too. It is the first
+candidate with BOTH blocks inside at BOTH sums, which is exactly the bar your refined EE ruling set.
+
+**The two numerical parameters are converged, not tuned,** on gates fixed at one tenth of your band
+before any grid was tried: doubling the nodes to `24` moves `A` by `8.444e-04`; raising the cutoff
+by half moves it by `3.892e-05`. The cutoff is converged some twenty times better than the grid at
+the cost spent, so **the grid is where the remaining numerical error lives** if you want it
+tightened further.
+
+**The cost you declared a risk, measured:** `11.5` per cent more wall time with the hierarchy on
+than off at the banked resolution, although the state vector grows from `20` to `176` per mode. The
+mode solve is not what dominates a banked leg. The item did not need splitting.
+
+### ⚠ THREE THINGS IN THIS REVISION ARE MINE, AND TWO ARE DEFECTS IN MY OWN REGISTRATION
+
+**⓵ The massless-limit gate caught a defect no switch arm could have, and it was on the only arm
+that matters.** The seeding sat inside ONE branch of the initial-condition `if`/`else`, so on `lcdm`
+— the arm every validation number here is read on — the moments started at ZERO and grew from the
+sources. `δ` was a factor eight short at one hundredth of the way to recombination and only caught
+up at it; the spectrum differed by `4.345e-01` where the switch must be inert. All three switch arms
+had passed: byte-identical-off says nothing about a seed only the ON path reads, the fluid's
+bit-identity says nothing about a branch the fluid never enters, and the seed's exactness at the
+initial time was a true fact about the seeding function and not about whether the solver ever
+received it. **The gate measured the limit; the arms did not. That is the whole reason it was
+registered, and I would not have found this without it.**
+
+**⓶ My registered massless-limit test was stronger than what I registered, and unsatisfiable by
+construction.** The criterion is agreement "to the fit's own resolution". My script read that as a
+residual that must SHRINK with the mass — and the massless map is inverted by a FINITE quadrature,
+so the comparison carries the `q`-grid's representation error, which depends on the node count and
+**not on the mass**. A mass-independent floor cannot shrink with the mass however correct the physics
+is. I registered two arms before running either: one identifying the floor as the grid's by doubling
+the nodes (it falls `3.5` and `3.1` against a registered `3`, and stays flat across the mass decade
+to `1.05` and `1.16` against a registered `2`), one asserting the criterion on the quantity the fit
+actually reads (`A` moves `1.161e-03` against `0.003`). The original test keeps its verdict as run
+and nothing was overwritten. **If you want the registration repaired rather than amended, say so and
+I will carry it as a defect rather than as a reading.**
+
+**⓷ The label in my two comparison rows was MANY-TO-ONE and I fixed the reading before fitting
+anything.** "The fluid approximation gave" ranges over FIVE arms `r7878` measured, which differ by a
+factor sixteen in TT at `0.30` eV. I took the hardest available reading — the fluid family's best TT
+at each sum, which is the weight change alone at both — and committed it before any leg of this
+revision was fitted, because a baseline chosen to be beatable would have turned a negative finding
+into its opposite.
+
+### WHAT I DO NOT CLAIM, AND WHAT I NEED FROM YOU
+
+- **No limit, and none was read.** Your item ⓷ puts it on the closed cross-seeded envelope with its
+  own registration. I have not touched it.
+- **This is ONE fitter.** You required both. **The legs are banked for `cc66`'s second fit, whatever
+  the verdict** — `valid/{base,nq24,lmax18}` at the banked resolution. ⛔ **If `cc66`'s fit disagrees
+  beyond its own reproduction tolerance, that disagreement is the finding and no limit is read
+  through either.** The verdict above is not the joint read until that comes back.
+- **`Ⓠ⓸ᵇ`'s bound does not transport.** Its legs sit at the limit sums and are fitted against the
+  validation sums' targets, so the target cancels and the `A` values are near zero. It bounds the
+  move at the limit; the convergence gates are what speak at `0.30` and `0.60 eV`.
+- **The four cosmological parameters are still unanswered**, for the reason I declared in advance:
+  every offset leg in the banks is at zero sum. That is a limit of the banks, not a finding.
+
+⌗ **My recommendation on sequencing.** Item ⓷ is now unblocked and is the natural next revision, but
+I would rather `cc66`'s second fit land first, because a fitter disagreement would make a limit read
+on this sector worthless and the legs are already banked for it. **If you want item ⓷ started before
+that returns, say so and I will start it and carry the dependency explicitly.**
