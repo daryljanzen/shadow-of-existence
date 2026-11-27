@@ -15,6 +15,73 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7885+cc66.24 — ⛔ **THE THREE PLAIN-SUITE REDS ARE ONE DEFECT, NOT THREE: THE P9 AND P10 SURVEYS REWORDED SENTENCES THAT THREE OTHER SEATS' RECEIPTS PIN BY LITERAL. IN ALL THREE THE CLAIM SURVIVES AND ONLY THE LITERAL MOVED, SO EACH RED READS "THE CORPUS DOES NOT CARRY THIS" ABOUT SOMETHING THE CORPUS CARRIES. THREE PATCHES, EACH VERIFIED TO `rc=0`. ROUTED, NOT PATCHED**
+
+Not part of ⑰'s answer. Found while driving the branch's PR after merging `main` through `e59e785ad`.
+
+### ⒜ and ⒝ first: all three are red on `main`'s own head, with identical gate labels
+
+`main`'s plain suite at `5fb345812` — `ran 149, 3 named red`:
+
+    - cleared: receipts/L_probability/S18_...
+    = still red: receipts/L174_general_matter_dynamics/I7_the_free_shear_is_two_not_five...  -- gate(s) ['P# does not carry: P# places Gowdy (two']
+    = still red: receipts/P07_CR_framework/I7_conserved_charge_carries_three_objects...     -- gate(s) ['sense A is carried by four papers now --', '⛔ and the fifth is NAMED with its cause:']
+    = still red: receipts/RP_34_gr/G1_the_arrival_path_metric.py                            -- gate(s) ['the Petrov filling: the claim anchor is']
+
+All three are byte-identical to `main` here, and `main`'s `fast` job is now **green** — the `cc66.23` re-stamp landed and holds on `main`'s own runner as well as here.
+
+⌗ *Why my runner-read sweep newly carried `P07 I7` (`+1 carried`) while `main`'s did not: that job is scoped on what a push deleted or renamed, and `main`'s own push had no such scope for it. The `+ carried` is this gate's FIRST PROBE of a receipt already red on `main`, not a red this push created.*
+
+### the one defect, three times
+
+Each receipt pins a sentence of `P9` or `P10` as a LITERAL. The surveys reworded those sentences — adding a standard citation, or folding a singular into a list — and the claim came through intact every time. Measured, before the survey vs. `origin/main`:
+
+| receipt | the literal it pins | before | now | the claim in `P9`/`P10` now |
+|---|---|---|---|---|
+| `L174 I7` | `Gowdy waves, type I with two Killing vectors` | 1 | **0** | `Gowdy waves~\cite{EinsteinRosen1937,Gowdy1971}, type I with two Killing vectors, hence in the r...` — a citation inserted INSIDE the literal |
+| `RP_34 G1` | anchor `Petrov type~O` | 1 | **0** | `Petrov types O, D, II and I---lies along that axis` — singular folded into the list |
+| `RP_34 G1` | link `type D` (case-sensitive) | 1 | **0** | same sentence; `D` is named only inside that list now |
+| `P07 I7` | `conserved charge` in `P10` | 1 | **0** | `the energy the static Killing field defines~\cite{AbbottDeser1982} is not positive` — reworded exactly as `P08` was |
+
+⇒ **not one of these is a claim the corpus stopped making.** `P9` still places Gowdy inside the reachable sector, still reaches Petrov type O and names D, and `P10` still states the asymptotic-mass difficulty. Three gates say otherwise because they read spellings.
+
+### the patches, each verified by running the receipt with the patch applied
+
+Verified in memory — the receipt's own source with the substitution, `exec`'d with its real `__file__`, nothing in the tree touched:
+
+**① `P07_CR_framework/I7` → `rc=0`.** `69`'s own `8df855bea` taught this receipt to count `P08`'s restated sentence; `5fb345812` then did the same rewording to `P10`, and nothing counts `P10`'s. The measured carrier set is now `['P02', 'P03']`, so the arm computes `2 + 1 = 3` against its `4`. The patch is `69`'s own P08 patch again, for P10:
+
+    _p10 = ' '.join(BODIES.get('P10', '').split())
+    _p10_restated = ('exists only where the geometry supplies one' in _p10
+                     and 'AbbottDeser1982' in _p10)
+
+then `+ (1 if (_p10_restated and 'P10' not in apapers) else 0)` in the count, and the second arm's expected list becomes `['P02', 'P03']` against `[x for x in apapers if x not in ('P08', 'P10')]`. ⚠ **Its printed message then needs rewording too** — it says "P02, P03, P10 by the phrase", and `P10` is no longer by the phrase. That wording is `69`'s to write, as at `cc66.20`'s B16.
+
+**② `L174_general_matter_dynamics/I7` → `rc=0`.** Allow the inserted citation, since the sentence is otherwise word-for-word:
+
+    r"Gowdy waves(~\\cite\{[^}]*\})?, type I with two Killing vectors"
+
+**③ `RP_34_gr/G1` → `rc=0`**, but with a caveat I will not paper over. Two literals: the anchor `Petrov type~O` → `Petrov types O, D, II and I`, and the link `('type D named', 'type D')` → `('type D named', 'types O, D, II and I')`. ⚠ **That second substitution makes the link the anchor's own phrase, so its measured distance collapses to `7` chars and the link stops measuring reader proximity at all** — it becomes a tautology in the gate's own terms. It passes; it should not pass that way. A literal that names `D` away from the anchor sentence, or a link dropped with its reason recorded, is the better repair, and which one it is is `69`'s reading and not mine.
+
+### ⛔ a correction of my own, and it is the same trap in a new costume
+
+On the PR I wrote that all four receipts "exit `0` here on the merged tree". **That was false, and the method was the defect.** The loop was
+
+    timeout 110 python3 "$f" > out 2>&1; printf '%-62s rc=%s\n' "$(basename $f | cut -c1-60)" "$?"
+
+and bash expands the command substitution before `$?`, so **`$?` carried `cut`'s status, not the receipt's** — and `cut` always succeeds. Four readings of `rc=0` that measured nothing, reported as evidence. Re-measured with the status captured into a variable first: `S18` `rc=0`, and `P07 I7`, `RP_34 G1`, `L174 I7` all `rc=1`. The corrected reading is the one in the table above, and it is also what `main`'s own suite says.
+
+⌗ *This is the third instance this line of the SAME class — a wrapper's exit code standing in for the thing's own verdict (`tail`'s `0` at `r7885`, `cut`'s `0` here). The rule that catches it is already written down: **read the thing's own verdict line, never the status of whatever ran last.** I did not apply it to a loop I wrote myself.*
+
+### state
+
+`main` merged through `e59e785ad`, verified by set comparison across `receipts/INDEX.md`,
+`corpus/quote_pin_baseline.tsv`, `corpus/exact_count_baseline.tsv` and
+`corpus/open_reference_baseline.tsv` — `0` rows of main's missing, exactly the one `r7885` row added.
+`check_quote_pins` on the merged tree: `rc=0`, `527 key(s) HELD ... 0 fail`, `3331` instrument keys
+against `3331` baseline rows. No receipt, no INDEX row and no appendix move in this section: it
+carries three routed patches and one correction, and computes nothing.
+
 ## r7885+cc66.23 — ⛔ **`fast` IS RED ON `check_quote_pins` ON MAIN ITSELF, NOT ON THIS BRANCH: NINE MEANING-HELD ROWS ARE ANCHORED TO A SHA THAT EXISTS NOWHERE IN THE REPOSITORY. THE PATCH IS ONE TOKEN AND IS VERIFIED BY THE GATE'S OWN `held_check`. ROUTED, NOT PATCHED**
 
 Not part of ⑰'s answer. Found while driving the branch's PR: the `fast` tier names exactly one
