@@ -200,14 +200,21 @@ numerical error cannot be what decides the verdict.
 | gate | what moves | worst move in `A`, both blocks and both sums | registered | verdict |
 |---|---|---|---|---|
 | `Ⓠ⓶` | the `q`-grid doubled, 12 → 24 nodes | **`8.444e-04`** | `< 0.003` | **MET** |
-| `Ⓠ⓷` | the `ℓ`-cutoff raised by half, 12 → 18 | *(reported when its bank lands)* | `< 0.003` | *(pending)* |
+| `Ⓠ⓷` | the `ℓ`-cutoff raised by half, 12 → 18 | **`3.892e-05`** | `< 0.003` | **MET** |
 
-⇒ `Ⓠ⓶` puts the quadrature's error an order of magnitude below the margin that decides the verdict.
+⇒ `Ⓠ⓶` puts the quadrature's error an order of magnitude below the margin that decides the verdict,
+and `Ⓠ⓷` puts the `ℓ`-cutoff's error nearly **two** orders below it. **So neither of the hierarchy's
+two numerical parameters can decide the verdict, which is what `r7879` required when it said they
+are numerical and converged rather than tuned.**
+
+⌗ And the two gates are not equally tight, which is worth recording for whoever next has to pay for
+one of these studies: the `ℓ`-cutoff is converged some twenty times better than the `q`-grid at the
+cost actually spent. The grid is where the remaining numerical error lives.
 
 ⌗ **A partial read is marked as one.** The read takes the banks it reads from its environment, which
 narrows WHAT IS READ and cannot touch a criterion; a run that reads fewer than three banks records
 itself as partial and says so on its own output, so ⛔ **a gate not read is never reported as a gate
-met.**
+met.** This read is the whole one: all three banks, `partial` false in its own record.
 
 ### The convergence banks' cost, since it was the declared risk
 
@@ -215,9 +222,14 @@ met.**
 |---|---|---|---|
 | as built | `12` | `12` | `3945 s`, `3956 s` |
 | the `q`-grid doubled | `24` | `12` | `5189 s`, `5206 s` |
+| the `ℓ`-cutoff raised by half | `12` | `18` | `2980 s`, `2980 s` |
 
 Twice the nodes for `31` per cent more wall time — the same pattern the limit legs showed, and the
-reason the whole study fitted in one revision.
+reason the whole study fitted in one revision. ⌗ *The `ℓ`-cutoff bank is the FASTEST of the three
+despite carrying half again as many moments, because it ran with the other two already finished
+rather than four-way; the wall times are comparable within a bank and across contention they are
+not, which is why the `11.5` per cent figure above is taken from the four limit legs that ran
+together and not from this table.*
 
 ---
 
