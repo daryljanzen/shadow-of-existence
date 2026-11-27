@@ -5700,6 +5700,13 @@
    }
   },
   "suite": {
+   "receipts/L174_general_matter_dynamics/I7_the_free_shear_is_two_not_five_and_the_corpus_already_names_the_two.py": {
+    "gates": [
+     "P# does not carry: P# places Gowdy (two"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46022850592",
+    "since": "96e675e39aca7ce2d836048348baf87e72635256"
+   },
    "receipts/L_probability/S18_the_one_seven_one_was_never_a_rewriting_queue_and_the_grain_clause_cannot_ratify_forty_six_character_windows.py": {
     "gates": [
      "\u24b6\u2461\u1d47"
@@ -5714,6 +5721,13 @@
     ],
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46001927017",
     "since": "9f453e2e14e7ab747b1ddb2401be3e54aae4f5c5"
+   },
+   "receipts/RP_34_gr/G1_the_arrival_path_metric.py": {
+    "gates": [
+     "the Petrov filling: the claim anchor is"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46022850592",
+    "since": "96e675e39aca7ce2d836048348baf87e72635256"
    }
   },
   "tolerance": {
