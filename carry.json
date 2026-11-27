@@ -5046,13 +5046,26 @@
  },
  "main": {
   "suite": {
-   "receipts/P07_CR_framework/I7_conserved_charge_carries_three_objects_and_one_denies_the_others.py": {
+   "receipts/L221_the_bridge/B59_the_routes_are_enumerable_and_one_is_absent.py": {
     "gates": [
-     "sense A is carried by four papers now --",
-     "\u26d4 and the fifth is NAMED with its cause:"
+     "\u26ed\u26ed\u26ed \u24f6 and the SPECTRAL-TRIPLE route is s"
     ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46044929956",
-    "since": "e59e785ad18eff4319fd72be8b9146c42001dad4"
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46058177890",
+    "since": "939fd1d154ee35d26f286d4dd1152fd990cfbdcf"
+   },
+   "receipts/L221_the_bridge/B61_the_walls_do_not_cover_the_spectral_route.py": {
+    "gates": [
+     "\u24f7"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46058177890",
+    "since": "939fd1d154ee35d26f286d4dd1152fd990cfbdcf"
+   },
+   "receipts/L249_a_pin_on_a_live_register/P1_a_check_that_pins_a_live_register_punishes_the_finding_it_defends.py": {
+    "gates": [
+     "\u24f5"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46058177890",
+    "since": "939fd1d154ee35d26f286d4dd1152fd990cfbdcf"
    }
   }
  }
