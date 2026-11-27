@@ -107,4 +107,7 @@ corpus/pin_adjudication_board.tsv
 #   resolves to nothing on any other machine, which is worse than a missing file because it reads
 #   as present.*  Both are rebuilt by re-running the two scripts.
 computations/beyond_the_wall/*/_legs/
+#: extracted from a `refs/ci/*` ref at run time and exactly reproducible from it, so it is working
+#: data like `_legs/` above and not a result -- the result is the revision's own record
+computations/beyond_the_wall/*/_ref_grid/
 computations/beyond_the_wall/*/parts/done.txt

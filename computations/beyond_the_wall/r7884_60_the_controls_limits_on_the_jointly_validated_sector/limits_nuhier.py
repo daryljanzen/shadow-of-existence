@@ -29,6 +29,7 @@ while that is outstanding.
 
     NODE=60 python3 limits_nuhier.py
 """
+import ast
 import io
 import json
 import os
@@ -57,6 +58,15 @@ ARMS = ('lcdm', 'cr')
 NEW_TAGS = ('S006', 'S015', 'S030', 'S045', 'S060')          # the five the hierarchy can run at
 CARRY_TAGS = ('S000', 'Sm06', 'Sm12',                        # the zero node and the two negatives
               'H0p', 'H0m', 'OMp', 'OMm', 'WBp', 'WBm', 'NSp', 'NSm')   # every one at MNU = 0.00
+#: the sum each carried tag NAMES.  Anything not listed is a parameter-offset leg and sits at 0.00.
+#: ⛭ *`Ⓛ⓵` used to demand `MNU == 0.00` of EVERY carried tag, which the two negative nodes in the
+#:   line above can never satisfy -- they are carried precisely BECAUSE the hierarchy has no reading
+#:   below zero.  So the gate could not pass on the carry set this module itself defines, and it was
+#:   never caught because `r7884` landed this file REGISTERED AND UNRUN.  The clause the argument
+#:   reasons from is not "every carried sum is zero" but "every carried point is the point its tag
+#:   claims", and the four negatives are then COUNTED, because the registered fork `Ⓝ⓷′` turns on
+#:   whether the minimum leans on them.*
+CARRY_SUMS = {'S000': 0.0, 'Sm06': -0.06, 'Sm12': -0.12}
 #: r7870's separating rung, read from its own record -- the like-for-like baseline
 BASELINE_CALIB_MEV = 185.958
 BASELINE_MIN_AT = 0.06
@@ -139,7 +149,7 @@ def main():
 
     # ══ Ⓛ⓵ THE CARRIED POINTS ARE CARRIABLE ═════════════════════════════════════════════════════
     print('\n  Ⓛ⓵  THE CARRIED POINTS, READ FROM THEIR OWN RECORDED CONFIG')
-    bad = []
+    bad, negatives = [], []
     for arm in ARMS:
         for tag in CARRY_TAGS:
             try:
@@ -149,11 +159,18 @@ def main():
                 continue
             if c.get('NUHIER'):
                 bad.append('%s_%s records the switch ON' % (arm, tag))
-            if abs(float(c.get('MNU', -1)) - 0.0) > 1e-12:
-                bad.append('%s_%s records MNU = %r, not 0.00' % (arm, tag, c.get('MNU')))
-    gate('Ⓛ⓵ every carried point records the switch ABSENT and its sum exactly 0.00, so carrying it '
-         'is EXACT and not an approximation', not bad, '; '.join(bad[:4]) if bad else
-         '%d point(s)' % (len(CARRY_TAGS) * len(ARMS)))
+            want = CARRY_SUMS.get(tag, 0.0)
+            if abs(float(c.get('MNU', -99)) - want) > 1e-12:
+                bad.append('%s_%s records MNU = %r, not the %.2f its tag names'
+                           % (arm, tag, c.get('MNU'), want))
+            if want < 0.0:
+                negatives.append('%s_%s' % (arm, tag))
+    gate('Ⓛ⓵ every carried point records the switch ABSENT and the sum ITS OWN TAG NAMES, so each '
+         'carried point is the point it claims to be -- and the carried set holds EXACTLY the four '
+         'negative nodes the registered fork turns on, neither more nor fewer',
+         not bad and len(negatives) == 2 * len([t for t in CARRY_SUMS if CARRY_SUMS[t] < 0.0]),
+         '; '.join(bad[:4]) if bad else '%d point(s), of which %d negative: %s'
+         % (len(CARRY_TAGS) * len(ARMS), len(negatives), ' '.join(negatives)))
 
     # ══ Ⓛ⓶ THE NEW POINTS ARE THE HIERARCHY'S, AT THE GATED GRID ════════════════════════════════
     print('\n  Ⓛ⓶  THE RE-SOLVED POINTS, READ FROM THEIR OWN RECORDED CONFIG')
@@ -182,16 +199,30 @@ def main():
 
     # ══ Ⓛ⓷ THE MACHINERY IS THE ONE OF RECORD ═══════════════════════════════════════════════════
     print('\n  Ⓛ⓷  THE MACHINERY')
+    #: ⛭ READ THE STRUCTURE, NOT THE SOURCE TEXT.  This gate used to ask `'def closed_envelope' not
+    #:   in src` of its own file -- and its own assertion contains that very string, so the test was
+    #:   false for every file that carried the test.  It also asked `'import envelope_closed as EC'
+    #:   in src`, which its own text made trivially TRUE.  So one half could never pass and the other
+    #:   could never fail, and neither was caught because this file landed REGISTERED AND UNRUN.
+    #:   The parse tree cannot be fooled by the question being written down.
     src = io.open(os.path.join(_HERE, os.path.basename(__file__)), encoding='utf-8').read()
+    _tree = ast.parse(src)
+    _defines = {n.name for n in ast.walk(_tree)
+                if isinstance(n, (ast.FunctionDef, ast.AsyncFunctionDef))}
+    _forbidden = sorted(d for d in _defines
+                        if d == 'closed_envelope' or d.startswith(('_fit', '_cold')))
+    _imports_ec = any(isinstance(n, ast.Import)
+                      and any(al.name == 'envelope_closed' and al.asname == 'EC' for al in n.names)
+                      for n in ast.walk(_tree))
     gate('Ⓛ⓷ the closure, its sum grid, its threshold and its fitters are IMPORTED from the file of '
-         'record, and this file defines none of them',
-         'import envelope_closed as EC' in src
-         and 'def closed_envelope' not in src and 'def _fit' not in src
-         and 'def _cold' not in src
+         'record, and this file defines none of them -- read off the PARSE TREE, so the gate cannot '
+         'be satisfied or defeated by its own wording',
+         _imports_ec and not _forbidden
          and abs(EC.DCHI2 - 2.71) < 1e-12
          and list(EC.SUMS) == [0.0, 0.03, 0.06, 0.10, 0.15, 0.20, 0.25, 0.30, 0.40, 0.50, 0.60]
          and min(EC.SUMS) >= 0.0,
-         'DCHI2 %.2f, %d sums, lowest %.2f' % (EC.DCHI2, len(EC.SUMS), min(EC.SUMS)))
+         'imports EC as EC: %s; defines forbidden: %s; DCHI2 %.2f, %d sums, lowest %.2f'
+         % (_imports_ec, _forbidden or 'none', EC.DCHI2, len(EC.SUMS), min(EC.SUMS)))
 
     import model3 as M3                                                     # noqa: E402
     import distances as DI                                                  # noqa: E402
@@ -301,7 +332,14 @@ def main():
         print('\n  ⛔ ** NO LIMIT IS READ, AND THE GRID IS REPORTED INSUFFICIENT FOR THIS SECTOR '
               'RATHER THAN PATCHED. ** That is the finding.')
     else:
-        lim = cal['limit_meV']
+        #: ⛭ `closed_envelope` returns `crossing_meV`; there has never been a `limit_meV` key, and
+        #:   this line asked for one -- a `KeyError` AFTER both envelope reads had completed, so the
+        #:   whole read was spent and then thrown away.  The THIRD defect in this module from landing
+        #:   it REGISTERED AND UNRUN, after `Ⓛ⓵`'s impossible clause and `Ⓛ⓷` reading its own wording.
+        #:   ⌗ *The key is a CROSSING in both columns. Calling the calibrated one a limit is this
+        #:   module's registered judgement -- the minimised column is an envelope crossing and never
+        #:   a limit -- and not a rename of the number.*
+        lim = cal['crossing_meV']
         print('\n  THE CALIBRATED READ, AGAINST r7870\'s SEPARATING RUNG')
         print('  ' + '-' * 102)
         print('    this revision, closed envelope : %s'
