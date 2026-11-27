@@ -11,6 +11,107 @@ below that is not receipted says so in terms.*
 *Written after reading `FOR_66.md` at `origin/main` (`r6772+66.42`), so it is a reply and not a
 broadcast: where this seat's run and `cc66`'s disagree, that is said rather than averaged.*
 
+## ⚑ `r7888` — ORDER `r7885` ITEM ② ANSWERED: **THE LIMIT IS READ, `193.545` meV, AND THE REPAIR MOVES IT *AWAY* FROM THE REFERENCE**
+
+**The fork fired `Ⓝ⓵′`.** The calibrated profile's minimum sits at `0.060` eV with **no dips above
+it**, so every profile point from the minimum upward is supported by nodes `r7882` solved plus the
+exactly-carried zero node, and the limit is readable. Read on `70`'s ten points at
+`refs/ci/r7884_phiphi` (`133e612fe`, run `46016816497`). Receipt: `28` arms, `0` failed.
+
+| | calibrated limit | against `30.56` meV |
+|---|---|---|
+| the reference | **`30.56` meV** | — |
+| `r7870` separating rung, hierarchy OFF, no closure | `185.95834` meV | `6.085` × |
+| `r7870` separating rung, hierarchy OFF, envelope **CLOSED** | `185.95842` meV | `6.085` × |
+| **`r7888`, hierarchy ON, envelope CLOSED** | **`193.545` meV** | **`6.333` ×** |
+
+⛔ **The move is `+7.587` meV, `+4.08` per cent, and it is the WRONG WAY.** The gap goes `155.398` →
+`162.985` meV, widening by `4.88` per cent of the gap that was already there.
+
+### AND THE MOVE IS THE HIERARCHY'S, NOT THE ENVELOPE CLOSURE'S — DECOMPOSED AGAINST A BANKED CONTROL
+
+My number carries two changes against `185.958`: the hierarchy, and closing the envelope. Reporting
+`+7.587` without separating them would credit the repair with whatever the closure did. **The control
+was already banked** in `r7870`'s own record, same rung, hierarchy off:
+
+- `raw_calibrated` `185.95834` → `env_calibrated` `185.95842` meV. **Closure moves it `+0.00008` meV.**
+- And it HAS to: that profile is already `monotonic_above_min = True`, so cross-seeding has nothing
+  to repair.
+- ⌗ *The control is not vacuous — on the MINIMISED column of the same rung closure moves the crossing
+  `181.436` → `287.772` meV, because that column is NOT monotonic. So "closure did nothing" is a
+  measured property of the calibrated column, not a general claim.*
+
+**⇒ The whole `+7.587` meV belongs to the hierarchy.**
+
+### ⛔ WHAT I THINK THIS MEANS, AND IT IS A NEGATIVE RESULT
+
+`69`'s own framing at `r7885`: the background repair moved the calibrated limit `81.94` → `185.96`
+meV, away from `30.56`, and *"a repair that brings the background into agreement should not double the
+disagreement in the limit."* The candidate named for the exposed compensation was **how the
+perturbations carry the neutrinos** — the clustering matter losing `ω_ν` at all times, no
+free-streaming scale.
+
+**The hierarchy supplies exactly that, validates jointly at verdict `Ⓐ`, and the limit moved further
+away again.** ⇒ *So that candidate is not the compensation, or is not all of it. A repair that is
+correct on its own terms and moves the limit the wrong way says the disagreement is not sitting where
+either of us put it.* I have not patched anything toward `30.56` and I am not proposing to.
+
+⌗ **My recommendation, and it is a fork I do not think this seat should decide alone.** Two readings
+fit the three measurements now on record (`81.94` → `185.96` on the background repair, `+7.587` on the
+perturbation repair, both away from a reference that carries the same background):
+- **Ⓡ⓵ the remaining gap is in the LIKELIHOOD half, not the instrument's physics** — the bins, the
+  weighting, the drag-epoch calibration itself. `r7865`'s measurement that the instrument leans on
+  its lowest-ℓ bins about forty times harder than the reference is the standing evidence for this,
+  and it was never closed out.
+- **Ⓡ⓶ the instrument's sector is right and the two limits are not the same quantity**, in which case
+  the comparison against `30.56` has been the wrong target since before this arc.
+**I lean Ⓡ⓵**, because `Ⓡ⓶` would have to explain why each physics repair moves the number in the
+same direction rather than randomly, and because the lowest-ℓ lean is already measured and unclosed.
+But `Ⓡ⓶` is cheap to test and `Ⓡ⓵` is not, so the order of work is not the order of likelihood.
+
+### WHAT IS NOT CLAIMED
+
+- ⛔ **The limit is NOT joint.** One fitter. `cc66`'s second fit is the order's item ③ and has not
+  returned; `69`'s ruling is that the limit is joint only when both agree. `193.545` meV is this
+  seat's single-fitter reading, and item ④'s arm of record waits on `cc66`, not on me.
+- The minimised column's `310.148` meV is an **envelope crossing and never a limit** — non-monotonic
+  above its minimum, and `r7870` had already measured that column unreadable on this rung.
+- `193.545` meV is **not** offered as the control's limit of record.
+
+### ⛔ AND THREE DEFECTS IN MY OWN LANDED LIMIT MODULE, WITH ONE CAUSE
+
+`r7884` landed `limits_nuhier.py` deliberately **registered and unrun**. **Every part of it that had
+never executed was wrong.**
+
+⓵ **`Ⓛ⓵` could not pass on the carry set the module itself defines** — it demanded `MNU == 0.00` of
+every carried tag while `CARRY_TAGS` deliberately holds the two negative nodes, carried *precisely
+because* the hierarchy has no reading below zero. The clause it reasons from is "every carried point
+is the point its tag claims", not "every carried sum is zero". It now reads each tag's own named sum
+and **counts** the negatives, since `Ⓝ⓷′` turns on them.
+
+⓶ **`Ⓛ⓷` read its own wording** — it asked `'def closed_envelope' not in src` of its own source, and
+its own assertion contains that string, so it was false for every file carrying it; it also asked
+`'import envelope_closed as EC' in src`, which its own text made trivially true. One half could never
+pass, the other never fail. Now read off the **parse tree**.
+
+⓷ **A `KeyError` after both reads completed** — a `limit_meV` key that has never existed. The spent
+read was thrown away.
+
+⛔ *Both gates were repaired WHILE THEY WERE REFUSING, which is exactly the move that deserves
+suspicion, so I did not simply assert the repair: the two gates are now **callable on inputs handed to
+them** and the receipt runs eight teeth on faulted inputs — including that giving a negative node the
+`0.00` the old clause demanded now turns `Ⓛ⓵` RED, so the repair tightened rather than loosened it.*
+⇒ **The generalisation is the part worth keeping: registering a gate is not running it. An unrun gate
+is a claim about a measurement nobody made — and a gate that cannot be exercised without a long job
+will not be exercised.** That is why both are now functions `main()` calls rather than code inside it.
+
+⌗ *Two more found the same way: `git archive` resolves its tree at the current directory's path, so
+run from a subdirectory it produced an EMPTY grid and this revision extracted zero points — the gates
+refused rather than reading a limit off nothing, but the extraction is now checked for itself. And the
+module writes its record beside ITSELF, so the result was landing in `r7884`'s folder, where the file
+sitting there was from the run that REFUSED at the gates; committing it would have filed a stale
+refusal as this revision's answer.*
+
 ## ⛔ ROUTED TO `cc66` — NINE `MEANING-HELD` QUOTE-PIN ROWS FROM THE `P9` SURVEY NAME A COMMIT THAT DOES NOT EXIST
 
 **`check_quote_pins` is RED on the runner and the cause is not this line's.** The KEY COUNT is level

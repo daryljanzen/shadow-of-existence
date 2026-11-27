@@ -94,6 +94,63 @@ def gate(name, ok, got=None):
     return ok
 
 
+#: ⛭ THE TWO GATES THAT HAD NEVER RUN ARE NOW CALLABLE ON INPUTS HANDED TO THEM.
+#:   `Ⓛ⓵` and `Ⓛ⓷` were inline in `main()`, so neither could be exercised without paying for both
+#:   envelope reads -- and both were WRONG, which is how `r7884` landed a module whose unrun parts all
+#:   failed on first execution.  A gate that cannot be run without a long job will not be run.
+#:   ⇒ *These take their inputs as arguments so a receipt can fault them directly and watch them
+#:   bite. `main()` calls exactly these, so what the receipt tests is what the module runs.*
+
+
+def carry_verdict(cfgs):
+    """`cfgs` maps `'<arm>_<tag>'` to that point's own recorded config, or to an Exception"""
+    bad, negatives = [], []
+    for arm in ARMS:
+        for tag in CARRY_TAGS:
+            key = '%s_%s' % (arm, tag)
+            c = cfgs.get(key)
+            if isinstance(c, Exception) or c is None:
+                bad.append('%s unreadable: %s' % (key, c))
+                continue
+            if c.get('NUHIER'):
+                bad.append('%s records the switch ON' % key)
+            want = CARRY_SUMS.get(tag, 0.0)
+            if abs(float(c.get('MNU', -99)) - want) > 1e-12:
+                bad.append('%s records MNU = %r, not the %.2f its tag names'
+                           % (key, c.get('MNU'), want))
+            if want < 0.0:
+                negatives.append(key)
+    want_neg = len(ARMS) * len([t for t in CARRY_SUMS if CARRY_SUMS[t] < 0.0])
+    return bad, negatives, (not bad and len(negatives) == want_neg)
+
+
+def machinery_verdict(src, dchi2, sums):
+    """read off the PARSE TREE of `src`, so the gate's own wording cannot satisfy or defeat it"""
+    tree = ast.parse(src)
+    defines = {n.name for n in ast.walk(tree)
+               if isinstance(n, (ast.FunctionDef, ast.AsyncFunctionDef))}
+    forbidden = sorted(d for d in defines
+                       if d == 'closed_envelope' or d.startswith(('_fit', '_cold')))
+    imports_ec = any(isinstance(n, ast.Import)
+                     and any(al.name == 'envelope_closed' and al.asname == 'EC' for al in n.names)
+                     for n in ast.walk(tree))
+    ok = (imports_ec and not forbidden and abs(dchi2 - 2.71) < 1e-12
+          and list(sums) == [0.0, 0.03, 0.06, 0.10, 0.15, 0.20, 0.25, 0.30, 0.40, 0.50, 0.60]
+          and min(sums) >= 0.0)
+    return imports_ec, forbidden, ok
+
+
+def _read_carry_cfgs():
+    out = {}
+    for arm in ARMS:
+        for tag in CARRY_TAGS:
+            try:
+                out['%s_%s' % (arm, tag)] = _pol_cfg(OUT_POL, arm, tag)
+            except Exception as exc:                                        # noqa: BLE001
+                out['%s_%s' % (arm, tag)] = exc
+    return out
+
+
 def _pol_cfg(d, arm, tag):
     with np.load(os.path.join(d, '%s_%s.npz' % (arm, tag)), allow_pickle=True) as z:
         return json.loads(str(z['config']))
@@ -149,26 +206,11 @@ def main():
 
     # ══ Ⓛ⓵ THE CARRIED POINTS ARE CARRIABLE ═════════════════════════════════════════════════════
     print('\n  Ⓛ⓵  THE CARRIED POINTS, READ FROM THEIR OWN RECORDED CONFIG')
-    bad, negatives = [], []
-    for arm in ARMS:
-        for tag in CARRY_TAGS:
-            try:
-                c = _pol_cfg(OUT_POL, arm, tag)
-            except Exception as exc:                                        # noqa: BLE001
-                bad.append('%s_%s unreadable: %s' % (arm, tag, exc))
-                continue
-            if c.get('NUHIER'):
-                bad.append('%s_%s records the switch ON' % (arm, tag))
-            want = CARRY_SUMS.get(tag, 0.0)
-            if abs(float(c.get('MNU', -99)) - want) > 1e-12:
-                bad.append('%s_%s records MNU = %r, not the %.2f its tag names'
-                           % (arm, tag, c.get('MNU'), want))
-            if want < 0.0:
-                negatives.append('%s_%s' % (arm, tag))
+    bad, negatives, ok1 = carry_verdict(_read_carry_cfgs())
     gate('Ⓛ⓵ every carried point records the switch ABSENT and the sum ITS OWN TAG NAMES, so each '
          'carried point is the point it claims to be -- and the carried set holds EXACTLY the four '
          'negative nodes the registered fork turns on, neither more nor fewer',
-         not bad and len(negatives) == 2 * len([t for t in CARRY_SUMS if CARRY_SUMS[t] < 0.0]),
+         ok1,
          '; '.join(bad[:4]) if bad else '%d point(s), of which %d negative: %s'
          % (len(CARRY_TAGS) * len(ARMS), len(negatives), ' '.join(negatives)))
 
@@ -206,21 +248,11 @@ def main():
     #:   could never fail, and neither was caught because this file landed REGISTERED AND UNRUN.
     #:   The parse tree cannot be fooled by the question being written down.
     src = io.open(os.path.join(_HERE, os.path.basename(__file__)), encoding='utf-8').read()
-    _tree = ast.parse(src)
-    _defines = {n.name for n in ast.walk(_tree)
-                if isinstance(n, (ast.FunctionDef, ast.AsyncFunctionDef))}
-    _forbidden = sorted(d for d in _defines
-                        if d == 'closed_envelope' or d.startswith(('_fit', '_cold')))
-    _imports_ec = any(isinstance(n, ast.Import)
-                      and any(al.name == 'envelope_closed' and al.asname == 'EC' for al in n.names)
-                      for n in ast.walk(_tree))
+    _imports_ec, _forbidden, ok3 = machinery_verdict(src, EC.DCHI2, EC.SUMS)
     gate('Ⓛ⓷ the closure, its sum grid, its threshold and its fitters are IMPORTED from the file of '
          'record, and this file defines none of them -- read off the PARSE TREE, so the gate cannot '
          'be satisfied or defeated by its own wording',
-         _imports_ec and not _forbidden
-         and abs(EC.DCHI2 - 2.71) < 1e-12
-         and list(EC.SUMS) == [0.0, 0.03, 0.06, 0.10, 0.15, 0.20, 0.25, 0.30, 0.40, 0.50, 0.60]
-         and min(EC.SUMS) >= 0.0,
+         ok3,
          'imports EC as EC: %s; defines forbidden: %s; DCHI2 %.2f, %d sums, lowest %.2f'
          % (_imports_ec, _forbidden or 'none', EC.DCHI2, len(EC.SUMS), min(EC.SUMS)))
 
