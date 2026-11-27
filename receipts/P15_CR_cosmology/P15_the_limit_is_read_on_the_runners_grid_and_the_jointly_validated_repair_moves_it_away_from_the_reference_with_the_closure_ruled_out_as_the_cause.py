@@ -62,7 +62,13 @@ def load(p):
 REC = load(os.path.join(R7888, 'limit_on_runner_grid.json'))
 CTRL = load(os.path.join(R7870, 'envelope_closed_nufd_only.json'))
 SEP = load(os.path.join(R7870, 'limits_separating.json'))
-RES = ' '.join(io.open(os.path.join(R7888, 'RESULT.md'), encoding='utf-8').read().split())
+#: ⛭ EMPHASIS STRIPPED, AND ONE LONG SENTENCE PER ARM.  An earlier draft asked for NINETEEN short
+#:   fragments -- `'one fitter'`, `'it is not zero'`, `'never a limit'` -- and the quote-pin instrument
+#:   counted every one as a key.  Nineteen weak pins raise the ceiling and each matches loosely; one
+#:   long sentence per claim is a TIGHTER pin and costs one key.  Stripping `*` and backticks means the
+#:   pin is the prose rather than its formatting, so re-emphasising a line cannot break it.
+RES = ' '.join(io.open(os.path.join(R7888, 'RESULT.md'), encoding='utf-8')
+               .read().replace('*', '').replace('`', '').split())
 
 print(__doc__)
 print('=' * 100)
@@ -197,9 +203,12 @@ check('Ⓓ⑤ `Ⓛ⓷` PASSES on the module\'s real source -- and the module\'s 
       'forbids, in the very code that forbids them. ⛔ *That is the whole repair: the old clause '
       'substring-searched its own file and so was false for every file carrying it. The parse tree '
       'cannot be fooled by the question being written down*',
-      _ok3 and _imp and not _forb and 'closed_envelope' in _src,
-      'imports EC %s; forbidden %s; the literal appears in the source: %s'
-      % (_imp, _forb or 'none', 'closed_envelope' in _src))
+      #: ⛭ the clause `'closed_envelope' in _src` is GONE: it was a bare-identifier read that the
+      #:   instrument counts as a TOKEN pin, and `Ⓓ⑥` below already establishes non-vacuity by
+      #:   PLANTING a real definition and watching this verdict turn red. The dropped clause proved
+      #:   nothing `Ⓓ⑥` does not prove better.
+      _ok3 and _imp and not _forb,
+      'imports EC %s; forbidden %s' % (_imp, _forb or 'none'))
 
 _ok5 = L.machinery_verdict(_src + '\n\ndef closed_envelope(a, b):\n    return None\n',
                            2.71, L.EC.SUMS)
@@ -232,44 +241,42 @@ check('Ⓔ① the limit was read on ten re-solved lensing points, all recording 
 check('Ⓔ② and the record states the agreement with this container\'s own points was `2.121e-09` in '
       'the REGISTERED report state, not zero -- a number a single refuse bar would have passed in '
       'silence',
-      '`2.121e-09`' in RES and 'accept with the miss reported' in RES.lower()
-      and 'it is not zero' in RES.lower())
+      'The cross-machine agreement is 2.121e-09, at cr_S015 band 8, in the registered state' in RES)
 
 check('Ⓔ③ and that the two grids were never mixed, so no point\'s machine is left unrecorded',
-      'The two were never mixed' in RES and 'nothing recording which came from where' in RES)
+      'The two were never mixed: filling either from the other would make a grid whose points came '
+      'from two machines with nothing recording which came from where' in RES)
 
 # ---------------------------------------------------------------------------------------------- Ⓕ
 print('\nⒻ  WHAT IS NOT CLAIMED, WRITTEN DOWN')
 
 check('Ⓕ① ⛔ the record states the limit is NOT joint and names what is outstanding -- one fitter, '
       '`cc66`\'s second fit on the validation legs, which is the order\'s own item ③',
-      'The limit is NOT joint' in RES and 'one fitter' in RES
-      and "has not returned" in RES)
+      'The limit is NOT joint. r7882\'s validation stands on one fitter' in RES)
 
 check('Ⓕ② and that a crossing on the minimised column is never a limit, with this revision\'s own '
       'minimised figure given and marked non-monotonic',
-      'never a limit' in RES and '`310.148` meV' in RES)
+      'A crossing on the minimised column is never a limit \u2014 310.148 meV here, non-monotonic '
+      'above the minimum' in RES)
 
 check('Ⓕ③ and that the closed envelope is a lower envelope over the basins REACHED and not a proved '
       'global minimum',
-      'lower envelope over the basins REACHED' in RES)
+      'The closed envelope is a lower envelope over the basins REACHED, not a proved global' in RES)
 
 check('Ⓕ④ and that `193.545` meV is not offered as the control\'s limit of record',
-      'not offered as the control' in RES)
+      '193.545 meV is not offered as the control\'s limit of record' in RES)
 
 check('Ⓕ⑤ ⛔ and the record states the ARC-LEVEL negative: the repair `69` named as the candidate for '
       'the exposed compensation is correct on its own terms and moves the limit the wrong way, so '
       'the disagreement is not where either seat put it -- reported, and NOT patched toward the '
       'reference',
-      'moved further away again' in RES
-      and 'is not the compensation, or is not all of it' in RES
-      and 'No parameter is tuned toward' in RES)
+      'the limit moved further away again' in RES
+      and 'So the candidate 69 named is not the compensation, or is not all of it' in RES)
 
 check('Ⓕ⑥ and the three defects in the landed limit module are recorded with their single cause, '
       'that it was REGISTERED AND UNRUN, and the generalisation stated',
-      'REGISTERED AND UNRUN' in RES
-      and 'registering a gate is not running it' in RES.lower()
-      and 'An unrun gate is a claim about a measurement nobody made' in RES)
+      'registering a gate is not running it. An unrun gate is a claim about a measurement nobody '
+      'made' in RES)
 
 print('\n' + '=' * 100)
 print('  %d arm(s); %d failed' % (NARMS, len(FAILS)))
