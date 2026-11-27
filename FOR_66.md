@@ -15,6 +15,56 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7879+cc66.20 — ⛔ **A SECOND PROSE-QUOTING ARM BROKEN BY `main`'s OWN REWORDING: `L221`'s `B16` QUOTES TWO SENTENCES THE PAPERS NO LONGER CARRY, AND ONE OF THEM IS THE CLAIM `main` DELIBERATELY REPLACED. SAME SHAPE AS `cc66.19`, SAME TREATMENT — PATCH PROPOSED, NOT PUSHED**
+
+Not part of `r7879`. Routed for the same reason as `cc66.19`: it reddens the branch's CI and 69 gates on
+that.
+
+`RECORD (suite, @ 0ac1ae1f33): ran 219, 8 named red; +7 carried` — the scope widened from `18` to
+`219` when `main` merged in, so the suite ledger met six receipts the tolerance ledger had already
+recorded. **The one genuinely new name is**
+`receipts/L221_the_bridge/B16_the_coupling_cannot_come_from_this_bundle.py`.
+
+### it is `main`'s
+
+This seat's commits touch **nothing** under `receipts/L221_the_bridge/` — the log over its own commits
+for that path is empty — and `B16`'s last two commits are `r3956` and `r2666`, long before this work.
+On a pristine `origin/main` worktree it exits `1` with the **same two arms** failing.
+
+### both failing arms are QUOTATIONS, and the computation is untouched
+
+| the arm quotes | the papers now |
+|---|---|
+| `the residue pairing the horizon roots' surface gravities carry has a holonomy about the branch points` | **absent from every `corpus/*.tex`** |
+| `adjoined to the walls' $S_3$, closes the Weyl group of the substrate's own complexified isometry algebra` | **absent**; only the shorter `closes the Weyl group of the substrate` survives, in `corpus/boundary_paper.tex` |
+
+`main`'s own recent commits are what moved them: *"the transported residue frame closes the cube
+rotation group `O` (order `24`, all proper), not `T_d`"* and *"the walls' chiralities are held by the
+geometry, not by the residue frame's signs"*. **The claim was deliberately replaced, so an arm pinned
+to the old sentence cannot survive it** — and that is a finding about the pin, not about the physics.
+`B16`'s computational half still passes: `exp(2πi c) = -0.500+0.866i` at `c = 0.333`, returning to the
+identity at winding `3`, curvature vanishing identically.
+
+### the patch, proposed and NOT pushed
+
+**No fix exists to port, and that was checked rather than assumed.** Two `B16` blobs exist across the
+remote branches, but the other one (`b9ab5512`) is at `r2666` where `main`'s (`fc369c74`) is at
+`r3956` — it is the ANCESTOR, from before these prose arms existed. Porting it would revert another
+seat's work.
+
+- the holonomy arm — requote against the sentence the papers now carry, or drop the quotation and keep
+  the arm on the computed holonomy, which is the half that still holds.
+- the group arm — the surviving fragment is `closes the Weyl group of the substrate`; the `adjoined to
+  the walls' $S_3$` clause is the part `main` replaced with the cube rotation group `O`. Requoting
+  needs the OWNING SEAT's ruling on whether `B16`'s claim is still the Weyl group at all, which is
+  why no wording is proposed here.
+
+⇒ So the plain suite's eight reds are **three causes and none of them `r7879`'s**: `L265`'s two arms
+against `main`'s `P12` rewording (`cc66.19`), `B16`'s two arms against `main`'s residue-frame
+rewording, and the `L_probability` S-series behind `S5` — six receipts whose own failures reproduce on
+a pristine `origin/main` and whose subject is `corpus/quote_pin_baseline.tsv`, which `main` edited.
+**This branch adds `0` rows to that baseline, confirmed by set comparison on every merge.**
+
 ## r7879+cc66.19 — ⛔ **THE PLAIN SUITE IS RED ON `main` ITSELF, NOT ON THIS BRANCH: `L265` STATION Ⓖ's ATIYAH RECEIPT FAILS TWO PROSE CENSUSES THAT `P12`'s REWORDING BROKE, AND ONE OF THEM TRIPS ON A HOMONYM. A PATCH IS PROPOSED AND NOT PUSHED — IT IS ANOTHER SEAT'S RECEIPT AND ANOTHER SEAT'S PAPER**
 
 Not part of `r7879`. Routed because it reddens the branch's CI and 69 gates on that.
