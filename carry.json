@@ -2283,10 +2283,6 @@
     "since": "3ceaff0860cf8d02aae00b506bc4ac16eb8ef023",
     "unmeasured": true
    },
-   "receipts/P07_CR_framework/I7_conserved_charge_carries_three_objects_and_one_denies_the_others.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46042672682",
-    "since": "630b724bc404cd30c1fe1dae8f28a7613f65be4f"
-   },
    "receipts/P10_canonical_time/P10_the_algebraic_quartic_is_settled_by_the_frame_constant_level_at_every_level_and_the_remainder_is_the_derivative_sectors_eight.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46052133594",
     "since": "3ceaff0860cf8d02aae00b506bc4ac16eb8ef023",
