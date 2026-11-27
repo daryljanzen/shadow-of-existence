@@ -2726,6 +2726,11 @@
    }
   },
   "tolerance": {
+   "receipts/L556_registry_from_rows/R1_the_registry_was_checked_from_citations_inward_so_twenty_rows_were_read_by_nothing.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45921280892",
+    "since": "022d2a2393c9a8317b502b096b5729ed6e21fef8",
+    "unmeasured": true
+   },
    "receipts/L_probability/S10_the_sweep_for_exact_counts_could_not_contain_its_own_gate_and_the_class_doubled_in_the_receipts_written_after_its_pin.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45886231621",
     "since": "8ff02f314ff866c02733fa3b511da8e19e47eb9d",
