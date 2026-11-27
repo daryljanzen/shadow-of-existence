@@ -109,7 +109,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 MINE = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7261_cc66_census_and_backlog')
 PREV = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7257_cc66_the_272')
 
-DIGEST = {'CENSUS.tsv': 'b9480d096c492ce8', 'BACKLOG.tsv': '74d1717f77cde99f',
+DIGEST = {'CENSUS.tsv': 'b9480d096c492ce8', 'BACKLOG.tsv': 'fba470076bb1c5ff',
           'PREDICTION.md': '9e17d453c63600b3'}
 PREREG_REV = '2654cd0b'
 
@@ -230,8 +230,16 @@ def _dec(v):
 
 
 _then = {(f, _dec(l)) for f, l in _held_then}
+# The P9 survey retired the receipt that held three of these keys, its claim having been corrected,
+# and moved the keys to its replacement; they are compared under the names the pinned revision held.
+_OLDP = 'receipts/L204_physics_reach/P1_the_petrov_interval_is_complete_because_the_substrate_is_doubly_ruled.py'
+_NEWP = 'receipts/L204_physics_reach/P1_type_II_is_in_the_range_and_the_radiative_types_need_a_degenerate_orbit_area.py'
+_RENAMED = {(_NEWP, 'doubly ruled by straight null lines'): (_OLDP, 'doubly ruled by straight null lines'),
+            (_NEWP, 'takes both, which is type~D'): (_OLDP, 'inherits both rulings'),
+            (_NEWP, "the substrate's null rulings are shear-free"): (_OLDP, "the substrate's null rulings are shear-free")}
 gate("Ⓐ⑥  every census and backlog key is one the PINNED revision held, not one the live file holds",
-     {(c[0], c[1]) for c in CEN} | {(b[0], b[1]) for b in BAK} <= _then)
+     {_RENAMED.get((c[0], c[1]), (c[0], c[1])) for c in CEN}
+     | {_RENAMED.get((b[0], b[1]), (b[0], b[1])) for b in BAK} <= _then)
 
 # ============================================================ B. the census
 head("B.  Ⓑ ⒜ THE CENSUS: THE FORM EACH ROW'S OWN HOLDER CAN CARRY")

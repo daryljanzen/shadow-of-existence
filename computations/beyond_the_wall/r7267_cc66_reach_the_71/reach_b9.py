@@ -44,7 +44,7 @@ P_ = 'receipts/P15_CR_cosmology/'
 PROBE1 = 'beyond_the_wall/probe1.py'
 ACOUSTIC = 'CR_acoustic_scale_and_hubble.py'
 
-_P1 = (R_ + 'P1_the_petrov_interval_is_complete_because_the_substrate_is_doubly_ruled.py')
+_P1 = (R_ + 'P1_type_II_is_in_the_range_and_the_radiative_types_need_a_degenerate_orbit_area.py')
 _P15RATE = (P_ + 'P15_the_rate_rule_reaches_the_projection_only_through_the_identification_'
             'because_P7_gives_the_lapse_the_rate_and_the_shift_the_appearance_as_distance.py')
 

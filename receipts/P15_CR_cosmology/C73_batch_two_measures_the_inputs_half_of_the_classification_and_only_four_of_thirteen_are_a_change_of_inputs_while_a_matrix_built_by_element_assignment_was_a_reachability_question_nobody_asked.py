@@ -87,7 +87,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 R7261 = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7261_cc66_census_and_backlog')
 MINE = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7267_cc66_reach_the_71')
 
-DIGEST = {'BACKLOG.tsv': '74d1717f77cde99f'}
+DIGEST = {'BACKLOG.tsv': 'fba470076bb1c5ff'}
 MY_DIGEST = {'REACHED.tsv': 'f0cca8fdd765a475', 'REACHED_B2.tsv': '2e226763e5cf0f56'}
 
 INPUTS_N = 59
