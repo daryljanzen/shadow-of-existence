@@ -72,11 +72,13 @@ os.environ['POL_DIR'] = OUT_POL
 os.environ['PPGRID'] = OUT_PP
 
 FAILS = []
+RAN = []
 
 
 def gate(name, ok, got=None):
     print('  [%s] %s%s' % ('PASS' if ok else 'FAIL', name,
                            ('   (%s)' % got) if got is not None else ''))
+    RAN.append(name)
     if not ok:
         FAILS.append(name)
     return ok
@@ -249,7 +251,11 @@ def main():
                          'A limit read through unverified plumbing is not a limit, and this line '
                          'has already spent one whole grid on the wrong reading of a re-point. **'
                          % (len(FAILS), '; '.join(FAILS)))
-    print('\n  ⇒ all four plumbing gates pass, so a number below is readable at all')
+    #: ⛭ COUNT THE GATES THAT RAN; DO NOT TYPE THE NUMBER.  This line said "all four plumbing gates
+    #:   pass" after a FIFTH gate had been added beside it, so the module understated its own
+    #:   checking in its own output.  A printed count that is typed rather than derived goes stale the
+    #:   moment a gate is added -- the same shape as a receipt pinning a figure it does not measure.
+    print('\n  ⇒ all %d plumbing gate(s) pass, so a number below is readable at all' % len(RAN))
 
     # ══ THE TWO READS, ON THE CLOSED ENVELOPE ═══════════════════════════════════════════════════
     def _mod():

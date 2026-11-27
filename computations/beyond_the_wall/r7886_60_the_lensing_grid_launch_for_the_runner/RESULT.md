@@ -71,7 +71,7 @@ are *supposed* to be tolerated — a different BLAS, a different core count — 
 size. The bar it must not fire inside is the one `PREDICTION.md` registered before any number was
 seen, which is what makes this row a measurement rather than a choice made afterwards.
 
-## ⛔ TWO DEFECTS THIS FOUND IN ITS OWN SCRIPTS, BOTH BY RUNNING THEM RATHER THAN READING THEM
+## ⛔ FOUR DEFECTS THIS FOUND IN ITS OWN WORK, EVERY ONE BY RUNNING SOMETHING RATHER THAN READING IT
 
 ⓵ **`Ⓒ⓶` and `Ⓒ⓷` reported "`10` point(s)" when only `6` existed to examine** — a gate claiming
 more than it measured, which is the exact defect this programme has a class for. They now report how
@@ -84,7 +84,34 @@ generators at the landed grid instead of its own, and it would have been invisib
 `PPOUT` happens to be absolute.* `PPOUT` is now resolved before the `cd`, and the skip test and the
 count were re-verified **through a relative path**.
 
-⌗ *Neither defect was visible in the source. Both took one execution.*
+⓷ ⛔ **THE RECEIPT MINTED FIVE UNADJUDICATED QUOTE-PIN KEYS, AND THE LOCAL NOISE ALMOST HID IT.**
+`check_quote_pins` came back red with five `[NOT HELD]` rows naming other seats' receipts and shas
+the shallow clone cannot reach — *the exact appearance of this checkout's standing graft noise, and
+the appearance I would have dismissed it on.* The rule for this gate is to read the **KEY COUNT**
+instead, and the count said **`3334` against a baseline of `3329`**: five new keys, all of them mine,
+all `TOKEN` — `MAXP`, `ONLY`, `phiphi_point.py`, `r7846`, `Ⓛ⓹` — bare identifiers read as substrings
+out of another file's source. ⇒ *That is the same weak shape `r7884` REPLACED rather than
+adjudicated, and I reached for it again one revision later.* **Replaced, not adjudicated,** by three
+structural reads, each of which is also the stronger claim:
+  - the limit read's gate is found as *the highest-numbered `Ⓛ` gate in the module*, whatever its
+    number, and the switches it compares are read by pattern — so the arm no longer assumes which
+    gate is last or which keys it reads;
+  - the dispatch script and the frozen specification are compared **to each other** for the driver's
+    revision and module, each read off its own file, rather than against a name typed in the receipt;
+  - the splitting knobs are read as two sets — those the usage line advertises and those the script
+    actually reads — so a knob documented but never read would now fail.
+  **Count back to `3329` = `3329`, no baseline row added.**
+
+⓸ **A printed count in `r7884`'s limit module had gone stale: it said "all four plumbing gates pass"
+after the fifth gate was added beside it** — found by reading that module to locate gate `Ⓛ⓹` for
+`Ⓑ①`, not by any gate. The module understated its own checking in its own output. ⇒ *A printed count
+that is typed rather than derived goes stale the moment a gate is added, which is the same shape as a
+receipt pinning a figure it does not measure.* The gate helper now counts the gates that ran and the
+line prints `len(RAN)`. `r7884`'s receipt still passes, `34` arms, `0` failed.
+
+⌗ *Not one of the four was visible in the source. Two took one execution of my own scripts, one took
+reading a gate's key count instead of its appearance, and one took opening a module to find something
+else.*
 
 ## ⚠ A PREMISE OF THE ORDER, CORRECTED IN PASSING
 

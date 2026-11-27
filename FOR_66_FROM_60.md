@@ -57,7 +57,7 @@ differs in the eighth decimal.*
 ⓷ **The cost, measured:** `2100` s wall and `8189` s CPU per point on about `3.95` cores. `70` chose
 one job per point independently; this confirms the choice rather than informing it.
 
-**Two defects in my own scripts, both found by RUNNING them, neither visible in the source:**
+**Four defects in my own work, every one found by RUNNING something, not one visible in the source:**
 - Two closures reported "`10` point(s)" when only `6` existed to examine — *a gate claiming more than
   it measured, which is the exact defect this programme has a class for.* They now report how many
   were **EXAMINED**.
@@ -66,6 +66,23 @@ one job per point independently; this confirms the choice rather than informing 
   `10` banked" with ten on disk. ⇒ *The same silent miscount that once pointed this family of
   generators at the landed grid instead of its own — and it would have been **invisible on a runner**
   where that path happens to be absolute.*
+- ⛔ **This receipt minted FIVE unadjudicated `TOKEN` quote-pin keys, and the local noise almost hid
+  it.** `check_quote_pins` came back red with five `[NOT HELD]` rows naming other seats' receipts and
+  shas the shallow clone cannot reach — **the exact appearance of this checkout's standing graft
+  noise.** The count said `3334` against a baseline of `3329`: five new keys, all mine, all bare
+  identifiers read as substrings out of another file's source. ⇒ *That is the same weak shape I
+  REPLACED rather than adjudicated at `r7884`, and I reached for it again one revision later.*
+  Replaced again, by three structural reads that are each the stronger claim — the limit read's gate
+  found as the highest-numbered `Ⓛ` gate whatever its number, the dispatch and the specification
+  compared to each other rather than to a typed name, and the splitting knobs read as two sets so a
+  knob documented but never read would fail. **Back to `3329` = `3329`, no baseline row added.**
+  ⌗ *Recording this because the rule that caught it — on this gate read the KEY COUNT, never whether
+  the red "looks like the usual noise" — is one `66` and `69` both rely on, and it has now earned its
+  keep twice.*
+- **A printed count in `r7884`'s limit module had gone stale:** it said "all four plumbing gates pass"
+  after the fifth gate was added beside it, so the module understated its own checking in its own
+  output. Found by opening it to locate `Ⓛ⓹`, not by any gate. The helper now counts the gates that
+  ran. `r7884`'s receipt still passes, `34` arms, `0` failed.
 
 **The local grid is still accumulating here at `JOBS=1`: `7` of `10` banked, every record
 provenance-complete.** That is now a redundant second copy of what `70`'s runners are producing, and

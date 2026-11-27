@@ -132,8 +132,20 @@ print('\nⒷ  THE PROVENANCE DEMANDED HERE IS THE RECORD THE LIMIT READ ACTUALLY
 
 NEED = SPEC.get('provenance_required', {})
 LSRC = text(LIMITS)
-_l5 = LSRC[LSRC.index('Ⓛ⓹'):] if 'Ⓛ⓹' in LSRC else ''
-_read_by_gate = {k for k in ('NUHIER', 'NQ', 'LMAXNU', 'QMAXNU') if "sw.get('%s')" % k in _l5}
+#: ⛭ NO BARE-TOKEN READS BELOW.  An earlier draft asked `'Ⓛ⓹' in LSRC` and `"sw.get('NQ')" in _l5`,
+#:   which the quote-pin instrument counts as TOKEN pins -- the same weak shape `r7884` REPLACED rather
+#:   than adjudicated.  These read the gate's structure instead: the highest-numbered `Ⓛ` gate in the
+#:   module, whatever its number, and whatever switch names it compares.  That is also the stronger
+#:   claim, because it does not assume which gate is last or which keys it reads.
+_LGATE = re.compile('\u24c1([\u24f5-\u24f9])')
+_SWREAD = re.compile(r"sw\.get\('([A-Z]+)'\)")
+#: ⛭ and the slice starts at the gate's FIRST occurrence, not its last: the last one is inside the
+#:   `gate(...)` call that REPORTS the verdict, which sits AFTER the switch reads it is reporting on.
+#:   Slicing from there found zero keys and reddened this arm -- caught by running it, and the wrong
+#:   end of the gate is exactly the kind of off-by-one a bare-token read would have hidden.
+_lnums = _LGATE.findall(LSRC)
+_l5 = LSRC[LSRC.index('\u24c1' + max(_lnums)):] if _lnums else ''
+_read_by_gate = set(_SWREAD.findall(_l5))
 check('Ⓑ① the four switches the limit read\'s `Ⓛ⓹` compares are all demanded by this frozen '
       'specification, read off that gate\'s own source rather than assumed to match',
       _read_by_gate == {'NUHIER', 'NQ', 'LMAXNU', 'QMAXNU'}
@@ -277,10 +289,19 @@ finally:
     shutil.rmtree(_tmp2, ignore_errors=True)
 
 _lsh = text(LSH)
-check('Ⓓ④ and the dispatch calls the LANDED driver rather than carrying a copy of it: the point '
-      'driver it invokes is `r7846`\'s, named in the frozen specification',
-      'phiphi_point.py' in _lsh and 'r7846' in _lsh and 'r7846' in SPEC.get('driver', ''),
-      SPEC.get('driver', '').split('/')[-2][:46])
+_DIR = re.compile(r'\br(\d{4})_60_\w+')
+_MOD = re.compile(r'(\w+_point)\.py')
+_d_sh, _m_sh = _DIR.search(_lsh), _MOD.search(_lsh)
+_d_sp, _m_sp = _DIR.search(SPEC.get('driver', '')), _MOD.search(SPEC.get('driver', ''))
+check('Ⓓ④ and the dispatch calls the LANDED driver rather than carrying a copy of it -- the '
+      'revision directory and the module the script invokes are the SAME ones the frozen '
+      'specification names, each read off its own file and compared with the other rather than '
+      'against a name typed here',
+      all((_d_sh, _m_sh, _d_sp, _m_sp)) and _d_sh.group(1) == _d_sp.group(1)
+      and _m_sh.group(1) == _m_sp.group(1),
+      'dispatch r%s/%s vs spec r%s/%s'
+      % (_d_sh.group(1) if _d_sh else None, _m_sh.group(1) if _m_sh else None,
+         _d_sp.group(1) if _d_sp else None, _m_sp.group(1) if _m_sp else None))
 
 # ---------------------------------------------------------------------------------------------- Ⓔ
 print('\nⒺ  THE COST IS THE MEASURED ONE, WHICH IS WHAT MAKES `JOBS=1` A MEASUREMENT')
@@ -293,12 +314,19 @@ check('Ⓔ① the frozen specification carries the MEASURED per-point cost -- `2
       and SPEC.get('jobs_per_run') == 1,
       '%s, jobs_per_run=%s' % (C, SPEC.get('jobs_per_run')))
 
+_ADV = re.compile(r'\[(\w+)=')                      #: knobs the usage line advertises
+_DEC = re.compile(r'^(\w+)=\$\{(\w+):-', re.M)      #: knobs the script actually reads
+_adv = set(_ADV.findall(_lsh))
+_dec = {m[1] for m in _DEC.findall(_lsh)}
 check('Ⓔ② and the cost implies the job limit matters: ten points at that wall time is over five '
-      'hours, which is why the specification tells `70` to split the list rather than assume one '
-      'job holds it',
+      'hours, so the list must be splittable -- and EVERY knob the usage line advertises is one the '
+      'script actually reads, at least two of them, so the split is available and not just '
+      'documented. ⌗ *Read as two sets off the script and compared, so a knob documented but never '
+      'read would fail here*',
       10 * float(C.get('wall_seconds', 0)) > 5 * 3600
-      and ('ONLY' in _lsh and 'MAXP' in _lsh),
-      '%.1f h for ten points sequentially' % (10 * float(C.get('wall_seconds', 0)) / 3600.0))
+      and len(_adv) >= 2 and _adv <= _dec,
+      '%.1f h for ten points; advertises %s, reads %s'
+      % (10 * float(C.get('wall_seconds', 0)) / 3600.0, sorted(_adv), sorted(_dec)))
 
 # ---------------------------------------------------------------------------------------------- Ⓕ
 print('\nⒻ  WHAT IS NOT CLAIMED, WRITTEN DOWN')
@@ -312,38 +340,54 @@ check('Ⓕ② and that the workflow is NOT wired here -- that is `70`\'s -- so t
       'handoff and not a claim to have done `70`\'s part',
       'It does not wire the workflow' in RES)
 
-check('Ⓕ③ and the two defects the closures\' own execution exposed are recorded rather than '
-      'quietly fixed -- the gate that claimed more than it measured, and the miscount that would '
-      'have been INVISIBLE on a runner where the output path happens to be absolute',
+check('Ⓕ③ and the FOUR defects this revision found in its own work are recorded rather than quietly '
+      'fixed -- the gate that claimed more than it measured, the miscount that would have been '
+      'INVISIBLE on a runner where the output path happens to be absolute, the five unadjudicated '
+      'quote-pin keys this receipt itself minted, and a printed gate count that had gone stale',
       'reported "`10` point(s)" when only `6` existed to examine' in RES
       and 'a RELATIVE `PPOUT` resolved wrong after the `cd`' in RES
       and 'invisible on a runner' in RES
-      and 'Neither defect was visible in the source. Both took one execution.' in RES)
+      and 'FIVE UNADJUDICATED QUOTE-PIN KEYS' in RES
+      and 'all four plumbing gates pass" after the fifth gate was added' in RES
+      and 'Not one of the four was visible in the source' in RES)
 
-check('Ⓕ④ and the record carries BOTH sides of the control, the accept side marked as the row that '
+check('Ⓕ④ ⛔ and the quote-pin entry records that the LOCAL GRAFT NOISE ALMOST HID IT -- that the '
+      'gate\'s red looked exactly like this checkout\'s standing noise, and that what caught it was '
+      'reading the KEY COUNT instead of the appearance',
+      'the exact appearance of this checkout\'s standing graft noise' in RES
+      and '`3334` against a baseline of `3329`' in RES
+      and 'Count back to `3329` = `3329`, no baseline row added' in RES)
+
+check('Ⓕ⑤ and it records that the weak shape was REPLACED rather than adjudicated, as the same shape '
+      'was one revision earlier, and that this seat reached for it again',
+      'the same weak shape `r7884` REPLACED rather than' in RES
+      and 'I reached for it again one revision later' in RES
+      and 'Replaced, not adjudicated,' in RES)
+
+check('Ⓕ⑥ and the record carries BOTH sides of the control, the accept side marked as the row that '
       'matters most, so a reader cannot take the bite tests alone for a working gate',
       'inside* the accept bar | `Ⓒ⓸` | **GREEN**' in RES
       and 'only' in RES and 'they are not tripwires' in RES)
 
-check('Ⓕ⑤ and the count the closures saw is written down as a TIMESTAMP rather than as the grid\'s '
+check('Ⓕ⑦ and the count the closures saw is written down as a TIMESTAMP rather than as the grid\'s '
       'state, so the record does not go stale as the remaining points land',
       'that figure is a TIMESTAMP, not a state' in RES)
 
-check('Ⓕ⑥ ⛔ and the record states that `70` WIRED THE RUNNER FIRST, from the same generator, so this '
+check('Ⓕ⑧ ⛔ and the record states that `70` WIRED THE RUNNER FIRST, from the same generator, so this '
       'handoff is not claimed to be what unblocked it',
       'WIRED IT FIRST' in RES and 'about nine minutes before' in RES
       and 'was not what unblocked' in RES)
 
-check('Ⓕ⑦ ⛔ and it states that `70`\'s per-point gate is a SUPERSET of three of these closures -- '
+check('Ⓕ⑨ ⛔ and it states that `70`\'s per-point gate is a SUPERSET of three of these closures -- '
       '`21` recorded keys against `7` -- rather than presenting these as the stricter ones',
       'superset of `Ⓒ⓶`, `Ⓒ⓷` and `Ⓒ⓵` here' in RES and '`21` keys against my `7`' in RES)
 
-check('Ⓕ⑧ ⛔ and it states that the no-drift closure is answered BETTER by `70` NOT HAVING ONE, '
+check('Ⓕ⑩ ⛔ and it states that the no-drift closure is answered BETTER by `70` NOT HAVING ONE, '
       'because reading the generator at run time leaves no frozen copy to drift -- a point against '
       'this directory\'s own design, written down rather than left out',
       'is answered better by not existing' in RES)
 
-check('Ⓕ⑨ and the three things that DO survive as additive are named and bounded, the first of them '
+check('Ⓕ⑪ and the three things that DO survive as additive are named and bounded, the first of them '
       'the one item ② actually turns on',
       'What survives as additive, and it is narrower than this directory' in RES
       and 'the tie from the provenance record to the limit read' in RES.lower()
