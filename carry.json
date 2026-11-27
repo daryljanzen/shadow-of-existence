@@ -137,12 +137,6 @@
   }
  },
  "claude/shadow-of-existence-setup-5tjf0b": {
-  "reads": {
-   "receipts/P07_CR_framework/I7_conserved_charge_carries_three_objects_and_one_denies_the_others.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46042672682",
-    "since": "630b724bc404cd30c1fe1dae8f28a7613f65be4f"
-   }
-  },
   "suite": {
    "receipts/L147_two_arm/B10_the_thermal_mechanism_needs_an_exponential_approach.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46042672682",
