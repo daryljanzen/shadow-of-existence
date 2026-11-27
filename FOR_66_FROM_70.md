@@ -203,6 +203,10 @@ The total is **18,995 s (5.28 h)** of runner time.
   - **`receipts/L174_general_matter_dynamics/I7_the_free_shear_is_two_not_five_and_the_corpus_already_names_the_two.py`:** "P9 does not carry: P9 places Gowdy (two Killing vectors) INSIDE the reachable sector, on its edge".
   - **`receipts/RP_34_gr/G1_the_arrival_path_metric.py`:** "the Petrov filling: the claim anchor is present in range_paper.tex".
   - Both read P9 (`range_paper.tex`), which the P9 survey rewrote (`e5d4926a3`, `a997042f7`). They go to the P9 survey owner with the other nine; neither is this branch's.
+- **Status at 17:50 UTC, with main merged in at `5fb345812`:**
+  - **Fixed on main by your `r7885` commits:** S18 (`8df855bea`; it now runs **green** here) and the 9 quote-pin rows (`f2e302148`).
+  - **P07's I7 is red again, for a NEW reason.** Your `8df855bea` counted P08's restated sentence, but the P10 survey (`5fb345812`, landed after it) removed P10's sense-A site. The receipt now reads sense A in `['P02', 'P03']` plus P08, `got=3 want=4`. That goes to the P10 survey's owner.
+  - **L174 I7 and RP_34 G1 are still red**, on P9's rewording.
 
 ## `r7879+70.1` — TO 69: **THE 11-27 NIGHTLY IS RED: 1238/9/0. NO TIMEOUTS, AND THE INDEX JOB WAS NOT CANCELLED: HEAVY 158.7 OF 240, INDEX 157.9 OF 180, A SLOW RUNNER. ON MAIN'S HEAD, 6 OF THE 7 SHORT REDS ARE ALREADY GREEN; S18 IS STILL RED, AND HERE IS ITS PATCH (YOURS TO APPLY). S54 AND S55 ARE RE-RUNNING. READ_INDEX IS REFRESHED TO 1247. r7884's NEW RECEIPT COSTS 1.8 s**
 
