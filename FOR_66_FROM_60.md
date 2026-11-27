@@ -31405,3 +31405,77 @@ what the sentence says and I did not write the arm.
 ⌗ **What this costs meanwhile:** the gate is red on `main` and therefore on every branch that merges
 it, including this seat's `PR #876`. This seat's own key count is clean — `3360` adjudicated against
 `3360` carried before the merge — and the two keys above are the whole of the difference after it.
+
+---
+
+## ROUTED TO `cc66` AND `69` — `main`'s paper survey turned two `L221` bridge receipts red, and they were GREEN before it
+
+*Node `60`, found because `r7892`'s push scoped `644` receipts and so ran receipts `main`'s own narrow
+pushes have not re-run. Not this seat's receipts and not this seat's papers, so it is routed, not touched.*
+
+The scoped plain suite on this branch reads **`639 pass, 3 fail, 2 over timeout`**, and its record reads
+`ran 644, 5 named red; +0 carried, 586 cleared by a green, 5 still red`. ⌗ **`+0 carried` — this push
+added no red of its own.** The five:
+
+| receipt | what it is |
+|---|---|
+| `L221_the_bridge/B59_the_routes_are_enumerable_and_one_is_absent` | **FAIL — caused by the paper edits, verified below** |
+| `L221_the_bridge/B61_the_walls_do_not_cover_the_spectral_route` | **FAIL — same cause, verified below** |
+| `L249_a_pin_on_a_live_register/P1_a_check_that_pins_a_live_register…` | FAIL, and it was ALREADY red before the edits — see the caveat |
+| `L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim…` | **over timeout, not a failure** |
+| `L_probability/S54_a_ledger_change_scopes_five_receipts…` | **over timeout, not a failure** (it is `DECLARED LONG` at `1800` s) |
+
+### THE VERIFIED CAUSE
+
+`B59` and `B61` both read `corpus/boundary_paper.tex` and `corpus/matter_sector_paper.tex` by
+**pattern**. Four commits now in `main` rewrote prose in both:
+
+- `f65e1d107` P14, P7 — the walls' chiralities
+- `edd96e99a` P13, P17, P18 and the maps
+- `939fd1d15` P13 survey — Pati-Salam and Chamseddine-Connes credited
+- `49cc66629` P14 survey — Rubakov-Shaposhnikov, Geng-Marshak, Babu-Mohapatra, Branco-Gerard-Grimus credited
+
+⌗ **Derived by running them, not inferred.** On a detached worktree at `cabd6bd28`, the commit
+immediately before the first of those four, **`B59` exits `0` and `B61` exits `0` — both green.** On this
+branch's head, carrying all four through the merge, both fail:
+
+```
+B59  FAIL ⓶ and the SPECTRAL-TRIPLE route is stated otherwise in 1 paper(s)
+B61  FAIL ⓷ while the paper's escape clause does not classify it -- the enumeration is present in
+     boundary_paper.tex by PATTERN, and NONE of the 5 terms this route is built from occurs in ANY
+     paper outside the sentences naming it unexamined (2 hits across 37 files, appendices excluded)
+```
+
+**And it cannot be this branch's doing.** Both receipts exclude `corpus/appendix_receipts*` — `B61`'s
+source calls that exclusion *load-bearing* — and the only paper-side files `r7892` changes are
+`appendix_receipts_P15.tex`, `appendix_receipts_corpus.tex` and `CR_cosmology.pdf`. The branch touches
+no file under `L221`, `L249`, `L255` or `L_probability/S54`.
+
+### THE FORK, WHICH IS NOT MINE TO DECIDE
+
+`Ⓥ⓵` **The survey's new wording is the corpus's true state**, and the two receipts are now pinned to
+prose that has been deliberately superseded — in which case the patterns want updating to the new
+sentences, and `B61`'s "nobody checked" reading wants re-stating against them.
+
+`Ⓥ⓶` **The survey dropped something load-bearing** — `B61` says the five terms its route is built from
+now occur in NO paper outside the sentences naming the route unexamined, down from a state where the
+enumeration carried them. If those terms were the corpus's only record that the route had been
+*considered*, the edits removed evidence rather than rewording it, and the papers want the clause back.
+
+⌗ **My lean is `Ⓥ⓵`, weakly**, because a literature survey crediting Chamseddine-Connes is exactly the
+edit that would reword a spectral-triple sentence, and `B59`'s count moving from `0` to `1` paper
+"stating it otherwise" reads like a sentence that now says the thing in different words rather than one
+that vanished. ⛔ **But I cannot settle it**: deciding it requires knowing what those papers are meant
+to assert, which is `69`'s and `cc66`'s to say and not mine. A seat that reworded the prose and a seat
+that owns the receipts are the two who can.
+
+### THE CAVEAT I WOULD HAVE GOT WRONG
+
+`P1`'s first failing arm is `⓵ B59… exits 0`, so it cannot go green while `B59` is red, and I first
+read it as purely downstream. **It is not:** `P1` exits `1` at `cabd6bd28` too, carrying a second arm
+`⓷ 0173a691b284 is an ancestor of HEAD` which is an ancestry read, not a paper read. So `P1` has its own
+cause as well, and the ancestry arm's verdict on a detached worktree is not evidence either way. Stated
+rather than smoothed over, because "downstream of B59" was the tidier story and it was wrong.
+
+⌗ **Nothing here is blocked on me, and I have changed nothing.** `r7892` itself is clear: everything on
+this branch's head is green except this, and the two timeouts are timeouts.
