@@ -102,7 +102,7 @@ MINE = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7267_cc66_reach_t
 
 # ── digest-pinned subjects.  `BACKLOG.tsv` is `C71`'s pin, restated so this receipt cannot be
 #    read against a backlog that moved; the other two are this cycle's own outputs. ──
-DIGEST = {'BACKLOG.tsv': '74d1717f77cde99f'}
+DIGEST = {'BACKLOG.tsv': 'fba470076bb1c5ff'}
 MY_DIGEST = {'REACHED.tsv': 'f0cca8fdd765a475', 'STATED_LIMIT.md': '81e1c6fd65300841'}
 
 # ── the measurement, frozen so no count is asserted against a set another seat can move ──
