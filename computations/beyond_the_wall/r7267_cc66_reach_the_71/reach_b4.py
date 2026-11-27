@@ -70,7 +70,7 @@ L50B = 'baryon_edge/L50b_three_hinges_six_ends.py'
 GEOM = 'beyond_the_wall/r7111_70_layer_geometry_audit/geometry.py'
 PANELA = 'synthesis_figure/panelA_reassign.py'
 
-_P1 = (R_ + 'P1_the_petrov_interval_is_complete_because_the_substrate_is_doubly_ruled.py')
+_P1 = (R_ + 'P1_type_II_is_in_the_range_and_the_radiative_types_need_a_degenerate_orbit_area.py')
 _P15SEAM = (P_ + 'P15_the_corpus_places_every_perturbation_source_before_the_branch_point_and_'
             'everything_after_it_is_transfer_so_nothing_already_built_supplies_anisotropic_'
             'content_on_the_expansion_leg.py')
@@ -199,7 +199,7 @@ ROWS = [
      'docstring names as what makes the rulings null',
      lambda: F.ruling_residuals(b=1.5)[2] < 1e-12, _ruled_detail),
 
-    (_P1, 'inherits both rulings', PANELA, 'ruling',
+    (_P1, 'takes both, which is type~D', PANELA, 'ruling',
      lambda: F.slicing_inherits_both_rulings(2, 0.5),
      'slice by x = const instead of z = const, so a line with sin(phi) = 0 lies IN a slice '
      'rather than meeting it once',
