@@ -7,3 +7,4 @@
   cr S006 rc=0
   cr S015 rc=0
   cr S030 rc=0
+  cr S045 rc=0
