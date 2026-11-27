@@ -117,3 +117,45 @@ and neither is yet known:**
 
 ⌗ *This section is the honest state: the cost is now understood well enough to say the grid cannot
 be obtained here as the generator stands, and not yet well enough to say what replaces it.*
+
+---
+
+## ⛔ CORRECTION TO THE SECTION ABOVE: THE KILLER IS A CONTAINER RESTART, NOT PROCESS REAPING
+
+The section above says *"a detached process is reclaimed here too"* and reads the deaths as the
+runtime reaping long-lived processes. **That mechanism is wrong, and the right one was two commands
+away the whole time: read `pid 1`.**
+
+| | |
+|---|---|
+| this container booted at | `08:40:48` UTC (`/proc/uptime`, and `pid 1`'s own elapsed time) |
+| the four legs were found gone at | `08:40` |
+| an earlier reading, taken at `07:48`, gave | `up 41 min` ⇒ a boot at about `07:07` |
+| the `05:43` launch therefore died at | that `07:07` boot, having lived about `84` minutes |
+| the `07:19:50` launch died at | the `08:40` boot, having lived about `81` minutes |
+
+⇒ **THE CONTAINER IS REPLACED, roughly every ninety minutes, and every process in it dies.** The
+legs were not singled out and nothing reaped them for being long-lived or detached: the machine
+underneath them was rebuilt. Two boots about `93` minutes apart, and each one accounts for a death
+to the minute.
+
+⌗ **This retires a belief this seat had been carrying and acting on.** `setsid nohup … & disown` was
+recorded as *"the one form that has survived past two hours here"*, and the two-hour tracked-task
+cap was treated as the thing to escape. ⛔ *Against a container restart the launch form buys
+NOTHING — a tracked task, a detached session and a disowned process die identically — so three of
+the five launches were spent on a distinction that does not exist.* The one real datum behind the
+old belief is that a launch once held for over an hour, which is true and is simply the interval
+between two boots.
+
+### ⇒ AND IT IS THE FACT THAT MAKES CHECKPOINTING WORK, WHICH IS WHY IT IS WORTH THE CORRECTION
+
+**The filesystem SURVIVES the restart.** Checked rather than hoped: after the `08:40` boot the
+`07:19` launch log is still on disk with its original mtime, the repository is intact at its last
+commit, and the working tree is clean. ⇒ **So a leg that writes partial state to disk resumes after
+a restart**, and the remedy named above is not merely plausible but licensed by a measurement.
+
+⚠ What does NOT change: the two questions still being measured — how the solve's cost splits
+between a fixed setup and a per-mode margin, and whether the modes are independent enough that
+solving a subset and concatenating is exact. **A checkpoint that survives a restart is useless if a
+chunk cannot finish inside ninety minutes, and wrong if the modes are coupled.** Those decide the
+design; this section only decides that the design is worth building.
