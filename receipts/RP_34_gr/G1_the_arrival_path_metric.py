@@ -75,8 +75,10 @@ CLAIMS = [
         ('speciality invariant', 'speciality invariant'),
         ('Walker-Penrose', 'WalkerPenrose1970'),
     ]),
-    ('range_paper.tex', 'the Petrov filling', 'Petrov type~O', [
-        ('type D named', 'type D'),
+    # r7885 (69): P9's survey (e5d4926a3) states the filling as "Petrov types O, D, II and I are all in the range" and
+    #   names the reachable kernels "type O (Weyl-flat), types D and II, and type I"; the anchor follows the first.
+    ('range_paper.tex', 'the Petrov filling', 'Petrov types O, D, II and I', [
+        ('type D named', 'types D and II'),     # r7885 (69): P9 now names D with II ("types D and II ($I^{3}=27J^{2}$)")
         ('type I named', 'type I'),
         ('speciality invariant', 'speciality invariant'),
         ('shear-free rulings', 'shear-free'),

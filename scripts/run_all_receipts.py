@@ -196,7 +196,7 @@ LONG = {
     #   ⛔ *And the third receipt that reading grouped with them, `S12`, measures ** 1s ** here: it is not
     #     in this class and its route to a red is the other one.  Reported, not declared.*
     'S54_a_ledger_change_scopes_five_receipts_and_none_of_the_forty_four_that_read_the_ledger_because_the_read_index_is_a_list_of_spellings_without_tsv_on_it.py': 1800,  # measured 917s alone, one thread (r7412)
-    'S55_the_previous_repairs_own_written_safety_argument_was_the_defect_because_a_shrinking_population_is_safe_for_a_restraint_and_fatal_for_the_non_vacuity_read_off_the_same_range.py': 2100,  # measured 1191s alone, one thread (r7412)
+    'S55_the_previous_repairs_own_written_safety_argument_was_the_defect_because_a_shrinking_population_is_safe_for_a_restraint_and_fatal_for_the_non_vacuity_read_off_the_same_range.py': 2700,  # measured 1191s alone, one thread (r7412); r7885 (69): 1722s passing in the four-job scoped suite (run 46014280995), then over 2100 there (run 46040073029) -- its population grows with the range it reads, so the step goes to 2700
     # ⛭ RE-DECLARED r7017+70.1 (70), 1800 -> 2100, on ⑧'s sweep of the class.  This entry was
     # "measurement plus headroom" and predates the 1.7x rule every entry below uses.  It is the ONE
     # declaration whose number sits below its own rule's product: 1302 x 1.7 = 2213.
