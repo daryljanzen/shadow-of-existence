@@ -7,10 +7,9 @@ spectrum.  ** Rindler: zero.  Unruh: zero.  Across all seventeen papers. **
 ** THE STATION. **  R-P's ⑤: "QFT in curved space --- the graviton, the Mukhanov equation,
 Hawking/Bogoliubov as an absent horizon effect."
 
-** ⓵ THE CLAIM, AND IT IS PRECISE. **  P7: "with no completed horizon there is no background on which
-the Bogoliubov mode-mixing yielding an exactly thermal Hawking flux can be computed, so ** the thermal
-endpoint the paradox must reconcile is itself absent as a horizon effect, ordinary local particle
-production untouched **."  And P1: "** the completed horizon on which the standard problems of black-hole
+** ⓵ THE CLAIM, AND IT IS PRECISE. **  P7: "with no completed horizon there is no exactly thermal
+endpoint for the paradox to reconcile: ** the flux that does reach the exterior is the near-Planckian
+radiation of a body still outside its horizon **."  And P1: "** the completed horizon on which the standard problems of black-hole
 physics rest is therefore never realised in the exterior of a collapsing body **", because the densities "never form at any finite
 exterior time".
 
@@ -108,13 +107,14 @@ def main():
           'Hawking/Bogoliubov as an absent horizon effect' in rp)
 
     # ⓵ the claim, and what it turns on
-    check('P7: "with no completed horizon there is no background on which the Bogoliubov mode-mixing '
-          'yielding an exactly thermal Hawking flux can be computed"',
-          'with no completed horizon there is no background on which the Bogoliubov mode-mixing '
-          'yielding an exactly thermal Hawking flux can be computed' in p7)
-    check('and "the thermal endpoint the paradox must reconcile is itself absent as a horizon effect, '
-          'ordinary local particle production untouched"',
-          'absent as a horizon effect, ordinary local particle production untouched' in p7)
+    check('P7: "with no completed horizon there is no exactly thermal endpoint for the paradox to '
+          'reconcile"',
+          'with no completed horizon there is no exactly thermal endpoint for the paradox to '
+          'reconcile' in p7)
+    check('and "the flux that does reach the exterior is the near-Planckian radiation of a body still '
+          'outside its horizon"',
+          'the flux that does reach the exterior is the near-Planckian radiation of a body still '
+          'outside its horizon' in p7)
     check('P1: the completed horizon "is therefore never realised in the exterior of a collapsing body", '
           'the densities "never form at any finite exterior time"',
           'never realised in the exterior of a collapsing body' in p1
@@ -245,11 +245,11 @@ def main():
     check('⌗ and the argument SURVIVES the test, because it is already the COMPLETION argument: the '
           'thermal flux is absent for want of a horizon that FORMS, not for want of one that is '
           'invariant',
-          'with no completed horizon there is no background' in p7
+          'with no completed horizon there is no exactly thermal endpoint' in p7
           and 'never form at any finite exterior time' in p1)
     check('⇒ Unruh is a standing counterexample to "perspectival horizon implies no thermal flux" -- '
           'which is NOT the corpus\'s claim',
-          'with no completed horizon there is no background' in p7)
+          'with no completed horizon there is no exactly thermal endpoint' in p7)
 
     print()
     if FAILED:
