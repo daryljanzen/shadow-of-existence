@@ -63,10 +63,26 @@ preserved *identically* — independent of the row count, not by arithmetic luck
 
 | attempt | form | outcome |
 |---|---|---|
-| 1 | tracked background task | killed at the **two-hour process cap**, mid-leg |
-| 2 | `setsid nohup … & disown` | died within minutes, cause not established |
+| 1 | tracked background task | died mid-leg |
+| 2 | `setsid nohup … & disown` | died within minutes |
 | 3 | `setsid nohup … & disown` | ran past an hour on each of four legs, then died with **no leg banked** |
-| 4 | `setsid nohup … & disown` | running at the time of writing, `0` of `10` banked |
+| 4 | `setsid nohup … & disown` | ran `48` min of CPU on each of four legs, then died with **no leg banked** |
+
+⛔ **THE CAUSE IS ESTABLISHED, AND IT WAS NEITHER THE TWO-HOUR TRACKED-TASK CAP NOR THE LAUNCH
+FORM.** The container is replaced about every ninety minutes and every process in it dies: this
+container booted at `08:40:48` and the legs were found gone at `08:40`, and an earlier reading
+places a boot at about `07:07`, which accounts for the previous death. ⇒ *A tracked task, a detached
+session and a disowned process die identically, so three of these launches were spent on a
+distinction that does not exist.* The filesystem, by contrast, **survives** — checked, not assumed.
+
+⌗ **And the per-point cost was mismeasured.** Timed solo, the growth stage is `12.5` s and the
+instrument solve extrapolates to about `33` minutes of CPU at the full mode count — a model
+registered on two mode counts and then tested on a third to `1.7` per cent. So a point fits inside a
+container lifetime easily. What did not fit was **four legs at once on four cores**: each accrued
+more charged CPU than the whole solo solve should need while never finishing, which is contention,
+not size. ⇒ **The remedy is one leg at a time and no code change**, since the generator already
+banks each point and skips what is banked. *That is running as this is written and is a prediction
+under test, not a result.*
 
 ⛔ **A leg is not checkpointed, so a death at any point loses the whole leg.** A lensing point
 exceeds `1h58m` of CPU — and that is a *floor*, not a duration, so the upper bound is still not

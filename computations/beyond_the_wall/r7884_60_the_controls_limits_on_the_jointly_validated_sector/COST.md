@@ -159,3 +159,58 @@ between a fixed setup and a per-mode margin, and whether the modes are independe
 solving a subset and concatenating is exact. **A checkpoint that survives a restart is useless if a
 chunk cannot finish inside ninety minutes, and wrong if the modes are coupled.** Those decide the
 design; this section only decides that the design is worth building.
+
+---
+
+## ⛔ AND THE REMEDY ABOVE IS WRONG TOO: CHUNKING THE `k`-GRID WOULD HAVE MADE IT WORSE
+
+The two questions the section above said to settle before building anything have been settled, and
+**they killed the design.** Both numbers are solo on an otherwise idle box:
+
+| stage, at its REAL size | measured |
+|---|---|
+| `GrowthKDep` on `48` `k`-points | `12.5` s |
+| `evolve` on `2` modes | `599.1` s |
+| `evolve` on `4` modes | `611.7` s |
+| `evolve` on `40` modes | `824.2` s |
+
+⌗ **Doubling the modes from `2` to `4` cost `12.6` s.** The step count is set by `KMAX`, which is
+present in both, so what dominates is a FIXED time-stepping cost and the per-mode margin is small.
+Fitting the two small runs gives `F ≈ 586` s fixed and `m ≈ 6.3` s per mode, and that model then
+**predicted the `40`-mode run at `838` s against `824.2` s measured — `1.7` per cent.** So the model
+is not a curve drawn through two points; it was registered on two and tested on a third.
+
+⇒ **CHUNKING THE `k`-GRID IS COUNTERPRODUCTIVE, and by a wide margin.** Eleven chunks of twenty
+modes each re-pay the fixed cost: `11 × (586 + 20 × 6.3) ≈ 7832` s, against `586 + 220 × 6.3 ≈ 1972`
+s for the whole grid in one call. **The checkpointing design would have turned a thirty-three minute
+solve into a two-and-a-quarter hour one** — and the independence test never had to be run, because
+the cost question disqualified the design before the correctness question was reached.
+
+⌗ *That is why both were registered as questions to answer BEFORE building. Had they been assumed —
+"a linear hierarchy separates in `k`, so chunk it" — the chunking would have been built, would have
+been correct, and would have been slower than doing nothing.*
+
+### ⇒ WHAT THE NUMBERS SAY THE REAL CAUSE WAS, AND IT IS NOT THE COST OF A POINT
+
+`phi_shape` at the full `NKP = 220` extrapolates to about **`33` minutes of CPU**, and the growth
+stage is `12.5` s. **That is comfortably inside the ninety-minute container lifetime.** So a lensing
+point was never a two-hour computation.
+
+What the five launches actually did was run **FOUR legs at once on four cores.** Under that
+contention each leg accrued `48` minutes of CPU in `62` minutes of elapsed time and was still not
+finished — more charged CPU than the solo estimate for the whole solve, which is what thread
+contention looks like rather than what a larger computation looks like, since a busy-waiting thread
+is charged CPU while making no progress. ⇒ **No leg could finish inside one container lifetime, so
+every restart lost all four.**
+
+### ⇒ THE REMEDY NEEDS NO CODE CHANGE AT ALL
+
+Run the generator at `JOBS=1`. One point then has the whole box, finishes in about half an hour,
+and **is banked** — and the generator is already idempotent, skipping every banked point on
+relaunch. So the grid accumulates two or three points per container lifetime and completes across
+four or five restarts, with nothing lost to a restart and no checkpointing written.
+
+⚠ **This last paragraph is a PREDICTION UNDER TEST, not a result.** The generator is running at
+`JOBS=1` as this is written, and the thing to look at is whether the first point banks inside one
+container lifetime. If it does not, the extrapolation from `40` modes to `220` is superlinear and
+that is the next thing to measure, not a thing to assume.
