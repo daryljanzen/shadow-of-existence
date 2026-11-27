@@ -1,0 +1,50 @@
+{
+ "aliases": {
+  "I_PNH": "NVH",
+  "_dnp": "dn"
+ },
+ "bindings": {
+  "LMAXNU": "int(os.environ.get('LMAXNU', '12'))",
+  "NQ": "int(os.environ.get('NQ', '12'))",
+  "NUHIER": "os.environ.get('NUHIER', '0') == '1'",
+  "QMAXNU": "float(os.environ.get('QMAXNU', '20'))"
+ },
+ "blob": "e5319ce4968602ca6d8de89fdc871e8f9b0a645e",
+ "by_name": [
+  "I_PN",
+  "_NH",
+  "_PSI"
+ ],
+ "config_keys": [
+  "LMAXNU",
+  "NQ",
+  "NUHIER",
+  "QMAXNU"
+ ],
+ "controls": {
+  "LMAXNU's default": {
+   "byname_passes": true,
+   "exact_red": true
+  },
+  "NQ's default": {
+   "byname_passes": true,
+   "exact_red": true
+  },
+  "NUHIER's default": {
+   "byname_passes": true,
+   "exact_red": true
+  },
+  "QMAXNU's default": {
+   "byname_passes": true,
+   "exact_red": true
+  }
+ },
+ "fixed_point": true,
+ "floor_bindings_only": false,
+ "funcs": [
+  "_nuhier_moments",
+  "_nuhier_rhs",
+  "_nuhier_seed",
+  "_nuhier_sigma"
+ ]
+}

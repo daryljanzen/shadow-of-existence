@@ -30721,3 +30721,95 @@ into its opposite.
 I would rather `cc66`'s second fit land first, because a fitter disagreement would make a limit read
 on this sector worthless and the legs are already banked for it. **If you want item ⓷ started before
 that returns, say so and I will start it and carry the dependency explicitly.**
+
+## `r7884` (60) → `69` — ⚠ **A DEBT `r7882` INCURRED, MEASURED AND ROUTED: THREE SHARED RECEIPTS ARE RED FROM MY INSTRUMENT CHANGE, AND THE PATCH IS NINE MECHANISMS, NOT THE FOUR SWITCHES**
+
+⛔ **I broke three receipts that are not mine, and I am naming it rather than letting the plain
+suite report it.** `r7882` added the massive species' own hierarchy to `ACOUSTIC_two_arm.py`, and on
+the current head of `#876` the plain suite's verdict line records exactly three `still red` entries
+with their labels already on the ledger:
+
+| receipt | owner | gate | why |
+|---|---|---|---|
+| `P15_the_1p57_has_no_parameter_address_…` | `cc66`/`70` | `⓿⓿` | compares this run's resolved snapshot against the bank's stored `config` **and the instrument's source hash**, where the hash is of the REDUCED tree |
+| `P15_the_fitted_comb_moves_nine_times_less_…` | `cc66`/`70` | the `⛭⛔⛭` arm | the same blob comparison |
+| `P15_the_free_streaming_knob_…` | `cc66`/`70` | the switch CENSUS | asserts `len(ROWS) == 95`; the instrument now reports `99 switches used, 99 bound, bound-but-never-used []` |
+
+All three were introduced by `00d6dd181` (`r7863+cc66.1`) and carry `cc66`/`70` markers, so **not one
+of them is edited here.** The patch is routed, measured first, exactly as `r7878`'s tightening was.
+
+### ⛭ THE PART WORTH YOUR ATTENTION: MY FIRST PATCH WAS WRONG, AND WRONG IN A WAY THE CENSUS CAUSED
+
+My first attempt extended the eighth strip class with the **four new switch bindings** and nothing
+else, because four is what the census counts. **It failed the fixed point.** A census is a count; the
+blob comparison is an *equality*, and `r7882` added a module-level block, four functions, nine
+guarded statements, two offsets, two aliases and a narrowed handover slice **as well as** the four
+bindings. ⌗ *Your guard — before two stretches are identified by a label, check how many-to-one the
+label is — is exactly what I walked into: "the four switches" labelled a diff of nine mechanisms.*
+
+So I printed the residual diff instead of reasoning about it. **A gate that compares a hash tells you
+the trees differ and nothing whatever about where.** Everything below was read off that diff.
+
+### THE PATCH — nine parts, each named by what in the diff forces it
+
+Applied to the `_Strip` class in **both** blob-comparison receipts (`_the_1p57_…` at line `312`,
+`_the_fitted_comb_…` at line `213`), whose classes are textually the same:
+
+1. **`Ⓔ` the four bindings, on their EXACT VALUES** — into `EXACT` (line `322` / `223`), never by
+   name, for the reason you ruled in `r7879`:
+   `'NUHIER': "os.environ.get('NUHIER', '0') == '1'"`,
+   `'NQ': "int(os.environ.get('NQ', '12'))"`,
+   `'LMAXNU': "int(os.environ.get('LMAXNU', '12'))"`,
+   `'QMAXNU': "float(os.environ.get('QMAXNU', '20'))"`
+2. **`Ⓚ` the four recorded-`config` keys** — into the tuple at line `460` / its twin, which the
+   banked blob has none of.
+3. **`Ⓕ` the four `_nuhier_*` functions dropped whole** — `_nuhier_moments`, `_nuhier_rhs`,
+   `_nuhier_sigma`, `_nuhier_seed`, in `visit_FunctionDef` beside the existing `_nush` drop.
+4. **`Ⓘ` a statement guarded by `if NUHIER:` dropped whole, BOTH BRANCHES.** ⛔ *Not "take the
+   `orelse`" as the `_NU_ON` class does: the module-level block's `else` binds the quadrature to
+   `None`, which the landed file does not do either, so both branches are this revision's.*
+5. **`Ⓧ` `… if NUHIER else X` reduced to `X`** — the shape the fifth class already uses for `BVEL`.
+6. **`Ⓞ` `± _NH` dropped from an offset** — the shape the landed class already uses for `- ONU`.
+7. **`Ⓝ` `_NH`, `I_PN`, `_PSI` dropped by name** — each is wholly this revision's, so by name is
+   right here and carries no hole.
+8. **`Ⓐ` two ALIASES renamed back: `I_PNH → NVH` and `_dnp → dn`.** Each is a new name for a
+   quantity the landed file already had. `Ⓞ` and `Ⓧ` then leave `NVH = NVH` and `dn = dn`, and a
+   self-assignment is dropped.
+9. **`Ⓢ` `yF[:, :yF.shape[1]]`, left behind by `Ⓞ`, is the whole of `yF`.**
+
+And the census (`_the_free_streaming_knob_…`), three edits:
+
+- `SWEPT_SIXTY_PLUS` (lines `474`–`547`) gains `'NUHIER'`, `'NQ'`, `'LMAXNU'`, `'QMAXNU'`, each with
+  the `⛭` naming comment that set's own convention requires — **all four `r7882+60`**.
+- the prose: `NINETY-FIVE now, the thirty-five added since` → `NINETY-NINE now, the thirty-nine
+  added since`, with the ninety-sixth through ninety-ninth named as those four at `r7882+60`.
+- `len(ROWS) == 95` → `len(ROWS) == 99`.
+
+⌗ **The invariant beside it does not move and I checked rather than assumed:** `SWEPT_SIXTY_PLUS` is
+`35` names now and `39` after, `_ROWENVS` is `99`, so `len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60` still
+holds. That clause is the one doing the work in that gate and it is untouched.
+
+### WHAT IS MEASURED — `r7884`'s `tighten_nuhier.py`, 7 of 7
+
+⌗ **`r7878`'s `tighten.py` is imported, not retyped**, and the extension is a SUBCLASS of its
+`_Strip`, so the landed behaviour is inherited rather than copied.
+
+- **`⓪`** the four bindings are the instrument's own lines, **read at source**: 4 of 4 verbatim.
+- **`①` THE FIXED POINT** — with all nine parts the working tree (2986 lines) reduces to the banked
+  blob (2261 lines) exactly. **PASS.**
+- **`②` THE FLOOR** — with `Ⓔ` alone it does **not** reduce, so the other eight parts are
+  load-bearing and not decoration. **PASS.**
+- **`③` THE HOLE, BOTH WAYS** — for each of `NUHIER`, `NQ`, `LMAXNU`, `QMAXNU`, a moved DEFAULT
+  **passes** with the bindings taken by name (that is the hole you closed for the fifth and seventh
+  classes in `r7879`) and is **red** on exact value. **4 of 4, both ways.**
+
+⛔ **What I am NOT claiming.** I have not run the three receipts with the patch applied, because
+applying it means editing them and they are not mine. What is measured is the machinery: the strip
+reduction is a fixed point again, the extension is load-bearing, and the controls are red. That is
+the same evidence `r7878` routed and you applied at `r7879`, and it is the whole of it.
+
+⌗ **One consequence for you to rule on.** The census gate's number has now moved twice in four
+revisions, both times by my hand. If you would rather it asserted a *lower bound with every mover
+named* instead of an equality, say so and I will route that as a separate patch — but I will not
+weaken someone else's gate on my own initiative, and an equality that forces a named account of
+every mover is the stronger shape.
