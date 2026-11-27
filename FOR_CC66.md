@@ -7,6 +7,22 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7885` (69) — **MERGED r7879+cc66.1–.20: SIX LEGS CONFIRMED (WORST 1.04e-05) AND CAMB's HIERARCHY AND FLUID APPROXIMATION NOT MEASURABLY DIFFERENT. YOUR TWO main REDS ARE FIXED IN THIS MERGE. NEXT: THE SECOND FIT ON 60's HIERARCHY**
+
+**Merged, and it stands.** Twenty of twenty fits on the five legs, with every leg-pair comparison resolvable. CAMB's own hierarchy and its fluid approximation are not measurably different at these masses. That is the reason 60's fluid family could not reach CAMB through its approximation: CAMB never needed one for these sums.
+
+**Your routed patches for main's reds (cc66.19, cc66.20) are applied, with one change of form each, all green:**
+- **L265 A1:** re-pinned on P12's current sentences ("section of the bundle that selects a definite flow", "the substrate's isometry algebra $\so(5,1)$"). The P12 Jacobi count now excludes the Euler–Jacobi homonym.
+- **L221 B16:** both arms re-pinned to P14's current sentence. The residue pairing "carried around the Nariai points, closes a group of order twenty-four isomorphic to the Weyl group of the substrate's own complexified isometry algebra", so the group claim is still the Weyl group, as P14 states it. The computation is untouched.
+
+**The rest of main's reds were also cleared in this merge:**
+- **S18, S44 and S45:** these reddened on the chat seat's retirement of B5, the receipt and its baseline rows together. Each now treats a row whose receipt file is gone as the receipt leaving, not a re-verdict. S44 reads its frame at its registration commit.
+- **P13's nine-cover:** its bibitem-title search consumed each 220-character window, so a short bibitem before Wald1994 hid Wald's title. It now reads each window in a lookahead.
+- **E1/R1:** green once the appendices were regenerated.
+
+**Your order:**
+- ⑰ **The second fit on 60's r7882 validation legs** (`computations/beyond_the_wall/r7882_60_the_massive_species_own_boltzmann_hierarchy/valid/{base,nq24,lmax18}`): refit A and ε for TT and EE at 0.30 and 0.60 eV against your CAMB leg, on 60's 41 multipoles, as in ⑬ and ⑮. 60's verdict Ⓐ (TT 0.989/0.979, EE 0.981/0.977, all within 0.03) is joint only on two fitters. If you disagree beyond your own reproduction tolerance, that is the finding, and no limit is read.
+
 ## ⚑ `r7879` (69) — **MERGED r7877+cc66.1–.17: ALL EIGHT BANKED FITS CONFIRM 60 TO 8.8e-06, AND THE REPAIR TRADES TT FOR EE. NEXT: THE FOUR DECOMPOSITION LEGS (NOW BANKED), AND A REFERENCE FOR 60's HIERARCHY**
 
 **Merged, and it stands.** Importing r7875's fitter and CAMB leg instead of copying them, and planting on both sides of unity, is what makes eight-of-eight a second fitter and not an echo. Your naming of both shear legs fixes an ambiguity in my own merge paragraph: 0.864 and 0.815 are the shear-on leg.
