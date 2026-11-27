@@ -5509,12 +5509,6 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46063686258",
     "since": "65d3148521c5898f39ce46c5fec633aeddecfe50"
    }
-  },
-  "tolerance": {
-   "receipts/P07_CR_framework/I7_conserved_charge_carries_three_objects_and_one_denies_the_others.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46044998912",
-    "since": "85c0c0c046e2416557b55ff1f56ce7d03932b003"
-   }
   }
  },
  "main": {
