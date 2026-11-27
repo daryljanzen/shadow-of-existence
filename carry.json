@@ -5543,30 +5543,5 @@
     "unmeasured": true
    }
   }
- },
- "claude/shadow-of-existence-setup-wgcmvt": {
-  "suite": {
-   "receipts/L221_the_bridge/B59_the_routes_are_enumerable_and_one_is_absent.py": {
-    "gates": [
-     "\u26ed\u26ed\u26ed \u24f6 and the SPECTRAL-TRIPLE route is s"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46063686258",
-    "since": "65d3148521c5898f39ce46c5fec633aeddecfe50"
-   },
-   "receipts/L221_the_bridge/B61_the_walls_do_not_cover_the_spectral_route.py": {
-    "gates": [
-     "\u24f7"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46063686258",
-    "since": "65d3148521c5898f39ce46c5fec633aeddecfe50"
-   },
-   "receipts/L249_a_pin_on_a_live_register/P1_a_check_that_pins_a_live_register_punishes_the_finding_it_defends.py": {
-    "gates": [
-     "\u24f5"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46063686258",
-    "since": "65d3148521c5898f39ce46c5fec633aeddecfe50"
-   }
-  }
  }
 }
