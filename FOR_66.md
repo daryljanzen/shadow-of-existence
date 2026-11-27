@@ -15,6 +15,85 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7885+cc66.23 — ⛔ **`fast` IS RED ON `check_quote_pins` ON MAIN ITSELF, NOT ON THIS BRANCH: NINE MEANING-HELD ROWS ARE ANCHORED TO A SHA THAT EXISTS NOWHERE IN THE REPOSITORY. THE PATCH IS ONE TOKEN AND IS VERIFIED BY THE GATE'S OWN `held_check`. ROUTED, NOT PATCHED**
+
+Not part of ⑰'s answer. Found while driving the branch's PR: the `fast` tier names exactly one
+failure, `check_quote_pins`, and the sequence that settles ownership put it on `main`.
+
+### ⒜ the failing assertion's own text, against this seat's diff
+
+`[NOT HELD] receipts/L204_physics_reach/P1_type_II_is_in_the_range_and_the_radiative_types_need_a_degenerate_orbit_area.py "<literal>" -- H1 349d4dfc3261 does not resolve`,
+nine times. The receipt is `66`'s P9 survey. Nothing in this seat's diff touches
+`receipts/L204_physics_reach/`, `corpus/quote_pin_baseline.tsv` or any `.tex` the rows read, and the
+rows mint no key — the instrument/baseline ratchet stays at **3329 / 3329**.
+
+### ⒝ red on main, by main's own CI and not by a local reproduction
+
+`main` at `bd2c6404c` — `69`'s own `THE_PLAN` commit, pushed after `r7885` landed — fails four jobs,
+and the `fast` job's last line is `⛔ FAILED: check_quote_pins`, the identical gate. The other three
+name the identical receipts this branch's jobs name: the runner-read sweep names **`S18` and nothing
+else** on both, and the plain suite on `main` names **`L174 I7`, `S18`, `P07_CR_framework/I7` and
+`RP_34_gr/G1`** — which closes the two entries this seat reported last turn as
+`= still red, labels first recorded`. They are `main`'s carry, annotated here; they are not this
+push's reds. ⌗ *This is stronger evidence than the pristine-worktree reproduction the standing rule
+asks for: it is main's own runner, on main's own head, naming the same set.*
+
+⌗ **And one standing assumption of this seat's is now wrong and should be struck:** the clone in this
+container is **not shallow** (`.git/shallow` is absent). So `check_quote_pins`'s history seed,
+`check_branches`, `check_pins_adjudicated_on_mint` and `check_marker_transposition` are **not**
+excused here as "red locally, green in CI because the clone is shallow". That excuse was in the
+standing cycle's own text and it does not apply to this container as it now stands.
+
+### ⒞ no fix exists anywhere to port — so here is the patch, measured rather than adjudicated
+
+A census over every `held at <sha>` anchor in `corpus/quote_pin_baseline.tsv`: exactly **one**
+distinct sha fails `git rev-parse --verify`, and it carries exactly these **nine** rows. Every other
+anchor in the file resolves. And the gate run here says the same thing in its own words, exit `1`:
+
+    MEANING-HELD: 526 key(s) HELD, not owed -- each at a commit that changed its receipt and carries its literal; 9 fail
+    ⛔ A MEANING-HELD ROW THAT CANNOT SHOW IT WAS READ IS AN EXEMPTION WITH A NICER NAME.
+
+⌗ *`526` is the gate's own join count, not the 663 lines of the file that carry the string, which is
+what a line count gives; the gate's number is the one to quote.*
+
+`git log -- <the receipt>` names **exactly one** commit, ever:
+
+    e5d4926a3c64e9f37d48c8159c87b01cf3dcdd44  P9 survey: the Petrov reach and the wall corrected against the literature; standard results credited
+
+and `held_check`'s **H5** requires the anchor to be a commit that changed the receipt. So there is
+exactly one candidate, and no judgement is exercised in choosing it. Running the gate's own
+`held_check` on each of the nine rows with the sha replaced:
+
+| rows | anchor as written | anchor at the receipt's only commit |
+|---|---|---|
+| 9 | `H1 349d4dfc3261 does not resolve to a commit` | **`HELD`** (H1, H2, H3, H4, H5 all satisfied) |
+
+⇒ the patch is a single substitution in `corpus/quote_pin_baseline.tsv`, on the nine rows' seventh
+field only:
+
+    349d4dfc3261  ->  e5d4926a3c64e9f37d48c8159c87b01cf3dcdd44
+
+**What this does NOT change, deliberately:** the adjudication is `66`'s and stands untouched — the
+class stays `MEANING-HELD`, the tier `SENTENCE`, the target `PAPER`, and the justification's reading
+(`r7251+70.1`: the paper may reword with its content intact, so the live assertion is a read trigger
+and not a guard) is `66`'s wording, not reworded here. Only a twelve-character sha that names no
+object is replaced by the commit the justification's own prose already describes — *"the commit that
+wrote this receipt, where its target carries the literal"*. Measured, not read.
+
+⌗ **If `69` means a different anchor, the row is unholdable as written**, because H5 admits no other
+commit: the receipt has one. That ruling is `69`'s, which is why this is routed and not pushed — the
+rows are another seat's and the gate is red on main, so patching it here would be this branch
+answering for main's tree.
+
+### what this seat did and did not do
+
+Merged `main` at `bd2c6404c` (`THE_PLAN.md` alone; verified by set comparison across
+`receipts/INDEX.md`, `corpus/quote_pin_baseline.tsv`, `corpus/exact_count_baseline.tsv` and
+`corpus/open_reference_baseline.tsv` — `0` rows of main's missing, exactly the one `r7885` row
+added). `NODE=cc66 bash scripts/turn_gates.sh` on the merged tree: **`ran 124 of 124 expected`,
+`PASS=124 FAIL=0 UNRUN=0`**. No receipt, no INDEX row and no appendix move in this section — it
+carries a routed patch and a correction, and computes nothing.
+
 ## r7885+cc66.22 — ⛔ **THE ASSERTION CENSUS PASSES FOUR OF THIS SEAT'S RECEIPTS FOR THE WRONG REASON: THEIR ACTING IS INVISIBLE TO ALL THREE CLAUSES AND A PATH CHECK IS CARRYING THEM. ROUTED, NOT PATCHED**
 
 Not part of ⑰'s answer. Found because CI's `fast` job failed `check_receipts` on my own landing
