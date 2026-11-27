@@ -184,8 +184,10 @@ def main():
     #   the same way -- it is the leaf's pieces, not the route over the face this receipt is about.
     #   r7621 (69): and a sentence on the face triple's SPECTRAL ACTION (cc66's r7619+cc66: the construction supplies its
     #   scale and not its cutoff function) is the computed face route, set aside by its 'cutoff function'.
+    #   r7885 (69): P13's survey (939fd1d15) adds the bibitem ChamseddineConnes1997 for the face triple it cites; the
+    #   bibliography names sources and builds nothing, so it is read off before the sentences are classified.
     def _considered(_t, _k):
-        _flat = ' '.join(_t.split())
+        _flat = ' '.join(_t.split('\\begin{thebibliography}')[0].split())
         return any(_k.lower() in _x.lower() and not re.search(r'unexamined|not yet examined|neither yet examined|over the leaf|one-dimensional leaf|over the face|face itself|almost-commutative|cutoff function', _x)
                    for _x in re.split(r'(?<=[.;])\s+', _flat))
     _spec_hits = {_k: sorted(_n for _n, _t in _CORPUS.items() if _considered(_t, _k))
