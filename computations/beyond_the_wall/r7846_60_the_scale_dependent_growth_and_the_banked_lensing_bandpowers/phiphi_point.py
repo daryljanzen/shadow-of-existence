@@ -62,8 +62,18 @@ def main():
     rec = dict(arm=arm, tag=tag, mnu=mnu, etaref=etaref, z_start=float(1.0 / a_ref - 1.0),
                ls=[int(v) for v in ls], cl=[float(v) for v in cl],
                bandpowers=[float(v) for v in bp], f_nu=float(g.f_nu),
+               #: ⛭ r7884+60: the seven on the second line were NOT recorded, so a banked lensing
+               #: point could not show which object it was.  The CMB side records its switches in
+               #: the spectrum's own `config` and `r7884`'s gates Ⓛ⓵/Ⓛ⓶ read them there; the
+               #: lensing side had no such record at all, so nothing could verify that these
+               #: bandpowers are the hierarchy's at the gated grid.  ⛔ *The whole discipline is to
+               #: read a leg's settings off the LEG and not off the generator that was meant to set
+               #: them, and on this side that was impossible rather than merely unused.*  Additive
+               #: metadata: every reader of a banked `switches` record parses it by name, so adding
+               #: keys changes no number and no existing read.
                switches={k: os.environ[k] for k in
                          ('ARM', 'CRH0', 'CROM', 'LH0', 'LOM', 'WBH2', 'NS', 'MNU', 'HIER',
+                          'BVEL', 'NUFD', 'PRIMNORM', 'NUHIER', 'NQ', 'LMAXNU', 'QMAXNU',
                           'LMAXL', 'LSTEP', 'LEAFGEOM', 'LEAFSCALES', 'ZSTART')
                          if k in os.environ})
     with open(path, 'w') as fh:

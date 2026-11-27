@@ -30551,3 +30551,367 @@ a free strength to turn up.** I have not started on either branch.
   refusals refuse.
 - The ten banks record the sums, letter sets and sound speeds they ran at, and one single instrument
   blob between them — pinned in the receipt, so a mislabelled row would fail.
+
+---
+
+## ⭕ `r7880` → `69`, on order `r7879` item ⓵: NOTHING OUTSIDE THE NEUTRINOS CARRIES THE TT-HEAVY SIGNATURE — `(b)` IS CLOSED — AND THE ONLY TT-HEAVY SECTOR IN THE BANKS IS THE NEUTRINO BACKGROUND ITSELF
+
+**Registered in `PREDICTION.md`, committed and pushed as `293a71ade` before any measurement of this
+revision ran**, with four reads declared, the candidate set closed, the band fixed at `r7878`'s own
+`4/3` and four mutually exclusive outcomes. The fit is `r7874`'s own `shift.py`, **executed** with
+the two lines `r7876` rebinds and **the rebinding function imported** from `r7876`'s `refit.py` —
+no second copy of either. The reproduction leg returned `1.15162`, `1.29592`, `1.01405`, `1.04630`
+first.
+
+**The required leverage was re-measured by this run rather than carried over,** and it agrees with
+the figure you took as the frame to the last digit: TT `0.15162` from one against EE's `0.01405` at
+`0.30` eV → **`10.790`**; `0.29592` against `0.04630` at `0.60` → **`6.392`**.
+
+### THE TABLE
+
+| candidate | provenance | sum | `dA_TT` | `dA_EE` | leverage | of required | in band |
+|---|---|---|---|---|---|---|---|
+| `DNEFF = 0.0293` | recorded | 0.30 | −0.004286 | −0.008613 | 0.498 | **0.046** | no |
+| | | 0.60 | −0.004733 | −0.008926 | 0.530 | **0.083** | no |
+| `DNEFF = 0.044` | recorded | 0.30 | −0.005334 | −0.012633 | 0.422 | **0.039** | no |
+| | | 0.60 | −0.006997 | −0.013372 | 0.523 | **0.082** | no |
+| `NUFD` off | recorded | 0.30 | −0.492348 | +0.001790 | 275.037 | **25.490** | no |
+| | | 0.60 | −0.345364 | +0.033818 | 10.212 | **1.598** | no |
+| `BVEL` off | ⚠ name only | 0.30 | +0.000017 | +0.000000 | **UNREADABLE** | no move > `1e-05` | no |
+| | | 0.60 | −0.000002 | −0.000001 | **UNREADABLE** | no move > `1e-05` | no |
+
+⇒ **`Ⓒ` — nothing outside the neutrinos carries it, and `(b)` is CLOSED.** Exactly one registered
+row fires, and the receipt checks that exactly one does.
+
+### WHAT IT SAYS BESIDES THE NULL — three things worth your ruling
+
+- **The radiation-density correction is EE-HEAVY: the wrong SIGN of asymmetry, not a weak version of
+  the right one.** Leverage `0.42`–`0.53` against a required `10.8` and `6.4`, so `4` to `8` per
+  cent of it, and spending about twice as much of its move on EE as on TT. **And that is a property
+  of the sector, not of the step:** the two banked step sizes agree to `1.179` and `1.013`, inside
+  the same band — the control the registration fixed for exactly this.
+- **The only candidate with a TT-heavy signature at all is the neutrino background itself** —
+  `275.037` at `0.30` eV and `10.212` at `0.60`, which are `25.490` and `1.598` of required. It is
+  not a sector outside the neutrinos, so it cannot answer `(b)` whatever its number. ⌗ *The `0.60`
+  figure is the near thing and is said to be near: `1.598` against a band edge of `1.333`. At
+  `0.30` it is `25` times required, so the pair is not in band at both sums under any reading.* ⇒
+  **So the diagnostic does not merely fail to find a carrier: it finds that the TT-heavy asymmetry
+  in the banks is a neutrino-sector property.** That points where your ruling already points.
+- **`BVEL`'s sum response is unmoved at the fit's own precision** — parts in a million in `A`.
+
+**And the argument I registered before measuring is confirmed by size on all three readable
+candidates:** the sum response is a ratio to the same configuration's own zero leg, so a sector's
+grip on it is its **sum dependence** and nothing else. The term that is the same at every sum moves
+`A` by parts in a million; the density the sum interacts with, by parts in a thousand; the sum's own
+background, by a third to a half.
+
+### ⛔ A GAP IN MY OWN REGISTRATION, NAMED RATHER THAN QUIETLY FILLED
+
+It put *"has no readable move"* in a verdict row and **never said what readable means.** `BVEL` then
+moved `A` by parts in a million, and a ratio of two such numbers is not a leverage — left alone it
+would have printed `113.805`. The threshold is taken from the **fit** and not from this measurement:
+`shift.py` reports `A` to five decimals, so `1e-05` is the smallest move it can distinguish, and a
+leverage is readable only when both blocks move more than that. ⌗ *The verdict row is the same
+either way — filled like that, or with the candidate simply dropped — which I say because a repair
+that could have changed the answer would need more than a footnote.*
+
+### WHAT IS NOT ANSWERED, AND WHAT WOULD SETTLE IT
+
+**The four cosmological parameters are not answered, and the registration said so in advance rather
+than my discovering it as a finding.** Every parameter-offset leg in the banks is at `MNU = 0`, so
+the banks cannot show a parameter's **sum dependence** — and by the argument above it is exactly the
+sum dependence that decides whether anything can move the sum response at all.
+
+⇒ **What would settle them is one offset leg per parameter at a non-zero sum** — four parameters × 2
+signs × 2 sums, on the control arm. **I have not run it, because you bounded `(b)` to one revision
+and the answer it was bounded to give is `Ⓒ`.** If you want those four closed as well, say so and it
+is a generator run, not an instrument change. ⌗ *My own recommendation is NOT to spend it: the
+parameters are the ones the reference already fits, so a carrier among them would have no freedom
+left to spend, and `(a)` is the repair either way.*
+
+### ⇒ AND ITEM ⓶ IS NEXT, AS ITS OWN REVISION
+
+`(a)` — the massive species' own momentum-binned Boltzmann hierarchy in the standard form, behind a
+switch, default off, byte-identical off, closure kept with `W` always on, the `q`-grid and `ℓ`-cutoff
+**converged and not tuned**, validated **jointly** at `0.03` in TT *and* `0.03` in EE at both sums on
+both fitters. That is a real build and it gets a revision of its own rather than being bolted to
+this one. **Your refined EE ruling is taken as read:** the bar is joint agreement for a
+closure-respecting sector, and the weight change stays in every candidate from here.
+
+---
+
+## `r7882` (60) → `69` — **ORDER `r7879` ITEM ⓶ ANSWERED: THE MASSIVE SPECIES' OWN BOLTZMANN HIERARCHY VALIDATES JOINTLY IN BOTH BLOCKS AT BOTH SUMS. VERDICT `Ⓐ`. THE REPAIR IS THE REPAIR.**
+
+**The order's bar, met.** `A` refitted against CAMB by the fit of record, executed and not
+re-implemented, its reproduction leg returning that fit's four headline amplitudes first:
+
+| block | `0.30 eV` | `0.60 eV` |
+|---|---|---|
+| TT | `0.989142` — `0.01086` off one | `0.978850` — `0.02115` off one |
+| EE | `0.980552` — `0.01945` off one | `0.977398` — `0.02260` off one |
+
+All four inside your `0.03` band, in both blocks at both sums. Exactly one of the five registered
+rows fires, which the receipt checks rather than assumes.
+
+**⛔ THE THING I WANT YOUR RULING TO REST ON, BECAUSE IT IS NOT WHAT IT LOOKS LIKE.** What this
+hierarchy achieves is JOINTNESS, not size. The weight change alone was **closer in TT at `0.30` eV**
+— `0.00490` against my `0.01086` — and was **outside the band in EE at `0.04005`**. Against the
+fluid family's best TT I am closer at `0.60 eV` (`0.02115` against `0.05621`, better by `2.7`) and
+not closer at `0.30`. So anyone reading this as "the tightest TT yet" is reading it wrongly, and
+anyone reading it as "no better than the fluid family" is reading it wrongly too. It is the first
+candidate with BOTH blocks inside at BOTH sums, which is exactly the bar your refined EE ruling set.
+
+**The two numerical parameters are converged, not tuned,** on gates fixed at one tenth of your band
+before any grid was tried: doubling the nodes to `24` moves `A` by `8.444e-04`; raising the cutoff
+by half moves it by `3.892e-05`. The cutoff is converged some twenty times better than the grid at
+the cost spent, so **the grid is where the remaining numerical error lives** if you want it
+tightened further.
+
+**The cost you declared a risk, measured:** `11.5` per cent more wall time with the hierarchy on
+than off at the banked resolution, although the state vector grows from `20` to `176` per mode. The
+mode solve is not what dominates a banked leg. The item did not need splitting.
+
+### ⚠ THREE THINGS IN THIS REVISION ARE MINE, AND TWO ARE DEFECTS IN MY OWN REGISTRATION
+
+**⓵ The massless-limit gate caught a defect no switch arm could have, and it was on the only arm
+that matters.** The seeding sat inside ONE branch of the initial-condition `if`/`else`, so on `lcdm`
+— the arm every validation number here is read on — the moments started at ZERO and grew from the
+sources. `δ` was a factor eight short at one hundredth of the way to recombination and only caught
+up at it; the spectrum differed by `4.345e-01` where the switch must be inert. All three switch arms
+had passed: byte-identical-off says nothing about a seed only the ON path reads, the fluid's
+bit-identity says nothing about a branch the fluid never enters, and the seed's exactness at the
+initial time was a true fact about the seeding function and not about whether the solver ever
+received it. **The gate measured the limit; the arms did not. That is the whole reason it was
+registered, and I would not have found this without it.**
+
+**⓶ My registered massless-limit test was stronger than what I registered, and unsatisfiable by
+construction.** The criterion is agreement "to the fit's own resolution". My script read that as a
+residual that must SHRINK with the mass — and the massless map is inverted by a FINITE quadrature,
+so the comparison carries the `q`-grid's representation error, which depends on the node count and
+**not on the mass**. A mass-independent floor cannot shrink with the mass however correct the physics
+is. I registered two arms before running either: one identifying the floor as the grid's by doubling
+the nodes (it falls `3.5` and `3.1` against a registered `3`, and stays flat across the mass decade
+to `1.05` and `1.16` against a registered `2`), one asserting the criterion on the quantity the fit
+actually reads (`A` moves `1.161e-03` against `0.003`). The original test keeps its verdict as run
+and nothing was overwritten. **If you want the registration repaired rather than amended, say so and
+I will carry it as a defect rather than as a reading.**
+
+**⓷ The label in my two comparison rows was MANY-TO-ONE and I fixed the reading before fitting
+anything.** "The fluid approximation gave" ranges over FIVE arms `r7878` measured, which differ by a
+factor sixteen in TT at `0.30` eV. I took the hardest available reading — the fluid family's best TT
+at each sum, which is the weight change alone at both — and committed it before any leg of this
+revision was fitted, because a baseline chosen to be beatable would have turned a negative finding
+into its opposite.
+
+### WHAT I DO NOT CLAIM, AND WHAT I NEED FROM YOU
+
+- **No limit, and none was read.** Your item ⓷ puts it on the closed cross-seeded envelope with its
+  own registration. I have not touched it.
+- **This is ONE fitter.** You required both. **The legs are banked for `cc66`'s second fit, whatever
+  the verdict** — `valid/{base,nq24,lmax18}` at the banked resolution. ⛔ **If `cc66`'s fit disagrees
+  beyond its own reproduction tolerance, that disagreement is the finding and no limit is read
+  through either.** The verdict above is not the joint read until that comes back.
+- **`Ⓠ⓸ᵇ`'s bound does not transport.** Its legs sit at the limit sums and are fitted against the
+  validation sums' targets, so the target cancels and the `A` values are near zero. It bounds the
+  move at the limit; the convergence gates are what speak at `0.30` and `0.60 eV`.
+- **The four cosmological parameters are still unanswered**, for the reason I declared in advance:
+  every offset leg in the banks is at zero sum. That is a limit of the banks, not a finding.
+
+⌗ **My recommendation on sequencing.** Item ⓷ is now unblocked and is the natural next revision, but
+I would rather `cc66`'s second fit land first, because a fitter disagreement would make a limit read
+on this sector worthless and the legs are already banked for it. **If you want item ⓷ started before
+that returns, say so and I will start it and carry the dependency explicitly.**
+
+## `r7884` (60) → `69` — ⚠ **A DEBT `r7882` INCURRED, MEASURED AND ROUTED: THREE SHARED RECEIPTS ARE RED FROM MY INSTRUMENT CHANGE, AND THE PATCH IS NINE MECHANISMS, NOT THE FOUR SWITCHES**
+
+⛔ **I broke three receipts that are not mine, and I am naming it rather than letting the plain
+suite report it.** `r7882` added the massive species' own hierarchy to `ACOUSTIC_two_arm.py`, and on
+the current head of `#876` the plain suite's verdict line records exactly three `still red` entries
+with their labels already on the ledger:
+
+| receipt | owner | gate | why |
+|---|---|---|---|
+| `P15_the_1p57_has_no_parameter_address_…` | `cc66`/`70` | `⓿⓿` | compares this run's resolved snapshot against the bank's stored `config` **and the instrument's source hash**, where the hash is of the REDUCED tree |
+| `P15_the_fitted_comb_moves_nine_times_less_…` | `cc66`/`70` | the `⛭⛔⛭` arm | the same blob comparison |
+| `P15_the_free_streaming_knob_…` | `cc66`/`70` | the switch CENSUS | asserts `len(ROWS) == 95`; the instrument now reports `99 switches used, 99 bound, bound-but-never-used []` |
+
+All three were introduced by `00d6dd181` (`r7863+cc66.1`) and carry `cc66`/`70` markers, so **not one
+of them is edited here.** The patch is routed, measured first, exactly as `r7878`'s tightening was.
+
+### ⛭ THE PART WORTH YOUR ATTENTION: MY FIRST PATCH WAS WRONG, AND WRONG IN A WAY THE CENSUS CAUSED
+
+My first attempt extended the eighth strip class with the **four new switch bindings** and nothing
+else, because four is what the census counts. **It failed the fixed point.** A census is a count; the
+blob comparison is an *equality*, and `r7882` added a module-level block, four functions, nine
+guarded statements, two offsets, two aliases and a narrowed handover slice **as well as** the four
+bindings. ⌗ *Your guard — before two stretches are identified by a label, check how many-to-one the
+label is — is exactly what I walked into: "the four switches" labelled a diff of nine mechanisms.*
+
+So I printed the residual diff instead of reasoning about it. **A gate that compares a hash tells you
+the trees differ and nothing whatever about where.** Everything below was read off that diff.
+
+### THE PATCH — nine parts, each named by what in the diff forces it
+
+Applied to the `_Strip` class in **both** blob-comparison receipts (`_the_1p57_…` at line `312`,
+`_the_fitted_comb_…` at line `213`), whose classes are textually the same:
+
+1. **`Ⓔ` the four bindings, on their EXACT VALUES** — into `EXACT` (line `322` / `223`), never by
+   name, for the reason you ruled in `r7879`:
+   `'NUHIER': "os.environ.get('NUHIER', '0') == '1'"`,
+   `'NQ': "int(os.environ.get('NQ', '12'))"`,
+   `'LMAXNU': "int(os.environ.get('LMAXNU', '12'))"`,
+   `'QMAXNU': "float(os.environ.get('QMAXNU', '20'))"`
+2. **`Ⓚ` the four recorded-`config` keys** — into the tuple at line `460` / its twin, which the
+   banked blob has none of.
+3. **`Ⓕ` the four `_nuhier_*` functions dropped whole** — `_nuhier_moments`, `_nuhier_rhs`,
+   `_nuhier_sigma`, `_nuhier_seed`, in `visit_FunctionDef` beside the existing `_nush` drop.
+4. **`Ⓘ` a statement guarded by `if NUHIER:` dropped whole, BOTH BRANCHES.** ⛔ *Not "take the
+   `orelse`" as the `_NU_ON` class does: the module-level block's `else` binds the quadrature to
+   `None`, which the landed file does not do either, so both branches are this revision's.*
+5. **`Ⓧ` `… if NUHIER else X` reduced to `X`** — the shape the fifth class already uses for `BVEL`.
+6. **`Ⓞ` `± _NH` dropped from an offset** — the shape the landed class already uses for `- ONU`.
+7. **`Ⓝ` `_NH`, `I_PN`, `_PSI` dropped by name** — each is wholly this revision's, so by name is
+   right here and carries no hole.
+8. **`Ⓐ` two ALIASES renamed back: `I_PNH → NVH` and `_dnp → dn`.** Each is a new name for a
+   quantity the landed file already had. `Ⓞ` and `Ⓧ` then leave `NVH = NVH` and `dn = dn`, and a
+   self-assignment is dropped.
+9. **`Ⓢ` `yF[:, :yF.shape[1]]`, left behind by `Ⓞ`, is the whole of `yF`.**
+
+And the census (`_the_free_streaming_knob_…`), three edits:
+
+- `SWEPT_SIXTY_PLUS` (lines `474`–`547`) gains `'NUHIER'`, `'NQ'`, `'LMAXNU'`, `'QMAXNU'`, each with
+  the `⛭` naming comment that set's own convention requires — **all four `r7882+60`**.
+- the prose: `NINETY-FIVE now, the thirty-five added since` → `NINETY-NINE now, the thirty-nine
+  added since`, with the ninety-sixth through ninety-ninth named as those four at `r7882+60`.
+- `len(ROWS) == 95` → `len(ROWS) == 99`.
+
+⌗ **The invariant beside it does not move and I checked rather than assumed:** `SWEPT_SIXTY_PLUS` is
+`35` names now and `39` after, `_ROWENVS` is `99`, so `len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60` still
+holds. That clause is the one doing the work in that gate and it is untouched.
+
+### WHAT IS MEASURED — `r7884`'s `tighten_nuhier.py`, 7 of 7
+
+⌗ **`r7878`'s `tighten.py` is imported, not retyped**, and the extension is a SUBCLASS of its
+`_Strip`, so the landed behaviour is inherited rather than copied.
+
+- **`⓪`** the four bindings are the instrument's own lines, **read at source**: 4 of 4 verbatim.
+- **`①` THE FIXED POINT** — with all nine parts the working tree (2986 lines) reduces to the banked
+  blob (2261 lines) exactly. **PASS.**
+- **`①′` EACH HALF IS NECESSARY, FIRST HALF** — `Ⓔ` and `Ⓚ` alone, in your applied `r7878`
+  machinery **unextended**, do *not* reduce. ⌗ *That is the patch I first wrote, kept as a callable
+  and asserted rather than described: it is what shows parts `Ⓕ`–`Ⓢ` are load-bearing.* **PASS.**
+- **`②` EACH HALF IS NECESSARY, SECOND HALF** — parts `Ⓕ`–`Ⓢ` with `Ⓔ` **omitted** do not reduce
+  either, which is what shows `Ⓔ` is load-bearing. ⛔ *These two are not the same measurement and
+  neither implies the other, and I had them the wrong way round once: `①′` drops eight parts and
+  keeps the bindings, `②` keeps the eight and drops the bindings.* **PASS.**
+- **`③` THE HOLE, BOTH WAYS** — for each of `NUHIER`, `NQ`, `LMAXNU`, `QMAXNU`, a moved DEFAULT
+  **passes** with the bindings taken by name (that is the hole you closed for the fifth and seventh
+  classes in `r7879`) and is **red** on exact value. **4 of 4, both ways.**
+
+⛔ **What I am NOT claiming.** I have not run the three receipts with the patch applied, because
+applying it means editing them and they are not mine. What is measured is the machinery: the strip
+reduction is a fixed point again, the extension is load-bearing, and the controls are red. That is
+the same evidence `r7878` routed and you applied at `r7879`, and it is the whole of it.
+
+⌗ **One consequence for you to rule on.** The census gate's number has now moved twice in four
+revisions, both times by my hand. If you would rather it asserted a *lower bound with every mover
+named* instead of an equality, say so and I will route that as a separate patch — but I will not
+weaken someone else's gate on my own initiative, and an equality that forces a named account of
+every mover is the stronger shape.
+
+## `r7884` (60) → `69` — ⚠ **THE LIMIT READ IS BLOCKED ON THIS BOX, NOT ON THE PHYSICS; AND A DESIGN WAS DISQUALIFIED BY ITS OWN COST QUESTION BEFORE IT WAS BUILT**
+
+Order `r7879` item ⓷ asked for the control's limits on the jointly validated sector. **No limit is
+read.** `r7884` is landed on `#876` as the registered split — the CMB grid complete at `10` of `10`,
+the limit read written with its plumbing gates ahead of any number, and `r7882`'s strip-class
+debt measured and routed. What follows is the part that needs your attention: **why the lensing grid
+has not been obtained, and the two wrong answers I went through on the way.**
+
+### ⓵ THE FIRST WRONG ANSWER: I SPENT FIVE LAUNCHES ON A DISTINCTION THAT DOES NOT EXIST
+
+I recorded, and acted on, the belief that a lensing point *"does not fit inside a tracked task"* and
+that `setsid nohup … & disown` was **the one launch form that survives here.** Five launches died.
+
+⛔ **The cause is a CONTAINER RESTART, about every ninety minutes, and it was two commands away the
+whole time.** This container booted at `08:40:48` and the four legs were found gone at `08:40`; an
+earlier reading places a boot at about `07:07`, which accounts for the previous death. `cat
+/proc/uptime` and `ps -o etime= -p 1` settle it. ⇒ **Against a restart the launch form buys nothing:
+a tracked task, a detached session and a disowned process die identically.** No error, no traceback,
+no out-of-memory, `15547` of `16087` MB free — I read the absence of an error as "cause not
+established" when the right move was to ask what killed the *machine*, not the process.
+
+⌗ *The filesystem, by contrast, survives — checked, not assumed. That is what made the next question
+worth asking at all.*
+
+### ⓶ THE SECOND WRONG ANSWER, AND THIS IS THE ONE WORTH YOUR TIME: THE REMEDY I WAS ABOUT TO BUILD WOULD HAVE BEEN SLOWER THAN DOING NOTHING
+
+Having established that disk survives, I registered checkpointing as the remedy: the expensive
+object is the instrument solve inside `phi_shape`, over `NKP = 220` modes at about `176` state
+variables each, returning two one-dimensional arrays. Chunk the `k`-grid, write each chunk, resume
+after a restart. **I registered two questions to answer BEFORE building it** — how the cost splits
+between a fixed setup and a per-mode margin, and whether the modes are independent enough that
+solving a subset and concatenating is exact.
+
+The first question killed it. Solo, on an idle box:
+
+| stage, at its real size | measured |
+|---|---|
+| `GrowthKDep` on `48` `k`-points | `12.5` s |
+| `evolve`, `2` modes | `599.1` s |
+| `evolve`, `4` modes | `611.7` s |
+| `evolve`, `40` modes | `824.2` s |
+
+**Doubling the modes from `2` to `4` cost `12.6` s.** The step count is set by `KMAX`, which both
+runs span, so a FIXED time-stepping cost dominates: `F ≈ 586` s with a margin of about `6.3` s per
+mode — a model registered on the two small runs and then **tested** on the `40`-mode run, which it
+predicted at `838` s against `824.2` s measured.
+
+⇒ **Eleven chunks of twenty modes would each re-pay the fixed cost: `≈ 7832` s against `≈ 1972` s
+for the whole grid in one call.** The checkpointing design was not merely unnecessary; it would have
+roughly quadrupled the work. ⛔ *And the independence test never had to be run — the cost question
+disqualified the design before the correctness question was reached. Had I assumed both ("a linear
+hierarchy separates in `k`, so chunk it"), I would have built something correct and slower than
+nothing.*
+
+### ⓷ WHAT THE REAL CAUSE TURNS OUT TO BE, AND THE ONE NUMBER I HAVE NOT GOT
+
+The five launches ran **four legs at once on four cores**, and the solve is threaded — at the full
+mode count one leg takes about `3.9` cores on its own. ⇒ **Four of them oversubscribed the box
+roughly sixteen-fold**, so each accrued CPU fast while making little progress and no leg ever
+finished inside a container lifetime. Every restart then lost all four.
+
+⚠ **AND MY EXTRAPOLATION TO `220` MODES IS WRONG, WHICH I AM REPORTING RATHER THAN SMOOTHING.** The
+linear model predicts about `33` minutes of CPU for the full solve. A single solo leg is past **`1h
+28m` of CPU** (`22.5` minutes of wall clock at `3.9` cores) and has not finished. ⇒ **The scaling
+from `40` modes to `220` is superlinear**, which is what a stiff solver's per-step linear algebra on
+a `38720`-variable system would do, and **the true per-point cost is not yet measured.** The model
+earned its prediction at `40` modes and does not transfer; I am not going to quote `33` minutes as
+if it did.
+
+### ⇒ THE REMEDY, WHICH NEEDS NO CODE CHANGE, AND ITS STATUS
+
+Run the generator at `JOBS=1`. One point gets the whole box, and each completed point **is banked** —
+the generator is already idempotent and skips banked points, so the grid accumulates two or three
+points per container lifetime and completes across four or five restarts with nothing checkpointed
+and nothing written.
+
+⚠ **This is UNDER TEST as I write, not a result.** The first solo point is in flight. If it banks
+inside one container lifetime the approach is confirmed and the grid is simply slow; if the restart
+beats even a solo leg, then one point does not fit one container lifetime and that is the finding, at
+which point the thing to measure is what a point actually costs — **not** a sixth launch strategy.
+
+### WHAT I AM ASKING YOU FOR
+
+⌗ **Nothing is blocked on a ruling** — item ⓷ is mine to finish and I am finishing it. Two things are
+yours if you want them:
+
+- **The routed strip-class patch** (the section above this one) needs applying before the three
+  shared `P15` receipts come back green. They are `cc66`'s and `70`'s and I have not touched them.
+- **If this box cannot hold a lensing point at all**, the honest options are to run the grid
+  somewhere that is not reclaimed every ninety minutes, or to accept that item ⓷'s limit read lands
+  over several revisions as points accumulate. ⛔ *The one option I am not taking on my own is
+  lowering the resolution, because a grid the banked grids cannot be compared against answers a
+  different question.* If you want a different call, say so.
+
+⌗ *And the one-fitter dependency `r7882` declared is unchanged: `cc66`'s second fit has not returned,
+so even a complete grid would not yet give a joint limit.*

@@ -1,0 +1,78 @@
+{
+ "all_pass": true,
+ "differ_in_source": true,
+ "fluid_identical": true,
+ "fluid_rows": {
+  "pol": {
+   "arrays_identical": true,
+   "config_same": false,
+   "n_arrays": 11
+  },
+  "tt": {
+   "arrays_identical": true,
+   "config_same": false,
+   "n_arrays": 6
+  }
+ },
+ "landed_has_no_switch": true,
+ "off_identical": true,
+ "off_rows": {
+  "absent": {
+   "pol": {
+    "arrays_identical": true,
+    "config_same": false,
+    "n_arrays": 11
+   },
+   "tt": {
+    "arrays_identical": true,
+    "config_same": false,
+    "n_arrays": 6
+   }
+  },
+  "zero": {
+   "pol": {
+    "arrays_identical": true,
+    "config_same": false,
+    "n_arrays": 11
+   },
+   "tt": {
+    "arrays_identical": true,
+    "config_same": false,
+    "n_arrays": 6
+   }
+  }
+ },
+ "patched_has_switch": true,
+ "refusals": {
+  "a grid of one node": {
+   "message": "\u26d4 NQ=1 LMAXNU=12 QMAXNU=20.0: the grid needs at least two nodes, the hierarchy at least the quadrupole, and a positive cut",
+   "rc": 1,
+   "refused": true
+  },
+  "a non-positive cut": {
+   "message": "\u26d4 NQ=12 LMAXNU=12 QMAXNU=0.0: the grid needs at least two nodes, the hierarchy at least the quadrupole, and a positive cut",
+   "rc": 1,
+   "refused": true
+  },
+  "beside the fluid approximation": {
+   "message": "\u26d4 NUHIER=1 and NUPERT=1 are two models of ONE sector and it has one slot: the fluid approximation and the hierarchy cannot both carry the species' perturbations, so this refuses rather than letting one win silently",
+   "rc": 1,
+   "refused": true
+  },
+  "no NUFD": {
+   "message": "\u26d4 NUHIER=1 needs NUFD=1 and MNU != 0: the hierarchy IS the massive species', and here NUFD=0 MNU=0.3",
+   "rc": 1,
+   "refused": true
+  },
+  "no quadrupole": {
+   "message": "\u26d4 NQ=12 LMAXNU=1 QMAXNU=20.0: the grid needs at least two nodes, the hierarchy at least the quadrupole, and a positive cut",
+   "rc": 1,
+   "refused": true
+  },
+  "zero sum": {
+   "message": "\u26d4 NUHIER=1 needs NUFD=1 and MNU != 0: the hierarchy IS the massive species', and here NUFD=0 MNU=0.0",
+   "rc": 1,
+   "refused": true
+  }
+ }
+}

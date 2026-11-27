@@ -235,7 +235,39 @@ def _tree_is_bL_plus_dneff(bL):
                           "and float(os.environ.get('MNU', '0.0')) != 0.0"),
                  '_NU_ON': ("os.environ.get('NUFD', '0') == '1' "
                             "and float(os.environ.get('MNU', '0.0')) != 0.0"),
-                 '_MNU_EARLY': "float(os.environ.get('MNU', '0.0'))"}
+                 '_MNU_EARLY': "float(os.environ.get('MNU', '0.0'))",
+                 # ⛭ ninth class -- r7885 (69), applied from 60's r7884 routing (tighten_nuhier.py, 7 of 7): the
+                 #   massive species' own Boltzmann hierarchy, NUHIER, whose four bindings are matched on exact value
+                 'NUHIER': "os.environ.get('NUHIER', '0') == '1'",
+                 'NQ': "int(os.environ.get('NQ', '12'))",
+                 'LMAXNU': "int(os.environ.get('LMAXNU', '12'))",
+                 'QMAXNU': "float(os.environ.get('QMAXNU', '20'))"}
+        #: ninth class: names wholly r7882's, functions dropped whole, and two aliases renamed back to the landed names
+        NAMES9 = {'_NH', 'I_PN', '_PSI'}
+        FUNCS9 = {'_nuhier_moments', '_nuhier_rhs', '_nuhier_sigma', '_nuhier_seed'}
+        ALIAS9 = {'I_PNH': 'NVH', '_dnp': 'dn'}
+
+        def visit_Name(self, node):
+            if node.id in self.ALIAS9:
+                return _ast.copy_location(_ast.Name(id=self.ALIAS9[node.id], ctx=node.ctx), node)
+            return node
+
+        def visit_Subscript(self, node):
+            # --- ninth class: `y[:, :y.shape[1]]`, left once `± _NH` is dropped, is the whole of `y`.
+            self.generic_visit(node)
+            s = node.slice
+            if (isinstance(node.value, _ast.Name) and isinstance(s, _ast.Tuple) and len(s.elts) == 2
+                    and all(isinstance(e, _ast.Slice) for e in s.elts)
+                    and s.elts[0].lower is s.elts[0].upper is s.elts[0].step is None
+                    and s.elts[1].lower is None and isinstance(s.elts[1].upper, _ast.Subscript)
+                    and isinstance(s.elts[1].upper.value, _ast.Attribute)
+                    and s.elts[1].upper.value.attr == 'shape'
+                    and isinstance(s.elts[1].upper.value.value, _ast.Name)
+                    and s.elts[1].upper.value.value.id == node.value.id
+                    and isinstance(s.elts[1].upper.slice, _ast.Constant)
+                    and s.elts[1].upper.slice.value == 1):
+                return _ast.copy_location(_ast.Name(id=node.value.id, ctx=node.ctx), node)
+            return node
 
         # --- fifth class (a): a BVEL-guarded term added to or subtracted from a landed expression,
         #     whose `orelse` is Constant 0, collapses the whole BinOp back to the landed left operand.
@@ -243,6 +275,9 @@ def _tree_is_bL_plus_dneff(bL):
             # ⛔ the BVEL test is read BEFORE the children are visited, because `visit_IfExp` below
             #   would otherwise have already collapsed the guard to its `orelse` and left a `+ 0`.
             r = node.right
+            # --- ninth class: `± _NH` dropped from an offset.
+            if (isinstance(node.op, (_ast.Add, _ast.Sub)) and isinstance(r, _ast.Name) and r.id == '_NH'):
+                return self.visit(node.left)
             # --- eighth class: a `* _nush(...)` factor is exactly `1.0` unset; scoped to a CALL of that name.
             if (isinstance(node.op, _ast.Mult) and isinstance(r, _ast.Call)
                     and isinstance(r.func, _ast.Name) and r.func.id == '_nush'):
@@ -261,6 +296,8 @@ def _tree_is_bL_plus_dneff(bL):
 
         # --- fifth class (b): any other IfExp on BVEL is the landed expression in its `orelse`.
         def visit_IfExp(self, node):
+            if isinstance(node.test, _ast.Name) and node.test.id == 'NUHIER':     # ninth class
+                return self.visit(node.orelse)
             self.generic_visit(node)
             if isinstance(node.test, _ast.Name) and node.test.id == 'BVEL':
                 return node.orelse
@@ -282,7 +319,7 @@ def _tree_is_bL_plus_dneff(bL):
 
         def visit_Assign(self, node):
             t = node.targets[0]
-            if isinstance(t, _ast.Name) and t.id in self.NAMES:
+            if isinstance(t, _ast.Name) and (t.id in self.NAMES or t.id in self.NAMES9):
                 return None
             # --- eighth class, matched on the EXACT value expression, not by name.
             if (isinstance(t, _ast.Name) and t.id in self.EXACT
@@ -297,6 +334,10 @@ def _tree_is_bL_plus_dneff(bL):
             if (isinstance(v, _ast.IfExp) and isinstance(v.test, _ast.Name) and v.test.id == 'BVEL'):
                 return None
             self.generic_visit(node)
+            # --- ninth class: once the aliases are renamed back, `NVH = NVH` and `dn = dn` are self-assignments.
+            if (len(node.targets) == 1 and isinstance(node.targets[0], _ast.Name)
+                    and isinstance(node.value, _ast.Name) and node.targets[0].id == node.value.id):
+                return None
             return node
 
         # --- fifth class (c): an added assertion that only states the layout invariant.
@@ -305,7 +346,7 @@ def _tree_is_bL_plus_dneff(bL):
         #     what it is for.*
         # --- eighth class: the one function the switch introduces, whose unset body is `return 1.0`.
         def visit_FunctionDef(self, node):
-            if node.name == '_nush':
+            if node.name == '_nush' or node.name in self.FUNCS9:
                 return None
             self.generic_visit(node)
             return node
@@ -318,6 +359,10 @@ def _tree_is_bL_plus_dneff(bL):
         def visit_If(self, node):
             s = _ast.dump(node.test)
             if "id='DNEFF'" in s or "id='YHE'" in s:
+                return None
+            # --- ninth class: a statement guarded by `if NUHIER:` goes whole, BOTH branches (its `else` binds the
+            #     quadrature to None, which the landed file does not do either).
+            if isinstance(node.test, _ast.Name) and node.test.id == 'NUHIER':
                 return None
             # --- seventh class -- r7865 (69), on 60's r7864 routing: the Fermi-Dirac background, `NUFD`.
             #     Its switch is `NUFD and MNU != 0.0`, bound twice (`NUFD` and `_NU_ON`).  `if NUFD:` builds
@@ -358,7 +403,7 @@ def _tree_is_bL_plus_dneff(bL):
         def visit_Dict(self, node):
             self.generic_visit(node)
             keep = [(k, v) for k, v in zip(node.keys, node.values)
-                    if not (isinstance(k, _ast.Constant) and k.value in ('DNEFF', 'YHE', 'BVEL', 'MNU', 'FOURPI', 'PRIMNORM_env', 'NUFD', 'NUPERT', 'NUSHOFF', 'NUPARTS', 'NUCA'))]
+                    if not (isinstance(k, _ast.Constant) and k.value in ('DNEFF', 'YHE', 'BVEL', 'MNU', 'FOURPI', 'PRIMNORM_env', 'NUFD', 'NUPERT', 'NUSHOFF', 'NUPARTS', 'NUCA', 'LMAXNU', 'NQ', 'NUHIER', 'QMAXNU'))]
             node.keys = [k for k, _ in keep]
             node.values = [v for _, v in keep]
             return node

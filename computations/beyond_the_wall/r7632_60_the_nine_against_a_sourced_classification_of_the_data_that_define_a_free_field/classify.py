@@ -163,7 +163,11 @@ c3 = note('ReedSimon1975' in BIBITEMS and 'Weyl1910' in BIBITEMS,
           "the limit-point/limit-circle original -- so entry 2's domain is sourced as well")
 # ⌗ THE ONE GAP, measured rather than asserted: no single monograph on the subject is cited anywhere.
 MONO = [k for k in BIBITEMS if re.search(r'curved|CurvedSpace', k, re.I)]
-titles = ' '.join(re.findall(r'\\bibitem\{[^}]+\}(.{0,220})', '\n'.join(RAW.values()), re.S))
+# ⛭ r7885 (69): the window is read in a LOOKAHEAD.  As first written, findall CONSUMED each bibitem's 220-character
+#   window, so a short bibitem swallowed the next one's header and that one was never visited: after P7's literature
+#   survey placed a short bibitem directly before Wald1994, Wald's title fell inside the previous window, cut mid-title,
+#   and this search reported "no monograph cited" where P7 cites one.  Each bibitem now gets its own window.
+titles = ' '.join(re.findall(r'\\bibitem\{[^}]+\}(?=(.{0,220}))', '\n'.join(RAW.values()), re.S))
 titles_n = ' '.join(titles.split())
 mono_titles = re.findall(r'[Qq]uantum [Ff]ield [Tt]heory in [Cc]urved', titles_n)
 print(f"   bibitem keys naming curved spacetime: {MONO if MONO else 'NONE'}")

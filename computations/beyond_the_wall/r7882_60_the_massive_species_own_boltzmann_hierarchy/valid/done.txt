@@ -1,0 +1,2 @@
+done fail=0 banks=base
+done fail=0 banks=nq24 lmax18

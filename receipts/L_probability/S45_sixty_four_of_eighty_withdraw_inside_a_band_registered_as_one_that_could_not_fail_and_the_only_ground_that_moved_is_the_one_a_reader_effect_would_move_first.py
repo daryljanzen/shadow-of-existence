@@ -373,6 +373,12 @@ _REPOINT = 'rewritten on one rate; re-pointed to the sentence that replaced it'
 _verdicted = [_k for _k in _sample_keys if _rows_now.get(_k) != _rows_then.get(_k)
               and not any(_REPOINT in _v and _v.split('\t')[0] == _k[0] for _v in _rows_now.values()
                           if _rows_then.get(_k) and _v.split('\t')[6:7] and _rows_then[_k].split('\t')[6] in _v)]
+# ⛭ r7885 (69): a sampled key whose RECEIPT the owner retired (file gone from the tree, its rows removed with it) is
+#   not a verdict written to the ledger -- it is the receipt leaving.  The chat seat retired B5 at 60c0e7ad9 ("its
+#   mod-2 index rested on the pair-flip action, which is the frame's and not the walls'"); two of the eighty were
+#   B5's.  Excluded only when the file is ABSENT, so a row changed under a live receipt still turns this red.
+_verdicted = [_k for _k in _verdicted
+              if not (_k not in _rows_now and not os.path.exists(os.path.join(ROOT, _k[0])))]
 print(f'      the {len(_sample_keys)} sampled keys in the ledger at {PREG}~1: '
       f'{len(_sample_keys) - len(_absent)};  rows changed since: {len(_verdicted)};  '
       f'(whole-file identity, no longer the test: {_base_at_preg == _base_now});  '
