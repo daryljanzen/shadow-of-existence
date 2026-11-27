@@ -244,3 +244,36 @@ it. This first leg began about `38` minutes into the lifetime and is likely to b
 ⌗ *Which costs nothing but time: the generator skips what is banked, so a leg killed mid-point is
 retried from the start in the next container, and only a leg that STARTS early enough banks. The
 grid therefore completes at roughly one or two points per restart rather than two or three.*
+
+---
+
+## ⇒ THE PER-POINT COST, NOW EXACT, AND TWO CLAIMS OF MINE CHECKED RATHER THAN ASSERTED
+
+The first point banked with the completed record: **`lcdm_S006`, `34m 29s` of wall clock and
+`2h 16m 29s` of CPU on about `3.95` cores.** So the `> 2h 14m` above was a lower bound on a figure
+that is now measured, and it replaces the linear model's `33` minutes for good.
+
+| | |
+|---|---|
+| per point, wall clock | `≈ 35` min |
+| per point, CPU | `≈ 2h 16m` |
+| cores used by one leg | `≈ 3.95` |
+| container lifetime, measured three times | `≈ 93`, `≈ 96` min (boots at `07:07`, `08:40:48`, `10:16:57`) |
+| points per lifetime, if started early | **two** |
+
+⇒ **Ten points is five to six container lifetimes**, and because each finished point is banked and
+the generator skips what is banked, the grid accumulates rather than restarting. The one thing that
+matters operationally is **relaunching early in a lifetime**: a point begun more than about fifty
+minutes in will not finish before the restart takes it, and that leg's work is lost.
+
+### ⛭ AND TWO THINGS I ASSERTED ARE NOW CHECKED
+
+⓵ **"Additive metadata: changes no number."** I said that of completing the switch record, and it is
+now verified rather than argued: the re-run point's bandpowers are **bit-identical** to the deleted
+run's — `1.4324e-07 .. 2.8055e-08` both times. *The record changed and the physics did not.*
+
+⓶ **The record is actually readable by the gate that needs it.** The banked point carries
+`NUHIER=1`, `NQ=12`, `LMAXNU=12`, `QMAXNU=20`, `BVEL=1`, `NUFD=1`, `PRIMNORM=1` — the exact strings
+`Ⓛ⓹` compares against. ⌗ *Checked on the artefact, not on the recorder: a recorder that writes the
+keys and a gate that reads different ones would have passed every static check and failed on the
+tenth point.*
