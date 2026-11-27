@@ -3700,6 +3700,14 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46040073029",
     "since": "f2e302148f07222d006d0f1622d36b3a8641f797"
    },
+   "receipts/P07_CR_framework/I7_conserved_charge_carries_three_objects_and_one_denies_the_others.py": {
+    "gates": [
+     "sense A is carried by four papers now --",
+     "\u26d4 and the fifth is NAMED with its cause:"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46044929956",
+    "since": "e59e785ad18eff4319fd72be8b9146c42001dad4"
+   },
    "receipts/RP_34_gr/G1_the_arrival_path_metric.py": {
     "gates": [
      "the Petrov filling: the claim anchor is"
