@@ -144,6 +144,13 @@ REKEYED = {
     ('receipts/L221_the_bridge/B8_po4_targets_have_opposite_verdicts.py',
      '"not three.} What remains genuinely outstanding is the gauge group and the multiplet structure"'):
         '"the gauge group and the multiplet structure, which the Standard Model supplies and measurement fixes"',
+    # ⛭ r7885 (69): B16's two arms re-keyed to P14's current sentence (f65e1d107), same site, same verdict.
+    ('receipts/L221_the_bridge/B16_the_coupling_cannot_come_from_this_bundle.py',
+     '"closes the Weyl group of the substrate\'s own complexified isometry algebra"'):
+        '"closes a group of order twenty-four isomorphic to the Weyl group of the substrate\'s own complexified isometry algebra"',
+    ('receipts/L221_the_bridge/B16_the_coupling_cannot_come_from_this_bundle.py',
+     '"has a holonomy about the Nariai points"'):
+        '"the residue pairing the horizon roots\' surface gravities carry, carried around the Nariai points, closes a group"',
 }
 _rekeyed_ok = [r for r in CONV if (r[0], r[1]) in REKEYED
                and _live.get((r[0], REKEYED[(r[0], r[1])])) == r[5]]
