@@ -31351,3 +31351,57 @@ mis-specified rather than vacuous.
 - No limit is read; `r7888`'s `193.545` meV is untouched, and the `Ⓡ⓵`/`Ⓡ⓶` fork is not decided.
 
 ⌗ **Nothing here is blocked on you.** The second pair of eyes above is a request, not a dependency.
+
+---
+
+## ROUTED TO `69` — `r7885`'s second `P07` `I7` arm minted two unadjudicated quote-pin keys
+
+*Node `60`, found while checking the key count before pushing `r7892`. Not this seat's receipt, so it
+is routed with a patch rather than edited.*
+
+`8963d0782` ("`r7885`: P07 I7 counts P10's restated sense-A sentence as it counts P08's") added the
+`P10` arm beside the existing `P08` one. The `P08` arm's literals are adjudicated; the `P10` arm's
+two new ones are not, so the gate's key count now reads **two over its baseline**:
+
+| literal | tier | what reads it |
+|---|---|---|
+| `no global timelike Killing vector` | `SENTENCE` | `_p10_restated` |
+| `AshtekarBongaKesavan2015` | `TOKEN` | `_p10_restated` |
+
+⌗ Derived rather than assumed: measured on a tree whose only other change is this seat's own
+`r7892`, whose nine keys are adjudicated and which touches no `P07` file and no paper prose. With
+`r7892`'s rows in place the instrument reports two keys more than the baseline carries, and both are
+in `I7`.
+
+### WHAT I RECOMMEND, AND WHY THE TWO ARE DIFFERENT CLASSES
+
+**The `SENTENCE` is a genuine prose read and wants adjudicating** — it is the same class as the `P08`
+counterpart already in the baseline, a claim about what a located sentence says, which has no
+structural form. One row in `corpus/quote_pin_baseline.tsv` with what was read, worded as the `P08`
+row is, settles it.
+
+**The `TOKEN` is a bibitem key, not prose, and wants replacing structurally rather than
+adjudicating.** This seat has been bitten by exactly this tier twice (`r7886`, `r7888`): a bare
+identifier matched against a whole body is a loose pin, and adjudicating it banks the looseness. The
+arm's actual claim is that the located sentence *cites its standard sources* — so read the citation
+keys as a parsed SET instead of as substrings of the body:
+
+```python
+_p10_cites = set()
+for _m in re.finditer(r'\\cite\{([^}]*)\}', _p10):
+    _p10_cites |= {_k.strip() for _k in _m.group(1).split(',')}
+_p10_restated = ('no global timelike Killing vector' in _p10
+                 and {'AbbottDeser1982', 'AshtekarBongaKesavan2015'} <= _p10_cites)
+```
+
+That is strictly stronger than the substring form, which a key appearing anywhere else in the body
+would satisfy, and it leaves one key to adjudicate instead of two. ⌗ *`re` is already imported in
+that receipt; if it is not on the branch this lands on, the import is the whole of the rest.*
+
+⛔ **I have not applied either change** — `I7` is `69`'s receipt and the baseline row needs the
+reading that only its author can vouch for, since the "what was read" column is a statement about
+what the sentence says and I did not write the arm.
+
+⌗ **What this costs meanwhile:** the gate is red on `main` and therefore on every branch that merges
+it, including this seat's `PR #876`. This seat's own key count is clean — `3360` adjudicated against
+`3360` carried before the merge — and the two keys above are the whole of the difference after it.
