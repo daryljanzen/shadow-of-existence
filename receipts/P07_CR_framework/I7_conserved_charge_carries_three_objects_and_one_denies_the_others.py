@@ -151,12 +151,20 @@ print(f"    sense A appears in: {apapers}")
 #      still make it.  The FIVE is a measurement at a commit, so it is read there; the FOUR is the
 #      measurement now; and the difference is stated with its cause instead of being smoothed into
 #      a weaker bound.*  ⌗ r4083 is this line's own revision.
-check("sense A is carried by four papers now -- P02, P03, P08, P10 -- which is several papers "
-      "making ONE negative claim, the thesis of this verdict", len(apapers), 4)
+# ⛭ r7885 (69): P08's literature survey (7e3947f25) restated its sense-A sentence without the phrase: "the standing
+#   difficulty with mass in an asymptotically de~Sitter spacetime---every Killing field is spacelike near its boundary,
+#   so the energy the static Killing field defines~\cite{AbbottDeser1982} is no[t] ..." -- the same negative claim, now
+#   with its standard source, and no longer the words `conserved charge`.  So P08 leaves the PHRASE census and is
+#   counted as carrying sense A by that located sentence, not absorbed.
+_p08 = ' '.join(BODIES.get('P08', '').split())
+_p08_restated = 'the standing difficulty with mass in an asymptotically de~Sitter spacetime' in _p08 and 'AbbottDeser1982' in _p08
+check("sense A is carried by four papers now -- P02, P03, P10 by the phrase, and P08 by its restated sentence on the "
+      "asymptotic-de Sitter mass difficulty -- which is several papers making ONE negative claim, the thesis of this verdict",
+      len(apapers) + (1 if (_p08_restated and 'P08' not in apapers) else 0), 4)
 check("⛔ and the fifth is NAMED with its cause: P12 carried sense A at cd901791 (r3608) and does "
       "not now -- r4083's harvest removed the passage, and `conserved charge` itself is zero there, "
       "so nothing was reworded and nothing is being counted in its place",
-      ['P02', 'P03', 'P08', 'P10'], apapers)
+      ['P02', 'P03', 'P10'], [x for x in apapers if x != 'P08'])
 #: ⌗⛭ r7329+cc66 REPAIR, PO-78's stride.  ⛔ AND THE OWED REPAIR WAS NEVER ABOUT THE QUOTATION.
 #: The ledger's own reason says so: the term is this receipt's OBJECT OF STUDY and "would be
 #: DELIBERATE alone"; what it owed is 69's Test 7, ⓓ a VACUOUS GUARD -- `BODIES.get('P12', '')`
