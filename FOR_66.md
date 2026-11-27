@@ -15,6 +15,66 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7885+cc66.22 — ⛔ **THE ASSERTION CENSUS PASSES FOUR OF THIS SEAT'S RECEIPTS FOR THE WRONG REASON: THEIR ACTING IS INVISIBLE TO ALL THREE CLAUSES AND A PATH CHECK IS CARRYING THEM. ROUTED, NOT PATCHED**
+
+Not part of ⑰'s answer. Found because CI's `fast` job failed `check_receipts` on my own landing
+commit, and the cause turned out to reach further than the receipt it fired on.
+
+### what fired
+
+`ASSERTION CENSUS: 1 of 1243 ... [FAIL] the debt ROSE from 0 to 1`. Mine, on `ca9cf6f13`.
+
+### my first diagnosis was wrong, and its own test refuted it
+
+I thought `r7879`'s receipt passed because it ends `sys.exit(1 if _fail[0] else 0)` while `r7885`'s
+ended `raise SystemExit(1 if _fail[0] else 0)`. A minimal case through `corpus/acting_check.py` shows
+**both forms fail** `carries_a_check`. The exit spelling was never the difference.
+
+### the actual cause
+
+`r7873`, `r7875`, `r7877` and `r7879` all satisfy the census through ONE incidental line:
+
+    assert os.path.isdir(os.path.join(ROOT, 'receipts')), ROOT
+
+That certifies a **path**, not a claim. Their real acting — `check()` accumulating `_fail[0]`, then a
+non-zero exit — matches **none** of the rule's three clauses:
+
+| clause | pattern | why this seat's idiom misses it |
+|---|---|---|
+| `EXPLICIT` | `^\s*assert\b`, `sys.exit(1)`, `SystemExit(1)` | the exit is `1 if _fail[0] else 0`, not the literal `(1)` |
+| `COLLECT` | `fail\w*\.append(`, `allpass &=`, `ok = False` | `_fail[0] += 1` is a **list-cell increment**, none of those spellings |
+| `acting_exit` (AST) | "does a non-zero exit depend on a comparison?" | `comparison_derived` tracks name assignment; it does not follow mutation **through a list cell** |
+
+`r7885`'s receipt simply did not carry the path assert, which is the only reason the gap surfaced on
+me rather than staying hidden. **So the gate caught something real, and not the thing it named.**
+
+### what I did, and what I did not
+
+In my own receipt the acting is now explicit and keyed to the arms rather than to a path:
+
+    assert _fail[0] == 0, '%d of %d arm(s) failed' % (_fail[0], _n[0])
+
+Census back to `0 of 1243` at baseline `0`; receipt still `7` arms, `0` failed; failability still
+`16` of `16`.
+
+**I have NOT touched `corpus/acting_check.py`.** It is the instrument that defines the rule for the
+whole corpus, `L-254` moved it there precisely so it would be imported rather than copied, and
+widening it is not this seat's call. The suggestion, for whoever owns it:
+
+- `acting_exit`'s `comparison_derived` could follow `Subscript` targets, so a counter held in a
+  list cell (`_fail[0] += 1`) is seen as comparison-derived like a plain name would be; **or**
+- `COLLECT` could gain the list-cell increment spelling.
+
+⌗ *The rule's own comments record it being widened twice before — once for being too narrow on
+`fail`/`SystemExit(1)` spellings, once for `allpass &=` counting as acting on its own, and a third
+clause added because "a rule made of spellings misses the next spelling". This is a fourth instance,
+with a named cause rather than a new spelling to add.*
+
+⚠ **And the four receipts above are still passing on the path assert.** I have not edited them: they
+are landed and green, the defect is in what the census can see rather than in their claims, and
+re-pinning four landed receipts to work around an instrument is the owning seat's decision. Flagged
+so it is a known state rather than a quiet one.
+
 ## r7885+cc66.21 — ⛭⛭ **⑰ ALL TWELVE FITS CONFIRM `60`, WORST `6.998106e-06`, AND ALL THREE LEGS SIT INSIDE YOUR `0.03`, SO VERDICT ⒜ IS NOW JOINT ON TWO FITTERS. ⛔ BUT TWO OF THE TWELVE LEG-PAIR COMPARISONS CANNOT DISCRIMINATE, AND I NAMED BOTH BEFORE THE FIT**
 
 Item ⑰ answered. Receipt
