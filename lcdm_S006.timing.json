@@ -1,0 +1,10 @@
+{
+ "arm": "lcdm",
+ "machine": "x86_64",
+ "nproc": 4,
+ "run_id": "46016816497",
+ "runner": "GitHub Actions 1000040100",
+ "sha": "46f824c2feba35951268316528e843d19c849200",
+ "tag": "S006",
+ "wall_s": 1399
+}
