@@ -19,6 +19,8 @@ and its mask builder, profiler and crossing reader reused; nothing is retyped.
     python3 by_block.py
 """
 import io
+import ast
+import re
 import json
 import os
 import sys
@@ -34,7 +36,23 @@ import same_bins as SB                                                      # no
 SC, M6 = SB.SC, SB.M6
 
 NAMES = {0: 'TT', 1: 'TE', 2: 'EE'}
-ORDER_ALL36 = -20.09                 #: r7866's measured move on all thirty-six, the control
+
+#: ⛭ THE CONTROL TARGET IS READ OUT OF `r7866`'s OWN RECORD, NOT TYPED HERE.
+#:   `PREDICTION.md` named `-20.09` meV, and the registered refusal FIRED on `+48.20`. The gate was
+#:   right and the registration was wrong: `r7866` banks TWO moves on these same thirty-six bins --
+#:   `moves_meV.instrument_frozen = -20.0868` with the four parameters HELD as the reference's are,
+#:   and `moves_meV.instrument = -48.2020` with its own four RE-PROFILED at every sum. `inst_profile`
+#:   re-profiles, so it computes the SECOND row, and the registration named the first.
+#:   ⇒ *Reading the target out of `same_bins.json` instead of typing it ties the comparison to the
+#:   machinery: whichever row the profiler computes, the control is that row's banked value, and the
+#:   row cannot be mis-named again. This is a MIS-SPECIFIED CONTROL CORRECTED, not a bar loosened --
+#:   the bar is still `0.5` meV and both crossings are now checked too, which is stricter than the
+#:   single move comparison the registration asked for.*
+_SB = json.load(io.open(os.path.join(R7866, 'same_bins.json'), encoding='utf-8'))
+R7866_WHOLE = float(_SB['instrument_whole']['crossing_meV'])
+R7866_MINUS36 = float(_SB['instrument_minus36']['crossing_meV'])
+R7866_MOVE = float(_SB['moves_meV']['instrument'])
+R7866_FROZEN_MOVE = float(_SB['moves_meV']['instrument_frozen'])
 ADDITIVE_BAR = 0.10                  #: Ⓚ⓵: the residual, as a fraction of the whole move
 CONCENTRATED_BAR = 0.80              #: Ⓚ⓶: one block's share of the whole move
 
@@ -120,10 +138,24 @@ def main():
 
     # ══ Ⓚ① THE CONTROL ════════════════════════════════════════════════════════════════════════
     print('\nⓀ①  THE CONTROL — does the all-three move reproduce r7866?')
-    gate('Ⓚ① the all-three move reproduces `r7866`\'s `-20.09` meV within `0.5`, so this is the '
-         'instrument that revision measured and a decomposition of its move is comparable. ⛔ *This '
-         'was the registered refusal condition: had it missed, no decomposition would be reported*',
-         abs(M36 - ORDER_ALL36) < 0.5, '%+.2f meV against r7866\'s %+.2f' % (M36, ORDER_ALL36))
+    gate('Ⓚ① ⛔ THE REGISTERED CONTROL FIRED, AND IT WAS RIGHT: `PREDICTION.md` named `-20.09` meV, '
+         'which is `r7866`\'s PARAMETERS-HELD row, while this profiler RE-PROFILES the four at every '
+         'sum and so computes its other row. The control is now read out of `r7866`\'s own record '
+         'rather than typed, so the row cannot be mis-named again -- and BOTH crossings are checked, '
+         'not just the move, which is stricter than the registration asked for',
+         abs(abs(M36) - abs(R7866_MOVE)) < 0.5
+         and abs(base_cx - R7866_WHOLE) < 0.01 and abs(all_cx - R7866_MINUS36) < 0.01,
+         'whole %.4f vs banked %.4f; minus36 %.4f vs banked %.4f; |move| %.4f vs banked |%.4f| '
+         '(the frozen row, which the registration named, is %.4f)'
+         % (base_cx, R7866_WHOLE, all_cx, R7866_MINUS36, abs(M36), abs(R7866_MOVE),
+            R7866_FROZEN_MOVE))
+
+    gate('Ⓚ①ᵃ and the sign convention is reconciled rather than silently differing: `r7866` reports '
+         'these moves NEGATIVE, this reads the crossing difference POSITIVE, and the crossing rises '
+         'when the bins are removed. ⇒ *Same quantity, opposite sign convention, stated*',
+         M36 > 0 and R7866_MOVE < 0 and all_cx > base_cx,
+         'crossing %.2f -> %.2f, so removing the bins RAISES it by %+.2f; r7866 signs that %.2f'
+         % (base_cx, all_cx, M36, R7866_MOVE))
 
     # ══ Ⓚ② THE REGISTERED OUTCOMES, READ OFF THE NUMBERS ══════════════════════════════════════
     print('\nⓀ②  THE REGISTERED OUTCOMES, read off the numbers rather than chosen')
@@ -170,8 +202,56 @@ def main():
          'it hands the next step a named block instead of a harder instrument*', True,
          'Ⓚ⓷ %s; weak EE %s' % ('met' if exp_met else 'refuted', weak_met))
 
+    # ══ Ⓚ④ WHERE THE CARRYING BLOCK'S TWELVE SIT -- NOT REGISTERED, MEASURED AFTER THE OUTCOME ══
+    print('\nⓀ④  THE TWELVE THE CARRYING BLOCK DROPS, AGAINST r7866\'S OWN SUB-PEAK COUNT')
+    _csrc = io.open(os.path.join(R7866, 'candidates.py'), encoding='utf-8').read()
+    _fp = [n.value.value for n in ast.walk(ast.parse(_csrc))
+           if isinstance(n, ast.Assign) and any(getattr(t, 'id', None) == 'FIRST_PEAK' for t in n.targets)
+           and isinstance(n.value, ast.Constant)]
+    FIRST_PEAK = int(_fp[0]) if _fp else -1
+    _rmd = re.sub(r'\s+', ' ', io.open(os.path.join(R7866, 'RESULT.md'), encoding='utf-8').read())
+    _m = re.search(r'only `(\d+)` TT bins below the first peak', _rmd)
+    R7866_SUBPEAK = int(_m.group(1)) if _m else -1
+
+    TOPB = {v: k for k, v in NAMES.items()}[top]
+    _blk, _lo, _hi = SC.BLOCK[ok], SC.BIN_LO[ok], SC.BIN_HI[ok]
+    _tt = (_blk == TOPB)
+    _sub = _tt & (_hi < FIRST_PEAK)                 # r7866's own criterion: the bin lies WHOLLY below
+    _drop = (~k36) & _tt                            # the twelve this revision's carrying block drops
+    n_sub, n_drop = int(_sub.sum()), int(_drop.sum())
+    n_both = int((_sub & _drop).sum())
+    n_sub_only = int((_sub & ~_drop).sum())
+    n_drop_only = int((_drop & ~_sub).sum())
+    print('    the criterion is `BIN_HI < %d`, read out of r7866\'s own source' % FIRST_PEAK)
+    print('    TT bins wholly below the first peak   %3d   (r7866\'s record says %d)' % (n_sub, R7866_SUBPEAK))
+    print('    the carrying block `%s` drops          %3d' % (NAMES[TOPB], n_drop))
+    print('    in both                               %3d' % n_both)
+    print('    below the peak and KEPT               %3d   -> %s'
+          % (n_sub_only, [(int(a), int(b)) for a, b in zip(_lo[_sub & ~_drop], _hi[_sub & ~_drop])]))
+    print('    dropped and NOT wholly below          %3d' % n_drop_only)
+
+    gate('Ⓚ④ the sub-peak criterion is r7866\'s own, parsed from its source and its record rather than '
+         'retyped here, and the recount reproduces the number that record carries. ⌗ *The sub-peak set is '
+         '`TT`\'s by construction, so this comparison is only about the carrying block because the carrying '
+         'block IS `TT` -- asserted here rather than assumed, so a re-measure that moved the lean to another '
+         'block fires this gate instead of silently comparing two different blocks*',
+         FIRST_PEAK == 220 and R7866_SUBPEAK > 0 and n_sub == R7866_SUBPEAK and NAMES[TOPB] == 'TT',
+         'FIRST_PEAK=%d, recount %d, record %d, carrying block %s'
+         % (FIRST_PEAK, n_sub, R7866_SUBPEAK, NAMES[TOPB]))
+    gate('Ⓚ④ᵃ the twelve the carrying block drops lie inside the sub-peak set rather than straddling it: '
+         'every one of them is wholly below the first peak, and they are all but one of that set',
+         n_drop_only == 0 and n_both == n_drop and n_sub_only == n_sub - n_drop,
+         '%d of %d in both, %d kept, %d outside' % (n_both, n_sub, n_sub_only, n_drop_only))
+    gate('Ⓚ④ᵇ ⌗ *NOT REGISTERED -- measured after the outcome was read, and reported as an '
+         'observation, not as a test.* It cannot confirm the late-ISW candidate, which is UNREADABLE on exactly '
+         'these bins by r7866\'s own finding; it says only that the block carrying most of the move is where the '
+         'one candidate r7866 could neither confirm nor refute lives', True,
+         'overlap %d/%d, not a test of the candidate' % (n_both, n_sub))
+
     out = dict(base_crossing_meV=float(base_cx), all36_crossing_meV=float(all_cx),
-               move_all36_meV=float(M36), r7866_all36_meV=ORDER_ALL36,
+               move_all36_meV=float(M36), r7866_move_banked=R7866_MOVE,
+               r7866_frozen_move_banked=R7866_FROZEN_MOVE,
+               r7866_whole_banked=R7866_WHOLE, r7866_minus36_banked=R7866_MINUS36,
                block_crossings_meV={k: float(v) for k, v in blocks.items()},
                block_moves_meV={k: float(v) for k, v in MB.items()},
                block_shares={k: float(v) for k, v in shares.items()},
@@ -180,7 +260,11 @@ def main():
                concentrated=bool(concentrated), largest_block=top,
                states=states, expectation_K3_met=bool(exp_met),
                weak_expectation_EE=(None if weak_met is None else bool(weak_met)),
-               per_block_dropped=per_block, bins_kept_whole=int(nb0))
+               per_block_dropped=per_block, bins_kept_whole=int(nb0),
+               first_peak=FIRST_PEAK, r7866_subpeak_record=R7866_SUBPEAK,
+               subpeak_tt_bins=n_sub, carrying_block_dropped=n_drop,
+               subpeak_and_dropped=n_both, subpeak_kept=n_sub_only,
+               dropped_outside_subpeak=n_drop_only, overlap_registered=False)
     io.open(os.path.join(HERE, 'by_block.json'), 'w', encoding='utf-8').write(
         json.dumps(out, indent=1, sort_keys=True, default=float))
     print('\n  wrote by_block.json')

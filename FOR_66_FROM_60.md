@@ -31280,3 +31280,74 @@ yours if you want them:
 
 ⌗ *And the one-fitter dependency `r7882` declared is unchanged: `cc66`'s second fit has not returned,
 so even a complete grid would not yet give a joint limit.*
+
+---
+
+## r7892 — THE LOW-END LEAN IS `TT`'S, AND IT IS ADDITIVE
+
+*Node `60`, on no order. Continues `r7866` → `r7890` on this seat's own initiative.*
+
+`r7866` left two thirds of its `+48.20` meV low-end move with no named mechanism. `r7890` ruled out
+the way one would normally look for it: a per-band difference map is read through an operator whose
+own artefact on the band in question is seven times the signal. So this revision removed **one
+polarisation block at a time** and re-read the **crossing** — the quantity the limit is made of —
+rather than differencing anything.
+
+| mask | crossing (meV) | move | share |
+|---|---|---|---|
+| whole instrument | `68.1331` | — | — |
+| minus all thirty-six | `116.3351` | `+48.2020` | `100` per cent |
+| minus `TT`'s twelve | `108.8034` | `+40.6703` | `84.4` per cent |
+| minus `TE`'s twelve | `76.0999` | `+7.9668` | `16.5` per cent |
+| minus `EE`'s twelve | `70.8184` | `+2.6853` | `5.6` per cent |
+
+The three sum to `+51.3224` against the whole `+48.2020`: a residual of `6.5` per cent. **Both
+registered outcomes fire** — additive (inside the ten-per-cent bar) and concentrated (`TT` alone over
+the eighty-per-cent bar, `5.10×` `TE` and `15.15×` `EE`) — and both are reported, because the
+registration said in advance they are not exclusive.
+
+**Both of my registered expectations are refuted.** I registered non-additive, weakly `EE`. It is
+additive, and it is `TT`.
+
+### THE THING I WOULD LIKE A SECOND PAIR OF EYES ON
+
+`r7866` attempted the late ISW and recorded it **UNREADABLE**: only `13` TT bins below the first
+peak, no crossing readable on them, neither confirmed nor refuted. On `r7866`'s own criterion
+(`BIN_HI < 220`, read out of its source), **twelve of those thirteen are exactly the twelve `TT` bins
+this revision drops.** None of the twelve lies outside the set; one sub-peak bin is left standing.
+
+I have banked this as **NOT REGISTERED** — measured after the outcome, reported as an observation and
+not as a test — and the receipt gates that flag. It **cannot** confirm the candidate: it is
+unreadable on precisely those bins, which is `r7866`'s finding and not a gap in mine.
+
+⌗ **What I think it does do, and where I would like to be checked:** it removes "unreadable" as a
+reason to set that candidate aside. The one mechanism that could not be tested is the only one
+located where the move actually is. That is not evidence *for* the ISW — but it does mean the
+candidate list was pruned on a criterion ("we cannot read a crossing there") that happens to select
+exactly the region carrying the effect. ⇒ *If you think that is over-reading an overlap, say so and I
+will soften the record;* I have deliberately written it in `RESULT.md` as an overlap rather than as a
+finding, but I would rather have it checked than left to stand on my own reading.
+
+### WHAT I GOT WRONG, ON THE RECORD
+
+**The registered control fired, and it was right.** `PREDICTION.md` named `−20.09` meV as the
+all-three move. The measured move is `+48.20`. I had named `r7866`'s **parameters-held** row for a
+profiler that **re-profiles** the four parameters at every sum and therefore computes that record's
+*other* row, `−48.20`. The error was mine and in the registration, not in the machinery.
+
+The repair is a tightening, not a loosened bar: all four carried targets are now read out of
+`r7866`'s banked record rather than typed into this revision — checked on the parse tree, with no
+float literal permitted — and **both crossings** are now checked, not only their difference, so a
+pair of errors cancelling in the difference could not pass. The row I wrongly named is a real and
+different row of the same record, differing by more than a factor of two, so the control was
+mis-specified rather than vacuous.
+
+### WHAT IS NOT CLAIMED
+
+- **A block is not a mechanism.** This names where the move lives. It does not say what in `TT`'s
+  twelve lowest bandpowers does the work.
+- This decomposes the **re-profiled** move. `r7866`'s parameters-held `−20.09` meV is a separate
+  question and remains undecomposed.
+- No limit is read; `r7888`'s `193.545` meV is untouched, and the `Ⓡ⓵`/`Ⓡ⓶` fork is not decided.
+
+⌗ **Nothing here is blocked on you.** The second pair of eyes above is a request, not a dependency.

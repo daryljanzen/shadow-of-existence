@@ -1,0 +1,50 @@
+{
+ "additive": true,
+ "all36_crossing_meV": 116.33506488969549,
+ "base_crossing_meV": 68.13309887778951,
+ "bins_kept_whole": 555,
+ "block_crossings_meV": {
+  "EE": 70.8184107026586,
+  "TE": 76.09990391858993,
+  "TT": 108.80342859088427
+ },
+ "block_moves_meV": {
+  "EE": 2.685311824869089,
+  "TE": 7.966805040800423,
+  "TT": 40.67032971309476
+ },
+ "block_shares": {
+  "EE": 0.055709591268659285,
+  "TE": 0.165279670103759,
+  "TT": 0.8437483587920275
+ },
+ "carrying_block_dropped": 12,
+ "concentrated": true,
+ "dropped_outside_subpeak": 0,
+ "expectation_K3_met": false,
+ "first_peak": 220,
+ "largest_block": "TT",
+ "move_all36_meV": 48.20196601190598,
+ "overlap_registered": false,
+ "per_block_dropped": {
+  "EE": 12,
+  "TE": 12,
+  "TT": 12
+ },
+ "r7866_frozen_move_banked": -20.08684766570491,
+ "r7866_minus36_banked": 116.33506488969549,
+ "r7866_move_banked": -48.20196601190598,
+ "r7866_subpeak_record": 13,
+ "r7866_whole_banked": 68.13309887778951,
+ "residual_fraction": 0.06473762016444569,
+ "residual_meV": 3.1204805668582907,
+ "states": [
+  "\u24c0\u24f5 ADDITIVE -- the blocks act independently and `TT` is the largest",
+  "\u24c0\u24f6 CONCENTRATED -- `TT` alone carries 84 per cent"
+ ],
+ "subpeak_and_dropped": 12,
+ "subpeak_kept": 1,
+ "subpeak_tt_bins": 13,
+ "sum_of_blocks_meV": 51.32244657876427,
+ "weak_expectation_EE": false
+}
