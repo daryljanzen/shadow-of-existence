@@ -435,7 +435,7 @@ faces; **it does not cite it for the count**, which is the gap.
 ③ HOME — P3 §2–§4, `def:slicing`, `prop:turning`.
 ④ ANCHOR — the section's own; the trichotomy is also read from the 2012 dissertation's discriminant.
 ⑤ JOINS — [[p2-janzen-circle]] · [[p8-slicing-operator]] (promotes the curve from classifier to generator) · [[p9-range-paper]] · [[p7-cr-framework]].
-⑥ NOT OP FOR — **Proper distance $l$ is derived, not the spine.** At the degenerate member the merging horizons stand infinitely far apart in $l$ (the integral diverges logarithmically) while the Gaussian curvature there is finite and the geometry regular — *a coordinate running to infinity where the invariant curvature is finite is reporting on the slicing, not on the manifold.* The spine is the signed $r$; the clock is the swing angle.
+⑥ NOT OP FOR — **Proper distance $l$ is derived, not the spine.** On the degenerate member the merged root stands at infinite $l$ (the integral diverges logarithmically), while along the family approaching it the distance between the horizons converges to $\pi\alpha/\sqrt3$; the Gaussian curvature is finite and continuous throughout — *a coordinate that jumps to infinity where the invariant curvature changes continuously is reporting on the slicing, not on the manifold.* The spine is the signed $r$; the clock is the swing angle.
 
 
 ### the-horizon-locus-is-a-line-and-a-tilted-ellipse
