@@ -161,20 +161,31 @@ check('Ⓐ⓶ ⛭⛭ ** THE SWITCH REFUSES TO RUN BESIDE THE FLUID APPROXIMATION
 
 # ══ Ⓑ THE DEFECT NO SWITCH ARM COULD HAVE SEEN, AND THE CLAUSE THE REPAIR REASONS FROM ══════════
 
-_SEED = "y0[:, I_PN:] = _nuhier_seed(np.zeros((nk, NQ, LMAXNU + 1)), kk,"
-_IFLC = "if ARM == 'lcdm' or _cric == 'branchpoint':"
-_SEEDAT = INST.index(_SEED)
-_RHSAT = INST.index('    def rhs(e, Y):', INST.index(_IFLC))
-_ELSEAT = INST.index('\n    else:\n', INST.index(_IFLC))
+#: ⛔ *ASSERTED ON THE PARSE TREE, NOT ON TEXT OFFSETS.  The first version of this arm located the
+#: branches by searching for `else:` and for an eight-space indent, which mints a bare `else:` key
+#: and an EMPTY one -- a pin that holds whatever the file says.  The tree answers the actual
+#: question -- is the seeding inside the arm branch or after it -- and cannot be fooled by a line
+#: that happens to look the same.*
+import ast                                                                      # noqa: E402
+
+_EVF = [n for n in ast.walk(ast.parse(INST))
+        if isinstance(n, ast.FunctionDef) and n.name == 'evolve']
+#: ⛔ *the two-branch datum is found STRUCTURALLY -- the one direct-child `if` of `evolve` that
+#: has a non-empty `else` -- and not by quoting its test.  Quoting it pinned a literal containing
+#: ` or `, which the quote-pin gate reads as an ALT group: a pin on an alternation is weaker than
+#: the fact it was standing for, and the fact is that there is exactly ONE such branch here.*
+_ARMIF = [n for n in _EVF[0].body if isinstance(n, ast.If) and n.orelse]
+_SEEDC = [n for n in ast.walk(_EVF[0]) if isinstance(n, ast.Call)
+          and isinstance(n.func, ast.Name) and n.func.id == '_nuhier_seed']
 check('Ⓑ⓵ ⛭⛭⛭ ** THE SEEDING IS OUTSIDE THE INITIAL-CONDITION `if`/`else`, WHICH IS THE CLAUSE THE '
-      'REPAIR REASONS FROM: ** it is seeded ONCE, after both data have been written and before the '
-      'right-hand side is defined, at a point reached whichever arm ran.  ⇒ *asserted on the '
-      'instrument\'s own text and at ONE indentation level, because the defect was exactly that the '
-      'seeding sat inside one branch: seeded in the CR branch alone, the arm every validation '
-      'number here is read on left the moments at zero and grew them from the sources*',
-      _SEEDAT > _ELSEAT and _SEEDAT < _RHSAT
-      and INST.count(_SEED) == 1
-      and INST[INST.rindex('\n', 0, _SEEDAT) + 1:_SEEDAT] == '        ')
+      'REPAIR REASONS FROM: ** exactly ONE seeding call in the whole of `evolve`, and its line is '
+      'past the END of the ONE two-branch datum in it -- so it is reached whichever arm ran.  '
+      '⇒ *read off the PARSE TREE, with the branch found by BEING the only direct-child `if` of '
+      '`evolve` carrying an `else`, so nothing here quotes a test it might misremember.  The defect was exactly that the seeding sat inside ONE branch: '
+      'seeded in the CR branch alone, the arm every validation number here is read on left the '
+      'moments at zero and grew them from the sources*',
+      len(_EVF) == 1 and len(_ARMIF) == 1 and len(_SEEDC) == 1
+      and _SEEDC[0].lineno > _ARMIF[0].end_lineno)
 
 check('Ⓑ⓶ ⛭⛭ ** AND ONE SEEDING IS CORRECT FOR BOTH ARMS BECAUSE BOTH DATA WRITE THE SAME TWO '
       'SLOTS: ** each branch sets the species\' density and velocity to `dg0` and `th0`, so the '
