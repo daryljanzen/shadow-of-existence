@@ -2771,9 +2771,35 @@
    }
   },
   "tolerance": {
+   "receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45930026389",
+    "since": "3197788dfa85c1b83aaef0ba2093436b7c79ce9a",
+    "unmeasured": true
+   },
+   "receipts/L556_registry_from_rows/R1_the_registry_was_checked_from_citations_inward_so_twenty_rows_were_read_by_nothing.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45930026389",
+    "since": "3197788dfa85c1b83aaef0ba2093436b7c79ce9a",
+    "unmeasured": true
+   },
+   "receipts/L558_the_second_duplication/D1_the_same_four_rows_the_second_merge_running_and_this_time_it_unclosed_a_struck_item.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45930026389",
+    "since": "3197788dfa85c1b83aaef0ba2093436b7c79ce9a",
+    "unmeasured": true
+   },
+   "receipts/L559_the_registry_from_files_inward/O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45930026389",
+    "since": "3197788dfa85c1b83aaef0ba2093436b7c79ce9a",
+    "unmeasured": true
+   },
    "receipts/L_probability/S18_the_one_seven_one_was_never_a_rewriting_queue_and_the_grain_clause_cannot_ratify_forty_six_character_windows.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45886231621",
-    "since": "8ff02f314ff866c02733fa3b511da8e19e47eb9d"
+    "since": "8ff02f314ff866c02733fa3b511da8e19e47eb9d",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45930026389",
+    "since": "3197788dfa85c1b83aaef0ba2093436b7c79ce9a",
+    "unmeasured": true
    },
    "receipts/L_probability/S36_two_more_faces_of_the_live_subject_family_and_each_needed_a_different_widening_of_what_gets_run.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45886231621",
@@ -2782,11 +2808,13 @@
    },
    "receipts/L_probability/S44_the_reader_arm_was_sized_off_a_margin_where_the_formula_takes_a_rate_of_disagreements_and_the_frame_cannot_sell_any_of_the_three_intervals_the_design_priced.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45886231621",
-    "since": "8ff02f314ff866c02733fa3b511da8e19e47eb9d"
+    "since": "8ff02f314ff866c02733fa3b511da8e19e47eb9d",
+    "unmeasured": true
    },
    "receipts/L_probability/S45_sixty_four_of_eighty_withdraw_inside_a_band_registered_as_one_that_could_not_fail_and_the_only_ground_that_moved_is_the_one_a_reader_effect_would_move_first.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45886231621",
-    "since": "8ff02f314ff866c02733fa3b511da8e19e47eb9d"
+    "since": "8ff02f314ff866c02733fa3b511da8e19e47eb9d",
+    "unmeasured": true
    },
    "receipts/L_probability/S47_the_cheap_tail_closes_whole_and_nine_of_its_fourteen_rows_needed_an_instrument_or_a_normalised_reader_rather_than_a_widening.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45886231621",
@@ -2835,7 +2863,13 @@
    },
    "receipts/L_probability/S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45886231621",
-    "since": "8ff02f314ff866c02733fa3b511da8e19e47eb9d"
+    "since": "8ff02f314ff866c02733fa3b511da8e19e47eb9d",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S8_the_source_half_is_the_blinder_one_and_the_class_is_mostly_a_receipt_pinning_a_ledger_not_another_receipt.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45930026389",
+    "since": "3197788dfa85c1b83aaef0ba2093436b7c79ce9a",
+    "unmeasured": true
    },
    "receipts/P15_CR_cosmology/C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45886231621",
@@ -2864,7 +2898,8 @@
    },
    "receipts/P15_CR_cosmology/P15_the_1p57_has_no_parameter_address_because_the_arms_tt_minimum_sits_on_its_own_bao_minimum_while_the_controls_pays_fifteen_in_chi2_to_leave_planck.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45752752332",
-    "since": "df3ed12afa90b2621671c972ce6e02409e0b105d"
+    "since": "df3ed12afa90b2621671c972ce6e02409e0b105d",
+    "unmeasured": true
    },
    "receipts/P15_CR_cosmology/P15_the_baryons_never_clustered_so_the_potential_decayed_and_repairing_it_costs_the_banked_calibration_nothing.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45886231621",
@@ -2883,11 +2918,17 @@
    },
    "receipts/P15_CR_cosmology/P15_the_fitted_comb_moves_nine_times_less_than_the_scale_that_rules_it_so_the_one_rate_takes_the_comb_from_299_1_to_298_94.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45752752332",
-    "since": "df3ed12afa90b2621671c972ce6e02409e0b105d"
+    "since": "df3ed12afa90b2621671c972ce6e02409e0b105d",
+    "unmeasured": true
    },
    "receipts/P15_CR_cosmology/P15_the_in_force_refit_reproduces_on_a_second_arm_so_po24s_rewritten_clause_is_discharged.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45886231621",
     "since": "8ff02f314ff866c02733fa3b511da8e19e47eb9d",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_onset_bracket_family_is_latent_everywhere_and_was_live_in_one_place.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45930026389",
+    "since": "3197788dfa85c1b83aaef0ba2093436b7c79ce9a",
     "unmeasured": true
    },
    "receipts/P15_CR_cosmology/P15_the_po87_list_is_14_repoints_and_9_departures_and_the_control_at_plancks_own_point_turns_the_0_918_into_0_964.py": {
