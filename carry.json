@@ -1747,6 +1747,11 @@
     "since": "3197788dfa85c1b83aaef0ba2093436b7c79ce9a",
     "unmeasured": true
    },
+   "receipts/P06_shadow_of_existence/I54_the_modal_fallacy_is_local_flatness_and_the_separating_invariant_is_global.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45935611062",
+    "since": "dd4adb555667e3d8d0698589bb89f266a9656dab",
+    "unmeasured": true
+   },
    "receipts/P07_CR_framework/I7_conserved_charge_carries_three_objects_and_one_denies_the_others.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45886231621",
     "since": "8ff02f314ff866c02733fa3b511da8e19e47eb9d",
