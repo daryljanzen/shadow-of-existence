@@ -350,10 +350,11 @@ constructions below are carried out" — **not offered as one interpretation amo
    only a piece of the action, and taking that piece for the whole — a root-exchange restricted to one
    sign-half read as the general involution, or the undercritical real triple read without its overcritical
    continuation — is the characteristic error the coupling guards against."** [P3 §coupled]
-9. **§remark — PROPER DISTANCE IS DERIVED.** At Nariai the two horizons merge, yet the proper distance
-   between them **diverges logarithmically** (∫dr/√|f| at a double zero) while the Gaussian curvature there
-   is **finite** and the geometry regular. *"A coordinate that runs to infinity where the invariant
-   curvature is finite is reporting on the slicing, not on the manifold."* **The signed r is the spine, w
+9. **§remark — PROPER DISTANCE IS DERIVED.** On the Nariai member the integral ∫dr/√|f| to the merged
+   root **diverges logarithmically** (a double zero), while along the family approaching it the distance
+   between the two horizons **converges to πα/√3** (the Ginsparg–Perry limit); the Gaussian curvature is
+   **finite** and continuous throughout. *"A coordinate that jumps to infinity where the invariant
+   curvature changes continuously is reporting on the slicing, not on the manifold."* **The signed r is the spine, w
    is its clock, l is derived** — "useful for tracing the curve and misleading if mistaken for its
    backbone." [P3 §remark]
 
