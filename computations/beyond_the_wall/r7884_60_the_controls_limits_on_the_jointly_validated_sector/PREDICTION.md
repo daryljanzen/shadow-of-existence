@@ -131,3 +131,54 @@ no number.
   does not reach the limit — a result about the limit's sensitivity, reported as one.
 - **And the limit can move a long way**, which is the outcome the order expects and is the one that
   most needs the plumbing gates above to have run first.
+
+---
+
+## DECLARED REFINEMENT — WHAT THE NEGATIVE NODES ACTUALLY DO, AND THE LIKE-FOR-LIKE BASELINE
+
+⛔ **STILL BEFORE ANY MEASUREMENT OF THIS REVISION.** Everything below is read from `r7864`'s
+machinery and `r7870`'s record, both cited as theirs. No grid of this revision has been fitted.
+
+**⓵ THE PROFILE NEVER EVALUATES AT A NEGATIVE SUM.** `r7864`'s own constant, carried unchanged by
+`r7870`, is `SUMS = [0.0, 0.03, 0.06, 0.10, 0.15, 0.20, 0.25, 0.30, 0.40, 0.50, 0.60]` — **eleven
+profile sums, every one at or above zero**, denser than the bank's eight nodes because the model
+interpolates the banked grid. ⇒ So the structural read above was right that the negative nodes never
+enter the crossing, and **imprecise about why**: it is not that they sit below the minimum, it is
+that the profile has no point there at all. They enter only as **interpolation support for the
+profile points near the low end**, which is a narrower role than the earlier wording gave them.
+
+⌗ *The fork `Ⓝ⓵`/`Ⓝ⓶`/`Ⓝ⓷` is unchanged by this, and so is its criterion. What changes is that
+`Ⓝ⓷` — the minimum at a negative node — **cannot arise as stated**, because no profile point is
+negative. The live question is narrower and is restated below rather than quietly dropped.*
+
+**⓶ SO THE FORK'S THIRD BRANCH IS RESTATED, AND IT IS STILL REACHABLE.** The risk is not a minimum
+at a negative sum. It is a minimum at **`0.0` or `0.03`**, the two profile points whose
+interpolation leans on the carried negative nodes:
+
+| | where the minimum falls | what follows |
+|---|---|---|
+| **Ⓝ⓵′** | at `0.06` or above | every profile point from the minimum upward is supported by nodes this revision solved, plus the exactly-carried zero node. **The limit is READ.** |
+| **Ⓝ⓶′** | at `0.0` | supported by the exactly-carried zero node and its neighbours; the crossing runs upward through nodes this revision solved. **The limit is READ**, with the support stated. |
+| **Ⓝ⓷′** | at `0.03` | ⛔ that point's interpolation leans on a carried NEGATIVE node, which is not like for like, so the minimum's own location would rest on the landed closure. **NO LIMIT IS READ**, and the grid is reported as needing the negative nodes re-solved — which this revision cannot do, because the hierarchy has no reading there. **That is the finding, not a patch.** |
+
+**⓷ AND THE BASELINE IS `r7870`'s SEPARATING RUNG, NOT ITS CORRECTED ONE.** This revision's
+generators descend from `gen_pol_nufd_only.sh`, which carries **no `N_eff` offset**, so the
+like-for-like comparison is the rung with no offset on either arm. From `r7870`'s own
+`limits_separating.json`:
+
+| | on the closed envelope | minimum at | monotonic above it |
+|---|---|---|---|
+| calibrated | **`185.958 meV`** | `0.06` | yes |
+| minimised | **no limit** (`None`); crossing would have been `287.772` | `0.06` | **no** — one dip at `0.20` of `−0.0206` |
+
+⌗ *`r7870`'s verdict on that rung, in its own words: the raw reading dips and so does the envelope,
+so basin mixing does not account for it and it is **reported as unseparated on this rung**. ⇒ So
+the minimised profile was ALREADY unreadable here before this revision touched the closure, and a
+minimised profile that is unreadable again is not evidence about the hierarchy.* ⛔ **The comparison
+this revision can make is on the CALIBRATED profile, against `185.958 meV`, and the minimised one is
+reported beside it as inherited-unreadable rather than as a result of the closure.**
+
+⌗ **And `185.92 meV` is NOT the number to compare against**, though it is the control's limit of
+record: it is the `+0.044` corrected rung, a different configuration. The two agreeing to three
+figures is a coincidence of this sector's weak dependence on the offset, not a licence to use
+either interchangeably.
