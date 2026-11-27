@@ -206,7 +206,8 @@ CLAIMS = [
     ("P9 states the reachable sector carries NO free propagating tensor mode",
      r"reachable sector carries no free propagating tensor mode"),
     ("P9 places Gowdy (two Killing vectors) INSIDE the reachable sector, on its edge",
-     r"Gowdy waves, type I with two Killing vectors"),
+     # r7885 (69): P9's literature survey (e5d4926a3) cites Einstein-Rosen and Gowdy at the phrase; the claim is unchanged
+     r"Gowdy waves(~\\cite\{[^}]*\})?, type I with two Killing vectors"),
 ]
 for what, pat in CLAIMS:
     ok = re.search(pat, p9, re.I) is not None
