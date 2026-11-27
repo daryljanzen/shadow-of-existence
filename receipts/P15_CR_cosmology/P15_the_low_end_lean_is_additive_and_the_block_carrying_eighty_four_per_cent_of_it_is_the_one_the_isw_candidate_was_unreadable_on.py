@@ -95,7 +95,8 @@ check('Ⓐ② and the whole-instrument crossing it starts from is `r7866`\'s ban
 check('Ⓐ③ and the all-three mask drops exactly twelve bandpowers from each of the three blocks, '
       'thirty-six in all, which is the population `r7866` named',
       all(D['per_block_dropped'][b] == 12 for b in BLOCKS)
-      and sum(D['per_block_dropped'].values()) == 36,
+      and sum(D['per_block_dropped'].values())
+      == len(BLOCKS) * D['per_block_dropped'][BLOCKS[0]],
       '%s, %d in all' % (D['per_block_dropped'], sum(D['per_block_dropped'].values())))
 
 # ---------------------------------------------------------------------------------------------- Ⓑ
@@ -213,6 +214,7 @@ check('Ⓓ② which is `6.5` per cent of the whole move, inside `Ⓚ⓵`\'s ten-
 check('Ⓓ③ and `TT` alone carries `84.4` per cent, over `Ⓚ⓶`\'s eighty-per-cent bar, so the second '
       'registered outcome fires as well and the record reports BOTH rather than choosing',
       D['concentrated'] and D['largest_block'] == 'TT' and _s['TT'] >= 0.80
+      and abs(100.0 * _s['TT'] - 84.4) < 0.05
       and len(D['states']) == len(('additive', 'concentrated')),
       '%s, largest %s' % ([s.split(' --')[0] for s in D['states']], D['largest_block']))
 
@@ -225,7 +227,9 @@ check('Ⓓ④ and the registered expectation `Ⓚ⓷` non-additive is recorded R
 
 check('Ⓓ⑤ and the carrying block beats the next by a wide margin rather than by a hair, so '
       '"concentrated" is not a verdict resting on the third digit',
-      _m['TT'] / _m['TE'] > 4.0 and _m['TT'] / _m['EE'] > 12.0,
+      abs(_m['TT'] / _m['TE'] - 5.10) < 5e-03
+      and abs(_m['TT'] / _m['EE'] - 15.15) < 5e-03
+      and _m['TT'] / _m['TE'] > 4.0 and _m['TT'] / _m['EE'] > 12.0,
       'TT/TE %.2f, TT/EE %.2f' % (_m['TT'] / _m['TE'], _m['TT'] / _m['EE']))
 
 # ---------------------------------------------------------------------------------------------- Ⓔ
