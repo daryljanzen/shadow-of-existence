@@ -158,13 +158,20 @@ print(f"    sense A appears in: {apapers}")
 #   counted as carrying sense A by that located sentence, not absorbed.
 _p08 = ' '.join(BODIES.get('P08', '').split())
 _p08_restated = 'the standing difficulty with mass in an asymptotically de~Sitter spacetime' in _p08 and 'AbbottDeser1982' in _p08
-check("sense A is carried by four papers now -- P02, P03, P10 by the phrase, and P08 by its restated sentence on the "
+# ⛭ r7885 (69), second: P10's literature survey (5fb345812) restated its sentence the same way -- "no global timelike
+#   Killing vector: the energy the static Killing field defines~\cite{AbbottDeser1982} is not positive, and no
+#   positive-energy theorem or total mass ... is available~\cite{AshtekarBongaKesavan2015, ...}" -- the same negative
+#   claim with its standard sources, without the words `conserved charge`.  Counted by that located sentence.
+_p10 = ' '.join(BODIES.get('P10', '').split())
+_p10_restated = 'no global timelike Killing vector' in _p10 and 'AbbottDeser1982' in _p10 and 'AshtekarBongaKesavan2015' in _p10
+_restated = {c for c, ok in (('P08', _p08_restated), ('P10', _p10_restated)) if ok}
+check("sense A is carried by four papers now -- P02, P03 by the phrase, and P08 and P10 by their restated sentences on the "
       "asymptotic-de Sitter mass difficulty -- which is several papers making ONE negative claim, the thesis of this verdict",
-      len(apapers) + (1 if (_p08_restated and 'P08' not in apapers) else 0), 4)
+      sorted(set(apapers) | _restated), ['P02', 'P03', 'P08', 'P10'])
 check("⛔ and the fifth is NAMED with its cause: P12 carried sense A at cd901791 (r3608) and does "
       "not now -- r4083's harvest removed the passage, and `conserved charge` itself is zero there, "
       "so nothing was reworded and nothing is being counted in its place",
-      ['P02', 'P03', 'P10'], [x for x in apapers if x != 'P08'])
+      ['P02', 'P03'], [x for x in apapers if x not in ('P08', 'P10')])
 #: ⌗⛭ r7329+cc66 REPAIR, PO-78's stride.  ⛔ AND THE OWED REPAIR WAS NEVER ABOUT THE QUOTATION.
 #: The ledger's own reason says so: the term is this receipt's OBJECT OF STUDY and "would be
 #: DELIBERATE alone"; what it owed is 69's Test 7, ⓓ a VACUOUS GUARD -- `BODIES.get('P12', '')`
