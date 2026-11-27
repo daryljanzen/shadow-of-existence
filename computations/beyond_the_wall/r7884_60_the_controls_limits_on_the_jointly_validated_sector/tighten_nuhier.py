@@ -42,7 +42,13 @@ THE PATCH, each part named by what in the diff forces it:
 WHAT IS MEASURED:
     ① THE FIXED POINT — with the patch, the working tree reduces to the banked blob again, so the
        hatch certifies the instrument that produced the bank.
-    ② THE FLOOR — with Ⓔ alone it does NOT reduce, so the other eight parts are load-bearing.
+    ①′ EACH HALF IS NECESSARY, FIRST HALF — Ⓔ and Ⓚ alone, in r7878's UNEXTENDED machinery, do
+       NOT reduce. ⌗ *That is the patch this revision first wrote, kept as a callable: it is what
+       shows parts Ⓕ–Ⓢ are load-bearing.*
+    ② EACH HALF IS NECESSARY, SECOND HALF — parts Ⓕ–Ⓢ with Ⓔ OMITTED do not reduce either, which
+       is what shows Ⓔ is load-bearing. ⛔ *These two are not the same measurement and neither
+       implies the other, and they were the wrong way round in this file once: ①′ drops eight
+       parts and keeps the bindings, ② keeps the eight and drops the bindings.*
     ③ THE HOLE, BOTH WAYS — for each of the four, moving its DEFAULT must PASS with the bindings
        taken BY NAME (that is the hole `r7878` closed for the fifth and seventh classes) and be RED
        with Ⓔ. A control red both ways has shown nothing.
@@ -181,6 +187,22 @@ def reduces(src, blob_src, how):
     return ast.dump(ast.parse(blob_src)) == ast.dump(s.visit(tr))
 
 
+def reduces_bindings_only(src, blob_src):
+    """`r7878`'s UNEXTENDED machinery with `Ⓔ` and `Ⓚ` alone -- the patch this revision FIRST wrote
+
+    ⛭ *Kept as a callable rather than described, because the receipt asserts it: the four bindings
+    on their own do NOT reduce, and that is the error, measured.*
+    """
+    e0, c0 = T.EXACT_R7878, T.CONFIG_R7878
+    try:
+        T.EXACT_R7878 = dict(e0)
+        T.EXACT_R7878.update(EXACT_R7882)
+        T.CONFIG_R7878 = tuple(c0) + CONFIG_R7882
+        return T.reduces(src, blob_src, True, True)
+    finally:
+        T.EXACT_R7878, T.CONFIG_R7878 = e0, c0
+
+
 def gate(name, ok, got=None):
     print('  [%s] %s%s' % ('PASS' if ok else 'FAIL', name,
                            ('   (%s)' % got) if got is not None else ''))
@@ -213,9 +235,17 @@ def main():
     gate('① THE FIXED POINT -- with the patch the tree reduces to the banked blob again, so '
          'the hatch certifies the instrument that produced the bank', rec['fixed_point'])
 
+    rec['bindings_only_in_r7878_machinery'] = bool(reduces_bindings_only(cur, blob))
+    gate('\u2460\u2032 EACH HALF IS NECESSARY, FIRST HALF -- the four bindings in r7878\'s '
+         'unextended machinery do NOT reduce, so parts \u24bb-\u24c8 are load-bearing (a census '
+         'is a count where the blob comparison is an equality)',
+         not rec['bindings_only_in_r7878_machinery'],
+         'reduces anyway' if rec['bindings_only_in_r7878_machinery']
+         else 'does not reduce -- this is the error this revision made and corrected')
+
     rec['floor_bindings_only'] = bool(reduces(cur, blob, 'off'))
-    gate('② THE FLOOR -- with Ⓔ alone it does NOT reduce, so the other eight parts are '
-         'load-bearing and not decoration', not rec['floor_bindings_only'],
+    gate('② EACH HALF IS NECESSARY, SECOND HALF -- parts Ⓕ-Ⓢ with Ⓔ OMITTED do not reduce '
+         'either, so Ⓔ is load-bearing', not rec['floor_bindings_only'],
          'reduces anyway' if rec['floor_bindings_only'] else 'does not reduce, as required')
 
     print('\n  ③ THE HOLE, BOTH WAYS -- a moved DEFAULT must PASS by-name and be RED on exact '

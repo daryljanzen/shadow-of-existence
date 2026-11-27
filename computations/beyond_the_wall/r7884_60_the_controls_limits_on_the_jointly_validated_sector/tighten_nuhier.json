@@ -9,6 +9,7 @@
   "NUHIER": "os.environ.get('NUHIER', '0') == '1'",
   "QMAXNU": "float(os.environ.get('QMAXNU', '20'))"
  },
+ "bindings_only_in_r7878_machinery": false,
  "blob": "e5319ce4968602ca6d8de89fdc871e8f9b0a645e",
  "by_name": [
   "I_PN",

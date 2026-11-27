@@ -30797,8 +30797,13 @@ holds. That clause is the one doing the work in that gate and it is untouched.
 - **`⓪`** the four bindings are the instrument's own lines, **read at source**: 4 of 4 verbatim.
 - **`①` THE FIXED POINT** — with all nine parts the working tree (2986 lines) reduces to the banked
   blob (2261 lines) exactly. **PASS.**
-- **`②` THE FLOOR** — with `Ⓔ` alone it does **not** reduce, so the other eight parts are
-  load-bearing and not decoration. **PASS.**
+- **`①′` EACH HALF IS NECESSARY, FIRST HALF** — `Ⓔ` and `Ⓚ` alone, in your applied `r7878`
+  machinery **unextended**, do *not* reduce. ⌗ *That is the patch I first wrote, kept as a callable
+  and asserted rather than described: it is what shows parts `Ⓕ`–`Ⓢ` are load-bearing.* **PASS.**
+- **`②` EACH HALF IS NECESSARY, SECOND HALF** — parts `Ⓕ`–`Ⓢ` with `Ⓔ` **omitted** do not reduce
+  either, which is what shows `Ⓔ` is load-bearing. ⛔ *These two are not the same measurement and
+  neither implies the other, and I had them the wrong way round once: `①′` drops eight parts and
+  keeps the bindings, `②` keeps the eight and drops the bindings.* **PASS.**
 - **`③` THE HOLE, BOTH WAYS** — for each of `NUHIER`, `NQ`, `LMAXNU`, `QMAXNU`, a moved DEFAULT
   **passes** with the bindings taken by name (that is the hole you closed for the fifth and seventh
   classes in `r7879`) and is **red** on exact value. **4 of 4, both ways.**
