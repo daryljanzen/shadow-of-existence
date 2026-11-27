@@ -354,6 +354,16 @@
     "since": "31c822d4911ff3c5b63f7346efa7b47f4fa2ae9b",
     "unmeasured": true
    },
+   "receipts/L203_reach_stations/M1_the_equianharmonic_group_is_not_the_monodromy_group.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45930026389",
+    "since": "3197788dfa85c1b83aaef0ba2093436b7c79ce9a",
+    "unmeasured": true
+   },
+   "receipts/L203_reach_stations/M4_four_objects_one_word.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45930026389",
+    "since": "3197788dfa85c1b83aaef0ba2093436b7c79ce9a",
+    "unmeasured": true
+   },
    "receipts/L204_physics_reach/C3_the_isotropy_citation_runs_in_a_loop.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45912362938",
     "since": "31c822d4911ff3c5b63f7346efa7b47f4fa2ae9b",
@@ -592,6 +602,11 @@
    "receipts/L221_the_bridge/B64_the_composite_route_does_not_close.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45912362938",
     "since": "31c822d4911ff3c5b63f7346efa7b47f4fa2ae9b",
+    "unmeasured": true
+   },
+   "receipts/L221_the_bridge/B66_po5s_route_is_gated_on_po11.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45930026389",
+    "since": "3197788dfa85c1b83aaef0ba2093436b7c79ce9a",
     "unmeasured": true
    },
    "receipts/L221_the_bridge/B7_two_unbuilt_sectors_not_one.py": {
@@ -882,6 +897,11 @@
    "receipts/L_numerics/Q50_the_tolerance_comparisons_gate_the_verdict_and_a_third_of_them_are_not_tolerances.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45886231621",
     "since": "8ff02f314ff866c02733fa3b511da8e19e47eb9d",
+    "unmeasured": true
+   },
+   "receipts/L_numerics/Q51_the_monodromy_continuation_is_stable_and_it_has_two_preconditions_neither_stated.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45930026389",
+    "since": "3197788dfa85c1b83aaef0ba2093436b7c79ce9a",
     "unmeasured": true
    },
    "receipts/L_probability/C1_the_citation_sweep_finds_no_headline_mis_cited_and_thirteen_below_it_that_cite_the_wrong_receipt_or_none.py": {
@@ -1194,6 +1214,11 @@
     "since": "b55f42ef2dcc3712e07fc4c59c94c9a27feae195",
     "unmeasured": true
    },
+   "receipts/P05_groupoid/P05_deck_group_S3.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45930026389",
+    "since": "3197788dfa85c1b83aaef0ba2093436b7c79ce9a",
+    "unmeasured": true
+   },
    "receipts/P05_groupoid/Q4_equianharmonic_vantages.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45886231621",
     "since": "8ff02f314ff866c02733fa3b511da8e19e47eb9d",
@@ -1202,6 +1227,11 @@
    "receipts/P05_groupoid/X5_monodromy_group.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45886231621",
     "since": "8ff02f314ff866c02733fa3b511da8e19e47eb9d",
+    "unmeasured": true
+   },
+   "receipts/P05_groupoid/negation_outer_A2.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45930026389",
+    "since": "3197788dfa85c1b83aaef0ba2093436b7c79ce9a",
     "unmeasured": true
    },
    "receipts/P07_CR_framework/I7_conserved_charge_carries_three_objects_and_one_denies_the_others.py": {
