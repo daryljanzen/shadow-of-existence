@@ -9,7 +9,7 @@ Hawking/Bogoliubov as an absent horizon effect."
 
 ** ⓵ THE CLAIM, AND IT IS PRECISE. **  P7: "with no completed horizon there is no exactly thermal
 endpoint for the paradox to reconcile: ** the flux that does reach the exterior is the near-Planckian
-radiation of a body still outside its horizon **"."  And P1: "** the completed horizon on which the standard problems of black-hole
+radiation of a body still outside its horizon **."  And P1: "** the completed horizon on which the standard problems of black-hole
 physics rest is therefore never realised in the exterior of a collapsing body **", because the densities "never form at any finite
 exterior time".
 
