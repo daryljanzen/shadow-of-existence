@@ -166,7 +166,21 @@ def main(argv):
     assert os.path.realpath(L.NEW_PP) == os.path.realpath(LOCAL), (
         '⛔ r7884\'s NEW_PP is not the local bank any more; the redirect below would be silent')
     L.NEW_PP = grid                      #: ⛔ the ONLY change, and it is a source directory
-    return L.main()
+    rc = L.main()
+
+    #: ⛭ THE RESULT BELONGS TO THE REVISION THAT PRODUCED IT.  `limits_nuhier.py` writes its record
+    #:   beside ITSELF, which is `r7884`'s directory -- so a read driven from here leaves its result in
+    #:   another revision's folder, where the next reader would take it for `r7884`'s own.  It is
+    #:   copied here under a name that says whose grid it was read on, and the one in `r7884`'s
+    #:   directory is treated as a byproduct: it is rewritten by every run, including runs that REFUSE
+    #:   at the gates, so the copy is taken only on a run that got through them.
+    src = os.path.join(R7884, 'limits_nuhier.json')
+    if rc == 0 and os.path.isfile(src):
+        import shutil
+        dst = os.path.join(HERE, 'limit_on_runner_grid.json')
+        shutil.copy2(src, dst)
+        print('  wrote %s' % os.path.basename(dst))
+    return rc
 
 
 if __name__ == '__main__':
