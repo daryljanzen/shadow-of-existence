@@ -41,3 +41,26 @@ progress at all, however many times it ran. ⇒ **If that is what the measuremen
 the finding is a COST, reported as one, and the item splits with the CMB grid landing first.** That
 is exactly the split `PREDICTION.md` registered, and it is not a reason to lower the resolution: a
 grid the banks cannot be compared against would answer a different question.
+
+## THE CONSTRAINT BIT, AND IT IS NOW MEASURED RATHER THAN ANTICIPATED
+
+**A lensing point exceeds `1h58m` and did not finish.** The four legs reached `01:58:33` elapsed
+against `01:57:31` of CPU — essentially a full core each, no idling — with no point written, and the
+two-hour cap on a tracked task then forced the run to stop. ⇒ **So the section above is not a
+worry about what might happen: a lensing point does not fit inside a tracked task, and because a leg
+is not checkpointed, all four legs' work was lost.**
+
+⌗ **The run is relaunched DETACHED**, in its own process session rather than as a tracked task, which
+is the one form that has survived past two hours here. The generator is idempotent, so it resumes
+from what is banked — which at that moment was nothing, so all ten points restart.
+
+⚠ **AND THE UPPER BOUND IS STILL NOT MEASURED.** `1h58m` is a floor, not a duration. Ten points at
+four at a time is three batches, so the grid is of the order of **six hours or more** if a point is
+near that floor and longer if it is not. The honest statement is that the number is not yet known.
+
+⇒ **WHAT THIS DOES TO THE ITEM.** `PREDICTION.md` registered the split, and this is the measurement
+that may trigger it: if the lensing grid does not land, **the CMB grid and this cost land first and
+the limit read follows on the completed grids.** ⛔ *Not at a lowered resolution — a grid the banks
+cannot be compared against answers a different question — and not by skipping the lensing grid,
+because the model reads its bandpowers and a limit read without them would not be the control's
+limit.*
