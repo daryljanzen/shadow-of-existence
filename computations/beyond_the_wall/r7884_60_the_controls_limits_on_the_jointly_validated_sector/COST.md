@@ -214,3 +214,33 @@ four or five restarts, with nothing lost to a restart and no checkpointing writt
 `JOBS=1` as this is written, and the thing to look at is whether the first point banks inside one
 container lifetime. If it does not, the extrapolation from `40` modes to `220` is superlinear and
 that is the next thing to measure, not a thing to assume.
+
+---
+
+## ⚠ THE SOLO POINT'S COST, MEASURED — AND CONTENTION WAS NOT THE WHOLE STORY
+
+The section above said the per-point cost was *"not yet measured"* and put the four-leg failure down
+to contention. **One leg running alone, with the whole box, is past `2h 14m` of CPU at `34` minutes
+of wall clock on about `3.95` cores, and has not finished.** So:
+
+- ⛔ **The linear model's `33` minutes is wrong by more than a factor of four**, as the previous
+  section warned it might be. `F + nk·m` earned its prediction at `40` modes and does not transfer
+  to `220`: the per-step linear algebra on a `38720`-variable system is where the extra goes. **The
+  figure to carry forward is `> 2h 14m` of CPU per point, a LOWER BOUND, read off a run that had not
+  yet finished.**
+- ⛔ **And the earlier reading — four legs each accruing `48` min of CPU in `62` min — is NOT mostly
+  thread spin, as the previous section implied.** A point really does cost hours of CPU. *The
+  contention account was the right shape and the wrong size: four legs on four cores did starve each
+  other, but even one leg given everything needs more CPU than the whole four-leg batch had
+  accrued.*
+
+⇒ **What survives of the remedy is the part that matters.** At `3.95` cores a point is roughly
+`35–45` minutes of WALL CLOCK, which does fit inside a ninety-minute container lifetime — so
+`JOBS=1` is still the right configuration, and the grid should complete across restarts because each
+finished point is banked. ⌗ *But it fits with much less room than "thirty-three minutes of CPU"
+suggested, and a point started late in a container's life will not finish before the restart takes
+it. This first leg began about `38` minutes into the lifetime and is likely to be one of those.*
+
+⌗ *Which costs nothing but time: the generator skips what is banked, so a leg killed mid-point is
+retried from the start in the next container, and only a leg that STARTS early enough banks. The
+grid therefore completes at roughly one or two points per restart rather than two or three.*
