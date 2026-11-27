@@ -5472,12 +5472,6 @@
   }
  },
  "claude/shadow-of-existence-setup-wgcmvt": {
-  "reads": {
-   "receipts/P07_CR_framework/I7_conserved_charge_carries_three_objects_and_one_denies_the_others.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46044998912",
-    "since": "85c0c0c046e2416557b55ff1f56ce7d03932b003"
-   }
-  },
   "suite": {
    "receipts/L174_general_matter_dynamics/I7_the_free_shear_is_two_not_five_and_the_corpus_already_names_the_two.py": {
     "gates": [
