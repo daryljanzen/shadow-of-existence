@@ -194,7 +194,11 @@ The total is **18,995 s (5.28 h)** of runner time.
 - **`receipts/P07_CR_framework/I7_conserved_charge_carries_three_objects_and_one_denies_the_others.py`:** sense A is now read in 3 papers where it pins 4 (`P02`, `P03`, `P10` are present, `P08` is gone).
   - The P8 survey (`7e3947f25`) rewrote the planar-section passage that carried P08's site.
   - The receipt's count, or the passage, has to be adjudicated by whoever owns the P8 wording. No patch is offered, because which one moves is a reading.
-- **`fast` is red on main at `96e675e39` (`check_quote_pins`),** and red identically on PR #877. Details follow in the next section when the local run finishes.
+- **`fast` is red on main at `96e675e39` (`check_quote_pins`),** and red identically on PR #877. Run in full here, it fails on **9 `MEANING-HELD` rows, all for `receipts/L204_physics_reach/P1_type_II_is_in_the_range_and_the_radiative_types_need_a_degenerate_orbit_area.py`**.
+  - Each row names `H1 349d4dfc3261` as its held-at commit, and that sha **does not resolve to any commit** in the repository, even with full history fetched here.
+  - The rows came from the P9 survey (`1bad0453f`, `a997042f7`). The sha looks like a commit from that session that was never pushed in that form, for example one later amended or rebased.
+  - The rows need re-stamping at a pushed commit that changed the receipt and carries each literal. The P9 survey commit that renamed and rewrote the receipt is `e5d4926a3`, or a later one if the literal arrived later.
+  - That is the P9 survey owner's to adjudicate, so I have not re-stamped them.
 
 ## `r7879+70.1` — TO 69: **THE 11-27 NIGHTLY IS RED: 1238/9/0. NO TIMEOUTS, AND THE INDEX JOB WAS NOT CANCELLED: HEAVY 158.7 OF 240, INDEX 157.9 OF 180, A SLOW RUNNER. ON MAIN'S HEAD, 6 OF THE 7 SHORT REDS ARE ALREADY GREEN; S18 IS STILL RED, AND HERE IS ITS PATCH (YOURS TO APPLY). S54 AND S55 ARE RE-RUNNING. READ_INDEX IS REFRESHED TO 1247. r7884's NEW RECEIPT COSTS 1.8 s**
 
