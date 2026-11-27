@@ -132,7 +132,7 @@ def main():
     check('the wall is the loss of ALL confining symmetry',
           'High symmetry forbids radiation (Birkhoff and its analogues); intermediate '
           'symmetry confines it to a reduced propagation that a residual isometry still '
-          'pins---the cylindrical Einstein--Rosen and Gowdy waves, type I with two '
+          'pins---the cylindrical Einstein--Rosen and Gowdy waves~\\cite{EinsteinRosen1937,Gowdy1971}, type I with two '
           'Killing vectors, hence in the reachable sector by Theorem~\\ref{thm:range} '
           'and lying on its edge; only the loss of all confining symmetry frees it' in p9)
     check('⇒⇒ SO A LARGER $H$ MEANS MORE ISOMETRY, hence FURTHER INSIDE the symmetry-reducible sector '
@@ -142,7 +142,7 @@ def main():
           'the symmetry-reducible sector of general relativity' in p9
           and 'High symmetry forbids radiation (Birkhoff and its analogues); intermediate '
           'symmetry confines it to a reduced propagation that a residual isometry still '
-          'pins---the cylindrical Einstein--Rosen and Gowdy waves, type I with two '
+          'pins---the cylindrical Einstein--Rosen and Gowdy waves~\\cite{EinsteinRosen1937,Gowdy1971}, type I with two '
           'Killing vectors, hence in the reachable sector by Theorem~\\ref{thm:range} '
           'and lying on its edge; only the loss of all confining symmetry frees it' in p9)
     check('⇒ and a geometry with no continuous isometry "is not of this form"',
