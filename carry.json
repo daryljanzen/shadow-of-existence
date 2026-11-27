@@ -371,6 +371,11 @@
     "since": "630b724bc404cd30c1fe1dae8f28a7613f65be4f",
     "unmeasured": true
    },
+   "receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46059155527",
+    "since": "205e7281a695f699a6634e8b898ca502151b744d",
+    "unmeasured": true
+   },
    "receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46055426407",
     "since": "2c408b6205a8849e6a7d596edaa3bddd949aad6a",
@@ -386,6 +391,11 @@
     "since": "2c408b6205a8849e6a7d596edaa3bddd949aad6a",
     "unmeasured": true
    },
+   "receipts/L213_external_constraint/Y1_supplying_the_requirement_made_it_an_ADD.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46059155527",
+    "since": "205e7281a695f699a6634e8b898ca502151b744d",
+    "unmeasured": true
+   },
    "receipts/L218_reader_package/C2_the_rule_is_enforceable_and_enforceable_means_severe.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46042672682",
     "since": "630b724bc404cd30c1fe1dae8f28a7613f65be4f",
@@ -399,6 +409,31 @@
    "receipts/L220_arrival_paths/V2_the_arrival_path_admits_no_metric.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46042672682",
     "since": "630b724bc404cd30c1fe1dae8f28a7613f65be4f",
+    "unmeasured": true
+   },
+   "receipts/L221_quark_lepton/C2_gradings_become_fields_by_being_a_kernel.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46059155527",
+    "since": "205e7281a695f699a6634e8b898ca502151b744d",
+    "unmeasured": true
+   },
+   "receipts/L221_quark_lepton/P14_the_three_bridges_off_the_grading_all_land_on_the_same_ceiling.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46059155527",
+    "since": "205e7281a695f699a6634e8b898ca502151b744d",
+    "unmeasured": true
+   },
+   "receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46059155527",
+    "since": "205e7281a695f699a6634e8b898ca502151b744d",
+    "unmeasured": true
+   },
+   "receipts/L221_the_bridge/B10_po2_resemblance_is_now_a_construction.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46059155527",
+    "since": "205e7281a695f699a6634e8b898ca502151b744d",
+    "unmeasured": true
+   },
+   "receipts/L221_the_bridge/B11_three_triples_two_identifications.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46059155527",
+    "since": "205e7281a695f699a6634e8b898ca502151b744d",
     "unmeasured": true
    },
    "receipts/L221_the_bridge/B1_the_index_argument_stops_where_a_mod_two_index_begins.py": {
@@ -451,6 +486,11 @@
     "since": "630b724bc404cd30c1fe1dae8f28a7613f65be4f",
     "unmeasured": true
    },
+   "receipts/L221_the_bridge/B42_the_route_was_taken_and_p14_is_the_work.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46059155527",
+    "since": "205e7281a695f699a6634e8b898ca502151b744d",
+    "unmeasured": true
+   },
    "receipts/L221_the_bridge/B47_the_wall_is_exactly_critical.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46042672682",
     "since": "630b724bc404cd30c1fe1dae8f28a7613f65be4f",
@@ -469,6 +509,21 @@
    "receipts/L221_the_bridge/B61_the_walls_do_not_cover_the_spectral_route.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46042672682",
     "since": "630b724bc404cd30c1fe1dae8f28a7613f65be4f",
+    "unmeasured": true
+   },
+   "receipts/L221_the_bridge/B64_the_composite_route_does_not_close.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46059155527",
+    "since": "205e7281a695f699a6634e8b898ca502151b744d",
+    "unmeasured": true
+   },
+   "receipts/L221_the_bridge/B7_two_unbuilt_sectors_not_one.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46059155527",
+    "since": "205e7281a695f699a6634e8b898ca502151b744d",
+    "unmeasured": true
+   },
+   "receipts/L221_the_bridge/B9_po3_why_is_answered_dimensionally.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46059155527",
+    "since": "205e7281a695f699a6634e8b898ca502151b744d",
     "unmeasured": true
    },
    "receipts/L230_computes_convention/C1_the_uptake_is_falling_and_this_line_is_why.py": {
@@ -1238,6 +1293,11 @@
     "since": "3ceaff0860cf8d02aae00b506bc4ac16eb8ef023",
     "unmeasured": true
    },
+   "receipts/P13_boundary/P13_the_almost_commutative_triple_over_the_face_supplies_a_gauge_field_the_construction_does_not_couple_and_the_orders_hilbert_space_admits_no_real_structure.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46059155527",
+    "since": "205e7281a695f699a6634e8b898ca502151b744d",
+    "unmeasured": true
+   },
    "receipts/P13_boundary/P13_the_alpha_vacua_are_a_fourth_empty_slot_because_three_principles_without_euclidean_content_select_the_member_the_face_selects.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46042672682",
     "since": "630b724bc404cd30c1fe1dae8f28a7613f65be4f",
@@ -1253,6 +1313,11 @@
     "since": "630b724bc404cd30c1fe1dae8f28a7613f65be4f",
     "unmeasured": true
    },
+   "receipts/P13_boundary/P13_the_induced_coupling_route_does_not_engage_because_the_constructions_cutoff_lies_below_its_own_spectral_gap_and_no_modes_remain_to_integrate_out.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46059155527",
+    "since": "205e7281a695f699a6634e8b898ca502151b744d",
+    "unmeasured": true
+   },
    "receipts/P13_boundary/P13_the_nine_cover_a_sourced_classification_of_the_data_that_define_a_free_field_so_no_free_field_freedom_is_left_to_the_face_alone.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46042672682",
     "since": "630b724bc404cd30c1fe1dae8f28a7613f65be4f",
@@ -1266,6 +1331,11 @@
    "receipts/P13_boundary/P13_the_quantum_halfs_census_over_the_standard_catalogue_finds_no_freedom_the_face_alone_closes_and_the_list_is_not_yet_shown_complete.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46042672682",
     "since": "630b724bc404cd30c1fe1dae8f28a7613f65be4f",
+    "unmeasured": true
+   },
+   "receipts/P13_boundary/P13_the_spectral_triple_route_over_the_leaf_is_closed_because_a_one_dimensional_base_carries_no_two_form_and_the_face_is_left_open.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46059155527",
+    "since": "205e7281a695f699a6634e8b898ca502151b744d",
     "unmeasured": true
    },
    "receipts/P13_boundary/P13_the_state_entry_is_an_atom_on_the_domain_the_corpus_fixes_and_the_period_lies_outside_it.py": {
@@ -1551,6 +1621,11 @@
    "receipts/P15_CR_cosmology/C71_the_census_is_sixty_two_per_cent_ast_and_the_backlog_has_a_nearest_function_for_eighty_three_per_cent_but_the_fourteen_that_do_not_are_one_hole_and_a_cheaper_form_lowers_the_strict_count.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46042672682",
     "since": "630b724bc404cd30c1fe1dae8f28a7613f65be4f",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/C76_the_five_held_rows_are_read_at_their_own_loci_in_four_papers_and_four_of_them_are_not_metric_claims_at_all_so_a_change_of_inputs_could_never_have_reached_them.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46059155527",
+    "since": "205e7281a695f699a6634e8b898ca502151b744d",
     "unmeasured": true
    },
    "receipts/P15_CR_cosmology/C7_equality_and_deficit.py": {
