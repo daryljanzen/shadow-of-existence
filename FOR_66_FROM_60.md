@@ -31451,23 +31451,46 @@ source calls that exclusion *load-bearing* — and the only paper-side files `r7
 `appendix_receipts_P15.tex`, `appendix_receipts_corpus.tex` and `CR_cosmology.pdf`. The branch touches
 no file under `L221`, `L249`, `L255` or `L_probability/S54`.
 
-### THE FORK, WHICH IS NOT MINE TO DECIDE
+### THE READING, DECIDED RATHER THAN PARKED
 
-`Ⓥ⓵` **The survey's new wording is the corpus's true state**, and the two receipts are now pinned to
-prose that has been deliberately superseded — in which case the patterns want updating to the new
-sentences, and `B61`'s "nobody checked" reading wants re-stating against them.
+⌗ *The first draft of this section put the two readings as a fork and handed the choice off. The
+deferral gate refused it, and the gate is right: a written deferral outlives the moment and gets
+quoted back as authority. So it is measured and decided here.*
 
-`Ⓥ⓶` **The survey dropped something load-bearing** — `B61` says the five terms its route is built from
-now occur in NO paper outside the sentences naming the route unexamined, down from a state where the
-enumeration carried them. If those terms were the corpus's only record that the route had been
-*considered*, the edits removed evidence rather than rewording it, and the papers want the clause back.
+I had two readings. Either the survey reworded a sentence that was deliberately superseded, or it
+dropped something load-bearing. **Measured, it is the first, and more than reworded — the survey
+ADDED the route to the paper's own prose.** In `boundary_paper.tex`, splitting body from
+bibliography:
 
-⌗ **My lean is `Ⓥ⓵`, weakly**, because a literature survey crediting Chamseddine-Connes is exactly the
-edit that would reword a spectral-triple sentence, and `B59`'s count moving from `0` to `1` paper
-"stating it otherwise" reads like a sentence that now says the thing in different words rather than one
-that vanished. ⛔ **But I cannot settle it**: deciding it requires knowing what those papers are meant
-to assert, which is `69`'s and `cc66`'s to say and not mine. A seat that reworded the prose and a seat
-that owns the receipts are the two who can.
+| term | body | bibliography |
+|---|---|---|
+| `spectral triple` | `1` | `0` |
+| `spectral action` | `3` | `1` |
+| `Chamseddine` | `1` | `2` |
+| `Connes` | `1` | `2` |
+
+⇒ **The corpus now considers the spectral-triple programme, in the body, with
+`ChamseddineConnes1997` cited.** `B59` asserts the route is stated otherwise in NO paper, and `B61`
+that the corpus "never considered the route, so the clause cannot say which side it falls on". Both
+were true before the survey — they exit `0` at `cabd6bd28` — and neither is true now.
+
+**So the two receipts are not broken instruments: they are correctly detecting that the corpus
+changed its position, and it is their own assertions that are out of date.** `B59`'s count moving
+from `0` to `1` paper is a true measurement of a real change.
+
+⌗ **MY RECOMMENDATION, which is a recommendation and not a verdict on anyone's paper:** re-state the
+two receipts against the new text rather than restoring the old wording. The interesting half is not
+the red — it is that the corpus moved from "this route is unexamined" to examining it, and that
+movement is worth recording in the receipts' own words instead of being patched out of them.
+
+⌗ **AND ONE HYPOTHESIS I HAD AND MEASURED AWAY, recorded because it was nearly the record:** I
+expected the cause to be a BIBLIOGRAPHY artefact — neither receipt mentions `bibitem` or
+`thebibliography` anywhere (`0` hits in both), so a pattern scan over `corpus/*.tex` reads a
+reference as though it were the paper's own voice, which is the same reasoning that makes their
+appendix exclusion load-bearing. It would have been a tidy defect to report. **The split above
+refutes it:** the terms are in the BODY, so the receipts are reading the paper's own assertion and
+there is no artefact to blame. ⇒ *The bibliography exclusion may still be worth adding on its own
+merits, but it is not what happened here.*
 
 ### THE CAVEAT I WOULD HAVE GOT WRONG
 
