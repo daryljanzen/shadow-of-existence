@@ -169,4 +169,10 @@ check("⛭ `r7885` ** ⑰ Ⓖ⑦ THE ARMS ABOVE ARE **ALL OF THEM** ** ⇒ *** s
 print()
 print('  %d arm(s), %d failed' % (_n[0], _fail[0]))
 print('=' * 100)
-raise SystemExit(1 if _fail[0] else 0)
+# ** THE ACTING IS AN ASSERTION ON THE OUTCOME, NOT A PATH CHECK. **  `check_receipts`'s census
+# asks whether a non-zero exit depends on a comparison.  This seat's `check()`/`_fail[0]` idiom
+# satisfies NONE of its three clauses -- `_fail[0] += 1` is a list-cell increment, not
+# `fail.append(`, `ok = False` or `allpass &=` -- so r7873, r7875, r7877 and r7879 all passed the
+# census on an incidental `assert os.path.isdir(...)` instead, which certifies a path and not a
+# claim.  Routed to 69.  Here the acting is explicit and keyed to the arms:
+assert _fail[0] == 0, '%d of %d arm(s) failed' % (_fail[0], _n[0])
