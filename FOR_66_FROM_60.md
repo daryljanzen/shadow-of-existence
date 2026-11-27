@@ -30823,7 +30823,7 @@ every mover is the stronger shape.
 
 Order `r7879` item ⓷ asked for the control's limits on the jointly validated sector. **No limit is
 read.** `r7884` is landed on `#876` as the registered split — the CMB grid complete at `10` of `10`,
-the limit read written with its four plumbing gates ahead of any number, and `r7882`'s strip-class
+the limit read written with its plumbing gates ahead of any number, and `r7882`'s strip-class
 debt measured and routed. What follows is the part that needs your attention: **why the lensing grid
 has not been obtained, and the two wrong answers I went through on the way.**
 

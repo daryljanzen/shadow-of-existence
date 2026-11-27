@@ -208,6 +208,39 @@ def main():
                        'holds_assembled': bool(os.path.realpath(M6.GRID)
                                                == os.path.realpath(OUT_PP))}
 
+    # ══ Ⓛ⓹ THE LENSING POINTS ARE THE HIERARCHY'S TOO, READ OFF THEIR OWN RECORDS ═══════════════
+    #: ⛭ *r7884+60, added after the first banked point was looked at.  Ⓛ⓵ and Ⓛ⓶ read the CMB
+    #: side's `config`, and there was NO gate on the lensing side at all -- not because it passed,
+    #: but because `phiphi_point.py` did not record the four switches, so the check was
+    #: IMPOSSIBLE.  ⛔ The lensing bandpowers go into the same limit, so an unverifiable half is an
+    #: unverified limit.  The recorder is completed in the same revision and this reads it.*
+    print('\n  Ⓛ⓹  THE LENSING POINTS, READ FROM THEIR OWN RECORDED SWITCHES')
+    bad5 = []
+    for arm in ARMS:
+        for tag in NEW_TAGS:
+            f = os.path.join(OUT_PP, '%s_%s.json' % (arm, tag))
+            try:
+                d = json.loads(io.open(f, encoding='utf-8').read())
+            except Exception as exc:                                        # noqa: BLE001
+                bad5.append('%s_%s unreadable: %s' % (arm, tag, exc))
+                continue
+            sw = d.get('switches', {})
+            if sw.get('NUHIER') != '1':
+                bad5.append('%s_%s records NUHIER = %r, not on' % (arm, tag, sw.get('NUHIER')))
+            if (sw.get('NQ'), sw.get('LMAXNU')) != ('12', '12'):
+                bad5.append('%s_%s is at NQ/LMAXNU %r/%r, not the gated 12/12'
+                            % (arm, tag, sw.get('NQ'), sw.get('LMAXNU')))
+            if sw.get('QMAXNU') != '20':
+                bad5.append('%s_%s is at QMAXNU %r, not 20' % (arm, tag, sw.get('QMAXNU')))
+            if abs(float(d.get('mnu', -1)) - want[tag]) > 5e-07:
+                bad5.append('%s_%s records mnu = %r, not %.2f' % (arm, tag, d.get('mnu'),
+                                                                  want[tag]))
+    gate('Ⓛ⓹ every re-solved LENSING point records the switch on, the gated grid and its own sum '
+         'in its OWN file -- the half of the limit that had no gate because the record did not '
+         'exist, not because it passed', not bad5,
+         '; '.join(bad5[:4]) if bad5 else '%d point(s)' % (len(NEW_TAGS) * len(ARMS)))
+    rec['lensing_provenance'] = {'checked': len(NEW_TAGS) * len(ARMS), 'bad': bad5}
+
     if FAILS:
         rec['gates_failed'] = FAILS
         json.dump(rec, io.open(os.path.join(_HERE, 'limits_nuhier.json'), 'w', encoding='utf-8'),

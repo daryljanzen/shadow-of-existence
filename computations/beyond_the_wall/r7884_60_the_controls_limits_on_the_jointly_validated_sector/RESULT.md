@@ -94,9 +94,18 @@ grid and this cost land now; the limit read follows on the completed grids.
 ⛔ *Not at a lowered resolution — a grid the banked grids cannot be compared against answers a
 different question — and **not** by dropping the lensing grid from the read itself, because the
 model reads its bandpowers and a limit without them would not be the control's limit.*
-`limits_nuhier.py` lands **as registered and unrun**: its four plumbing gates (`Ⓛ⓵`–`Ⓛ⓸`) stand
-ahead of any number and `raise SystemExit` if any fails, and both `closed_envelope` reads — CMB and
-lensing — are in it.
+`limits_nuhier.py` lands **as registered and unrun**: its plumbing gates (`Ⓛ⓵`–`Ⓛ⓹`) stand ahead
+of any number, with ONE refusal that fires if any of them failed, and both `closed_envelope` reads
+— CMB and lensing — are in it.
+
+⛭ **A FIFTH GATE WAS ADDED IN THIS REVISION, AND THE REASON IS WORTH THE LINE.** `Ⓛ⓵` and `Ⓛ⓶`
+read the CMB points' own recorded `config`. The lensing side had **no gate at all** — and not
+because it passed: `phiphi_point.py` did not record the four hierarchy switches, so there was
+nothing to read and the check was *impossible*. ⛔ *The lensing bandpowers enter the same limit, so
+an unverifiable half is an unverified limit.* The recorder is completed here (additively — every
+reader of a banked switch record parses it by name) and `Ⓛ⓹` reads it. The one point already banked
+without the record was **deleted and is being re-run**, so that no point in the grid is one whose
+provenance only its log can attest.
 
 ---
 

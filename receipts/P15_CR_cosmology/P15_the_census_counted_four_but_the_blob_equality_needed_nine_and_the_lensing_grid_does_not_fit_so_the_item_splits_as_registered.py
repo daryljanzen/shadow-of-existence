@@ -390,11 +390,28 @@ _guard = [n for n in ast.walk(_lim) if isinstance(n, ast.If)
           and ast.unparse(n.test) == 'FAILS'
           and any(isinstance(b, ast.Raise) and 'SystemExit' in ast.unparse(b.exc)
                   for b in n.body)]
-check('Ⓖ① the read carries FOUR distinctly labelled plumbing gates and ONE refusal that fires if '
-      'ANY of them failed, so a missing or mis-pointed bank stops it before it prints a number. '
-      '⌗ *One refusal over an accumulated list, not four separate raises -- it reports every '
-      'failure rather than only the first*',
-      len(_lgates) == 4 and len(_guard) == 1 and len(_exits) == 1,
+#: ⛭ *NOT a pin on the number of gates.  This arm asserted `== 4`, and then this same revision
+#: added a fifth (the lensing side's provenance, which had no gate at all), so the pin would have
+#: reddened the receipt for the read being IMPROVED.  ⛔ The claim that is actually wanted is that
+#: the gates are the contiguous `Ⓛ` series with no gap, that there are at least the four the
+#: registration fixed, and that ONE refusal covers them all -- monotone in the direction the set
+#: can move, and still false if a gate is dropped, renamed or left unguarded.*
+_SERIES = [chr(0x24F4 + i) for i in range(1, 10)]
+_lgates = [ast.literal_eval(n.args[0]).split()[0] for n in ast.walk(_lim)
+           if isinstance(n, ast.Call) and ast.unparse(n.func) == 'gate'
+           and n.args and isinstance(n.args[0], ast.Constant)
+           and ast.literal_eval(n.args[0]).startswith('Ⓛ')]
+_want = ['Ⓛ' + g for g in _SERIES[:len(_lgates)]]
+_guard = [n for n in ast.walk(_lim) if isinstance(n, ast.If)
+          and ast.unparse(n.test) == 'FAILS'
+          and any(isinstance(b, ast.Raise) and 'SystemExit' in ast.unparse(b.exc)
+                  for b in n.body)]
+check('Ⓖ① the plumbing gates are the CONTIGUOUS `Ⓛ` series with no gap, at least the four the '
+      'registration fixed, and ONE refusal fires if ANY of them failed. ⌗ *One refusal over an '
+      'accumulated list, not one raise per gate -- it reports every failure rather than only the '
+      'first*',
+      len(_lgates) >= 4 and sorted(set(_lgates)) == sorted(_want) and len(_lgates) == len(_want)
+      and len(_guard) == 1 and len(_exits) == 1,
       '%s, %d guarded refusal(s)' % (_lgates, len(_guard)))
 
 check('Ⓖ② and BOTH envelope reads are in it -- the CMB one and the lensing one -- so the lensing '
