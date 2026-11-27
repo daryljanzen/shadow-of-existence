@@ -294,6 +294,11 @@
     "since": "31c822d4911ff3c5b63f7346efa7b47f4fa2ae9b",
     "unmeasured": true
    },
+   "receipts/L174_general_matter_dynamics/I8_no_sweep_reaches_the_stratum_and_the_theorem_says_so.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45921280892",
+    "since": "022d2a2393c9a8317b502b096b5729ed6e21fef8",
+    "unmeasured": true
+   },
    "receipts/L175_dimensional_descent/E1_a_descent_from_D_above_five_must_be_multistep.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45912362938",
     "since": "31c822d4911ff3c5b63f7346efa7b47f4fa2ae9b",
@@ -419,6 +424,11 @@
     "since": "31c822d4911ff3c5b63f7346efa7b47f4fa2ae9b",
     "unmeasured": true
    },
+   "receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45921280892",
+    "since": "022d2a2393c9a8317b502b096b5729ed6e21fef8",
+    "unmeasured": true
+   },
    "receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45912362938",
     "since": "31c822d4911ff3c5b63f7346efa7b47f4fa2ae9b",
@@ -507,6 +517,11 @@
    "receipts/L221_the_bridge/B35_the_continuation_is_cited_wrong.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45912362938",
     "since": "31c822d4911ff3c5b63f7346efa7b47f4fa2ae9b",
+    "unmeasured": true
+   },
+   "receipts/L221_the_bridge/B36_two_of_three_crossings_are_supplied.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45921280892",
+    "since": "022d2a2393c9a8317b502b096b5729ed6e21fef8",
     "unmeasured": true
    },
    "receipts/L221_the_bridge/B37_po4_and_po5_share_a_root.py": {
@@ -849,6 +864,11 @@
     "since": "bfcab72f2824c8fc131fb409e97d20a4dc896d2a",
     "unmeasured": true
    },
+   "receipts/L831_graph_theory/G1_the_six_hinge_ends_carry_an_octahedron_and_the_hinges_are_its_antipodes.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45921280892",
+    "since": "022d2a2393c9a8317b502b096b5729ed6e21fef8",
+    "unmeasured": true
+   },
    "receipts/L831_graph_theory/G4_the_2026_sharpness_theorem_misses_and_finiteness_is_the_binding_hypothesis.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45886231621",
     "since": "8ff02f314ff866c02733fa3b511da8e19e47eb9d",
@@ -1149,6 +1169,11 @@
     "since": "8ff02f314ff866c02733fa3b511da8e19e47eb9d",
     "unmeasured": true
    },
+   "receipts/P03_SdS_slicing/P03_the_hubble_eddington_radius_tracks_the_dynamical_mass_on_virgo.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45921280892",
+    "since": "022d2a2393c9a8317b502b096b5729ed6e21fef8",
+    "unmeasured": true
+   },
    "receipts/P03_SdS_slicing/P03_the_symbol_T_carries_four_structural_referents.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45912362938",
     "since": "31c822d4911ff3c5b63f7346efa7b47f4fa2ae9b",
@@ -1177,6 +1202,11 @@
    "receipts/P07_CR_framework/P07_the_double_root_removes_the_first_law_and_the_area_mismatch_together_and_the_debt_is_at_the_horizon_that_carries.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45912362938",
     "since": "31c822d4911ff3c5b63f7346efa7b47f4fa2ae9b",
+    "unmeasured": true
+   },
+   "receipts/P07_CR_framework/P07_the_lap_is_a_collapse_read_on_the_cosmic_clock_and_the_collapse_sheets_one_horizon_is_cosmological_in_signature.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45921280892",
+    "since": "022d2a2393c9a8317b502b096b5729ed6e21fef8",
     "unmeasured": true
    },
    "receipts/P07_CR_framework/P07_the_page_curve_is_a_falsifier_here_and_the_daughter_is_not_disconnected.py": {
@@ -1307,6 +1337,11 @@
    "receipts/P14_matter_sector_paper/P14_naming_a_derived_object.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45886231621",
     "since": "8ff02f314ff866c02733fa3b511da8e19e47eb9d",
+    "unmeasured": true
+   },
+   "receipts/P14_matter_sector_paper/P14_p3_already_said_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45921280892",
+    "since": "022d2a2393c9a8317b502b096b5729ed6e21fef8",
     "unmeasured": true
    },
    "receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py": {
