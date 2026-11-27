@@ -24,7 +24,7 @@ set -u
 # ⌗ the output directory is KEYED BY THE CARRY, because two carries were compared and one
 #   grid silently standing for the other is exactly the mistake phiphi.py already made once.
 ETAREF=${ETAREF:-4000}
-OUT=${PPOUT:-"$(cd "$(dirname "$0")/../bank" && pwd)/phiphi_grid_eta${ETAREF}_bvel1_primnorm1_nufd_only"}
+OUT=${PPOUT:-"$(cd "$(dirname "$0")/../bank" && pwd)/phiphi_grid_eta${ETAREF}_bvel1_primnorm1_nuhier"}
 export ETAREF
 JOBS=${JOBS:-4}
 MAXB=${MAXB:-99}
@@ -68,8 +68,13 @@ done
 TODO=()
 for j in "${JOBLIST[@]}"; do set -- $j; [ -s "$OUT/$1_$2.json" ] || TODO+=("$j"); done
 echo "  ${#JOBLIST[@]} point(s) in the list, ${#TODO[@]} outstanding"
-JOBLIST=("${TODO[@]:-}")
-[ ${#JOBLIST[@]} -eq 0 ] && { echo "  nothing outstanding"; exit 0; }
+#: ⛔ *guarded BEFORE the `:-` expansion, not after: `("${TODO[@]:-}")` on an empty
+#: array yields ONE EMPTY element, so the length test below never fired and the dispatch
+#: loop called `run` with no arguments -- an unbound-variable error under `set -u`.  That
+#: is the upstream file's idiom and it only shows when nothing is outstanding, which is
+#: exactly the run that first pointed this file at the wrong directory.*
+[ ${#TODO[@]} -eq 0 ] && { echo "  nothing outstanding"; exit 0; }
+JOBLIST=("${TODO[@]}")
 
 b=0
 i=0
