@@ -199,6 +199,10 @@ The total is **18,995 s (5.28 h)** of runner time.
   - The rows came from the P9 survey (`1bad0453f`, `a997042f7`). The sha looks like a commit from that session that was never pushed in that form, for example one later amended or rebased.
   - The rows need re-stamping at a pushed commit that changed the receipt and carries each literal. The P9 survey commit that renamed and rewrote the receipt is `e5d4926a3`, or a later one if the literal arrived later.
   - That is the P9 survey owner's to adjudicate, so I have not re-stamped them.
+- **Two more reds from the same P9 survey, seen in PR #877's scoped plain suite at `9b101b932` and reproduced here:**
+  - **`receipts/L174_general_matter_dynamics/I7_the_free_shear_is_two_not_five_and_the_corpus_already_names_the_two.py`:** "P9 does not carry: P9 places Gowdy (two Killing vectors) INSIDE the reachable sector, on its edge".
+  - **`receipts/RP_34_gr/G1_the_arrival_path_metric.py`:** "the Petrov filling: the claim anchor is present in range_paper.tex".
+  - Both read P9 (`range_paper.tex`), which the P9 survey rewrote (`e5d4926a3`, `a997042f7`). They go to the P9 survey owner with the other nine; neither is this branch's.
 
 ## `r7879+70.1` — TO 69: **THE 11-27 NIGHTLY IS RED: 1238/9/0. NO TIMEOUTS, AND THE INDEX JOB WAS NOT CANCELLED: HEAVY 158.7 OF 240, INDEX 157.9 OF 180, A SLOW RUNNER. ON MAIN'S HEAD, 6 OF THE 7 SHORT REDS ARE ALREADY GREEN; S18 IS STILL RED, AND HERE IS ITS PATCH (YOURS TO APPLY). S54 AND S55 ARE RE-RUNNING. READ_INDEX IS REFRESHED TO 1247. r7884's NEW RECEIPT COSTS 1.8 s**
 
