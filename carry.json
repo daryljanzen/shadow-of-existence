@@ -1184,6 +1184,16 @@
     "since": "31c822d4911ff3c5b63f7346efa7b47f4fa2ae9b",
     "unmeasured": true
    },
+   "receipts/P04_modern_parallax/R2_the_papers_correlation_figures_are_the_ones_nothing_checked.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45925696290",
+    "since": "b55f42ef2dcc3712e07fc4c59c94c9a27feae195",
+    "unmeasured": true
+   },
+   "receipts/P04_modern_parallax/R50_the_long_wavelength_bullet_reverses_for_the_observable_and_the_corner_is_three_parts_per_million.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45925696290",
+    "since": "b55f42ef2dcc3712e07fc4c59c94c9a27feae195",
+    "unmeasured": true
+   },
    "receipts/P05_groupoid/Q4_equianharmonic_vantages.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45886231621",
     "since": "8ff02f314ff866c02733fa3b511da8e19e47eb9d",
