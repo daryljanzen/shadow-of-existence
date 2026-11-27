@@ -3397,6 +3397,25 @@
    }
   }
  },
+ "claude/shadow-of-existence-setup-wgcmvt": {
+  "suite": {
+   "receipts/L_probability/S18_the_one_seven_one_was_never_a_rewriting_queue_and_the_grain_clause_cannot_ratify_forty_six_character_windows.py": {
+    "gates": [
+     "\u24b6\u2461\u1d47"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46016816419",
+    "since": "46f824c2feba35951268316528e843d19c849200"
+   },
+   "receipts/P07_CR_framework/I7_conserved_charge_carries_three_objects_and_one_denies_the_others.py": {
+    "gates": [
+     "sense A is carried by four papers now --",
+     "\u26d4 and the fifth is NAMED with its cause:"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46016816419",
+    "since": "46f824c2feba35951268316528e843d19c849200"
+   }
+  }
+ },
  "main": {
   "reads": {
    "receipts/L_probability/S18_the_one_seven_one_was_never_a_rewriting_queue_and_the_grain_clause_cannot_ratify_forty_six_character_windows.py": {
