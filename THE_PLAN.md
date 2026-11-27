@@ -16,16 +16,22 @@ piece that would be received as a proper contribution to its literature.
 
 **Phase 1 --- the survey, one paper per turn at least, in corpus order from P1.** The surveying seat reads each
 paper whole itself; the read is never farmed out. Each turn:
-1. a literature check on the paper's main claims --- what is already known, who must be cited, where the paper's
-   novelty claims stand against that;
+1. a first literature check on the paper's main claims --- enough to see what is already known, who must be cited,
+   and where the paper's novelty claims and each candidate stand against that; the full confrontation is Phase 2's;
 2. the fixes that check calls for, made in the corpus paper in the same turn (citations, novelty claims,
    errors), with receipts where a claim is computational;
 3. the paper's standalone candidates recorded in the table below: the result, what it would need brought in from
    elsewhere in the corpus to stand alone, the literature it must engage, a target venue, and how far it is from
    ready. Candidates include results that are not controversial at all.
 
-**Phase 2 --- writing.** From the survey, the candidates ranked, then each written to the submission-ready state
-P1's and P4's standalones reached, and lined up with venues and an order.
+**Assessment.** With every row filled, the candidates are ranked: what each contributes to its field, how close it
+is to ready, which venues take direct submissions, and an order that builds visibility, uncontroversial pieces
+going early beside the larger claims.
+
+**Phase 2 --- writing, one paper at a time.** Each chosen standalone gets the full literature confrontation, the
+draft, the venue check and the preparation to submission state P1's and P4's standalones reached; whatever that
+confrontation finds is carried back into the corpus paper in the same stretch, so the corpus versions come up to
+par with the standalones as they go out.
 
 **Where things stand, and the constraint on venues.** No paper is under review: GRG declined P1 and ApJL declined
 P4, so the course is charted afresh, with those two venues out for those papers. arXiv has not let Daryl post, so
@@ -34,8 +40,8 @@ out. Each candidate's venue is checked against that as the survey reaches it.
 
 | paper | survey | standalone candidates found | venue | state |
 |---|---|---|---|---|
-| P1 | not yet surveyed | the existing standalone (event horizon as metric singularity) | GRG out (declined); direct-submission venue to choose | standalone exists, not under review |
-| P2 | not yet surveyed | the existing standalone, `resources/P2_standalone` | CQG (JMP alternative) | in preparation |
+| P1 | surveyed: read whole, literature checked, corpus fixes landed (degenerate induced metric of every null hypersurface distinguished from the metric singularity, Gourgoulhon--Jaramillo; the classical infinite exterior time and event-horizon teleology acknowledged, Baccetti--Mann--Terno and Visser; the horizon-avoidance accounts of Kawai--Matsuo--Yokokura and Baccetti--Mann--Terno set beside Vachaspati--Stojkovic--Krauss as reaching the absence through the radiation's dynamics, where P1 reaches it from classical causal structure) | (1) the existing standalone: the metric singularity, every Cauchy time of the exterior accumulating on the horizon with no symmetry assumed, and the four problems losing their premise; it must carry the same literature, and its source is not in the repository. Its contested premise, to be argued not assumed, is that the external universe's time is a Cauchy temporal function of the exterior domain. (2) The machine-checked causal-alignment proposition and Killing-horizon lemma as a formalisation paper; needs a check against the Lean Lorentzian-causality work now appearing (the physics-library blueprint, others) | (1) GRG out; direct-submission candidates PRD, CQG, Foundations of Physics, IJMPD. (2) a formal-methods venue (ITP, CICM, J. Automated Reasoning) or a mathematical-physics journal | (1) standalone exists, not under review; literature additions to port. (2) not drafted |
+| P2 | surveyed: read whole (corpus paper and standalone), literature checked, corpus fix landed (Stoica's semi-regular analytic extension of the metric through $r=0$ and Giveon--Kol--Ori--Sever's negative-mass analysis, set beside Sbierski as bounding the result from opposite sides: the continuation is of the curve, not the metric across a junction, and asserts no signal through $r=0$) | the existing CQG standalone, `resources/P2_standalone`: the horizon and $r=0$ as the two critical points of one circle, the continuation at each, the three real directions, the asymmetry located in the value of $r$, the universal Kasner approach. Already concedes inextendibility outright and claims only what the analytic structure shows. Must add Stoica 2012 (the nearest prior work: an analytic, degenerate extension through $r=0$) and Giveon--Kol--Ori--Sever (the sharpest objection to joining $r>0$ and $r<0$), and the Kantowski--Sachs literature on the interior | CQG (direct submission; JMP alternative) | standalone drafted, cover letter written; two references to add; closest to submission of any paper so far |
 | P3 | not yet surveyed | | | |
 | P4 | not yet surveyed | the existing standalone (the modern parallax) | ApJL out (declined), JCAP out (arXiv-gated); ApJ, MNRAS considered | standalone exists, not under review |
 | P5 | not yet surveyed | | | |
