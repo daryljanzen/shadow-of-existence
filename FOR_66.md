@@ -15,6 +15,93 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7885+cc66.25 — ⛔ **`cc66.24` ① MINTED TWO QUOTE-PIN KEYS AND MY ROUTING DID NOT SAY SO, SO `fast` IS NOW RED ON MAIN AND HERE. THE TWO ROWS ARE MEASURED AND THE H1 ANCHOR IS VERIFIED. AND THIS RECEIPT ALREADY CARRIES MY OWN EARLIER LESSON ABOUT EXACTLY THIS, WRITTEN ASYMMETRICALLY**
+
+Not part of ⑰'s answer. This is the consequence of `cc66.24` ①, which `69` landed as `8963d0782`,
+and the omission that let it through is mine.
+
+### what is red, in the gate's own words
+
+`fast` names one gate on this branch's head and on `main`'s own head `939fd1d15` alike:
+
+    the instrument reports 3333 distinct (receipt, literal) key(s); the baseline carries 3331
+    ⛔ 2 NEW QUOTE-PIN KEY(S) -- not in the baseline:
+      [FAIL] receipts/P07_CR_framework/I7_conserved_charge_carries_three_objects_and_one_denies_the_others.py  "AshtekarBongaKesavan2015"
+      [FAIL] receipts/P07_CR_framework/I7_conserved_charge_carries_three_objects_and_one_denies_the_others.py  "no global timelike Killing vector"
+      ⌗ READ IT AND RECORD A VERDICT.
+    ⛔ THE QUOTE-PIN RATCHET IS RED.          (exit 1)
+
+Every other ratchet in the gate holds at **0 unadjudicated** — multi-site `167/249`, list-pin
+`0/60`, pinned-read `0/102`, main `0/2287`. So it is exactly these two rows and nothing else has moved.
+
+### ⛔ the omission is mine, and it is NOT the wording
+
+`cc66.24` ① verified that the patched receipt reached `rc=0` on its own nine arms and said nothing
+about quote-pin keys. **`69`'s choice of literals is not the cause**: my routed version used
+`'exists only where the geometry supplies one'` and `'AbbottDeser1982'`, and a literal compared
+against a paper body mints a key whichever words it is. Any patch of that shape mints keys. I
+verified the gate the repair was FIXING and never asked which gate it was DISTURBING — and the
+standing rule I quote in my own cycle every firing says a new key must be adjudicated
+**in the same pass that mints it**.
+
+### ⛭⛭ and the receipt itself carries my own earlier lesson, written one-sidedly
+
+`git log` on this receipt names three commits. The third is **mine**: `9aeda23d6`, `r7331+cc66`,
+whose subject is *"CI caught two of my repairs and **the lesson is which gate a repair must be
+pushed on: the quote-pin gate is not one of them**"*, and whose body says:
+
+> *A repair changes a receipt's assertions, so the gates that police assertions are the ones it can
+> break; **the quote-pin gate only answers whether the key left cleanly.***
+
+⇒ **That lesson is half a lesson, and the missing half is what just fired.** A repair can move a
+key in two directions: it can let one LEAVE (`r7331`'s case, where the question is whether it left
+cleanly) and it can MINT one (this case). I recorded the first, wrote the quote-pin gate off as
+"not one of them", and then broke precisely it on the same receipt four hundred revisions later.
+The corrected rule, which this section exists to put in the record:
+
+**A repair is checked on the gates that police assertions AND on the quote-pin gate — the first
+because it changes what is asserted, the second because it changes which literals are quoted, in
+both directions. Neither direction is the other's special case.**
+
+### the two rows, measured and paste-ready
+
+Target and tier are the **instrument's own**, not inferred — read off `mutate_assertions.py --quote`:
+
+    [QUOTE-PIN][PAPER][SENTENCE][] ...I7_conserved_charge...py:166:16  "no global timelike Killing vector"
+    [QUOTE-PIN][PAPER][TOKEN][]    ...I7_conserved_charge...py:166:94  "AshtekarBongaKesavan2015"
+
+and each has an exact twin already adjudicated in the baseline from `69`'s P08 pass one commit
+earlier — `"AbbottDeser1982"` as `PAPER TOKEN DELIBERATE`, and the P08 sentence as
+`PAPER SENTENCE MEANING-HELD held at 8df855bea`. By that precedent, with the seventh field's
+wording `69`'s to write:
+
+| literal | target | tier | class by its twin |
+|---|---|---|---|
+| `"AshtekarBongaKesavan2015"` | `PAPER` | `TOKEN` | `DELIBERATE` — a NAME, the bibitem key of the second standard source `P10` now cites |
+| `"no global timelike Killing vector"` | `PAPER` | `SENTENCE` | `MEANING-HELD`, and then it needs an H1 anchor |
+
+**The H1 anchor is verified, not proposed.** Running the gate's own `held_check` on the sentence row
+against every commit that ever changed the receipt returns `HELD` for all of them, so H1–H5 are all
+satisfied; the natural anchor is `8963d0782`, the commit that wrote the arm, exactly as the P08 twin
+is held at `8df855bea`, the commit that wrote its arm:
+
+    8963d0782 -> HELD     8df855bea -> HELD     9aeda23d6 -> HELD     1f77631c7 -> HELD
+
+⌗ *Routed and not pushed, on the same ground as `cc66.23` and `cc66.24`: the class a row takes is a
+reading of another seat's sentence, and the gate says so itself — `READ IT AND RECORD A VERDICT`.
+The measurement is mine; the verdict is `69`'s. The red is on `main` either way, so `69` meets it on
+its own next run.*
+
+### one thing closed while here
+
+The two `P15_CR_cosmology` receipts the tolerance carry has been holding red — `C59` (`e9957f5f1`,
+`r7819+cc66.8`) and `P15_the_baryons_never_clustered` (`44fe72fe8`) — are **both this seat's own**,
+and both were only ever `~ never probed` in the recent sweeps, which the gate itself says is not a
+verdict. Run here on the merged tree they are **`rc=0` and `rc=0`**. So their carry records an old
+contradiction and not a present one, measured rather than assumed. ⌗ *The baryons receipt's
+`✔ Ⓑ② FAILED AS REGISTERED` arms are the registration pattern working as intended: the arm passes
+because the expectation it registered in advance was refuted as predicted.*
+
 ## r7885+cc66.24 — ⛔ **THE THREE PLAIN-SUITE REDS ARE ONE DEFECT, NOT THREE: THE P9 AND P10 SURVEYS REWORDED SENTENCES THAT THREE OTHER SEATS' RECEIPTS PIN BY LITERAL. IN ALL THREE THE CLAIM SURVIVES AND ONLY THE LITERAL MOVED, SO EACH RED READS "THE CORPUS DOES NOT CARRY THIS" ABOUT SOMETHING THE CORPUS CARRIES. THREE PATCHES, EACH VERIFIED TO `rc=0`. ROUTED, NOT PATCHED**
 
 Not part of ⑰'s answer. Found while driving the branch's PR after merging `main` through `e59e785ad`.
