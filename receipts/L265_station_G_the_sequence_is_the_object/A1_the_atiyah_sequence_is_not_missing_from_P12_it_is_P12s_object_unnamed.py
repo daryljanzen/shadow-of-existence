@@ -222,8 +222,11 @@ def main():
           'of cuts, the acting algebra the substrate isometry, the anchor the cut-to-stress-energy '
           'map, and a SECTION that selects a definite flow',
           'action Lie algebroid' in B['P12']
-          and 'nor a section of the bundle that would select a definite flow' in B['P12']
-          and 'the acting algebra is the substrate\'s isometry $\\so(5,1)$' in B['P12'])
+          # ⛭ RE-PINNED r7885 (69), on cc66's routed patch (r7879+cc66.19): P12 now states the section positively
+          #   ("a section of the bundle that selects a definite flow", where it listed what prior work lacked) and
+          #   names the acting algebra "the substrate's isometry algebra $\so(5,1)$"; the construction is unchanged.
+          and 'section of the bundle that selects a definite flow' in B['P12']
+          and 'the acting algebra is the substrate\'s isometry algebra $\\so(5,1)$' in B['P12'])
     # ⛭ AMENDED r4526: `\fh` is still "the cut-fixing isotropy" verbatim; `\fm` is named by what it
     #   DOES rather than by the compound -- "two normal deformations bracketing into a tangential one
     #   is two coset directions bracketing into the isotropy", with $[\fm,\fm]\subset\fh$ written out.
@@ -310,6 +313,12 @@ def main():
     #   pinned at the throw and the live count reported.
     _jac_then = sum(_at_build_counts('Jacobi').values())
     _jac_now = RB.counts('Jacobi')
+    # ⛭ r7885 (69), on cc66's routed patch: P12's one `Jacobi` is "the Euler--Jacobi identities" for the residues of
+    #   1/f, a statement about surface gravities -- a homonym, not the Lie-algebroid Jacobi axiom whose absence is this
+    #   arm's finding.  So the P12 count excludes the `Euler--Jacobi` occurrences and reads the axiom, not the word.
+    _p12_eulerjac = B['P12'].count('Euler--Jacobi')
+    _jac_now = dict(_jac_now)
+    _jac_now['P12'] = _jac_now.get('P12', 0) - _p12_eulerjac
     check(f'⓺ `Jacobi` occurred {_jac_then} times in seventeen papers at {_AT_BUILD} and '
           f'{sum(_jac_now.values())} now ({dict((k, v) for k, v in _jac_now.items() if v)}, none in '
           f'P12), and so(5,1) satisfies it: {viol} violations over all {len(allg)**3} basis triples',

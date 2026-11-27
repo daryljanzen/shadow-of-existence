@@ -163,8 +163,15 @@ RESTATED = {
 _restated_ok = [r for r in CONV if (r[0], r[1]) in RESTATED
                 and (r[0], r[1]) not in _live
                 and _live.get((r[0], RESTATED[(r[0], r[1])])) == 'DELIBERATE']
+# ⛭ r7885 (69): A FIFTH WAY, AND IT IS THE RECEIPT ITSELF RETIRED BY ITS OWNER, NOT A PIN RE-VERDICTED.  The chat seat
+#   retired B5 (60c0e7ad9, "its mod-2 index rested on the pair-flip action, which is the frame's and not the walls'"),
+#   removing the receipt, its INDEX row and its baseline rows together.  A row whose receipt is GONE from the tree
+#   has no site to carry a verdict, so it leaves this table's population; checked: the file must be absent, so a row
+#   dropped from a receipt that still exists still turns this red.
+RETIRED_RECEIPTS = {'receipts/L221_the_bridge/B5_the_mod_two_index_is_one_and_the_corpus_computed_it.py'}
+_gone = {x for x in RETIRED_RECEIPTS if not os.path.exists(os.path.join(ROOT, x))}
 _retired = [r for r in CONV if (r[0], r[1]) not in _live and r not in _rekeyed_ok
-            and r not in _restated_ok]
+            and r not in _restated_ok and r[0] not in _gone]
 _owed_tbl = sum(1 for r in CONV if r[5] == 'REPAIR-OWED')
 _owed_now = sum(1 for r in MINE if r[5] == 'REPAIR-OWED')
 print(f"      at the pin {TABLE_PIN}: {_pin_agree} of {len(CONV)} agree;  live now: "
@@ -324,7 +331,7 @@ gate(f"Ⓒ④ ⛔ AND NO VERDICT OF THEIRS IS CHANGED: all `{len(EXT)}` rows sti
      f" baseline, because they are another seat's repairs and a measurement that overturns `46` of them"
      f" is an order and not a conversion.  ⌗ *The prefix is this seat's on the board, so the restraint"
      f" is a choice and it is stated as one*",
-     all(_bmap.get((r[0], REKEYED.get((r[0], _RECUT.get((r[0], r[1]), r[1])), _RECUT.get((r[0], r[1]), r[1])))) == 'EXTENDED' for r in EXT))
+     all(_bmap.get((r[0], REKEYED.get((r[0], _RECUT.get((r[0], r[1]), r[1])), _RECUT.get((r[0], r[1]), r[1])))) == 'EXTENDED' for r in EXT if r[0] not in _gone))
 
 A = STATS['alignment_contrast']
 gate(f"Ⓒ⑤ ⛭⛭⛭ ONE INSTRUMENT, TWO POPULATIONS: `{A['this_seats_171_clipped']}` of this line's"

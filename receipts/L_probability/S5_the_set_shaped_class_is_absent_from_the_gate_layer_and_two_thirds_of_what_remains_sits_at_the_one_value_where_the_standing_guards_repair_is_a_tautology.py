@@ -552,7 +552,16 @@ def shadow_run(blank):
                 os.symlink(s, d)
         return [subprocess.run(['python3', os.path.join(td, f)], capture_output=True, text=True,
                                env=dict(os.environ, NODE='60'), timeout=900).returncode
-                for f in PROBE]
+                for f in PROBE if f not in _RETIRED_GONE]
+
+
+# ⛭ r7885 (69): A PROBED RECEIPT RETIRED BY ITS OWNER.  The chat seat retired B5 at 60c0e7ad9 ("its mod-2 index rested
+#   on the pair-flip action, which is the frame's and not the walls'"), removing the file.  A retired receipt is not a
+#   probe that passes or fails; it is gone.  It leaves the probe and the run only when the file is ABSENT, and the
+#   counts below are the population that remains, so a live receipt that starts failing still turns these red.
+_RETIRED_GONE = {f for f in ('receipts/L221_the_bridge/B5_the_mod_two_index_is_one_and_the_corpus_computed_it.py',)
+                 if not os.path.exists(os.path.join(ROOT, f))}
+_NPROBE = len([f for f in PROBE if f not in _RETIRED_GONE])
 
 
 # ** named for the same reason the reach modes are: a bare boolean at a call site says
@@ -568,8 +577,8 @@ print(f"      shadow tree, bodies empty :  {_blank_rc}")
 gate("Ⓔ② ⛔ AND RUNNING REFUTES THE PROXY, TWO-SIDED: against a shadow tree whose papers EXIST and "
      "whose bodies extract EMPTY, `6` of `6` probed receipts FAIL --- including the four the proxy "
      "called uncontrolled --- and against the same shadow unblanked all `6` PASS",
-     len(_blank_rc) == 6 and all(c != 0 for c in _blank_rc)
-     and len(_live_rc) == 6 and all(c == 0 for c in _live_rc))
+     len(_blank_rc) == _NPROBE and all(c != 0 for c in _blank_rc)
+     and len(_live_rc) == _NPROBE and all(c == 0 for c in _live_rc))
 
 gate("Ⓔ③ ⇒ SO THE PROXY IS DECLINED IN PRINT, in the shape `70` declined its own at `r7181+70.1` "
      "rather than shipping a reach it had priced and found coincidental: a receipt builds SEVERAL "
@@ -589,6 +598,8 @@ head("F.  EVERY EXPOSED-SITE RECEIPT RUN ON THIS TREE, AND THE AUTHORSHIP BOUND 
 
 _rc = {}
 for _f in sorted(_exp_files):
+    if _f in _RETIRED_GONE:
+        continue
     _rc[_f] = subprocess.run(['python3', os.path.join(ROOT, _f)], capture_output=True, text=True,
                              env=dict(os.environ, NODE='60'), timeout=1800).returncode
 print(f"      {sum(1 for v in _rc.values() if v == 0)} of {len(_rc)} exit 0 on this tree")
@@ -599,7 +610,7 @@ for _f, _v in sorted(_rc.items()):
 gate("Ⓕ① all `14` receipts carrying an EXPOSED site are RUN here, not read: every one exits `0` on "
      "this tree --- so the tree-wide sweep finds the class FRAGILE and not BROKEN, and says so "
      "rather than implying a live red it has not got",
-     len(_rc) == 14 and all(v == 0 for v in _rc.values()))
+     len(_rc) == 14 - len(_RETIRED_GONE & set(_exp_files)) and all(v == 0 for v in _rc.values()))
 
 # ⛭⛭⛭ r7214 REPAIR, AND IT IS THIS RECEIPT'S OWN CLASS CAUGHT BY THE TRUNK MOVING.
 #   This read was `diff --name-only PIN..HEAD`, and `PIN..HEAD` is NOT this revision's diff: every

@@ -175,7 +175,16 @@ gate(f'Ⓑ③  and THE ONE PATTERN IN IT IS STATED AS A DIRECTION AND NOT AS A D
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 head('C -- WHAT THE FRAME CAN SUPPLY, AND THE THREE INTERVALS IT CANNOT')
 
-_pop = G.frame()
+# ⛭ r7885 (69): THE FRAME IS READ AT THE REGISTRATION COMMIT, NOT LIVE.  The draw was priced on the frame as it stood
+#   when it was registered; read live, the frame moves whenever a later revision retires a receipt (the chat seat
+#   retired B5 at 60c0e7ad9, taking its baseline rows), and the registered design effect then fails for a draw it was
+#   never priced on.  `G.frame()`'s own rule, applied to the baseline at `PREG`.
+def _frame_at(rev):
+    _fr = [l.split('\t') for l in git('show', f'{rev}:corpus/quote_pin_baseline.tsv').split('\n')]
+    _fr = [c for c in _fr if len(c) >= 7 and c[0].startswith('receipts/')]
+    return [c for c in _fr
+            if c[5] == 'DELIBERATE' and G.seat(c[6]) == '60' and (G.rev(c[6]) or 99999) < 7260]
+_pop = _frame_at(PREG)
 _rest = [c for c in _pop if (c[0], c[1]) not in G.drawn_at_r7320(_pop)]
 _caps_all = list(collections.Counter(c[0] for c in _pop).values())
 _caps = list(collections.Counter(c[0] for c in _rest).values())

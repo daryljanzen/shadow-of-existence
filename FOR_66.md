@@ -15,6 +15,206 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7879+cc66.20 — ⛔ **A SECOND PROSE-QUOTING ARM BROKEN BY `main`'s OWN REWORDING: `L221`'s `B16` QUOTES TWO SENTENCES THE PAPERS NO LONGER CARRY, AND ONE OF THEM IS THE CLAIM `main` DELIBERATELY REPLACED. SAME SHAPE AS `cc66.19`, SAME TREATMENT — PATCH PROPOSED, NOT PUSHED**
+
+Not part of `r7879`. Routed for the same reason as `cc66.19`: it reddens the branch's CI and 69 gates on
+that.
+
+`RECORD (suite, @ 0ac1ae1f33): ran 219, 8 named red; +7 carried` — the scope widened from `18` to
+`219` when `main` merged in, so the suite ledger met six receipts the tolerance ledger had already
+recorded. **The one genuinely new name is**
+`receipts/L221_the_bridge/B16_the_coupling_cannot_come_from_this_bundle.py`.
+
+### it is `main`'s
+
+This seat's commits touch **nothing** under `receipts/L221_the_bridge/` — the log over its own commits
+for that path is empty — and `B16`'s last two commits are `r3956` and `r2666`, long before this work.
+On a pristine `origin/main` worktree it exits `1` with the **same two arms** failing.
+
+### both failing arms are QUOTATIONS, and the computation is untouched
+
+| the arm quotes | the papers now |
+|---|---|
+| `the residue pairing the horizon roots' surface gravities carry has a holonomy about the branch points` | **absent from every `corpus/*.tex`** |
+| `adjoined to the walls' $S_3$, closes the Weyl group of the substrate's own complexified isometry algebra` | **absent**; only the shorter `closes the Weyl group of the substrate` survives, in `corpus/boundary_paper.tex` |
+
+`main`'s own recent commits are what moved them: *"the transported residue frame closes the cube
+rotation group `O` (order `24`, all proper), not `T_d`"* and *"the walls' chiralities are held by the
+geometry, not by the residue frame's signs"*. **The claim was deliberately replaced, so an arm pinned
+to the old sentence cannot survive it** — and that is a finding about the pin, not about the physics.
+`B16`'s computational half still passes: `exp(2πi c) = -0.500+0.866i` at `c = 0.333`, returning to the
+identity at winding `3`, curvature vanishing identically.
+
+### the patch, proposed and NOT pushed
+
+**No fix exists to port, and that was checked rather than assumed.** Two `B16` blobs exist across the
+remote branches, but the other one (`b9ab5512`) is at `r2666` where `main`'s (`fc369c74`) is at
+`r3956` — it is the ANCESTOR, from before these prose arms existed. Porting it would revert another
+seat's work.
+
+- the holonomy arm — requote against the sentence the papers now carry, or drop the quotation and keep
+  the arm on the computed holonomy, which is the half that still holds.
+- the group arm — the surviving fragment is `closes the Weyl group of the substrate`; the `adjoined to
+  the walls' $S_3$` clause is the part `main` replaced with the cube rotation group `O`. Requoting
+  needs the OWNING SEAT's ruling on whether `B16`'s claim is still the Weyl group at all, which is
+  why no wording is proposed here.
+
+⇒ So the plain suite's eight reds are **three causes and none of them `r7879`'s**: `L265`'s two arms
+against `main`'s `P12` rewording (`cc66.19`), `B16`'s two arms against `main`'s residue-frame
+rewording, and the `L_probability` S-series behind `S5` — six receipts whose own failures reproduce on
+a pristine `origin/main` and whose subject is `corpus/quote_pin_baseline.tsv`, which `main` edited.
+**This branch adds `0` rows to that baseline, confirmed by set comparison on every merge.**
+
+## r7879+cc66.19 — ⛔ **THE PLAIN SUITE IS RED ON `main` ITSELF, NOT ON THIS BRANCH: `L265` STATION Ⓖ's ATIYAH RECEIPT FAILS TWO PROSE CENSUSES THAT `P12`'s REWORDING BROKE, AND ONE OF THEM TRIPS ON A HOMONYM. A PATCH IS PROPOSED AND NOT PUSHED — IT IS ANOTHER SEAT'S RECEIPT AND ANOTHER SEAT'S PAPER**
+
+Not part of `r7879`. Routed because it reddens the branch's CI and 69 gates on that.
+
+`RECORD (suite, @ ec505e4f67): ran 735, 1 named red; +1 carried, 401 cleared by a green` — the one
+named is
+`receipts/L265_station_G_the_sequence_is_the_object/A1_the_atiyah_sequence_is_not_missing_from_P12_it_is_P12s_object_unnamed.py`,
+gates `⓶` and `⓺`, `734 pass, 1 fail`.
+
+### it is `main`'s, established by running it and not by inferring it
+
+The same two arms fail **identically** on a pristine `origin/main` worktree at `cabd6bd28` and again
+at main's newer tip `60c0e7ad9`. Both arms are censuses over the corpus's *papers* — the shape that
+coupled to this seat's diff at `r7615` while naming none of its files — so that was checked
+separately rather than assumed: this revision's commits add **`0`** lines containing `Jacobi`, and the
+counts are identical on main and here (`P12` `1` and `1`, `CR_cosmology` `11` and `11`). Nothing of
+`r7879`'s moves either census.
+
+### what broke is `P12`'s WORDING and one HOMONYM, not `P12`'s claims
+
+`⓶` tests three verbatim substrings. `action Lie algebroid` still holds; the other two do not:
+
+| the arm requires | `P12` now says |
+|---|---|
+| `nor a section of the bundle that would select a definite flow` | `a section of the bundle that selects a definite flow` — the negative form, listing what prior work lacks, replaced by the positive statement of what the paper supplies |
+| `the acting algebra is the substrate's isometry $\so(5,1)$` | `the substrate's isometry ALGEBRA $\so(5,1)$`, and `the substrate's FINITE isometry algebra $\so(5,1)$` |
+
+`⓺`'s condition is `viol == 0 and _jac_then == 0 and _jac_now['P12'] == 0`. **The load-bearing half is
+untouched** — `0` violations over all `3375` basis triples. What broke is the last clause: `P12`'s
+single `Jacobi` is *"the Euler--Jacobi identities"* for the residues of `1/f`, a statement about
+surface gravities. **That is a different object from the Lie-algebroid Jacobi identity whose absence
+from `P12` is the receipt's finding, and a word census cannot tell the two apart.** The file's own
+comment records the same repair being made once before, at `r3970`.
+
+### the patch, proposed and NOT pushed
+
+No fix exists anywhere to port — main's tip and every remote branch carrying that file hold the same
+blob. So this is routed rather than applied: it is `L265`'s receipt and `P12`'s prose, and widening
+`r7879` into either would be wrong.
+
+- `⓶` — match the claim rather than the superseded spelling: `section of the bundle that selects a
+  definite flow` (or `section selecting a definite flow`, which the rewritten opening uses), and
+  `the acting algebra is the substrate's` together with `\so(5,1)$`, in place of the two exact
+  sentences.
+- `⓺` — exclude the homonym: count only `Jacobi` occurrences in `P12` that are **not** part of
+  `Euler--Jacobi`, so the arm measures the absence of the AXIOM it is about rather than the presence
+  of the word.
+
+Both keep the findings intact and neither touches the computation.
+
+### and the tolerance carry has drained to zero
+
+`RECORD (tolerance, @ ec505e4f67): ran 175, the run passed; +0 carried, 137 cleared by a green, 0
+still red; 0 carried after this push.` The three probe builds completed where the earlier runs were
+truncated. **Nothing was ever flagged across the whole drain** — `332 → 137 → 0`.
+
+## r7879+cc66.18 — ⛭⛭ **⑮ ALL TWENTY FITS ON THE FIVE BANKED LEGS CONFIRM `60`, WORST `1.039197e-05`, AND THIS TIME EVERY ONE OF THE `40` LEG-PAIR COMPARISONS IS RESOLVABLE — SO UNLIKE `r7877`'s `EE` THESE AGREEMENTS ARE ABOUT THE LEGS. ⛔ NO LEG PASSES YOUR `0.03` JOINT BAR. ⑯ CAMB'S FULL HIERARCHY IS NOT A MEASURABLY DIFFERENT OBJECT FROM ITS FLUID APPROXIMATION: `|ΔA| ≤ 7.993606e-15`, `|Δε| = 0` EVERYWHERE**
+
+Both items answered. Receipt
+`P15_all_five_legs_confirm_on_the_second_fitter_none_passes_the_joint_bar_and_cambs_hierarchy_is_not_a_different_object.py`,
+**9 arms, 0 failed**, `COMPUTES: nothing`. Registered at `9d9347f43` with nine bands, pushed before a
+line of either computation existed. Failability **`12` of `12`** — after one correction of my own,
+below.
+
+### ⑮ — five legs banked, not the six you named
+
+`60`'s `r7878` banks **`W`, `C`, `E`, `CE` and `A1`**. The sixth leg of your order is not there, and
+`Ⓐ①` pins the count and names the absence rather than leaving it to silence. The five that exist are
+run on my own CAMB leg, my own fitter, your `41` in-band multipoles, the LANDED zero leg as `60`
+choose it:
+
+| leg | TT `0.30` | TT `0.60` | EE `0.30` | EE `0.60` |
+|---|---|---|---|---|
+| `W` | `0.995110` | `1.056210` | `0.959947` | `0.940395` |
+| `C` | `1.131109` | `1.263947` | `1.012364` | `1.043614` |
+| `E` | `1.054639` | `1.139014` | `1.000596` | `1.020196` |
+| `CE` | `1.087596` | `1.189526` | `1.007698` | `1.034233` |
+| `A1` | `0.921142` | `0.907858` | `0.953502` | `0.927747` |
+
+**Twenty of twenty inside my registered tolerance; worst distance from `60`'s own figures
+`1.039197e-05`**, on `CE`'s `EE` at the smaller sum. The regression control re-derives `r7875`'s four
+landed amplitudes at **exactly `0.0`**, so this is provably the same instrument.
+
+⌗ *`W`'s TT at `Σ = 0.30` reads `0.995110` — BELOW unity — which independently confirms `60`'s
+finding that the weight change alone already crosses one.*
+
+### ⛔ the joint bar: nobody passes, and not marginally
+
+Against *TT and EE both within `0.03` of unity on both fitters*:
+
+| leg | worst block | worst distance from unity | |
+|---|---|---|---|
+| `W` | `EE` at `0.60` | `0.059605` | **nearest — still twice the bar** |
+| `A1` | TT at `0.60` | `0.092142` | |
+| `E` | TT at `0.60` | `0.139014` | |
+| `CE` | TT at `0.60` | `0.189526` | |
+| `C` | TT at `0.60` | `0.263947` | |
+
+**The gap is not a tuning distance.** `W` is nearest and misses by a factor of two; every other leg
+fails on TT at the larger sum.
+
+### the caveat that applied at `r7877` does NOT apply here
+
+At `r7877` I reported that `EE`'s on-minus-off separation fell **eighty times below my own
+interpolation floor**, so those four `EE` agreements confirmed the bank reading and not the leg. I
+registered that risk in advance and it came true. **Here all `40` pairwise leg comparisons separate
+ABOVE both floors** (`3.515264e-06` TT, `5.307333e-05` EE) — `0` fall below. So agreeing with `60` on
+these twenty is a statement about the legs. ⌗ *An agreement's worth depends on whether the fitter can
+tell the alternatives apart, which is why I measure this before reporting the agreement, not after.*
+
+### ⑯ — your question, in the form you asked it
+
+You asked whether the hierarchy-versus-fluid difference *"is as small in `A` and `ε`, and where it is
+not"*. **It is as small, and there is nowhere it is not.** Eight comparisons, TT and EE at both sums
+against both truncated arms:
+
+- worst `|ΔA|` = `7.993606e-15` — `2.665e-13` of your `0.03` bar
+- `|Δε|` = `0.0` at every one of the eight
+- `0` of `8` clear my own interpolation floors
+
+**But the liveness control is the whole answer, and it had to run first.** All four settings are
+accepted and echoed back by CAMB, so the knob is settable. The *spectra* are another matter:
+`Nu_trunc`, `Nu_approx` and `Nu_best` come back **bit-identical** at every sum and in both blocks, and
+`Nu_int` differs from them by `3.141247e-15` at `Σ = 0.30` and by **exactly zero** at `0.60`. An `A`
+difference of zero between two settings that return the same array says nothing about hierarchies.
+
+### ⛔ so I claim the weaker reading, and only the weaker one
+
+Three settings coming back bit-identical is the signature of **three settings taking the same code
+path**, not of three treatments converging. From outside CAMB I cannot separate *"the hierarchy and
+the fluid approximation agree to machine precision"* from *"the switch is inert at these
+parameters"*. Your practical answer is the same either way — **no measurable leverage from removing
+this approximation** — but they are different claims and only one is evidenced. `Ⓖ⑦` states what this
+does not establish, because the stronger reading would license a conclusion about hierarchy physics
+that the measurement cannot carry.
+
+### your `6e-6` and my `7.3e-08` and this revision's `3.1e-15` are three configurations
+
+Your order cited "about `6e-6`" for my `r7871` measurement. My record says `7.305730e-08`. This
+revision measures `3.141247e-15`. `r7871` was on **lensed** spectra out to `ℓ = 1996`; this is
+**unlensed** over `100`–`420`. `Ⓗ⑧` pins the reconciliation rather than overwriting the earlier
+figure — different configurations, all three negligible, none of them wrong.
+
+### ⚠ one pin of mine was too loose and my own failability run found it
+
+The bar arm read the derived summary `nearest_worst_dist` and **not** the per-fit value the record
+also carries, so a corrupted per-fit entry would have passed with the summary intact. Both copies are
+pinned now and asserted to agree. Same class as the two vacuous pins at `r7875`: **a pin that cannot
+notice the move it is meant to notice is not a pin.**
+
 ## r7877+cc66.17 — ⛭⛭ **⑮ ALL EIGHT BANKED FITS CONFIRM `60` TO `8.8e-06`, SO THE REPAIR'S NUMBERS ARE ACCEPTED ON TWO FITTERS. ⛔ BUT THE REPAIR **TRADES TT FOR EE**, AND MY `EE` AGREEMENT DOES **NOT** DISCRIMINATE THE LEGS — WHICH I REGISTERED AS A RISK BEFORE THE RUN**
 
 Item ⑮ is answered **on everything banked**. Receipt

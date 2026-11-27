@@ -1,0 +1,165 @@
+{
+ "caught": 12,
+ "restored_green": true,
+ "total": 12,
+ "trials": [
+  {
+   "caught": true,
+   "claim": "W's 0.995110 -- below unity",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 0.996105241598582,
+   "path": [
+    "fits",
+    "W|TT|0.30",
+    "A"
+   ],
+   "record": "legs_five.json",
+   "was": 0.995110131467115
+  },
+  {
+   "caught": true,
+   "claim": "C's 1.263947, the furthest leg",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 1.265210644110522,
+   "path": [
+    "fits",
+    "C|TT|0.60",
+    "A"
+   ],
+   "record": "legs_five.json",
+   "was": 1.263946697413109
+  },
+  {
+   "caught": true,
+   "claim": "CE's 1.007698, the worst distance from 60",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 1.0087052274996657,
+   "path": [
+    "fits",
+    "CE|EE|0.30",
+    "A"
+   ],
+   "record": "legs_five.json",
+   "was": 1.0076975299696962
+  },
+  {
+   "caught": true,
+   "claim": "A1's 0.907858",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 0.9087661414147876,
+   "path": [
+    "fits",
+    "A1|TT|0.60",
+    "A"
+   ],
+   "record": "legs_five.json",
+   "was": 0.9078582831316561
+  },
+  {
+   "caught": true,
+   "claim": "the worst distance from 60, 1.039197e-05",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 1.0402361665795778e-05,
+   "path": [
+    "worst_diff"
+   ],
+   "record": "legs_five.json",
+   "was": 1.0391969696099679e-05
+  },
+  {
+   "caught": true,
+   "claim": "W's 0.059605 against the 0.03 bar",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 0.05966420636073305,
+   "path": [
+    "nearest_worst_dist"
+   ],
+   "record": "legs_five.json",
+   "was": 0.059604601758974085
+  },
+  {
+   "caught": true,
+   "claim": "the EE distance that fails W",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 0.05966420636073305,
+   "path": [
+    "fits",
+    "W|EE|0.60",
+    "dist_from_unity"
+   ],
+   "record": "legs_five.json",
+   "was": 0.059604601758974085
+  },
+  {
+   "caught": true,
+   "claim": "my EE interpolation floor",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 5.312639834671251e-05,
+   "path": [
+    "floors",
+    "EE"
+   ],
+   "record": "legs_five.json",
+   "was": 5.307332502169082e-05
+  },
+  {
+   "caught": true,
+   "claim": "the 7.993606e-15 A difference -- item 16's answer",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 8.001599383078427e-15,
+   "path": [
+    "worst_dA"
+   ],
+   "record": "hierarchy_ref.json",
+   "was": 7.993605777301127e-15
+  },
+  {
+   "caught": true,
+   "claim": "the 3.141247e-15 spectrum difference",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 3.1443884218666422e-15,
+   "path": [
+    "worst_spectrum_difference"
+   ],
+   "record": "hierarchy_ref.json",
+   "was": 3.1412471746919506e-15
+  },
+  {
+   "caught": true,
+   "claim": "the per-block liveness figure",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 3.1443884218666422e-15,
+   "path": [
+    "liveness",
+    "TT|0.30",
+    "Nu_trunc",
+    "max_abs_rel"
+   ],
+   "record": "hierarchy_ref.json",
+   "was": 3.1412471746919506e-15
+  },
+  {
+   "caught": true,
+   "claim": "my r7871 figure, 7.305730e-08",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 7.31303555092655e-08,
+   "path": [
+    "r7871_spread"
+   ],
+   "record": "hierarchy_ref.json",
+   "was": 7.305729821105444e-08
+  }
+ ]
+}

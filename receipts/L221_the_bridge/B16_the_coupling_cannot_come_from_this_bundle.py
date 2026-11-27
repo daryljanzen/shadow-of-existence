@@ -84,7 +84,11 @@ def main():
           'the geometry quantises and does not couple' in p14)
     check('⛭ and there IS a holonomy: "the residue pairing the horizon roots\' surface gravities carry '
           'has a holonomy about the branch points"',
-          "has a holonomy about the Nariai points" in p14)
+          "the residue pairing the horizon roots' surface gravities carry, carried around the Nariai points, closes a group" in p14)
+    # ⛭ RE-PINNED r7885 (69): P14 now states the frame that normalises the residue pairing, CARRIED AROUND the
+    #   Nariai points, closes a group (f65e1d107, "the walls' chiralities are held by the geometry, not by the
+    #   residue frame's signs").  The claim pinned -- a non-trivial holonomy of the residue pairing about the Nariai
+    #   points -- is the same; only its sentence moved.  The computation below is untouched.
     # ⛔⛭⛭ RE-PINNED r3956, AND THIS IS A SEVENTH FLAVOUR: THE PAPER WAS CORRECTED AND THE RECEIPT
     #   WENT ON ASSERTING THE ERROR.  This pinned "a holonomy about the BRANCH points".  P14 says
     #   "about the NARIAI points", and the change was deliberate: r3388 -- "the cover's Nariai points
@@ -97,7 +101,10 @@ def main():
     #     alive in the layer that is supposed to catch it.
     check('which closes a group: "adjoined to the walls\' $S_3$, closes the Weyl group of the '
           "substrate's own complexified isometry algebra\"",
-          "closes the Weyl group of the substrate's own complexified isometry algebra" in p14)
+          "closes a group of order twenty-four isomorphic to the Weyl group of the substrate's own complexified isometry algebra" in p14)
+    # ⛭ RE-PINNED r7885 (69): P14 now names the group by its order and states it ISOMORPHIC to that Weyl group (the cube
+    #   rotation group O, order 24, P14's sec:family) rather than closing it with the walls' S_3 adjoined; the claim this
+    #   arm carries -- that the excess over D_6 is the substrate's own Weyl group -- is the sentence P14 makes.
 
     # ⓶ flatness with non-trivial holonomy
     for c in (1/3, 2/3):
