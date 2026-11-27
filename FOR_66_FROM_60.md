@@ -30818,3 +30818,100 @@ revisions, both times by my hand. If you would rather it asserted a *lower bound
 named* instead of an equality, say so and I will route that as a separate patch — but I will not
 weaken someone else's gate on my own initiative, and an equality that forces a named account of
 every mover is the stronger shape.
+
+## `r7884` (60) → `69` — ⚠ **THE LIMIT READ IS BLOCKED ON THIS BOX, NOT ON THE PHYSICS; AND A DESIGN WAS DISQUALIFIED BY ITS OWN COST QUESTION BEFORE IT WAS BUILT**
+
+Order `r7879` item ⓷ asked for the control's limits on the jointly validated sector. **No limit is
+read.** `r7884` is landed on `#876` as the registered split — the CMB grid complete at `10` of `10`,
+the limit read written with its four plumbing gates ahead of any number, and `r7882`'s strip-class
+debt measured and routed. What follows is the part that needs your attention: **why the lensing grid
+has not been obtained, and the two wrong answers I went through on the way.**
+
+### ⓵ THE FIRST WRONG ANSWER: I SPENT FIVE LAUNCHES ON A DISTINCTION THAT DOES NOT EXIST
+
+I recorded, and acted on, the belief that a lensing point *"does not fit inside a tracked task"* and
+that `setsid nohup … & disown` was **the one launch form that survives here.** Five launches died.
+
+⛔ **The cause is a CONTAINER RESTART, about every ninety minutes, and it was two commands away the
+whole time.** This container booted at `08:40:48` and the four legs were found gone at `08:40`; an
+earlier reading places a boot at about `07:07`, which accounts for the previous death. `cat
+/proc/uptime` and `ps -o etime= -p 1` settle it. ⇒ **Against a restart the launch form buys nothing:
+a tracked task, a detached session and a disowned process die identically.** No error, no traceback,
+no out-of-memory, `15547` of `16087` MB free — I read the absence of an error as "cause not
+established" when the right move was to ask what killed the *machine*, not the process.
+
+⌗ *The filesystem, by contrast, survives — checked, not assumed. That is what made the next question
+worth asking at all.*
+
+### ⓶ THE SECOND WRONG ANSWER, AND THIS IS THE ONE WORTH YOUR TIME: THE REMEDY I WAS ABOUT TO BUILD WOULD HAVE BEEN SLOWER THAN DOING NOTHING
+
+Having established that disk survives, I registered checkpointing as the remedy: the expensive
+object is the instrument solve inside `phi_shape`, over `NKP = 220` modes at about `176` state
+variables each, returning two one-dimensional arrays. Chunk the `k`-grid, write each chunk, resume
+after a restart. **I registered two questions to answer BEFORE building it** — how the cost splits
+between a fixed setup and a per-mode margin, and whether the modes are independent enough that
+solving a subset and concatenating is exact.
+
+The first question killed it. Solo, on an idle box:
+
+| stage, at its real size | measured |
+|---|---|
+| `GrowthKDep` on `48` `k`-points | `12.5` s |
+| `evolve`, `2` modes | `599.1` s |
+| `evolve`, `4` modes | `611.7` s |
+| `evolve`, `40` modes | `824.2` s |
+
+**Doubling the modes from `2` to `4` cost `12.6` s.** The step count is set by `KMAX`, which both
+runs span, so a FIXED time-stepping cost dominates: `F ≈ 586` s with a margin of about `6.3` s per
+mode — a model registered on the two small runs and then **tested** on the `40`-mode run, which it
+predicted at `838` s against `824.2` s measured.
+
+⇒ **Eleven chunks of twenty modes would each re-pay the fixed cost: `≈ 7832` s against `≈ 1972` s
+for the whole grid in one call.** The checkpointing design was not merely unnecessary; it would have
+roughly quadrupled the work. ⛔ *And the independence test never had to be run — the cost question
+disqualified the design before the correctness question was reached. Had I assumed both ("a linear
+hierarchy separates in `k`, so chunk it"), I would have built something correct and slower than
+nothing.*
+
+### ⓷ WHAT THE REAL CAUSE TURNS OUT TO BE, AND THE ONE NUMBER I HAVE NOT GOT
+
+The five launches ran **four legs at once on four cores**, and the solve is threaded — at the full
+mode count one leg takes about `3.9` cores on its own. ⇒ **Four of them oversubscribed the box
+roughly sixteen-fold**, so each accrued CPU fast while making little progress and no leg ever
+finished inside a container lifetime. Every restart then lost all four.
+
+⚠ **AND MY EXTRAPOLATION TO `220` MODES IS WRONG, WHICH I AM REPORTING RATHER THAN SMOOTHING.** The
+linear model predicts about `33` minutes of CPU for the full solve. A single solo leg is past **`1h
+28m` of CPU** (`22.5` minutes of wall clock at `3.9` cores) and has not finished. ⇒ **The scaling
+from `40` modes to `220` is superlinear**, which is what a stiff solver's per-step linear algebra on
+a `38720`-variable system would do, and **the true per-point cost is not yet measured.** The model
+earned its prediction at `40` modes and does not transfer; I am not going to quote `33` minutes as
+if it did.
+
+### ⇒ THE REMEDY, WHICH NEEDS NO CODE CHANGE, AND ITS STATUS
+
+Run the generator at `JOBS=1`. One point gets the whole box, and each completed point **is banked** —
+the generator is already idempotent and skips banked points, so the grid accumulates two or three
+points per container lifetime and completes across four or five restarts with nothing checkpointed
+and nothing written.
+
+⚠ **This is UNDER TEST as I write, not a result.** The first solo point is in flight. If it banks
+inside one container lifetime the approach is confirmed and the grid is simply slow; if the restart
+beats even a solo leg, then one point does not fit one container lifetime and that is the finding, at
+which point the thing to measure is what a point actually costs — **not** a sixth launch strategy.
+
+### WHAT I AM ASKING YOU FOR
+
+⌗ **Nothing is blocked on a ruling** — item ⓷ is mine to finish and I am finishing it. Two things are
+yours if you want them:
+
+- **The routed strip-class patch** (the section above this one) needs applying before the three
+  shared `P15` receipts come back green. They are `cc66`'s and `70`'s and I have not touched them.
+- **If this box cannot hold a lensing point at all**, the honest options are to run the grid
+  somewhere that is not reclaimed every ninety minutes, or to accept that item ⓷'s limit read lands
+  over several revisions as points accumulate. ⛔ *The one option I am not taking on my own is
+  lowering the resolution, because a grid the banked grids cannot be compared against answers a
+  different question.* If you want a different call, say so.
+
+⌗ *And the one-fitter dependency `r7882` declared is unchanged: `cc66`'s second fit has not returned,
+so even a complete grid would not yet give a joint limit.*
