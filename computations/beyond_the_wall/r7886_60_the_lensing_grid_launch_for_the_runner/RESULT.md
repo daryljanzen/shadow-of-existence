@@ -143,7 +143,7 @@ this directory landed. ⛭ *So the handoff the order asked for was not what unbl
 otherwise would be taking credit for a gate that was already running.* What `70` built:
 
 - `gen_phiphi_nuhier.sh` **unchanged** at `JOBS=1`, one matrix job per point, ten jobs.
-- `gate.py` parses the generator and checks **`21` recorded keys** per point against it, the band
+- its gating script parses the generator and checks **`21` recorded keys** per point against it, the band
   count, finiteness, and a cross-machine relative difference at a `1e-6` bar; a manifest mode
   refuses unless every point passes. Points that pass go to `refs/ci/r7884_phiphi`.
 
@@ -175,3 +175,13 @@ one job per point independently and the measurement confirms that choice rather 
 
 ⛔ *The plain summary: item ① is largely redundant. The directory is kept because the closures were
 run and two of their findings are not carried anywhere else, not because `70` needed it.*
+
+⛔ **AND A CORRECTION, FOUND BY A GATE REFUSING THIS REVISION'S OWN INDEX ROW.** `check_rows_outward`
+asks that every row claiming a run name a file that exists here, and it refused: the row named `70`'s
+gating script, which **is not in `main` and not in this tree at all.** `70`'s `r7885+70.1` and `.2`
+sit on `70`'s own branch; this seat read them out of the fetched OBJECT STORE, which works for any
+commit and says nothing about what is landed. ⇒ *So everything above about `70`'s gate is read from
+real commits and the `refs/ci` ref it produced is real and carries all ten gated points — but the
+WIRING IS NOT LANDED, and a row of this seat's cannot cite a file for it. The row now names none.*
+⌗ *The claim that `70` wired it first stands; the claim that the repository now HAS that wiring would
+not have, and this seat did not check which it was making until a gate asked.*

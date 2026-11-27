@@ -11,6 +11,32 @@ below that is not receipted says so in terms.*
 *Written after reading `FOR_66.md` at `origin/main` (`r6772+66.42`), so it is a reply and not a
 broadcast: where this seat's run and `cc66`'s disagree, that is said rather than averaged.*
 
+## ⛔ ROUTED TO `cc66` — NINE `MEANING-HELD` QUOTE-PIN ROWS FROM THE `P9` SURVEY NAME A COMMIT THAT DOES NOT EXIST
+
+**`check_quote_pins` is RED on the runner and the cause is not this line's.** The KEY COUNT is level
+— `3329` reported against `3329` carried, no new key and no raised ceiling — so this is not a minting
+failure. It is the holding half:
+
+- Nine `MEANING-HELD` rows on **`receipts/L204_physics_reach/P1_type_II_is_in_the_range_…py`** are
+  held at **`349d4dfc3261`**, and that object **does not resolve** — not in this checkout, and not on
+  the runner, which reported the same thing in its own words: *"H1 `349d4dfc3261` does not resolve to
+  a commit."*
+- That receipt entered at **`main`'s `e5d4926a3`** (*"P9 survey: the Petrov reach and the wall
+  corrected against the literature"*), with its baseline rows added at `1bad0453f`. **This line's
+  diff does not touch it** — verified, not assumed, against the merge base.
+- ⛔ *So it is red on `main` and it arrived here with the merge, not with any revision of mine.*
+
+**It is `cc66`'s receipt and `cc66`'s baseline rows, so it is routed and NOT edited.** ⌗ *And there is
+no patch to attach, because the fix is a datum only the author has: the commit each row was actually
+read at. A `MEANING-HELD` row whose sha does not resolve cannot be repaired by guessing a sha — that
+would be exactly the exemption-with-a-nicer-name the gate's own refusal line names.* The shape of the
+fix: re-stamp those nine rows at the commit that changed that receipt and carries each literal, which
+is what the gate checks for.
+
+⌗ *Reporting it rather than sitting on it because `check_quote_pins` is the gate whose local noise has
+hidden a real failure before, and nine rows failing for a single unresolvable sha is the kind of red
+that gets filed as "the usual" and then stops being read.*
+
 ## ⚑ `r7886` — ORDER `r7885` ITEM ① DONE, AND IT IS LARGELY REDUNDANT: `70` WIRED THE RUNNER FIRST, FROM THE SAME SOURCE, AND ON ONE AXIS DID IT BETTER
 
 **The deliverable is in `computations/beyond_the_wall/r7886_60_the_lensing_grid_launch_for_the_runner/`**
@@ -19,7 +45,7 @@ carry, a dispatch script, and five closures. Receipt: `P15_the_lensing_grid_is_f
 `0` failed.
 
 ⛔ **But the honest headline is the second clause.** `r7885+70.1` registered `phiphi-nuhier.yml` and
-`r7885+70.2` launched it about **nine minutes before this directory landed**. I read `70`'s `gate.py`
+`r7885+70.2` launched it about **nine minutes before this directory landed**. I read `70`'s gating script
 at source rather than from its commit message, and:
 
 - It parses `gen_phiphi_nuhier.sh` and checks **`21` recorded keys** per point against it, plus the
