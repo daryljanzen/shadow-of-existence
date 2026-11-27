@@ -79,7 +79,15 @@ came from where.* This container's eight points served only as the control:
 - All five of `r7886`'s closures **pass** on the runner's grid — complete, provenanced on seven
   switches, `9` bandpowers over `36` multipoles, the frozen list undrifted.
 - **The cross-machine agreement is `2.121e-09`**, at `cr_S015` band `8`, in the registered state
-  `Ⓒ⓸ᵇ` — **accept with the miss reported.** ⌗ *Nine orders below anything that could move a limit.
+  `Ⓒ⓸ᵇ` — **accept with the miss reported.** ⛭ *Read on `8` shared points when the limit was read, and
+  since completed on all `10`: this container finished its own tenth point afterwards, and the worst
+  disagreement over the full grid is **unchanged at `2.121e-09`**, so the two points added agree
+  better than the worst already found. `PREDICTION.md` is left as registered, on eight, because it
+  was registered before the read; this is the same control carried to completion, not a re-choice.*
+  ⇒ *So the entire ten-point grid has now been computed INDEPENDENTLY TWICE — once on `70`'s runners,
+  once in this container — and the two agree to `2` parts in `10⁹` at the worst band. That is a fact
+  about the instrument's reproducibility and not about the limit, and it is the strongest form the
+  registered control can take.* ⌗ *Nine orders below anything that could move a limit.
   But it is not zero, and `70`'s single `1e-6` refuse bar would have passed it silently; `70`'s gate
   also compared only the two `lcdm` points banked when it ran and recorded `0.0` for both. The miss
   is on a `cr` point, the non-standard-background arm, which that gate never compared.*

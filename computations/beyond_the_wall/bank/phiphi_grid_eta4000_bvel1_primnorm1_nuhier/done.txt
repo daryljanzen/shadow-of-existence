@@ -8,3 +8,4 @@
   cr S015 rc=0
   cr S030 rc=0
   cr S045 rc=0
+  cr S060 rc=0
