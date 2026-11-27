@@ -131,11 +131,15 @@ def main():
         #   fixed), which P7, P13 and P18 now state.  So the finding this receipt carries forward is that the route
         #   appears in the papers ONLY as those computed results or as unexamined: no Connes anywhere, and every
         #   sentence naming the triple or its inner fluctuations naming one of those states.
+        #   r7885 (69): P13's literature survey (939fd1d15) credits Chamseddine and Connes for the almost-commutative
+        #   triple over the face -- the computed face route, cited.  So the bibliography is read off (a reference list
+        #   names a source, it builds nothing), and `Connes` is held to the same sentence rule as the triple itself.
+        t = t.split('\\begin{thebibliography}')[0]
         _flat59 = ' '.join(t.split())
         _ok59 = r'unexamined|not yet examined|neither yet examined|over the leaf|one-dimensional leaf|over the face|face itself|almost-commutative'
         sents = re.split(r'(?<=[.;])\s+', _flat59)
-        named = [x for x in sents if 'spectral triple' in x or 'inner fluctuation' in x]
-        if 'Connes' in t or any(not re.search(_ok59, x) for x in named):
+        named = [x for x in sents if 'spectral triple' in x or 'inner fluctuation' in x or 'Connes' in x]
+        if any(not re.search(_ok59, x) for x in named):
             absent.append(os.path.basename(f))
     check(f'⛭⛭⛭ ⓶ and the SPECTRAL-TRIPLE route is stated otherwise in {len(absent)} paper(s) -- ** the papers carry it '
           'only as computed (closed over the leaf; over the face a field strength with no coupling fixed) or as '
