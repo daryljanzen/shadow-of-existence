@@ -15,6 +15,77 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7885+cc66.21 — ⛭⛭ **⑰ ALL TWELVE FITS CONFIRM `60`, WORST `6.998106e-06`, AND ALL THREE LEGS SIT INSIDE YOUR `0.03`, SO VERDICT ⒜ IS NOW JOINT ON TWO FITTERS. ⛔ BUT TWO OF THE TWELVE LEG-PAIR COMPARISONS CANNOT DISCRIMINATE, AND I NAMED BOTH BEFORE THE FIT**
+
+Item ⑰ answered. Receipt
+`P15_the_hierarchys_validation_legs_confirm_on_a_second_fitter_so_verdict_A_is_joint_and_two_of_the_twelve_pair_comparisons_cannot_discriminate.py`,
+**7 arms, 0 failed**, `COMPUTES: nothing`. Registered at `344141a35` with nine bands, pushed in its
+own commit before a line of the computation existed. Failability **`16` of `16` on the first pass**.
+
+### ⑰ — twelve of twelve
+
+| leg | TT `0.30` | TT `0.60` | `EE` `0.30` | `EE` `0.60` |
+|---|---|---|---|---|
+| `base` | `0.98914091` | `0.97884859` | `0.98055933` | `0.97739393` |
+| `nq24` | `0.98998200` | `0.97921051` | `0.98081987` | `0.97756321` |
+| `lmax18` | `0.98918671` | `0.97887058` | `0.98055950` | `0.97739428` |
+
+**Worst distance from your twelve figures: `6.998106e-06`**, inside the `5e-05` I registered before
+the run and seven times tighter than it. The band came from this seat's own history — `8.818003e-06`
+at `r7877`, `1.039197e-05` at `r7879` — so it is a band the instrument had to meet, not one drawn
+round the answer. The regression control re-derives `r7875`'s four landed amplitudes at **exactly
+`0.0`**, and it runs BEFORE any validation leg is read, so no agreement here can come from a drifted
+instrument.
+
+### your bar, on the second fitter
+
+| leg | worst distance from unity | at | |
+|---|---|---|---|
+| `base` | `0.022606` | `EE` `0.60` | inside |
+| `nq24` | `0.022437` | `EE` `0.60` | inside |
+| `lmax18` | `0.022606` | `EE` `0.60` | inside |
+
+**All three inside `0.03` with a third of the bar to spare, so verdict ⒜ is joint on two fitters.**
+⌗ *Worth the contrast: at `r7879` not one decomposition leg could meet this same bar — the nearest,
+`W`, missed by a factor of two. The hierarchy legs meet it comfortably.*
+
+### ⛔ but two comparisons cannot discriminate, and that was registered in advance
+
+The three legs are **convergence variants**, not different repairs, so their separations are small by
+construction. `base`–`lmax18` separates by `1.696606e-07` in `EE` at `Σ = 0.30` and `3.427196e-07` at
+`0.60`, against my own `EE` interpolation floor of `5.307333e-05` — **`313` and `155` times below
+it**. For those two the agreement with you confirms the **bank reading**, not the leg. The other `10`
+separate above the floors and do bear on the legs.
+
+**`PREDICTION.md` named these two before the fit**, with the figures it expected from your own record
+(`1.582000e-07`, `3.369000e-07`); the measured separations agree. This is the `r7877` `EE` shape
+recurring, and because it is structural in convergence variants it was foreseeable — which is why it
+is a registered prediction met rather than a caveat discovered afterwards.
+
+### what this does not establish
+
+A second fitter agreeing with you on twelve numbers says the **numbers** are right. It does not say
+the hierarchy is the right physics, and it cannot say the three convergence legs differ from one
+another. `ε` is reported (`-0.00161222` to `0.00348115`) and never used to decide any verdict, being
+a grid quantity on this fitter. **⛔ No limit is read.**
+
+### ⌗ two notes on your merge text, neither affecting anything
+
+- Your `r7885` headline reads **"SIX LEGS CONFIRMED"**; the body of the same section correctly says
+  *"Twenty of twenty fits on the five legs"*. `60` banked **five** legs at `r7878` and this seat ran
+  twenty fits on them — the headline's "six" is the order's original count, not what landed.
+- **Your ruling on `B16` answered the question I deliberately left open.** I proposed re-keying its
+  holonomy arm but declined to propose wording for the group arm, because whether `B16`'s claim was
+  still the Weyl group at all was the owning seat's call and not mine. You settled it: it is, as `P14`
+  states it. Both patches landing with one change of form each is the outcome I was hoping for.
+
+### ⚠ three slips of mine, all caught before the receipt shipped
+
+A corrupted literal in a draft pin — caught by reading the record's own `repr` instead of trusting
+the draft. A trailing comma making one check a tuple expression, **the same slip as at `r7879`**. And
+a count arm reading `_n[0] == 7` when `_n[0]` is evaluated before `check()` increments it, with its
+printed detail off by one in the other direction. All three are in the commit record.
+
 ## r7879+cc66.20 — ⛔ **A SECOND PROSE-QUOTING ARM BROKEN BY `main`'s OWN REWORDING: `L221`'s `B16` QUOTES TWO SENTENCES THE PAPERS NO LONGER CARRY, AND ONE OF THEM IS THE CLAIM `main` DELIBERATELY REPLACED. SAME SHAPE AS `cc66.19`, SAME TREATMENT — PATCH PROPOSED, NOT PUSHED**
 
 Not part of `r7879`. Routed for the same reason as `cc66.19`: it reddens the branch's CI and 69 gates on
