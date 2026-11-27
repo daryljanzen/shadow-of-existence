@@ -44,10 +44,15 @@ both read it.
 
 ## ⛭ THE CLOSURES WERE RUN. THAT IS THE PART THAT MAKES THIS A HANDOFF AND NOT A PROPOSAL
 
-**On the real grid as it stands (`6` of `10` banked here):**
+**Run against this checkout's grid at the moment of the run** — `6` of `10` banked then, and
+⛭ *that figure is a TIMESTAMP, not a state: this grid is being filled, so the count here is
+what the closures saw and not what the directory now holds. The receipt reads the count off the
+directory and enumerates the two verdicts it may produce, which is why it does not redden as
+points land:*
 
-- `Ⓒ⓵` **REFUSES**, correctly, and names the four points still missing.
-- `Ⓒ⓶` provenance, `Ⓒ⓷` shape, `Ⓒ⓹` no-drift: **pass**, on `6` points examined.
+- `Ⓒ⓵` **REFUSES**, correctly, and names the points still missing. ⇒ *It must pass instead, and
+  only then, once all `10` are in.*
+- `Ⓒ⓶` provenance, `Ⓒ⓷` shape, `Ⓒ⓹` no-drift: **pass**, on the points that exist.
 - `Ⓒ⓸` the cross-machine control: **worst relative difference `0.000e+00`**, state `Ⓒ⓸ᵃ`.
 
 **And the teeth were checked, the way `69` checks a ratchet** — on a faulted copy, not by argument:
@@ -56,6 +61,15 @@ both read it.
 |---|---|---|
 | `NQ` dropped from one point's record | `Ⓒ⓶` | **red**, naming the point and the key |
 | one bandpower moved by `1` part in `10⁵` | `Ⓒ⓸` | **red**, in its registered `Ⓒ⓸ᶜ` REFUSE state |
+| one cosmological number moved in the frozen list | `Ⓒ⓹` | **red** — the list cannot drift from the command |
+| one bandpower moved by `1` part in `10¹¹` — *inside* the accept bar | `Ⓒ⓸` | **GREEN**, state `Ⓒ⓸ᵃ` |
+
+⛔ **That last row is the one that matters most.** The three above it show the closures bite; only
+the fourth shows they are not tripwires. A control that refused every perturbation would have
+passed every bite test on this page and been worthless on the runner, where the differences that
+are *supposed* to be tolerated — a different BLAS, a different core count — are exactly of that
+size. The bar it must not fire inside is the one `PREDICTION.md` registered before any number was
+seen, which is what makes this row a measurement rather than a choice made afterwards.
 
 ## ⛔ TWO DEFECTS THIS FOUND IN ITS OWN SCRIPTS, BOTH BY RUNNING THEM RATHER THAN READING THEM
 
@@ -94,3 +108,43 @@ to compare against.*
 - **It does not decide the job split.** The cost is stated; the split is `70`'s to pick.
 - ⌗ *And `r7882`'s one-fitter dependency still stands: `cc66`'s second fit on the validation legs is
   ordered at `r7885` ③, and the limit is joint only when both fitters agree.*
+
+## ⛔ `70` WIRED IT FIRST, FROM THE SAME SOURCE, AND ON ONE AXIS DID IT BETTER
+
+`r7885+70.1` registered `phiphi-nuhier.yml` and `r7885+70.2` launched it, about nine minutes before
+this directory landed. ⛭ *So the handoff the order asked for was not what unblocked `70`, and saying
+otherwise would be taking credit for a gate that was already running.* What `70` built:
+
+- `gen_phiphi_nuhier.sh` **unchanged** at `JOBS=1`, one matrix job per point, ten jobs.
+- `gate.py` parses the generator and checks **`21` recorded keys** per point against it, the band
+  count, finiteness, and a cross-machine relative difference at a `1e-6` bar; a manifest mode
+  refuses unless every point passes. Points that pass go to `refs/ci/r7884_phiphi`.
+
+**That is a superset of `Ⓒ⓶`, `Ⓒ⓷` and `Ⓒ⓵` here** — `21` keys against my `7`, the same shape
+check, the same completeness requirement. And **`Ⓒ⓹` is answered better by not existing:** `70` reads
+the generator at run time, so there is no frozen copy that can drift, and a no-drift closure is only
+needed because this directory froze one. ⇒ *A frozen list is a cache, and the honest reading is that
+`70` chose not to take the cache. On that axis the order's own instruction — freeze it so `70` can
+wire without guessing — was satisfied by reading the source instead, which is the stronger answer.*
+
+**What survives as additive, and it is narrower than this directory:**
+
+⓵ **The tie from the provenance record to the limit read's own gate.** Item ② reads limits through
+`limits_nuhier.py`, whose `Ⓛ⓹` compares exactly four switches. `Ⓑ①` here reads those four off that
+gate's source and shows the demanded record covers them. `70`'s `21` keys cover them too — but
+nothing on either side records *which* keys the limit actually reads, and that is the question item ②
+turns on.
+
+⓶ **A cross-machine control needs two sides, and a single bar gives it one.** `70`'s `1e-6` is a
+refuse bar. A machine difference of `1e-7` passes it **silently**, with no record that the number was
+not zero. The three states registered here — `≤ 1e-10` accept, `≤ 1e-6` accept **with the miss
+reported**, worse refuse — make a nonzero agreement a reported finding instead of a pass. The teeth
+table's last row is the measurement that matters: at `1e-11` the control stays green, so it is a gate
+and not a tripwire. ⇒ *This is a recommendation to `70`, not a defect in `70`'s gate: a `1e-6` bar is
+correct for refusing, and the split only adds the report.*
+
+⓷ **The cost, measured:** `2100` s wall and `8189` s CPU per point on about `3.95` cores. `70` chose
+one job per point independently and the measurement confirms that choice rather than informing it.
+
+⛔ *The plain summary: item ① is largely redundant. The directory is kept because the closures were
+run and two of their findings are not carried anywhere else, not because `70` needed it.*
