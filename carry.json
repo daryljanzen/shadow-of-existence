@@ -4156,13 +4156,6 @@
  },
  "main": {
   "suite": {
-   "receipts/L174_general_matter_dynamics/I7_the_free_shear_is_two_not_five_and_the_corpus_already_names_the_two.py": {
-    "gates": [
-     "P# does not carry: P# places Gowdy (two"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46022850592",
-    "since": "96e675e39aca7ce2d836048348baf87e72635256"
-   },
    "receipts/P07_CR_framework/I7_conserved_charge_carries_three_objects_and_one_denies_the_others.py": {
     "gates": [
      "sense A is carried by four papers now --",
@@ -4170,13 +4163,6 @@
     ],
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46044929956",
     "since": "e59e785ad18eff4319fd72be8b9146c42001dad4"
-   },
-   "receipts/RP_34_gr/G1_the_arrival_path_metric.py": {
-    "gates": [
-     "the Petrov filling: the claim anchor is"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46022850592",
-    "since": "96e675e39aca7ce2d836048348baf87e72635256"
    }
   }
  }
