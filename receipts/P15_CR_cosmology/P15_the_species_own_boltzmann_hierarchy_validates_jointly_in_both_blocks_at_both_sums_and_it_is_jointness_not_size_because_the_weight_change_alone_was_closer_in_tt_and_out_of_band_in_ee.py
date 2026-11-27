@@ -433,6 +433,54 @@ check('Ⓘ⓷ ⛔⛭⛭ ** AND THIS IS ONE FITTER, NOT THE JOINT READ THE ORDER 
       #: ⛔ *ONE conjunction and no `or`, for the same reason as the arm above.*
       'One fitter so far.' in RESULT
       and "These legs are banked for `cc66`'s second fit whatever the verdict" in RESULT)
+# ══ Ⓙ EVERY FIGURE THIS REVISION PRINTS, PINNED — AND THE GRIDS READ FROM THE LEGS THAT RAN ══
+
+import json                                                                     # noqa: E402
+
+import numpy                                                                    # noqa: E402
+
+VAL = os.path.join(D, 'valid')
+
+
+def leg_config(bank, slot):
+    """the config THE LEG ITSELF RECORDED, not the generator's intent"""
+    with numpy.load(os.path.join(VAL, bank, 'lcdm_%s_pol.npz' % slot), allow_pickle=True) as z:
+        return json.loads(str(z['config']))
+
+
+_CFG = dict(((b, sl), leg_config(b, sl))
+            for b in ('base', 'nq24', 'lmax18') for sl in ('S030', 'S060'))
+check('Ⓙ⓵ ⛭⛭ ** THE TWO SUMS ARE READ OFF THE LEGS THEMSELVES: ** every bank records `0.30` at its '
+      'first slot and `0.60` at its second, and the hierarchy switch records as ON in all six.  '
+      '⇒ *so the sums this revision prints are the legs\' own and not a repetition of what the '
+      'generator was asked for — a generator typo would show here instead of being inherited*',
+      all(abs(_CFG[(b, 'S030')]['MNU'] - 0.30) < 5e-07
+          and abs(_CFG[(b, 'S060')]['MNU'] - 0.60) < 5e-07
+          and _CFG[(b, sl)]['NUHIER'] is True
+          for b in ('base', 'nq24', 'lmax18') for sl in ('S030', 'S060')))
+
+check('Ⓙ⓶ ⛭⛭ ** AND THE TWO GRIDS ARE READ OFF THEM TOO: ** the base bank ran at `12` nodes and '
+      'cutoff `12`, the convergence banks at `24` nodes and at cutoff `18`, each on both sums, and '
+      'the cut is `20` throughout.  ⇒ *so gates Ⓠ⓶ and Ⓠ⓷ are known to have measured the change '
+      'they are named for, rather than two banks that happened to be labelled that way*',
+      all(_CFG[('base', sl)]['NQ'] == 12 and _CFG[('base', sl)]['LMAXNU'] == 12
+          and _CFG[('nq24', sl)]['NQ'] == 24 and _CFG[('nq24', sl)]['LMAXNU'] == 12
+          and _CFG[('lmax18', sl)]['NQ'] == 12 and _CFG[('lmax18', sl)]['LMAXNU'] == 18
+          and abs(_CFG[(b, sl)]['QMAXNU'] - 20.0) < 1e-12
+          for sl in ('S030', 'S060') for b in ('base', 'nq24', 'lmax18')))
+
+check('Ⓙ⓷ ⛭ ** AND EVERY OTHER FIGURE THIS REVISION PRINTS IS PINNED WITHIN HALF A PRINTED '
+      'DIGIT: ** the four distances from one `0.01086`, `0.02115`, `0.01945` and `0.02260`; the '
+      'order\'s band `0.03`; and the massless limit\'s flatness factors `1.05` and `1.16`.  '
+      '⇒ *printed beside this receipt, so each has to fail here if it were wrong*',
+      abs(_OFF['TT|0.30'] - 0.01086) < 5e-06
+      and abs(_OFF['TT|0.60'] - 0.02115) < 5e-06
+      and abs(_OFF['EE|0.30'] - 0.01945) < 5e-06
+      and abs(_OFF['EE|0.60'] - 0.02260) < 5e-06
+      and abs(VA['BAND'] - 0.03) < 1e-12
+      and abs(FL['flat']['12'] - 1.05) < 5e-03
+      and abs(FL['flat']['24'] - 1.16) < 5e-03)
+
 print('\n' + '=' * 100)
 print('  %d arm(s); %d failed' % (NARMS, len(FAILS)))
 for f in FAILS:
