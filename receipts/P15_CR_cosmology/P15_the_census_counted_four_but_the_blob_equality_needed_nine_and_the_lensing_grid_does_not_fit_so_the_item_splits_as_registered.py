@@ -254,19 +254,39 @@ _swept = [ast.literal_eval(n.value) for n in ast.walk(_cen)
           if isinstance(n, ast.Assign) and isinstance(n.targets[0], ast.Name)
           and n.targets[0].id == 'SWEPT_SIXTY_PLUS']
 SW = _swept[0] if _swept else set()
-check('Ⓓ① the census\'s swept set is read off its own source and carries `35` names, none of them '
-      'one of the four this debt adds',
-      len(_swept) == 1 and len(SW) == 35 and not (set(TN.EXACT_R7882) & SW),
-      '%d names, %d of the four already in it' % (len(SW), len(set(TN.EXACT_R7882) & SW)))
-
+#: ⛭ *ENUMERATED AS TWO STATES AND NOT PINNED TO ONE.  This receipt reads a file whose whole
+#: purpose is to be changed by the patch this same revision routes: the moment `69` applies it, a
+#: pin on `35` names and a total of `95` would redden THIS receipt for having been obeyed.  The
+#: standing guard is that a defence against a state changing must ENUMERATE the states it may
+#: produce and that a disjunction beats a pin -- so both states are named, the arm REPORTS which
+#: one it found, and the invariant below is asserted in whichever state holds.*
 _nums = set()
 for n in ast.walk(_cen):
     if isinstance(n, ast.Compare) and isinstance(n.left, ast.Call) \
             and ast.unparse(n.left) == 'len(ROWS)' and isinstance(n.ops[0], ast.Eq):
         _nums.add(ast.literal_eval(n.comparators[0]))
-check('Ⓓ② and its asserted TOTAL is read off the same source as `95`, not recalled from the failure '
-      'message, so the number the patch moves is the number the gate holds',
-      _nums == {95}, 'asserted total(s) %s' % sorted(_nums))
+BEFORE = (35, 95)
+AFTER = (39, 99)
+_n = len(SW)
+_tot = sorted(_nums)[0] if len(_nums) == 1 else None
+_four_in = len(set(TN.EXACT_R7882) & SW)
+if (_n, _tot) == BEFORE and _four_in == 0:
+    STATE = 'BEFORE the patch: 35 swept names, a total of 95, none of the four in the set'
+elif (_n, _tot) == AFTER and _four_in == 4:
+    STATE = 'AFTER the patch: 39 swept names, a total of 99, all four of them in the set'
+else:
+    STATE = None
+check('Ⓓ① the census is in ONE OF THE TWO STATES this revision\'s patch can leave it in, read off '
+      'its own source -- the four absent with a total of `95`, or the four present with a total of '
+      '`99` -- and the arm REPORTS which. \u26d4 *Not pinned to the first: this receipt reads the '
+      'very file the patch it routes is meant to change*',
+      len(_swept) == 1 and STATE is not None,
+      STATE or 'NEITHER state: %d swept name(s), total %s, %d of the four in the set'
+               % (_n, _tot, _four_in))
+
+check('Ⓓ② and the asserted TOTAL is read off that source rather than recalled from the failure '
+      'message, so the number the patch moves is the number the gate actually holds',
+      len(_nums) == 1 and _tot in (95, 99), 'asserted total(s) %s' % sorted(_nums))
 
 _diffs = set()
 for n in ast.walk(_cen):
@@ -278,11 +298,15 @@ check('Ⓓ③ the clause BESIDE the moved number -- a difference of `60`, which 
       _diffs == {60}, 'asserted difference(s) %s' % sorted(_diffs))
 
 _k = len(TN.EXACT_R7882)
-check('Ⓓ④ and the patch preserves that difference IDENTICALLY, because the same four names enter '
-      'BOTH the asserted total and the swept set: `(95 + 4) - (35 + 4) == 95 - 35`. ⌗ *An identity '
-      'in the patch\'s shape, so it does not depend on the row count at all*',
-      (95 + _k) - (len(SW) + _k) == 95 - len(SW) == 60,
-      '(95 + %d) - (%d + %d) = %d' % (_k, len(SW), _k, (95 + _k) - (len(SW) + _k)))
+check('Ⓓ④ and the patch preserves that difference IDENTICALLY in WHICHEVER state the census is in, '
+      'because the same four names enter BOTH the asserted total and the swept set: the difference '
+      'is `60` before and `60` after, and the two states differ by exactly the four. \u2337 *An '
+      'identity in the patch\'s shape, so it does not depend on the row count at all*',
+      BEFORE[1] - BEFORE[0] == AFTER[1] - AFTER[0] == 60
+      and AFTER[0] - BEFORE[0] == AFTER[1] - BEFORE[1] == _k
+      and (_tot - _n) == 60,
+      'before %d - %d, after %d - %d, found %s - %d'
+      % (BEFORE[1], BEFORE[0], AFTER[1], AFTER[0], _tot, _n))
 
 _reads = {}
 for k in TN.EXACT_R7882:
@@ -317,10 +341,17 @@ check('Ⓔ② every leg records the hierarchy ON at the registered resolution --
 _bysum = {}
 for t, c in _legs.items():
     _bysum.setdefault(t.split('_')[0], set()).add(round(float(c['MNU']), 6))
+_L = sorted(_bysum.get('lcdm', ()))
+_C = sorted(_bysum.get('cr', ()))
+#: ⌗ *pinned ONE SUM AT A TIME and not as a set equality: a set comparison is a single assertion
+#: that a reader cannot trace to the figure the claim prints, and the gate that reads figures
+#: beside claims is right to refuse it.  Each node is held to exactly its printed value.*
 check('Ⓔ③ and each arm\'s five sums are `0.06`, `0.15`, `0.30`, `0.45` and `0.60` eV, read off the '
-      'legs\' own configurations',
-      _bysum.get('lcdm') == _bysum.get('cr') == {0.06, 0.15, 0.3, 0.45, 0.6},
-      '%s' % {k: sorted(v) for k, v in sorted(_bysum.items())})
+      'legs\' own configurations and pinned one at a time',
+      len(_L) == len(_C) == 5 and _L == _C
+      and abs(_L[0] - 0.06) < 1e-9 and abs(_L[1] - 0.15) < 1e-9 and abs(_L[2] - 0.30) < 1e-9
+      and abs(_L[3] - 0.45) < 1e-9 and abs(_L[4] - 0.60) < 1e-9,
+      'lcdm %s; cr %s' % (_L, _C))
 
 # ---------------------------------------------------------------------------------------------- Ⓕ
 print('\nⒻ  THE SIXTEEN OFFSET LEGS THE GRID CARRIES ARE AT A ZERO SUM, WHICH IS WHY IT CARRIES THEM')
