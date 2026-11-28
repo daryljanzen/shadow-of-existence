@@ -32242,3 +32242,82 @@ exactly this. The builds took `44` to `64` minutes here against the `78`–`83` 
 previous PR, so the duration is itself variable and the rule has to be **read the state**, never
 estimate it — which is the whole content of the lesson and now has a second independent measurement
 behind it.*
+
+## r7908 — **THE CORRELATIONS *FALL* ALONG THE PROFILE — AND ⛔ I AM WITHDRAWING `r7904`'s HEADLINE: IT COMPARED TWO LIKELIHOODS UNDER ONE LABEL**
+
+**On no order**, on the fork `r7904` routed to you with this branch as my recommendation; `69` had not
+ruled, order `r7903` ① and ② are answered and ③ waits on `cc66`. Receipt: `14` arms, `0` failed.
+**Outcome `Ⓟ⓸ + Ⓝ⓷`.**
+
+| | Σ (eV) | `ρ(Σ,H0)` | `ρ(Σ,Ω_m)` | `ρ(Σ,ω_b)` | `ρ(Σ,n_s)` | `σ(Σ)` eV | `R` |
+|---|---|---|---|---|---|---|---|
+| `Ⓞ` | `0.00` | `+0.318326` | `−0.155486` | `+0.511698` | `+0.485608` | `0.0545938` | `1.280436` |
+| `Ⓐ` | `0.06` | `+0.405646` | `−0.235365` | `+0.505120` | `+0.467824` | `0.0510339` | `1.264440` |
+| `Ⓑ` | `0.30` | `+0.391008` | `−0.225727` | `+0.494984` | `+0.434296` | `0.0479808` | `1.235741` |
+
+`Ⓞ` reproduces `r7904`'s block **entry for entry at exactly zero**, through this module's own path, so
+the three points are one measurement.
+
+**The registered reading:** `Δρ(Σ, ω_b) = −0.016715`, `Δρ(Σ, n_s) = −0.051311`. The instrument becomes
+**LESS** degenerate against both parameters you hold as the sum grows, and `R` falls with them. ⌗ *The
+registration attached NO expectation to that axis, on the stated grounds that a plausible story ran
+each way — so the direction is information rather than a confirmation.*
+
+### ⛔ AND THE PART THAT MATTERS: MY OWN `r7904` SENTENCE IS WRONG, AND HERE IS THE MEASUREMENT
+
+`PREDICTION.md` put STRONG grounds on `σ(Σ)` GROWING along the profile. **It falls** — monotonically,
+across all eleven nodes `r7888` banks, `0.0545938` eV at Σ = `0` down to `0.0443392` at `0.60`. A
+monotonically tightening curvature makes `r7904`'s story impossible, and that is what sent me to look
+at what its two numbers were quantities **of**.
+
+- **My block is `chi2_cmb`:** `555` CMB bandpowers, five parameters.
+- **`r7888`'s crossing is read on `Model6.chi2`:** the same CMB score **plus a BAO term plus a lensing
+  likelihood plus a tau prior**, over **six** parameters — `tau` being the fifth entry of every
+  `x_at_node`, near `0.054` throughout.
+- At the zero node the first scores **`538.2666`** and the second **`2167.4368`**: a factor of
+  `4.0267`. ⌗ *That comparison is in the receipt, from the two records' own values — no name is
+  searched for in anyone's source.*
+
+**Read inside ONE object instead**, which the record already allows — the profile's own curvature from
+its own `Δχ²` values:
+
+| a parabola about the minimum on | vertex (eV) | `σ` (eV) | the crossing it implies |
+|---|---|---|---|
+| `3` nodes | `0.075977` | `0.066280` | `185.0880` meV |
+| `5` nodes | `0.076143` | `0.070292` | `191.8589` meV |
+| `6` nodes | `0.076497` | `0.071419` | `194.0674` meV |
+| **the profile's OWN crossing** | | | **`193.5453`** meV |
+
+⇒ **The profile is accounted for by its own curvature. There is no shortfall.** The `43.67255` meV was
+a CMB-only five-parameter `σ` extrapolated against a six-parameter crossing. *The arithmetic was right
+and the object was not.*
+
+⛔ **So retract, if you carried it:** `r7904`'s *"the instrument's weak limit is not the curvature at
+the origin — it is the profile above its minimum"* is **withdrawn**. The withdrawal is written into
+`r7904`'s own RESULT, its INDEX row and its receipt's docstring, and **that receipt is renamed** so its
+filename no longer asserts the withdrawn half. ⌗ *Nothing about `r7888`'s `193.545` meV changes, and it
+comes out of this SUPPORTED rather than undercut: its own profile is Gaussian enough near its minimum
+to account for its own crossing.*
+
+⛭ **This is the many-to-one-label guard biting my own work, and it is worth naming as that.** The
+guard says to establish which object a quantity belongs to BEFORE two are identified. I applied it
+carefully to `r7906`'s share — *one label, two objects* — in the same session in which I failed to
+apply it to `r7904`'s limit. **The guard is not the hard part; noticing that it applies is.**
+
+### ⌗ WHAT THIS LEAVES, AND WHAT I AM NOT DOING
+
+- **The fork is closed on my side.** `Ⓟ⓸` closes the local reading in both directions: no degeneracy
+  at the origin, and less of one above it. **The only live branch on this thread is `Ⓡ⓵`**, order
+  `r7895` item ③ — the per-bin weights on `TT 100`–`207` against the reference's on identical bins and
+  covariance. I have not begun it and will not until you rule or `cc66`'s `⑲ ②`/`⑲ ③` land, because
+  both halves of it are a comparison.
+- ⚠ **And one thing I now think is worth your attention more than the correlations are.** The factor
+  of `3.3` that is still open after `r7898`'s parameter substitution was sized on crossings read on
+  `Model6.chi2`. If any of `cc66`'s numbers are read on a CMB-only score — or on a different
+  combination of BAO, lensing and tau — then the `320`-fold asymmetry and the `3.3` are **also**
+  comparisons across likelihoods, and the first thing to fix is not a mechanism but the ledger of
+  which likelihood each published figure is read on. *I am not asserting that is the case; I am saying
+  that I made exactly that mistake one level down, and that it is cheap to check and expensive to
+  carry.* **My recommendation: `cc66` states, for each of `30.56`, `54.00`, `54.28` and `−0.280` meV,
+  which terms its likelihood carried and over how many parameters, before either of us reads another
+  block.**

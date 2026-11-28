@@ -41,9 +41,10 @@ is not one of the two parameters the reference holds. Fixing `ω_b` and `n_s` ti
 near the `2.0` that would make the two parameters a material source of the instrument's freedom
 along `Σ`.
 
-**③ UNREGISTERED, AND THE MOST USEFUL THING HERE: the instrument's weak limit is not the curvature
-at the origin.** Arithmetic on the registered block against `r7888`'s own banked figures, at that
-record's own `Δχ² = 2.71`:
+**③ UNREGISTERED — AND ⛔ WITHDRAWN AT `r7908`, WHICH MEASURED IT AS A COMPARISON OF TWO
+LIKELIHOODS.** The arithmetic below is right and is kept; the sentence it was read as is not. Read at
+the time as *the instrument's weak limit is not the curvature at the origin*, on the registered block
+against `r7888`'s own banked figures at that record's own `Δχ² = 2.71`:
 
 | | meV |
 |---|---|
@@ -53,10 +54,17 @@ record's own `Δχ² = 2.71`:
 | minimum + half-width | `149.8727544` |
 | the profile's **own** crossing | `193.5453` |
 
-The local reading falls **`43.67255` meV short**, a factor of `1.2914`. ⇒ *The instrument's `193.545`
-meV is not a wide Gaussian at the origin. It is the profile ABOVE its minimum — the region where a
-small `R` and `r7898`'s `320`-fold global asymmetry can both be true, which `PREDICTION.md` named as
-the possibility a null here would locate rather than refute.*
+The local reading falls `43.67255` meV short, a factor of `1.2914`.
+
+⛔ **WHAT THAT SHORTFALL IS, ESTABLISHED AT `r7908`:** the two numbers belong to two different
+likelihoods. This block is `chi2_cmb` — `555` CMB bandpowers, five parameters. `r7888`'s crossing is
+read on `Model6.chi2`, which is the same CMB score **plus a BAO term plus a lensing likelihood plus a
+tau prior**, over **six** parameters. `r7908` read the profile's own curvature from the profile's own
+`Δχ²` values and found it puts the crossing in `[185.0880, 194.0674]` meV across three fits, against
+an actual `193.5453`. ⇒ *The profile IS accounted for by its own curvature, there is no shortfall to
+explain, and the reading in this section is withdrawn — the arithmetic was right and the object was
+not.* ⌗ *That is the many-to-one-label guard: which likelihood each quantity belonged to had to be
+established before the two were compared, and here it was not.*
 
 ## Three defects in this revision's own registration, reported rather than worked around
 

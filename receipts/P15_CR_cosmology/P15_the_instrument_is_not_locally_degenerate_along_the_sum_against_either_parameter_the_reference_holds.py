@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 """⛭⛭⛭ THE INSTRUMENT IS NOT LOCALLY DEGENERATE ALONG Σ AGAINST EITHER PARAMETER THE REFERENCE HOLDS,
-THE REGISTERED EXPECTATION OF WHICH ONE RANKS HIGHER IS REFUTED, AND THE WEAK LIMIT IS NOT THE
-CURVATURE AT THE ORIGIN.
+AND THE REGISTERED EXPECTATION OF WHICH ONE RANKS HIGHER IS REFUTED.
+
+⛔ ** THIS FILE WAS RENAMED. ** It first carried `and_its_weak_limit_is_not_the_curvature_at_the
+_origin`, which `r7908` withdrew — see the note below — so the name now carries only what survives.
 
 COMPUTES: nothing physical. It reads the record `r7904` produced from the amplitude-marginalised
 Fisher block of `model3.Model3('lcdm')` over Σ, `H0`, `Ω_m`, `ω_b` and `n_s` at Σ = `0`, at the
@@ -20,11 +22,15 @@ alone. The block orders them the other way, the ordering survives the change of 
 exceeds the two routes' disagreement on those same two entries. *One label covered two objects: a
 share of a non-additivity residual over thirty-six bins on a held clock is not a local correlation of
 the full block, and the registration said so before the measurement.*
-⛭ ** AND IT PINS WHAT THE NULL DOES NOT MEAN. ** The local reading of the limit — the block's own
-`σ(Σ)` at the record's own `Δχ² = 2.71`, added to the profile's minimum — lands at `149.8727544` meV
-against the profile's own `193.5453`, falling `43.67255` meV short. *So the instrument's weak limit is
-the profile ABOVE its minimum, not a wide Gaussian at the origin, which is exactly the place a small
-degradation factor and `r7898`'s `320`-fold global asymmetry can both be true.*
+⛭ ** AND IT PINS AN UNREGISTERED ARITHMETIC WHOSE READING WAS LATER WITHDRAWN. ** The local reading
+of the limit — the block's own `σ(Σ)` at the record's own `Δχ² = 2.71`, added to the profile's minimum
+— lands at `149.8727544` meV against the profile's own `193.5453`, falling `43.67255` meV short. That
+arithmetic is what this receipt pins and it is right. ⛔ *The sentence `r7904` read off it — that the
+weak limit is the profile ABOVE its minimum rather than the curvature at the origin — is WITHDRAWN at
+`r7908`, which established that the two numbers belong to two different likelihoods: this block is
+`chi2_cmb` over five parameters, while the crossing is read on the same CMB score plus BAO plus
+lensing plus a tau prior over six. The profile's own curvature, read from its own values, accounts for
+its own crossing. The object had to be established before the comparison, and here it was not.*
 ⛔ ** AND IT PINS THREE DEFECTS IN THAT REVISION'S OWN REGISTRATION, which the record reports rather
 than works around: ** a conditioning bar that is UNIT-DEPENDENT and therefore degenerate; step sizes
 too coarse by about a hundred, replaced by a ladder whose plateau is shown; and a registered
