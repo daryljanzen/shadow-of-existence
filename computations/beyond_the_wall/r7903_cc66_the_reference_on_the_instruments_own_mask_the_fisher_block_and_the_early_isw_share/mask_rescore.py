@@ -53,7 +53,12 @@ SUMS = [0.0, 0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.40]
 CROSS = 2.71
 
 #: ⑲①'s two readings.  LOW is the order's literal words; INSTR is what it intends.
-MASKS = {'instr555': dict(lo=100, hi=1996), 'low571': dict(lo=100, hi=None)}
+#: ⒞ `top597` exists ONLY to score the additivity claim registered at Ⓐ②: with low-only and
+#   full measured, the top part alone is the third leg the claim needs.  A registered claim with no
+#   leg that can score it is not registered, it is decorative.
+MASKS = {'instr555': dict(lo=100, hi=1996),
+         'low571': dict(lo=100, hi=None),
+         'top597': dict(lo=-1, hi=1996)}
 
 _KEPT = {}
 
@@ -223,6 +228,28 @@ def main():
                      ('%.3f' % u_lim) if u_lim else None, u_at,
                      ('%+.3f' % move) if move is not None else None), flush=True)
 
+    print('=' * 100)
+    print('  Ⓐ② ADDITIVITY: does low-only plus top-only make the full 555 move?')
+    print('=' * 100)
+    res['additivity'] = {}
+    for mode in PL.MODES:
+        f = res['legs'].get('instr555|%s' % mode, {}).get('move_meV')
+        lo_ = res['legs'].get('low571|%s' % mode, {}).get('move_meV')
+        tp = res['legs'].get('top597|%s' % mode, {}).get('move_meV')
+        if None in (f, lo_, tp):
+            print('  %-8s incomplete legs -- not scored' % mode)
+            continue
+        ssum = lo_ + tp
+        resid = ssum - f
+        frac = abs(resid) / abs(f) if f else None
+        held = (frac is not None and frac <= 0.20)
+        res['additivity'][mode] = dict(full=f, low_only=lo_, top_only=tp, sum_of_parts=ssum,
+                                       residual=resid, residual_fraction=frac,
+                                       within_20pc=bool(held))
+        print('  %-8s full %+7.3f ;  low %+7.3f + top %+7.3f = %+7.3f ;  residual %+7.3f '
+              '= %6.1f%% of the full move  -> registered bar (20%%) %s'
+              % (mode, f, lo_, tp, ssum, resid, 100.0 * frac, 'HOLDS' if held else 'REFUTED'))
+    print()
     json.dump(res, open(os.path.join(HERE, 'mask_limits.json'), 'w'), indent=1)
     print('  banked: mask_limits.json')
     return 0
