@@ -158,6 +158,11 @@
     ],
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46009378904",
     "since": "8de03303f879d1dc6d6d2ca6ae696a93786d2385"
+   },
+   "receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py": {
+    "gates": [],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46100242916",
+    "since": "d38e707f4babfc8d2ba40705c10d5c91116b52d0"
    }
   }
  }
