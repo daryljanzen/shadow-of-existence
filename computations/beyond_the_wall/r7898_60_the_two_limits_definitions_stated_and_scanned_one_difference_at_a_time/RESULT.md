@@ -21,7 +21,7 @@ of it would have proved nothing.*
 | control, nothing substituted | `193.545304` | — | — | — |
 | `Ⓢ②` the **ruler** substituted | `205.2682` | `+11.7229` | **`−0.072`** | `−0.084` |
 | `Ⓢ③` the **parameters** held | `103.9167` | `−89.6286` | **`+0.550`** | `+0.642` |
-| `Ⓢ④` both together | `101.9419` | `−91.6034` | `+0.562` | `+0.656` |
+| `Ⓢ④` both together | `101.9419` | `−91.6034` | `+0.562` | `+0.65644` |
 
 All three arms are monotonic above their own minimum, so all three crossings are readable — unlike the
 minimised column, which `r7888` established is not.
@@ -92,7 +92,7 @@ the scan anyway, which is the one thing that saved it.
 | | move |
 |---|---|
 | the ruler alone | `+11.7229` |
-| the ruler **on top of** held parameters | `−1.9748` |
+| the ruler **on top of** held parameters | `−1.97473` |
 
 The ruler pushes the limit away from the reference when the four parameters are free to re-fit, and
 pulls it slightly toward the reference when two of them are pinned — a sign reversal of the same
@@ -105,7 +105,7 @@ are open.*
 ## WHAT IS STILL NOT EXPLAINED, WHICH IS ABOUT HALF
 
 With **both** substitutions applied the instrument reads `101.9419` meV against the reference's
-`30.560`: still a factor of `3.34`, or `1.89` against the `54.000` arm that `cc66` calls the
+`30.560`: still a factor of `3.336`, or `1.89` against the `54.000` arm that `cc66` calls the
 like-for-like partner for this instrument's minimised ruler.
 
 ⇒ **So `Ⓡ⓶` is half right, and the half it gets right is the smaller claim.** About `0.55` of the gap
@@ -119,7 +119,7 @@ refuted as a complete account.*
 
 - Not that holding `omega_b` and `n_s` is the **right** treatment. It is the reference's treatment,
   and the measurement is of what adopting it does. Which treatment is correct is not asked here.
-- Not that the remaining factor of `3.34` is physical. It is unexplained on the enumerated axes, which
+- Not that the remaining factor of `3.336` is physical. It is unexplained on the enumerated axes, which
   is a different statement; the registration enumerated five and three were already measured.
 - Not a new limit. `193.545` meV stands as this seat's single-fitter reading and `r7888`'s record is
   untouched; these are substituted readings made to size a difference, and none of them is offered as
