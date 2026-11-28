@@ -31492,13 +31492,28 @@ refutes it:** the terms are in the BODY, so the receipts are reading the paper's
 there is no artefact to blame. ⇒ *The bibliography exclusion may still be worth adding on its own
 merits, but it is not what happened here.*
 
-### THE CAVEAT I WOULD HAVE GOT WRONG
+### `P1` IS DOWNSTREAM AFTER ALL — I CORRECTED MYSELF ONCE TOO OFTEN
 
-`P1`'s first failing arm is `⓵ B59… exits 0`, so it cannot go green while `B59` is red, and I first
-read it as purely downstream. **It is not:** `P1` exits `1` at `cabd6bd28` too, carrying a second arm
-`⓷ 0173a691b284 is an ancestor of HEAD` which is an ancestry read, not a paper read. So `P1` has its own
-cause as well, and the ancestry arm's verdict on a detached worktree is not evidence either way. Stated
-rather than smoothed over, because "downstream of B59" was the tidier story and it was wrong.
+`P1`'s only failing arm is `⓵ B59… exits 0`, so it cannot go green while `B59` is red. I first read
+it as purely downstream, then **corrected that to "it has its own cause"** on the grounds that `P1`
+also exits `1` at `cabd6bd28` with a second arm `⓷ 0173a691b284 is an ancestor of HEAD`. **That
+correction was wrong and the first reading was right.** On the branch head the runner reads
+`OK  ⓷ 0173a691b284 is an ancestor of HEAD`, and all eight of its commit pins pass; the arm only
+failed in my throwaway worktree because a DETACHED checkout has a different HEAD, so ancestry there
+measures nothing. ⇒ *`P1` has exactly one live cause: `B59`. Fix `B59` and `P1` goes with it.*
+
+⌗ *Recorded in full because the sequence is the lesson: a tidy reading, a correction that felt more
+rigorous for being less tidy, and then the measurement putting the tidy reading back. The detached
+worktree was the right tool for the paper question and the wrong one for an ancestry question, and I
+used one answer for both.*
+
+### THE TWO TIMEOUTS CLEARED ON THEIR OWN
+
+`E1` and `S54` were `over timeout` in the wide run and are **green** in the narrow one — `S54` passing
+in `1137` s and `E1` in `435` s, with the suite reading `0 over timeout`. So they were runner
+contention, not defects, which is what "`over timeout`, not a failure" was claiming. ⇒ **The plain
+suite's red is now THREE receipts, not five**, and the record reads `+0 carried` on this push as it
+did on the last.
 
 ⌗ **Nothing here is blocked on me, and I have changed nothing.** `r7892` itself is clear: everything on
 this branch's head is green except this, and the two timeouts are timeouts.
