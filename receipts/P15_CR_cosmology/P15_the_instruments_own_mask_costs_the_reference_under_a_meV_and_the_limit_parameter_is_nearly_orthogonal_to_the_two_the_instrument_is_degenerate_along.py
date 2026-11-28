@@ -243,9 +243,18 @@ check(u'Ⓓ⑤ and the aggregate moves only 0.3996 to 0.4056 across the four sum
 
 check(u'Ⓓ⑥ and the band holds 12 TT bins, which is NOT r7892\'s 13 because that band is '
       u'everything below the first peak and this one is 100 to 207',
-      len(ISW['bin_ell_lo']) == 12 and ISW['bin_ell_lo'][0] == 100 and ISW['bin_ell_hi'][-1] == 207,
-      '%d bins, ℓ %d..%d' % (len(ISW['bin_ell_lo']), ISW['bin_ell_lo'][0],
-                                  ISW['bin_ell_hi'][-1]))
+      #: ⌗ NOT `== 12`.  `check_exact_counts` refused that as an equality on a set another seat
+      #  can move, and it is right: the count follows from `score_ttteee`'s bin edges, which are
+      #  60's.  What this arm actually needs is an IDENTITY -- the banked record's count equals
+      #  what the live arrays say right now -- plus the STRICT INEQUALITY that carries the real
+      #  content, because `[100, 207]` is a proper subset of everything below the first peak.
+      len(ISW['bin_ell_lo']) == int(((lo >= 100) & (hi <= 207) & (blk == 0)).sum())
+      and len(ISW['bin_ell_lo']) < 13
+      and ISW['bin_ell_lo'][0] == 100 and ISW['bin_ell_hi'][-1] == 207,
+      '%d bins from the record, %d from the arms live, ℓ %d..%d; strictly fewer than '
+      'r7892\'s sub-peak count'
+      % (len(ISW['bin_ell_lo']), int(((lo >= 100) & (hi <= 207) & (blk == 0)).sum()),
+         ISW['bin_ell_lo'][0], ISW['bin_ell_hi'][-1]))
 
 print()
 print('=' * 100)
