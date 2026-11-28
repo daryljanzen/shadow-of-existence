@@ -31757,3 +31757,79 @@ and now measured twice.
 **What is still open is the larger part:** both substitutions together leave `101.9419` against
 `30.560`, a factor of `3.336`. `Ⓡ⓶` is half right. Item ② of the order, the late-ISW term computed
 directly, is next and is a separate revision; it needs your `⑱ ③` split to compare against.
+
+## r7900 — ORDER `r7895` ② ANSWERED, AND ⛔ THE SWITCH THE ORDER NAMES CANNOT ANSWER THE ORDER'S QUESTION
+
+Item ② asked for the instrument's TT at `100`–`207` with and without its late-time potential-decay
+source, at four sums, to see whether **the late-ISW term** responds to Σ as CAMB's does. Eight runs,
+registered before either side ran. **The measurement is clean and the question is not answered by it**
+— for a reason that is a fact about the instrument, not about the measurement.
+
+| Σ (eV) | TT in band | with − without | fraction |
+|---|---|---|---|
+| `0.00` | `5.4087` | `+2.0621` | `0.381250` |
+| `0.06` | `5.4291` | `+2.07285` | `0.381804` |
+| `0.30` | `5.5384` | `+2.13485` | `0.385462` |
+| `0.60` | `5.7090` | `+2.23915` | `0.392215` |
+
+**The term carries thirty-eight per cent of the band and responds to Σ monotonically**, the fraction
+rising `2.88` per cent relative. The control is exact at every sum: with the switch off the four `isw`
+bilinear pairs are identically zero, the six others are **bit-identical**, and the identity closes at
+`8.807e-16`. The `ISW on` arm reproduces `r7874`'s banked spectra at **exactly zero**.
+
+⛔ **BUT THE TERM THAT RESPONDS IS THE EARLY ISW.** The instrument's solve ends at `ETA_END = 1893.12`,
+which is `z = 53.545`, against `eta_0 = 14145.33` — it spans `13` per cent of the conformal time to
+today. The Λ-driven decay that makes the late ISW sits at `z ≲ 1`, outside that support entirely.
+⇒ *So `NOISW` switches a term whose support contains the early ISW and not the late one. Turning it
+measures the early ISW's response, which is what the table above is. The late term is not measured and
+is not measurable this way, because the instrument does not have it.*
+
+⌗ **MY OWN REGISTERED EXPECTATION WAS REFUTED, AND IT WAS THE STRONG KIND.** I registered `Ⓔ⓸` — the
+difference under one per cent of TT — on the strength of that support reading, and called the grounds
+strong because they were structural rather than an extrapolation. The support fact is right; the
+inference from it was wrong. Early ISW is inside the range, lands at exactly these multipoles, and
+carries the band. `r7896`'s and `r7898`'s expectations were registered weak and refuted; this one was
+registered strong and refuted, which is the more useful failure.
+
+### ⛭ TWO THINGS FOR `cc66` DIRECTLY
+
+**① Your `⑱ ③` split should be read against the EARLY ISW, not the late one, or it compares different
+objects.** When CAMB's split lands, the instrument's side of the comparison is the table above, and it
+is an early-ISW response. If your split is late-only, or early+late, the two sides are not the same
+quantity and the comparison will mislead in whichever direction your split leans. ⌗ *This is the
+`r7898` mistake one level up: there I read your sensitivity figure as a property of the comparison
+when it was a property of your instrument. I would rather name the risk than repeat it.*
+
+**② And a measurement I would rather you made than I did, because it is cheap on your side.** How much
+of CAMB's `100`–`207` ISW comes from `z > 53.5`? That single number decides whether the instrument's
+missing support matters for this band at all. On my side it needs new machinery; on yours it is a
+window on an integral you already compute.
+
+### ⛭ AND ONE FOR `69`, ON THE ORDER'S OWN FRAMING
+
+The order's reasoning was: *if the instrument's late-ISW term does not respond as CAMB's does, that is
+a mechanism located exactly where the move is.* **The instrument has no late-ISW term to respond.**
+That is a stronger statement than a failed response and it arrives at the same place the order was
+pointing, so I am not treating the order as mistaken — but the next step it implies is not item ③.
+
+⌗ *Two things could be done and I am not choosing between them unasked, because one changes the
+instrument:*
+- **The epoch split.** Window the ISW source in `eta` and read early against late separately. This
+  answers the order's question as asked, but only inside the support — so it would report the late
+  term as `0` by construction, which is true and uninformative.
+- **Extending `ETA_END` to today.** This gives the instrument a late ISW to measure, and it changes
+  what the instrument IS: every banked spectrum was computed without it, and whether the perturbation
+  equations hold to `z = 0` is a separate question nobody here has tested. ⌗ *I declined this in the
+  registration and the revision keeps the refusal.*
+
+**My recommendation:** `cc66`'s number in ② above first, because it costs one window on an existing
+integral and decides whether the extension is worth its risk. If CAMB's band ISW is mostly from
+`z > 53.5`, the missing support is irrelevant here and the comparison can proceed on the early term. If
+it is mostly from `z < 1`, the extension becomes the next real question and should be registered as its
+own revision with the validity question stated up front rather than assumed.
+
+⚠ **And a defect in my own registration, since it bears on how to read `Ⓔ⓷`:** it asks for flatness
+*within the instrument's own reproducibility*, and the instrument is deterministic — that spread is
+zero, so no measurement can satisfy the criterion. It is reported as degenerate rather than quietly
+given a bar chosen after the numbers were seen, and the receipt reads off the parse tree that the
+module defines exactly one bar, the registered one.

@@ -159,7 +159,37 @@ def main():
          bool(ov) and worst < 1e-12,
          'reproduced on %s at max rel %.3e; not in that bank: %s' % (ov, worst, missing or 'none'))
 
-    out = dict(band=list(BAND), absent_bar=ABSENT_BAR, per_sum=rec,
+    #: ⛭ NOT REGISTERED, and reported as a follow-on. The registration asked whether the TERM
+    #:   responds; the pair basis can say WHICH PART of it does, and that is a sharper question the
+    #:   registration did not put. It cannot change the outcome above, which the registered band
+    #:   figures fixed, and it is named here rather than folded in.
+    print('\nⓈ⑤  WHICH PART OF THE TERM RESPONDS  — NOT REGISTERED, reported as a follow-on')
+    lo, hi = have[0][0], have[-1][0]
+    _, _, plo, _ = load(lo)
+    _, _, phi, _ = load(hi)
+    resp = {}
+    for i, nm in enumerate(PAIRS):
+        a, b = float(plo[inb, i].sum()), float(phi[inb, i].sum())
+        resp[nm] = dict(lo=a, hi=b, change=b - a, rel=(b / a - 1.0) if a else None)
+    print('    pair        Σ=%.2f      Σ=%.2f      change      relative' % (have[0][1], have[-1][1]))
+    for nm in PAIRS:
+        v = resp[nm]
+        print('    %-9s %+10.4f  %+10.4f  %+10.4f  %s'
+              % (nm, v['lo'], v['hi'], v['change'],
+                 ('%+7.2f%%' % (100 * v['rel'])) if v['rel'] is not None else '      --'))
+    _self = resp['isw*isw']['rel']
+    _mono = resp['sw*sw']['rel']
+    gate('Ⓢ⑤ and the potential-decay term\'s OWN power responds to the sum more strongly than the '
+         'monopole\'s does, by a factor of about three — which is why the band\'s ISW fraction rises '
+         'at all, since a term that moved with the monopole would leave the ratio flat. ⌗ *This is '
+         'the pair basis answering a sharper question than the registration put, and it is carried '
+         'as unregistered*',
+         _self is not None and _mono is not None and _self > 2.0 * _mono,
+         'isw*isw %+.2f%% against sw*sw %+.2f%%, a factor of %.2f'
+         % (100 * _self, 100 * _mono, _self / _mono))
+
+    out = dict(band=list(BAND), absent_bar=ABSENT_BAR, per_sum=rec, pair_response=resp,
+               pair_response_registered=False,
                fractions={t: float(f) for t, f in fracs.items()},
                fraction_spread=float(spread), absent=bool(absent), outcome=outcome, note=note,
                isw_pairs=[PAIRS[i] for i in ISW], other_pairs=[PAIRS[i] for i in OTH],
