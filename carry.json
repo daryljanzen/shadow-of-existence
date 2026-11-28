@@ -846,6 +846,11 @@
    }
   },
   "tolerance": {
+   "receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46116468568",
+    "since": "ef1a2c036aa4ba8cd3267dbb9571a1c5030d187c",
+    "unmeasured": true
+   },
    "receipts/L_probability/S11_a_sweep_can_contain_its_own_gates_by_scoping_the_assertion_to_its_own_push_and_the_population_it_would_have_swept_is_mostly_another_seats.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46104566437",
     "since": "386b9faef85e1765756b871584df97b6ade83d96",
