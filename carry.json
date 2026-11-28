@@ -654,6 +654,11 @@
     "since": "bcdaad3ac9ca23f82e4f6c78d231dd78fd7d2e2a",
     "unmeasured": true
    },
+   "receipts/P15_CR_cosmology/P15_the_phase_slope_does_not_separate_the_loading_from_the_driving_because_a_primordial_tilt_moves_it_as_much_as_the_baryon_density_and_the_clean_lever_is_not_banked.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46114045013",
+    "since": "187d6e996db63c1b03696585c506373a1aebd34d",
+    "unmeasured": true
+   },
    "receipts/P15_CR_cosmology/P15_the_phase_systematic_leaves_the_step_standing_and_carries_a_third_of_the_retention_slope_through_a_phase_drift_between_the_sources.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46105100196",
     "since": "bcdaad3ac9ca23f82e4f6c78d231dd78fd7d2e2a",
@@ -672,6 +677,11 @@
    "receipts/P15_CR_cosmology/P15_the_refit_harness_cannot_bound_the_neutrino_mass_because_its_lensing_operator_is_held_fixed_and_the_control_misses_the_published_limit_on_the_gaps_sign.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46105100196",
     "since": "bcdaad3ac9ca23f82e4f6c78d231dd78fd7d2e2a",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_sections_opening_figures_on_the_one_rate_and_the_published_comb_is_298_5_not_298_94.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46114045013",
+    "since": "187d6e996db63c1b03696585c506373a1aebd34d",
     "unmeasured": true
    },
    "receipts/P15_CR_cosmology/P15_the_shear_coefficient_derived_not_remembered.py": {
