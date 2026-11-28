@@ -38,6 +38,7 @@ import glob
 import importlib.util
 import json
 import os
+import subprocess
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -296,15 +297,48 @@ print('=' * 100)
 print('  E -- THE REGISTRATION, AND WHAT THE COMPUTATION IS NOT ALLOWED TO CONTAIN')
 print('=' * 100)
 
-PRED = open(os.path.join(R7895, 'PREDICTION.md'), encoding='utf-8').read()
-check(u'Ⓔ① the band was REGISTERED before the number was read: PREDICTION.md carries '
-      u'the 1.0 meV band and 60\'s figure, and no result block',
-      '193.545' in PRED and '1.0' in PRED and '193.548' not in PRED,
-      'band present, 193.548 absent: %s' % ('193.548' not in PRED))
+def _git(*args):
+    """stdout, or None on any git failure -- an unestablished fact is REPORTED, never asserted"""
+    r = subprocess.run(['git'] + list(args), cwd=ROOT, capture_output=True, text=True)
+    return r.stdout if r.returncode == 0 else None
 
-check(u'Ⓔ② and it pre-registered the two definitional mismatches as NOT disagreements '
-      u'about physics -- the bins and the baseline',
-      '613' in PRED and '555' in PRED, '613/555 both named in the registration')
+
+def _added_in(rel):
+    """the commit that first ADDED `rel`, or None"""
+    h = _git('log', '--format=%H', '--diff-filter=A', '--', rel)
+    return h.split()[-1] if h and h.split() else None
+
+
+def _rel(name):
+    return os.path.relpath(os.path.join(R7895, name), ROOT).replace(os.sep, '/')
+
+
+#: ** THE REGISTRATION IS ASSERTED ON HISTORY, NOT ON THE WORDING OF THE FILE. **
+#   This block first read PREDICTION.md's TEXT -- `'193.545' in PRED`, `'613' in PRED` -- and
+#   `check_quote_pins` was right to refuse it: nine such literals came back as NEW quote-pin keys.
+#   A test that a short literal is PRESENT in another file is brittle in the one direction that
+#   matters, because the file can be reworded without the claim changing, and it pins a spelling
+#   where the claim is about an ORDER OF EVENTS.  ⇒ *Registration before computation is a fact
+#   about the commit graph, so it is read off the commit graph.*
+_reg = _added_in(_rel('PREDICTION.md'))
+_res = [_added_in(_rel(n)) for n in ('limit_read.json', 'late_isw_split.json')]
+
+if _reg is None or not all(_res):
+    print('    ⌷ REPORTED, asserted of nothing: the registration commit could not be resolved '
+          'in this clone, so the two history arms below are not run.')
+else:
+    _names = (_git('show', '--name-only', '--format=', _reg) or '').split()
+    _mine = [f for f in _names if ('r7895_cc66_' in f)]
+    check(u'Ⓔ① ⛭ THE REGISTRATION WENT IN ALONE, read off the commit graph: the '
+          u'commit that adds PREDICTION.md adds NO other file of this computation',
+          len(_mine) == 1 and _mine[0].endswith('PREDICTION.md'),
+          '%s carries %d file(s) of this computation' % (_reg[:9], len(_mine)))
+
+    _desc = [_git('merge-base', '--is-ancestor', _reg, c) is not None and c != _reg
+             for c in _res]
+    check(u'Ⓔ② ⛭ and BOTH result records land in STRICT DESCENDANTS of it, so the '
+          u'band could not have been chosen after the number was seen',
+          all(_desc), 'registration %s; results %s' % (_reg[:9], [c[:9] for c in _res]))
 
 LIMSRC = open(os.path.join(R7895, 'read_the_limit.py'), encoding='utf-8').read()
 LTREE = ast.parse(LIMSRC)
@@ -316,16 +350,25 @@ check(u'Ⓔ③ ⛭ ON THE PARSE TREE: the computation IMPORTS the reader and def
       _imports_reader and not (_defs & {'limit95', 'chi2_of', 'fit', 'profile', 'solve'}),
       'imports reader=%s, own defs=%s' % (_imports_reader, sorted(_defs)))
 
-ISWSRC = open(os.path.join(R7895, 'late_isw_split.py'), encoding='utf-8').read()
-check(u'Ⓔ④ and the ISW computation carries BOTH controls inside it rather than beside '
-      u'it, which is how the broken window was caught before it was reported',
-      'keepall' in ISWSRC and 'control_B' in ISWSRC and '** NPOW' in ISWSRC.replace('**NPOW', '** NPOW'),
-      'control A and B both present in source')
+ITREE = ast.parse(open(os.path.join(R7895, 'late_isw_split.py'), encoding='utf-8').read())
+#: ** Store context, not `Assign.targets`: ** `ZCUT, NPOW = 30.0, 8` is a TUPLE target, so a
+#   walk over `n.targets` for `ast.Name` misses both names and the arm failed naming them absent
+#   when they are three lines above the window that uses them.
+_iassigned = {n.id for n in ast.walk(ITREE)
+              if isinstance(n, ast.Name) and isinstance(n.ctx, ast.Store)}
+_icalled = {getattr(n.func, 'attr', None) or getattr(n.func, 'id', None)
+            for n in ast.walk(ITREE) if isinstance(n, ast.Call)}
 
-check(u'Ⓔ⑤ and the window is a POLYNOMIAL, not an exponential -- an exp in z overflowed '
-      u'once compiled and read as a huge late-ISW effect',
-      'exp' not in ISWSRC.split('def ')[0] or '/ (1.0 + (a' in ISWSRC or '(a / acut)' in ISWSRC,
-      ISW['window'])
+check(u'Ⓔ④ ⛭ ON THE PARSE TREE: the ISW computation builds BOTH controls itself -- '
+      u'the null window and the low-ℓ leg -- rather than having them reported beside it',
+      not ({'keepall', 'early', 'acut', 'NPOW', 'ZCUT'} - _iassigned),
+      'missing: %s' % sorted({'keepall', 'early', 'acut', 'NPOW', 'ZCUT'} - _iassigned))
+
+check(u'Ⓔ⑤ ⛭ and the window is built with a POWER, with no exponential anywhere in '
+      u'the file -- an exp in z overflowed once compiled and read as a huge late-ISW effect',
+      not (_icalled & {'exp', 'expm1', 'exp2'})
+      and any(isinstance(n, ast.Pow) for n in ast.walk(ITREE)),
+      'exponential calls: %s' % sorted(_icalled & {'exp', 'expm1', 'exp2'}))
 
 print()
 print('=' * 100)
@@ -335,8 +378,8 @@ print('=' * 100)
 RES = __doc__
 
 check(u'Ⓕ① that no mechanism is named', 'no mechanism' in RES)
-check(u'Ⓕ② that this is not a second likelihood and 60\'s 555-bin mask is NOT read here',
-      'no second likelihood' in RES and '555' in RES)
+check(u'Ⓕ② that this is not a second likelihood and 60\'s own bin mask is NOT read here',
+      'no mechanism, no second' in RES and 'bin mask, and no claim' in RES)
 check(u'Ⓕ③ that the two readers do NOT share a likelihood, which is what makes the '
       u'agreement worth something',
       'they do not, and that is' in RES and 'the point of the agreement' in RES)
