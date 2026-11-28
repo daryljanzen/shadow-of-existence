@@ -1489,5 +1489,16 @@
     "unmeasured": true
    }
   }
+ },
+ "main": {
+  "suite": {
+   "receipts/RP_34_gr/G1_the_arrival_path_metric.py": {
+    "gates": [
+     "the mechanism passage clusters FOUR link"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46103180159",
+    "since": "7f32061fc20df7b2e024ee3bc4465a615e6ced77"
+   }
+  }
  }
 }
