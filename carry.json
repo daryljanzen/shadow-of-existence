@@ -794,6 +794,11 @@
    }
   },
   "tolerance": {
+   "receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46111760709",
+    "since": "bc8f361f57f4d2a297e9e9cd9bf2064d5a1a08b9",
+    "unmeasured": true
+   },
    "receipts/L_probability/S11_a_sweep_can_contain_its_own_gates_by_scoping_the_assertion_to_its_own_push_and_the_population_it_would_have_swept_is_mostly_another_seats.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46104566437",
     "since": "386b9faef85e1765756b871584df97b6ade83d96",
@@ -914,11 +919,6 @@
     "since": "386b9faef85e1765756b871584df97b6ade83d96",
     "unmeasured": true
    },
-   "receipts/P15_CR_cosmology/P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46104566437",
-    "since": "386b9faef85e1765756b871584df97b6ade83d96",
-    "unmeasured": true
-   },
    "receipts/P15_CR_cosmology/P15_the_bao_does_not_move_on_the_leaf_rate_and_it_is_the_only_lever_local_to_last_scattering.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46104566437",
     "since": "386b9faef85e1765756b871584df97b6ade83d96",
@@ -1025,21 +1025,6 @@
     "unmeasured": true
    },
    "receipts/P15_CR_cosmology/P15_the_peak_plane_survives_the_merge_the_sky_lands_within_one_sigma_of_the_control_and_a_full_driving_unit_is_thirteen_but_half_the_draws_lose_the_fourth_peak.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46104566437",
-    "since": "386b9faef85e1765756b871584df97b6ade83d96",
-    "unmeasured": true
-   },
-   "receipts/P15_CR_cosmology/P15_the_peak_statistic_cannot_be_pointed_at_the_observed_spectrum_because_a_local_maximum_finder_reads_twenty_one_maxima_where_the_model_has_five.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46104566437",
-    "since": "386b9faef85e1765756b871584df97b6ade83d96",
-    "unmeasured": true
-   },
-   "receipts/P15_CR_cosmology/P15_the_period_difference_null_is_not_significant_because_the_control_has_no_measurable_period_and_the_offset_is_exactly_a_phase_drift_at_fixed_ell_A.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46104566437",
-    "since": "386b9faef85e1765756b871584df97b6ade83d96",
-    "unmeasured": true
-   },
-   "receipts/P15_CR_cosmology/P15_the_phase_slope_does_not_separate_the_loading_from_the_driving_because_a_primordial_tilt_moves_it_as_much_as_the_baryon_density_and_the_clean_lever_is_not_banked.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46104566437",
     "since": "386b9faef85e1765756b871584df97b6ade83d96",
     "unmeasured": true
