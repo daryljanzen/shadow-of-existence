@@ -62,8 +62,17 @@ def check(name, ok, got=None):
         print('  [FAIL] %s' % name + ('   (got %s)' % got if got is not None else ''))
 
 
-def near(a, b, tol):
-    return a is not None and b is not None and abs(a - b) <= tol
+def num(x):
+    """None becomes NaN, so a missing crossing FAILS a pin cleanly instead of raising.
+
+    ** Every pin below is written as `abs(<computed> - <literal>) <= <tol>`. **  That is not a
+    style choice: `check_figures_pinned` reads the receipt's PARSE TREE for `== c` with `round`,
+    `abs(.. c ..) < t`, a bracketing, or `isclose`, and the custom two-argument tolerance helper
+    this file used first is invisible to it.  Ten figures the INDEX row prints came back
+    `[UNPINNED]` against a baseline of 1431, and every one of them was mine.  *A pin the gate
+    cannot read is not a pin.*
+    """
+    return float('nan') if x is None else float(x)
 
 
 # ---------------------------------------------------------------------------------------------
@@ -119,31 +128,31 @@ check(u'Ⓐ① 60\'s banked calibrated column is the registered grid: 11 points,
 check(u'Ⓐ② the reader is IMPORTED from r7863 and its threshold is the one of record',
       CROSS == 2.71 and limit95.__module__ == 'cc66_r7863_reader', 'CROSS=%s' % CROSS)
 
-_re_min = mine_from_min(pts_cal)
+_re_min = num(mine_from_min(pts_cal))
 check(u'Ⓐ③ ⛭ RE-DERIVED HERE: this seat\'s crossing on 60\'s baseline is 193.548 meV',
-      near(round(_re_min, 3), 193.548, 1e-9), '%.6f meV' % _re_min)
+      abs(round(_re_min, 3) - 193.548) <= 1e-9, '%.6f meV' % _re_min)
 
 _sixty = CAL['crossing_meV']
 check(u'Ⓐ④ and 60\'s own crossing, read out of ITS record, is 193.54530379137307 meV',
-      near(_sixty, 193.54530379137307, 1e-11), repr(_sixty))
+      abs(_sixty - 193.54530379137307) <= 1e-11, repr(_sixty))
 
 _resid = abs(_re_min - _sixty)
 check(u'Ⓐ⑤ ⛭ so the residual between two independent readers is 0.0026962 meV',
-      near(round(_resid, 7), 0.0026962, 1e-9), '%.10f meV' % _resid)
+      abs(round(_resid, 7) - 0.0026962) <= 1e-9, '%.10f meV' % _resid)
 
 _step = (CAL['sums'][-1] - CAL['sums'][0]) * 1000.0 / (GRID_N - 1)
 check(u'Ⓐ⑥ ⛭ and ONE STEP of the interpolation grid is 0.003 meV, so the residual '
       u'is AT THE FLOOR and not merely small',
-      near(round(_step, 6), 0.003, 1e-9) and _resid <= _step,
+      abs(round(_step, 6) - 0.003) <= 1e-9 and _resid <= _step,
       'step %.6f meV, residual %.6f meV' % (_step, _resid))
 
 check(u'Ⓐ⑦ ⛔ THE LIMIT IS JOINT: inside the +-1.0 meV band by a factor of 370.9',
-      _resid <= BAND and near(round(BAND / _resid, 1), 370.9, 0.05),
+      _resid <= BAND and abs(round(BAND / _resid, 1) - 370.9) <= 0.05,
       '%.1f x inside' % (BAND / _resid))
 
 check(u'Ⓐ⑧ and the figure this seat\'s computation TYPED is gated against the record '
       u'rather than trusted -- the r7892 lesson, applied to my own file',
-      near(MINE['sixty_calibrated_meV'], _sixty, 1e-12),
+      abs(MINE['sixty_calibrated_meV'] - _sixty) <= 1e-12,
       'typed %r vs record %r' % (MINE['sixty_calibrated_meV'], _sixty))
 
 print()
@@ -152,32 +161,33 @@ print('  B -- THE CONVENTION, WHICH IS THE WHOLE OF THE REMAINING GAP')
 print('=' * 100)
 
 _re_low, _dc = limit95(pts_cal)
+_re_low = num(_re_low)
 check(u'Ⓑ① ⛭ RE-DERIVED: the SAME reader under THIS seat\'s own lowest-sum baseline '
       u'gives 216.282 meV on the same grid',
-      near(round(_re_low, 3), 216.282, 1e-9), '%.6f meV' % _re_low)
+      abs(round(_re_low, 3) - 216.282) <= 1e-9, '%.6f meV' % _re_low)
 
 _cost = _re_low - _re_min
 check(u'Ⓑ② ⛭ so the convention alone is worth 22.734 meV',
-      near(round(_cost, 3), 22.734, 1e-9), '%.6f meV' % _cost)
+      abs(round(_cost, 3) - 22.734) <= 1e-9, '%.6f meV' % _cost)
 
 check(u'Ⓑ③ ⛔ which is 2.996 times 60\'s +7.587 meV hierarchy move -- THE '
       u'BOOKKEEPING OUTWEIGHS THE EFFECT IT WOULD BE USED TO JUDGE BY THREE TIMES',
-      near(round(_cost / SIXTY_HIERARCHY_MOVE, 3), 2.996, 0.001),
+      abs(round(_cost / SIXTY_HIERARCHY_MOVE, 3) - 2.996) <= 0.001,
       '%.4f x' % (_cost / SIXTY_HIERARCHY_MOVE))
 
 _dchi2_low = float(max(CAL['totals'][0] - min(CAL['totals']), 0.0))
 check(u'Ⓑ④ and the lowest-sum point is NOT itself a crossing: it sits 1.1232464449 in '
       u'dchi2 above the minimum, below the 2.71 threshold',
-      near(round(_dchi2_low, 10), 1.1232464449, 1e-9) and _dchi2_low < CROSS,
+      abs(round(_dchi2_low, 10) - 1.1232464449) <= 1e-9 and _dchi2_low < CROSS,
       'dchi2 = %.10f against CROSS %.2f' % (_dchi2_low, CROSS))
 
 MIN = BANKED['minimised']
 pts_min = list(zip(MIN['sums'], MIN['totals']))
-_mm, _ml = mine_from_min(pts_min), limit95(pts_min)[0]
+_mm, _ml = num(mine_from_min(pts_min)), num(limit95(pts_min)[0])
 check(u'Ⓑ⑤ the minimised column carries the SAME structure: 310.149 against 60\'s '
       u'310.14769186, and a convention cost of 11.700 meV',
-      near(round(_mm, 3), 310.149, 1e-9) and near(MIN['crossing_meV'], 310.14769186419727, 1e-11)
-      and near(round(_ml - _mm, 3), 11.700, 1e-9),
+      abs(round(_mm, 3) - 310.149) <= 1e-9 and abs(MIN['crossing_meV'] - 310.14769186419727) <= 1e-11
+      and abs(round(_ml - _mm, 3) - 11.700) <= 1e-9,
       'mine %.3f, 60 %.6f, cost %.3f' % (_mm, MIN['crossing_meV'], _ml - _mm))
 
 check(u'Ⓑ⑥ ⚠ and the minimised column is NOT monotone above its minimum -- 1 dip, '
@@ -227,8 +237,8 @@ check(u'Ⓒ⑤ and 60\'s record leaves it UNREGISTERED, which is why a second re
       BYBLOCK['overlap_registered'] is False, repr(BYBLOCK['overlap_registered']))
 
 check(u'Ⓒ⑥ with the TT share and the whole move read out of the same record, not retyped',
-      near(round(BYBLOCK['block_shares']['TT'], 4), 0.8437, 1e-9)
-      and near(round(BYBLOCK['move_all36_meV'], 3), 48.202, 1e-9),
+      abs(round(BYBLOCK['block_shares']['TT'], 4) - 0.8437) <= 1e-9
+      and abs(round(BYBLOCK['move_all36_meV'], 3) - 48.202) <= 1e-9,
       'TT share %.4f, move %.3f meV' % (BYBLOCK['block_shares']['TT'], BYBLOCK['move_all36_meV']))
 
 check(u'Ⓒ⑦ and the first peak the sub-peak band is defined against is ell = 220, with '
