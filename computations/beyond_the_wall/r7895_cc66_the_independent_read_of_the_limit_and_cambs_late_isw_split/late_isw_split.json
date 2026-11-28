@@ -1,0 +1,73 @@
+{
+ "all_control_A_hold": true,
+ "all_control_B_hold": true,
+ "band": [
+  100,
+  207
+ ],
+ "control_band": [
+  2,
+  30
+ ],
+ "inert": false,
+ "per_sum": {
+  "0.00": {
+   "control_A_holds": true,
+   "control_A_window1_vs_full_in_band": 0.0,
+   "control_B_holds": true,
+   "control_B_no_late_isw_vs_full_low_l": 0.2310790514033647,
+   "late_over_total_in_band": 0.0005443843257345361,
+   "no_late_isw_vs_full_in_band": 0.0002414889177221666,
+   "no_total_isw_vs_full_in_band": 0.4436000566260359,
+   "no_total_isw_vs_full_low_l": 0.1904939056324093
+  },
+  "0.06": {
+   "control_A_holds": true,
+   "control_A_window1_vs_full_in_band": 0.0,
+   "control_B_holds": true,
+   "control_B_no_late_isw_vs_full_low_l": 0.23111182291511492,
+   "late_over_total_in_band": 0.0005570096963281336,
+   "no_late_isw_vs_full_in_band": 0.00024724820859762847,
+   "no_total_isw_vs_full_in_band": 0.4438849273675388,
+   "no_total_isw_vs_full_low_l": 0.1911601789055539
+  },
+  "0.30": {
+   "control_A_holds": true,
+   "control_A_window1_vs_full_in_band": 0.0,
+   "control_B_holds": true,
+   "control_B_no_late_isw_vs_full_low_l": 0.23257622681514722,
+   "late_over_total_in_band": 0.0006293107547600757,
+   "no_late_isw_vs_full_in_band": 0.0002819172092260307,
+   "no_total_isw_vs_full_in_band": 0.4479777392863903,
+   "no_total_isw_vs_full_low_l": 0.1948721073353629
+  },
+  "0.60": {
+   "control_A_holds": true,
+   "control_A_window1_vs_full_in_band": 0.0,
+   "control_B_holds": true,
+   "control_B_no_late_isw_vs_full_low_l": 0.234855477335227,
+   "late_over_total_in_band": 0.0006010000471749819,
+   "no_late_isw_vs_full_in_band": 0.00027129946683283874,
+   "no_total_isw_vs_full_in_band": 0.4514133869175048,
+   "no_total_isw_vs_full_low_l": 0.19976817828480165
+  }
+ },
+ "reference": {
+  "H0": 67.4,
+  "NS": 0.965,
+  "OM": 0.315,
+  "WB": 0.0224
+ },
+ "spectra": "UNLENSED scalar TT from CAMB custom scalar sources",
+ "sums_eV": [
+  0.0,
+  0.06,
+  0.3,
+  0.6
+ ],
+ "terms": "camb.symbolic.get_scalar_temperature_sources(): SW, ISW, Doppler, quadrupole",
+ "window": "1/(1+(a/a_cut)^8), 1 early and 0 late",
+ "window_power": 8,
+ "worst_late_in_band": 0.0002819172092260307,
+ "z_cut": 30.0
+}
