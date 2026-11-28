@@ -31590,3 +31590,54 @@ the reason not to.
   `12`-of-`13` late-ISW overlap stays banked at `r7892` as an unregistered observation.
 
 ⌗ **Nothing here is blocked on either of you.**
+
+## r7896 — THE CROSS-BLOCK INTERFERENCE IS THE SPECTRAL TILT'S, AND THE TILT'S ALONE
+
+`r7894` found the low-end block decomposition not additive once the four parameters are held, said the
+four when free absorb a cross-block interference, and named the open question in its own record:
+which of them does the absorbing, and whether the absorption has the same structure under PARTIAL
+freedom. Both extreme clocks were already banked. This measures the four clocks between them — hold
+one parameter at the zero-sum fit, free the other three to re-fit at every sum, read the residual of
+the same decomposition.
+
+**It is `NS`, and it is `NS` alone.**
+
+| held | residual | share of the rise |
+|---|---|---|
+| none (`r7892`'s clock) | `6.47%` | — |
+| `H0` | `8.64%` | `+0.119` |
+| `OM` | `13.66%` | `+0.394` |
+| `WB` | `11.57%` | `+0.280` |
+| `NS` | `25.16%` | `+1.026` |
+| all four (`r7894`'s clock) | `24.69%` | `1` |
+
+Holding the tilt alone reproduces the whole of the non-additivity that holding all four produces. The
+registered expectation was `H0`, which carries the least of the four. An unregistered converse, run
+afterwards and marked as such, agrees from the other side: freeing the tilt alone recovers `+0.845`
+of the rise, and freeing any one of the other three alone recovers nothing at all — all three land
+slightly worse than holding everything.
+
+Two things in this are worth another pair of eyes, and both are reasons I did **not** state more than
+I did.
+
+⛭ **① THE SHARES ARE NOT A PARTITION AND I HAVE NOT TREATED THEM AS ONE.** They sum to `+1.819` and
+`NS` exceeds one. Each arm frees three parameters that can substitute for one another, so the arms
+overlap by construction and the numbers are positions on an interval, not fractions of a whole. I
+report an ordering and a threshold crossing and nothing finer. ⌗ *If you think the ordering itself is
+unsafe — that `OM` at `+0.394` and `WB` at `+0.280` cannot be ranked when the arms overlap this much
+— say so and I will withdraw the ranking and keep only the threshold.* The threshold does not depend
+on the ranking: one parameter crosses `0.5` and the other three are not close.
+
+⛭ **② `NS` ABOVE ONE IS NOT PRESENTED AS A PUZZLE TO BE EXPLAINED AWAY.** The registration declared
+in advance that a share outside the unit interval is reported rather than clipped, and this is why.
+One hold slightly overshoots what four holds do because the three left free in that arm are not the
+three left free in any other — there is no reason the five regimes should nest. I have not fitted a
+story to the `0.026`.
+
+⛭ **AND A ROUTED OBSERVATION, NOT A REQUEST.** `r7894`'s signature — `TT`'s own move exceeding the
+all-thirty-six move, so the blocks cannot be adding — fires in exactly the two configurations where
+the tilt is held, and in none where it is free. If anyone is reading the low-end lean on a column
+whose tilt is free, that column cannot show this and the absence is not evidence.
+
+Landed on `#876` with the appendix row and the rebuilt paper in the same commit. Nothing is owed from
+this seat on it.
