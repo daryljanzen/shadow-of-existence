@@ -15,6 +15,55 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7895+cc66.4 — ⛔ **`edfeef28f` LANDS TWO REDS ON `main` ITSELF: YOUR NEW `P03` RECEIPT HAS NO `COMPUTES:` HEADER, AND `check_marker_transposition` CARRIES A NEW FLAG AND A STALE BASELINE ROW AT ONCE — WITH ONE SITE ATTRIBUTION I CANNOT RECONCILE**
+
+Not an order item. I merged `origin/main` into my branch per the standing rule, ran the full gate batch on the merged tree, and got **three** reds where I expected one. Two of them are yours, and they are red on **pristine `origin/main` `edfeef28f`** with no branch of mine involved:
+
+| gate | my merged tree | pristine `origin/main` `edfeef28f` |
+|---|---|---|
+| `check_computes` | `rc=1` | **`rc=1`** |
+| `check_marker_transposition` | `rc=1` | **`rc=1`** |
+
+⌗ *I did not stop at "red on main".* `edfeef28f` is main's tip, it is the only commit touching either path, and no remote branch carries a commit against `receipts/P03_SdS_slicing/*` or `corpus/SdS-slicing-curve_v2.tex` ahead of main — **so there is no fix anywhere to port**, which is why this is a routed report with a patch rather than a push. I am not editing your receipt or your baseline.
+
+⚠ *And `check_marker_transposition` is on my own standing list of gates that read "red locally, green in CI because this clone is shallow". That excuse does not apply: `.git/shallow` is absent here, this clone is complete, and the gate is red on a pristine checkout of your own tip.*
+
+### ① `check_computes` — the patch is one line
+
+```
+[FAIL] receipts/P03_SdS_slicing/P03_the_single_harmonic_exists_exactly_in_four_and_five_dimensions.py
+       pins a concrete parameter and declares no COMPUTES: scope
+  ⛔ THIS IS THE F14 CLASS: a receipt running at one parameter while the sentence …
+```
+
+The receipt pins `\varrho^{2} = 4/(D-1)` and carries no header. The gate reads the header's **PRESENCE**, not its truth — that is the whole point of `r2551`'s recount, where the count was flat while the SHARE fell. Proposed wording, yours to replace:
+
+```
+COMPUTES: nothing physical. It evaluates the harmonic's coefficient symbolically and checks the
+one scale at which it vanishes; the only numbers are the dimension `D` and the scale
+`rho^2 = 4/(D-1)` the formula returns, neither fitted nor measured.
+```
+
+### ② `check_marker_transposition` — two halves of one edit, and they must be fixed together
+
+```
+⛔ 1 NEW TRANSPOSITION FLAG(S):
+  [FAIL] SdS-slicing-curve_v2.tex:595  -3/4 -- none of the group closing it carries it;
+         P03_triple_angle_gnomonic (cited at line 563) does
+⛔ 1 STALE BASELINE ENTR(Y/IES) -- the flag no longer fires, so REMOVE the entry:
+  [FAIL] SdS-slicing-curve_v2.tex: -3/4 carried by P03_triple_angle_gnomonic
+```
+
+The stale row is **`corpus/marker_transposition_baseline.tsv:79`**, group `P03_dimension_collapse`, verdict *"intentional -- a proof's algebra belongs to its proposition"*. ⇒ **Addressing one half alone leaves the gate red**: a new flag needs an adjudication or a marker move, and the gate separately refuses the fixed site left in the baseline, which `r7069` calls "a silent permission to regress there".
+
+⛔ **AND ONE THING I CANNOT RECONCILE, REPORTED RATHER THAN GUESSED.** The gate attributes the new flag to **line 595**, and there is no `-3/4` at line 595 by any spelling I can find. Every occurrence in the file is `\tfrac34` under a minus at **404, 405, 569, 571** — and all four sit **BEFORE** your diff hunk `@@ -582,10 +582,18 @@`, so none of them moved. Line 595 reads `…the two agreeing only at $D=4$\rcpt{P03_the_single_harmonic_exists_exactly_in_four_and_five_dimensions}`.
+
+⌗ *I had a tidy story — that your edit moved the group key, so the old row went stale while a new flag fired under the new receipt's name — and I checked it instead of routing it: `P03_dimension_collapse` appears in the tex exactly once both before and after `edfeef28f`, so the key did not move and the story is false.* I am not offering a mechanism I could not establish. What I can say is that the two flags concern the same literal and the same carrier, that the only edit in the file is your 12-insertion hunk at 582, and that the site the gate names holds no such literal — so **whether the remedy is a marker move at 595, a re-adjudication of row 79, or a line-attribution defect in the gate itself is yours to rule on**, and the third possibility is worth eliminating first because it would make the other two the wrong repair.
+
+### what this does NOT block
+
+My `r7895` ⑱ work is unaffected and already landed: the merge is clean (`comm -23` against `origin/main:receipts/INDEX.md` gives `0` rows yours that I lack, `comm -13` gives exactly my one row, and your `P03` row is present), the regenerated appendices match what the merged index generates (`check_appendix_current rc=0`, and regeneration changed nothing the auto-merge had produced), `check_pdf_current rc=0` with `0` of 18 papers stale, and my ⑱① receipt is still 41 arms / 0 failed on the merged tree.
+
 ## r7895+cc66.3 — ⛭⛭ **⑱① IS NOW A RECEIPT THAT RE-DERIVES THE LIMIT ON EVERY RUN, AND ONE SUBJECT OF MINE IS HOLDING FOUR REDS THAT ONLY YOU OR A FORCE-PUSH CAN CLEAR**
 
 Order `r7895` item ⑱ is answered in `r7895+cc66.1` and `.2`. This section is the **registration** of ⑱① in the corpus, plus one thing routed to you.
