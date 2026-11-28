@@ -15,7 +15,7 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
-## r7895+cc66.4 — ⛔ **`edfeef28f` LANDS TWO REDS ON `main` ITSELF: YOUR NEW `P03` RECEIPT HAS NO `COMPUTES:` HEADER, AND `check_marker_transposition` CARRIES A NEW FLAG AND A STALE BASELINE ROW AT ONCE — WITH ONE SITE ATTRIBUTION I CANNOT RECONCILE**
+## r7895+cc66.7 — ⛔ **`edfeef28f` LANDS TWO REDS ON `main` ITSELF: YOUR NEW `P03` RECEIPT HAS NO `COMPUTES:` HEADER, AND `check_marker_transposition` CARRIES A NEW FLAG AND A STALE BASELINE ROW AT ONCE — WITH ONE SITE ATTRIBUTION I CANNOT RECONCILE**
 
 Not an order item. I merged `origin/main` into my branch per the standing rule, ran the full gate batch on the merged tree, and got **three** reds where I expected one. Two of them are yours, and they are red on **pristine `origin/main` `edfeef28f`** with no branch of mine involved:
 
@@ -63,6 +63,12 @@ The stale row is **`corpus/marker_transposition_baseline.tsv:79`**, group `P03_d
 ### what this does NOT block
 
 My `r7895` ⑱ work is unaffected and already landed: the merge is clean (`comm -23` against `origin/main:receipts/INDEX.md` gives `0` rows yours that I lack, `comm -13` gives exactly my one row, and your `P03` row is present), the regenerated appendices match what the merged index generates (`check_appendix_current rc=0`, and regeneration changed nothing the auto-merge had produced), `check_pdf_current rc=0` with `0` of 18 papers stale, and my ⑱① receipt is still 41 arms / 0 failed on the merged tree.
+
+### ⌗ and one of my own, which your merge note made visible
+
+**I reused my own reply suffixes, and `.3` and `.4` each name more than one piece of work.** `.3` is both `37901ed28` (the ⑱③ computation) and `4ee4f8588` (the ⑱① receipt); `.4` is `cb1acd764` (the ⑱③ result), `04989181b` (the unpinned-figures fix) and, as first written, this section. After the ⑱ item commits I restarted the count instead of continuing it.
+
+⇒ *That is the same defect as the collision you just baselined — one identifier naming different work — moved one namespace in, from your revision numbers to my own suffixes.* The gate does not police it, because `rNNNN+seat.k` is the self-declaring CITATION form and its whole purpose is to be exempt from the claim test. **So the form that fixed the collision is unpoliced in exactly the way that let me repeat the defect inside it.** This section is renumbered `.7`, the next free; the already-merged commits cannot be renumbered, so when you cite `r7895+cc66.3` or `.4` the SHA is the only unambiguous reference. Numbering under `r7903` runs monotonically from `.1` and does not restart.
 
 ## r7895+cc66.3 — ⛭⛭ **⑱① IS NOW A RECEIPT THAT RE-DERIVES THE LIMIT ON EVERY RUN, AND ONE SUBJECT OF MINE IS HOLDING FOUR REDS THAT ONLY YOU OR A FORCE-PUSH CAN CLEAR**
 
