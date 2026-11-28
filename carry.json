@@ -766,11 +766,6 @@
    }
   },
   "tolerance": {
-   "receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46111760709",
-    "since": "bc8f361f57f4d2a297e9e9cd9bf2064d5a1a08b9",
-    "unmeasured": true
-   },
    "receipts/L_probability/S11_a_sweep_can_contain_its_own_gates_by_scoping_the_assertion_to_its_own_push_and_the_population_it_would_have_swept_is_mostly_another_seats.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46104566437",
     "since": "386b9faef85e1765756b871584df97b6ade83d96",
@@ -807,11 +802,6 @@
     "unmeasured": true
    },
    "receipts/L_probability/S59_the_census_of_a_shape_inside_one_file_missed_the_clause_four_lines_from_the_pin_that_fixes_it.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46104566437",
-    "since": "386b9faef85e1765756b871584df97b6ade83d96",
-    "unmeasured": true
-   },
-   "receipts/L_probability/S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46104566437",
     "since": "386b9faef85e1765756b871584df97b6ade83d96",
     "unmeasured": true
@@ -867,11 +857,6 @@
     "unmeasured": true
    },
    "receipts/P15_CR_cosmology/P15_at_the_papers_own_configuration_the_exponent_was_already_in_the_length_and_the_construction_refits_better_than_lcdm.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46104566437",
-    "since": "386b9faef85e1765756b871584df97b6ade83d96",
-    "unmeasured": true
-   },
-   "receipts/P15_CR_cosmology/P15_centring_removes_the_correlation_exactly_and_closes_the_route_anyway_because_the_decorrelated_parameter_is_not_the_acoustic_scale.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46104566437",
     "since": "386b9faef85e1765756b871584df97b6ade83d96",
     "unmeasured": true
@@ -949,6 +934,11 @@
    "receipts/P15_CR_cosmology/P15_the_helium_fraction_overlaps_the_signature_and_still_cannot_absorb_it_because_the_excursion_it_needs_is_outside_three_sigma_of_both_numbers_P16_carries.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46104566437",
     "since": "386b9faef85e1765756b871584df97b6ade83d96",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_hierarchys_validation_legs_confirm_on_a_second_fitter_so_verdict_A_is_joint_and_two_of_the_twelve_pair_comparisons_cannot_discriminate.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46114045013",
+    "since": "187d6e996db63c1b03696585c506373a1aebd34d",
     "unmeasured": true
    },
    "receipts/P15_CR_cosmology/P15_the_in_force_refit_reproduces_on_a_second_arm_so_po24s_rewritten_clause_is_discharged.py": {
@@ -1042,11 +1032,6 @@
     "unmeasured": true
    },
    "receipts/P15_CR_cosmology/P15_the_spacing_drift_is_made_in_the_projection_so_the_construction_determines_it_and_the_handover_contributes_nothing.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46104566437",
-    "since": "386b9faef85e1765756b871584df97b6ade83d96",
-    "unmeasured": true
-   },
-   "receipts/P15_CR_cosmology/P15_the_three_parameter_comb_fails_its_validation_because_the_peak_spacing_DRIFTS_and_the_missing_parameter_is_the_one_the_sector_is_about.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46104566437",
     "since": "386b9faef85e1765756b871584df97b6ade83d96",
     "unmeasured": true
