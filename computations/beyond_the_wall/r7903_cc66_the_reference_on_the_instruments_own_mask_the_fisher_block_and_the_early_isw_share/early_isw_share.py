@@ -98,15 +98,43 @@ def main():
            'bin_ell_lo': [int(x) for x in lo[inband]], 'bin_ell_hi': [int(x) for x in hi[inband]],
            'per_sum': {}}
 
+    #: ** RAW FIRST, SCORING SECOND. **  The per-bin shares are banked, and the claims are scored
+    #  FROM the bank.  So a scoring that turns out to ask the wrong question can be corrected
+    #  without re-running CAMB -- which is exactly what happened to Ⓒ②: the claim was worded as a
+    #  FALL across the band and coded as a STRICT monotone decrease, and those are different tests.
+    _old = os.path.join(HERE, 'early_isw_share.json')
+    _bank = None
+    if os.path.exists(_old):
+        try:
+            _b = json.load(open(_old))
+            #: ⛔ the bank is reused ONLY if it carries the binned spectra themselves.  A first
+            #  version reused the SHARES alone and rebuilt `bf = 1`, `bn = 1 - share`, which turns
+            #  the POWER-WEIGHTED aggregate into an unweighted mean of shares -- 0.3914 against the
+            #  defined 0.3996.  *A reuse that changes the quantity is not a reuse.*
+            if (_b.get('bin_ell_lo') == [int(x) for x in lo[inband]]
+                    and all('full_per_bin' in _b['per_sum']['%.2f' % s] for s in SUMS)):
+                _bank = _b
+                print('  ⌗ reusing the banked binned spectra; the CAMB legs are not re-run')
+        except Exception:
+            _bank = None
+
     shares = {}
     for s in SUMS:
-        L = _isw.legs(ref['H0'], ref['OM'], ref['WB'], ref['NS'], s)
-        bf, bn = tt_bins(L['T'])[inband], tt_bins(L['Tno'])[inband]
-        sh = (bf - bn) / bf
+        if _bank is not None:
+            bf = np.array(_bank['per_sum']['%.2f' % s]['full_per_bin'], float)
+            bn = np.array(_bank['per_sum']['%.2f' % s]['no_isw_per_bin'], float)
+            sh = (bf - bn) / bf
+        else:
+            L = _isw.legs(ref['H0'], ref['OM'], ref['WB'], ref['NS'], s)
+            bf, bn = tt_bins(L['T'])[inband], tt_bins(L['Tno'])[inband]
+            sh = (bf - bn) / bf
         shares[s] = sh
         agg = float((bf.sum() - bn.sum()) / bf.sum())
         out['per_sum']['%.2f' % s] = dict(
             share_per_bin=[float(x) for x in sh], aggregate=agg,
+            full_per_bin=[float(x) for x in bf], no_isw_per_bin=[float(x) for x in bn],
+            aggregate_definition='power weighted: (sum full - sum no_ISW)/sum full over the band, '
+                                 'NOT the unweighted mean of the per-bin shares',
             min=float(sh.min()), max=float(sh.max()),
             falling=bool(np.all(np.diff(sh) < 0)),
             all_positive=bool(np.all(sh > 0)),
@@ -129,15 +157,44 @@ def main():
     c1 = all(AGG_LO <= a <= AGG_HI for a in aggs)
     c2a = all(out['per_sum']['%.2f' % s]['all_positive'] for s in SUMS)
     c2b = all(out['per_sum']['%.2f' % s]['falling'] for s in SUMS)
+    #: the claim was WORDED as a fall across the band and CODED as a strict monotone decrease.
+    #  Both are scored, because only one of them is what the words said.
+    ends = [(shares[s][0], shares[s][-1]) for s in SUMS]
+    c2c = all(b < a for a, b in ends)
+    swings = [int((np.diff(np.sign(np.diff(shares[s]))) != 0).sum()) for s in SUMS]
+    out['endpoint_fall'] = [[float(a), float(b)] for a, b in ends]
+    out['relative_fall'] = [float((a - b) / a) for a, b in ends]
+    out['increment_sign_changes'] = swings
+    out['turnover_bin'] = [int(np.argmax(shares[s])) for s in SUMS]
     c3 = bool(spread.max() < SPREAD_BAR)
     out['claims'] = {'Ⓒ①_aggregate_0.44_pm_0.05': bool(c1),
                      'Ⓒ②_positive_every_bin': bool(c2a),
-                     'Ⓒ②_falling_with_ell': bool(c2b),
+                     'Ⓒ②_strict_monotone_decrease_AS_CODED': bool(c2b),
+                     'Ⓒ②_falls_across_the_band_AS_WORDED': bool(c2c),
                      'Ⓒ③_spread_under_0.02': c3}
+    out['registered_reason_was_wrong'] = (
+        'The registration gave the reason as "the early-ISW boost is a first-peak effect and '
+        'ell = 207 is nearer the peak than ell = 100", which argues the share should RISE toward '
+        'the peak. It falls. The claim was right and the stated mechanism was not: the denominator '
+        'grows faster, because acoustic power rises toward the first peak more steeply than the '
+        'early-ISW contribution does, so the FRACTIONAL share shrinks while the absolute one need '
+        'not.')
     print('  Ⓒ① aggregate 0.44 ± 0.05 at every sum          : %s   (%s)'
           % ('HOLDS' if c1 else 'REFUTED', ', '.join('%.4f' % a for a in aggs)))
     print('  Ⓒ② positive in every bin                       : %s' % ('HOLDS' if c2a else 'REFUTED'))
-    print('  Ⓒ② FALLING with ell across the band            : %s' % ('HOLDS' if c2b else 'REFUTED'))
+    print('  Ⓒ② falls across the band, AS WORDED            : %s   (%s)'
+          % ('HOLDS' if c2c else 'REFUTED',
+             ', '.join('%.4f->%.4f (-%.1f%%)' % (a, b, 100.0 * (a - b) / a) for a, b in ends)))
+    print('  Ⓒ② STRICT monotone decrease, AS CODED          : %s   (%d sign change(s) in the '
+          'increments; turnover at bin %d of %d)'
+          % ('HOLDS' if c2b else 'REFUTED', swings[0], out['turnover_bin'][0] + 1, len(inband)))
+    print('     ⌗ the two are different tests and only the first is what the words said. The share')
+    print('       falls by %.1f per cent across the band and is monotone after ONE uptick in the'
+          % (100.0 * (ends[0][0] - ends[0][1]) / ends[0][0]))
+    print('       first increment.')
+    print('     ⛔ AND THE REGISTERED REASON PREDICTED THE OPPOSITE OF THE REGISTERED CLAIM:')
+    print('       "a first-peak effect, and 207 is nearer the peak" argues for RISING. It falls.')
+    print('       The claim was right and the mechanism written beside it was not.')
     print('  Ⓒ③ per-bin spread across sums under %.2f        : %s   (worst %.4f)'
           % (SPREAD_BAR, 'HOLDS' if c3 else 'REFUTED', spread.max()))
     print()
