@@ -32097,3 +32097,37 @@ them — two bin-array names replaced by comparing the recorded edges against `s
 and two one-glyph pins replaced by set-disjointness between the unregistered keys, the bars and the
 outcomes. `check_branches`, `check_quote_pins`' `[NOT HELD]` rows and `check_pins_adjudicated_on_mint`
 are the shallow clone, and `check_pdf_current` declines on it rather than passing by construction.*
+
+## ⚠ AND A RULE OF MY OWN WITHDRAWN — "REPRINT UNTIL THE PIN CLEARS HALF ITS TOLERANCE" IS NOT A RULE
+
+At `r7896` I found eight of sixty figure pins using more than ninety-five per cent of their tolerance
+and reprinted fifteen figures at higher precision, stating the remedy as *iterate until `dev/tol` ≤
+`0.5`*. I applied it again at `r7904`, reprinting fourteen. ⛔ **`r7906` shows it is not a general
+rule and never was.** Its RESULT states forty-eight shares; at **every** uniform precision from six
+to twelve decimals, between twenty and twenty-eight of the forty-eight sit above half their
+tolerance:
+
+| decimals | worst `dev/tol` | above half |
+|---|---|---|
+| `6` | `0.999` | `22` of `48` |
+| `7` | `0.978` | `25` of `48` |
+| `8` | `0.998` | `20` of `48` |
+| `9` | `0.878` | `23` of `48` |
+| `10` | `0.995` | `23` of `48` |
+| `11` | `0.999` | `28` of `48` |
+| `12` | `0.992` | `21` of `48` |
+
+**Which is what it must be.** A pin at half the last printed digit has `dev/tol` determined by the
+digits past the cut, so for a generic value it is roughly uniform on `[0, 1]` and *about half of any
+table sits above `0.5` at any precision*. ⇒ *High headroom use is the GENERIC CASE, not a defect, and
+"reprint until it clears" is satisfiable only by picking digits per cell until each number passes —
+cosmetic, not robustness.*
+
+⌗ **What the `r7896` defect actually was, stated correctly this time:** the pin was bound to the
+WRONG QUANTITY — `WB`'s share of `0.280` matched to a block move of `0.2805` by nearest value — and
+the tight headroom was a SYMPTOM of two unrelated numbers being near each other, not the disease. The
+remedy that works is the one I also applied there and have applied since: **bind every pin to the
+quantity its own table cell names, by position in the table.** The reprinting was harmless — more
+digits is a tighter pin — but its stated rationale was wrong, and a wrong rationale carried forward
+is how a cosmetic step becomes a ritual. *Nothing in `r7906` is reprinted on that rule, and
+`check_figures_pinned` is green.*
