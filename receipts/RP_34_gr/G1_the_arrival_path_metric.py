@@ -170,13 +170,17 @@ def main():
           for q in ('speciality invariant', 'WalkerPenrose1970', 'Goldberg',
                     'principal congruence')}
     print(f'      nearest-occurrence distances to `Carter constant`: {_d}')
+    # r7895 (69): P9 now carries Theorem 1 inside rem:carter-chain (the Kerr-NUT-de Sitter family in Kerr-Schild form,
+    #   72's b72c19b95), which lengthens the paragraph so `Goldberg` sits 1283 characters from `Carter constant`.  The
+    #   claim is ONE PARAGRAPH, so it is read as one: a blank-line-delimited paragraph carrying `Carter constant` and the
+    #   three links, with `principal congruence` outside it.  The distances are still printed.
+    _one_para = any('Carter constant' in _p and all(q in _p for q in ('speciality invariant', 'WalkerPenrose1970', 'Goldberg'))
+                    and 'principal congruence' not in _p for _p in re.split(r'\n\s*\n', t))
     check(f'the mechanism passage clusters FOUR links inside one paragraph, measured on nearest '
           f'occurrences ({ {k: v for k, v in _d.items() if k != "principal congruence"} }) -- and '
           f'`principal congruence` has moved out to {_d["principal congruence"]} characters, into '
           f'the shift--shear passage',
-          mech >= 0
-          and max(v for k, v in _d.items() if k != 'principal congruence') < 1200
-          and _d['principal congruence'] > 1200)
+          mech >= 0 and _one_para and _d['principal congruence'] > 1200)
     if cor >= 0:
         d = abs(cor - mech)
         print(f'      cor:carter to the mechanism passage: {d} chars')

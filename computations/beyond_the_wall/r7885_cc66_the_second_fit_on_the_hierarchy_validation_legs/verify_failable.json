@@ -1,0 +1,222 @@
+{
+ "caught": 16,
+ "restored_green": true,
+ "total": 16,
+ "trials": [
+  {
+   "caught": true,
+   "claim": "base's TT at 0.30, 0.98914091",
+   "exit": 1,
+   "failed_arms": 2,
+   "moved": 0.9901300544189433,
+   "path": [
+    "fits",
+    "base|TT|0.30",
+    "A"
+   ],
+   "record": "valid_legs.json",
+   "was": 0.989140913505438
+  },
+  {
+   "caught": true,
+   "claim": "base's EE at 0.60, the bar's worst block",
+   "exit": 1,
+   "failed_arms": 2,
+   "moved": 0.9783713278778805,
+   "path": [
+    "fits",
+    "base|EE|0.60",
+    "A"
+   ],
+   "record": "valid_legs.json",
+   "was": 0.9773939339439367
+  },
+  {
+   "caught": true,
+   "claim": "nq24's TT at 0.60",
+   "exit": 1,
+   "failed_arms": 2,
+   "moved": 0.980189723572822,
+   "path": [
+    "fits",
+    "nq24|TT|0.60",
+    "A"
+   ],
+   "record": "valid_legs.json",
+   "was": 0.9792105130597624
+  },
+  {
+   "caught": true,
+   "claim": "lmax18's EE at 0.30 -- the half of the unresolvable pair",
+   "exit": 1,
+   "failed_arms": 2,
+   "moved": 0.9815400596058362,
+   "path": [
+    "fits",
+    "lmax18|EE|0.30",
+    "A"
+   ],
+   "record": "valid_legs.json",
+   "was": 0.9805595001057306
+  },
+  {
+   "caught": true,
+   "claim": "60's own TT figure for base",
+   "exit": 1,
+   "failed_arms": 2,
+   "moved": 0.9901309947528999,
+   "path": [
+    "fits",
+    "base|TT|0.30",
+    "target_60"
+   ],
+   "record": "valid_legs.json",
+   "was": 0.9891418529
+  },
+  {
+   "caught": true,
+   "claim": "the worst distance from 60, 6.998106e-06",
+   "exit": 1,
+   "failed_arms": 2,
+   "moved": 7.005103836301817e-06,
+   "path": [
+    "worst_diff"
+   ],
+   "record": "valid_legs.json",
+   "was": 6.998105730571247e-06
+  },
+  {
+   "caught": true,
+   "claim": "the tolerance registered before the run, 5e-05",
+   "exit": 1,
+   "failed_arms": 2,
+   "moved": 5.005e-05,
+   "path": [
+    "tol"
+   ],
+   "record": "valid_legs.json",
+   "was": 5e-05
+  },
+  {
+   "caught": true,
+   "claim": "the separation that cannot discriminate, 1.696606e-07",
+   "exit": 1,
+   "failed_arms": 2,
+   "moved": 1.6983024160965864e-07,
+   "path": [
+    "separation",
+    "base-lmax18|EE|0.30",
+    "mine"
+   ],
+   "record": "valid_legs.json",
+   "was": 1.6966058102863002e-07
+  },
+  {
+   "caught": true,
+   "claim": "the other unresolvable separation, 3.427196e-07",
+   "exit": 1,
+   "failed_arms": 2,
+   "moved": 3.430623096307705e-07,
+   "path": [
+    "separation",
+    "base-lmax18|EE|0.60",
+    "mine"
+   ],
+   "record": "valid_legs.json",
+   "was": 3.4271959004072983e-07
+  },
+  {
+   "caught": true,
+   "claim": "my EE interpolation floor, which decides \u24b8\u2462",
+   "exit": 1,
+   "failed_arms": 2,
+   "moved": 5.312639834671251e-05,
+   "path": [
+    "floors",
+    "EE"
+   ],
+   "record": "valid_legs.json",
+   "was": 5.307332502169082e-05
+  },
+  {
+   "caught": true,
+   "claim": "base's 0.022606 against the 0.03 bar",
+   "exit": 1,
+   "failed_arms": 2,
+   "moved": 0.022628672122119362,
+   "path": [
+    "against_bar",
+    "base",
+    "worst"
+   ],
+   "record": "valid_legs.json",
+   "was": 0.0226060660560633
+  },
+  {
+   "caught": true,
+   "claim": "nq24's 0.022437",
+   "exit": 1,
+   "failed_arms": 2,
+   "moved": 0.022459226883637474,
+   "path": [
+    "against_bar",
+    "nq24",
+    "worst"
+   ],
+   "record": "valid_legs.json",
+   "was": 0.022436790093543935
+  },
+  {
+   "caught": true,
+   "claim": "lmax18's 0.022606",
+   "exit": 1,
+   "failed_arms": 2,
+   "moved": 0.02262832905980973,
+   "path": [
+    "against_bar",
+    "lmax18",
+    "worst"
+   ],
+   "record": "valid_legs.json",
+   "was": 0.02260572333647326
+  },
+  {
+   "caught": true,
+   "claim": "69's joint bar, 0.03",
+   "exit": 1,
+   "failed_arms": 2,
+   "moved": 0.030029999999999994,
+   "path": [
+    "bar"
+   ],
+   "record": "valid_legs.json",
+   "was": 0.03
+  },
+  {
+   "caught": true,
+   "claim": "the largest eps, 0.00348115",
+   "exit": 1,
+   "failed_arms": 2,
+   "moved": 0.0034846311500000026,
+   "path": [
+    "eps",
+    "lmax18|TT|0.30"
+   ],
+   "record": "valid_legs.json",
+   "was": 0.003481150000000003
+  },
+  {
+   "caught": true,
+   "claim": "the smallest eps, -0.00161222",
+   "exit": 1,
+   "failed_arms": 2,
+   "moved": -0.001613837225000004,
+   "path": [
+    "eps",
+    "nq24|EE|0.60"
+   ],
+   "record": "valid_legs.json",
+   "was": -0.0016122250000000042
+  }
+ ]
+}
