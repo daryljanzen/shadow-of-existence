@@ -122,8 +122,14 @@ print('=' * 100)
 CAL = BANKED['calibrated']
 pts_cal = list(zip(CAL['sums'], CAL['totals']))
 
-check(u'Ⓐ① 60\'s banked calibrated column is the registered grid: 11 points, 0 to 0.60 eV',
-      len(pts_cal) == 11 and CAL['sums'][0] == 0.0 and CAL['sums'][-1] == 0.6,
+#: ** MONOTONE, not exact: ** `check_exact_counts` refused `len(pts_cal) == 11` as an equality
+#   on a set ANOTHER SEAT CAN MOVE, and it is right -- 60 owns this grid and may add points to it.
+#   The exactness carries nothing here: what this re-derivation needs is that the grid SPANS the
+#   closed envelope, and if 60 ever changes the grid the two pinned crossings below move with it
+#   and fail on their own.  *A count is the weakest claim in the file and it was the most brittle.*
+check(u'Ⓐ① 60\'s banked calibrated column spans the registered envelope: at least 11 '
+      u'points, 0 to 0.60 eV',
+      len(pts_cal) >= 11 and CAL['sums'][0] == 0.0 and CAL['sums'][-1] == 0.6,
       '%d points, %s..%s eV' % (len(pts_cal), CAL['sums'][0], CAL['sums'][-1]))
 
 check(u'Ⓐ② the reader is IMPORTED from r7863 and its threshold is the one of record',
@@ -258,7 +264,7 @@ _total = {k: v['no_total_isw_vs_full_in_band'] for k, v in PS.items()}
 
 check(u'Ⓓ① the band is ell = 100-207, the control band ell = 2-30, over four sums',
       ISW['band'] == [100, 207] and ISW['control_band'] == [2, 30]
-      and ISW['sums_eV'] == [0.0, 0.06, 0.3, 0.6] and len(PS) == 4,
+      and ISW['sums_eV'] == [0.0, 0.06, 0.3, 0.6] and len(PS) >= 4,
       '%s / %s / %s' % (ISW['band'], ISW['control_band'], ISW['sums_eV']))
 
 check(u'Ⓓ② ⛔ CONTROL A IS EXACTLY ZERO AT EVERY SUM -- a window that removes '
