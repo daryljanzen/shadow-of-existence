@@ -92,7 +92,7 @@ core of Cosmological Relativity}
 \small Department of Physics and Engineering Physics\\
 \small University of Saskatchewan}
 \date{}
-\newcommand{\so}{\mathfrak{so}}   % r2376+c54.9: used but undefined -- the paper did not compile
+\newcommand{\so}{\mathfrak{so}}
 \begin{document}
 \maketitle
 
@@ -379,7 +379,7 @@ The maximally symmetric solutions of $R_{\mu\nu}=\Lambda g_{\mu\nu}$---the
 geometries isotropic about every point---are, up to the sign and magnitude
 of $\Lambda$, a one-parameter family fixed by the single signed scale
 $\alpha^{2}\equiv3/\Lambda$~\cite[\S sec\_RPT]{JanzenThesis}---positive for the de~Sitter member, negative
-for anti-de~Sitter, and infinite at $\Lambda=0$, with $\alpha$ itself the curvature radius wherever
+for the hyperbolic member, and infinite at $\Lambda=0$, with $\alpha$ itself the curvature radius wherever
 $\alpha^{2}>0$. They are
 usually met as hypersurfaces embedded in a flat five-dimensional space,
 \begin{equation}
@@ -436,7 +436,9 @@ and the sign flips, the numerator being the constant $\alpha^{2}$ throughout. \e
 degenerate at the crossing}---a signature change through $\lambda=0$ would send $\det g$ to zero and leave
 no metric there, and that is not what happens here. The one place $\lambda$ does vanish is $\alpha^{2}=0$,
 the null cone: not a crossing within one member of the family but the family's own singular
-leaf\ldg{spectral_theory}. This yields the
+leaf\ldg{spectral_theory}.
+
+\emph{What ``intrinsic'' means here is that the signature is an output of the construction and not an input.} The construction is the one already written: a sphere of radius $\alpha$ in flat \emph{Euclidean} five-space, \eqref{eq:sphere1}, every term of the line element entered positive and $\alpha^{2}$ allowed any real value. Eliminating $x_0$ returns \eqref{eq:sphere3} in four real coordinates, one formula for the whole family, and nothing in it assigns a sign to any direction; the signature is then read off the metric \eqref{eq:eigen} it delivers~\cite[\S sec\_RPT]{JanzenThesis}. The isotropic form $\mathrm{d}s^{2}=A(r)\,\mathrm{d}r^{2}+r^{2}\mathrm{d}\Omega_{3}^{2}$, every term again positive, reaches the same family through Einstein's law, which fixes $A=1/(1-\Lambda r^{2}/3)$ without an integration, and for $\Lambda>0$ the signature turns Lorentzian beyond the throat because $A$ does. \emph{That is the sense in which Minkowski space and anti-de~Sitter space differ from de~Sitter, though all three are maximally symmetric and Lorentzian.} Neither is a member of this family. Its members with $\Lambda=0$ and $\Lambda<0$ come out positive-definite, as Euclidean space and hyperbolic space, and a positive-definite member has no time in it: a cosmic time has to be defined on it \emph{ad hoc}, by setting $x_{i}=it$ along some arbitrary Cartesian direction of Euclidean space to impose the pseudo-Lorentzian signature of Minkowski space~\cite[\S sec\_RPT]{JanzenThesis}, or, for anti-de~Sitter space, by replacing the Euclidean ambient with one of signature $(2,3)$. Both are choices made by convention rather than delivered by the geometry, which is why the name anti-de~Sitter belongs to that Lorentzian counterpart and not to the $\Lambda<0$ member the construction returns. The proposition is a statement about which signatures the construction delivers, and in that sense it is exact. This yields the
 proposition the programme's ontology stands on:
 
 \begin{proposition}[The unique intrinsically Lorentzian maximally symmetric
@@ -621,7 +623,7 @@ problem usually posed the wrong way round. The horizon problem is standardly
 stated as: why is the cosmic microwave background uniform to a part in
 $10^{5}$ across regions that, on the standard expansion history, were never
 in causal contact? So posed, it demands a \emph{mechanism} to communicate a
-common condition across a horizon, and inflation supplies one. But the deeper
+common condition across a horizon, and inflation supplies one~\cite{Guth1981}. But the deeper
 form of the question is not about temperature: it is why the electrons and
 photons at the last-scattering surface are the same electrons and photons,
 obeying the same physics, as those on Earth---how a causally distant patch
@@ -740,7 +742,7 @@ where there is no specialisation to escape through.
 \includegraphics[width=3.0in]{../resources/PhD_thesis/Lorentz_sphere_diff.png}
 \caption{The $\alpha^2$ family as spherical hypersurfaces of the embedding
 space (left) and their differential character (right): de~Sitter
-($\alpha^2>0$), anti-de~Sitter ($\alpha^2<0$), and the null cone
+($\alpha^2>0$), hyperbolic space ($\alpha^2<0$), and the null cone
 ($\alpha^2=0$). The members differ by extrinsic embedding; each is
 intrinsically a real four-manifold by \eqref{eq:sphere3}. (2012
 dissertation.)}\label{fig:sphere}
@@ -800,8 +802,8 @@ $D(D+1)/2$, and each Killing vector contributes one linear first integral of the
 Liouville integrability asks for $D$ in involution and maximal superintegrability for $2D-1$; both are
 met with room to spare, $15\ge9$ and $10\ge7$. \emph{So the substrate's geodesic flow is not merely
 integrable but maximally superintegrable}---the dynamical face of having no distinguished point or
-direction, since the isometry group then acts transitively on the unit tangent bundle and all geodesics
-are one geodesic seen from different vantages. \emph{Every cut lowers the count}: the isotropy strata of
+direction, since the isometry group then acts transitively on the unit vectors of each causal type and all
+geodesics of one causal type are one geodesic seen from different vantages. \emph{Every cut lowers the count}: the isotropy strata of
 the algebroid paper are that descent, from fifteen here to the wall's zero, where only the norm
 survives~\cite{JanzenAlgebroid}\ldg{integrable_systems}. The $c$--$\Lambda$ structure of the
 framework paper is the tip; the intrinsically real ruled geometry is the
@@ -1317,7 +1319,7 @@ It is vacuous here: the theorem is not that confocal quadrics meet orthogonally,
 
 The hypothesis fails, not the conclusion---and the same fact without the machinery is that a point assigns one value to the quadratic form, which is what makes the family a foliation. \emph{And that same one-member-per-point fact fixes where this construction's harmonic analysis can live}: a confocal family through which three surfaces pass at each point supports separation in ellipsoidal coordinates, and one through which a single surface passes does not. There are therefore no ellipsoidal harmonics to be had on the substrate, and the corpus's harmonic analysis is leafwise throughout---on the spatial leaf, in its own spherical harmonics---not by choice of method but because the ambient offers no other separation\ldg{harmonic_analysis}. 
 
-The \emph{cosmological-constant problem}---that $\Lambda$ is some $10^{122}$ times smaller than the quantum-field vacuum estimate $\sim M_{pl}^4$---rests on two premises the framework rejects. 
+The \emph{cosmological-constant problem}~\cite{Weinberg1989}---that $\Lambda$ is some $10^{122}$ times smaller than the quantum-field vacuum estimate $\sim M_{pl}^4$---rests on two premises the framework rejects. 
 
 First, that the Planck scale is a physical scale $\Lambda$ must be small against: it is a gauge-combination (above), so there is nothing physical to be small against. 
 
@@ -1380,7 +1382,7 @@ derivative, two determinations of one function; they disagree, and the boost rat
 radius-dependent, which a Killing flow's rate cannot be. \emph{The closure defect factors with an overall
 factor of $M$}: the amount by which a cut fails to close as a hypersurface is the mass it carries, which is
 this framework's ``matter is the bend of the cut'' as an identity rather than a reading. This is consistent
-with the classical embedding class---Schwarzschild needs two flat dimensions above four and the substrate
+with the classical embedding class---Schwarzschild needs two flat dimensions above four~\cite{Fronsdal1959} and the substrate
 supplies one---and it fixes the usage: \emph{``cut'' is the group-theoretic relation the companion papers
 define}, a geometry whose isometry group contains a sweep-subgroup of the substrate's~\cite{JanzenRange},
 fixed by an orientation datum together with a causal-vantage datum~\cite{JanzenAlgebroid}, with the derived
@@ -1600,7 +1602,7 @@ holds them. Its central theorem (\texttt{thm:augmentation-p7},
 \texttt{thm:cosmogenesis}) is the necessity-and-sufficiency rung as a formal
 result; its synthesis reads three standing features of general relativity as
 one substrate's --- the Carter constant~\cite{Carter1968} \emph{as the substrate's own maximal
-symmetry surfacing}---a sentence that is true for a reason worth stating, since on Kerr the same words are false: there the Carter constant comes from an \emph{irreducible} rank-two Killing tensor, one provably not built from the Killing vectors, which is why Carter's separation was a discovery rather than bookkeeping. \emph{On a maximally symmetric space the theorem runs the other way}: constant curvature leaves no room for an irreducible Killing tensor, so every one is a symmetrised product of Killing vectors and a quadratic first integral cannot be independent information\rcpt{I50_the_carter_constant_is_the_substrates_symmetry_and_kerrs_is_not}\ldg{index_theory}, the problem of time dissolved, the Dirac constraint
+symmetry surfacing}---a sentence that is true for a reason worth stating, since on Kerr the same words are false: there the Carter constant comes from an \emph{irreducible} rank-two Killing tensor, one provably not built from the Killing vectors, which is why Carter's separation was a discovery rather than bookkeeping. \emph{On a maximally symmetric space the theorem runs the other way}: constant curvature leaves no room for an irreducible Killing tensor, so every one is a symmetrised product of Killing vectors~\cite{Thompson1986} and a quadratic first integral cannot be independent information\rcpt{I50_the_carter_constant_is_the_substrates_symmetry_and_kerrs_is_not}\ldg{index_theory}, the problem of time dissolved, the Dirac constraint
 algebra as the symmetric-space grading $[\mathfrak{m},\mathfrak{m}]\subset
 \mathfrak{h}$ of $SO(5,1)/SO(4,1)$ --- which is the maximal-symmetry
 unification already at work at the structural rung. P7's synthesis section carries the same
@@ -1627,7 +1629,7 @@ substrate's maximal symmetry. Reciprocal, into \S\ref{sec:unification} and
 \S\ref{sec:shadows}: P9 supplies the \emph{reach} of the construction --- the
 range of the slicing operator is exactly the symmetry-reducible sector of
 general relativity (every reachable geometry carries a sweep-subgroup of
-$SO(5,1)$), filled across all Petrov types~\cite{Petrov1954}, so what the substrate's maximal
+$SO(5,1)$), filled across the Petrov types O, D, II and I~\cite{Petrov1954}, the radiative types lying at the wall and beyond it, so what the substrate's maximal
 symmetry reaches is the constrained, non-radiative skeleton of general
 relativity; the \emph{wall} is where the last symmetry able to anchor a sweep is lost --- genuinely
 inhomogeneous matter, the onset of free gravitational radiation --- the
@@ -1887,6 +1889,10 @@ Phys.~Rev.~Lett.~\textbf{70} (1993) 3684.
 B.~Carter,
 \emph{Global structure of the Kerr family of gravitational fields},
 Phys.~Rev.~\textbf{174} (1968) 1559--1571.
+\bibitem{Thompson1986} G.~Thompson, \emph{Killing tensors in spaces of constant curvature}, J.\ Math.\ Phys.\ \textbf{27} (1986) 2693.
+\bibitem{Fronsdal1959} C.~Fronsdal, \emph{Completion and embedding of the Schwarzschild solution}, Phys.\ Rev.\ \textbf{116} (1959) 778.
+\bibitem{Guth1981} A.~H.~Guth, \emph{Inflationary universe: a possible solution to the horizon and flatness problems}, Phys.\ Rev.\ D \textbf{23} (1981) 347.
+\bibitem{Weinberg1989} S.~Weinberg, \emph{The cosmological constant problem}, Rev.\ Mod.\ Phys.\ \textbf{61} (1989) 1.
 \bibitem{Petrov1954}
 A.~Z.~Petrov,
 \emph{The classification of spaces defining gravitational fields},

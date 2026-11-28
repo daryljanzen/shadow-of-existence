@@ -61,9 +61,51 @@ out. Each candidate's venue is checked against that as the survey reaches it.
 | P14 | surveyed: read whole, literature checked (Jackiw--Rebbi, Callan--Harvey, Atiyah--Singer, the discrete-flavour literature, Pati--Salam and the left--right-symmetric models, the parity solutions of the strong $CP$ problem and their current assessments), corpus fixes landed: Rubakov--Shaposhnikov credited for chiral matter localised on a domain wall; Geng--Marshak and Babu--Mohapatra credited for the hypercharges fixed by the anomaly conditions with the Yukawa couplings, the paper's own part stated as the per-wall requirement; $\Delta(27)$ set against the flavour literature, where it is a family symmetry (Branco--Gerard--Grimus), as the same group in a different role, acting on the seat index and fixing the generation index; the order-twenty-four holonomy scoped in the body as the abstract already scoped it; the introduction no longer calls P13's opening a conjecture; a revision note removed from the source | (1) **A hypothetico-deductive particle-physics paper: chiral matter on the branched leaves of the Schwarzschild--de Sitter family.** Assumed: P3's slicing geometry (three hinges, the throat circle, the signed areal radius), a Dirac field on the spatial leaf in its proper-distance norm, and the three-hinge construction. Derived: exactly one chiral zero mode per wall, exactly; the leaf compact and closed in its own measure, its length finite even at the Nariai limit, so the count is a finite analytical index, $\dim\ker_+=3$, $\dim\ker_-=0$; a wall-monodromy group of order 81 whose determinant-one part is $\Delta(27)\subset SU(3)$, and on the exterior powers of the wall kernel the channel counts baryon one, diquark none, meson one; a triality selection rule agreeing with the eleven low-lying hadron channels, the thirds following from the winding closure; per-wall anomaly freedom, generation by generation; four the only dimension carrying both a generation count and a handedness; the sixteen-state generation of the left--right-symmetric models, with an exact geometric parity broken only by a member's mass, which places the right-handed scale in a window bounded by neutrino decay before nucleosynthesis and by the vacuum angle. P13's no-go is the opening section (its candidate (1)). **The work it needs:** the deformation invariance of the count (the Atiyah--Singer equality on the branched leaf), which is traced and not computed; and the paper must state the identification of the residue with physical colour as the assumption it is. (2) The order-twenty-four residue-frame holonomy is shared with P12 and belongs with the P3--P5 candidate | (1) Phys.\ Rev.\ D, Nucl.\ Phys.\ B (2) with P3's candidate (1) | the wall-chirality argument corrected against the computed holonomy |
 | P15 | not yet surveyed | | | |
 | P16 | not yet surveyed | | | |
-| P17 | not yet surveyed | | | |
+| P17 | surveyed: read whole, literature checked (Eddington 1923 and 1933, Cayley and Klein, Steiner, Euclid III.36, Gibbons--Hawking, Jacobson--Myers, Carter), corpus fixes landed: Thompson credited for the reducibility of Killing tensors on constant-curvature spaces (the ground of the Carter-constant sentence); Fronsdal credited for Schwarzschild's six-dimensional embedding class; Guth for inflation as the standard answer to the horizon problem; Weinberg for the cosmological-constant problem; P9's reach stated as the Petrov types O, D, II and I, the radiative types at the wall and beyond (it read ``all Petrov types''); the superintegrability sentence corrected to transitivity on unit vectors of each causal type (the isometry group of a Lorentzian space does not act transitively on the whole unit tangent bundle); a revision note removed from the source. ``intrinsic'' defined before Proposition~1 from the dissertation's derivation (the signature an output of the construction, not an input: the isotropic ansatz with every term positive and the vacuum law deliver it), with Minkowski and anti-de~Sitter space named as Lorentzian spaces whose signature is imposed on the Riemannian members, Euclidean and hyperbolic space; the $\alpha^{2}<0$ member named hyperbolic space; P18's statement of the proposition carries the same definition | (1) **A pedagogical paper: de Sitter's causal structure in Euclid's quantity.** Assumed: nothing beyond the hyperboloid. Derived: the power of a point with respect to the throat is the square of its height, so every tangent to the throat is null and the double ruling is Euclid III.36; the bound that classical circle theorems carry the signature exactly when built from the power with respect to this one circle; pole--polar, radical axis and inversion each returning a vantage's horizon; the polar slice of a point as the totally geodesic $\mathrm{dS}_4$; the Cayley--Klein reading of the scale; the three real horizon radii admitting no expression in real radicals (casus irreducibilis). (2) **A history-and-philosophy-of-physics paper: Eddington's argument that $\Lambda$ cannot vanish, corrected.** His 1923 inversion of $R_{\mu\nu}=\Lambda g_{\mu\nu}$ into a material standard, his deflation of the symmetry to a property of measurement, and his ``no radius of curvature in a timelike direction'', read against the intrinsic Lorentzian signature; it rests on Proposition~1 and the sense of intrinsic now defined there. (3) The seven-faces synthesis, the one-scale ledger and the two-real-forms reading are the programme's thesis and join P10's philosophy candidate | (1) Am.\ J.\ Phys., Eur.\ J.\ Phys. (2) Stud.\ Hist.\ Phil.\ Mod.\ Phys., Eur.\ Phys.\ J.\ H (3) with P10's (3) | not drafted |
 | P18 | not yet surveyed | | | |
 | ARP collaboration paper (`arp_standalone.tex`) | outside the corpus | the standalone itself | journals on intelligence, communication or cognition | in preparation |
+
+**The assessment: two orders, kept apart.** The order the work is done in and the order papers are submitted in
+are different questions. The work is ordered by lead time and dependency; the submissions are ordered as if every
+paper were finished, so that each reaches its referees after the papers it leans on are in print and citable, and
+so that the first work seen is work no one can dispute. Submissions begin once the corpus is in good shape and a
+good part of the planned work below has landed; nothing is submitted for the sake of speed.
+
+*The work order.*
+1. Theorem 1, the Carter constant's inheritance (the Kerr--Schild form of Kerr--de Sitter over de Sitter, and the
+   double Kerr--Schild form of Kerr--NUT--de Sitter), and the P3--P5 paper on the Schwarzschild--de Sitter family
+   as one slicing of de Sitter space (the general-dimension proof and the embedding statement). The theorem is the
+   longest unknown; the P3--P5 paper fixes the notation and the statements most other papers assume.
+2. Running underneath from the start: Theorem 2, the map from the cuts' deformation algebroid to the
+   hypersurface-deformation algebroid of the generated geometries (P12); the deformation invariance of P14's count
+   (the Atiyah--Singer equality on the branched leaf); and P10's check of the $S^{3}$ transverse-traceless
+   zero-point data against the literature. Long computations go to the code seat.
+3. Written whenever a long item is waiting: P17's Euclid paper, P3's Virgo turnaround note, P2's three references,
+   P4's three additions.
+4. As their gates open: P11 (Gowdy--de Sitter), P8--P9 (the symmetric solutions as cuts), P12, P10, P1, P7,
+   the cosmology paper, P14. P15, P16 and P18 are surveyed when the cosmology and collapse papers come up.
+
+*The submission order, if everything were ready.*
+1. P3's Virgo note (RNAAS) and P17's Euclid paper (Am.\ J.\ Phys.): the hyperboloid, its rulings and the
+   turnaround radius in print.
+2. P11, Gowdy--de Sitter (Class.\ Quantum Grav.): no programme premise; standing with the relativity referees.
+3. P2, the circle (Class.\ Quantum Grav.).
+4. P3--P5, the family as one slicing (J.\ Math.\ Phys.): the structure every later paper assumes by reference.
+5. P6's philosophy of science and the Eddington paper (P6's 1920 and 1933 note with P17's 1923 argument): other
+   communities and referees, so free to go in parallel from here.
+6. P4, the redshift-isotropy floor (Phys.\ Rev.\ D): the empirical case for the cosmic foliation, out before the
+   papers whose premise it supports.
+7. P8--P9, the cuts, carrying Theorem 1 (J.\ Math.\ Phys.\ or Class.\ Quantum Grav.).
+8. P12, the algebroid (Lett.\ Math.\ Phys.\ or J.\ Geom.\ Phys.), assuming 7.
+9. P10, the graviton tower (Class.\ Quantum Grav.).
+10. P1, the metric singularity (Phys.\ Rev.\ D or Found.\ Phys.), its premise met with P4 in print.
+11. P7, collapse continuing as a universe, with P1, P3--P5 and P4 citable.
+12. The cosmology paper, with P3--P5, P8 and P7 citable.
+13. P14, chiral matter, with P13's no-go as its opening section.
+14. The philosophy-of-physics paper (P10, P13 and P17's thesis) and P1's formalisation paper.
+
+Papers that overlap in content (P3--P5 with P8--P9; P7 with the cosmology paper) are never under review at the
+same time. P1's standalone source is needed from Daryl by step 10.
 
 
 ## ⛭⛭⛭ THE REPRODUCIBILITY LAYER'S COMPLETION CRITERION — *what FINISHED looks like, as a finite list (opened r7013, on Daryl's instruction that this work converge rather than run)*
