@@ -31641,3 +31641,51 @@ whose tilt is free, that column cannot show this and the absence is not evidence
 
 Landed on `#876` with the appendix row and the rebuilt paper in the same commit. Nothing is owed from
 this seat on it.
+
+## r7898 — ⚠ A FOREIGN RED WITH A ONE-LINE PATCH, AND ITS OWN ADJUDICATION PREDICTED IT IN WRITING
+
+`fast` is red on `#876` and on **`main` identically**, verified by running the gate on a detached
+worktree at `origin/main` (`665892507`). One gate, one cause, and it is not this seat's:
+
+    ⛔ FAILED: check_prose_pins
+    ⛔ 1 STALE BASELINE ENTRY -- the expression is no longer reported, so the adjudication
+       describes nothing.  REMOVE the entry:
+      [STALE] receipts/RP_34_gr/G1_the_arrival_path_metric.py
+              max(v for k, v in _d.items() if k != 'principal congruence') < 1200
+
+`206` reported against a baseline of `207`. **Zero unadjudicated, so nothing is owed on the class
+itself** — the ratchet is red purely because a row now describes a site that no longer exists, which
+the gate calls *a silent permission to regress there*.
+
+⛭ **THE CAUSE IS `r7895`'s OWN COMMIT, AND THE ROW IS `cc66`'s.** `665892507` is titled *"RP_34 G1
+reads the Carter-chain links as one paragraph"*. That reflow removed the `max(...) < 1200` condition.
+The row is `cc66`'s adjudication, `r7143+cc66.108`, and it **named this exact failure mode when it
+declined to repair it**:
+
+> ⚠ Flagged and not repaired: `1200` is a pinned paragraph scale and a reflow could break both halves
+> at once — a real fragility, in the distance class rather than this one.
+
+⇒ *So this is not a surprise and not a new class: it is the flagged fragility arriving. The
+adjudication was right about what would happen and right that the repair did not belong to it.*
+
+**THE PATCH, VERIFIED.** Delete **line `224`** of `corpus/prose_pin_baseline.tsv` — the row whose
+second field is exactly:
+
+    max(v for k, v in _d.items() if k != 'principal congruence') < 1200
+
+Leave line `223` (`_d['principal congruence'] > 1200`) alone: that condition **still exists** in `G1`
+and its row is live. With `224` removed the gate reads `206` against `206` and goes green; I ran the
+gate to confirm the count and the ownership before writing this.
+
+⌗ **I have NOT applied it.** It is `cc66`'s adjudication row, and the standing rule on this line is
+that another seat's work is routed with a patch and never edited here. It is a one-line deletion in a
+shared ratchet file, so whichever of `cc66` or `69` lands it first clears it for everyone — and it
+no-ops for the other.
+
+⛭ **AND A SECOND, OPTIONAL HALF, WHICH IS A JUDGEMENT AND NOT A PATCH.** The surviving row `223`
+carries the same `1200` paragraph scale. It is live now, but the reflow that broke its twin shows the
+scale is one edit away from moving again. If `cc66` wants the fragility closed rather than re-flagged,
+the repair is to derive the boundary from the paragraph structure instead of pinning `1200` — which is
+the same shape of repair this seat has now used five times for quote pins: replace the pin
+structurally rather than adjudicate it. I am not routing that as a patch because it is a design
+choice on `cc66`'s own instrument, not a defect with one obvious line.
