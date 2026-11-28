@@ -15,6 +15,181 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7903+cc66.10 — ⛭ **`check_paper_pins_present` IS RED ON MAIN AND SO IS P03'S OWN RECEIPT: ONE CLAUSE WAS INSERTED *INSIDE* A PINNED SPAN, AND THE TWO-HALF REPAIR IS VERIFIED GREEN**
+
+Not mine — measured on three trees before I say so — and the patch is below, ready to apply.
+
+**What is red.** `check_paper_pins_present` on my head `32b01e34d`: `1745 PAPER row(s), 143 absent from every corpus/*.tex; NEW (absent, not listed): 1`, `rc=1`. The one NEW key is `receipts/P03_SdS_slicing/P03_the_symbol_w_carried_two_circles.py` pinning `"the throat angle $u$ the same swing read on the throat ($\\sin u=\\tfrac{2}{\\sqrt3}\\sin w$)"`. **And the receipt itself is red**, `rc=1`, on the same cause: its line 91 hard-asserts that literal's presence in `corpus/SdS-slicing-curve_v2.tex` and raises `AssertionError: with the throat angle its companion projection`. So this is not a ledger row lagging the tree — a green-receipt invariant is broken on trunk.
+
+**⒜ my diff.** 0 files matching `P03` or `SdS`; the receipt is byte-identical to main. **⒝ pristine main.** `rc=1` with the identical single NEW key on a clean `origin/main` worktree at `87071d295`, and still at main's tip. **⒞ a fix to port.** None exists. Main's tip carries no repair, and 60's branch `…-6awafl` is one commit ahead (`966b7fef5`) touching `receipts/P03_SdS_slicing/*` and `corpus/SdS*` — but **0 of its changes touch the failing receipt**. Nothing to port is why this is routed and not carried.
+
+**The cause, pinpointed to one commit.** Present at `f4e157607`, absent at `6d33da23c` ("P3: the three horizon roots are the offsets of three parallel planes, one per hinge"). That commit did not delete the sentence; it **inserted a clause inside the pinned span** in `corpus/SdS-slicing-curve_v2.tex`:
+
+- was: `…the same swing read on the throat ($\sin u=\tfrac{2}{\sqrt3}\sin w$), and the horizon angle $3w$…`
+- now: `…the same swing read on the throat, as the throat point whose areal radius is the designated one ($\sin u=\tfrac{2}{\sqrt3}\sin w$), and the horizon angle $3w$…`
+
+The relation survives verbatim and is now **more precise**, so the row's `MEANING-HELD` standing still holds. Only the literal span broke, and it broke because the pin spans text on both sides of the insertion point.
+
+**The repair, verified here.** Two halves, both in the escaped source form, inserting `, as the throat point whose areal radius is the designated one` before ` ($\\sin`:
+
+1. `corpus/quote_pin_baseline.tsv:2637` — the `PAPER / SENTENCE / MEANING-HELD` row, provenance `r7349`;
+2. the same literal in the receipt's `assert` at line 91.
+
+Applied here and then reverted (tree clean, nothing of this pushed): receipt `rc=0`; `check_paper_pins_present` `rc=0`, `143 → 142` absent, `NEW 0`, SEED control still biting (`present read present, one-character mutant read absent: True`). **Patching the receipt alone does nothing** — the gate reads the row from the ledger in the worktree and the `corpus/*.tex` blobs at HEAD, never the receipt's own text, which is what my first attempt got wrong.
+
+**Of the gate's three remedies** — restore the sentence, repair the pin, or list it with `--update` and say why — I recommend **repair the pin**. Restoring would undo a clause that adds precision, and `--update` is for a deliberate absence; this one is incidental. I have not pushed it: your paper, your receipt, and a cross-seat adjudication row carrying `r7349` provenance — the same routing as `edfeef28f`.
+
+If you want that row to survive the next rewording, two shorter pins — the clause and the relation, separately — would each be insertion-proof. Your call; a span that straddles an insertion point will keep breaking on prose edits that hold its meaning.
+
+⌗ **Added after routing: CI confirms this red on trunk, independently of my local measurement.** Two records in `refs/ci/carry`, neither of which I had when I wrote the above:
+
+- `suite @ main 6d33da23cb: +1 -0 =0` — the one carried entry is that same receipt, **with no `unmeasured` flag**, so trunk's own run [`46159511799`](https://github.com/daryljanzen/shadow-of-existence/actions/runs/46159511799) measured it and named it red, at exactly the commit I had pinpointed from the blob history.
+- `suite @ claude/shadow-of-existence-setup-5tjf0b 09c4d61835: +0 -316 =1 relabelled 1` — of the 317 receipts in that population, **316 cleared green and the single still-red one is this receipt**, relabelled by the suite itself from `unrecorded` to `['AssertionError @ L91']`. CI's own label names the same line 91 I measured.
+
+So the gate, the receipt, trunk's own suite run and my branch's suite run all agree, and the repair below is the whole of what is outstanding.
+
+**One thing adjacent, not a gate matter.** `resources/P3P5_standalone/sds_one_slicing.tex`, edited in that same commit, carries **neither** form of the sentence (0 old, 0 new). The gate reads only `corpus/*.tex`, so nothing is red from it — but if the standalone is meant to track the paper's sentence, it now matches neither wording.
+
+## r7903+cc66.8 — ⛭⛭⛭ **⑲ ALL FOUR: THE INSTRUMENT'S MASK COSTS THIS REFERENCE UNDER A meV, THE FACTOR OF 320 IS THE INSTRUMENT'S BECAUSE Σ IS NEARLY ORTHOGONAL TO ω_b AND n_s, THE EARLY-ISW SHARE FALLS 28.4 PER CENT ACROSS THE BAND — AND ⑲①'s PREMISE IS OFF BY SIXTEEN BINS**
+
+Order `r7903` items ⑲①–④. Registered at `b7ade4b6d`, pushed before a line of the computation existed; computed at `r7903+cc66.2`–`.7`; receipt and INDEX row in this pass. **Two registered claims were refuted and are scored below, not buried.**
+
+### ⛔ FIRST, ⑲①'s PREMISE: `NaN` below `ℓ = 100` KEEPS 571, NOT 555
+
+Read against `score_ttteee`'s own `BIN_LO`/`BIN_HI`/`BLOCK` before any scoring:
+
+| cut | removed | kept |
+|---|---|---|
+| `BIN_LO < 100` | **42** — fourteen from each block | 571 |
+| `BIN_HI > 1996` | **16** — every one `TT`, `BIN_LO 1997…2476` | — |
+| both | **58** | **555** |
+
+⇒ **The instrument's mask is `ℓ ≥ 100` AND `ℓ ≤ 1996`, keeping `185` from EACH block.** A low cut alone leaves `TT` with `201` against `185` apiece, because `TT` runs to `BIN_LO 2476` while `TE` and `EE` stop at `1980`. Any `BIN_HI` bound in `1996…2012` removes the same sixteen. **The scorer's own counts confirm it three ways:** `571 = 201/185/185`, `597 = 199/199/199`, `555 = 185/185/185`.
+
+⌗ *I ran what the order INTENDS, with `555` asserted as a refusing control before any limit was read, and report the literal `571` beside it rather than resolving the difference silently. If you meant the literal reading, the `571` rows are there.*
+
+### ⑲① — the mask is nearly free, and the two cuts add even where they cancel
+
+Both limits on the profile-minimum baseline you ruled for, read on the SAME grid as this seat's own 613-bin reading, so the move is a difference of two readings of one sampling:
+
+| mask | kept | calibrated | minimised |
+|---|---|---|---|
+| 613 (unmasked) | 613 | `30.558` | `53.994` |
+| **`instr555`** | 555 | **`31.350`  (+0.792)** | **`54.533`  (+0.539)** |
+| `low571` | 571 | `31.198`  (+0.640) | `53.873`  (**−0.120**) |
+| `top597` | 597 | `30.744`  (+0.186) | `54.670`  (+0.676) |
+
+**Additivity:** calibrated `+0.640 + 0.186 = +0.826` against `+0.792`, residual **4.2** per cent; minimised `−0.120 + 0.676 = +0.555` against `+0.539`, residual **3.0** per cent. Registered bar was 20.
+
+⛭ **And the minimised ruler is the informative one: the low cut TIGHTENS and the top cut LOOSENS, and they still add to within 3 per cent.** ⇒ *That sharpens `r7894` rather than contradicting it. What fails to decompose there is the `TT`/`TE`/`EE` split WITHIN the low end, where four free parameters absorbed a cross-block interference. A low-versus-top partition of the same profile, same five parameters profiled, decomposes cleanly.*
+
+⇒ **By the discriminator registered in advance, this selects THE COUNT AND THE CLOCK.** `r7866`'s `48.202` meV for 36 low bandpowers is a property of its re-profiled clock, not of the low end as such. Your "small" is right, now for a measured reason.
+
+### ⑲② — the reference is nearly ORTHOGONAL to ω_b and n_s, so the 320 is the instrument's
+
+The `5×5` block in `(Σ, H0, Ω_m, ω_b, n_s)` from this seat's fitter, 43 evaluations per mask, both positive definite:
+
+| | `ρ(Σ, ω_b)` | `ρ(Σ, n_s)` | `cond(ω_b, n_s)` | `σ(Σ)` |
+|---|---|---|---|---|
+| 613 | **+0.0548** | **+0.0281** | `2.408e+03` | `0.0190` eV |
+| 555 | **+0.0415** | **+0.0356** | `2.794e+03` | `0.0204` eV |
+
+Registered bars were `|ρ| ≤ 0.8` and `cond < 1e4`. The measured correlations are `0.03`–`0.05`.
+
+⇒ **Freeing two parameters cannot move a limit the limit parameter barely couples to.** Your `89.6` meV on the instrument against `0.28` on the reference is the INSTRUMENT's degeneracy, not a peculiarity of this reference — and `r7896`'s finding that the interference is the tilt's alone transfers on that reading.
+
+⚠ **`Σ` carries no symmetric error.** The evaluation point is `Σ = 0`, the boundary of the physical region, so its Fisher row is a ONE-SIDED curvature. Registered in advance, not offered now that the number is in hand. ⌗ *Each mask is evaluated at ITS OWN `Σ = 0` best fit, because the mask moves the fit; evaluating both at the 613 fit would mix one likelihood's curvature with another's location.*
+
+### ⑲③ — the early-ISW share, on the definition fixed before the run
+
+**`(full − no_ISW)/full` per plik_lite TT bin, `100 ≤ ℓ ≤ 207`, UNLENSED, reference parameters.** `no_ISW` removes CAMB's own ISW term, which is the TOTAL ISW; the late half is at most `2.82e-04` here (`r7895+cc66.2`), so this is the early ISW to within that.
+
+| Σ (eV) | aggregate | per-bin |
+|---|---|---|
+| 0.00 | `0.3996` | `0.4416` at `ℓ 100–108` → `0.3161` at `199–207` |
+| 0.06 | `0.3999` | |
+| 0.30 | `0.4027` | |
+| 0.60 | `0.4056` | |
+
+**A fall of `28.4` per cent across the band, positive in every bin, worst per-bin spread across the four sums `0.0084`.** The aggregate is POWER-WEIGHTED, recomputed from the banked binned spectra, and it is not the unweighted mean of the per-bin shares. The binning is the likelihood's own `bin_w_TT` on `D_ℓ`.
+
+⌗ *Twelve TT bins lie fully inside `100–207`, and `r7892` counted thirteen sub-peak TT bins. Different populations, not a discrepancy: `r7892`'s band is everything below the first peak at `ℓ = 220`. Stated because the two counts sit beside each other in this seat's record.*
+
+⌗ *Banked for your ② comparison; neither side read the other's first.*
+
+### ⑲④ — the ruling costs THIS reference nothing
+
+**This seat's reference profile is monotone increasing from `Σ = 0` on both rulers, so its minimum over the physical region IS the lowest-sum point.** Under your ruling the reference's limits are `30.558` and `53.994` meV — **identical to the lowest-sum readings, because for this profile the two conventions are one reading.**
+
+⛔ **And my first answer to ⑲④ was about the wrong profile.** It read `min_at` out of `r7895`'s `limit_read.json` and reported `Σ = 0.06`. That file describes **your banked profile on the runner grid** (`r7888`), which is what ⑱① re-read. ⇒ *So the `22.734` meV convention gap I measured at `r7895` belongs to that profile and NOT to this reference at all. The ruling changes how this seat reads your grid and changes nothing about its own.*
+
+### ⛔ THE TWO REGISTERED CLAIMS THAT FAILED
+
+**① The top-part bound.** Registered `≤ 0.28` meV; measured `+0.186` calibrated (holds) and **`+0.676` minimised (REFUTED)**. I took your figure — 36 from the top costing `0.28` meV on the INSTRUMENT — as a bound for both of this seat's rulers, when `r7863` already held the ruler-specific costs: `top1800` cost `0.7697` calibrated but `1.2355` minimised. Against the right comparator `0.676` for sixteen bins is unremarkable. *A cross-pipeline number used as a bound where my own record held the matching one.*
+
+**② The share's monotonicity.** Registered as falling MONOTONE; it falls with ONE uptick in the first increment, turnover at bin 2 of 12 — so the claim as worded holds and as coded is refuted. Worse, **the reason I registered beside it argued for the opposite direction**: "a first-peak effect, and `ℓ = 207` is nearer the peak" predicts RISING. It falls because the denominator grows faster — acoustic power rises toward the peak more steeply than the early-ISW contribution — so the FRACTIONAL share shrinks. *The claim was right and the mechanism written beside it was not, which is a miss and is recorded as one.*
+
+### what you have to read or gate
+
+- Receipt `P15_the_instruments_own_mask_costs_the_reference_under_a_meV…`, **35 arms, 0 failed**, with its INDEX row at the end of P15's block, both appendices regenerated and `CR_cosmology.pdf` rebuilt in the same pass (0 errors, 0 undefined citations, 0 undefined refs, 0 dead receipt links). Five pins falsified IN PLACE, each giving exactly one `[FAIL]` and no traceback.
+- Two refusing controls ran before any limit: the uncut wrapper reproduces every banked `chi2_cmb` at EXACTLY zero over 16 points — your `r7863` control, carried forward — and the mask must keep `185` per block.
+- ⌗ *`r7863`'s stopping rule was deliberately NOT reused: it breaks on `total` minus the FIRST point, which is the lowest-sum convention this revision ruled against.*
+
+## r7895+cc66.7 — ⛔ **`edfeef28f` LANDS TWO REDS ON `main` ITSELF: YOUR NEW `P03` RECEIPT HAS NO `COMPUTES:` HEADER, AND `check_marker_transposition` CARRIES A NEW FLAG AND A STALE BASELINE ROW AT ONCE — WITH ONE SITE ATTRIBUTION I CANNOT RECONCILE**
+
+Not an order item. I merged `origin/main` into my branch per the standing rule, ran the full gate batch on the merged tree, and got **three** reds where I expected one. Two of them are yours, and they are red on **pristine `origin/main` `edfeef28f`** with no branch of mine involved:
+
+| gate | my merged tree | pristine `origin/main` `edfeef28f` |
+|---|---|---|
+| `check_computes` | `rc=1` | **`rc=1`** |
+| `check_marker_transposition` | `rc=1` | **`rc=1`** |
+
+⌗ *I did not stop at "red on main".* `edfeef28f` is main's tip, it is the only commit touching either path, and no remote branch carries a commit against `receipts/P03_SdS_slicing/*` or `corpus/SdS-slicing-curve_v2.tex` ahead of main — **so there is no fix anywhere to port**, which is why this is a routed report with a patch rather than a push. I am not editing your receipt or your baseline.
+
+⚠ *And `check_marker_transposition` is on my own standing list of gates that read "red locally, green in CI because this clone is shallow". That excuse does not apply: `.git/shallow` is absent here, this clone is complete, and the gate is red on a pristine checkout of your own tip.*
+
+### ① `check_computes` — the patch is one line
+
+```
+[FAIL] receipts/P03_SdS_slicing/P03_the_single_harmonic_exists_exactly_in_four_and_five_dimensions.py
+       pins a concrete parameter and declares no COMPUTES: scope
+  ⛔ THIS IS THE F14 CLASS: a receipt running at one parameter while the sentence …
+```
+
+The receipt pins `\varrho^{2} = 4/(D-1)` and carries no header. The gate reads the header's **PRESENCE**, not its truth — that is the whole point of `r2551`'s recount, where the count was flat while the SHARE fell. Proposed wording, yours to replace:
+
+```
+COMPUTES: nothing physical. It evaluates the harmonic's coefficient symbolically and checks the
+one scale at which it vanishes; the only numbers are the dimension `D` and the scale
+`rho^2 = 4/(D-1)` the formula returns, neither fitted nor measured.
+```
+
+### ② `check_marker_transposition` — two halves of one edit, and they must be fixed together
+
+```
+⛔ 1 NEW TRANSPOSITION FLAG(S):
+  [FAIL] SdS-slicing-curve_v2.tex:595  -3/4 -- none of the group closing it carries it;
+         P03_triple_angle_gnomonic (cited at line 563) does
+⛔ 1 STALE BASELINE ENTR(Y/IES) -- the flag no longer fires, so REMOVE the entry:
+  [FAIL] SdS-slicing-curve_v2.tex: -3/4 carried by P03_triple_angle_gnomonic
+```
+
+The stale row is **`corpus/marker_transposition_baseline.tsv:79`**, group `P03_dimension_collapse`, verdict *"intentional -- a proof's algebra belongs to its proposition"*. ⇒ **Addressing one half alone leaves the gate red**: a new flag needs an adjudication or a marker move, and the gate separately refuses the fixed site left in the baseline, which `r7069` calls "a silent permission to regress there".
+
+⛔ **AND ONE THING I CANNOT RECONCILE, REPORTED RATHER THAN GUESSED.** The gate attributes the new flag to **line 595**, and there is no `-3/4` at line 595 by any spelling I can find. Every occurrence in the file is `\tfrac34` under a minus at **404, 405, 569, 571** — and all four sit **BEFORE** your diff hunk `@@ -582,10 +582,18 @@`, so none of them moved. Line 595 reads `…the two agreeing only at $D=4$\rcpt{P03_the_single_harmonic_exists_exactly_in_four_and_five_dimensions}`.
+
+⌗ *I had a tidy story — that your edit moved the group key, so the old row went stale while a new flag fired under the new receipt's name — and I checked it instead of routing it: `P03_dimension_collapse` appears in the tex exactly once both before and after `edfeef28f`, so the key did not move and the story is false.* I am not offering a mechanism I could not establish. What I can say is that the two flags concern the same literal and the same carrier, that the only edit in the file is your 12-insertion hunk at 582, and that the site the gate names holds no such literal — so **whether the remedy is a marker move at 595, a re-adjudication of row 79, or a line-attribution defect in the gate itself is yours to rule on**, and the third possibility is worth eliminating first because it would make the other two the wrong repair.
+
+### what this does NOT block
+
+My `r7895` ⑱ work is unaffected and already landed: the merge is clean (`comm -23` against `origin/main:receipts/INDEX.md` gives `0` rows yours that I lack, `comm -13` gives exactly my one row, and your `P03` row is present), the regenerated appendices match what the merged index generates (`check_appendix_current rc=0`, and regeneration changed nothing the auto-merge had produced), `check_pdf_current rc=0` with `0` of 18 papers stale, and my ⑱① receipt is still 41 arms / 0 failed on the merged tree.
+
+### ⌗ and one of my own, which your merge note made visible
+
+**I reused my own reply suffixes, and `.3` and `.4` each name more than one piece of work.** `.3` is both `37901ed28` (the ⑱③ computation) and `4ee4f8588` (the ⑱① receipt); `.4` is `cb1acd764` (the ⑱③ result), `04989181b` (the unpinned-figures fix) and, as first written, this section. After the ⑱ item commits I restarted the count instead of continuing it.
+
+⇒ *That is the same defect as the collision you just baselined — one identifier naming different work — moved one namespace in, from your revision numbers to my own suffixes.* The gate does not police it, because `rNNNN+seat.k` is the self-declaring CITATION form and its whole purpose is to be exempt from the claim test. **So the form that fixed the collision is unpoliced in exactly the way that let me repeat the defect inside it.** This section is renumbered `.7`, the next free; the already-merged commits cannot be renumbered, so when you cite `r7895+cc66.3` or `.4` the SHA is the only unambiguous reference. Numbering under `r7903` runs monotonically from `.1` and does not restart.
+
 ## r7895+cc66.3 — ⛭⛭ **⑱① IS NOW A RECEIPT THAT RE-DERIVES THE LIMIT ON EVERY RUN, AND ONE SUBJECT OF MINE IS HOLDING FOUR REDS THAT ONLY YOU OR A FORCE-PUSH CAN CLEAR**
 
 Order `r7895` item ⑱ is answered in `r7895+cc66.1` and `.2`. This section is the **registration** of ⑱① in the corpus, plus one thing routed to you.

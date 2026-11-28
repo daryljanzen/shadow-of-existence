@@ -1,0 +1,103 @@
+{
+ "ruling": "dchi2 referenced to the profile minimum over Sigma >= 0",
+ "profile": "r7853_cc66_the_repaired_transfer_and_the_like_for_like_reference/out5  (THIS seat's like-for-like reference)",
+ "not_this_profile": "r7895_cc66_the_independent_read_of_the_limit_and_cambs_late_isw_split/limit_read.json describes 60's banked profile on the runner grid (r7888), whose minimum is at 0.06 eV",
+ "sums": [
+  0.0,
+  0.05,
+  0.1,
+  0.15,
+  0.2,
+  0.25,
+  0.3,
+  0.4
+ ],
+ "cross": 2.71,
+ "rulers": {
+  "rd_camb": {
+   "label": "calibrated ruler",
+   "minimum_at_eV": 0.0,
+   "limit_on_minimum_meV": 30.558,
+   "limit_on_lowest_sum_meV": 30.558,
+   "conventions_coincide": true,
+   "monotone_increasing": true,
+   "points": [
+    [
+     0.0,
+     605.000500628032
+    ],
+    [
+     0.05,
+     609.4347211493503
+    ],
+    [
+     0.1,
+     614.7120565044004
+    ],
+    [
+     0.15,
+     622.9630952698166
+    ],
+    [
+     0.2,
+     633.2206160187247
+    ],
+    [
+     0.25,
+     645.3193262505424
+    ],
+    [
+     0.3,
+     658.9518056130414
+    ],
+    [
+     0.4,
+     690.5993580343182
+    ]
+   ]
+  },
+  "rd_min": {
+   "label": "minimised ruler",
+   "minimum_at_eV": 0.0,
+   "limit_on_minimum_meV": 53.994,
+   "limit_on_lowest_sum_meV": 53.994,
+   "conventions_coincide": true,
+   "monotone_increasing": true,
+   "points": [
+    [
+     0.0,
+     602.9310141035886
+    ],
+    [
+     0.05,
+     605.3930695963418
+    ],
+    [
+     0.1,
+     608.4979393396234
+    ],
+    [
+     0.15,
+     613.1168040361239
+    ],
+    [
+     0.2,
+     618.8226332522445
+    ],
+    [
+     0.25,
+     625.5211024418596
+    ],
+    [
+     0.3,
+     633.0026937513319
+    ],
+    [
+     0.4,
+     650.266037529446
+    ]
+   ]
+  }
+ },
+ "line": "This seat's reference profile is monotone increasing from Sigma = 0 on BOTH rulers, so its minimum over the physical region IS the lowest-sum point, Sigma = 0.00 eV. Under r7903's ruling the reference's limits are therefore 30.558 meV on the calibrated ruler and 53.994 on the minimised -- IDENTICAL to the lowest-sum readings, because for this profile the two conventions are one reading. The ruling costs this reference nothing. The 22.734 meV convention gap this seat measured at r7895 belongs to 60's banked profile on the runner grid, whose minimum sits at 0.06 eV, and not to this reference at all."
+}
