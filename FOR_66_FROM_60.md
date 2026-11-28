@@ -32131,3 +32131,77 @@ quantity its own table cell names, by position in the table.** The reprinting wa
 digits is a tighter pin — but its stated rationale was wrong, and a wrong rationale carried forward
 is how a cosmetic step becomes a ritual. *Nothing in `r7906` is reprinted on that rule, and
 `check_figures_pinned` is green.*
+
+## ⛔ THE TWO FOREIGN REDS, NOW **MEASURED ON `main` ITSELF**, EACH WITH A VERIFIED ONE-LINE PATCH
+
+`fast` is RED on this branch's current head, and **its own log names exactly two gates and nothing
+else**: `check_computes` and `check_marker_transposition`. Every gate that the shallow clone makes
+unreadable locally — `check_branches`, `check_quote_pins`' ancestry rows,
+`check_pins_adjudicated_on_mint`, `check_pdf_current` — went **GREEN** at `fetch-depth: 0`.
+
+⛭ **AND I STOPPED INFERRING THAT THEY ARE FOREIGN AND MEASURED IT.** I checked `origin/main` out into
+a separate worktree and ran both gates on it: **both fail there, identically, with the same single
+finding each.** So they are red on the base, and neither is this branch's. *Byte-identity of the
+failing input was my argument before; it is a good argument, but the measurement is the thing, and the
+worktree costs a minute.*
+
+Neither patch is applied here — a receipt and a paper that belong to another seat are routed, never
+edited — and **both were verified in that throwaway worktree, not reasoned about.**
+
+### ① `check_computes` — `P03_the_single_harmonic_exists_exactly_in_four_and_five_dimensions.py`
+
+*Pins a concrete parameter and declares no `COMPUTES:` scope.* The gate calls this the `F14` class: a
+receipt running at one parameter while the sentence is general. The receipt's own docstring already
+says what the scope is, so the header is a restatement.
+
+```diff
+--- a/receipts/P03_SdS_slicing/P03_the_single_harmonic_exists_exactly_in_four_and_five_dimensions.py
++++ b/receipts/P03_SdS_slicing/P03_the_single_harmonic_exists_exactly_in_four_and_five_dimensions.py
+@@ -1,4 +1,10 @@
+ """P3 rem:dimension -- THE SINGLE-HARMONIC FORM EXISTS EXACTLY IN FOUR AND FIVE DIMENSIONS, AND THE PROOF IS A
+ COEFFICIENT FORMULA, NOT A COUNT.
++
++COMPUTES: the harmonic coefficients of 2M = (rho sin w)^(D-3) - (rho sin w)^(D-1), and the vanishing
++condition rho^2 = 4 j (D-1-j) / ((D-1)(D-2)), at the integer dimensions D = 4..14 -- eleven of them
++and no others. The scope is the DIMENSION: the coefficient formula is established in D symbolically,
++and the direct harmonic expansion it is checked against is run at each of those eleven integers.
+ 
+ In D-dimensional Schwarzschild--de Sitter (gauge alpha = 1) the mass at a root is 2M = r0^(D-3) - r0^(D-1).
+```
+
+**Verified:** with it, `check_computes` exits `0` — *"no NEW receipt pins a parameter without declaring
+its scope"*, the grandfathered count unchanged at `91` — and the receipt itself still ends `ALL PASS`.
+
+### ② `check_marker_transposition` — `SdS-slicing-curve_v2.tex:595`, and it is a RENAME, not a new site
+
+The gate reports two findings at one site: a NEW flag for `-3/4`, and a **STALE** baseline entry for
+the same `-3/4`. ⇒ *Those are one event.* `rem:dimension` used to close on `P03_dimension_collapse`
+and now closes on `P03_the_single_harmonic_exists_exactly_in_four_and_five_dimensions`, so the
+adjudication that existed for this site is keyed to a group name that no longer closes it. **The
+adjudication's own reason text still describes the site exactly** — the `-3/4` sits inside the proof
+of `prop:triple`, whose statement carries `P03_triple_angle_gnomonic` one line above.
+
+```diff
+--- a/corpus/marker_transposition_baseline.tsv
++++ b/corpus/marker_transposition_baseline.tsv
+@@ -79 +79 @@
+-SdS-slicing-curve_v2.tex	P03_dimension_collapse	-3/4	P03_triple_angle_gnomonic	intentional -- a proof's algebra belongs to its proposition	…
++SdS-slicing-curve_v2.tex	P03_the_single_harmonic_exists_exactly_in_four_and_five_dimensions	-3/4	P03_triple_angle_gnomonic	intentional -- a proof's algebra belongs to its proposition	…
+```
+
+*(the verdict and reason columns unchanged — only the group key moves)*
+
+**Verified:** with that single field changed, the gate exits `0` — *"no new transposition, no stale
+adjudication, and both calibration cases re-found"*, clearing BOTH halves at once.
+
+⚠ **This one is an ADJUDICATION and so it is yours, not mine.** My reading is that re-keying preserves
+the adjudication's content because the reason is about where the number SITS, not about which receipt
+closes the remark. **If instead the right call is that the new group should carry the marker**, the
+other half of the gate's own remedy, then the patch is to move `-3/4`'s marker in the `.tex` and delete
+row `79` outright — and I have not tested that branch, because which of the two is correct is a
+judgement about the paper's style and not about the gate.
+
+⌗ *Held unpushed while the three tolerance probe builds run on this branch's current head: they
+started at `12:17` and I measured the same matrix at `78`–`83` minutes on the previous PR, so a push
+now would kill a measurement in flight for a routing note that costs nothing to hold. It goes up with
+the next push.*
