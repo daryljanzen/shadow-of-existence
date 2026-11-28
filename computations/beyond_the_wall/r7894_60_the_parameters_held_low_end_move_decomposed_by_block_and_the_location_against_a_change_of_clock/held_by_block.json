@@ -1,0 +1,61 @@
+{
+ "additive": false,
+ "all36_crossing_meV": 77.1643729509548,
+ "banked_held_minus36": 77.1643729509548,
+ "banked_held_move": -20.08684766570491,
+ "banked_held_whole": 57.07752528524989,
+ "base_crossing_meV": 57.07752528524989,
+ "bins_kept_whole": 555,
+ "block_crossings_meV": {
+  "EE": 57.347867320259994,
+  "TE": 60.48232851408258,
+  "TT": 78.44867444341105
+ },
+ "block_moves_meV": {
+  "EE": 0.2703420350101027,
+  "TE": 3.404803228832691,
+  "TT": 21.37114915816116
+ },
+ "block_shares": {
+  "EE": 0.013458659094212608,
+  "TE": 0.1695041096292003,
+  "TT": 1.0639374337790688
+ },
+ "concentrated": true,
+ "held_x4": [
+  0.49425236683143897,
+  -0.01060683307366382,
+  -0.0001977707612367608,
+  -0.008774993803685575
+ ],
+ "largest_block": "TT",
+ "location_survives": true,
+ "move_all36_meV": 20.08684766570491,
+ "outcome": "\u24cc\u24f7",
+ "per_block_dropped": {
+  "EE": 12,
+  "TE": 12,
+  "TT": 12
+ },
+ "reprofiled_largest": "TT",
+ "reprofiled_move_meV": 48.20196601190598,
+ "reprofiled_shares": {
+  "EE": 0.055709591268659285,
+  "TE": 0.165279670103759,
+  "TT": 0.8437483587920275
+ },
+ "residual_fraction": 0.24690020250248174,
+ "residual_meV": 4.9594467562990445,
+ "states": [
+  "NOT additive, residual 24.7 per cent",
+  "concentrated in TT at 106.4 per cent"
+ ],
+ "sum_of_blocks_meV": 25.046294422003953,
+ "x4_max_deviation": 0.0,
+ "x4_refit": [
+  0.49425236683143897,
+  -0.01060683307366382,
+  -0.0001977707612367608,
+  -0.008774993803685575
+ ]
+}

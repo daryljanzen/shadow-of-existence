@@ -258,11 +258,19 @@ that is now measured, and it replaces the linear model's `33` minutes for good.
 | per point, wall clock | `≈ 35` min |
 | per point, CPU | `≈ 2h 16m` |
 | cores used by one leg | `≈ 3.95` |
-| container lifetime, measured three times | `≈ 93`, `≈ 96` min (boots at `07:07`, `08:40:48`, `10:16:57`) |
+| container lifetime | **VARIABLE: `≈ 93`, `≈ 96`, `≈ 80`, and one that ran past `141`** (boots `07:07`, `08:40:48`, `10:16:57`, `11:36:53`) |
 | points per lifetime, if started early | **two** |
 
 ⇒ **Ten points is five to six container lifetimes**, and because each finished point is banked and
-the generator skips what is banked, the grid accumulates rather than restarting. The one thing that
+the generator skips what is banked, the grid accumulates rather than restarting.
+
+⚠ **AND THE LIFETIME IS NOT A CONSTANT — `80` minutes at the short end, and one lifetime ran past
+`141` minutes, so the long end is NOT established either.** ⛔ *So "about
+ninety minutes" is a central value and NOT a deadline to plan a leg against: the `11:36:53` boot came
+`80` minutes after the one before it, sixteen minutes earlier than the preceding interval. A leg
+begun on the assumption of ninety is a leg that sometimes dies for nothing.* The operational rule
+that survives this is the simple one: **relaunch as early in a lifetime as possible and never rely
+on the tail of one.** The one thing that
 matters operationally is **relaunching early in a lifetime**: a point begun more than about fifty
 minutes in will not finish before the restart takes it, and that leg's work is lost.
 

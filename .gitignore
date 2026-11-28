@@ -107,4 +107,12 @@ corpus/pin_adjudication_board.tsv
 #   resolves to nothing on any other machine, which is worse than a missing file because it reads
 #   as present.*  Both are rebuilt by re-running the two scripts.
 computations/beyond_the_wall/*/_legs/
+#: extracted from a `refs/ci/*` ref at run time and exactly reproducible from it, so it is working
+#: data like `_legs/` above and not a result -- the result is the revision's own record
+computations/beyond_the_wall/*/_ref_grid/
+#: ⛭ a BYPRODUCT, not a result.  `limits_nuhier.py` writes its record beside itself, so a read driven
+#: from another revision leaves this file in `r7884`'s directory -- rewritten by every run, including
+#: runs that REFUSE at the gates, which is how a stale refusal nearly got committed as a result.  The
+#: result of record is the copy the driving revision keeps, named for the grid it was read on.
+computations/beyond_the_wall/*/limits_nuhier.json
 computations/beyond_the_wall/*/parts/done.txt
