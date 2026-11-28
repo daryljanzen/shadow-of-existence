@@ -15,6 +15,34 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7903+cc66.10 — ⛭ **`check_paper_pins_present` IS RED ON MAIN AND SO IS P03'S OWN RECEIPT: ONE CLAUSE WAS INSERTED *INSIDE* A PINNED SPAN, AND THE TWO-HALF REPAIR IS VERIFIED GREEN**
+
+Not mine — measured on three trees before I say so — and the patch is below, ready to apply.
+
+**What is red.** `check_paper_pins_present` on my head `32b01e34d`: `1745 PAPER row(s), 143 absent from every corpus/*.tex; NEW (absent, not listed): 1`, `rc=1`. The one NEW key is `receipts/P03_SdS_slicing/P03_the_symbol_w_carried_two_circles.py` pinning `"the throat angle $u$ the same swing read on the throat ($\\sin u=\\tfrac{2}{\\sqrt3}\\sin w$)"`. **And the receipt itself is red**, `rc=1`, on the same cause: its line 91 hard-asserts that literal's presence in `corpus/SdS-slicing-curve_v2.tex` and raises `AssertionError: with the throat angle its companion projection`. So this is not a ledger row lagging the tree — a green-receipt invariant is broken on trunk.
+
+**⒜ my diff.** 0 files matching `P03` or `SdS`; the receipt is byte-identical to main. **⒝ pristine main.** `rc=1` with the identical single NEW key on a clean `origin/main` worktree at `87071d295`, and still at main's tip. **⒞ a fix to port.** None exists. Main's tip carries no repair, and 60's branch `…-6awafl` is one commit ahead (`966b7fef5`) touching `receipts/P03_SdS_slicing/*` and `corpus/SdS*` — but **0 of its changes touch the failing receipt**. Nothing to port is why this is routed and not carried.
+
+**The cause, pinpointed to one commit.** Present at `f4e157607`, absent at `6d33da23c` ("P3: the three horizon roots are the offsets of three parallel planes, one per hinge"). That commit did not delete the sentence; it **inserted a clause inside the pinned span** in `corpus/SdS-slicing-curve_v2.tex`:
+
+- was: `…the same swing read on the throat ($\sin u=\tfrac{2}{\sqrt3}\sin w$), and the horizon angle $3w$…`
+- now: `…the same swing read on the throat, as the throat point whose areal radius is the designated one ($\sin u=\tfrac{2}{\sqrt3}\sin w$), and the horizon angle $3w$…`
+
+The relation survives verbatim and is now **more precise**, so the row's `MEANING-HELD` standing still holds. Only the literal span broke, and it broke because the pin spans text on both sides of the insertion point.
+
+**The repair, verified here.** Two halves, both in the escaped source form, inserting `, as the throat point whose areal radius is the designated one` before ` ($\\sin`:
+
+1. `corpus/quote_pin_baseline.tsv:2637` — the `PAPER / SENTENCE / MEANING-HELD` row, provenance `r7349`;
+2. the same literal in the receipt's `assert` at line 91.
+
+Applied here and then reverted (tree clean, nothing of this pushed): receipt `rc=0`; `check_paper_pins_present` `rc=0`, `143 → 142` absent, `NEW 0`, SEED control still biting (`present read present, one-character mutant read absent: True`). **Patching the receipt alone does nothing** — the gate reads the row from the ledger in the worktree and the `corpus/*.tex` blobs at HEAD, never the receipt's own text, which is what my first attempt got wrong.
+
+**Of the gate's three remedies** — restore the sentence, repair the pin, or list it with `--update` and say why — I recommend **repair the pin**. Restoring would undo a clause that adds precision, and `--update` is for a deliberate absence; this one is incidental. I have not pushed it: your paper, your receipt, and a cross-seat adjudication row carrying `r7349` provenance — the same routing as `edfeef28f`.
+
+If you want that row to survive the next rewording, two shorter pins — the clause and the relation, separately — would each be insertion-proof. Your call; a span that straddles an insertion point will keep breaking on prose edits that hold its meaning.
+
+**One thing adjacent, not a gate matter.** `resources/P3P5_standalone/sds_one_slicing.tex`, edited in that same commit, carries **neither** form of the sentence (0 old, 0 new). The gate reads only `corpus/*.tex`, so nothing is red from it — but if the standalone is meant to track the paper's sentence, it now matches neither wording.
+
 ## r7903+cc66.8 — ⛭⛭⛭ **⑲ ALL FOUR: THE INSTRUMENT'S MASK COSTS THIS REFERENCE UNDER A meV, THE FACTOR OF 320 IS THE INSTRUMENT'S BECAUSE Σ IS NEARLY ORTHOGONAL TO ω_b AND n_s, THE EARLY-ISW SHARE FALLS 28.4 PER CENT ACROSS THE BAND — AND ⑲①'s PREMISE IS OFF BY SIXTEEN BINS**
 
 Order `r7903` items ⑲①–④. Registered at `b7ade4b6d`, pushed before a line of the computation existed; computed at `r7903+cc66.2`–`.7`; receipt and INDEX row in this pass. **Two registered claims were refuted and are scored below, not buried.**
