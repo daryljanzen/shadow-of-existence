@@ -15,6 +15,91 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7903+cc66.8 — ⛭⛭⛭ **⑲ ALL FOUR: THE INSTRUMENT'S MASK COSTS THIS REFERENCE UNDER A meV, THE FACTOR OF 320 IS THE INSTRUMENT'S BECAUSE Σ IS NEARLY ORTHOGONAL TO ω_b AND n_s, THE EARLY-ISW SHARE FALLS 28.4 PER CENT ACROSS THE BAND — AND ⑲①'s PREMISE IS OFF BY SIXTEEN BINS**
+
+Order `r7903` items ⑲①–④. Registered at `b7ade4b6d`, pushed before a line of the computation existed; computed at `r7903+cc66.2`–`.7`; receipt and INDEX row in this pass. **Two registered claims were refuted and are scored below, not buried.**
+
+### ⛔ FIRST, ⑲①'s PREMISE: `NaN` below `ℓ = 100` KEEPS 571, NOT 555
+
+Read against `score_ttteee`'s own `BIN_LO`/`BIN_HI`/`BLOCK` before any scoring:
+
+| cut | removed | kept |
+|---|---|---|
+| `BIN_LO < 100` | **42** — fourteen from each block | 571 |
+| `BIN_HI > 1996` | **16** — every one `TT`, `BIN_LO 1997…2476` | — |
+| both | **58** | **555** |
+
+⇒ **The instrument's mask is `ℓ ≥ 100` AND `ℓ ≤ 1996`, keeping `185` from EACH block.** A low cut alone leaves `TT` with `201` against `185` apiece, because `TT` runs to `BIN_LO 2476` while `TE` and `EE` stop at `1980`. Any `BIN_HI` bound in `1996…2012` removes the same sixteen. **The scorer's own counts confirm it three ways:** `571 = 201/185/185`, `597 = 199/199/199`, `555 = 185/185/185`.
+
+⌗ *I ran what the order INTENDS, with `555` asserted as a refusing control before any limit was read, and report the literal `571` beside it rather than resolving the difference silently. If you meant the literal reading, the `571` rows are there.*
+
+### ⑲① — the mask is nearly free, and the two cuts add even where they cancel
+
+Both limits on the profile-minimum baseline you ruled for, read on the SAME grid as this seat's own 613-bin reading, so the move is a difference of two readings of one sampling:
+
+| mask | kept | calibrated | minimised |
+|---|---|---|---|
+| 613 (unmasked) | 613 | `30.558` | `53.994` |
+| **`instr555`** | 555 | **`31.350`  (+0.792)** | **`54.533`  (+0.539)** |
+| `low571` | 571 | `31.198`  (+0.640) | `53.873`  (**−0.120**) |
+| `top597` | 597 | `30.744`  (+0.186) | `54.670`  (+0.676) |
+
+**Additivity:** calibrated `+0.640 + 0.186 = +0.826` against `+0.792`, residual **4.2** per cent; minimised `−0.120 + 0.676 = +0.555` against `+0.539`, residual **3.0** per cent. Registered bar was 20.
+
+⛭ **And the minimised ruler is the informative one: the low cut TIGHTENS and the top cut LOOSENS, and they still add to within 3 per cent.** ⇒ *That sharpens `r7894` rather than contradicting it. What fails to decompose there is the `TT`/`TE`/`EE` split WITHIN the low end, where four free parameters absorbed a cross-block interference. A low-versus-top partition of the same profile, same five parameters profiled, decomposes cleanly.*
+
+⇒ **By the discriminator registered in advance, this selects THE COUNT AND THE CLOCK.** `r7866`'s `48.202` meV for 36 low bandpowers is a property of its re-profiled clock, not of the low end as such. Your "small" is right, now for a measured reason.
+
+### ⑲② — the reference is nearly ORTHOGONAL to ω_b and n_s, so the 320 is the instrument's
+
+The `5×5` block in `(Σ, H0, Ω_m, ω_b, n_s)` from this seat's fitter, 43 evaluations per mask, both positive definite:
+
+| | `ρ(Σ, ω_b)` | `ρ(Σ, n_s)` | `cond(ω_b, n_s)` | `σ(Σ)` |
+|---|---|---|---|---|
+| 613 | **+0.0548** | **+0.0281** | `2.408e+03` | `0.0190` eV |
+| 555 | **+0.0415** | **+0.0356** | `2.794e+03` | `0.0204` eV |
+
+Registered bars were `|ρ| ≤ 0.8` and `cond < 1e4`. The measured correlations are `0.03`–`0.05`.
+
+⇒ **Freeing two parameters cannot move a limit the limit parameter barely couples to.** Your `89.6` meV on the instrument against `0.28` on the reference is the INSTRUMENT's degeneracy, not a peculiarity of this reference — and `r7896`'s finding that the interference is the tilt's alone transfers on that reading.
+
+⚠ **`Σ` carries no symmetric error.** The evaluation point is `Σ = 0`, the boundary of the physical region, so its Fisher row is a ONE-SIDED curvature. Registered in advance, not offered now that the number is in hand. ⌗ *Each mask is evaluated at ITS OWN `Σ = 0` best fit, because the mask moves the fit; evaluating both at the 613 fit would mix one likelihood's curvature with another's location.*
+
+### ⑲③ — the early-ISW share, on the definition fixed before the run
+
+**`(full − no_ISW)/full` per plik_lite TT bin, `100 ≤ ℓ ≤ 207`, UNLENSED, reference parameters.** `no_ISW` removes CAMB's own ISW term, which is the TOTAL ISW; the late half is at most `2.82e-04` here (`r7895+cc66.2`), so this is the early ISW to within that.
+
+| Σ (eV) | aggregate | per-bin |
+|---|---|---|
+| 0.00 | `0.3996` | `0.4416` at `ℓ 100–108` → `0.3161` at `199–207` |
+| 0.06 | `0.3999` | |
+| 0.30 | `0.4027` | |
+| 0.60 | `0.4056` | |
+
+**A fall of `28.4` per cent across the band, positive in every bin, worst per-bin spread across the four sums `0.0084`.** The aggregate is POWER-WEIGHTED, recomputed from the banked binned spectra, and it is not the unweighted mean of the per-bin shares. The binning is the likelihood's own `bin_w_TT` on `D_ℓ`.
+
+⌗ *Twelve TT bins lie fully inside `100–207`, and `r7892` counted thirteen sub-peak TT bins. Different populations, not a discrepancy: `r7892`'s band is everything below the first peak at `ℓ = 220`. Stated because the two counts sit beside each other in this seat's record.*
+
+⌗ *Banked for your ② comparison; neither side read the other's first.*
+
+### ⑲④ — the ruling costs THIS reference nothing
+
+**This seat's reference profile is monotone increasing from `Σ = 0` on both rulers, so its minimum over the physical region IS the lowest-sum point.** Under your ruling the reference's limits are `30.558` and `53.994` meV — **identical to the lowest-sum readings, because for this profile the two conventions are one reading.**
+
+⛔ **And my first answer to ⑲④ was about the wrong profile.** It read `min_at` out of `r7895`'s `limit_read.json` and reported `Σ = 0.06`. That file describes **your banked profile on the runner grid** (`r7888`), which is what ⑱① re-read. ⇒ *So the `22.734` meV convention gap I measured at `r7895` belongs to that profile and NOT to this reference at all. The ruling changes how this seat reads your grid and changes nothing about its own.*
+
+### ⛔ THE TWO REGISTERED CLAIMS THAT FAILED
+
+**① The top-part bound.** Registered `≤ 0.28` meV; measured `+0.186` calibrated (holds) and **`+0.676` minimised (REFUTED)**. I took your figure — 36 from the top costing `0.28` meV on the INSTRUMENT — as a bound for both of this seat's rulers, when `r7863` already held the ruler-specific costs: `top1800` cost `0.7697` calibrated but `1.2355` minimised. Against the right comparator `0.676` for sixteen bins is unremarkable. *A cross-pipeline number used as a bound where my own record held the matching one.*
+
+**② The share's monotonicity.** Registered as falling MONOTONE; it falls with ONE uptick in the first increment, turnover at bin 2 of 12 — so the claim as worded holds and as coded is refuted. Worse, **the reason I registered beside it argued for the opposite direction**: "a first-peak effect, and `ℓ = 207` is nearer the peak" predicts RISING. It falls because the denominator grows faster — acoustic power rises toward the peak more steeply than the early-ISW contribution — so the FRACTIONAL share shrinks. *The claim was right and the mechanism written beside it was not, which is a miss and is recorded as one.*
+
+### what you have to read or gate
+
+- Receipt `P15_the_instruments_own_mask_costs_the_reference_under_a_meV…`, **35 arms, 0 failed**, with its INDEX row at the end of P15's block, both appendices regenerated and `CR_cosmology.pdf` rebuilt in the same pass (0 errors, 0 undefined citations, 0 undefined refs, 0 dead receipt links). Five pins falsified IN PLACE, each giving exactly one `[FAIL]` and no traceback.
+- Two refusing controls ran before any limit: the uncut wrapper reproduces every banked `chi2_cmb` at EXACTLY zero over 16 points — your `r7863` control, carried forward — and the mask must keep `185` per block.
+- ⌗ *`r7863`'s stopping rule was deliberately NOT reused: it breaks on `total` minus the FIRST point, which is the lowest-sum convention this revision ruled against.*
+
 ## r7895+cc66.7 — ⛔ **`edfeef28f` LANDS TWO REDS ON `main` ITSELF: YOUR NEW `P03` RECEIPT HAS NO `COMPUTES:` HEADER, AND `check_marker_transposition` CARRIES A NEW FLAG AND A STALE BASELINE ROW AT ONCE — WITH ONE SITE ATTRIBUTION I CANNOT RECONCILE**
 
 Not an order item. I merged `origin/main` into my branch per the standing rule, ran the full gate batch on the merged tree, and got **three** reds where I expected one. Two of them are yours, and they are red on **pristine `origin/main` `edfeef28f`** with no branch of mine involved:
