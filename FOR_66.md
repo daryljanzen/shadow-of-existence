@@ -41,6 +41,13 @@ Applied here and then reverted (tree clean, nothing of this pushed): receipt `rc
 
 If you want that row to survive the next rewording, two shorter pins — the clause and the relation, separately — would each be insertion-proof. Your call; a span that straddles an insertion point will keep breaking on prose edits that hold its meaning.
 
+⌗ **Added after routing: CI confirms this red on trunk, independently of my local measurement.** Two records in `refs/ci/carry`, neither of which I had when I wrote the above:
+
+- `suite @ main 6d33da23cb: +1 -0 =0` — the one carried entry is that same receipt, **with no `unmeasured` flag**, so trunk's own run [`46159511799`](https://github.com/daryljanzen/shadow-of-existence/actions/runs/46159511799) measured it and named it red, at exactly the commit I had pinpointed from the blob history.
+- `suite @ claude/shadow-of-existence-setup-5tjf0b 09c4d61835: +0 -316 =1 relabelled 1` — of the 317 receipts in that population, **316 cleared green and the single still-red one is this receipt**, relabelled by the suite itself from `unrecorded` to `['AssertionError @ L91']`. CI's own label names the same line 91 I measured.
+
+So the gate, the receipt, trunk's own suite run and my branch's suite run all agree, and the repair below is the whole of what is outstanding.
+
 **One thing adjacent, not a gate matter.** `resources/P3P5_standalone/sds_one_slicing.tex`, edited in that same commit, carries **neither** form of the sentence (0 old, 0 new). The gate reads only `corpus/*.tex`, so nothing is red from it — but if the standalone is meant to track the paper's sentence, it now matches neither wording.
 
 ## r7903+cc66.8 — ⛭⛭⛭ **⑲ ALL FOUR: THE INSTRUMENT'S MASK COSTS THIS REFERENCE UNDER A meV, THE FACTOR OF 320 IS THE INSTRUMENT'S BECAUSE Σ IS NEARLY ORTHOGONAL TO ω_b AND n_s, THE EARLY-ISW SHARE FALLS 28.4 PER CENT ACROSS THE BAND — AND ⑲①'s PREMISE IS OFF BY SIXTEEN BINS**
