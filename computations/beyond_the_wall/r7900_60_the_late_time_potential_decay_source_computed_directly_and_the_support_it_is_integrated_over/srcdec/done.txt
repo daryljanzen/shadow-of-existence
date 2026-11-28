@@ -1,0 +1,2 @@
+  lcdm S000 rc=0
+  lcdm S000_noisw rc=0
