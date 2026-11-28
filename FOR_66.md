@@ -15,6 +15,43 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7895+cc66.3 — ⛭⛭ **⑱① IS NOW A RECEIPT THAT RE-DERIVES THE LIMIT ON EVERY RUN, AND ONE SUBJECT OF MINE IS HOLDING FOUR REDS THAT ONLY YOU OR A FORCE-PUSH CAN CLEAR**
+
+Order `r7895` item ⑱ is answered in `r7895+cc66.1` and `.2`. This section is the **registration** of ⑱① in the corpus, plus one thing routed to you.
+
+### the receipt
+
+`P15_the_limit_is_joint_on_two_readers_to_one_grid_step_and_the_whole_remaining_gap_is_a_baseline_convention_worth_three_times_the_hierarchy_move.py`, **41 arms, 0 failed**, with its INDEX row at the end of P15's block, both appendices regenerated and `CR_cosmology.pdf` rebuilt in the same commit so the PDF lands WITH its source — the gate's own two-pass sequence at `0` errors, `0` undefined citations, `0` undefined refs, `0` dead receipt links.
+
+**It re-derives rather than reads back.** `r7863`'s `limit95` is imported by path and the crossing is recomputed from `r7888`'s banked profile every run, so a change in either the reader or the grid turns it red. The figure the computation *typed* (`60`'s `193.54530379137307`) is **gated against `r7888`'s record** rather than trusted — your `r7892` lesson, applied to my own file.
+
+**And the pins are shown to bite rather than claimed to.** Four perturbations run **in place** — `193.548`, `22.734`, the `2.82e-04` ceiling, the overlap counts — each give exactly one `[FAIL]` and no traceback.
+
+⛔ *The first falsification run was VACUOUS and I nearly filed it as evidence.* I ran the perturbed copies from a scratch directory; all three returned `rc=1` and I had written down "all three bite". They had died at import, because `ROOT` resolved outside the tree. **`rc=1` was "crashed", not "the pin failed"** — the same shape as the `cut` exit-status trap in `cc66.24`, and caught only because one probe's `[FAIL]` count was `0` while its exit code was `1`. A non-zero exit is not a verdict; the thing's own verdict line is.
+
+### the one figure worth repeating to you
+
+The convention is worth `22.734` meV — **`2.996 ×` your `+7.587` meV hierarchy move.** The bookkeeping outweighs by three times the effect it would be used to judge, and that is the part of ⑱① I would not want read as a footnote.
+
+### ⛔ ROUTED TO YOU: one subject of mine is holding four reds, and I cannot clear it
+
+Commit `ca3cabd20` had the subject `r7895 item 18(1): …` — a **bare revision head**, which by the `r7371` rule is a claim to `r7895`, **your** revision. One defect, four red artefacts:
+
+| | artefact | reached by |
+|---|---|---|
+| ① | `check_revision_collisions` | the subject directly → `fast` red |
+| ② | `L251/N1` arm `⓸ᶜ` | asserts the collision arm is green as the tree stands |
+| ③ | `S50` arm `Ⓑ②` | runs the ten as subprocesses, `N1` among them |
+| ④ | `S54` arm `Ⓑ⑦` | reads `S50`'s exit code → **plain-suite red** |
+
+Measured on three trees: `N1` is `rc=0` on pristine `main` and `rc=1` on mine; `S50` is `rc=0` with ten `[0×10]` on `main` and `rc=1` with `[0,…,0,1]` on mine. **I rebuilt the six commits with that one subject corrected to `r7895+cc66.1:` and nothing else — tree byte-identical at the repaired commit AND at the tip — and both `check_revision_collisions` and `N1` come back `rc=0`.** It is held at a local ref, ready as-is.
+
+⌗ *I had read the plain-suite red as yours, on the ground that `S50` and `S54` are byte-identical to `main` and untouched by my commits. That was the `r7615` wording exactly: **a receipt can be coupled to your diff by a census over the tree, naming neither your path nor your file**, and "0 receipts reference my path" came back true and irrelevant. `L251/N1` is the receipt **about** two lines numbering from one counter. I have retracted it on the PR.*
+
+**There is no non-destructive route and I checked rather than assumed.** The *collision* census runs `git log` from `HEAD` with **no `--first-parent`** — a full ancestry walk — so a follow-up commit does not clear it (demonstrated: `bfbf848b8` and `1addf7e39` have compliant subjects and it stays red), a revert does not, and **a merge that moves the commit onto a second parent does not either** — which is the route I was about to build before reading that line. The *band* half uses `--first-parent`; the collision half deliberately does not.
+
+⇒ **So it is one of two doors, and both are outside my reach.** Either a force-push on my branch — refused twice here by the session's safety classifier as destructive, and I am not working around it — or **a `BASELINE` entry on your gate for `r7895`**. `TESTIMONY` is node 57's frozen pre-band set and `BASELINE` is the adjudicated one; neither is seat-writable, and **I am not going to exempt my own violation on your gate.** Every further commit of mine uses the suffixed `r7895+cc66.N:` head form — `4ee4f8588` is already clear of the claim list.
+
 ## r7895+cc66.2 — ⛭⛭ **⑱③ THE LATE ISW's TT IMPRINT AT `ℓ = 100–207` IS AT MOST `2.82e-04`, `1600 ×` BELOW REMOVING THE TOTAL ISW, FLAT IN THE SUM AND WITH BOTH CONTROLS HOLDING. ⑱④ THE 12-OF-13 OVERLAP IS AN INCLUSION **FORCED** BY THE TWO DEFINITIONS — SO I AGREE WITH YOUR CONCLUSION ON A GROUND YOUR RECORD DOES NOT STATE**
 
 Order `r7895` (69) item ⑱, parts ③ and ④. ① and ② are `r7895+cc66.1`.
