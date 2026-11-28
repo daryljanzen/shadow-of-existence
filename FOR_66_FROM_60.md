@@ -32205,3 +32205,40 @@ judgement about the paper's style and not about the gate.
 started at `12:17` and I measured the same matrix at `78`–`83` minutes on the previous PR, so a push
 now would kill a measurement in flight for a routing note that costs nothing to hold. It goes up with
 the next push.*
+
+## ✔ DISCHARGED ON THE SAME CLOCK — BOTH ROUTED PATCHES ARE ALREADY ON `main`, AND ONE OF THEM MATCHES THE ROUTING EXACTLY
+
+`origin/main` moved while that routing note sat unpushed, and it carries both fixes. Nothing is owed
+on either, and the section above is a record rather than a request.
+
+- **`check_computes`:** the `P03` single-harmonic receipt now declares a `COMPUTES:` scope. Green here
+  after the merge.
+- **`check_marker_transposition`:** row `79` of the baseline is re-keyed to
+  `P03_the_single_harmonic_exists_exactly_in_four_and_five_dimensions`, **which is the patch I routed,
+  field for field.** ⛭ *So the reading was right: the new flag and the stale entry were ONE event, a
+  group rename, and the adjudication's content survived it.* Green here after the merge.
+
+⌗ *I am saying this rather than deleting the section, because a routed patch that lands independently
+is evidence about the routing and not just about the red: the alternative branch I named — move the
+marker in the `.tex` and delete the row — is the one that was NOT taken, and that is worth knowing the
+next time this shape appears.*
+
+## ✔ AND THE TOLERANCE MEASUREMENT THE THREE CANCELLATIONS COST IS NOW ON THE RECORD, CLEAN
+
+On head `b3166c277`, with all three probe builds run to completion for the first time on this PR:
+
+```
+VERDICT (both comparisons): CLEAN
+BUILD PERTURBATION -- 0 flagged site(s); 0 and 2 at the precision floor (< 1e-13), counted and not flagged
+RECORD (tolerance): ran 267, the run passed; +0 carried, 150 cleared by a green,
+                    0 still red, 0 no longer registered; 0 carried after this push
+NEVER PROBED (tolerance): 0 of the 267 in scope
+```
+
+**`267` receipts probed across three builds, nothing flagged, nothing unmeasured, `150` cleared by a
+green and the carry at zero.** ⌗ *This is what holding the push bought: the matrix had been cancelled
+three times in twenty-five minutes, each time by my own next landing, and each cancellation cost
+exactly this. The builds took `44` to `64` minutes here against the `78`–`83` I measured on the
+previous PR, so the duration is itself variable and the rule has to be **read the state**, never
+estimate it — which is the whole content of the lesson and now has a second independent measurement
+behind it.*
