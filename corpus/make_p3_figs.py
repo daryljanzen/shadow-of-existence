@@ -35,21 +35,29 @@ for s in (-1,1):  # asymptotic null cone (dashed)
     axa.plot([0,2*s],[0,0],[0,2*s*al],'k--',lw=.7); axa.plot([0,0],[0,2*s],[0,2*s*al],'k--',lw=.7)
 axa.set_title('(a) de Sitter one-sheeted hyperboloid',fontsize=9); axa.set_axis_off()
 axa.text(0,0,-2.2,r'throat circle (radius $\alpha$)',color='firebrick',ha='center',fontsize=8)
-# (b) equator-on
+# (b) equatorial section viewed from the north pole: the three parallel planes through the three hinges.
+# Each plane's perpendicular offset d_k from the axis gives the root d_k/sqrt3 of the horizon cubic.
 axb=fig.add_subplot(1,2,2); axb.set_aspect('equal'); axb.axis('off')
 axb.plot(al*np.cos(tc),al*np.sin(tc),color='firebrick',lw=2)
-r0=0.5
-axb.axvline(-al,ls=':',color='0.6',lw=.8)
-xline=-al+ (r0)  # offset line at x = -al + r0 measured from back; meets circle at two pts
-xoff=-al+r0
-yA=np.sqrt(max(al**2-xoff**2,0))
-axb.plot([xoff,xoff],[-1.3,1.3],color='navy',lw=1.3)
-axb.plot([xoff,xoff],[yA,-yA],'o',color='navy',ms=5)
-axb.text(xoff+0.03,yA+0.06,'$A$',color='navy'); axb.text(xoff+0.03,-yA-0.16,'$B$',color='navy')
-axb.plot(-al,0,'ks',ms=5); axb.text(-al-0.05,0.12,'$r=0$',ha='right',fontsize=8)
-axb.text(xoff,-1.45,'radial slice at offset $r_0$',color='navy',ha='center',fontsize=8)
-axb.set_title('(b) equator-on: the throat circle',fontsize=9)
-axb.set_xlim(-1.6,1.4); axb.set_ylim(-1.7,1.5)
+wv=np.radians(20.0)
+tdir=np.array([-np.cos(wv),np.sin(wv)]); nrm=np.array([np.sin(wv),np.cos(wv)])
+cols=['navy','teal','darkorange']
+for k in range(3):
+    ph=2*np.pi*k/3; H=2*al*np.array([np.cos(ph),np.sin(ph)])
+    L=np.array([H-4.2*tdir,H+4.2*tdir])
+    axb.plot(L[:,0],L[:,1],color=cols[k],lw=1.6 if k==0 else 1.0)
+    dk=nrm@H; F=dk*nrm
+    axb.plot([0,F[0]],[0,F[1]],ls='--',color=cols[k],lw=.8); axb.plot(*F,'o',color=cols[k],ms=3)
+    axb.plot(*H,'o',color='k',ms=5)
+    off=np.array([0.14,0.0]) if k==0 else (np.array([-0.38,0.08]) if k==1 else np.array([-0.38,-0.2]))
+    axb.text(*(H+off),f'$h_{k}$',fontsize=8)
+    lab=F+0.2*nrm*np.sign(dk if abs(dk)>1e-9 else 1)+0.24*tdir
+    axb.text(*lab,f'${dk/r3:+.2f}$',color=cols[k],fontsize=7,ha='center',va='center')
+axb.plot(0,0,'k+',ms=6)
+axb.plot(-al,0,'ks',ms=5); axb.text(-al-0.07,-0.2,'$r=0$',ha='right',fontsize=8)
+axb.text(-2.35,-2.45,r'roots $=$ offsets$/\sqrt{3}$, at $w=20^{\circ}$',ha='left',fontsize=8)
+axb.set_title('(b) equatorial section: three parallel planes',fontsize=9)
+axb.set_xlim(-2.4,2.4); axb.set_ylim(-2.6,2.3)
 _save('fig2_throat_circle'); plt.close()
 
 # ---------- fig3_cubic_involution : (a) 2M=r0-r0^3, (b) sigma involution ----------
@@ -113,3 +121,23 @@ ax.set_title(r'Gaussian curvature $K_G=1/\alpha^2-M/r^3$',fontsize=9); ax.grid(a
 _save('fig7_curvature'); plt.close()
 
 print("built: figs/fig2_throat_circle.pdf fig3_cubic_involution.pdf fig4_seam.pdf fig5_triple_angle.pdf fig7_curvature.pdf")
+
+
+# ---------- X1_vs_r_conjugate_wave : the Nariai lap, X1 against the lap's arc-length radius parameter ----------
+# One turn of the throat spans sqrt3*alpha in r, from the merged pair +1/sqrt3 to the lone root -2/sqrt3, so the
+# azimuth from the hinge is theta = pi - k r with k = 2 pi / sqrt3; the ruling legs leave tangentially (C^1).
+k=2*np.pi/r3
+rl=np.linspace(-2/r3,1/r3,600); X1l=al*np.cos(np.pi-k*rl)
+slope=k*np.sin(np.pi-k*(1/r3))
+fig,ax=plt.subplots(figsize=(7,4.2))
+rr=np.linspace(1/r3,1.05,50); ax.plot(rr,0.5+slope*(rr-1/r3),color='0.55',lw=2,label='real ruling leg (straight)')
+rr=np.linspace(-1.35,-2/r3,50); ax.plot(rr,0.5+slope*(rr+2/r3),color='0.55',lw=2)
+ax.plot(rl,X1l,color='firebrick',lw=2.4,label='conjugate lap')
+for x,y,t in ((1/r3,0.5,r'merged pair $+\alpha/\sqrt{3}$ (enter)'),(0,-1,r'$r=0$, back of the throat ($X_1=-\alpha$)'),(-2/r3,0.5,r'lone root $-2\alpha/\sqrt{3}$ (lap closes)')):
+    ax.plot(x,y,'o',color='firebrick',ms=5); ax.text(x+0.03,y+(0.1 if y>0 else -0.14),t,fontsize=8)
+ax.axhline(0,color='k',lw=.5)
+ax.set_xlabel(r'$r$ (the lap parameter: arc length along the closed curve, one turn $=\sqrt{3}\,\alpha$)')
+ax.set_ylabel(r'$X_1$ (embedding coordinate)')
+ax.set_title('The Nariai lap: straight on the ruling legs, a cosine around the throat',fontsize=10)
+ax.legend(loc='lower left',fontsize=8)
+plt.savefig('X1_vs_r_conjugate_wave.png',dpi=150); plt.close()

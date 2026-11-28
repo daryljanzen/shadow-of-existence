@@ -328,10 +328,11 @@ the figure.*** *And `lem:twoturnings` forbids the shortcut: no affine change of 
 threefold symmetries.*
 
 **Ⓔ Root systems, and a factorisation with a geometric reason.** *`P17` §sec:unification.*
-$\mathrm{Aut}(A_2)=S_3\times\mathbb Z_2$, and **the factorisation is not formal — its factors act on the two
-things a figure can be to a circle.** The three roots are the special points **ON** the waist; the two rulings
-are the lines **TANGENT** to it; *on* and *tangent* are independent, so the residue factorises. **And the two
-kinds differ for the same reason: a ruling is a line of the substrate, so exchanging them is a motion of it —
+$\mathrm{Aut}(A_2)=S_3\times\mathbb Z_2$, and **the factorisation is not formal — its factors act on two
+structures read off one circle.** The three roots are the offsets of three parallel **cuts**, one through each
+hinge of the triangle the waist is inscribed in; the two rulings through a hinge are its lines **TANGENT** to the
+waist; the inversion negates the root triple whichever hinge carries which root, so it commutes with every
+relabelling of the hinges. **And the two kinds differ by what each moves: a ruling is a line of the substrate, so exchanging them is a motion of it —
 an isometry; a root labels a different cut, so permuting them is no motion at all.** *Six Nariai geometries
 form the $A_2$ hexad; the three hinges join into one skew hexagon — **resonance with the hexad, not identity.***
 

@@ -787,9 +787,10 @@ been invisible.**
 > - **META → stays here.** The tally, the seventeen verdicts, the receipts, the discriminator, the four
 >   verdict shapes, the UNDECIDED, the near-misses. *"Which of the corpus's numbers are one number" is a
 >   statement about the **corpus**, not about the world.* **It is the ledger's, and it is not a paper's.**
-> - **PHYSICS → `P14` §`sec:twofactors`, written r1161.** *The two factors are the circle's two relations
->   — on it and tangent to it — the product is direct because those relations are independent, and the
->   factors differ in **kind** for the same reason, which is the Standard Model's arrangement.*
+> - **PHYSICS → `P14` §`sec:twofactors`, written r1161.** *The two factors act on the cuts the circle's
+>   hinges carry and on the lines tangent to it — the inversion negates the root triple whichever hinge carries
+>   which root, so it commutes with every relabelling — and the factors differ in **kind** by what each moves,
+>   which is the Standard Model's arrangement.*
 >
 > **⊢ WHY P14 AND NOT p0 OR P12 — read at source, not chosen by preference.** **P14 is the only paper where
 > BOTH FACTORS BECOME MATTER**, and it says so in its own words: §chirality closes *"This is the **ℤ₂
@@ -809,7 +810,7 @@ been invisible.**
 
 ---
 
-## ⌗ L8.3 — THE MARRIAGE · **STATED (r1157). And it is geometric: ON the circle vs TANGENT to it.**
+## ⌗ L8.3 — THE MARRIAGE · **STATED (r1157). And it is geometric: the CUTS the circle's hinges carry vs the lines TANGENT to it.**
 
 **The question** (Daryl, r1138): *geometry ∧ optics ∧ combinatorics ∧ the absolute foliation — the corpus
 does all four and names the join nowhere.* **Where it lands was open.** It lands in **p0 §unification's
@@ -825,17 +826,18 @@ swinging about the hinge **the circle placed**.
 > **P12:** *"The two factors act on independent structures — **the Weyl S₃ on the three roots, the
 > inversion on the two rulings** — and the inversion is central, which is why the automorphism group is
 > the direct product."*
-> **P3:** *"it meets the throat circle at two points `A` and `B`, with the point `r=0` fixed at the back of
-> the circle. **`A` and `B` are the geometric counterparts of the horizon cubic's roots**: the one nearer `r=0`
-> is the black-hole horizon and the farther the cosmological horizon, and the third root is the cosmological
-> horizon reached the long way round from `r=0`. The point `r=0` itself is the branch point, a root of the
-> cubic only where the mass vanishes."*
+> **P3:** *"The cut designates the root `r₀ = d/√3`, and the cubic's other two roots are read the same way by
+> the planes parallel to it through the other two hinges. **Three parallel planes through the vertices of an
+> equilateral triangle centred on the axis have offsets `2 sin(w + 2πk/3)`, which sum to zero and, divided by
+> `√3`, are exactly the three roots of the horizon cubic.** The roots are therefore offsets of planes and not
+> points of the throat circle."*
 > **p0:** *"**The rulings are those tangents**, so 'doubly ruled by straight null lines' and 'every tangent
 > to the throat is null' are one statement."*
 
-**⟹ the three roots are the points ON the circle; the two rulings are the lines TANGENT to it.**
-**`S₃` permutes what is ON it; `ℤ₂` swaps what is TANGENT to it.** **The residue factorises because *on*
-and *tangent* are independent relations.**
+**⟹ the three roots are the offsets of three parallel CUTS, one through each hinge of the triangle the circle
+is inscribed in; the two rulings through a hinge are its lines TANGENT to the circle.** **`S₃` permutes the
+hinges and with them the cuts; `ℤ₂` exchanges a hinge's two tangents and negates the root triple, whichever
+hinge carries which root — so the two commute.**
 
 **⊢ AND THE KIND-SORTING FALLS OUT OF THE SAME DISTINCTION.** A **ruling is a line of the substrate**, so
 exchanging the two is a **motion of the substrate** — an isometry, acting on the cut spinor as `γ⁵`:
@@ -844,15 +846,16 @@ exchanging the two is a **motion of the substrate** — an isometry, acting on t
 horizon cover's deck group being trivial (P5 `prop:deck`): **flavour is global.**
 
 > **★ THE MARRIAGE, STATED ONCE: the Standard Model's arrangement of a gauged chirality against a global
-> flavour is the difference between being ON the one circle and being TANGENT to it.**
+> flavour is the difference between relabelling the cuts the hinges carry and exchanging the tangents to the
+> one circle.**
 
 **Written into p0 §unification's seventh face and onto its abstract** (`gauged` 0→1, `global` 0→1, `direct
 product` 0→1, `tangent` 7→9). **p0 24pp, 0 undefined. Corpus 17/17.**
 
 **⛔ THE GUARD, honoured to the end.** The marriage is **not** *"it's all one"* — **its entire content is
-TWO INDEPENDENT RELATIONS TO ONE CIRCLE**: two factors, **two kinds**. ⚠⚠ ***AMENDED r2376+c54.95 — THE GUARD USED TO SAY "its entire content is a DIRECT PRODUCT", AND THE DIRECTNESS IS FORCED, SO IT CANNOT CARRY THAT WEIGHT.*** *$\mathrm{Aut}(A_2)$ is a Weyl $S_3$ extended by a diagram $\mathbb{Z}_2$; **every automorphism of $S_3$ is inner**, and a semidirect product by an inner automorphism is isomorphic to the direct one — verified by exhibiting $\Psi(s,a)=(s\,c^a,a)$ and checking it on every pair, for all four candidate actions.* **So no semidirect alternative ever existed for the geometry to exclude, and the group-level directness is a fact about $S_3$ rather than about this substrate.** ✔ ***WHAT SURVIVES IS THE WHOLE OF WHAT THE MARRIAGE ACTUALLY SAYS: WHICH relation each factor is — the three roots ON the circle against the two rulings TANGENT to it — and that the two differ in KIND, a ruling being a motion of the substrate (gauged) and a root labelling a different cut (global). Neither is a group fact and neither follows from the directness.*** *A reading that keeps a ground it does not need will be attacked at its weakest point rather than its strongest.* *L8.1 found the
+TWO STRUCTURES READ OFF ONE CIRCLE**: two factors, **two kinds**. ⚠⚠ ***AMENDED r2376+c54.95 — THE GUARD USED TO SAY "its entire content is a DIRECT PRODUCT", AND THE DIRECTNESS IS FORCED, SO IT CANNOT CARRY THAT WEIGHT.*** *$\mathrm{Aut}(A_2)$ is a Weyl $S_3$ extended by a diagram $\mathbb{Z}_2$; **every automorphism of $S_3$ is inner**, and a semidirect product by an inner automorphism is isomorphic to the direct one — verified by exhibiting $\Psi(s,a)=(s\,c^a,a)$ and checking it on every pair, for all four candidate actions.* **So no semidirect alternative ever existed for the geometry to exclude, and the group-level directness is a fact about $S_3$ rather than about this substrate.** ✔ ***WHAT SURVIVES IS THE WHOLE OF WHAT THE MARRIAGE ACTUALLY SAYS: WHICH structure each factor acts on — the cuts whose offsets are the three roots against the two rulings TANGENT to the circle — and that the two differ in KIND, a ruling being a motion of the substrate (gauged) and a root labelling a different cut (global). Neither is a group fact and neither follows from the directness.*** *A reading that keeps a ground it does not need will be attacked at its weakest point rather than its strongest.* *L8.1 found the
 numbers weld within a factor and split across; L8.2 found the factors differ in kind; L8.3 finds the
-factors are the circle's two relations. Each step made the structure **less** one thing and **more**
+factors act on two structures the one circle carries. Each step made the structure **less** one thing and **more**
 explained.*
 
 ---
