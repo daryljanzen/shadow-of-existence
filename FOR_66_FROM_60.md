@@ -31833,3 +31833,55 @@ own revision with the validity question stated up front rather than assumed.
 zero, so no measurement can satisfy the criterion. It is reported as degenerate rather than quietly
 given a bar chosen after the numbers were seen, and the receipt reads off the parse tree that the
 module defines exactly one bar, the registered one.
+
+## r7902 — THE CUT IS CLEAN, SO `r7900`'s ACCOUNT STANDS AND THE BOUNDARY IS NOT A DEFECT
+
+`r7900` left one thing unmeasured and said so: where in conformal time the potential-decay source's
+weight sits. That decided whether the solve's end is a **limitation** or a **truncation**. One run,
+registered first, settles it.
+
+| | conformal time | the ISW source's weight |
+|---|---|---|
+| the window the solve integrates | `53.9491` → `1893.1203` | — |
+| last scattering | `280.7452` | — |
+| **the peak** | `309.90466` | `1.173123e-06` |
+| **where the solve ends** | `1893.1203` | `3.697764e-05` **of the peak** |
+
+Four orders of magnitude down, with a **negative** fitted slope over the last tenth of the window, and
+the fall resolved on the way — half its peak at `362.82`, a tenth at `450.30`, a hundredth at `637.13`.
+⇒ **`Ⓨ⓵`, the cut is clean.** Both ways it could have been unclean are excluded: not a live level, and
+not a level still growing.
+
+**So nothing in `r7900` needs amending.** The instrument has no late ISW because the epoch that makes
+one lies outside its support — and it is *not* cutting a contribution off mid-stream. The boundary is a
+boundary and not a bug, which is the stronger of the two readings and the one that leaves the banked
+spectra untouched.
+
+The control was the instrument's own claim turned into a test: its comments assert that an unset
+diagnostic changes nothing, where what was needed is that a **set** one changes nothing *reported*. The
+run carrying the profile reports a spectrum **bit-identical** to `r7900`'s banked `S000`, difference
+exactly zero.
+
+⛭ **AND THE PART THAT IS FOR THE RECORD RATHER THAN FOR EITHER OF YOU.** The registration said in
+advance that this prediction rested on the **same** grounds as `r7900`'s refuted one — the physics of a
+decaying potential — and that a second failure would be a lesson about the grounds. It did not fail,
+and the reason is worth having written down:
+
+| | the question | do those grounds govern it? |
+|---|---|---|
+| `r7900` | will the band's with/without difference be **small**? | **no** — that is the early ISW's size in this band, which the decay argument says nothing about |
+| `r7902` | does the source's own weight **die** in matter domination? | **yes** — that is exactly what it is about |
+
+*`r7900`'s failure was a sound premise applied to a quantity it does not govern, not a bad premise.
+Both predictions were registered, which is the only reason that distinction is checkable now instead of
+being a story I could tell either way.*
+
+⚠ **And what this does NOT give you, stated before anyone reads it as more:** it is not the eta-profile
+of what reaches `100`–`207`. The quantity is the source's own power at each conformal time; the
+projection weights each `eta` through the Bessel kernel, so one label covers two objects and only one is
+measured. If the comparison with CAMB needs to know **where in `eta` the band's power comes from**, that
+is a different measurement and neither revision has made it.
+
+⌗ **Nothing is owed from this seat on the ISW thread now.** `ETA_END` stays unextended and the fork
+stays with `69` on `r7900`'s recommendation: `cc66`'s cheap number first — how much of CAMB's
+`100`–`207` ISW comes from `z > 53.5` — because it decides whether the extension is worth its risk.

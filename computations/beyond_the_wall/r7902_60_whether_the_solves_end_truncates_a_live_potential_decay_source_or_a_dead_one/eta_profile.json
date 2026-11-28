@@ -1,0 +1,25 @@
+{
+ "clean_bar": 0.01,
+ "eta_ls": 280.74516527502163,
+ "falls_below": {
+  "0.01": 637.1277617615166,
+  "0.1": 450.3022247913421,
+  "0.5": 362.8237418561704
+ },
+ "fraction_at_cut": 3.697763876553355e-05,
+ "n_nodes": 560,
+ "note": "THE CUT IS CLEAN: the source has died long before the solve ends",
+ "outcome": "\u24ce\u24f5",
+ "peak_eta": 309.90465958674554,
+ "peak_weight": 1.173123462570294e-06,
+ "spectrum_identical": true,
+ "tail_nodes": 56,
+ "tail_slope": -3.6837628946057635e-13,
+ "weight_at_cut": 4.3379335626296253e-11,
+ "whole_source_at_cut": 1.409786297115651e-09,
+ "whole_source_peak": 0.05492060776573948,
+ "window": [
+  53.949098406058,
+  1893.1202795929737
+ ]
+}
