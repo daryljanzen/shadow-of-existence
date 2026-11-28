@@ -3367,6 +3367,11 @@
     "since": "2997311f053d31f2603bace421dcacdc6a4d9532",
     "unmeasured": true
    },
+   "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46140967410",
+    "since": "cebdbbb2fdd85d95eacea6363ea4fe32235e3b20",
+    "unmeasured": true
+   },
    "receipts/L261_the_question_was_answered/A1_a_check_on_whether_a_question_is_still_open_punishes_the_answer.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46139135255",
     "since": "2997311f053d31f2603bace421dcacdc6a4d9532",
@@ -3950,6 +3955,11 @@
    "receipts/P15_CR_cosmology/P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46139135255",
     "since": "2997311f053d31f2603bace421dcacdc6a4d9532",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_shear_coefficient_derived_not_remembered.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46140967410",
+    "since": "cebdbbb2fdd85d95eacea6363ea4fe32235e3b20",
     "unmeasured": true
    },
    "receipts/P15_CR_cosmology/P15_the_signatures_tail_tilt_is_far_outside_the_skys_on_the_joint_planck_act_arm_and_an_effective_multipole_is_not_a_support.py": {
