@@ -1,0 +1,75 @@
+{
+ "band_meV": 1.0,
+ "columns": {
+  "calibrated": {
+   "convention_cost_meV": 22.73400000000001,
+   "dchi2_at_lowest_sum_vs_min": 1.1232464448612518,
+   "diff_lowest_sum_meV": 22.736696208626938,
+   "diff_minimum_meV": 0.0026962086269293195,
+   "min_at": 0.06,
+   "mine_base_lowest_sum_meV": 216.282,
+   "mine_base_minimum_meV": 193.548,
+   "monotonic_above_min": true,
+   "n_dips": 0,
+   "n_points": 11,
+   "sixty_crossing_meV": 193.54530379137307,
+   "sums": [
+    0.0,
+    0.03,
+    0.06,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.4,
+    0.5,
+    0.6
+   ],
+   "within_band_lowest_sum": false,
+   "within_band_minimum": true
+  },
+  "minimised": {
+   "convention_cost_meV": 11.699999999999989,
+   "dchi2_at_lowest_sum_vs_min": 0.43953573669159596,
+   "diff_lowest_sum_meV": 11.70130813580272,
+   "diff_minimum_meV": 0.0013081358027307033,
+   "min_at": 0.06,
+   "mine_base_lowest_sum_meV": 321.849,
+   "mine_base_minimum_meV": 310.149,
+   "monotonic_above_min": false,
+   "n_dips": 1,
+   "n_points": 11,
+   "sixty_crossing_meV": 310.14769186419727,
+   "sums": [
+    0.0,
+    0.03,
+    0.06,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.4,
+    0.5,
+    0.6
+   ],
+   "within_band_lowest_sum": false,
+   "within_band_minimum": true
+  }
+ },
+ "cross": 2.71,
+ "dchi2_of_record": 2.71,
+ "fork": {
+  "branch": "\u24c3\u24f5\u2032",
+  "limit_readable": true,
+  "min_at": 0.06
+ },
+ "lensing_provenance": {
+  "checked": 10,
+  "n_bad": 0
+ },
+ "reader": "imported from r7863 read_the_cuts_and_the_node.limit95",
+ "sixty_calibrated_meV": 193.54530379137307,
+ "source": "r7888 limit_on_runner_grid.json, 60 banked profile, read with r7863 limit95"
+}
