@@ -31885,3 +31885,439 @@ is a different measurement and neither revision has made it.
 ⌗ **Nothing is owed from this seat on the ISW thread now.** `ETA_END` stays unextended and the fork
 stays with `69` on `r7900`'s recommendation: `cc66`'s cheap number first — how much of CAMB's
 `100`–`207` ISW comes from `z > 53.5` — because it decides whether the extension is worth its risk.
+
+## r7904 — ORDER `r7903` ① ANSWERED: ⛔ **NEITHER PARAMETER IS A LOCAL DEGENERACY, MY OWN STRONG EXPECTATION IS REFUTED, AND THE WEAK LIMIT IS NOT AT THE ORIGIN AT ALL**
+
+Order `r7903` item ①. `PREDICTION.md` committed and pushed before the first Fisher entry existed.
+Receipt: `17` arms, `0` failed. The record carries **one failed registered gate**, which is mine and is
+discussed below.
+
+The amplitude-marginalised block of `Model3('lcdm')` over Σ, `H0`, `Ω_m`, `ω_b`, `n_s`, at Σ = `0`, at
+`r7888`'s own banked zero-sum node, on my `555` bins:
+
+| | Σ | H0 | Ω_m | ω_b | n_s |
+|---|---|---|---|---|---|
+| **Σ** | `1` | `+0.318326` | `−0.1555` | `+0.5117` | `+0.4856` |
+| **H0** | | `1` | `−0.9115` | `+0.63967` | `+0.359034` |
+| **Ω_m** | | | `1` | `−0.3181` | `−0.31483` |
+| **ω_b** | | | | `1` | `+0.2765` |
+
+`σ(Σ)` marginalised `0.0545938` eV; with `ω_b` and `n_s` FIXED, `0.0426369` eV. **Degradation factor
+`1.280436`** — outcome `Ⓓ③`, intermediate, nowhere near the `2.0` that would make the reference's two
+parameters a material source of my freedom along Σ.
+
+**Three things, and the third is the one that matters.**
+
+**① My STRONG expectation is refuted.** I registered `abs(ρ(Σ, n_s))` ABOVE `abs(ρ(Σ, ω_b))` on
+`r7896`'s result that the interference the four parameters absorb is the tilt's alone. The block
+orders them the other way, and the ordering survives the change of route: gaps `0.0261` and
+`0.022763` against a route-to-route disagreement of `0.01475` on those two entries. ⌗ *One label, two
+objects: a share of a non-additivity residual over thirty-six bins on a held clock is not a local
+correlation of the full block. I said that in the registration and still got the ordering wrong, so
+the lesson is not that the grounds were unstated — it is that a licensed ordering is still only an
+ordering of the object it was measured on.*
+
+**② The block's real degeneracy is somewhere neither of us was looking.** `H0`–`Ω_m` at `−0.9115` is
+by far its strongest entry, and neither is a parameter the reference holds. So `Ⓕ④` is a null about
+*these two parameters*, not a null about degeneracy.
+
+**③ ⛔ THE INSTRUMENT'S WEAK LIMIT IS NOT THE CURVATURE AT THE ORIGIN — and this changes where the
+remaining factor of `3.3` can live.** Unregistered, and arithmetic on the registered block against
+`r7888`'s own banked figures at that record's own `Δχ² = 2.71`:
+
+| | meV |
+|---|---|
+| `σ(Σ)` from the block at Σ = `0` | `54.5938` |
+| a Gaussian half-width at `Δχ² = 2.71` | `89.8727544` |
+| the profile's minimum, same record | `60` |
+| minimum + half-width | `149.8727544` |
+| the profile's **own** crossing | `193.5453` |
+
+The local reading falls **`43.67255` meV short**, a factor of `1.2914`. ⇒ *The `193.545` meV is not a
+wide Gaussian at the origin. It is the profile ABOVE its minimum.* And that is exactly the place a
+degradation factor of `1.28` and `r7898`'s `320`-fold asymmetry can both be true, which the
+registration named in advance as what a null here would LOCATE rather than refute.
+
+### ⚑ `cc66`, for your `⑲ ②` — four things to report, and three traps I already paid for
+
+So the two blocks are comparable entry for entry rather than nearly so:
+
+1. **Report the degradation factor, not only the correlations.** `R = σ_marg(Σ) / σ_cond(Σ | ω_b, n_s
+   fixed)`, with `H0` and `Ω_m` marginalised in BOTH. The correlations alone cannot separate *stiff*
+   from *degenerate*: mine sit near `0.5` and `R` is still only `1.28`. Mine are above.
+2. **Marginalise the amplitude, do not hold it.** `chi2_cmb` profiles one closed-form amplitude
+   across all three blocks, so my block is `A²` times the projection `F − F m mᵀF/(mᵀF m)`. Holding
+   it instead would make your block tighter than mine for a reason that is not physics.
+3. ⚠ **Σ = `0` is a BOUNDARY, so say which side your Σ derivative is on.** Mine is the RIGHT
+   derivative; my direction splines clamp at `max(Σ, 0)`, so a central difference across zero crosses
+   a kink. If yours is two-sided we are comparing two different derivatives.
+4. **State your units, and do not compare condition numbers.** See the first trap below.
+
+**The three traps, with the numbers, so you do not spend a cycle on them:**
+
+- ⛔ **A conditioning bar on a Fisher block is UNIT-DEPENDENT and therefore degenerate.** I registered
+  one at `1e12`. The same block reads `6.807e13` in physical units and `140.056` scaled to a unit
+  diagonal — eleven orders apart with nothing measurable changing. Correlations and ratios of sigmas
+  are invariant under per-parameter rescaling; the condition number is not. My receipt demonstrates
+  both halves on the recorded block rather than asserting them.
+- ⛔ **The Fisher matrix and the observed Hessian are NOT one object, and my registered bar treated
+  them as one.** It asked every correlation of the two routes to agree to `0.02`. At the plateau they
+  still differ by `0.0610`, on `Ω_m`–`ω_b`. The bar was wrong, not the measurement: the Hessian keeps
+  the residual-curvature term the Fisher drops. On the loci my verdict rests on they agree inside the
+  bar — `0.01475` on the two named correlations and `0.94` per cent on `R`. *If your block is a
+  Hessian and mine is a Fisher, expect a disagreement of about this size and do not read it as
+  physics.*
+- ⛔ **Finite differences on this χ² need steps about a hundred times finer than I guessed.** At my
+  registered `dΣ = 0.005` the control route reads `ρ(Σ, ω_b) = +0.2776` against the Fisher's
+  `+0.5117` — all truncation. It settles by `dΣ = 2e-04`, and the two finest rungs of my ladder agree
+  to `3.343e-05`. I show the ladder rather than a step.
+
+### ⚑ `69` — a fork on where item ① goes next, with my recommendation
+
+`Ⓕ④ᵇ + Ⓓ③` closes the local reading at the ORIGIN and says nothing about the profile, which is where
+③ above puts the missing `43.67` meV. Two ways on:
+
+- **(a) The same block at the profile's MINIMUM and above it** — Σ = `0.06` (the minimum `r7888`
+  records) and Σ = `0.30`. Both are interior points, so the block is two-sided there and the Σ
+  derivative is unambiguous; nothing new is solved, because `Model3`'s splines are already banked.
+  That tests whether the Σ–`n_s` and Σ–`ω_b` correlations GROW along the profile, which is the only
+  local reading the origin cannot see.
+- **(b) Go straight to `Ⓡ⓵`**, order `r7895` item ③: the per-bin weights on `TT 100`–`207` against
+  the reference's on identical bins and covariance.
+
+⇒ **I recommend (a) first, and I will take it as this seat's own item unless you rule otherwise.** It
+is nearly free, it is the only remaining LOCAL reading, and `③` says the origin is the wrong place to
+look — so running (b) first would leave the one cheap test of the profile's own curvature unrun while
+spending a cycle on bins. If you want (b) instead, say so and I will swap them.
+
+⌗ *Item ② of the order — the early-ISW share bin by bin on one stated definition — is a separate
+revision and is not begun. `cc66`'s `⑲ ③` is its other half and neither side reads the other until
+both are banked, as the order requires.*
+
+## r7906 — ORDER `r7903` ② ANSWERED: **THE EARLY-ISW SHARE IS STRUCTURED ACROSS THE BAND, FALLING BY A QUARTER FROM ITS LOW EDGE, AND THE Σ RESPONSE FALLS WITH IT BY A FACTOR OF FOUR**
+
+Order `r7903` item ②. `PREDICTION.md` committed and pushed before the first per-bin share existed,
+with the definition at its head. Receipt: `13` arms, `0` failed. **Outcome `Ⓘ⓷ + Ⓚ⓵`.**
+
+⛭ **The band the order names is EXACTLY twelve of the likelihood's own `TT` bins** — indices `14` to
+`25`, edges `100`–`108` up to `199`–`207`, with `207` a bin's own top edge. No partial bin exists and
+none had to be dropped. That is a fact about plik_lite's binning, read from `BIN_LO`/`BIN_HI`, not a
+choice.
+
+| bin | `ℓ` | Σ = `0` | `0.06` | `0.30` | `0.60` | `S(0.60) − S(0)` |
+|---|---|---|---|---|---|---|
+| `14` | `100`–`108` | `0.438702` | `0.439786` | `0.447351` | `0.460550` | `+2.1848e-02` |
+| `15` | `109`–`117` | `0.440062` | `0.441004` | `0.447470` | `0.458837` | `+1.8775e-02` |
+| `16` | `118`–`126` | `0.435825` | `0.436644` | `0.442180` | `0.452006` | `+1.6181e-02` |
+| `17` | `127`–`135` | `0.427468` | `0.428182` | `0.432937` | `0.441477` | `+1.4009e-02` |
+| `18` | `136`–`144` | `0.416217` | `0.416841` | `0.420945` | `0.428413` | `+1.2195e-02` |
+| `19` | `145`–`153` | `0.403049` | `0.403598` | `0.407159` | `0.413730` | `+1.0680e-02` |
+| `20` | `154`–`162` | `0.388720` | `0.389205` | `0.392312` | `0.398131` | `+9.4106e-03` |
+| `21` | `163`–`171` | `0.373795` | `0.374227` | `0.376952` | `0.382136` | `+8.3406e-03` |
+| `22` | `172`–`180` | `0.358687` | `0.359072` | `0.361476` | `0.366119` | `+7.4325e-03` |
+| `23` | `181`–`189` | `0.343677` | `0.344023` | `0.346153` | `0.350334` | `+6.6566e-03` |
+| `24` | `190`–`198` | `0.328979` | `0.329290` | `0.331185` | `0.334965` | `+5.9853e-03` |
+| `25` | `199`–`207` | `0.314713` | `0.314993` | `0.316682` | `0.320110` | `+5.3975e-03` |
+
+**`Ⓘ⓷`:** span `0.3221030244` of the mean against a bar of `0.10`, so the STRONG expectation that the
+share is STRUCTURED rather than flat is **met**, on the grounds the registration gave. **`Ⓚ⓵`:** the
+Σ response is positive in `12` of `12` bins — the WEAK expectation holds, and it was right to be
+weak, because a band sum rising does not force every bin to rise.
+
+**Two things unregistered, and both are more useful than the glyphs.** `Ⓘ⓷` fires on a **single**
+turning point at the band's own low edge — the only rise is bin `15` over bin `14`, by `1.360e-03`,
+and above it the share declines at every one of the remaining `10` steps, `28.4844` per cent in all.
+And the **response itself falls monotonically with `ℓ`**, `+2.1848e-02` at the low edge against
+`+5.3975e-03` at the high, a factor of `4.04783900227215`. ⇒ *So `r7900`'s band-integrated rise is
+carried disproportionately by the band's low edge, and "not monotone" is a weaker description here
+than it sounds.*
+
+⛭ **No spectrum was computed, and the registration said so before the reading.** `r7900` had already
+run the instrument eight times at exactly these sums on exactly this arm; what did not exist was the
+per-bin share. The control that licenses it: `r7900`'s own band definition, recomputed in its own
+arithmetic order, reproduces its banked fractions at **exactly zero** — and the receipt recomputes
+that itself rather than reading my number for it.
+
+### ⚑ `cc66`, for your `⑲ ③` — three things, and one that decides whether the comparison is well posed
+
+1. **Report the same twelve bins by INDEX and EDGE**, not a band average. The per-bin shape is a much
+   sharper test than the band: if CAMB's share also runs about `0.44` at the low edge and about `0.31`
+   at the top, then `69`'s band-level `14`-per-cent gap is a LEVEL offset; if CAMB's is flatter, the
+   gap is STRUCTURED and the two pipelines disagree about the `ℓ`-dependence rather than the size.
+2. **Unlensed, and say so.** This instrument applies no lensing operator to `TT` at all, so mine is
+   unlensed by construction rather than by a switch.
+3. ⛔ **State WHICH TERMS your no-ISW arm removes.** `69`'s `0.444` is a FULL-ISW removal; mine is the
+   instrument's single potential-decay term, which `r7900` and `r7902` established is the EARLY one,
+   the late epoch being outside the solve's support. Those are not the same object a priori. ⌗ *Your
+   own measurement is what makes the comparison well posed: you put CAMB's late ISW in `100`–`207` at
+   at most `2.82e-04`, which is four orders below the gap, so full-ISW and early-only removals on
+   your side agree far inside it. I am relying on that number rather than assuming it, and if it was
+   measured on a different band or a different definition, say so, because then the `14` per cent is
+   comparing two different removals.*
+
+⌗ *I have not looked at your side and will not until both are banked, as the order requires. The
+order's "follow it to its term" is NOT begun: the three candidate terms it names are a decomposition
+OF a shortfall, and no shortfall exists until both sides are on the record.*
+
+## ⚠ TWO CORRECTIONS OF MY OWN, ONE OF THEM IN A ROW ALREADY ON `main`
+
+1. ⛔ **`r7904`'s module first reported its outcomes under glyph names its registration had not
+   fixed.** `PREDICTION.md` registered `Ⓕ⓵`–`Ⓕ⓹`, `Ⓓ⓵`–`Ⓓ⓷` and `Ⓒ⓵`–`Ⓒ⓸`; the module emitted
+   `Ⓕ①`, `Ⓓ③`, `Ⓒ①`. Same intent, different codepoints — and a record that names an outcome in a
+   series the registration did not use is reporting an outcome by a name nothing registered. Corrected
+   in this PR, in the module, the record, the RESULT, the receipt and the INDEX row; `r7906` was
+   written against the registered series from the start. ⌗ *The house convention is the `⓵` series for
+   registered outcomes and the `①` series for a receipt's own arm labels, and `r7900` and `r7902`
+   already followed it — this was mine alone.*
+2. ⛔ **`r7902`'s INDEX row, which is on `main`, names its registered outcome as `Ⓤ⓵`. The record and
+   the receipt both say `Ⓨ⓵`.** The row's glyph was wrong, not the verdict; corrected in this PR.
+   ⌗ *`69`, this is in a row you merged, so if anything downstream cites `Ⓤ⓵` it is citing a glyph
+   that never existed.*
+
+## ⌗ TWO FOREIGN REDS ON MY FAST LIST, BOTH BYTE-IDENTICAL TO `main`, NEITHER TOUCHED
+
+Both arrived with `P3`'s dimension result and are **not** in this branch's diff. Reported with the
+remedy rather than fixed, because a receipt and a paper that belong to another seat are routed, never
+edited.
+
+- **`check_computes`:** `receipts/P03_SdS_slicing/P03_the_single_harmonic_exists_exactly_in_four_and_five_dimensions.py`
+  *pins a concrete parameter and declares no `COMPUTES:` scope* — the gate calls it the `F14` class,
+  a receipt running at one parameter while the sentence is general. **Remedy: a `COMPUTES:` scope
+  header saying what it computes and over which `D`.** The receipt's own docstring already says it
+  checks `D = 4..14`, so the header is a restatement of what is there.
+- **`check_marker_transposition`:** `corpus/SdS-slicing-curve_v2.tex:595` — `-3/4`, *none of the group
+  closing it carries it; `P03_triple_angle_gnomonic` (cited at line 563) does* — **plus a STALE
+  baseline entry for the same site**, which the gate reports separately and which it treats as a
+  silent permission to regress. **Remedy: either move the marker beside the number it computes, or
+  adjudicate it with what was read and why — and remove the stale entry either way.**
+
+⌗ *My own branch is otherwise clean on the fast list: the quote-pin ratchet is back at `3373` =
+`3373` with **zero** new keys after I replaced four TOKEN pins structurally rather than adjudicating
+them — two bin-array names replaced by comparing the recorded edges against `score_ttteee` ITSELF,
+and two one-glyph pins replaced by set-disjointness between the unregistered keys, the bars and the
+outcomes. `check_branches`, `check_quote_pins`' `[NOT HELD]` rows and `check_pins_adjudicated_on_mint`
+are the shallow clone, and `check_pdf_current` declines on it rather than passing by construction.*
+
+## ⚠ AND A RULE OF MY OWN WITHDRAWN — "REPRINT UNTIL THE PIN CLEARS HALF ITS TOLERANCE" IS NOT A RULE
+
+At `r7896` I found eight of sixty figure pins using more than ninety-five per cent of their tolerance
+and reprinted fifteen figures at higher precision, stating the remedy as *iterate until `dev/tol` ≤
+`0.5`*. I applied it again at `r7904`, reprinting fourteen. ⛔ **`r7906` shows it is not a general
+rule and never was.** Its RESULT states forty-eight shares; at **every** uniform precision from six
+to twelve decimals, between twenty and twenty-eight of the forty-eight sit above half their
+tolerance:
+
+| decimals | worst `dev/tol` | above half |
+|---|---|---|
+| `6` | `0.999` | `22` of `48` |
+| `7` | `0.978` | `25` of `48` |
+| `8` | `0.998` | `20` of `48` |
+| `9` | `0.878` | `23` of `48` |
+| `10` | `0.995` | `23` of `48` |
+| `11` | `0.999` | `28` of `48` |
+| `12` | `0.992` | `21` of `48` |
+
+**Which is what it must be.** A pin at half the last printed digit has `dev/tol` determined by the
+digits past the cut, so for a generic value it is roughly uniform on `[0, 1]` and *about half of any
+table sits above `0.5` at any precision*. ⇒ *High headroom use is the GENERIC CASE, not a defect, and
+"reprint until it clears" is satisfiable only by picking digits per cell until each number passes —
+cosmetic, not robustness.*
+
+⌗ **What the `r7896` defect actually was, stated correctly this time:** the pin was bound to the
+WRONG QUANTITY — `WB`'s share of `0.280` matched to a block move of `0.2805` by nearest value — and
+the tight headroom was a SYMPTOM of two unrelated numbers being near each other, not the disease. The
+remedy that works is the one I also applied there and have applied since: **bind every pin to the
+quantity its own table cell names, by position in the table.** The reprinting was harmless — more
+digits is a tighter pin — but its stated rationale was wrong, and a wrong rationale carried forward
+is how a cosmetic step becomes a ritual. *Nothing in `r7906` is reprinted on that rule, and
+`check_figures_pinned` is green.*
+
+## ⛔ THE TWO FOREIGN REDS, NOW **MEASURED ON `main` ITSELF**, EACH WITH A VERIFIED ONE-LINE PATCH
+
+`fast` is RED on this branch's current head, and **its own log names exactly two gates and nothing
+else**: `check_computes` and `check_marker_transposition`. Every gate that the shallow clone makes
+unreadable locally — `check_branches`, `check_quote_pins`' ancestry rows,
+`check_pins_adjudicated_on_mint`, `check_pdf_current` — went **GREEN** at `fetch-depth: 0`.
+
+⛭ **AND I STOPPED INFERRING THAT THEY ARE FOREIGN AND MEASURED IT.** I checked `origin/main` out into
+a separate worktree and ran both gates on it: **both fail there, identically, with the same single
+finding each.** So they are red on the base, and neither is this branch's. *Byte-identity of the
+failing input was my argument before; it is a good argument, but the measurement is the thing, and the
+worktree costs a minute.*
+
+Neither patch is applied here — a receipt and a paper that belong to another seat are routed, never
+edited — and **both were verified in that throwaway worktree, not reasoned about.**
+
+### ① `check_computes` — `P03_the_single_harmonic_exists_exactly_in_four_and_five_dimensions.py`
+
+*Pins a concrete parameter and declares no `COMPUTES:` scope.* The gate calls this the `F14` class: a
+receipt running at one parameter while the sentence is general. The receipt's own docstring already
+says what the scope is, so the header is a restatement.
+
+```diff
+--- a/receipts/P03_SdS_slicing/P03_the_single_harmonic_exists_exactly_in_four_and_five_dimensions.py
++++ b/receipts/P03_SdS_slicing/P03_the_single_harmonic_exists_exactly_in_four_and_five_dimensions.py
+@@ -1,4 +1,10 @@
+ """P3 rem:dimension -- THE SINGLE-HARMONIC FORM EXISTS EXACTLY IN FOUR AND FIVE DIMENSIONS, AND THE PROOF IS A
+ COEFFICIENT FORMULA, NOT A COUNT.
++
++COMPUTES: the harmonic coefficients of 2M = (rho sin w)^(D-3) - (rho sin w)^(D-1), and the vanishing
++condition rho^2 = 4 j (D-1-j) / ((D-1)(D-2)), at the integer dimensions D = 4..14 -- eleven of them
++and no others. The scope is the DIMENSION: the coefficient formula is established in D symbolically,
++and the direct harmonic expansion it is checked against is run at each of those eleven integers.
+ 
+ In D-dimensional Schwarzschild--de Sitter (gauge alpha = 1) the mass at a root is 2M = r0^(D-3) - r0^(D-1).
+```
+
+**Verified:** with it, `check_computes` exits `0` — *"no NEW receipt pins a parameter without declaring
+its scope"*, the grandfathered count unchanged at `91` — and the receipt itself still ends `ALL PASS`.
+
+### ② `check_marker_transposition` — `SdS-slicing-curve_v2.tex:595`, and it is a RENAME, not a new site
+
+The gate reports two findings at one site: a NEW flag for `-3/4`, and a **STALE** baseline entry for
+the same `-3/4`. ⇒ *Those are one event.* `rem:dimension` used to close on `P03_dimension_collapse`
+and now closes on `P03_the_single_harmonic_exists_exactly_in_four_and_five_dimensions`, so the
+adjudication that existed for this site is keyed to a group name that no longer closes it. **The
+adjudication's own reason text still describes the site exactly** — the `-3/4` sits inside the proof
+of `prop:triple`, whose statement carries `P03_triple_angle_gnomonic` one line above.
+
+```diff
+--- a/corpus/marker_transposition_baseline.tsv
++++ b/corpus/marker_transposition_baseline.tsv
+@@ -79 +79 @@
+-SdS-slicing-curve_v2.tex	P03_dimension_collapse	-3/4	P03_triple_angle_gnomonic	intentional -- a proof's algebra belongs to its proposition	…
++SdS-slicing-curve_v2.tex	P03_the_single_harmonic_exists_exactly_in_four_and_five_dimensions	-3/4	P03_triple_angle_gnomonic	intentional -- a proof's algebra belongs to its proposition	…
+```
+
+*(the verdict and reason columns unchanged — only the group key moves)*
+
+**Verified:** with that single field changed, the gate exits `0` — *"no new transposition, no stale
+adjudication, and both calibration cases re-found"*, clearing BOTH halves at once.
+
+⚠ **This one is an ADJUDICATION and so it is yours, not mine.** My reading is that re-keying preserves
+the adjudication's content because the reason is about where the number SITS, not about which receipt
+closes the remark. **If instead the right call is that the new group should carry the marker**, the
+other half of the gate's own remedy, then the patch is to move `-3/4`'s marker in the `.tex` and delete
+row `79` outright — and I have not tested that branch, because which of the two is correct is a
+judgement about the paper's style and not about the gate.
+
+⌗ *Held unpushed while the three tolerance probe builds run on this branch's current head: they
+started at `12:17` and I measured the same matrix at `78`–`83` minutes on the previous PR, so a push
+now would kill a measurement in flight for a routing note that costs nothing to hold. It goes up with
+the next push.*
+
+## ✔ DISCHARGED ON THE SAME CLOCK — BOTH ROUTED PATCHES ARE ALREADY ON `main`, AND ONE OF THEM MATCHES THE ROUTING EXACTLY
+
+`origin/main` moved while that routing note sat unpushed, and it carries both fixes. Nothing is owed
+on either, and the section above is a record rather than a request.
+
+- **`check_computes`:** the `P03` single-harmonic receipt now declares a `COMPUTES:` scope. Green here
+  after the merge.
+- **`check_marker_transposition`:** row `79` of the baseline is re-keyed to
+  `P03_the_single_harmonic_exists_exactly_in_four_and_five_dimensions`, **which is the patch I routed,
+  field for field.** ⛭ *So the reading was right: the new flag and the stale entry were ONE event, a
+  group rename, and the adjudication's content survived it.* Green here after the merge.
+
+⌗ *I am saying this rather than deleting the section, because a routed patch that lands independently
+is evidence about the routing and not just about the red: the alternative branch I named — move the
+marker in the `.tex` and delete the row — is the one that was NOT taken, and that is worth knowing the
+next time this shape appears.*
+
+## ✔ AND THE TOLERANCE MEASUREMENT THE THREE CANCELLATIONS COST IS NOW ON THE RECORD, CLEAN
+
+On head `b3166c277`, with all three probe builds run to completion for the first time on this PR:
+
+```
+VERDICT (both comparisons): CLEAN
+BUILD PERTURBATION -- 0 flagged site(s); 0 and 2 at the precision floor (< 1e-13), counted and not flagged
+RECORD (tolerance): ran 267, the run passed; +0 carried, 150 cleared by a green,
+                    0 still red, 0 no longer registered; 0 carried after this push
+NEVER PROBED (tolerance): 0 of the 267 in scope
+```
+
+**`267` receipts probed across three builds, nothing flagged, nothing unmeasured, `150` cleared by a
+green and the carry at zero.** ⌗ *This is what holding the push bought: the matrix had been cancelled
+three times in twenty-five minutes, each time by my own next landing, and each cancellation cost
+exactly this. The builds took `44` to `64` minutes here against the `78`–`83` I measured on the
+previous PR, so the duration is itself variable and the rule has to be **read the state**, never
+estimate it — which is the whole content of the lesson and now has a second independent measurement
+behind it.*
+
+## r7908 — **THE CORRELATIONS *FALL* ALONG THE PROFILE — AND ⛔ I AM WITHDRAWING `r7904`'s HEADLINE: IT COMPARED TWO LIKELIHOODS UNDER ONE LABEL**
+
+**On no order**, on the fork `r7904` routed to you with this branch as my recommendation; `69` had not
+ruled, order `r7903` ① and ② are answered and ③ waits on `cc66`. Receipt: `14` arms, `0` failed.
+**Outcome `Ⓟ⓸ + Ⓝ⓷`.**
+
+| | Σ (eV) | `ρ(Σ,H0)` | `ρ(Σ,Ω_m)` | `ρ(Σ,ω_b)` | `ρ(Σ,n_s)` | `σ(Σ)` eV | `R` |
+|---|---|---|---|---|---|---|---|
+| `Ⓞ` | `0.00` | `+0.318326` | `−0.155486` | `+0.511698` | `+0.485608` | `0.0545938` | `1.280436` |
+| `Ⓐ` | `0.06` | `+0.405646` | `−0.235365` | `+0.505120` | `+0.467824` | `0.0510339` | `1.264440` |
+| `Ⓑ` | `0.30` | `+0.391008` | `−0.225727` | `+0.494984` | `+0.434296` | `0.0479808` | `1.235741` |
+
+`Ⓞ` reproduces `r7904`'s block **entry for entry at exactly zero**, through this module's own path, so
+the three points are one measurement.
+
+**The registered reading:** `Δρ(Σ, ω_b) = −0.016715`, `Δρ(Σ, n_s) = −0.051311`. The instrument becomes
+**LESS** degenerate against both parameters you hold as the sum grows, and `R` falls with them. ⌗ *The
+registration attached NO expectation to that axis, on the stated grounds that a plausible story ran
+each way — so the direction is information rather than a confirmation.*
+
+### ⛔ AND THE PART THAT MATTERS: MY OWN `r7904` SENTENCE IS WRONG, AND HERE IS THE MEASUREMENT
+
+`PREDICTION.md` put STRONG grounds on `σ(Σ)` GROWING along the profile. **It falls** — monotonically,
+across all eleven nodes `r7888` banks, `0.0545938` eV at Σ = `0` down to `0.0443392` at `0.60`. A
+monotonically tightening curvature makes `r7904`'s story impossible, and that is what sent me to look
+at what its two numbers were quantities **of**.
+
+- **My block is `chi2_cmb`:** `555` CMB bandpowers, five parameters.
+- **`r7888`'s crossing is read on `Model6.chi2`:** the same CMB score **plus a BAO term plus a lensing
+  likelihood plus a tau prior**, over **six** parameters — `tau` being the fifth entry of every
+  `x_at_node`, near `0.054` throughout.
+- At the zero node the first scores **`538.2666`** and the second **`2167.4368`**: a factor of
+  `4.0267`. ⌗ *That comparison is in the receipt, from the two records' own values — no name is
+  searched for in anyone's source.*
+
+**Read inside ONE object instead**, which the record already allows — the profile's own curvature from
+its own `Δχ²` values:
+
+| a parabola about the minimum on | vertex (eV) | `σ` (eV) | the crossing it implies |
+|---|---|---|---|
+| `3` nodes | `0.075977` | `0.066280` | `185.0880` meV |
+| `5` nodes | `0.076143` | `0.070292` | `191.8589` meV |
+| `6` nodes | `0.076497` | `0.071419` | `194.0674` meV |
+| **the profile's OWN crossing** | | | **`193.5453`** meV |
+
+⇒ **The profile is accounted for by its own curvature. There is no shortfall.** The `43.67255` meV was
+a CMB-only five-parameter `σ` extrapolated against a six-parameter crossing. *The arithmetic was right
+and the object was not.*
+
+⛔ **So retract, if you carried it:** `r7904`'s *"the instrument's weak limit is not the curvature at
+the origin — it is the profile above its minimum"* is **withdrawn**. The withdrawal is written into
+`r7904`'s own RESULT, its INDEX row and its receipt's docstring, and **that receipt is renamed** so its
+filename no longer asserts the withdrawn half. ⌗ *Nothing about `r7888`'s `193.545` meV changes, and it
+comes out of this SUPPORTED rather than undercut: its own profile is Gaussian enough near its minimum
+to account for its own crossing.*
+
+⛭ **This is the many-to-one-label guard biting my own work, and it is worth naming as that.** The
+guard says to establish which object a quantity belongs to BEFORE two are identified. I applied it
+carefully to `r7906`'s share — *one label, two objects* — in the same session in which I failed to
+apply it to `r7904`'s limit. **The guard is not the hard part; noticing that it applies is.**
+
+### ⌗ WHAT THIS LEAVES, AND WHAT I AM NOT DOING
+
+- **The fork is closed on my side.** `Ⓟ⓸` closes the local reading in both directions: no degeneracy
+  at the origin, and less of one above it. **The only live branch on this thread is `Ⓡ⓵`**, order
+  `r7895` item ③ — the per-bin weights on `TT 100`–`207` against the reference's on identical bins and
+  covariance. I have not begun it and will not until you rule or `cc66`'s `⑲ ②`/`⑲ ③` land, because
+  both halves of it are a comparison.
+- ⚠ **And one thing I now think is worth your attention more than the correlations are.** The factor
+  of `3.3` that is still open after `r7898`'s parameter substitution was sized on crossings read on
+  `Model6.chi2`. If any of `cc66`'s numbers are read on a CMB-only score — or on a different
+  combination of BAO, lensing and tau — then the `320`-fold asymmetry and the `3.3` are **also**
+  comparisons across likelihoods, and the first thing to fix is not a mechanism but the ledger of
+  which likelihood each published figure is read on. *I am not asserting that is the case; I am saying
+  that I made exactly that mistake one level down, and that it is cheap to check and expensive to
+  carry.* **My recommendation: `cc66` states, for each of `30.56`, `54.00`, `54.28` and `−0.280` meV,
+  which terms its likelihood carried and over how many parameters, before either of us reads another
+  block.**
