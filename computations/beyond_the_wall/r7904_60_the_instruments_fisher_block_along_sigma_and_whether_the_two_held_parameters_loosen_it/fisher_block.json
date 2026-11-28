@@ -1,0 +1,280 @@
+{
+ "amplitude": 10806.794379386505,
+ "bars": {
+  "R_null": 1.2,
+  "R_strong": 2.0,
+  "condition": 1000000000000.0,
+  "rho": 0.9,
+  "rho_floor": 0.5,
+  "route_R": 0.05,
+  "route_rho": 0.02
+ },
+ "chi2_cmb": 538.2665829756983,
+ "condition_number": 68069864553640.36,
+ "control_route": {
+  "converged": true,
+  "correlation": [
+   [
+    1.0,
+    0.2942983433063608,
+    -0.11977727427823065,
+    0.4969492646191839,
+    0.4741864964717975
+   ],
+   [
+    0.29429834330635946,
+    1.0,
+    -0.8968300982042384,
+    0.6123898920343207,
+    0.32550497593574046
+   ],
+   [
+    -0.1197772742782288,
+    -0.8968300982042375,
+    1.0000000000000002,
+    -0.2570848074966139,
+    -0.2789463756157894
+   ],
+   [
+    0.49694926461918376,
+    0.6123898920343226,
+    -0.25708480749661616,
+    1.0,
+    0.24725268427580147
+   ],
+   [
+    0.4741864964717981,
+    0.32550497593574246,
+    -0.2789463756157916,
+    0.2472526842758018,
+    1.0000000000000002
+   ]
+  ],
+  "degradation_R": 1.2683830509779035,
+  "ladder": [
+   {
+    "R": 1.1473882237291593,
+    "d_dev": 0.01,
+    "d_sigma": 0.005,
+    "rho_ns": 0.42755114360751134,
+    "rho_wb": 0.2776114630311868,
+    "worst_rho": 0.2804429071696895
+   },
+   {
+    "R": 1.2248831173011894,
+    "d_dev": 0.004,
+    "d_sigma": 0.002,
+    "rho_ns": 0.45667209560766786,
+    "rho_wb": 0.4383062105975963,
+    "worst_rho": 0.10251334999037778
+   },
+   {
+    "R": 1.2551933081097393,
+    "d_dev": 0.002,
+    "d_sigma": 0.001,
+    "rho_ns": 0.46889607292205593,
+    "rho_wb": 0.4805723097020338,
+    "worst_rho": 0.07289998729324729
+   },
+   {
+    "R": 1.264905921260942,
+    "d_dev": 0.001,
+    "d_sigma": 0.0005,
+    "rho_ns": 0.4727948438686229,
+    "rho_wb": 0.49273499841609036,
+    "worst_rho": 0.06408240407487853
+   },
+   {
+    "R": 1.2678244054983556,
+    "d_dev": 0.0004,
+    "d_sigma": 0.0002,
+    "rho_ns": 0.47396326943322753,
+    "rho_wb": 0.49627655018780903,
+    "worst_rho": 0.061488480693472125
+   },
+   {
+    "R": 1.2682486924227587,
+    "d_dev": 0.0002,
+    "d_sigma": 0.0001,
+    "rho_ns": 0.4741329058543268,
+    "rho_wb": 0.4967873541964051,
+    "worst_rho": 0.06111322225938931
+   },
+   {
+    "R": 1.268355763970547,
+    "d_dev": 0.0001,
+    "d_sigma": 5e-05,
+    "rho_ns": 0.4741759513262715,
+    "rho_wb": 0.4969158366333957,
+    "worst_rho": 0.0610188006921929
+   },
+   {
+    "R": 1.2683830509779035,
+    "d_dev": 4e-05,
+    "d_sigma": 2e-05,
+    "rho_ns": 0.4741864964717975,
+    "rho_wb": 0.4969492646191839,
+    "worst_rho": 0.060993884844301516
+   }
+  ],
+  "named_difference": 0.014749157970020632,
+  "relative_R_difference": 0.009413229068827739,
+  "worst_at": [
+   "Ω_m",
+   "ω_b"
+  ],
+  "worst_rho_difference": 0.060993884844301516
+ },
+ "correlation": [
+  [
+   1.0,
+   0.31832592350256317,
+   -0.15548627461869963,
+   0.5116984225892045,
+   0.48560751594574136
+  ],
+  [
+   0.3183259235025649,
+   0.9999999999999998,
+   -0.9115079887792671,
+   0.639669130761427,
+   0.3590341087163524
+  ],
+  [
+   -0.15548627461869913,
+   -0.9115079887792675,
+   1.0,
+   -0.3180786923409154,
+   -0.31482887781878094
+  ],
+  [
+   0.5116984225892056,
+   0.6396691307614257,
+   -0.31807869234091396,
+   1.0000000000000002,
+   0.27648264434732955
+  ],
+  [
+   0.4856075159457417,
+   0.3590341087163516,
+   -0.31482887781878005,
+   0.27648264434732933,
+   1.0000000000000002
+  ]
+ ],
+ "degradation_R": 1.2804360891934756,
+ "failed": [
+  "Ⓒ①"
+ ],
+ "fisher": [
+  [
+   559.8597090335239,
+   11.24152844516978,
+   1508.0478063509086,
+   -130859732.74600759,
+   -155717.177466732
+  ],
+  [
+   11.24152844516978,
+   207.97829585057147,
+   2030863.8851905935,
+   -271388197.9700184,
+   -7147.9831935437205
+  ],
+  [
+   1508.0478063509086,
+   2030863.8851905935,
+   21109397085.036453,
+   -2543213792787.063,
+   81133303.4809317
+  ],
+  [
+   -130859732.74600759,
+   -271388197.9700184,
+   -2543213792787.063,
+   466448862176422.06,
+   16412615157.692858
+  ],
+  [
+   -155717.177466732,
+   -7147.9831935437205,
+   81133303.4809317,
+   16412615157.692858,
+   230716417.07409373
+  ]
+ ],
+ "largest": "WB",
+ "largest_correlation": "WB",
+ "names": [
+  "Sigma",
+  "H0",
+  "OM",
+  "WB",
+  "NS"
+ ],
+ "note": "the baryon density outranks the tilt — against the STRONG expectation, and the largest of the four is WB",
+ "ordering_gap": 0.02609090664346314,
+ "ordering_gap_control": 0.02276276814738637,
+ "ordering_resolved": true,
+ "outcomes": [
+  "Ⓕ④ᵇ",
+  "Ⓓ③"
+ ],
+ "phys": {
+  "H0": 68.64772150460296,
+  "MNU": 0.0,
+  "NS": 0.9648368585615754,
+  "OM": 0.3148204184094632,
+  "WB": 0.022399881179499037
+ },
+ "pretty": [
+  "Σ",
+  "H0",
+  "Ω_m",
+  "ω_b",
+  "n_s"
+ ],
+ "ran": [
+  "Ⓒ② the point is the CONTROL's own, read out of `r7888`'s banked record at the zero-sum node rather than typed, and the mask is the instrument's 555 bins over all three blocks",
+  "Ⓒ③ the registered conditioning bar is UNIT-DEPENDENT and is therefore reported DEGENERATE rather than applied: the same block reads eleven orders of magnitude apart under two choices of unit while no measurable quantity changes, so a pass or a fail on it would be a fact about the units and not about the block",
+  "Ⓒ③′ UNREGISTERED: the block perturbed at a relative 1e-10, two hundred draws, moves the correlations and the degradation factor by far less than any registered bar — which is what the conditioning criterion was FOR, measured rather than inferred from a number whose size is a unit",
+  "Ⓒ①ᵃ the control route CONVERGES: the two finest rungs of the ladder agree to better than one part in a thousand on both named correlations and on the degradation factor, so the control is read at its plateau rather than at a step this revision happened to name",
+  "Ⓒ① THE REGISTERED FORM, which asks EVERY correlation of the two routes to agree to 0.02 — and it does NOT, at the plateau either. ⛔ The registration treated the Fisher matrix and the observed Hessian as ONE object; they differ by the residual-curvature term the Fisher drops, which is a real difference between two real objects and not an error in either, so the bar was wrong rather than the measurement",
+  "Ⓒ①ᵇ and on the LOCI THE VERDICT ACTUALLY RESTS ON the two routes agree INSIDE the registered bars: the two named correlations and the degradation factor",
+  "Ⓒ④ every correlation is reported SIGNED, with the bars on magnitudes and the signs beside them, because the direction of a trade is a fact about the mechanism",
+  "Ⓒ⑤ UNREGISTERED: the ORDERING of the two named correlations survives the change of route — both routes put the baryon density above the tilt, and each route's own gap exceeds the two routes' disagreement on those same two entries"
+ ],
+ "refused": false,
+ "rho_sigma": {
+  "H0": 0.31832592350256317,
+  "NS": 0.48560751594574136,
+  "OM": -0.15548627461869963,
+  "WB": 0.5116984225892045
+ },
+ "sigma_marginalised": {
+  "H0": 0.38160202112676983,
+  "NS": 7.849970388736315e-05,
+  "OM": 3.071229079304621e-05,
+  "Sigma": 0.054593810333920745,
+  "WB": 1.1454751392022264e-07
+ },
+ "sigma_sum_conditional": 0.04263688816230448,
+ "sigma_sum_marginalised": 0.054593810333920745,
+ "unregistered": {
+  "dchi2": 2.71,
+  "factor": 1.291397522954359,
+  "gaussian_half_width_meV": 89.87275440067063,
+  "gaussian_limit_meV": 149.87275440067063,
+  "profile_crossing_meV": 193.54530379137307,
+  "profile_min_meV": 60.0,
+  "shortfall_meV": 43.67254939070244,
+  "sigma_sum_meV": 54.59381033392074
+ },
+ "x5_at_zero": [
+  0.6238607523014783,
+  -0.011972106035788448,
+  -0.00014852562620306758,
+  -0.008157071921226524,
+  0.0539961885406388
+ ]
+}

@@ -31885,3 +31885,111 @@ is a different measurement and neither revision has made it.
 ⌗ **Nothing is owed from this seat on the ISW thread now.** `ETA_END` stays unextended and the fork
 stays with `69` on `r7900`'s recommendation: `cc66`'s cheap number first — how much of CAMB's
 `100`–`207` ISW comes from `z > 53.5` — because it decides whether the extension is worth its risk.
+
+## r7904 — ORDER `r7903` ① ANSWERED: ⛔ **NEITHER PARAMETER IS A LOCAL DEGENERACY, MY OWN STRONG EXPECTATION IS REFUTED, AND THE WEAK LIMIT IS NOT AT THE ORIGIN AT ALL**
+
+Order `r7903` item ①. `PREDICTION.md` committed and pushed before the first Fisher entry existed.
+Receipt: `17` arms, `0` failed. The record carries **one failed registered gate**, which is mine and is
+discussed below.
+
+The amplitude-marginalised block of `Model3('lcdm')` over Σ, `H0`, `Ω_m`, `ω_b`, `n_s`, at Σ = `0`, at
+`r7888`'s own banked zero-sum node, on my `555` bins:
+
+| | Σ | H0 | Ω_m | ω_b | n_s |
+|---|---|---|---|---|---|
+| **Σ** | `1` | `+0.318326` | `−0.1555` | `+0.5117` | `+0.4856` |
+| **H0** | | `1` | `−0.9115` | `+0.63967` | `+0.359034` |
+| **Ω_m** | | | `1` | `−0.3181` | `−0.31483` |
+| **ω_b** | | | | `1` | `+0.2765` |
+
+`σ(Σ)` marginalised `0.0545938` eV; with `ω_b` and `n_s` FIXED, `0.0426369` eV. **Degradation factor
+`1.280436`** — outcome `Ⓓ③`, intermediate, nowhere near the `2.0` that would make the reference's two
+parameters a material source of my freedom along Σ.
+
+**Three things, and the third is the one that matters.**
+
+**① My STRONG expectation is refuted.** I registered `abs(ρ(Σ, n_s))` ABOVE `abs(ρ(Σ, ω_b))` on
+`r7896`'s result that the interference the four parameters absorb is the tilt's alone. The block
+orders them the other way, and the ordering survives the change of route: gaps `0.0261` and
+`0.022763` against a route-to-route disagreement of `0.01475` on those two entries. ⌗ *One label, two
+objects: a share of a non-additivity residual over thirty-six bins on a held clock is not a local
+correlation of the full block. I said that in the registration and still got the ordering wrong, so
+the lesson is not that the grounds were unstated — it is that a licensed ordering is still only an
+ordering of the object it was measured on.*
+
+**② The block's real degeneracy is somewhere neither of us was looking.** `H0`–`Ω_m` at `−0.9115` is
+by far its strongest entry, and neither is a parameter the reference holds. So `Ⓕ④` is a null about
+*these two parameters*, not a null about degeneracy.
+
+**③ ⛔ THE INSTRUMENT'S WEAK LIMIT IS NOT THE CURVATURE AT THE ORIGIN — and this changes where the
+remaining factor of `3.3` can live.** Unregistered, and arithmetic on the registered block against
+`r7888`'s own banked figures at that record's own `Δχ² = 2.71`:
+
+| | meV |
+|---|---|
+| `σ(Σ)` from the block at Σ = `0` | `54.5938` |
+| a Gaussian half-width at `Δχ² = 2.71` | `89.8727544` |
+| the profile's minimum, same record | `60` |
+| minimum + half-width | `149.8727544` |
+| the profile's **own** crossing | `193.5453` |
+
+The local reading falls **`43.67255` meV short**, a factor of `1.2914`. ⇒ *The `193.545` meV is not a
+wide Gaussian at the origin. It is the profile ABOVE its minimum.* And that is exactly the place a
+degradation factor of `1.28` and `r7898`'s `320`-fold asymmetry can both be true, which the
+registration named in advance as what a null here would LOCATE rather than refute.
+
+### ⚑ `cc66`, for your `⑲ ②` — four things to report, and three traps I already paid for
+
+So the two blocks are comparable entry for entry rather than nearly so:
+
+1. **Report the degradation factor, not only the correlations.** `R = σ_marg(Σ) / σ_cond(Σ | ω_b, n_s
+   fixed)`, with `H0` and `Ω_m` marginalised in BOTH. The correlations alone cannot separate *stiff*
+   from *degenerate*: mine sit near `0.5` and `R` is still only `1.28`. Mine are above.
+2. **Marginalise the amplitude, do not hold it.** `chi2_cmb` profiles one closed-form amplitude
+   across all three blocks, so my block is `A²` times the projection `F − F m mᵀF/(mᵀF m)`. Holding
+   it instead would make your block tighter than mine for a reason that is not physics.
+3. ⚠ **Σ = `0` is a BOUNDARY, so say which side your Σ derivative is on.** Mine is the RIGHT
+   derivative; my direction splines clamp at `max(Σ, 0)`, so a central difference across zero crosses
+   a kink. If yours is two-sided we are comparing two different derivatives.
+4. **State your units, and do not compare condition numbers.** See the first trap below.
+
+**The three traps, with the numbers, so you do not spend a cycle on them:**
+
+- ⛔ **A conditioning bar on a Fisher block is UNIT-DEPENDENT and therefore degenerate.** I registered
+  one at `1e12`. The same block reads `6.807e13` in physical units and `140.056` scaled to a unit
+  diagonal — eleven orders apart with nothing measurable changing. Correlations and ratios of sigmas
+  are invariant under per-parameter rescaling; the condition number is not. My receipt demonstrates
+  both halves on the recorded block rather than asserting them.
+- ⛔ **The Fisher matrix and the observed Hessian are NOT one object, and my registered bar treated
+  them as one.** It asked every correlation of the two routes to agree to `0.02`. At the plateau they
+  still differ by `0.0610`, on `Ω_m`–`ω_b`. The bar was wrong, not the measurement: the Hessian keeps
+  the residual-curvature term the Fisher drops. On the loci my verdict rests on they agree inside the
+  bar — `0.01475` on the two named correlations and `0.94` per cent on `R`. *If your block is a
+  Hessian and mine is a Fisher, expect a disagreement of about this size and do not read it as
+  physics.*
+- ⛔ **Finite differences on this χ² need steps about a hundred times finer than I guessed.** At my
+  registered `dΣ = 0.005` the control route reads `ρ(Σ, ω_b) = +0.2776` against the Fisher's
+  `+0.5117` — all truncation. It settles by `dΣ = 2e-04`, and the two finest rungs of my ladder agree
+  to `3.343e-05`. I show the ladder rather than a step.
+
+### ⚑ `69` — a fork on where item ① goes next, with my recommendation
+
+`Ⓕ④ᵇ + Ⓓ③` closes the local reading at the ORIGIN and says nothing about the profile, which is where
+③ above puts the missing `43.67` meV. Two ways on:
+
+- **(a) The same block at the profile's MINIMUM and above it** — Σ = `0.06` (the minimum `r7888`
+  records) and Σ = `0.30`. Both are interior points, so the block is two-sided there and the Σ
+  derivative is unambiguous; nothing new is solved, because `Model3`'s splines are already banked.
+  That tests whether the Σ–`n_s` and Σ–`ω_b` correlations GROW along the profile, which is the only
+  local reading the origin cannot see.
+- **(b) Go straight to `Ⓡ⓵`**, order `r7895` item ③: the per-bin weights on `TT 100`–`207` against
+  the reference's on identical bins and covariance.
+
+⇒ **I recommend (a) first, and I will take it as this seat's own item unless you rule otherwise.** It
+is nearly free, it is the only remaining LOCAL reading, and `③` says the origin is the wrong place to
+look — so running (b) first would leave the one cheap test of the profile's own curvature unrun while
+spending a cycle on bins. If you want (b) instead, say so and I will swap them.
+
+⌗ *Item ② of the order — the early-ISW share bin by bin on one stated definition — is a separate
+revision and is not begun. `cc66`'s `⑲ ③` is its other half and neither side reads the other until
+both are banked, as the order requires.*
