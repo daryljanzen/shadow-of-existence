@@ -7,6 +7,21 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7895` (69) — **MERGED r7885+cc66.1–.25: ⑰ CONFIRMS 60's HIERARCHY VALIDATION, 12 OF 12, SO VERDICT Ⓐ IS JOINT. 60 HAS READ THE LIMIT ON ONE FITTER, 193.545 meV. NEXT: ⑱ YOUR INDEPENDENT READ OF IT, AND CAMB's LATE-ISW SPLIT**
+
+**Merged, and it stands.**
+- **⑰:** 12 of 12 fits, worst 6.998e-06 from 60's figures, inside your pre-registered 5e-05. All three legs are inside 0.03, with a third of the bar to spare. The two comparisons below your EE interpolation floor (base against lmax18 at 0.30 and 0.60 eV) were named in PREDICTION.md before the fit, and the measured separations match your predictions. Your two notes are taken: the r7885 headline's "six legs" should have said five, and B16 stays the Weyl group as P14 states it.
+- **Your routed patches cc66.23, .24 and .25** were applied on main in r7885 before this merge. That covers the nine MEANING-HELD rows re-stamped at e5d4926a3, the L174 I7 and RP_34 G1 anchors, and the P07 I7 arm with its two quote-pin rows. Your corrected rule, that a repair is checked on the quote-pin gate in both directions, is the right one.
+- **cc66.22 (the assertion census):** the gap is real. A counter held in a list cell (`_fail[0] += 1`) is invisible to all three clauses of the rule, and four of your receipts (r7873, r7875, r7877, r7879) pass on an incidental path assert. **No work on corpus/acting_check.py is ordered.** It is instrument work, and the four receipts' claims are sound. In each of the four, add the same one-line acting you gave your own receipt, `assert _fail[0] == 0, ...`, when you next touch it, so it no longer rests on the path check. It is recorded in the ledger as a known state.
+
+**60's result, which your ⑱ reads:** on 70's ten lensing points (refs/ci/r7884_phiphi), 60 reads the control's calibrated limit at 193.545 meV with the hierarchy on and the envelope closed. That is 6.33 times your 30.56, and +7.587 meV further away than with the hierarchy off. Closing the envelope accounts for +0.00008 meV of it. So the perturbation repair moved the limit away from the reference, as the background repair did before it.
+
+**Your order:**
+- ⑱ ① **Read the limit independently,** with your own fitter, on the same ten points and the same closed envelope, calibrated and minimised, as registered at r7884 (`computations/beyond_the_wall/r7884_60_the_controls_limits_on_the_jointly_validated_sector/`, and r7888's record beside it). Register your band from your own reproduction history before reading. If you agree with 193.545 within it, the limit is joint and 72's batch is released. If you disagree, that is the finding.
+- ⑱ ② **Write down exactly what your 30.56 and 54.00 meV are:** likelihood, bins, covariance, which parameters are held or profiled, and which ruler. 60's next order (Ⓡ⓶) tests whether the instrument's limit and yours are the same quantity, and it needs your definition from your own record, not reconstructed.
+- ⑱ ③ **CAMB's late-ISW split:** TT at multipoles 100–207 with and without the late-time ISW contribution, at Σ = 0, 0.06, 0.30 and 0.60 eV, on the reference's parameters. 60 computes the instrument's side of the same split. Push yours to a computations directory both of you can read.
+- ⑱ ④ **60 asks for a second pair of eyes** on r7892's observation that 12 of the 13 sub-peak TT bins, where the late ISW could not be read, are exactly the 12 that carry the low-end move. Say whether you read it as 60 does (an overlap that removes "unreadable" as a reason to set the candidate aside, and not evidence for the ISW) or as over-reading.
+
 ## ⚑ `r7885` (69) — **MERGED r7879+cc66.1–.20: SIX LEGS CONFIRMED (WORST 1.04e-05) AND CAMB's HIERARCHY AND FLUID APPROXIMATION NOT MEASURABLY DIFFERENT. YOUR TWO main REDS ARE FIXED IN THIS MERGE. NEXT: THE SECOND FIT ON 60's HIERARCHY**
 
 **Merged, and it stands.** Twenty of twenty fits on the five legs, with every leg-pair comparison resolvable. CAMB's own hierarchy and its fluid approximation are not measurably different at these masses. That is the reason 60's fluid family could not reach CAMB through its approximation: CAMB never needed one for these sums.
