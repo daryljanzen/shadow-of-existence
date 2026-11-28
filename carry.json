@@ -1723,6 +1723,13 @@
     "since": "32b01e34dd2853f28cad10d94fb661d8dabbdd69",
     "unmeasured": true
    }
+  },
+  "tolerance": {
+   "receipts/L_probability/S55_the_previous_repairs_own_written_safety_argument_was_the_defect_because_a_shrinking_population_is_safe_for_a_restraint_and_fatal_for_the_non_vacuity_read_off_the_same_range.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46163716013",
+    "since": "32b01e34dd2853f28cad10d94fb661d8dabbdd69",
+    "unmeasured": true
+   }
   }
  },
  "main": {
