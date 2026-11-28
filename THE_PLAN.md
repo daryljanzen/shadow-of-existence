@@ -65,6 +65,48 @@ out. Each candidate's venue is checked against that as the survey reaches it.
 | P18 | not yet surveyed | | | |
 | ARP collaboration paper (`arp_standalone.tex`) | outside the corpus | the standalone itself | journals on intelligence, communication or cognition | in preparation |
 
+**The assessment: two orders, kept apart.** The order the work is done in and the order papers are submitted in
+are different questions. The work is ordered by lead time and dependency; the submissions are ordered as if every
+paper were finished, so that each reaches its referees after the papers it leans on are in print and citable, and
+so that the first work seen is work no one can dispute. Submissions begin once the corpus is in good shape and a
+good part of the planned work below has landed; nothing is submitted for the sake of speed.
+
+*The work order.*
+1. Theorem 1, the Carter constant's inheritance (the Kerr--Schild form of Kerr--de Sitter over de Sitter, and the
+   double Kerr--Schild form of Kerr--NUT--de Sitter), and the P3--P5 paper on the Schwarzschild--de Sitter family
+   as one slicing of de Sitter space (the general-dimension proof and the embedding statement). The theorem is the
+   longest unknown; the P3--P5 paper fixes the notation and the statements most other papers assume.
+2. Running underneath from the start: Theorem 2, the map from the cuts' deformation algebroid to the
+   hypersurface-deformation algebroid of the generated geometries (P12); the deformation invariance of P14's count
+   (the Atiyah--Singer equality on the branched leaf); and P10's check of the $S^{3}$ transverse-traceless
+   zero-point data against the literature. Long computations go to the code seat.
+3. Written whenever a long item is waiting: P17's Euclid paper, P3's Virgo turnaround note, P2's three references,
+   P4's three additions.
+4. As their gates open: P11 (Gowdy--de Sitter), P8--P9 (the symmetric solutions as cuts), P12, P10, P1, P7,
+   the cosmology paper, P14. P15, P16 and P18 are surveyed when the cosmology and collapse papers come up.
+
+*The submission order, if everything were ready.*
+1. P3's Virgo note (RNAAS) and P17's Euclid paper (Am.\ J.\ Phys.): the hyperboloid, its rulings and the
+   turnaround radius in print.
+2. P11, Gowdy--de Sitter (Class.\ Quantum Grav.): no programme premise; standing with the relativity referees.
+3. P2, the circle (Class.\ Quantum Grav.).
+4. P3--P5, the family as one slicing (J.\ Math.\ Phys.): the structure every later paper assumes by reference.
+5. P6's philosophy of science and the Eddington paper (P6's 1920 and 1933 note with P17's 1923 argument): other
+   communities and referees, so free to go in parallel from here.
+6. P4, the redshift-isotropy floor (Phys.\ Rev.\ D): the empirical case for the cosmic foliation, out before the
+   papers whose premise it supports.
+7. P8--P9, the cuts, carrying Theorem 1 (J.\ Math.\ Phys.\ or Class.\ Quantum Grav.).
+8. P12, the algebroid (Lett.\ Math.\ Phys.\ or J.\ Geom.\ Phys.), assuming 7.
+9. P10, the graviton tower (Class.\ Quantum Grav.).
+10. P1, the metric singularity (Phys.\ Rev.\ D or Found.\ Phys.), its premise met with P4 in print.
+11. P7, collapse continuing as a universe, with P1, P3--P5 and P4 citable.
+12. The cosmology paper, with P3--P5, P8 and P7 citable.
+13. P14, chiral matter, with P13's no-go as its opening section.
+14. The philosophy-of-physics paper (P10, P13 and P17's thesis) and P1's formalisation paper.
+
+Papers that overlap in content (P3--P5 with P8--P9; P7 with the cosmology paper) are never under review at the
+same time. P1's standalone source is needed from Daryl by step 10.
+
 
 ## ⛭⛭⛭ THE REPRODUCIBILITY LAYER'S COMPLETION CRITERION — *what FINISHED looks like, as a finite list (opened r7013, on Daryl's instruction that this work converge rather than run)*
 
