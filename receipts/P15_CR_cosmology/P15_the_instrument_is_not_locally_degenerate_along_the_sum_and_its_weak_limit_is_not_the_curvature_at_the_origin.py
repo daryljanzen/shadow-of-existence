@@ -11,9 +11,9 @@ is re-derived HERE by inverting the recorded block, so the reported correlations
 different object from the reported block; and the unit-invariance the record claims is DEMONSTRATED
 here by rescaling that block and re-inverting, not asserted.
 ** IT PINS AS RESULTS: ** `ρ(Σ, ω_b)` = `+0.5117` and `ρ(Σ, n_s)` = `+0.4856`, so NEITHER clears the
-registered `0.90` and the outcome is `Ⓕ④` in its sub-case `b`; the block's strongest entry is `H0`–`Ω_m` at `−0.9115`,
+registered `0.90` and the outcome is `Ⓕ⓸` in its sub-case `b`; the block's strongest entry is `H0`–`Ω_m` at `−0.9115`,
 which is NOT one of the two parameters the reference holds; and fixing `ω_b` and `n_s` tightens
-`σ(Σ)` from `0.0545938` to `0.0426369` eV, a degradation factor of `1.2804`, outcome `Ⓓ③`.
+`σ(Σ)` from `0.0545938` to `0.0426369` eV, a degradation factor of `1.2804`, outcome `Ⓓ⓷`.
 ⇒ ** SO THE REGISTERED STRONG EXPECTATION IS REFUTED. ** It put `abs(ρ(Σ, n_s))` ABOVE
 `abs(ρ(Σ, ω_b))` on `r7896`'s finding that the interference the four parameters absorb is the tilt's
 alone. The block orders them the other way, the ordering survives the change of route, and the gap
@@ -132,19 +132,19 @@ check('Ⓐ④ the point is the CONTROL\'s own and the mask is the instrument\'s:
 print('\nⒷ  THE VERDICT, AND THE BARS IT WAS READ AGAINST')
 
 _rho = D['rho_sigma']
-check('Ⓑ① `Ⓕ④ᵇ` fires on the registered bars and could not have fired on a reshaped one: NEITHER '
+check('Ⓑ① `Ⓕ⓸ᵇ` fires on the registered bars and could not have fired on a reshaped one: NEITHER '
       'named correlation reaches `0.90`, and at least one sits at or above the `0.50` floor that '
       'separates the two sub-cases',
-      'Ⓕ④ᵇ' in D['outcomes']
+      'Ⓕ⓸ᵇ' in D['outcomes']
       and abs(_rho['NS']) < D['bars']['rho'] and abs(_rho['WB']) < D['bars']['rho']
       and max(abs(_rho['NS']), abs(_rho['WB'])) >= D['bars']['rho_floor'],
       'omega_b %+.4f, n_s %+.4f, against a bar of %.2f and a floor of %.2f'
       % (_rho['WB'], _rho['NS'], D['bars']['rho'], D['bars']['rho_floor']))
 
-check('Ⓑ② `Ⓓ③` fires on the degradation factor, and it is the RATIO the registration defined — '
+check('Ⓑ② `Ⓓ⓷` fires on the degradation factor, and it is the RATIO the registration defined — '
       'σ(Σ) marginalised over all four against σ(Σ) with the reference\'s two FIXED, `H0` and `Ω_m` '
       'marginalised in both — recomputed here from the recorded block',
-      'Ⓓ③' in D['outcomes']
+      'Ⓓ⓷' in D['outcomes']
       and D['bars']['R_null'] <= D['degradation_R'] < D['bars']['R_strong']
       and abs(float(np.sqrt(np.linalg.inv(FISH)[0, 0]))
               / float(np.sqrt(np.linalg.inv(FISH[np.ix_([0, 1, 2], [0, 1, 2])])[0, 0]))
@@ -229,7 +229,7 @@ check('Ⓔ③ the record carries ONE FAILED REGISTERED GATE and carries it as fa
       'two-route bar, which asked every correlation to agree to `0.02` and does not hold at the '
       'plateau either. ⌗ *This arm gates that the failure is RECORDED and LOCATED, not that it '
       'passed — the registration treated two different objects as one*',
-      D['failed'] == ['Ⓒ①'] and D['control_route']['worst_rho_difference'] > D['bars']['route_rho']
+      D['failed'] == ['Ⓒ⓵'] and D['control_route']['worst_rho_difference'] > D['bars']['route_rho']
       and D['control_route']['worst_at'] == ['Ω_m', 'ω_b'],
       'failed %s; worst %.4f against %.2f, on (%s, %s)'
       % (D['failed'], D['control_route']['worst_rho_difference'], D['bars']['route_rho'],
@@ -259,10 +259,13 @@ check('Ⓖ① the local reading of the limit is arithmetic on the registered blo
       'half-width %.4f, minimum + half-width %.4f, crossing %.4f, short by %.4f meV'
       % (_half, _gl, U['profile_crossing_meV'], U['shortfall_meV']))
 
-check('Ⓖ② and it is reported as UNREGISTERED in the record itself, under its own key, so a reader '
-      'cannot mistake it for one of the registered outcomes',
-      'unregistered' in D and 'Ⓤ' in SRC and U['dchi2'] == L['dchi2'],
-      'recorded under `unregistered`, at the other record\'s own dchi2 of %.2f' % U['dchi2'])
+check('Ⓖ② and it is reported as UNREGISTERED in the record itself, under its own key, carrying the '
+      'OTHER record\'s threshold rather than one of its own — and none of its keys is a registered '
+      'outcome or a registered bar, so a reader cannot mistake it for either',
+      'unregistered' in D and U['dchi2'] == L['dchi2']
+      and not (set(U) & set(D['bars'])) and not (set(U) & set(D['outcomes'])),
+      'recorded under its own key at the other record\'s own dchi2 of %.2f, and disjoint from the '
+      'bars and the outcomes' % U['dchi2'])
 
 # ---------------------------------------------------------------------------------------------- Ⓗ
 print('\nⒽ  THE FIGURES, EACH READ INSIDE ITS OWN COMPARISON')

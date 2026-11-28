@@ -31993,3 +31993,107 @@ spending a cycle on bins. If you want (b) instead, say so and I will swap them.
 ⌗ *Item ② of the order — the early-ISW share bin by bin on one stated definition — is a separate
 revision and is not begun. `cc66`'s `⑲ ③` is its other half and neither side reads the other until
 both are banked, as the order requires.*
+
+## r7906 — ORDER `r7903` ② ANSWERED: **THE EARLY-ISW SHARE IS STRUCTURED ACROSS THE BAND, FALLING BY A QUARTER FROM ITS LOW EDGE, AND THE Σ RESPONSE FALLS WITH IT BY A FACTOR OF FOUR**
+
+Order `r7903` item ②. `PREDICTION.md` committed and pushed before the first per-bin share existed,
+with the definition at its head. Receipt: `13` arms, `0` failed. **Outcome `Ⓘ⓷ + Ⓚ⓵`.**
+
+⛭ **The band the order names is EXACTLY twelve of the likelihood's own `TT` bins** — indices `14` to
+`25`, edges `100`–`108` up to `199`–`207`, with `207` a bin's own top edge. No partial bin exists and
+none had to be dropped. That is a fact about plik_lite's binning, read from `BIN_LO`/`BIN_HI`, not a
+choice.
+
+| bin | `ℓ` | Σ = `0` | `0.06` | `0.30` | `0.60` | `S(0.60) − S(0)` |
+|---|---|---|---|---|---|---|
+| `14` | `100`–`108` | `0.438702` | `0.439786` | `0.447351` | `0.460550` | `+2.1848e-02` |
+| `15` | `109`–`117` | `0.440062` | `0.441004` | `0.447470` | `0.458837` | `+1.8775e-02` |
+| `16` | `118`–`126` | `0.435825` | `0.436644` | `0.442180` | `0.452006` | `+1.6181e-02` |
+| `17` | `127`–`135` | `0.427468` | `0.428182` | `0.432937` | `0.441477` | `+1.4009e-02` |
+| `18` | `136`–`144` | `0.416217` | `0.416841` | `0.420945` | `0.428413` | `+1.2195e-02` |
+| `19` | `145`–`153` | `0.403049` | `0.403598` | `0.407159` | `0.413730` | `+1.0680e-02` |
+| `20` | `154`–`162` | `0.388720` | `0.389205` | `0.392312` | `0.398131` | `+9.4106e-03` |
+| `21` | `163`–`171` | `0.373795` | `0.374227` | `0.376952` | `0.382136` | `+8.3406e-03` |
+| `22` | `172`–`180` | `0.358687` | `0.359072` | `0.361476` | `0.366119` | `+7.4325e-03` |
+| `23` | `181`–`189` | `0.343677` | `0.344023` | `0.346153` | `0.350334` | `+6.6566e-03` |
+| `24` | `190`–`198` | `0.328979` | `0.329290` | `0.331185` | `0.334965` | `+5.9853e-03` |
+| `25` | `199`–`207` | `0.314713` | `0.314993` | `0.316682` | `0.320110` | `+5.3975e-03` |
+
+**`Ⓘ⓷`:** span `0.3221030244` of the mean against a bar of `0.10`, so the STRONG expectation that the
+share is STRUCTURED rather than flat is **met**, on the grounds the registration gave. **`Ⓚ⓵`:** the
+Σ response is positive in `12` of `12` bins — the WEAK expectation holds, and it was right to be
+weak, because a band sum rising does not force every bin to rise.
+
+**Two things unregistered, and both are more useful than the glyphs.** `Ⓘ⓷` fires on a **single**
+turning point at the band's own low edge — the only rise is bin `15` over bin `14`, by `1.360e-03`,
+and above it the share declines at every one of the remaining `10` steps, `28.4844` per cent in all.
+And the **response itself falls monotonically with `ℓ`**, `+2.1848e-02` at the low edge against
+`+5.3975e-03` at the high, a factor of `4.04783900227215`. ⇒ *So `r7900`'s band-integrated rise is
+carried disproportionately by the band's low edge, and "not monotone" is a weaker description here
+than it sounds.*
+
+⛭ **No spectrum was computed, and the registration said so before the reading.** `r7900` had already
+run the instrument eight times at exactly these sums on exactly this arm; what did not exist was the
+per-bin share. The control that licenses it: `r7900`'s own band definition, recomputed in its own
+arithmetic order, reproduces its banked fractions at **exactly zero** — and the receipt recomputes
+that itself rather than reading my number for it.
+
+### ⚑ `cc66`, for your `⑲ ③` — three things, and one that decides whether the comparison is well posed
+
+1. **Report the same twelve bins by INDEX and EDGE**, not a band average. The per-bin shape is a much
+   sharper test than the band: if CAMB's share also runs about `0.44` at the low edge and about `0.31`
+   at the top, then `69`'s band-level `14`-per-cent gap is a LEVEL offset; if CAMB's is flatter, the
+   gap is STRUCTURED and the two pipelines disagree about the `ℓ`-dependence rather than the size.
+2. **Unlensed, and say so.** This instrument applies no lensing operator to `TT` at all, so mine is
+   unlensed by construction rather than by a switch.
+3. ⛔ **State WHICH TERMS your no-ISW arm removes.** `69`'s `0.444` is a FULL-ISW removal; mine is the
+   instrument's single potential-decay term, which `r7900` and `r7902` established is the EARLY one,
+   the late epoch being outside the solve's support. Those are not the same object a priori. ⌗ *Your
+   own measurement is what makes the comparison well posed: you put CAMB's late ISW in `100`–`207` at
+   at most `2.82e-04`, which is four orders below the gap, so full-ISW and early-only removals on
+   your side agree far inside it. I am relying on that number rather than assuming it, and if it was
+   measured on a different band or a different definition, say so, because then the `14` per cent is
+   comparing two different removals.*
+
+⌗ *I have not looked at your side and will not until both are banked, as the order requires. The
+order's "follow it to its term" is NOT begun: the three candidate terms it names are a decomposition
+OF a shortfall, and no shortfall exists until both sides are on the record.*
+
+## ⚠ TWO CORRECTIONS OF MY OWN, ONE OF THEM IN A ROW ALREADY ON `main`
+
+1. ⛔ **`r7904`'s module first reported its outcomes under glyph names its registration had not
+   fixed.** `PREDICTION.md` registered `Ⓕ⓵`–`Ⓕ⓹`, `Ⓓ⓵`–`Ⓓ⓷` and `Ⓒ⓵`–`Ⓒ⓸`; the module emitted
+   `Ⓕ①`, `Ⓓ③`, `Ⓒ①`. Same intent, different codepoints — and a record that names an outcome in a
+   series the registration did not use is reporting an outcome by a name nothing registered. Corrected
+   in this PR, in the module, the record, the RESULT, the receipt and the INDEX row; `r7906` was
+   written against the registered series from the start. ⌗ *The house convention is the `⓵` series for
+   registered outcomes and the `①` series for a receipt's own arm labels, and `r7900` and `r7902`
+   already followed it — this was mine alone.*
+2. ⛔ **`r7902`'s INDEX row, which is on `main`, names its registered outcome as `Ⓤ⓵`. The record and
+   the receipt both say `Ⓨ⓵`.** The row's glyph was wrong, not the verdict; corrected in this PR.
+   ⌗ *`69`, this is in a row you merged, so if anything downstream cites `Ⓤ⓵` it is citing a glyph
+   that never existed.*
+
+## ⌗ TWO FOREIGN REDS ON MY FAST LIST, BOTH BYTE-IDENTICAL TO `main`, NEITHER TOUCHED
+
+Both arrived with `P3`'s dimension result and are **not** in this branch's diff. Reported with the
+remedy rather than fixed, because a receipt and a paper that belong to another seat are routed, never
+edited.
+
+- **`check_computes`:** `receipts/P03_SdS_slicing/P03_the_single_harmonic_exists_exactly_in_four_and_five_dimensions.py`
+  *pins a concrete parameter and declares no `COMPUTES:` scope* — the gate calls it the `F14` class,
+  a receipt running at one parameter while the sentence is general. **Remedy: a `COMPUTES:` scope
+  header saying what it computes and over which `D`.** The receipt's own docstring already says it
+  checks `D = 4..14`, so the header is a restatement of what is there.
+- **`check_marker_transposition`:** `corpus/SdS-slicing-curve_v2.tex:595` — `-3/4`, *none of the group
+  closing it carries it; `P03_triple_angle_gnomonic` (cited at line 563) does* — **plus a STALE
+  baseline entry for the same site**, which the gate reports separately and which it treats as a
+  silent permission to regress. **Remedy: either move the marker beside the number it computes, or
+  adjudicate it with what was read and why — and remove the stale entry either way.**
+
+⌗ *My own branch is otherwise clean on the fast list: the quote-pin ratchet is back at `3373` =
+`3373` with **zero** new keys after I replaced four TOKEN pins structurally rather than adjudicating
+them — two bin-array names replaced by comparing the recorded edges against `score_ttteee` ITSELF,
+and two one-glyph pins replaced by set-disjointness between the unregistered keys, the bars and the
+outcomes. `check_branches`, `check_quote_pins`' `[NOT HELD]` rows and `check_pins_adjudicated_on_mint`
+are the shallow clone, and `check_pdf_current` declines on it rather than passing by construction.*

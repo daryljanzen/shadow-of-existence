@@ -84,7 +84,7 @@ def main():
     x4 = x5[:4]
     chi2 = float(mod.chi2_cmb(x4, 0.0))
     phys = mod.phys(x4, 0.0)
-    gate('Ⓒ② the point is the CONTROL\'s own, read out of `r7888`\'s banked record at the zero-sum '
+    gate('Ⓒ⓶ the point is the CONTROL\'s own, read out of `r7888`\'s banked record at the zero-sum '
          'node rather than typed, and the mask is the instrument\'s 555 bins over all three blocks',
          mod.nb == 555 and mod.blocks == (0, 1, 2) and len(x5) == 5,
          'nb %d, blocks %s, chi2_cmb %.4f, H0 %.5f, OM %.6f, WB %.7f, NS %.6f'
@@ -127,7 +127,7 @@ def main():
     cond = float(np.linalg.cond(fisher))
     _d = np.sqrt(np.diag(fisher))
     cond_inv = float(np.linalg.cond(fisher / np.outer(_d, _d)))
-    gate('Ⓒ③ the registered conditioning bar is UNIT-DEPENDENT and is therefore reported DEGENERATE '
+    gate('Ⓒ⓷ the registered conditioning bar is UNIT-DEPENDENT and is therefore reported DEGENERATE '
          'rather than applied: the same block reads eleven orders of magnitude apart under two '
          'choices of unit while no measurable quantity changes, so a pass or a fail on it would be a '
          'fact about the units and not about the block',
@@ -148,7 +148,7 @@ def main():
         _J = 0.5 * (_J + _J.T)
         _wr = max(_wr, float(np.max(np.abs(corr(np.linalg.inv(_J)) - _R0))))
         _wR = max(_wR, abs(degradation(_J)[2] - _r0) / _r0)
-    gate('Ⓒ③′ UNREGISTERED: the block perturbed at a relative 1e-10, two hundred draws, moves the '
+    gate('Ⓒ⓷′ UNREGISTERED: the block perturbed at a relative 1e-10, two hundred draws, moves the '
          'correlations and the degradation factor by far less than any registered bar — which is '
          'what the conditioning criterion was FOR, measured rather than inferred from a number '
          'whose size is a unit',
@@ -160,7 +160,7 @@ def main():
     R = corr(cov)
     sig = np.sqrt(np.diag(cov))
 
-    print('\nⒻ①  THE BLOCK, AND THE CORRELATIONS READ FROM ITS INVERSE')
+    print('\nⒻ⓵  THE BLOCK, AND THE CORRELATIONS READ FROM ITS INVERSE')
     print('    marginalised 1-sigma:  ' + '   '.join(
         '%s %.6g' % (p, s) for p, s in zip(PRETTY, sig)))
     print('\n    correlation matrix (signed)')
@@ -173,7 +173,7 @@ def main():
     ns, wb = rho['NS'], rho['WB']
     marg, condsig, ratio = degradation(fisher)
 
-    print('\nⒹ①  THE DEGRADATION FACTOR along Σ')
+    print('\nⒹ⓵  THE DEGRADATION FACTOR along Σ')
     print('    sigma(Sigma) marginalised over all four      %.6g eV' % marg)
     print('    sigma(Sigma) with omega_b and n_s FIXED      %.6g eV' % condsig)
     print('    R = %.6f   (bars: >= %.1f materially, < %.1f not)' % (ratio, R_STRONG, R_NULL))
@@ -213,7 +213,7 @@ def main():
             H[0, a + 1] = H[a + 1, 0] = (fwd(dx) - fwd(-dx)) / (2 * dx) / STEP[a]
         return 0.5 * (H + H.T)
 
-    print('\nⒸ①  THE CONTROL ROUTE ON A STEP LADDER — the Hessian of half the chi-square')
+    print('\nⒸ⓵  THE CONTROL ROUTE ON A STEP LADDER — the Hessian of half the chi-square')
     print('     dSigma     ddev        rho(S,w_b)   rho(S,n_s)        R     worst drho vs Fisher')
     ladder = []
     for ds in LADDER:
@@ -230,7 +230,7 @@ def main():
     settled = (abs(fine['rho_wb'] - prev['rho_wb']) < 1e-03
                and abs(fine['rho_ns'] - prev['rho_ns']) < 1e-03
                and abs(fine['R'] - prev['R']) / fine['R'] < 1e-03)
-    gate('Ⓒ①ᵃ the control route CONVERGES: the two finest rungs of the ladder agree to better than '
+    gate('Ⓒ⓵ᵃ the control route CONVERGES: the two finest rungs of the ladder agree to better than '
          'one part in a thousand on both named correlations and on the degradation factor, so the '
          'control is read at its plateau rather than at a step this revision happened to name',
          settled, 'finest rho(S,w_b) %+.6f, rho(S,n_s) %+.6f, R %.6f; the rung before it moves them '
@@ -246,7 +246,7 @@ def main():
     where = np.unravel_index(int(np.argmax(np.abs(R_h - R))), (5, 5))
     named = max(abs(R_h[0, 3] - R[0, 3]), abs(R_h[0, 4] - R[0, 4]))
     rel_R = abs(ratio_h - ratio) / ratio
-    gate('Ⓒ① THE REGISTERED FORM, which asks EVERY correlation of the two routes to agree to 0.02 '
+    gate('Ⓒ⓵ THE REGISTERED FORM, which asks EVERY correlation of the two routes to agree to 0.02 '
          '— and it does NOT, at the plateau either. ⛔ The registration treated the Fisher matrix '
          'and the observed Hessian as ONE object; they differ by the residual-curvature term the '
          'Fisher drops, which is a real difference between two real objects and not an error in '
@@ -254,7 +254,7 @@ def main():
          worst <= ROUTE_RHO_TOL,
          'worst %.4f against %.2f, and it sits on (%s, %s) — the pair whose correlation is %+.4f'
          % (worst, ROUTE_RHO_TOL, PRETTY[where[0]], PRETTY[where[1]], R[where]))
-    gate('Ⓒ①ᵇ and on the LOCI THE VERDICT ACTUALLY RESTS ON the two routes agree INSIDE the '
+    gate('Ⓒ⓵ᵇ and on the LOCI THE VERDICT ACTUALLY RESTS ON the two routes agree INSIDE the '
          'registered bars: the two named correlations and the degradation factor',
          named <= ROUTE_RHO_TOL and rel_R <= ROUTE_R_TOL,
          'named correlations differ by at most %.4f against %.2f; R %.6f against %.6f, %.2f per '
@@ -284,7 +284,7 @@ def main():
     print('        global asymmetry can both be true, as the registration said in advance.')
 
     # ── Ⓒ⓸ and the outcome ──────────────────────────────────────────────────────────────────────
-    gate('Ⓒ④ every correlation is reported SIGNED, with the bars on magnitudes and the signs beside '
+    gate('Ⓒ⓸ every correlation is reported SIGNED, with the bars on magnitudes and the signs beside '
          'them, because the direction of a trade is a fact about the mechanism',
          True, 'rho(Sigma, n_s) %+.4f, rho(Sigma, omega_b) %+.4f, rho(Sigma, H0) %+.4f, '
                'rho(Sigma, Omega_m) %+.4f' % (ns, wb, rho['H0'], rho['OM']))
@@ -297,7 +297,7 @@ def main():
     #:   WORST disagreement anywhere in the matrix — which is a disagreement on a pair the ordering
     #:   does not involve. An identification has to be checked on the loci the object itself
     #:   distinguishes, so it is checked on those two entries.
-    gate('Ⓒ⑤ UNREGISTERED: the ORDERING of the two named correlations survives the change of route '
+    gate('Ⓒ⓹ UNREGISTERED: the ORDERING of the two named correlations survives the change of route '
          '— both routes put the baryon density above the tilt, and each route\'s own gap exceeds the '
          'two routes\' disagreement on those same two entries',
          same_order and gap > named and gap_h > named,
@@ -309,7 +309,7 @@ def main():
     out = verdict(ns, wb, rho, biggest, ratio)
     out['ordering_gap'] = float(gap)
     out['ordering_gap_control'] = float(gap_h)
-    #: resolved on the LOCI THE ORDERING INVOLVES, which is the repair stated in Ⓒ⑤ — never against
+    #: resolved on the LOCI THE ORDERING INVOLVES, which is the repair stated in Ⓒ⓹ — never against
     #: the matrix-wide disagreement, which is about a pair the ordering does not involve.
     out['ordering_resolved'] = bool(same_order and gap > named and gap_h > named)
     print('\n  OUTCOME  %s' % ' + '.join(out['outcomes']))
@@ -343,18 +343,18 @@ def verdict(ns, wb, rho, biggest, ratio):
     big = (abs(ns) >= RHO_BAR, abs(wb) >= RHO_BAR)
     largest_is = max(rho, key=lambda k: abs(rho[k]))
     if big[0] and big[1]:
-        outs.append('Ⓕ③')
+        outs.append('Ⓕ⓷')
     elif big[0] and largest_is == 'NS':
-        outs.append('Ⓕ①')
+        outs.append('Ⓕ⓵')
     elif big[1] and largest_is == 'WB':
-        outs.append('Ⓕ②')
+        outs.append('Ⓕ⓶')
     elif not big[0] and not big[1]:
-        outs.append('Ⓕ④ᵃ' if (abs(ns) < RHO_FLOOR and abs(wb) < RHO_FLOOR) else 'Ⓕ④ᵇ')
+        outs.append('Ⓕ⓸ᵃ' if (abs(ns) < RHO_FLOOR and abs(wb) < RHO_FLOOR) else 'Ⓕ⓸ᵇ')
     else:
-        outs.append('Ⓕ④ᵇ')
+        outs.append('Ⓕ⓸ᵇ')
     if largest_is in ('H0', 'OM'):
-        outs.append('Ⓕ⑤')
-    outs.append('Ⓓ①' if ratio >= R_STRONG else ('Ⓓ②' if ratio < R_NULL else 'Ⓓ③'))
+        outs.append('Ⓕ⓹')
+    outs.append('Ⓓ⓵' if ratio >= R_STRONG else ('Ⓓ⓶' if ratio < R_NULL else 'Ⓓ⓷'))
     return dict(outcomes=outs, largest_correlation=largest_is,
                 note=('the tilt outranks the baryon density'
                       if abs(ns) > abs(wb) else

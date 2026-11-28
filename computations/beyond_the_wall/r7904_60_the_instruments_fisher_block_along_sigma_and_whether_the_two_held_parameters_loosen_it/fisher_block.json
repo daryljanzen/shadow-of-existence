@@ -164,7 +164,7 @@
  ],
  "degradation_R": 1.2804360891934756,
  "failed": [
-  "Ⓒ①"
+  "Ⓒ⓵"
  ],
  "fisher": [
   [
@@ -217,8 +217,8 @@
  "ordering_gap_control": 0.02276276814738637,
  "ordering_resolved": true,
  "outcomes": [
-  "Ⓕ④ᵇ",
-  "Ⓓ③"
+  "Ⓕ⓸ᵇ",
+  "Ⓓ⓷"
  ],
  "phys": {
   "H0": 68.64772150460296,
@@ -235,14 +235,14 @@
   "n_s"
  ],
  "ran": [
-  "Ⓒ② the point is the CONTROL's own, read out of `r7888`'s banked record at the zero-sum node rather than typed, and the mask is the instrument's 555 bins over all three blocks",
-  "Ⓒ③ the registered conditioning bar is UNIT-DEPENDENT and is therefore reported DEGENERATE rather than applied: the same block reads eleven orders of magnitude apart under two choices of unit while no measurable quantity changes, so a pass or a fail on it would be a fact about the units and not about the block",
-  "Ⓒ③′ UNREGISTERED: the block perturbed at a relative 1e-10, two hundred draws, moves the correlations and the degradation factor by far less than any registered bar — which is what the conditioning criterion was FOR, measured rather than inferred from a number whose size is a unit",
-  "Ⓒ①ᵃ the control route CONVERGES: the two finest rungs of the ladder agree to better than one part in a thousand on both named correlations and on the degradation factor, so the control is read at its plateau rather than at a step this revision happened to name",
-  "Ⓒ① THE REGISTERED FORM, which asks EVERY correlation of the two routes to agree to 0.02 — and it does NOT, at the plateau either. ⛔ The registration treated the Fisher matrix and the observed Hessian as ONE object; they differ by the residual-curvature term the Fisher drops, which is a real difference between two real objects and not an error in either, so the bar was wrong rather than the measurement",
-  "Ⓒ①ᵇ and on the LOCI THE VERDICT ACTUALLY RESTS ON the two routes agree INSIDE the registered bars: the two named correlations and the degradation factor",
-  "Ⓒ④ every correlation is reported SIGNED, with the bars on magnitudes and the signs beside them, because the direction of a trade is a fact about the mechanism",
-  "Ⓒ⑤ UNREGISTERED: the ORDERING of the two named correlations survives the change of route — both routes put the baryon density above the tilt, and each route's own gap exceeds the two routes' disagreement on those same two entries"
+  "Ⓒ⓶ the point is the CONTROL's own, read out of `r7888`'s banked record at the zero-sum node rather than typed, and the mask is the instrument's 555 bins over all three blocks",
+  "Ⓒ⓷ the registered conditioning bar is UNIT-DEPENDENT and is therefore reported DEGENERATE rather than applied: the same block reads eleven orders of magnitude apart under two choices of unit while no measurable quantity changes, so a pass or a fail on it would be a fact about the units and not about the block",
+  "Ⓒ⓷′ UNREGISTERED: the block perturbed at a relative 1e-10, two hundred draws, moves the correlations and the degradation factor by far less than any registered bar — which is what the conditioning criterion was FOR, measured rather than inferred from a number whose size is a unit",
+  "Ⓒ⓵ᵃ the control route CONVERGES: the two finest rungs of the ladder agree to better than one part in a thousand on both named correlations and on the degradation factor, so the control is read at its plateau rather than at a step this revision happened to name",
+  "Ⓒ⓵ THE REGISTERED FORM, which asks EVERY correlation of the two routes to agree to 0.02 — and it does NOT, at the plateau either. ⛔ The registration treated the Fisher matrix and the observed Hessian as ONE object; they differ by the residual-curvature term the Fisher drops, which is a real difference between two real objects and not an error in either, so the bar was wrong rather than the measurement",
+  "Ⓒ⓵ᵇ and on the LOCI THE VERDICT ACTUALLY RESTS ON the two routes agree INSIDE the registered bars: the two named correlations and the degradation factor",
+  "Ⓒ⓸ every correlation is reported SIGNED, with the bars on magnitudes and the signs beside them, because the direction of a trade is a fact about the mechanism",
+  "Ⓒ⓹ UNREGISTERED: the ORDERING of the two named correlations survives the change of route — both routes put the baryon density above the tilt, and each route's own gap exceeds the two routes' disagreement on those same two entries"
  ],
  "refused": false,
  "rho_sigma": {
