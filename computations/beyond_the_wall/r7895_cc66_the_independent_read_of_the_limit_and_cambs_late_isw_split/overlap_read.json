@@ -1,0 +1,17 @@
+{
+ "bins_kept_whole_60": 555,
+ "carrying_block_dropped": 12,
+ "dropped_outside_subpeak": 0,
+ "first_peak": 220,
+ "inclusion_forced_by_definitions": true,
+ "is_inclusion_not_intersection": true,
+ "move_all36_meV": 48.20196601190598,
+ "overlap_registered_by_60": false,
+ "reading": "agree with 60 on the conclusion, and for a reason 60 does not state: the overlap is forced by the two definitions, so it is not evidence of anything, and that is exactly why it cannot be used to DISMISS the candidate either",
+ "source": "r7892 by_block.json, counts read not re-derived",
+ "subpeak_and_dropped": 12,
+ "subpeak_fully_accounted": true,
+ "subpeak_kept": 1,
+ "subpeak_tt_bins": 13,
+ "tt_share_of_move": 0.8437483587920275
+}
