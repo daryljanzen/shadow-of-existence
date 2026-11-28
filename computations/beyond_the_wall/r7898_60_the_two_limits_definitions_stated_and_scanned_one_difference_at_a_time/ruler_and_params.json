@@ -1,0 +1,67 @@
+{
+ "arms": {
+  "\u24c8\u2461 THE RULER SUBSTITUTED, the reference's own rdrag, parameters still profiled": {
+   "crossing_meV": 205.2682200033006,
+   "min_at": 0.1,
+   "monotonic_above_min": true,
+   "passes": 2
+  },
+  "\u24c8\u2462 THE PARAMETERS HELD, omega_b and n_s pinned, ruler unchanged": {
+   "crossing_meV": 103.91666500940342,
+   "min_at": 0.03,
+   "monotonic_above_min": true,
+   "passes": 3
+  },
+  "\u24c8\u2463 BOTH SUBSTITUTIONS TOGETHER": {
+   "crossing_meV": 101.94193414136818,
+   "min_at": 0.03,
+   "monotonic_above_min": true,
+   "passes": 6
+  }
+ },
+ "asymmetry_vs_reference": 320.10228136417606,
+ "carrier": "\u24c8\u2462 THE PARAMETERS HELD, omega_b and n_s pinned, ruler unchanged",
+ "cited": {
+  "provenance": "cc66 r7853+cc66.12, the like-for-like reference on 60s own subset",
+  "reference_params_free_meV": 54.0,
+  "reference_params_held_meV": 54.28,
+  "reference_params_move_meV": -0.28000000000000114
+ },
+ "combined": "\u24c8\u2463",
+ "control_calibrated": 193.54530379137307,
+ "control_minimised": 310.14769186419727,
+ "expectation_met": false,
+ "held_indices": [
+  2,
+  3
+ ],
+ "moved_beyond_tolerance": {
+  "\u24c8\u2461 THE RULER SUBSTITUTED, the reference's own rdrag, parameters still profiled": true,
+  "\u24c8\u2462 THE PARAMETERS HELD, omega_b and n_s pinned, ruler unchanged": true,
+  "\u24c8\u2463 BOTH SUBSTITUTIONS TOGETHER": true
+ },
+ "note": "DEFINITIONAL, and one axis carries it: \u24c8\u2462",
+ "outcome": "\u24c7\u24f5",
+ "partner_free": 54.0,
+ "partner_held": 30.56,
+ "r7862_instrument_ruler": 78.33083656993101,
+ "r7862_reference_ruler": 89.90756917446438,
+ "r7862_ruler_move": 11.576732604533376,
+ "repro_tol_meV": 0.001,
+ "shares": {
+  "\u24c8\u2461 THE RULER SUBSTITUTED, the reference's own rdrag, parameters still profiled": -0.07192621628593748,
+  "\u24c8\u2462 THE PARAMETERS HELD, omega_b and n_s pinned, ruler unchanged": 0.5499185306713142,
+  "\u24c8\u2463 BOTH SUBSTITUTIONS TOGETHER": 0.5620345363607778
+ },
+ "singles": [
+  "\u24c8\u2461",
+  "\u24c8\u2462"
+ ],
+ "x_at_zero": [
+  0.6238607523014783,
+  -0.011972106035788448,
+  -0.00014852562620306758,
+  -0.008157071921226524,
+  0.0539961885406388
+ ]
+}

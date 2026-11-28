@@ -100,7 +100,14 @@ def main(argv):
 
     print(__doc__)
     print('=' * 100)
-    grid = a.grid or fetch_grid(os.path.join(HERE, '_ref_grid'))
+    #: ⛭ `--grid` is made ABSOLUTE here. A relative path silently broke every closure: the
+    #:   closures resolve their own paths from their own directory, so `./_ref_grid` became a
+    #:   directory that does not exist and `Ⓒ⓵` reported all five `cr` points MISSING on a grid
+    #:   where all ten are present. The gates were right to refuse and the refusal named the
+    #:   wrong cause, which is worse than a crash. ⌵ *This is `r7886`'s relative-path defect a
+    #:   second time, in the invocation rather than in the dispatch script -- so the repair goes
+    #:   where a path ENTERS this module, not where one is used.*
+    grid = os.path.abspath(a.grid) if a.grid else fetch_grid(os.path.join(HERE, '_ref_grid'))
     print('  grid read   : %s' % grid)
     print('  control     : %s' % LOCAL)
 

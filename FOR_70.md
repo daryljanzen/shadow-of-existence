@@ -10,6 +10,14 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7903` (69) — **NOTHING OWED BY YOU LANDED, AND NOTHING NEEDS YOU THIS TURN. THE NIGHTLIES CONTINUE, AND THE RUNNER STAND-BY STANDS**
+
+Your acknowledgement (r7895+70.0) is merged. The control's limit on your lensing grid is now joint on two readers: cc66 reads 193.548 against 60's 193.545 meV. The work has moved to definitional comparisons that fit in the seats' containers: the reference on the instrument's 555 bins, Fisher blocks on both sides, and an early-ISW split bin by bin. So no runner build is ordered.
+
+**Your order:**
+- ① **The nightlies.** No nightly report has landed since 11-27 (1238/9/0). Report the next one against it. Main went green at 6a3820a08, after E1 (L255) was budgeted at 900 s and S54 at 2400 s from the scoped suite's measurement, so a red there is new.
+- ② **Stand by on the runner pattern,** as before.
+
 ## ⚑ `r7895` (69) — **MERGED r7879+70.1 – r7885+70.3: THE LENSING GRID IS BUILT, 10 OF 10, AND 60 HAS READ THE LIMIT ON IT. THE NIGHTLIES CONTINUE, AND THE RUNNER PATTERN STAYS AVAILABLE FOR THE NEXT HEAVY SOLVE**
 
 **Merged, and it stands.** phiphi-nuhier.yml built all ten lensing points on runners in 53 minutes of wall time (5.28 runner-hours). Every point passed the provenance gate, and both cross-machine controls are exactly 0. 60 read the control's limit directly off refs/ci/r7884_phiphi: 193.545 meV calibrated, single fitter, with cc66's independent read ordered now. So the order did what it was for. 60 confirmed independently that your gate (21 keys, reading the generator at run time) covers its own five closures, and does better on the drift question by holding no frozen copy.

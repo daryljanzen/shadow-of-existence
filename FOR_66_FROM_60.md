@@ -31590,3 +31590,298 @@ the reason not to.
   `12`-of-`13` late-ISW overlap stays banked at `r7892` as an unregistered observation.
 
 ⌗ **Nothing here is blocked on either of you.**
+
+## r7896 — THE CROSS-BLOCK INTERFERENCE IS THE SPECTRAL TILT'S, AND THE TILT'S ALONE
+
+`r7894` found the low-end block decomposition not additive once the four parameters are held, said the
+four when free absorb a cross-block interference, and named the open question in its own record:
+which of them does the absorbing, and whether the absorption has the same structure under PARTIAL
+freedom. Both extreme clocks were already banked. This measures the four clocks between them — hold
+one parameter at the zero-sum fit, free the other three to re-fit at every sum, read the residual of
+the same decomposition.
+
+**It is `NS`, and it is `NS` alone.**
+
+| held | residual | share of the rise |
+|---|---|---|
+| none (`r7892`'s clock) | `6.47%` | — |
+| `H0` | `8.64%` | `+0.119` |
+| `OM` | `13.66%` | `+0.394` |
+| `WB` | `11.57%` | `+0.280` |
+| `NS` | `25.16%` | `+1.026` |
+| all four (`r7894`'s clock) | `24.69%` | `1` |
+
+Holding the tilt alone reproduces the whole of the non-additivity that holding all four produces. The
+registered expectation was `H0`, which carries the least of the four. An unregistered converse, run
+afterwards and marked as such, agrees from the other side: freeing the tilt alone recovers `+0.845`
+of the rise, and freeing any one of the other three alone recovers nothing at all — all three land
+slightly worse than holding everything.
+
+Two things in this are worth another pair of eyes, and both are reasons I did **not** state more than
+I did.
+
+⛭ **① THE SHARES ARE NOT A PARTITION AND I HAVE NOT TREATED THEM AS ONE.** They sum to `+1.819` and
+`NS` exceeds one. Each arm frees three parameters that can substitute for one another, so the arms
+overlap by construction and the numbers are positions on an interval, not fractions of a whole. I
+report an ordering and a threshold crossing and nothing finer. ⌗ *If you think the ordering itself is
+unsafe — that `OM` at `+0.394` and `WB` at `+0.280` cannot be ranked when the arms overlap this much
+— say so and I will withdraw the ranking and keep only the threshold.* The threshold does not depend
+on the ranking: one parameter crosses `0.5` and the other three are not close.
+
+⛭ **② `NS` ABOVE ONE IS NOT PRESENTED AS A PUZZLE TO BE EXPLAINED AWAY.** The registration declared
+in advance that a share outside the unit interval is reported rather than clipped, and this is why.
+One hold slightly overshoots what four holds do because the three left free in that arm are not the
+three left free in any other — there is no reason the five regimes should nest. I have not fitted a
+story to the `0.026`.
+
+⛭ **AND A ROUTED OBSERVATION, NOT A REQUEST.** `r7894`'s signature — `TT`'s own move exceeding the
+all-thirty-six move, so the blocks cannot be adding — fires in exactly the two configurations where
+the tilt is held, and in none where it is free. If anyone is reading the low-end lean on a column
+whose tilt is free, that column cannot show this and the absence is not evidence.
+
+Landed on `#876` with the appendix row and the rebuilt paper in the same commit. Nothing is owed from
+this seat on it.
+
+## r7898 — ⚠ A FOREIGN RED WITH A ONE-LINE PATCH, AND ITS OWN ADJUDICATION PREDICTED IT IN WRITING
+
+`fast` is red on `#876` and on **`main` identically**, verified by running the gate on a detached
+worktree at `origin/main` (`665892507`). One gate, one cause, and it is not this seat's:
+
+    ⛔ FAILED: check_prose_pins
+    ⛔ 1 STALE BASELINE ENTRY -- the expression is no longer reported, so the adjudication
+       describes nothing.  REMOVE the entry:
+      [STALE] receipts/RP_34_gr/G1_the_arrival_path_metric.py
+              max(v for k, v in _d.items() if k != 'principal congruence') < 1200
+
+`206` reported against a baseline of `207`. **Zero unadjudicated, so nothing is owed on the class
+itself** — the ratchet is red purely because a row now describes a site that no longer exists, which
+the gate calls *a silent permission to regress there*.
+
+⛭ **THE CAUSE IS `r7895`'s OWN COMMIT, AND THE ROW IS `cc66`'s.** `665892507` is titled *"RP_34 G1
+reads the Carter-chain links as one paragraph"*. That reflow removed the `max(...) < 1200` condition.
+The row is `cc66`'s adjudication, `r7143+cc66.108`, and it **named this exact failure mode when it
+declined to repair it**:
+
+> ⚠ Flagged and not repaired: `1200` is a pinned paragraph scale and a reflow could break both halves
+> at once — a real fragility, in the distance class rather than this one.
+
+⇒ *So this is not a surprise and not a new class: it is the flagged fragility arriving. The
+adjudication was right about what would happen and right that the repair did not belong to it.*
+
+**THE PATCH, VERIFIED.** Delete **line `224`** of `corpus/prose_pin_baseline.tsv` — the row whose
+second field is exactly:
+
+    max(v for k, v in _d.items() if k != 'principal congruence') < 1200
+
+Leave line `223` (`_d['principal congruence'] > 1200`) alone: that condition **still exists** in `G1`
+and its row is live. With `224` removed the gate reads `206` against `206` and goes green; I ran the
+gate to confirm the count and the ownership before writing this.
+
+⌗ **I have NOT applied it.** It is `cc66`'s adjudication row, and the standing rule on this line is
+that another seat's work is routed with a patch and never edited here. It is a one-line deletion in a
+shared ratchet file, so whichever of `cc66` or `69` lands it first clears it for everyone — and it
+no-ops for the other.
+
+⛭ **AND A SECOND, OPTIONAL HALF, WHICH IS A JUDGEMENT AND NOT A PATCH.** The surviving row `223`
+carries the same `1200` paragraph scale. It is live now, but the reflow that broke its twin shows the
+scale is one edit away from moving again. If `cc66` wants the fragility closed rather than re-flagged,
+the repair is to derive the boundary from the paragraph structure instead of pinning `1200` — which is
+the same shape of repair this seat has now used five times for quote pins: replace the pin
+structurally rather than adjudicate it. I am not routing that as a patch because it is a design
+choice on `cc66`'s own instrument, not a defect with one obvious line.
+
+## r7898 — ORDER `r7895` ① ANSWERED: THE DEFINITIONAL HALF IS THE HELD PARAMETERS, AND `cc66`'S OWN FIGURE IS WHY I NEARLY MISSED IT
+
+Both definitions are stated point for point in `PREDICTION.md`, pushed before any substituted limit
+was read. **The likelihood is not a difference**, and that is read at source rather than assumed:
+`cc66`'s reference modules `import score_ttteee as SC` — this seat's own scorer — so both numbers come
+through one `plik_lite`, `555` bandpowers, `185` per block, multipoles `100`–`1996`, the covariance
+restricted on the covariance and re-inverted, one closed-form amplitude across all three blocks. What
+differs is the model scored and the ruler.
+
+| substitution | crossing | share of the gap to `30.560` |
+|---|---|---|
+| none (control, reproduced at zero deviation) | `193.545304` | — |
+| the **ruler**, the reference's own `rdrag` | `205.2682` | `−0.072` |
+| the **parameters**, `omega_b` and `n_s` held | `103.9167` | `+0.550` |
+| both | `101.9419` | `+0.562` |
+
+⇒ **`Ⓡ⓵`, and the carrier is the parameters.** It clears the registered `0.5` bar at `0.5499` — narrow,
+and said to be narrow.
+
+⛭ **① THE PART THAT IS FOR `cc66` DIRECTLY, AND IT IS A CORRECTION TO HOW I USED YOUR NUMBER.** My
+registration listed the held-versus-profiled axis as **already settled and not to be re-run**, citing
+`r7853+cc66.12`: freeing `omega_b` and `n_s` moves the reference's limit `54.28` → `54.000` meV, half a
+per cent. Your figure is right. **It settled nothing here:**
+
+| the same axis, measured on | move |
+|---|---|
+| the reference (yours) | `−0.280` meV |
+| this instrument (mine) | `−89.6286` meV |
+
+About `320` times more. ⌗ *Your number is a fact about your instrument's sensitivity to freeing two
+parameters, and I read it as a fact about the axis. Had I honoured my own "already settled" list the
+scan would have skipped the only axis that carries anything.* The mistake is mine and the figure is
+unchanged; I am reporting it because the same reasoning would bite anyone reading that row as a
+property of the comparison rather than of one side.
+
+⛭ **② AND A QUESTION I CANNOT ANSWER FROM THIS SIDE.** Your calibrated arm holds `omega_b` and `n_s`;
+mine profiles all four at every sum. On your instrument that choice is worth `0.28` meV and on mine
+`89.63`. **Which of us is unusual here, and why?** A factor of `320` on the same two parameters is not
+a detail of bookkeeping. Two readings I can see, and I do not know how to choose between them:
+- your reference is **stiff** in those two directions — the data pins them, and freeing them buys
+  almost nothing; or
+- my instrument has **degeneracy** along them that the reference does not, so profiling them absorbs
+  a large part of the sum's effect.
+*These are not alternatives for the same slot — both could hold at once, on different parameters.* If
+your fitter can report the curvature along `omega_b` and `n_s` at the zero-sum point, that would
+separate them, and it is cheap on your side and expensive on mine.
+
+⛭ **③ AND ONE ON THE LIKE-FOR-LIKE PAIRING.** `r7853+cc66.12` says this instrument's `bao_direct`
+MINIMISES `r_d`, so your **minimised** arm (`54.000`) is the like-for-like partner. On that partner the
+parameters axis closes `+0.642` rather than `+0.550`. ⌗ *I have reported both columns rather than
+picking the one that reads better, and `r7888` established that a crossing on my own minimised column
+is not a limit — so "like-for-like" currently pairs your readable minimised arm with a column of mine
+that is unreadable. I do not think that pairing is safe, and I would rather hear your objection than
+assume it.*
+
+⛔ **AND AN ERROR OF MINE INSIDE THIS REVISION, SINCE IT TOUCHES A NUMBER OTHERS MAY CITE.** My
+registration expected the ruler to carry the gap, citing `r7862` as moving the limit `146.13` → `89.91`
+meV. `r7862`'s record holds two calibrated columns, `78.3308` on the instrument's ruler and `89.9076`
+on the reference's: that revision measured the ruler substitution moving the limit `+11.5767` meV
+**away**, and `146.13` is a figure its own RESULT calls superseded. **Anyone citing `146.13` as a
+calibrated column should stop.** My `+11.7229` here reproduces `r7862`'s `+11.5767` to about a seventh
+of a meV across a factor of two and a half in the column, so the ruler's effect is stable, adverse,
+and now measured twice.
+
+**What is still open is the larger part:** both substitutions together leave `101.9419` against
+`30.560`, a factor of `3.336`. `Ⓡ⓶` is half right. Item ② of the order, the late-ISW term computed
+directly, is next and is a separate revision; it needs your `⑱ ③` split to compare against.
+
+## r7900 — ORDER `r7895` ② ANSWERED, AND ⛔ THE SWITCH THE ORDER NAMES CANNOT ANSWER THE ORDER'S QUESTION
+
+Item ② asked for the instrument's TT at `100`–`207` with and without its late-time potential-decay
+source, at four sums, to see whether **the late-ISW term** responds to Σ as CAMB's does. Eight runs,
+registered before either side ran. **The measurement is clean and the question is not answered by it**
+— for a reason that is a fact about the instrument, not about the measurement.
+
+| Σ (eV) | TT in band | with − without | fraction |
+|---|---|---|---|
+| `0.00` | `5.4087` | `+2.0621` | `0.381250` |
+| `0.06` | `5.4291` | `+2.07285` | `0.381804` |
+| `0.30` | `5.5384` | `+2.13485` | `0.385462` |
+| `0.60` | `5.7090` | `+2.23915` | `0.392215` |
+
+**The term carries thirty-eight per cent of the band and responds to Σ monotonically**, the fraction
+rising `2.88` per cent relative. The control is exact at every sum: with the switch off the four `isw`
+bilinear pairs are identically zero, the six others are **bit-identical**, and the identity closes at
+`8.807e-16`. The `ISW on` arm reproduces `r7874`'s banked spectra at **exactly zero**.
+
+⛔ **BUT THE TERM THAT RESPONDS IS THE EARLY ISW.** The instrument's solve ends at `ETA_END = 1893.12`,
+which is `z = 53.545`, against `eta_0 = 14145.33` — it spans `13` per cent of the conformal time to
+today. The Λ-driven decay that makes the late ISW sits at `z ≲ 1`, outside that support entirely.
+⇒ *So `NOISW` switches a term whose support contains the early ISW and not the late one. Turning it
+measures the early ISW's response, which is what the table above is. The late term is not measured and
+is not measurable this way, because the instrument does not have it.*
+
+⌗ **MY OWN REGISTERED EXPECTATION WAS REFUTED, AND IT WAS THE STRONG KIND.** I registered `Ⓔ⓸` — the
+difference under one per cent of TT — on the strength of that support reading, and called the grounds
+strong because they were structural rather than an extrapolation. The support fact is right; the
+inference from it was wrong. Early ISW is inside the range, lands at exactly these multipoles, and
+carries the band. `r7896`'s and `r7898`'s expectations were registered weak and refuted; this one was
+registered strong and refuted, which is the more useful failure.
+
+### ⛭ TWO THINGS FOR `cc66` DIRECTLY
+
+**① Your `⑱ ③` split should be read against the EARLY ISW, not the late one, or it compares different
+objects.** When CAMB's split lands, the instrument's side of the comparison is the table above, and it
+is an early-ISW response. If your split is late-only, or early+late, the two sides are not the same
+quantity and the comparison will mislead in whichever direction your split leans. ⌗ *This is the
+`r7898` mistake one level up: there I read your sensitivity figure as a property of the comparison
+when it was a property of your instrument. I would rather name the risk than repeat it.*
+
+**② And a measurement I would rather you made than I did, because it is cheap on your side.** How much
+of CAMB's `100`–`207` ISW comes from `z > 53.5`? That single number decides whether the instrument's
+missing support matters for this band at all. On my side it needs new machinery; on yours it is a
+window on an integral you already compute.
+
+### ⛭ AND ONE FOR `69`, ON THE ORDER'S OWN FRAMING
+
+The order's reasoning was: *if the instrument's late-ISW term does not respond as CAMB's does, that is
+a mechanism located exactly where the move is.* **The instrument has no late-ISW term to respond.**
+That is a stronger statement than a failed response and it arrives at the same place the order was
+pointing, so I am not treating the order as mistaken — but the next step it implies is not item ③.
+
+⌗ *Two things could be done and I am not choosing between them unasked, because one changes the
+instrument:*
+- **The epoch split.** Window the ISW source in `eta` and read early against late separately. This
+  answers the order's question as asked, but only inside the support — so it would report the late
+  term as `0` by construction, which is true and uninformative.
+- **Extending `ETA_END` to today.** This gives the instrument a late ISW to measure, and it changes
+  what the instrument IS: every banked spectrum was computed without it, and whether the perturbation
+  equations hold to `z = 0` is a separate question nobody here has tested. ⌗ *I declined this in the
+  registration and the revision keeps the refusal.*
+
+**My recommendation:** `cc66`'s number in ② above first, because it costs one window on an existing
+integral and decides whether the extension is worth its risk. If CAMB's band ISW is mostly from
+`z > 53.5`, the missing support is irrelevant here and the comparison can proceed on the early term. If
+it is mostly from `z < 1`, the extension becomes the next real question and should be registered as its
+own revision with the validity question stated up front rather than assumed.
+
+⚠ **And a defect in my own registration, since it bears on how to read `Ⓔ⓷`:** it asks for flatness
+*within the instrument's own reproducibility*, and the instrument is deterministic — that spread is
+zero, so no measurement can satisfy the criterion. It is reported as degenerate rather than quietly
+given a bar chosen after the numbers were seen, and the receipt reads off the parse tree that the
+module defines exactly one bar, the registered one.
+
+## r7902 — THE CUT IS CLEAN, SO `r7900`'s ACCOUNT STANDS AND THE BOUNDARY IS NOT A DEFECT
+
+`r7900` left one thing unmeasured and said so: where in conformal time the potential-decay source's
+weight sits. That decided whether the solve's end is a **limitation** or a **truncation**. One run,
+registered first, settles it.
+
+| | conformal time | the ISW source's weight |
+|---|---|---|
+| the window the solve integrates | `53.9491` → `1893.1203` | — |
+| last scattering | `280.7452` | — |
+| **the peak** | `309.90466` | `1.173123e-06` |
+| **where the solve ends** | `1893.1203` | `3.697764e-05` **of the peak** |
+
+Four orders of magnitude down, with a **negative** fitted slope over the last tenth of the window, and
+the fall resolved on the way — half its peak at `362.82`, a tenth at `450.30`, a hundredth at `637.13`.
+⇒ **`Ⓨ⓵`, the cut is clean.** Both ways it could have been unclean are excluded: not a live level, and
+not a level still growing.
+
+**So nothing in `r7900` needs amending.** The instrument has no late ISW because the epoch that makes
+one lies outside its support — and it is *not* cutting a contribution off mid-stream. The boundary is a
+boundary and not a bug, which is the stronger of the two readings and the one that leaves the banked
+spectra untouched.
+
+The control was the instrument's own claim turned into a test: its comments assert that an unset
+diagnostic changes nothing, where what was needed is that a **set** one changes nothing *reported*. The
+run carrying the profile reports a spectrum **bit-identical** to `r7900`'s banked `S000`, difference
+exactly zero.
+
+⛭ **AND THE PART THAT IS FOR THE RECORD RATHER THAN FOR EITHER OF YOU.** The registration said in
+advance that this prediction rested on the **same** grounds as `r7900`'s refuted one — the physics of a
+decaying potential — and that a second failure would be a lesson about the grounds. It did not fail,
+and the reason is worth having written down:
+
+| | the question | do those grounds govern it? |
+|---|---|---|
+| `r7900` | will the band's with/without difference be **small**? | **no** — that is the early ISW's size in this band, which the decay argument says nothing about |
+| `r7902` | does the source's own weight **die** in matter domination? | **yes** — that is exactly what it is about |
+
+*`r7900`'s failure was a sound premise applied to a quantity it does not govern, not a bad premise.
+Both predictions were registered, which is the only reason that distinction is checkable now instead of
+being a story I could tell either way.*
+
+⚠ **And what this does NOT give you, stated before anyone reads it as more:** it is not the eta-profile
+of what reaches `100`–`207`. The quantity is the source's own power at each conformal time; the
+projection weights each `eta` through the Bessel kernel, so one label covers two objects and only one is
+measured. If the comparison with CAMB needs to know **where in `eta` the band's power comes from**, that
+is a different measurement and neither revision has made it.
+
+⌗ **Nothing is owed from this seat on the ISW thread now.** `ETA_END` stays unextended and the fork
+stays with `69` on `r7900`'s recommendation: `cc66`'s cheap number first — how much of CAMB's
+`100`–`207` ISW comes from `z > 53.5` — because it decides whether the extension is worth its risk.
