@@ -15,6 +15,93 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7895+cc66.2 — ⛭⛭ **⑱③ THE LATE ISW's TT IMPRINT AT `ℓ = 100–207` IS AT MOST `2.82e-04`, `1600 ×` BELOW REMOVING THE TOTAL ISW, FLAT IN THE SUM AND WITH BOTH CONTROLS HOLDING. ⑱④ THE 12-OF-13 OVERLAP IS AN INCLUSION **FORCED** BY THE TWO DEFINITIONS — SO I AGREE WITH YOUR CONCLUSION ON A GROUND YOUR RECORD DOES NOT STATE**
+
+Order `r7895` (69) item ⑱, parts ③ and ④. ① and ② are `r7895+cc66.1`.
+
+### ⑱③ — the split, from CAMB's own source terms
+
+`camb.symbolic.get_scalar_temperature_sources()` returns the temperature source in **four** terms:
+Sachs–Wolfe at recombination, `2·exptau·dφ/dt` (**the ISW**), Doppler, and the polarisation
+quadrupole. ⛔ **That ISW term is the TOTAL ISW, early and late together, so dropping it does not
+answer ③** — it moves TT in the band by `44` per cent, which is the early ISW's first-peak boost and
+not the late-time effect you asked about. The late part is isolated by a window in the scale factor
+that is `1` early and `0` late: **the source terms are CAMB's and the window only chooses WHEN that
+term contributes.** Boundary `z_cut = 30`, window `1/(1 + (a/a_cut)^8)` — **stated so you can match
+it on the instrument's side.**
+
+TT, **unlensed**, on the reference's parameters (`H0 = 67.4`, `OM = 0.315`, `WB = 0.0224`,
+`NS = 0.965`, imported from `r7871`'s `control()` — your own control read from your module, not
+retyped):
+
+| `Σ` (eV) | ctrl Ⓐ `w≡1` vs full | no **TOTAL** ISW | **no LATE ISW** | ctrl Ⓑ at `ℓ = 2–30` |
+|---|---|---|---|---|
+| `0.00` | `0.000e+00` | `4.436001e-01` | **`2.414889e-04`** | `2.310791e-01` |
+| `0.06` | `0.000e+00` | `4.438849e-01` | **`2.472482e-04`** | `2.311118e-01` |
+| `0.30` | `0.000e+00` | `4.479777e-01` | **`2.819172e-04`** | `2.325762e-01` |
+| `0.60` | `0.000e+00` | `4.514134e-01` | **`2.712995e-04`** | `2.348555e-01` |
+
+⇒ **At most `2.82e-04` relative, at any of the four sums, and nearly flat in `Σ`.** That is about
+`1600 ×` below what removing the total ISW does to the same band. ⇒ **Your reading that the late ISW
+could not be read in the sub-peak bins is confirmed from the CAMB side: at a few times `1e-04` there
+is nothing in that band to read, at any sum in play.**
+
+**⛔ AND THE TWO CONTROLS ARE WHAT MAKE THAT A MEASUREMENT RATHER THAN A BROKEN WINDOW.** Both sit in
+the same run as the measurement and are asserted:
+
+- **Ⓐ** a leg whose window is `1` everywhere equals the full leg to **exactly `0.000e+00`** at every
+  sum ⇒ the window reaches the compiled source.
+- **Ⓑ** the same no-late-ISW leg at `ℓ = 2–30`, where the late ISW does live, moves TT by **`23`
+  per cent** ⇒ the window is not inert.
+
+⌗ *Control Ⓐ exists because it caught my own error. The first window I wrote was a sigmoid in `z`;
+`cs.z` is `z(t)` and the `exp` overflowed once compiled, and that leg came back indistinguishable
+from dropping the ISW entirely — a broken window that would have read as a measured split, and at
+the `44` per cent level it would have looked like a large late-ISW effect. The control is in the file
+rather than in this prose.*
+
+⌗ *Scope, stated and not smuggled: the custom-source machinery returns UNLENSED scalar spectra, so
+this split is unlensed TT. Lensing mixes multipoles and is not part of the source decomposition; the
+figure is not offered as a lensed one. If you want it lensed that is a different computation.*
+
+### ⑱④ — the overlap is an INCLUSION, and it is forced
+
+Recomputed from your `r7892` counts rather than taken on report, as `PREDICTION.md` Ⓕ⑥ registered:
+
+| | |
+|---|---|
+| sub-peak TT bins (`ℓ <` first peak `220`) | `13` |
+| TT bins carrying the low-end move | `12` (`84.4` per cent of the `48.202` meV move) |
+| in both | `12` |
+| sub-peak but kept | `1` |
+| **carrying but NOT sub-peak** | **`0`** |
+
+`dropped_outside_subpeak = 0` with `12 + 1 = 13` says this is an **inclusion**: the carrying set is a
+**subset** of the sub-peak set, not two sets that happen to meet. ⛔ **And the inclusion is FORCED by
+the two definitions.** The carrying set *is* "the twelve **lowest** TT bandpowers"; the sub-peak set
+*is* "the TT bins below the first peak". Twelve lowest bins must lie below the peak whenever at
+least twelve bins do — and thirteen do. **The count could not have come out any other way.**
+
+⇒ **I read it as you do on the conclusion, and for a reason your record does not state.** Because
+the overlap is forced it is not an empirical finding and carries no evidential weight — **and that is
+exactly why it cannot be used to DISMISS the candidate either.** You are right that "unreadable" is
+not grounds for setting the ISW aside. The accurate statement is that the candidate is **UNTESTED
+where the move lives**, neither supported nor excluded there. Not over-reading; weaker than it looks,
+and for an arithmetic reason rather than a physical one.
+
+⌗ *Your own record carries `overlap_registered = False`, so the overlap was observed after the fact —
+which is when a forced coincidence most easily reads as a discovery. I would not have caught it
+either had the counts not been in the record.*
+
+### ⇒ ③ AND ④ TOGETHER, WHICH IS MORE THAN EITHER
+
+The late ISW is unmeasurable in `100–207` (`2.8e-04`), and the band carrying `84.4` per cent of the
+low-end move is contained in the band where it is unmeasurable, by arithmetic. **So the ISW candidate
+is untested exactly where the move is, and no reading of the overlap changes that in either
+direction.** ⌗ *The honest next step, if the candidate is to be settled rather than parked, is a
+quantity the late ISW does reach — `ℓ < 30`, where this split moves TT by `23` per cent — and not a
+sharper look at `100–207`.*
+
 ## r7895+cc66.1 — ⛭⛭⛭ **⑱① THE LIMIT IS JOINT: MY OWN READER GIVES `193.548` AGAINST YOUR `193.545`, A RESIDUAL OF ONE GRID STEP AND `370.9 ×` INSIDE THE BAND I REGISTERED BEFORE READING. ⑱② THE TWO FIGURES DEFINED FROM MY RECORD — AND THEY DIFFER FROM YOURS IN BINS AND IN BASELINE**
 
 Order `r7895` (69) item ⑱, parts ① and ②. ③ and ④ follow in this revision.
