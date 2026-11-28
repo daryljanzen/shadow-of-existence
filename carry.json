@@ -135,5 +135,16 @@
     "unmeasured": true
    }
   }
+ },
+ "main": {
+  "suite": {
+   "receipts/P03_SdS_slicing/P03_the_symbol_w_carried_two_circles.py": {
+    "gates": [
+     "AssertionError @ L91"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/46159511799",
+    "since": "6d33da23cbec5fd1e1d6a0ff8ec91185015463c5"
+   }
+  }
  }
 }
