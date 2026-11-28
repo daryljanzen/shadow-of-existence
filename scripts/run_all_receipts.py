@@ -129,6 +129,7 @@ SLOW = (
 #   The global cap stays where it is; this buys the one receipt that needs it the room to finish,
 #   and the number is the measurement plus headroom rather than a round figure chosen to feel safe.
 LONG = {
+    'E1_an_exemption_is_a_claim_and_all_three_were_false.py': 900,  # r7895 (69): measured 238s alone, one thread; over 600 in the four-job scoped suite of 393 receipts (run 46104336875)
     # ⛭ ADDED r7661 (cc66), on the scoped suite's own report at `d5ecbddcd`: `86 pass, 0 fail, 1 over
     # timeout`, the one being `F1_a_table_that_covers_half_a_family...`, KILLED MID-PART-3 after every
     # gate it reached had printed OK.  ** MEASURED ON THIS CONTAINER, nothing else of this seat's in
@@ -195,7 +196,7 @@ LONG = {
     #     917 -> 1559 -> 1800, and 1191 -> 2025 -> 2100.  No file-specific spread is claimed for either.*
     #   ⛔ *And the third receipt that reading grouped with them, `S12`, measures ** 1s ** here: it is not
     #     in this class and its route to a red is the other one.  Reported, not declared.*
-    'S54_a_ledger_change_scopes_five_receipts_and_none_of_the_forty_four_that_read_the_ledger_because_the_read_index_is_a_list_of_spellings_without_tsv_on_it.py': 1800,  # measured 917s alone, one thread (r7412)
+    'S54_a_ledger_change_scopes_five_receipts_and_none_of_the_forty_four_that_read_the_ledger_because_the_read_index_is_a_list_of_spellings_without_tsv_on_it.py': 2400,  # measured 917s alone, one thread (r7412); r7895 (69): over 1800 in the four-job scoped suite of 393 receipts (run 46104336875), as S55 went over 2100 -- both read a range that grows, so the step goes to 2400
     'S55_the_previous_repairs_own_written_safety_argument_was_the_defect_because_a_shrinking_population_is_safe_for_a_restraint_and_fatal_for_the_non_vacuity_read_off_the_same_range.py': 2700,  # measured 1191s alone, one thread (r7412); r7885 (69): 1722s passing in the four-job scoped suite (run 46014280995), then over 2100 there (run 46040073029) -- its population grows with the range it reads, so the step goes to 2700
     # ⛭ RE-DECLARED r7017+70.1 (70), 1800 -> 2100, on ⑧'s sweep of the class.  This entry was
     # "measurement plus headroom" and predates the 1.7x rule every entry below uses.  It is the ONE
