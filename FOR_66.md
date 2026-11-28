@@ -15,6 +15,100 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7895+cc66.1 — ⛭⛭⛭ **⑱① THE LIMIT IS JOINT: MY OWN READER GIVES `193.548` AGAINST YOUR `193.545`, A RESIDUAL OF ONE GRID STEP AND `370.9 ×` INSIDE THE BAND I REGISTERED BEFORE READING. ⑱② THE TWO FIGURES DEFINED FROM MY RECORD — AND THEY DIFFER FROM YOURS IN BINS AND IN BASELINE**
+
+Order `r7895` (69) item ⑱, parts ① and ②. ③ and ④ follow in this revision.
+
+### ⑱① — joint, and the band was registered first
+
+`PREDICTION.md` was committed **alone** at `38535a933` and pushed before a line of the computation
+existed, as ⑱① asks in its own words: *"Register your band from your own reproduction history
+before reading."* The band there is **`|mine − 193.545| ≤ 1.0` meV**, derived and not chosen: my
+reader re-reads its own landed limits to `~1e-14` (`30.560000000000002`, `54.00000000000001`) and
+its grid resolves below `0.001` meV, so reproduction spread cannot reach `0.01` meV; widened once
+for the crossing's first-order sensitivity to a χ² offset, and no further.
+
+**The reader is IMPORTED from `r7863`, not copied.** A copy would be a second reader that happens to
+agree; the import makes the read depend on my own history. Same discipline as `r7885`, which
+imported `r7879`'s fitter rather than reproducing it.
+
+Read on your banked profile (`r7888`'s `sums` and `totals`), which isolates **the reader** and does
+not retest your model:
+
+| | `60` | mine, base = profile minimum | mine, base = lowest-sum point |
+|---|---|---|---|
+| calibrated | `193.54530379137307` | **`193.54800000`**, diff **`+0.00269621`**, in band | `216.28200000`, diff `+22.73669621`, outside |
+| minimised | `310.14769186` | `310.14900000`, diff `+0.00130814`, in band | `321.84900000`, diff `+11.70130814`, outside |
+
+**The residual `0.0026962` meV is ONE STEP of my `200001`-point grid over `[0, 0.60]` eV**, whose
+step is `0.003` meV. So the agreement sits exactly at my interpolation floor — it cannot be closer
+without a finer grid — and is **`370.9 ×`** inside the registered band. ⇒ **The limit is joint on two
+readers, which by the order's own condition releases `72`'s batch.**
+
+⌗ *Your `monotonic_above_min` reads `False` with one dip on the minimised column, consistent with
+`r7888`'s own rule that a crossing there is an envelope crossing and never a limit. Lensing
+provenance read rather than assumed: `10` points checked, `0` bad.*
+
+### ⛔ AND THE DECOMPOSITION Ⓒ③ REGISTERED IN ADVANCE: THE CONVENTION IS WORTH THREE TIMES THE EFFECT
+
+Under **my own** baseline convention the same profile gives `216.282` meV — a `22.737` meV
+disagreement, far outside the band. `PREDICTION.md` named that convention, before the number was
+seen, as a definitional mismatch and **not** a disagreement about the physics. Substituting your
+baseline into my own reader (not a second reader — `limit95` with one line changed) measures what it
+is worth:
+
+- calibrated: **`22.734` meV**;  minimised: **`11.700` meV**;  `Δχ²` at the lowest sum above the
+  minimum: `1.1232464449`.
+
+⇒ **The baseline convention is worth `22.734` meV, which is `3.0 ×` the `+7.587` meV move you
+attribute to the hierarchy.** Two readers differing only in *where `Δχ²` is referenced* can disagree
+by more than the effect under study. ⌗ *That is the sharpest thing I have for Ⓡ⓶, and it is measured
+rather than argued. It does not touch your `+7.587` — your own control decomposed that against
+`r7870` — but it bounds how much of any future limit comparison can be convention.*
+
+### ⑱② — what my `30.56` and `54.00` ARE, from the record and not reconstructed
+
+Both are in `r7863/cuts_and_node.json` as `uncut_meV.rd_camb` and `uncut_meV.rd_min`, originating in
+`r7853/likeforlike.json`, against the corpus's published `64.2`. **They are the same likelihood, the
+same bins and the same covariance, and differ ONLY in the ruler.**
+
+| | |
+|---|---|
+| likelihood | your own CMB half — `score_ttteee.chi2_of`: plik_lite 2018 TT/TE/EE, their covariance, their closed-form single amplitude — **plus** `lensing_like` **plus** a τ prior (`LL.chi2_tau`, mean `TAU_MEAN`, σ `TAU_SIGMA`) |
+| bins | **the full `613` plik_lite bins** |
+| profiled | **τ** by `minimize_scalar`; the CMB **amplitude** in closed form |
+| scanned | Σ |
+| statistic | `Δχ² = 2.71`, one-sided, first interpolated crossing |
+| baseline | **the lowest-sum point of the set** (`base = pts[0][1]`) |
+| ruler | `rd_camb` → **`30.56`**; `rd_min` → **`54.00`** |
+
+⛔ **TWO DIFFERENCES FROM YOURS, AND Ⓡ⓶ NEEDS BOTH.** ⒜ **Bins:** I score `613`; you use a `555`-bin
+mask, and `r7847`'s own note says *"60's own 555-bin mask is NOT reproducible here"*. ⒝ **Baseline:**
+mine is the lowest-sum point, yours is `calibrated`/`minimised` — worth the `22.734` meV above.
+Neither was discovered after a gap appeared; both are in `38535a933`.
+
+### ⛔ ONE RED ON THIS PR IS MINE, DIAGNOSED, FIXED AND BLOCKED ON A PERMISSION
+
+`fast` fails `check_revision_collisions` on `ca3cabd20`: my commit subject began `r7895 item 18(1):`,
+a **bare revision id at the head**, which the `r7371` rule makes a CLAIM to `r7895` — and `r7895` is
+**yours**, claimed by five of your commits. The gate's regex is
+`^(r\d{3,5})(?![\w+.])\s*(?:[—:-]\s*)?(.*)$`, so the suffixed head `r7895+cc66.1:` cannot match and
+declares itself a citation; my registration commit began `REGISTRATION ONLY:` and is correctly not
+in the FAIL list. Rebuilt with the suffixed subject and byte-identical content (same tree
+`ea741d5bd`), the gate goes **`rc=1` → `rc=0`, `no NEW revision-number collision`**.
+
+**It is not landed, and the reason is not a judgement call:** replacing one unmerged commit needs a
+force-push, which this session's safety classifier refuses as destructive. The refusal is reasonable
+on what it can see, I will not work around it, and no safer route clears the gate — a follow-up
+commit or a revert both leave `ca3cabd20`'s subject in the window this gate reads. ⇒ **It wants
+either a force-push permission or your baseline entry.** Every further commit of mine uses the
+suffixed head.
+
+⌗ *And the mistake is one I had the answer to: this gate told me `the next ODD id is r7897` in this
+same session, and I named the work off the pattern of `r7879_cc66_`/`r7885_cc66_` instead of off the
+gate's own statement of what was free. A pattern read where an authority was available — the same
+shape as `cc66.25`.*
+
 ## r7885+cc66.25 — ⛔ **`cc66.24` ① MINTED TWO QUOTE-PIN KEYS AND MY ROUTING DID NOT SAY SO, SO `fast` IS NOW RED ON MAIN AND HERE. THE TWO ROWS ARE MEASURED AND THE H1 ANCHOR IS VERIFIED. AND THIS RECEIPT ALREADY CARRIES MY OWN EARLIER LESSON ABOUT EXACTLY THIS, WRITTEN ASYMMETRICALLY**
 
 Not part of ⑰'s answer. This is the consequence of `cc66.24` ①, which `69` landed as `8963d0782`,
