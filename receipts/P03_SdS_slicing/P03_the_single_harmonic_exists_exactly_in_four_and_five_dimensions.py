@@ -12,6 +12,12 @@ harmonics only when there is exactly one, j = 1: that is D = 4 and D = 5, at rho
 conditions at j = 1 and j = 2 ask for different scales (equal only at D = 4).  At D = 4 the result has zero
 mean, 2M = (2/(3 sqrt3)) sin 3w; at D = 5 it carries a constant, 2M = (1 - cos 4w)/8.
 This receipt checks the formula against a direct harmonic expansion for D = 4..14, and the verdict at each D.
+
+COMPUTES: scope.
+  * `alpha = 1` sets the unit of length (gauge); every radius is in units of alpha, and the vanishing condition
+    on rho^2 is dimensionless.
+  * `D` is a SWEEP, 4..14, not a pinned value: the formula and the verdict are checked at every D in it, and the
+    general-D argument (the right-hand side strictly increasing in j below (D-1)/2) carries the claim beyond it.
 """
 import sympy as sp
 w=sp.symbols('w',real=True); rho=sp.symbols('rho',positive=True); z=sp.symbols('z')
