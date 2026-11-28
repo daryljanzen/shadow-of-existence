@@ -277,6 +277,10 @@ BASELINE = {
             #:   Both are pushed and merged, so they are baselined, not renumbered; cite by SHA.  60 is told to
             #:   cite an order AFTER the first words, or under its own even id.
             'r7867',
+            #: ⛔ r7903 (69): ** the same shape, from cc66. **  `r7895` is 69's (`a0ef7e466` and its four follow-ups);
+            #:   cc66's `ca3cabd20` begins "r7895 item 18(1):" because it ANSWERS that order, in claim syntax.  Pushed
+            #:   and merged, so baselined and not rewritten; cite by SHA.  cc66's later commits use the suffixed form.
+            'r7895',
             'r6853',      # ⛭ r6855 (66), ATTRIBUTION CORRECTED r6857 on 60's report: the other
                           #   r6853 is NODE 64's (aafa3939), not node 60's -- 66 named 60 twice and
                           #   both namings were wrong.  64 took it while 66 was mid-write on the
